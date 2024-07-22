@@ -296,24 +296,12 @@ Licnese: Creative Commons CC-BY-NC-SA
 			<visible ifSubset="metadata-option:rating">false</visible>
 			<visible ifSubset="metadata-option:playtime">true</visible>
 		</image>
-		<image name="md_marquee">
-			<origin>0.5 0.5</origin>
-			<zIndex>6</zIndex>
-			<visible>${visiblemix}</visible>
-		</image>
-		<image name="md_image">
-			<origin>0.5 0.5</origin>
-			<zIndex>5</zIndex>
-		</image>
-		<image name="md_thumbnail">
-			<origin>0 0.5</origin>
-			<zIndex>6</zIndex>
-		</image>
 		<video name="md_video">
 			<origin>0.5 0.5</origin>
-			<delay>3</delay>
+			<delay>1.4</delay>
 			<roundCorners>0.005</roundCorners>
-			<showSnapshotNoVideo>false</showSnapshotNoVideo>
+			<showSnapshotNoVideo>true</showSnapshotNoVideo>
+            <showSnapshotDelay>true</showSnapshotDelay>
 			<zIndex>8</zIndex>
 		</video>
 		<datetime name="md_releasedate,md_lastplayed">
