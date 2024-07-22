@@ -7,8 +7,6 @@ based on 640x480
 -->
 
 	<!-- Variables -->
-	<!-- ~~~~~~~~~~~ -->
-
 	<variables ifSubset="font-size:small">
             <systemDescriptionFontSize>0.015</systemDescriptionFontSize>
             <systemYearFontSize>0.020</systemYearFontSize>         
@@ -91,7 +89,5 @@ based on 640x480
 		<CornersMedium>20</CornersMedium>
 		<CornersLarge>30</CornersLarge>
 	</variables>
-
-
 
 </theme>

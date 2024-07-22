@@ -1,13 +1,12 @@
 <theme>
 	<formatVersion>7</formatVersion>
 
-<!-- 
-16-9 aspect ratio
-based on 1920 x 1080
--->
+    <!--
+    16-9 aspect ratio
+    based on 1920 x 1080
+    -->
 
 	<!-- Metadata Image variations -->
-	<!-- ~~~~~~~~~~~ -->
    	<variables ifSubset="media-type:image">
 		<visiblemix>false</visiblemix>
 	</variables>
@@ -16,8 +15,6 @@ based on 1920 x 1080
 	</variables>
 
 	<!-- System View Grid -->
-	<!-- ~~~~~~~~~~~ -->
-      
 	<view name="system" ifSubset="system-view:grid">
 		<imagegrid name="imagegrid">
 			<h>0.85</h>
@@ -35,67 +32,64 @@ based on 1920 x 1080
 	</view>
 
 	<!-- System View Carousel -->
-	<!-- ~~~~~~~~~~~ -->
-      
 	<view name="system" ifSubset="system-view:carousel">
-			<image name="countline" extra="true">
-				<pos>0.5 0.878</pos>
-				<size>0 ${helpFontSize}</size>
-			</image>
-			<text name="systemInfo">
-				<pos>0.5 0.92</pos>
-				<size>1 ${systemInfoFontSize}</size>
-				<fontSize>${systemInfoFontSize}</fontSize>
-			</text>
+		<image name="countline" extra="true">
+			<pos>0.5 0.878</pos>
+			<size>0 ${helpFontSize}</size>
+		</image>
+		<text name="systemInfo">
+			<pos>0.5 0.92</pos>
+			<size>1 ${systemInfoFontSize}</size>
+			<fontSize>${systemInfoFontSize}</fontSize>
+		</text>
 	</view>
 
-
 	<!-- System View -->
-	<!-- ~~~~~~~~~~~ -->
-      
 	<view name="screen">
 		<stackpanel name="system-indicators" extra="true">
-		<w>0.96875</w><!-- 620 -->
-		<separator>10</separator>
+			<w>0.96875</w><!-- 620 -->
+			<separator>10</separator>
 		</stackpanel>
     </view>
 
 
 	<!-- Logo Variations -->
-	<!-- ~~~~~~~~~~~~~ -->
-	
 	<view name="gamecarousel" >
 		<gamecarousel name="gamecarousel">
-			<logoSize>${itemSizeCarousel}</logoSize>	
+			<logoSize>${itemSizeCarousel}</logoSize>
 			<logoScale>1.3</logoScale>
 			<pos>0.022 -0.18</pos>
 			<size>1.45 1.3</size>
 			<maxLogoCount>5</maxLogoCount>
 			<scaledLogoSpacing>${logospacing}</scaledLogoSpacing>
-		</gamecarousel> 
+		</gamecarousel>
 		<image name="logo">
 			<pos>0.255 0.88</pos>
 			<maxSize>0.25 .08</maxSize>
 		</image>
 	</view>
+
 	<view name="basic">
 		<image name="logo">
 			<pos>0.255 0.5</pos>
 			<maxSize>0.35 .35</maxSize>
 		</image>
-	</view>     
+	</view>
+
 	<view name="detailed">
 		<image name="logo">
 			<pos>0.255 0.88</pos>
 			<maxSize>0.25 .08</maxSize>
 		</image>
-	</view>      
+	</view>
+
 	<view name="grid" ifSubset="metadata:on">
 		<image name="logo">
 			<pos>0.255 0.88</pos>
 			<maxSize>0.25 .08</maxSize>
 		</image>
 	</view>
+
 	<view name="grid" ifSubset="metadata:off">
 		<image name="logo">
 			<pos>0.5 0.91</pos>
@@ -112,9 +106,8 @@ based on 1920 x 1080
 
 
 	<!-- Grid View Extended-->
-	<!-- ~~~~~~~~~~~~~ -->
 	<view name="grid" ifSubset="font-size:small,metadata:on" >
-	
+
 	<!-- Metadata Toggle-->
 		<video name="md_video,">
 			<visible>false</visible>
@@ -181,7 +174,7 @@ based on 1920 x 1080
 			 <pos>0.6041 0.912</pos>
             <size>0.056 ${metaDatafontSize}</size>
 			<fontSize>${metaDatafontSize}</fontSize>
-		</text>		
+		</text>
 		<image name="playtime-logo">
 			<pos>0.594 0.912</pos>
 	        <size>0 0.025</size>
@@ -189,19 +182,19 @@ based on 1920 x 1080
 	</view>
 
 	<!-- Grid View Base-->
-	<!-- ~~~~~~~~~~~~~ -->
 	<view name="grid" ifSubset="font-size:medium|large,metadata:on" >
-	
+
 		<!-- Metadata Toggle-->
-			<video name="md_video,">
-				<visible>false</visible>
-			</video>
-			<image name="md_marquee,md_image,md_thumbnail">
-				<visible>false</visible>
-			</image>
-			<text name="md_description">
-				<visible>false</visible>
-			</text>
+		<video name="md_video,">
+			<visible>false</visible>
+		</video>
+		<image name="md_marquee,md_image,md_thumbnail">
+			<visible>false</visible>
+		</image>
+		<text name="md_description">
+			<visible>false</visible>
+		</text>
+
 		<!-- Metadata-->
 		<image name="game-metadata-background-shadow-base" extra="true">
             <pos>0.725 0.88</pos>
@@ -236,16 +229,14 @@ based on 1920 x 1080
 			 <pos>0.624 0.918</pos>
             <size>0.072 ${metaDatafontSize}</size>
 			<fontSize>${metaDatafontSize}</fontSize>
-		</text>		
+		</text>
 		<image name="playtime-logo">
 			<pos>0.61 0.918</pos>
 	        <size>0 0.030</size>
 		</image>
 	</view>
-	
+
 	<!-- Detailed - Textlist Background  -->
-	<!-- ~~~~~~~~~~~~~ -->
-	
 	<view name="detailed, basic">
 		<image name="game-list-background-shadow" extra="true">
             <origin>0.5 0.5</origin>
@@ -264,7 +255,7 @@ based on 1920 x 1080
 			<linearSmooth>true</linearSmooth>
 			<path>${gamelistBackgroundImageCalculated}</path>
 			<visible>true</visible>
-		</image> 
+		</image>
 		<textlist name="gamelist">
 			<fontPath>${fontBold}</fontPath>
 			<selectorColor>${gamelistSelectorColor}</selectorColor>
@@ -372,17 +363,14 @@ based on 1920 x 1080
 			 <pos>0.0771875 0.562</pos>
             <size>0.07 ${metaDatafontSize}</size>
 			<fontSize>${metaDatafontSize}</fontSize>
-		</text>		
+		</text>
 		<image name="playtime-logo">
 			<pos>0.067 0.562</pos>
 	        <size>0 0.023</size>
 		</image>
 	</view>
 
-
-
 	<!-- Detailed - Medium/Large Metadata -->
-	<!-- ~~~~~~~~~~~~~ -->
 	<view name="detailed, gamecarousel" ifSubset="font-size:medium|large,metadata:on" >
 		<video name="md_video">
 			<pos>0.25 0.28</pos>
@@ -447,15 +435,14 @@ based on 1920 x 1080
 			 <pos>0.177 0.608</pos>
             <size>0.094 ${metaDatafontSize}</size>
 			<fontSize>${metaDatafontSize}</fontSize>
-		</text>		
+		</text>
 		<image name="playtime-logo">
 			<pos>0.165 0.608</pos>
 	        <size>0 0.035</size>
 		</image>
 	</view>
-	
-	<!-- Detailed - Metadata Off -->
 
+	<!-- Detailed - Metadata Off -->
 	<view name="detailed, gamecarousel" ifSubset="metadata:off" >
 	<video name="md_video">
 			<pos>0.255 0.48</pos>
@@ -479,10 +466,9 @@ based on 1920 x 1080
 			<visible>${visiblemix}</visible>
 		</image>
 	</view>
-	
-<!-- Detailed Grid View-->
-	<!-- ~~~~~~~~~~~~~ -->
-	
+
+	<!-- Detailed Grid View-->
+
 	<!-- Detailed Grid- Small Metadata -->
 	<customView name="grid-detailed" ifSubset="font-size:small,metadata:on" >
 		<video name="md_video">
@@ -506,6 +492,7 @@ based on 1920 x 1080
 			<maxSize>0.14 0.16</maxSize>
 			<visible>${visiblemix}</visible>
 		</image>
+
 		<!-- Start: Extended Metadata -->
 		<image name="game-metadata-background-shadow-extended" extra="true">
                    <pos>0.25 0.66058187797</pos>
@@ -570,6 +557,7 @@ based on 1920 x 1080
 			<fontSize>${metaDatafontSize}</fontSize>
 			<visible>true</visible>
 		</text>
+
 		<!-- End: Extended Metadata -->
 		<text name="md_description">
 			 <pos>0.25 ${descriptionPos}</pos>
@@ -582,16 +570,14 @@ based on 1920 x 1080
 			 <pos>0.0771875 0.562</pos>
             <size>0.07 ${metaDatafontSize}</size>
 			<fontSize>${metaDatafontSize}</fontSize>
-		</text>		
+		</text>
 		<image name="playtime-logo">
 			<pos>0.067 0.562</pos>
 	        <size>0 0.023</size>
 		</image>
 	</customView>
 
-
 	<!-- Detailed Grid - Medium/Large Metadata -->
-	<!-- ~~~~~~~~~~~~~ -->
 	<customView name="grid-detailed" ifSubset="font-size:medium|large,metadata:on" >
 		<video name="md_video">
 			<pos>0.25 0.28</pos>
@@ -661,13 +647,13 @@ based on 1920 x 1080
 			 <pos>0.177 0.608</pos>
             <size>0.094 ${metaDatafontSize}</size>
 			<fontSize>${metaDatafontSize}</fontSize>
-		</text>		
+		</text>
 		<image name="playtime-logo">
 			<pos>0.165 0.608</pos>
 	        <size>0 0.035</size>
 		</image>
 	</customView>
-	
+
 	<view name="grid" ifSubset="metadata:off" >
 			<video name="md_video,">
 				<visible>false</visible>
@@ -676,9 +662,8 @@ based on 1920 x 1080
 				<visible>false</visible>
 			</image>
 	</view>
-	
-	<!-- Detailed Grid - Metadata Off -->
 
+	<!-- Detailed Grid - Metadata Off -->
 	<customView name="grid-detailed" ifSubset="metadata:off" >
 	<video name="md_video">
 			<pos>0.255 0.48</pos>
@@ -702,6 +687,5 @@ based on 1920 x 1080
 			<visible>${visiblemix}</visible>
 		</image>
 	</customView>
-
 
 </theme>

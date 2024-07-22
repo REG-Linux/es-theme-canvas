@@ -2,10 +2,8 @@
 
 <theme defaultTransition="instant">
 	<formatVersion>7</formatVersion>
-	
 
     <!-- System View: Carousel-->
-	<!-- ~~~~~~~~~~~ -->
 	<view name="system" ifSubset="system-view:carousel">
 		<carousel name="systemcarousel">
 			<type>horizontal</type>
@@ -22,16 +20,15 @@
             <defaultTransition>instant</defaultTransition>
 			<systemInfoDelay>0.05</systemInfoDelay>
 			<linearSmooth>true</linearSmooth>
-						
+
 			<!-- System View: Carousel (Icon)-->
-			<!-- ~~~~~~~~~~~ -->
 			<itemTemplate>
 				<storyboard event="activate">
 					<animation property="scale" to="1.05" duration="150" mode="easeOut"/>
 				</storyboard>
 				<storyboard event="deactivate">
 					<animation property="scale" to="1" duration="250" mode="easeOut"/>
-				</storyboard> 
+				</storyboard>
 				<image name="backdrop" extra="true">
 					<path>./_inc/system-view/icon.webp</path>
 					<pos>0.5 0.5</pos>
@@ -104,7 +101,5 @@
             <visible>false</visible>
 		</text>
 	</view>
-	
 
- 
 </theme>

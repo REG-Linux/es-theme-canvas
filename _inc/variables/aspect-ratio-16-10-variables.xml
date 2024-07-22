@@ -7,8 +7,6 @@ based on 1920 x 1080
 -->
 
 	<!-- Variables -->
-	<!-- ~~~~~~~~~~~ -->
-
 	<variables ifSubset="font-size:small">
             <systemDescriptionFontSize>0.038</systemDescriptionFontSize>  
             <systemYearFontSize>0.038</systemYearFontSize>    
@@ -77,8 +75,7 @@ based on 1920 x 1080
             <descriptionFontSize>0.032</descriptionFontSize>
             <descriptionLineSpacing>1.6</descriptionLineSpacing>
             <linecount>11</linecount>
-   </variables>
-   
+   </variables>   
    
 	<variables>
 		<CornersGrid>10</CornersGrid>
@@ -86,6 +83,5 @@ based on 1920 x 1080
 		<CornersMedium>30</CornersMedium>
 		<CornersLarge>60</CornersLarge>
 	</variables>
-
 
 </theme>
