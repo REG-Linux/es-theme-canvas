@@ -1,5 +1,4 @@
 ﻿<theme>
-
       <!--   Preset Color Schemes   -->
       <variables ifSubset="color-scheme:retro">
             <helpTextColor>5b5a58</helpTextColor>

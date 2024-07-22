@@ -223,10 +223,6 @@ Licnese: Creative Commons CC-BY-NC-SA
 		<image name="background-art" extra="true">
 			<path ifSubset="color-scheme:light|dark|retro|neon|sony|snes|famicom|pastel">${backgroundArtPath}.jpg</path>
 			<path ifSubset="color-scheme:light|dark|retro|neon|sony|snes|famicom|pastel">${backgroundArtPath}.webp</path>
-			<path ifSubset="color-scheme:custom">/userdata/wallpapers/custom.webp</path>
-			<path ifSubset="color-scheme:custom">/userdata/wallpapers/custom.jpg</path>
-			<path ifSubset="color-scheme:custom">${themePath}/wallpapers/custom.jpg</path>
-			<path ifSubset="color-scheme:custom">${themePath}/wallpapers/custom.webp</path>
 			<origin>0.5 0.5</origin>
 			<pos>0.5 0.5</pos>
 			<minSize>1 1</minSize>
@@ -494,25 +490,6 @@ Licnese: Creative Commons CC-BY-NC-SA
 		<include name="medium" displayName="3 Columns"/>
 		<include name="small" displayName="4 Columns"/>
 	</subset>
-
-	<customView name="grid-detailed" inherits="grid" displayName="Grid (Detailed)">
-		<imagegrid name="gamegrid">
-      		<pos>0.5 0</pos>
-      		<size ifHelpPrompts="true">0.5 0.95</size>
-      		<size ifHelpPrompts="false">0.5 1</size>
-		</imagegrid>
-		<imagegrid name="gamegrid" ifSubset="autogriddetailedsize:automatic">
-    		<autoLayout ifSubset="aspect-ratio:16-9|16-9-auto">3 0</autoLayout>
-			<autoLayout ifSubset="aspect-ratio:16-10|16-10-auto">3 0</autoLayout>
-			<autoLayout ifSubset="aspect-ratio:1-1|1-1-auto">2 0</autoLayout>
-			<autoLayout ifSubset="aspect-ratio:4-3|4-3-auto">2 0</autoLayout>
-		</imagegrid>
-		<imagegrid name="gamegrid" ifSubset="autogriddetailedsize:small,medium,large">
-			<autoLayout ifSubset="autogriddetailedsize:large">2 0</autoLayout>
-			<autoLayout ifSubset="autogriddetailedsize:medium">3 0</autoLayout>
-			<autoLayout ifSubset="autogriddetailedsize:small">4 0</autoLayout>
-		</imagegrid>
-	</customView>
 
 	<!-- Aspect Ratios -->
    <include ifSubset="aspect-ratio:16-9|16-9-auto">./aspect-ratio-16-9.xml</include>
