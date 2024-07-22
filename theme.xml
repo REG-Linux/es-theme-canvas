@@ -12,7 +12,6 @@ Licnese: Creative Commons CC-BY-NC-SA
 	<!-- Includes -->
 	<include>./fonts.xml</include>
 	<include>./file_paths.xml</include>
-	<include>./_inc/systems/metadata/${system.theme}.xml</include>
 
 	<!-- Aspect Ratios -->
 	<subset name="aspect-ratio" displayName="Aspect Ratio">
