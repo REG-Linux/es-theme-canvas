@@ -480,22 +480,6 @@
 			<maxSize>0.448958333333333 0.38</maxSize>
 			<visible>true</visible>
 		</video>
-		<image name="md_marquee">
-			<pos>0.37 0.10</pos>
-			<maxSize>0.21 0.16</maxSize>
-			<visible>${visiblemix}</visible>
-		</image>
-		<image name="md_image">
-			<pos>0.25 0.28</pos>
-			<maxSize>0.42 0.38</maxSize>
-			<visible>true</visible>
-		</image>
-		<image name="md_thumbnail">
-			<pos>0.06 0.38</pos>
-			<maxSize>0.14 0.16</maxSize>
-			<visible>${visiblemix}</visible>
-		</image>
-
 		<image name="game-metadata-background-shadow-extended" extra="true">
             <pos>0.25 0.66058187797</pos>
             <size>0.41089191099 0.36407719227</size>
@@ -576,22 +560,6 @@
 			<maxSize>0.448958333333333 0.38</maxSize>
 			<visible>true</visible>
 		</video>
-		<image name="md_marquee">
-			<pos>0.37 0.10</pos>
-			<maxSize>0.21 0.16</maxSize>
-			<visible>${visiblemix}</visible>
-		</image>
-		<image name="md_image">
-			<pos>0.25 0.28</pos>
-			<maxSize>0.42 0.42</maxSize>
-			<visible>true</visible>
-		</image>
-		<image name="md_thumbnail">
-			<pos>0.10 0.38</pos>
-			<maxSize>0.14 0.16</maxSize>
-			<visible>${visiblemix}</visible>
-		</image>
-
 		<image name="game-metadata-background-shadow-base" extra="true">
 			<pos>0.255 0.6622</pos>
 			<size>0.4930952592 0.33764766516</size>
@@ -647,21 +615,6 @@
 			<maxSize>0.386 0.40</maxSize>
 			<visible>true</visible>
 		</video>
-		<image name="md_marquee">
-			<pos>0.37 0.30</pos>
-			<maxSize>0.21 0.16</maxSize>
-			<visible>${visiblemix}</visible>
-		</image>
-		<image name="md_image">
-			<pos>0.255 0.48</pos>
-			<maxSize>0.42 0.42</maxSize>
-			<visible>true</visible>
-		</image>
-		<image name="md_thumbnail">
-			<pos>0.04 0.58</pos>
-			<maxSize>0.16 0.18</maxSize>
-			<visible>${visiblemix}</visible>
-		</image>
 	</view>
 
 	<!-- Detailed Grid View-->
