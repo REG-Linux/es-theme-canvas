@@ -1,13 +1,12 @@
 <theme>
 	<formatVersion>7</formatVersion>
 
-<!-- 
-16-9 aspect ratio
-based on 1920 x 1080
--->
+    <!--
+    16-9 aspect ratio
+    based on 1920 x 1080
+    -->
 
 	<!-- Metadata Image variations -->
-	<!-- ~~~~~~~~~~~ -->
    	<variables ifSubset="media-type:image">
 		<visiblemix>false</visiblemix>
 	</variables>
@@ -16,8 +15,6 @@ based on 1920 x 1080
 	</variables>
 
 	<!-- System View Grid -->
-	<!-- ~~~~~~~~~~~ -->
-      
 	<view name="system" ifSubset="system-view:grid">
 		<imagegrid name="imagegrid">
 			<h>0.85</h>
@@ -33,173 +30,166 @@ based on 1920 x 1080
             <fontSize>${systemInfoFontSize}</fontSize>
 		</text>
 
-					<imagegrid name="imagegrid">
-						<zIndex>20</zIndex>
-						<pos>0.008 0.08</pos>
-							<size>0.975 0.9</size>
-							<autoLayout ifSubset="sysgridsize:automatic">3 2</autoLayout>
-							<autoLayout ifSubset="sysgridsize:automatic,aspect-ratio:16-9|16-9-auto|16-10|16-10-auto">4 2</autoLayout>
-							<autoLayout ifSubset="sysgridsize:automatic,aspect-ratio:1-1|1-1-auto">3 3</autoLayout>
-							<autoLayout ifSubset="sysgridsize:3x1">3 1</autoLayout>
-							<autoLayout ifSubset="sysgridsize:3x2">3 2</autoLayout>
-							<autoLayout ifSubset="sysgridsize:3x3">3 3</autoLayout>
-							<autoLayout ifSubset="sysgridsize:4x2">4 2</autoLayout>
-							<autoLayout ifSubset="sysgridsize:4x3">4 3</autoLayout>
-							<autoLayout ifSubset="sysgridsize:4x4">4 4</autoLayout>
-							<autoLayout ifSubset="sysgridsize:5x4">5 4</autoLayout>
-						<cellProportion>1</cellProportion>
-						<margin>0</margin>
-						<padding>0 0 0 0</padding>
-						<scrollbarColor>96969620</scrollbarColor>
-						<scrollbarCorner>0.49</scrollbarCorner>
-						<scrollbarSize>0.005</scrollbarSize>
-						<scrollbarAlignment>right</scrollbarAlignment>
+		<imagegrid name="imagegrid">
+			<zIndex>20</zIndex>
+			<pos>0.008 0.08</pos>
+			<size>0.975 0.9</size>
+			<autoLayout ifSubset="sysgridsize:automatic">3 2</autoLayout>
+			<autoLayout ifSubset="sysgridsize:automatic,aspect-ratio:16-9|16-9-auto|16-10|16-10-auto">4 2</autoLayout>
+			<autoLayout ifSubset="sysgridsize:automatic,aspect-ratio:1-1|1-1-auto">3 3</autoLayout>
+			<autoLayout ifSubset="sysgridsize:3x1">3 1</autoLayout>
+			<autoLayout ifSubset="sysgridsize:3x2">3 2</autoLayout>
+			<autoLayout ifSubset="sysgridsize:3x3">3 3</autoLayout>
+			<autoLayout ifSubset="sysgridsize:4x2">4 2</autoLayout>
+			<autoLayout ifSubset="sysgridsize:4x3">4 3</autoLayout>
+			<autoLayout ifSubset="sysgridsize:4x4">4 4</autoLayout>
+			<autoLayout ifSubset="sysgridsize:5x4">5 4</autoLayout>
+			<cellProportion>1</cellProportion>
+			<margin>0</margin>
+			<padding>0 0 0 0</padding>
+			<scrollbarColor>96969620</scrollbarColor>
+			<scrollbarCorner>0.49</scrollbarCorner>
+			<scrollbarSize>0.005</scrollbarSize>
+			<scrollbarAlignment>right</scrollbarAlignment>
 
-						<itemTemplate>
-
-					
-					<!-- System View: Grid (Icons)-->
-					<!-- ~~~~~~~~~~~ -->
-						<container>
-						<scale>1</scale>
-						<storyboard event="activate">
-							<animation property="scale" to="1.05" duration="150" mode="easeOut"/>
+			<itemTemplate>
+				<!-- System View: Grid (Icons)-->
+				<container>
+					<scale>1</scale>
+					<storyboard event="activate">
+						<animation property="scale" to="1.05" duration="150" mode="easeOut"/>
+					</storyboard>
+					<storyboard event="deactivate">
+						<animation property="scale" to="1" duration="250" mode="easeOut"/>
+					</storyboard>
+					<!-- Selector -->
+					<image name="selector" extra="true">
+						<path>${themePath}/_inc/system-view/4-5.png</path>
+						<pos>0.5 0.5</pos>
+						<origin>0.5</origin>
+						<maxSize>.92 0.98</maxSize>
+						<linearSmooth>true</linearSmooth>
+						<zIndex>6</zIndex>
+						<color>00000000</color>
+						<storyboard event="activate" repeat="forever">
+							<animation property="path" to="${themePath}/_inc/system-view/4-5.png"/>
+							<animation property="color" from="${systemCarouselSelectorColor}00" to="${systemCarouselSelectorColor}" duration="1000" mode="easeOut"/>
+							<animation property="color" from="${systemCarouselSelectorColor}" to="${systemCarouselSelectorColor}00" begin="1500" duration="1000" mode="easeOut"/>
 						</storyboard>
 						<storyboard event="deactivate">
-							<animation property="scale" to="1" duration="250" mode="easeOut"/>
+							<animation property="path" to="${themePath}/_inc/system-view/4-5.png"/>
+							<animation property="color" to="00000000"/>
 						</storyboard>
-						<!-- Selector -->
-						<image name="selector" extra="true">
-							<path>${themePath}/_inc/system-view/4-5.png</path>
-							<pos>0.5 0.5</pos>
-							<origin>0.5</origin>
-							<maxSize>.92 0.98</maxSize>
-							<linearSmooth>true</linearSmooth>
-							<zIndex>6</zIndex>
-							<color>00000000</color>
-							<storyboard event="activate" repeat="forever">
-								<animation property="path" to="${themePath}/_inc/system-view/4-5.png"/>
-								<animation property="color" from="${systemCarouselSelectorColor}00" to="${systemCarouselSelectorColor}" duration="1000" mode="easeOut"/>
-								<animation property="color" from="${systemCarouselSelectorColor}" to="${systemCarouselSelectorColor}00" begin="1500" duration="1000" mode="easeOut"/>
-							</storyboard>
-							<storyboard event="deactivate">
-								<animation property="path" to="${themePath}/_inc/system-view/4-5.png"/>
-								<animation property="color" to="00000000"/>
-							</storyboard>
+					</image>
+					<image name="backdrop" extra="true">
+						<path>./_inc/system-view/icon.png</path>
+						<pos>0.5 0.5</pos>
+						<origin>0.5</origin>
+						<maxSize>0.845 0.895</maxSize>
+						<roundCorners>${CornersSmall}</roundCorners>
+						<opacity>0.6</opacity>
+						<color>${BackdropColor}</color>
+						<zIndex>3</zIndex>
 						</image>
-						<image name="backdrop" extra="true">
-							<path>./_inc/system-view/icon.png</path>
-							<pos>0.5 0.5</pos>
-							<origin>0.5</origin>
-							<maxSize>0.845 0.895</maxSize>
-							<roundCorners>${CornersSmall}</roundCorners>
-							<opacity>0.6</opacity>
-							<color>${BackdropColor}</color>
-							<zIndex>3</zIndex>
-							</image>
-						<image name="shade" extra="true">
-							<path>./_inc/system-view/4-5-bg.png</path>
-							<pos>0.5 0.5</pos>
-							<origin>0.5</origin>
-							<maxSize>0.95 0.98</maxSize>
-							<roundCorners>${CornersSmall}</roundCorners>
-							<opacity>0.6</opacity>
-							<zIndex>2</zIndex>
-							</image>
-						<image name="systemBack" extra="true">
-							<path>${themePath}/_inc/systems/carousel-icons-icons/{system:theme}.webp</path>
-							<pos>0.5 0.45</pos>
-							<origin>0.5</origin>
-							<maxSize>0.8 0.9</maxSize>
-							<scale>1</scale>
+					<image name="shade" extra="true">
+						<path>./_inc/system-view/4-5-bg.png</path>
+						<pos>0.5 0.5</pos>
+						<origin>0.5</origin>
+						<maxSize>0.95 0.98</maxSize>
+						<roundCorners>${CornersSmall}</roundCorners>
+						<opacity>0.6</opacity>
+						<zIndex>2</zIndex>
 						</image>
-						<image name="systemBack" extra="true">
-							<opacity>.90</opacity>
-							<linearSmooth>true</linearSmooth>
-							<zIndex>4</zIndex>
-							<storyboard event="activate">
-							<animation property="opacity" to="1.00" duration="250" mode="easeOut"/>
-							</storyboard>
-							<storyboard event="deactivate">
-							<animation property="opacity" to=".90" duration="250" mode="easeOut"/>
-							</storyboard>
+					<image name="systemBack" extra="true">
+						<path>${themePath}/_inc/systems/carousel-icons-icons/{system:theme}.webp</path>
+						<pos>0.5 0.45</pos>
+						<origin>0.5</origin>
+						<maxSize>0.8 0.9</maxSize>
+						<scale>1</scale>
+					</image>
+					<image name="systemBack" extra="true">
+						<opacity>.90</opacity>
+						<linearSmooth>true</linearSmooth>
+						<zIndex>4</zIndex>
+						<storyboard event="activate">
+						<animation property="opacity" to="1.00" duration="250" mode="easeOut"/>
+						</storyboard>
+						<storyboard event="deactivate">
+						<animation property="opacity" to=".90" duration="250" mode="easeOut"/>
+						</storyboard>
+					</image>
+					<image name="theLogoImage" pos="0.5 0.65" origin="0.5 0" maxSize="0.45 0.25" linearSmooth="true" extra="true">
+						<path>${themePath}/_inc/systems/logos/{system:theme}.svg</path>
+						<zIndex>5</zIndex>
+						<color>${systemInfoColor}</color>
 						</image>
-						<image name="theLogoImage" pos="0.5 0.65" origin="0.5 0" maxSize="0.45 0.25" linearSmooth="true" extra="true">
-							<path>${themePath}/_inc/systems/logos/{system:theme}.svg</path>
-							<zIndex>5</zIndex>
-							<color>${systemInfoColor}</color>
-							</image>
-						<container padding="0">
-								<text name="fallbackText" alignment="center" multiLine="true">
-									<origin>0 0.5</origin>
-									<pos>0 0.5</pos>
-									<size>1 1</size>
-									<forceUppercase>true</forceUppercase>
-									<visible>false</visible>
-									<visible>!exists("${themePath}/_inc/systems/carousel-icons-icons/" + {system:theme} + ".webp")</visible>
-									<text>{system:fullName}</text>
-										<fontSize>${systemDescriptionFontSize}</fontSize>
-										<fontPath>${fontBold}</fontPath>
-									<color>${systemInfoColor}</color>
-									<scale>1</scale>
-									<zIndex>5</zIndex>
-								</text>
-							<opacity>0.9</opacity>
-							<storyboard event="activate">
-							<animation property="opacity" to="1"/>
-							</storyboard>
-							<storyboard event="deactivate">
-							<animation property="opacity" to="0.9" duration="250" mode="easeOut"/>
-							</storyboard>
-						</container>
-						</container>
-
-						</itemTemplate>
-						</imagegrid>
-
-						<text name="systemInfo">
+					<container padding="0">
+						<text name="fallbackText" alignment="center" multiLine="true">
+							<origin>0 0.5</origin>
+							<pos>0 0.5</pos>
+							<size>1 1</size>
+							<forceUppercase>true</forceUppercase>
 							<visible>false</visible>
+							<visible>!exists("${themePath}/_inc/systems/carousel-icons-icons/" + {system:theme} + ".webp")</visible>
+							<text>{system:fullName}</text>
+								<fontSize>${systemDescriptionFontSize}</fontSize>
+								<fontPath>${fontBold}</fontPath>
+							<color>${systemInfoColor}</color>
+							<scale>1</scale>
+							<zIndex>5</zIndex>
 						</text>
+						<opacity>0.9</opacity>
+						<storyboard event="activate">
+							<animation property="opacity" to="1"/>
+						</storyboard>
+						<storyboard event="deactivate">
+							<animation property="opacity" to="0.9" duration="250" mode="easeOut"/>
+						</storyboard>
+					</container>
+				</container>
+			</itemTemplate>
+		</imagegrid>
+
+		<text name="systemInfo">
+			<visible>false</visible>
+		</text>
 	</view>
 
 	<!-- System View Carousel -->
-	<!-- ~~~~~~~~~~~ -->
-      
 	<view name="system" ifSubset="system-view:carousel">
-			<image name="countline" extra="true">
-				<pos>0.5 0.858</pos>
-				<size>0 ${helpFontSize}</size>
-			</image>
-			<text name="systemInfo">
-				<pos>0.5 0.90</pos>
-				<size>1 ${systemInfoFontSize}</size>
-				<fontSize>${systemInfoFontSize}</fontSize>
-			</text>
-			<carousel name="systemcarousel">
-				<type>horizontal</type>
-				<origin>0.5 0.5</origin>
-				<pos>0.5 0.48</pos>
-				<size>1 1</size>
-				<logoSize>${itemsize}</logoSize>
-				<maxLogoCount>${itemcount}</maxLogoCount>
-				<color>ffffff00</color>
-				<logoScale>1.3</logoScale>
-				<scaledLogoSpacing>${logospacing}</scaledLogoSpacing>
-				<minLogoOpacity>0.9</minLogoOpacity>
-				<logoAlignment>center</logoAlignment>
-				<defaultTransition>instant</defaultTransition>
-				<systemInfoDelay>0.05</systemInfoDelay>
-				<linearSmooth>true</linearSmooth>
-						
+		<image name="countline" extra="true">
+			<pos>0.5 0.858</pos>
+			<size>0 ${helpFontSize}</size>
+		</image>
+		<text name="systemInfo">
+			<pos>0.5 0.90</pos>
+			<size>1 ${systemInfoFontSize}</size>
+			<fontSize>${systemInfoFontSize}</fontSize>
+		</text>
+		<carousel name="systemcarousel">
+			<type>horizontal</type>
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.48</pos>
+			<size>1 1</size>
+			<logoSize>${itemsize}</logoSize>
+			<maxLogoCount>${itemcount}</maxLogoCount>
+			<color>ffffff00</color>
+			<logoScale>1.3</logoScale>
+			<scaledLogoSpacing>${logospacing}</scaledLogoSpacing>
+			<minLogoOpacity>0.9</minLogoOpacity>
+			<logoAlignment>center</logoAlignment>
+			<defaultTransition>instant</defaultTransition>
+			<systemInfoDelay>0.05</systemInfoDelay>
+			<linearSmooth>true</linearSmooth>
+
 			<!-- System View: Carousel (Icon)-->
-			<!-- ~~~~~~~~~~~ -->
 			<itemTemplate>
 				<storyboard event="activate">
 					<animation property="scale" to="1.05" duration="150" mode="easeOut"/>
 				</storyboard>
 				<storyboard event="deactivate">
 					<animation property="scale" to="1" duration="250" mode="easeOut"/>
-				</storyboard> 
+				</storyboard>
 				<image name="backdrop" extra="true">
 					<path>./_inc/system-view/icon.png</path>
 					<pos>0.5 0.5</pos>
@@ -210,7 +200,7 @@ based on 1920 x 1080
 					<opacity>0.6</opacity>
 					<zIndex>4</zIndex>
 					<color>${BackdropColor}</color>
-					</image>
+				</image>
 				<image name="shade" extra="true">
 					<path>${themePath}/_inc/system-view/4-5-bg.png</path>
 					<pos>0.5 0.5</pos>
@@ -260,7 +250,7 @@ based on 1920 x 1080
 					<text>{system:fullName}</text>
 					<fontSize>${systemDescriptionFontSize}</fontSize>
 					<fontPath>${fontBold}</fontPath>
-              		<color>${systemInfoColor}</color>
+					<color>${systemInfoColor}</color>
 					<scale>1.5</scale>
 					<zIndex>6</zIndex>
 				</text>
@@ -268,7 +258,7 @@ based on 1920 x 1080
 					<path>${themePath}/_inc/systems/logos/{system:theme}.svg</path>
 					<zIndex>6</zIndex>
 					<color>${systemInfoColor}</color>
-					</image>
+				</image>
 			</itemTemplate>
 		</carousel>
 		<text name="systemInfoGrid" extra="true">
@@ -276,30 +266,24 @@ based on 1920 x 1080
 		</text>
 	</view>
 
-
 	<!-- System View -->
-	<!-- ~~~~~~~~~~~ -->
-      
 	<view name="screen">
 		<stackpanel name="system-indicators" extra="true">
-		<w>0.96875</w><!-- 620 -->
-		<separator>10</separator>
+			<w>0.96875</w><!-- 620 -->
+			<separator>10</separator>
 		</stackpanel>
     </view>
 
-
 	<!-- Logo Variations -->
-	<!-- ~~~~~~~~~~~~~ -->
-	
 	<view name="gamecarousel" >
 		<gamecarousel name="gamecarousel">
-			<logoSize>${itemSizeCarousel}</logoSize>	
+			<logoSize>${itemSizeCarousel}</logoSize>
 			<logoScale>1.3</logoScale>
 			<pos>0.022 -0.18</pos>
 			<size>1.45 1.3</size>
 			<maxLogoCount>5</maxLogoCount>
 			<scaledLogoSpacing>${logospacing}</scaledLogoSpacing>
-		</gamecarousel> 
+		</gamecarousel>
 		<image name="logo">
 			<pos>0.255 0.88</pos>
 			<maxSize>0.25 .08</maxSize>
@@ -310,13 +294,13 @@ based on 1920 x 1080
 			<pos>0.255 0.5</pos>
 			<maxSize>0.35 .35</maxSize>
 		</image>
-	</view>     
+	</view>
 	<view name="detailed">
 		<image name="logo">
 			<pos>0.255 0.88</pos>
 			<maxSize>0.25 .08</maxSize>
 		</image>
-	</view>      
+	</view>
 	<view name="grid" ifSubset="metadata:on">
 		<image name="logo">
 			<pos>0.255 0.88</pos>
@@ -339,10 +323,9 @@ based on 1920 x 1080
 
 
 	<!-- Grid View Extended-->
-	<!-- ~~~~~~~~~~~~~ -->
 	<view name="grid" ifSubset="font-size:small,metadata:on" >
-	
-	<!-- Metadata Toggle-->
+
+		<!-- Metadata Toggle-->
 		<video name="md_video,">
 			<visible>false</visible>
 		</video>
@@ -353,7 +336,7 @@ based on 1920 x 1080
 			<visible>false</visible>
 		</text>
 
-	<!-- Metadata-->
+		<!-- Metadata-->
 		<image name="game-metadata-background-shadow-extended" extra="true">
             <pos>0.731 0.884</pos>
             <size>0.46944928757 0.13288403122</size>
@@ -408,7 +391,7 @@ based on 1920 x 1080
 			 <pos>0.6041 0.912</pos>
             <size>0.056 ${metaDatafontSize}</size>
 			<fontSize>${metaDatafontSize}</fontSize>
-		</text>		
+		</text>
 		<image name="playtime-logo">
 			<pos>0.594 0.912</pos>
 	        <size>0 0.025</size>
@@ -416,19 +399,18 @@ based on 1920 x 1080
 	</view>
 
 	<!-- Grid View Base-->
-	<!-- ~~~~~~~~~~~~~ -->
 	<view name="grid" ifSubset="font-size:medium|large,metadata:on" >
-	
+
 		<!-- Metadata Toggle-->
-			<video name="md_video,">
-				<visible>false</visible>
-			</video>
-			<image name="md_marquee,md_image,md_thumbnail">
-				<visible>false</visible>
-			</image>
-			<text name="md_description">
-				<visible>false</visible>
-			</text>
+		<video name="md_video,">
+			<visible>false</visible>
+		</video>
+		<image name="md_marquee,md_image,md_thumbnail">
+			<visible>false</visible>
+		</image>
+		<text name="md_description">
+			<visible>false</visible>
+		</text>
 		<!-- Metadata-->
 		<image name="game-metadata-background-shadow-base" extra="true">
             <pos>0.725 0.88</pos>
@@ -463,16 +445,14 @@ based on 1920 x 1080
 			 <pos>0.624 0.918</pos>
             <size>0.072 ${metaDatafontSize}</size>
 			<fontSize>${metaDatafontSize}</fontSize>
-		</text>		
+		</text>
 		<image name="playtime-logo">
 			<pos>0.61 0.918</pos>
 	        <size>0 0.030</size>
 		</image>
 	</view>
-	
+
 	<!-- Detailed - Textlist Background  -->
-	<!-- ~~~~~~~~~~~~~ -->
-	
 	<view name="detailed, basic">
 		<image name="game-list-background-shadow" extra="true">
             <origin>0.5 0.5</origin>
@@ -491,7 +471,7 @@ based on 1920 x 1080
 			<linearSmooth>true</linearSmooth>
 			<path>${gamelistBackgroundImageCalculated}</path>
 			<visible>true</visible>
-		</image> 
+		</image>
 		<textlist name="gamelist">
 			<fontPath>${fontBold}</fontPath>
 			<selectorColor>${gamelistSelectorColor}</selectorColor>
@@ -599,17 +579,14 @@ based on 1920 x 1080
 			 <pos>0.0771875 0.562</pos>
             <size>0.07 ${metaDatafontSize}</size>
 			<fontSize>${metaDatafontSize}</fontSize>
-		</text>		
+		</text>
 		<image name="playtime-logo">
 			<pos>0.067 0.562</pos>
 	        <size>0 0.023</size>
 		</image>
 	</view>
 
-
-
 	<!-- Detailed - Medium/Large Metadata -->
-	<!-- ~~~~~~~~~~~~~ -->
 	<view name="detailed, gamecarousel" ifSubset="font-size:medium|large,metadata:on" >
 		<video name="md_video">
 			<pos>0.25 0.28</pos>
@@ -634,13 +611,13 @@ based on 1920 x 1080
 		</image>
 
 		<image name="game-metadata-background-shadow-base" extra="true">
-                  <pos>0.255 0.6622</pos>
-                  <size>0.4930952592 0.33764766516</size>
+			<pos>0.255 0.6622</pos>
+			<size>0.4930952592 0.33764766516</size>
             <path>./_inc/images/detailed/gamelist-metadata-background-shadow-base.webp</path>
 		</image>
 		<image name="game-metadata-background-image-base" extra="true">
-                  <pos>0.255 0.6622</pos>
-                  <size>0.4632 0.29289</size>
+			<pos>0.255 0.6622</pos>
+			<size>0.4632 0.29289</size>
             <path>./_inc/images/detailed/${gamelistMetadataBackgroundImage}-base.webp</path>
 		</image>
 		<rating name="md_rating">
@@ -674,15 +651,14 @@ based on 1920 x 1080
 			 <pos>0.177 0.608</pos>
             <size>0.094 ${metaDatafontSize}</size>
 			<fontSize>${metaDatafontSize}</fontSize>
-		</text>		
+		</text>
 		<image name="playtime-logo">
 			<pos>0.165 0.608</pos>
 	        <size>0 0.035</size>
 		</image>
 	</view>
-	
-	<!-- Detailed - Metadata Off -->
 
+	<!-- Detailed - Metadata Off -->
 	<view name="detailed, gamecarousel" ifSubset="metadata:off" >
 	<video name="md_video">
 			<pos>0.255 0.48</pos>
@@ -706,10 +682,8 @@ based on 1920 x 1080
 			<visible>${visiblemix}</visible>
 		</image>
 	</view>
-	
-<!-- Detailed Grid View-->
-	<!-- ~~~~~~~~~~~~~ -->
-	
+
+	<!-- Detailed Grid View-->
 	<!-- Detailed Grid- Small Metadata -->
 	<customView name="grid-detailed" ifSubset="font-size:small,metadata:on" >
 		<video name="md_video">
@@ -809,16 +783,14 @@ based on 1920 x 1080
 			 <pos>0.0771875 0.562</pos>
             <size>0.07 ${metaDatafontSize}</size>
 			<fontSize>${metaDatafontSize}</fontSize>
-		</text>		
+		</text>
 		<image name="playtime-logo">
 			<pos>0.067 0.562</pos>
 	        <size>0 0.023</size>
 		</image>
 	</customView>
 
-
 	<!-- Detailed Grid - Medium/Large Metadata -->
-	<!-- ~~~~~~~~~~~~~ -->
 	<customView name="grid-detailed" ifSubset="font-size:medium|large,metadata:on" >
 		<video name="md_video">
 			<pos>0.25 0.28</pos>
@@ -888,13 +860,13 @@ based on 1920 x 1080
 			 <pos>0.177 0.608</pos>
             <size>0.094 ${metaDatafontSize}</size>
 			<fontSize>${metaDatafontSize}</fontSize>
-		</text>		
+		</text>
 		<image name="playtime-logo">
 			<pos>0.165 0.608</pos>
 	        <size>0 0.035</size>
 		</image>
 	</customView>
-	
+
 	<view name="grid" ifSubset="metadata:off" >
 			<video name="md_video,">
 				<visible>false</visible>
@@ -903,9 +875,8 @@ based on 1920 x 1080
 				<visible>false</visible>
 			</image>
 	</view>
-	
-	<!-- Detailed Grid - Metadata Off -->
 
+	<!-- Detailed Grid - Metadata Off -->
 	<customView name="grid-detailed" ifSubset="metadata:off" >
 	<video name="md_video">
 			<pos>0.255 0.48</pos>
@@ -929,6 +900,5 @@ based on 1920 x 1080
 			<visible>${visiblemix}</visible>
 		</image>
 	</customView>
-
 
 </theme>

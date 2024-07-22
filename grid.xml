@@ -2,12 +2,8 @@
 <theme>
 <formatVersion>7</formatVersion>
 
-	   	
-   <!--
-   ///
-   Subset: Auto Grid Options
-   ///
-   -->
+
+   <!-- Subset: Auto Grid Options -->
 	<subset name="autogridsize" displayName="Automatic Grid Size" appliesTo="grid" >
 		<include name="automatic" displayName="Automatic"/>
 		<include name="large" displayName="2 Rows"/>
@@ -16,7 +12,6 @@
 	</subset>
 
 	<!-- Game Grid View -->
-	<!-- ~~~~~~~~~~~ -->
 	<view name="grid">
 		<imagegrid name="gamegrid" ifSubset="autogridsize:automatic">
     		<autoLayout ifSubset="aspect-ratio:16-9|16-9-auto">0 2</autoLayout>
@@ -54,7 +49,7 @@
       		<pos>0.0125 0.08</pos>
       		<size ifSubset="metadata:on">0.975 0.72</size>
       		<size ifSubset="metadata:off">0.975 0.78</size>
-			<padding>7 7 7 7</padding>			
+			<padding>7 7 7 7</padding>
 			<imageSource>cover</imageSource>
 			<scrollbarColor>${secondaryColor}</scrollbarColor>
 			<scrollbarCorner>0.49</scrollbarCorner>
@@ -76,13 +71,12 @@
 			<linearSmooth>true</linearSmooth>
 			<roundCorners>${CornersGrid}</roundCorners>
 			<scale>0.99</scale>
-    	</image>  
+    	</image>
     	<ninepatch name="gridtile.background:selected">
 			<color>${systemCarouselSelectorColor}</color>
 			<animateColor>${systemCarouselSelectorColor}00</animateColor>
 			<animateColorTime>800</animateColorTime>
 			<scale>0.9</scale>
     	</ninepatch>
-		
 	</view>
 </theme>
