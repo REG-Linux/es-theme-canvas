@@ -6,14 +6,6 @@
     based on 640x480
     -->
 
-	<!-- Metadata Image variations -->
-   	<variables ifSubset="media-type:image">
-		<visiblemix>false</visiblemix>
-	</variables>
-   	<variables ifSubset="media-type:miximage">
-		<visiblemix>true</visiblemix>
-	</variables>
-
 	<!-- System View Grid -->
 	<view name="system" ifSubset="system-view:grid">
 		<imagegrid name="imagegrid">
@@ -280,8 +272,7 @@
 		</image>
 		<image name="md_image">
 			<pos>0.255 0.28</pos>
-			<maxSize ifSubset="media-type:image">0.42 0.42</maxSize>
-			<maxSize ifSubset="media-type:miximage">0.386 0.35</maxSize>
+			<maxSize>0.42 0.42</maxSize>
 			<visible>true</visible>
 		</image>
 		<image name="md_thumbnail">
@@ -377,8 +368,7 @@
 		</image>
 		<image name="md_image">
 			<pos>0.255 0.28</pos>
-			<maxSize ifSubset="media-type:image">0.42 0.42</maxSize>
-			<maxSize ifSubset="media-type:miximage">0.386 0.35</maxSize>
+			<maxSize>0.42 0.42</maxSize>
 			<visible>true</visible>
 		</image>
 		<image name="md_thumbnail">
@@ -448,8 +438,7 @@
         </image>
         <image name="md_image">
             <pos>0.255 0.48</pos>
-            <maxSize ifSubset="media-type:image">0.42 0.42</maxSize>
-            <maxSize ifSubset="media-type:miximage">0.386 0.35</maxSize>
+            <maxSize>0.42 0.42</maxSize>
             <visible>true</visible>
         </image>
         <image name="md_thumbnail">
