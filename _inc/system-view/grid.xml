@@ -34,7 +34,7 @@
 
     <!-- System View: Grid (Icons)-->
 	<!-- ~~~~~~~~~~~ -->
-        <container ifSubset="icon-scheme:icon|custom-icon">
+        <container>
           <scale>1</scale>
           <padding>10 10 10 10</padding>
           <storyboard event="activate">
@@ -80,8 +80,7 @@
             <zIndex>2</zIndex>
             </image>
           <image name="systemBack" extra="true">
-            <path ifSubset="icon-scheme:icon">firstfile("${themePath}/_inc/systems/carousel-icons-icons/" + {system:theme} + ".webp","${themePath}/_inc/systems/carousel-icons-icons/_default.webp")</path>
-            <path ifSubset="icon-scheme:custom-icon">firstfile("${themeCustomizationsPath}/icons/" + {system:theme} + ".webp","${themeCustomizationsPath}/icons/" + {system:theme} + ".png","${themePath}/_inc/systems/carousel-icons-icons/" + {system:theme} + ".webp","${themePath}/_inc/systems/carousel-icons-icons/_default.webp")</path>
+            <path>firstfile("${themePath}/_inc/systems/carousel-icons-icons/" + {system:theme} + ".webp","${themePath}/_inc/systems/carousel-icons-icons/_default.webp")</path>
             <pos>0.5 0.45</pos>
             <origin>0.5</origin>
             <maxSize>0.8 0.9</maxSize>

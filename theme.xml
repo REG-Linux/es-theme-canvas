@@ -83,18 +83,7 @@ Licnese: Creative Commons CC-BY-NC-SA
 		<include name="5x4" displayName="5X4"/>
 	</subset>
 		
-   <!--
-   ///
-   Subset: Icon Scheme
-   ///
-   -->
-
-   <subset name="icon-scheme" displayName="System Icon Style">
-      <include name="icon" displayName="Icons"/>
-      <include name="custom-art" displayName="Custom (Art)" />
-      <include name="custom-icon" displayName="Custom (Icons)" />
-   </subset>
-
+   
    <!--
    ///
    Subset: Color Scheme
