@@ -90,7 +90,6 @@ Licnese: Creative Commons CC-BY-NC-SA
    -->
 
    <subset name="icon-scheme" displayName="System Icon Style">
-      <include name="art" displayName="Art"/>
       <include name="icon" displayName="Icons"/>
       <include name="custom-art" displayName="Custom (Art)" />
       <include name="custom-icon" displayName="Custom (Icons)" />
