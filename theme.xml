@@ -71,12 +71,6 @@ Licnese: Creative Commons CC-BY-NC-SA
 		<include name="off" displayName="Off" />
 	</subset>
 
-	<!-- Subset: Game Metadata Media -->
-	<subset name="media-type" displayName="Metadata Image Type"  appliesTo="detailed,carousel,grid-detailed">
-		<include name="image" displayName="Image" />
-		<include name="miximage" displayName="Miximage" />
-	</subset>
-
 	<!-- Subset: Game Metadata Option -->
 	<subset name="metadata-option" displayName="Metadata Rating/Playtime">
 		<include name="rating" displayName="Rating" />
