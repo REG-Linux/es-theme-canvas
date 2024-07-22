@@ -121,12 +121,12 @@ Licnese: Creative Commons CC-BY-NC-SA
 			<batteryIcon name="system-battery-icon">
 				<maxSize>1 1</maxSize>
 				<color>${systemInfoColor}</color>
-				<full>./_inc/images/battery-icon-100.svg</full>
-				<at75>./_inc/images/battery-icon-75.svg</at75>
-				<at50>./_inc/images/battery-icon-50.svg</at50>
-				<at25>./_inc/images/battery-icon-25.svg</at25>
-				<empty>./_inc/images/battery-icon-0.svg</empty>
-				<incharge>./_inc/images/battery-icon-charging.svg</incharge>
+				<full>./_inc/images/battery/battery-icon-100.svg</full>
+				<at75>./_inc/images/battery/battery-icon-75.svg</at75>
+				<at50>./_inc/images/battery/battery-icon-50.svg</at50>
+				<at25>./_inc/images/battery/battery-icon-25.svg</at25>
+				<empty>./_inc/images/battery/battery-icon-0.svg</empty>
+				<incharge>./_inc/images/battery/battery-icon-charging.svg</incharge>
 			</batteryIcon>
 			<networkIcon name="system-network-icon">
 				<maxSize>1 1</maxSize>
@@ -185,21 +185,21 @@ Licnese: Creative Commons CC-BY-NC-SA
 			<cornerSize>20 20</cornerSize>
 		</menuBackground>
 		<menuIcons name="menuicons">
-			<iconSystem>./_inc/images/menu-icon-system.svg</iconSystem>
-			<iconUpdates>./_inc/images/menu-icon-update.svg</iconUpdates>
-			<iconControllers>./_inc/images/menu-icon-controller.svg</iconControllers>
-			<iconGames>./_inc/images/menu-icon-games.svg</iconGames>
-			<iconUI>./_inc/images/menu-icon-ui.svg</iconUI>
-			<iconSound>./_inc/images/menu-icon-sound.svg</iconSound>
-			<iconNetwork>./_inc/images/menu-icon-network.svg</iconNetwork>
-			<iconScraper>./_inc/images/menu-icon-scraper.svg</iconScraper>
-			<iconAdvanced>./_inc/images/menu-icon-advanced.svg</iconAdvanced>
-			<iconQuit>./_inc/images/menu-icon-quit.svg</iconQuit>
-			<iconRetroachievements>./_inc/images/menu-icon-achievements.svg</iconRetroachievements>
-			<iconKodi>./_inc/images/menu-icon-kodi.svg</iconKodi>
-			<iconRestart>./_inc/images/menu-icon-restart.svg</iconRestart>
-			<iconShutdown>./_inc/images/menu-icon-shutdown.svg</iconShutdown>
-			<iconFastShutdown>./_inc/images/menu-icon-shutdown.svg</iconFastShutdown>
+			<iconSystem>./_inc/images/menu/System.png</iconSystem>
+			<iconUpdates>./_inc/images/menu/Updates.png</iconUpdates>
+			<iconControllers>./_inc/images/menu/Controllers.png</iconControllers>
+			<iconGames>./_inc/images/menu/Games.png</iconGames>
+			<iconUI>./_inc/images/menu/UI.png</iconUI>
+			<iconSound>./_inc/images/menu/Sound.png</iconSound>
+			<iconNetwork>./_inc/images/menu/Network.png</iconNetwork>
+			<iconScraper>./_inc/images/menu/Scraper.png</iconScraper>
+			<iconAdvanced>./_inc/images/menu/Advanced.png</iconAdvanced>
+			<iconQuit>./_inc/images/menu/Quit.png</iconQuit>
+			<iconRetroachievements>./_inc/images/menu/Achievements.png</iconRetroachievements>
+			<iconKodi>./_inc/images/menu/Kodi.png</iconKodi>
+			<iconRestart>./_inc/images/menu/Restart.png</iconRestart>
+			<iconShutdown>./_inc/images/menu/Shutdown.png</iconShutdown>
+			<iconFastShutdown>./_inc/images/menu/Fastshutdown.png</iconFastShutdown>
 		</menuIcons>
    	</view>
 
