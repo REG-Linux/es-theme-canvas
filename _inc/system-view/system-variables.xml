@@ -1,6 +1,5 @@
 <theme>
    <!-- System Grid 4-5 -->
-
     <variables ifSubset="aspect-ratio:16-9|16-9-auto,font-size:small">
         <gridItemSize>0.1275 0.2833</gridItemSize>
         <gridItemPos>0.54125</gridItemPos>

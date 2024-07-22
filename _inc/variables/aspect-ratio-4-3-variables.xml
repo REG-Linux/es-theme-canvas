@@ -1,16 +1,16 @@
 <theme>
 	<formatVersion>7</formatVersion>
 
-<!-- 
-4:3 aspect ratio variables
-based on 640x480
--->
+    <!--
+    4:3 aspect ratio variables
+    based on 640x480
+    -->
 
 	<!-- Variables -->
 	<variables ifSubset="font-size:small">
             <systemDescriptionFontSize>0.015</systemDescriptionFontSize>
-            <systemYearFontSize>0.020</systemYearFontSize>         
-            <systemInfoFontSize>0.04</systemInfoFontSize>   
+            <systemYearFontSize>0.020</systemYearFontSize>
+            <systemInfoFontSize>0.04</systemInfoFontSize>
             <indicatorFontSize>0.035</indicatorFontSize>
 			<itemcount>3.5</itemcount>
             <itemsize>0.293 0.36</itemsize>
@@ -34,9 +34,9 @@ based on 640x480
    </variables>
    <variables ifSubset="font-size:medium">
             <systemDescriptionFontSize>0.020</systemDescriptionFontSize>
-            <systemYearFontSize>0.025</systemYearFontSize>         
-            <systemInfoFontSize>0.04</systemInfoFontSize>      
-            <indicatorFontSize>0.035</indicatorFontSize> 
+            <systemYearFontSize>0.025</systemYearFontSize>
+            <systemInfoFontSize>0.04</systemInfoFontSize>
+            <indicatorFontSize>0.035</indicatorFontSize>
 			<itemcount>3</itemcount>
             <itemsize>0.34 0.46</itemsize>
 			<logospacing>0.2</logospacing>
@@ -59,8 +59,8 @@ based on 640x480
    </variables>
    <variables ifSubset="font-size:large">
             <systemDescriptionFontSize>0.02</systemDescriptionFontSize>
-            <systemYearFontSize>0.038</systemYearFontSize>         
-            <systemInfoFontSize>0.04</systemInfoFontSize>   
+            <systemYearFontSize>0.038</systemYearFontSize>
+            <systemInfoFontSize>0.04</systemInfoFontSize>
             <indicatorFontSize>0.035</indicatorFontSize>
             <itemcount>1.5</itemcount>
             <itemsize>0.44 0.54</itemsize>
@@ -82,12 +82,11 @@ based on 640x480
             <descriptionLineSpacing>1.6</descriptionLineSpacing>
             <linecount>11</linecount>
    </variables>
-   
+
 	<variables>
 		<CornersGrid>5</CornersGrid>
 		<CornersSmall>10</CornersSmall>
 		<CornersMedium>20</CornersMedium>
 		<CornersLarge>30</CornersLarge>
 	</variables>
-
 </theme>
