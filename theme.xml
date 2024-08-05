@@ -89,6 +89,10 @@ Licnese: Creative Commons CC-BY-NC-SA
 
 	<!-- Screen View -->
 	<view name="screen">
+		<controllerActivity name="controllerActivity">
+			<visible>false</visible>
+		</controllerActivity>
+
         <batteryIndicator name="batteryIndicator">
             <color>${systemInfoColor}</color>
             <fontPath>${fontBold}</fontPath>
