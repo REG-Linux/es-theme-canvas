@@ -25,9 +25,16 @@
             <path>${backgroundArtPath}.webp</path>
             <path>${backgroundArtPath}.jpg</path>
         </image>
+            <image name="logo" extra="true">
+            <path>./_inc/images/logo/logo.png</path>
+            <pos>0.5 0.4</pos>
+            <origin>0.5 0.5</origin>
+            <maxSize>0.4 0.4</maxSize>
+            <zIndex>13</zIndex>
+        </image>
         <image name="progressbar">
             <origin>0.5 0.5</origin>
-            <pos>0.5 0.5</pos>
+            <pos>0.5 0.6</pos>
             <color>${systemCarouselSelectorColor}</color>
             <colorEnd>${systemCarouselSelectorColor}</colorEnd>
         </image>
@@ -37,7 +44,7 @@
         </image>
         <text name="label">
             <origin>0.5 0.5</origin>
-            <pos>0.5 0.6</pos>
+            <pos>0.5 0.7</pos>
             <alignment>center</alignment>
             <fontPath>./_inc/fonts/Gilroy-Bold.ttf</fontPath>
             <fontSize>0.04</fontSize>
