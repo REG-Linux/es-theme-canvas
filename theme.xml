@@ -89,14 +89,24 @@ Licnese: Creative Commons CC-BY-NC-SA
 
 	<!-- Screen View -->
 	<view name="screen">
-		<controllerActivity name="controllerActivity">
-			<visible>false</visible>
-		</controllerActivity>
+        <controllerActivity name="controllerActivity">
+            <pos ifSubset="system-view:grid">0.7 0.02</pos>
+            <pos ifSubset="system-view:carousel">0.04 0.02</pos>
+            <size>0.2 0.03</size>
+            <itemSpacing>0.003</itemSpacing>
+            <color>${systemInfoColor}</color>
+            <!-- controllers -->
+            <imagePath>./_inc/images/gamepad.svg</imagePath>
+            <gunPath>./_inc/images/gun.svg</gunPath>
+            <wheelPath>./_inc/images/wheel.svg</wheelPath>
+            <activityColor>A0A0FFC0</activityColor>
+            <hotkeyColor>FFA0A0C0</hotkeyColor>
+            <horizontalAlignment ifSubset="system-view:grid">right</horizontalAlignment>
+            <horizontalAlignment ifSubset="system-view:carousel">left</horizontalAlignment>
+        </controllerActivity>
 
         <batteryIndicator name="batteryIndicator">
             <color>${systemInfoColor}</color>
-            <fontPath>${fontBold}</fontPath>
-            <fontSize>${indicatorFontSize}</fontSize>
             <lineSpacing>1</lineSpacing>
             <pos>0.93 0.012</pos>
             <origin>0.5 0.5</origin>
@@ -109,7 +119,7 @@ Licnese: Creative Commons CC-BY-NC-SA
             <incharge>./_inc/images/battery/battery-icon-charging.svg</incharge>
             <networkIcon>./_inc/images/network-icon-on.svg</networkIcon>
             <planemodeIcon>./_inc/images/network-icon-off.svg</planemodeIcon>
-            <alignment>right</alignment>
+            <horizontalAlignment>center</horizontalAlignment>
             <verticalAlignment>center</verticalAlignment>
         </batteryIndicator>
 
