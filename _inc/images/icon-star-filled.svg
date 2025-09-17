@@ -1,1 +1,38 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><!-- Generator: Gravit.io --><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="isolation:isolate" viewBox="0 0 20 20" width="20pt" height="20pt"><path d=" M 9.998 0.465 C 9.79 0.465 9.582 0.625 9.424 0.946 L 7.291 5.269 C 6.974 5.913 6.133 6.521 5.425 6.623 L 0.656 7.316 C -0.053 7.419 -0.213 7.913 0.301 8.414 L 3.753 11.777 C 4.267 12.279 4.586 13.265 4.466 13.969 L 3.649 18.723 C 3.56 19.234 3.757 19.535 4.114 19.535 C 4.277 19.528 4.438 19.483 4.581 19.401 L 8.849 17.156 C 9.167 16.989 9.583 16.908 9.999 16.908 C 10.417 16.908 10.838 16.991 11.151 17.156 L 15.42 19.401 C 15.591 19.491 15.752 19.535 15.887 19.535 C 16.244 19.535 16.439 19.234 16.352 18.723 L 15.535 13.969 C 15.416 13.265 15.735 12.278 16.247 11.777 L 19.7 8.414 C 20.212 7.913 20.053 7.419 19.342 7.316 L 14.573 6.624 C 13.865 6.522 13.025 5.914 12.709 5.27 L 10.576 0.946 C 10.416 0.625 10.21 0.465 9.998 0.465 Z " fill="rgb(255,255,255)"/></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   style="isolation:isolate"
+   viewBox="0 0 20 20"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="icon-star-filled.svg"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:zoom="40"
+     inkscape:cx="10"
+     inkscape:cy="10"
+     inkscape:window-width="1920"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <path
+     d="M 9.998 0.465 C 9.79 0.465 9.582 0.625 9.424 0.946 L 7.291 5.269 C 6.974 5.913 6.133 6.521 5.425 6.623 L 0.656 7.316 C -0.053 7.419 -0.213 7.913 0.301 8.414 L 3.753 11.777 C 4.267 12.279 4.586 13.265 4.466 13.969 L 3.649 18.723 C 3.56 19.234 3.757 19.535 4.114 19.535 C 4.277 19.528 4.438 19.483 4.581 19.401 L 8.849 17.156 C 9.167 16.989 9.583 16.908 9.999 16.908 C 10.417 16.908 10.838 16.991 11.151 17.156 L 15.42 19.401 C 15.591 19.491 15.752 19.535 15.887 19.535 C 16.244 19.535 16.439 19.234 16.352 18.723 L 15.535 13.969 C 15.416 13.265 15.735 12.278 16.247 11.777 L 19.7 8.414 C 20.212 7.913 20.053 7.419 19.342 7.316 L 14.573 6.624 C 13.865 6.522 13.025 5.914 12.709 5.27 L 10.576 0.946 C 10.416 0.625 10.21 0.465 9.998 0.465 Z"
+     fill="currentColor"
+     id="path1"
+     style="fill:#ffffff" />
+</svg>
