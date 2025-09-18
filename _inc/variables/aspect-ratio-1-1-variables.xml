@@ -1,5 +1,5 @@
 <theme><formatVersion>7</formatVersion>
-<variables ifSubset="font-size:small">
+  <variables ifSubset="font-size:small">
     <systemDescriptionFontSize>0.038</systemDescriptionFontSize>
     <systemYearFontSize>0.038</systemYearFontSize>
     <itemcount>3.5</itemcount>
@@ -7,8 +7,8 @@
     <logospacing>1.2</logospacing>
     <helpFontSize>0.022</helpFontSize>
     <gamelistBackgroundImageCalculated
-            cache="true"
-        >./_inc/images/gamelist/${gamelistBackgroundImage}-small.webp</gamelistBackgroundImageCalculated>
+      cache="true"
+    >./_inc/images/gamelist/${gamelistBackgroundImage}-small.webp</gamelistBackgroundImageCalculated>
     <gamelistFontSize>0.025</gamelistFontSize>
     <gamelistSelectorHeight>0.04</gamelistSelectorHeight>
     <gamelistPos>0.575 0.118</gamelistPos>
@@ -20,8 +20,9 @@
     <descriptionFontSize>0.025</descriptionFontSize>
     <descriptionLineSpacing>1.35</descriptionLineSpacing>
     <linecount>17</linecount>
-</variables>
-<variables ifSubset="font-size:medium">
+  </variables>
+
+  <variables ifSubset="font-size:medium">
     <systemDescriptionFontSize>0.038</systemDescriptionFontSize>
     <systemYearFontSize>0.038</systemYearFontSize>
     <itemcount>3</itemcount>
@@ -29,8 +30,8 @@
     <logospacing>0.2</logospacing>
     <helpFontSize>0.026</helpFontSize>
     <gamelistBackgroundImageCalculated
-            cache="true"
-        >./_inc/images/gamelist/${gamelistBackgroundImage}-medium.webp</gamelistBackgroundImageCalculated>
+      cache="true"
+    >./_inc/images/gamelist/${gamelistBackgroundImage}-medium.webp</gamelistBackgroundImageCalculated>
     <gamelistFontSize>0.03</gamelistFontSize>
     <gamelistSelectorHeight>0.051</gamelistSelectorHeight>
     <gamelistPos>0.575 0.134</gamelistPos>
@@ -42,8 +43,9 @@
     <descriptionFontSize>0.027</descriptionFontSize>
     <descriptionLineSpacing>1.5</descriptionLineSpacing>
     <linecount>13</linecount>
-</variables>
-<variables ifSubset="font-size:large">
+  </variables>
+
+  <variables ifSubset="font-size:large">
     <systemDescriptionFontSize>0.045</systemDescriptionFontSize>
     <systemYearFontSize>0.038</systemYearFontSize>
     <itemcount>1.5</itemcount>
@@ -51,8 +53,8 @@
     <logospacing>-0.75</logospacing>
     <helpFontSize>0.033</helpFontSize>
     <gamelistBackgroundImageCalculated
-            cache="true"
-        >./_inc/images/gamelist/${gamelistBackgroundImage}-large.webp</gamelistBackgroundImageCalculated>
+      cache="true"
+    >./_inc/images/gamelist/${gamelistBackgroundImage}-large.webp</gamelistBackgroundImageCalculated>
     <gamelistFontSize>0.036</gamelistFontSize>
     <gamelistSelectorHeight>0.064</gamelistSelectorHeight>
     <gamelistPos>0.575 0.129</gamelistPos>
@@ -64,8 +66,9 @@
     <descriptionFontSize>0.032</descriptionFontSize>
     <descriptionLineSpacing>1.6</descriptionLineSpacing>
     <linecount>11</linecount>
-</variables>
-<variables>
+  </variables>
+
+  <variables>
     <systemInfoFontSize>0.04</systemInfoFontSize>
     <indicatorFontSize>0.04</indicatorFontSize>
     <helpPos>0.97</helpPos>
@@ -73,5 +76,5 @@
     <CornersSmall>20</CornersSmall>
     <CornersMedium>40</CornersMedium>
     <CornersLarge>60</CornersLarge>
-</variables>
+  </variables>
 </theme>

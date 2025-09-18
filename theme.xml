@@ -1,17 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <!--
-Theme Name: Canvas-Batocera
+Name: Canvas
 Version: 1.0
 Author: Siddy212
 Licnese: Creative Commons CC-BY-NC-SA
 -->
-
 <theme defaultTransition="instant">
 	<formatVersion>7</formatVersion>
 
 	<!-- Includes -->
-	<include>./fonts.xml</include>
-	<include>./file_paths.xml</include>
+	<include>./_inc/fonts/fonts.xml</include>
 
 	<!-- Aspect Ratios -->
 	<subset name="aspect-ratio" displayName="Aspect Ratio">
@@ -27,22 +25,22 @@ Licnese: Creative Commons CC-BY-NC-SA
 
 	<!-- Subset: System View Options -->
 	<subset name="system-view" displayName="System View">
-		<include name="carousel" displayName="Carousel"/>
-		<include name="grid" displayName="Grid"/>
+		<include name="carousel" displayName="Carousel" />
+		<include name="grid" displayName="Grid" />
 	</subset>
 
 	<!-- Subset: System Grid Sizes -->
 	<subset name="sysgridsize" ifSubset="system-view:grid" displayName="System Grid Size">
-		<include name="automatic" displayName="Automatic"/>
-		<include name="3x1" displayName="3X1"/>
-		<include name="3x2" displayName="3X2"/>
-		<include name="3x3" displayName="3X3"/>
-		<include name="4x2" displayName="4X2"/>
-		<include name="4x3" displayName="4X3"/>
-		<include name="4x4" displayName="4X4"/>
-		<include name="5x2" displayName="5X2"/>
-		<include name="5x3" displayName="5X3"/>
-		<include name="5x4" displayName="5X4"/>
+		<include name="automatic" displayName="Automatic" />
+		<include name="3x1" displayName="3X1" />
+		<include name="3x2" displayName="3X2" />
+		<include name="3x3" displayName="3X3" />
+		<include name="4x2" displayName="4X2" />
+		<include name="4x3" displayName="4X3" />
+		<include name="4x4" displayName="4X4" />
+		<include name="5x2" displayName="5X2" />
+		<include name="5x3" displayName="5X3" />
+		<include name="5x4" displayName="5X4" />
 	</subset>
 
 	<!-- Subset: Color Scheme -->
@@ -56,7 +54,7 @@ Licnese: Creative Commons CC-BY-NC-SA
 		<include name="snes" displayName="Snes" />
 		<include name="famicom" displayName="Famicom" />
 	</subset>
-   <include>./colors.xml</include>
+  <include>./colors.xml</include>
 
 	<!-- Subset: Font Size -->
 	<subset name="font-size" displayName="Font Size">
@@ -89,52 +87,52 @@ Licnese: Creative Commons CC-BY-NC-SA
 
 	<!-- Screen View -->
 	<view name="screen">
-        <controllerActivity name="controllerActivity">
-            <pos ifSubset="system-view:grid">0.7 0.02</pos>
-            <pos ifSubset="system-view:carousel">0.04 0.02</pos>
-            <size>0.2 0.03</size>
-            <itemSpacing>0.003</itemSpacing>
-            <color>${systemInfoColor}</color>
-            <!-- controllers -->
-            <imagePath>./_inc/images/gamepad.svg</imagePath>
-            <gunPath>./_inc/images/gun.svg</gunPath>
-            <wheelPath>./_inc/images/wheel.svg</wheelPath>
-            <activityColor>A0A0FFC0</activityColor>
-            <hotkeyColor>FFA0A0C0</hotkeyColor>
-            <horizontalAlignment ifSubset="system-view:grid">right</horizontalAlignment>
-            <horizontalAlignment ifSubset="system-view:carousel">left</horizontalAlignment>
-        </controllerActivity>
+    <controllerActivity name="controllerActivity">
+      <pos ifSubset="system-view:grid">0.7 0.02</pos>
+      <pos ifSubset="system-view:carousel">0.04 0.02</pos>
+      <size>0.2 0.03</size>
+      <itemSpacing>0.003</itemSpacing>
+      <color>${systemInfoColor}</color>
+      <!-- controllers -->
+      <imagePath>./_inc/images/gamepad.svg</imagePath>
+      <gunPath>./_inc/images/gun.svg</gunPath>
+      <wheelPath>./_inc/images/wheel.svg</wheelPath>
+      <activityColor>A0A0FFC0</activityColor>
+      <hotkeyColor>FFA0A0C0</hotkeyColor>
+      <horizontalAlignment ifSubset="system-view:grid">right</horizontalAlignment>
+      <horizontalAlignment ifSubset="system-view:carousel">left</horizontalAlignment>
+    </controllerActivity>
 
-        <batteryIndicator name="batteryIndicator">
-            <color>${systemInfoColor}</color>
-            <lineSpacing>1</lineSpacing>
-            <pos>0.93 0.012</pos>
-            <origin>0.5 0.5</origin>
-            <size>0.04 0.04</size>
-            <full>./_inc/images/battery/battery-icon-100.svg</full>
-            <at75>./_inc/images/battery/battery-icon-75.svg</at75>
-            <at50>./_inc/images/battery/battery-icon-50.svg</at50>
-            <at25>./_inc/images/battery/battery-icon-25.svg</at25>
-            <empty>./_inc/images/battery/battery-icon-0.svg</empty>
-            <incharge>./_inc/images/battery/battery-icon-charging.svg</incharge>
-            <networkIcon>./_inc/images/network-icon-on.svg</networkIcon>
-            <planemodeIcon>./_inc/images/network-icon-off.svg</planemodeIcon>
-            <horizontalAlignment>center</horizontalAlignment>
-            <verticalAlignment>center</verticalAlignment>
-        </batteryIndicator>
+    <batteryIndicator name="batteryIndicator">
+      <color>${systemInfoColor}</color>
+      <lineSpacing>1</lineSpacing>
+      <pos>0.93 0.012</pos>
+      <origin>0.5 0.5</origin>
+      <size>0.04 0.04</size>
+      <full>./_inc/images/battery/battery-icon-100.svg</full>
+      <at75>./_inc/images/battery/battery-icon-75.svg</at75>
+      <at50>./_inc/images/battery/battery-icon-50.svg</at50>
+      <at25>./_inc/images/battery/battery-icon-25.svg</at25>
+      <empty>./_inc/images/battery/battery-icon-0.svg</empty>
+      <incharge>./_inc/images/battery/battery-icon-charging.svg</incharge>
+      <networkIcon>./_inc/images/network-icon-on.svg</networkIcon>
+      <planemodeIcon>./_inc/images/network-icon-off.svg</planemodeIcon>
+      <horizontalAlignment>center</horizontalAlignment>
+      <verticalAlignment>center</verticalAlignment>
+    </batteryIndicator>
 
-        <text name="clock">
-            <color>${systemInfoColor}</color>
-            <fontPath>${fontBold}</fontPath>
-            <fontSize>${indicatorFontSize}</fontSize>
-            <lineSpacing>1</lineSpacing>
-            <pos>0.5 0.04</pos>
-            <origin>0.5 0.5</origin>
-            <size>0.18 0.1</size>
-            <alignment>center</alignment>
-            <verticalAlignment>center</verticalAlignment>
-        </text>
-	</view>
+    <text name="clock">
+      <color>${systemInfoColor}</color>
+      <fontPath>${fontBold}</fontPath>
+      <fontSize>${indicatorFontSize}</fontSize>
+      <lineSpacing>1</lineSpacing>
+      <pos>0.5 0.04</pos>
+      <origin>0.5 0.5</origin>
+      <size>0.18 0.1</size>
+      <alignment>center</alignment>
+      <verticalAlignment>center</verticalAlignment>
+    </text>
+  </view>
 
 	<!-- View: Menu -->
 	<view name="menu">
@@ -143,11 +141,13 @@ Licnese: Creative Commons CC-BY-NC-SA
 			<fontSize>0.03</fontSize>
 			<color>${helpTextColor}</color>
 		</menuText>
+
 		<menuText name="menufooter">
 			<fontPath>${fontLight}</fontPath>
 			<fontSize>0.025</fontSize>
 			<color>${helpTextColor}</color>
 		</menuText>
+
 		<menuText name="menutext">
 			<fontPath>${fontBold}</fontPath>
 			<fontSize>0.035</fontSize>
@@ -156,11 +156,13 @@ Licnese: Creative Commons CC-BY-NC-SA
 			<selectedColor>${gamelistSelectedColor}</selectedColor>
 			<selectorColor>${gamelistSelectorColor}</selectorColor>
 		</menuText>
+
 		<menuTextSmall name="menutextsmall">
 			<fontPath>${fontBold}</fontPath>
 			<fontSize>0.025</fontSize>
 			<color>${helpTextColor}</color>
 		</menuTextSmall>
+
 		<menuGroup name="menugroup">
 			<fontPath>${fontRegular}</fontPath>
 			<fontSize>0.0325</fontSize>
@@ -169,14 +171,17 @@ Licnese: Creative Commons CC-BY-NC-SA
 			<backgroundColor>00000000</backgroundColor>
 			<lineSpacing>2.5</lineSpacing>
 		</menuGroup>
+
 		<menuTextEdit name="menutextedit">
 			<inactive>./_inc/images/menu-textinput.png</inactive>
 			<active>./_inc/images/menu-textinput-active.png</active>
 		</menuTextEdit>
+
 		<menuBackground name="menubg">
 			<color>${menuBackgroundColor}</color>
 			<cornerSize>20 20</cornerSize>
 		</menuBackground>
+
 		<menuIcons name="menuicons">
 			<iconSystem>./_inc/images/menu/System.png</iconSystem>
 			<iconUpdates>./_inc/images/menu/Updates.png</iconUpdates>
@@ -194,7 +199,7 @@ Licnese: Creative Commons CC-BY-NC-SA
 			<iconShutdown>./_inc/images/menu/Shutdown.png</iconShutdown>
 			<iconFastShutdown>./_inc/images/menu/Fastshutdown.png</iconFastShutdown>
 		</menuIcons>
-   	</view>
+ 	</view>
 
 	<!-- All Views -->
 	<view name="system, basic, detailed, gamecarousel, grid">
@@ -237,6 +242,7 @@ Licnese: Creative Commons CC-BY-NC-SA
 			<visible ifSubset="system-view:grid">true</visible>
 			<visible ifSubset="system-view:carousel">false</visible>
 		</image>
+
 		<image name="countline" extra="true">
 			<origin>0.5 0.5</origin>
 			<path>./_inc/images/countline.svg</path>
@@ -247,21 +253,25 @@ Licnese: Creative Commons CC-BY-NC-SA
 			<visible ifSubset="system-view:grid">false</visible>
 			<visible ifSubset="system-view:carousel">true</visible>
 		</image>
+
 		<text name="systemInfo">
 			<fontPath>${fontBold}</fontPath>
 			<zIndex>3</zIndex>
 			<color>${systemInfoColor}</color>
 			<lineSpacing>1</lineSpacing>
-            <size>0 ${systemDescriptionFontSize}</size>
-            <fontSize>${systemDescriptionFontSize}</fontSize>
+      <size>0 ${systemDescriptionFontSize}</size>
+      <fontSize>${systemDescriptionFontSize}</fontSize>
 		</text>
+
 		<text name="systemInfo" ifSubset="system-view:grid">
 			<origin>0 0.5</origin>
 			<alignment>left</alignment>
 		</text>
+
 		<text name="systemInfo" ifSubset="system-view:carousel">
 			<origin>0.5 0.5</origin>
 		</text>
+
 		<text name="systemInfoGrid" extra="true">
 			<text>{system:total}</text>
 			<fontPath>${fontBold}</fontPath>
@@ -270,13 +280,13 @@ Licnese: Creative Commons CC-BY-NC-SA
 			<color>${systemInfoColor}</color>
 			<alignment>left</alignment>
 			<lineSpacing>1</lineSpacing>
-            <size>0 ${systemDescriptionFontSize}</size>
-            <fontSize>${systemDescriptionFontSize}</fontSize>
+      <size>0 ${systemDescriptionFontSize}</size>
+      <fontSize>${systemDescriptionFontSize}</fontSize>
 		</text>
 	</view>
 
 	<!-- Gamelist: System Logo -->
-	<view name="basic, detailed, gamecarousel, grid" >
+	<view name="basic, detailed, gamecarousel, grid">
 		<image name="logo" origin="0.5 0.5" linearSmooth="true">
 			<path>./_inc/systems/logos/${system.theme}.svg</path>
 			<zIndex>2</zIndex>
@@ -287,7 +297,7 @@ Licnese: Creative Commons CC-BY-NC-SA
 	</view>
 
 	<!-- Gamelist: Full Metadata Call -->
-	<view name="detailed, gamecarousel, grid" >
+	<view name="detailed, gamecarousel, grid">
 		<image name="playtime-logo" origin="0.5 0.5" linearSmooth="true" extra="true">
 			<path>./_inc/images/playtime-icon.svg</path>
 			<zIndex>4</zIndex>
@@ -296,20 +306,23 @@ Licnese: Creative Commons CC-BY-NC-SA
 			<visible ifSubset="metadata-option:rating">false</visible>
 			<visible ifSubset="metadata-option:playtime">true</visible>
 		</image>
+
 		<video name="md_video">
 			<origin>0.5 0.5</origin>
 			<delay>1.4</delay>
 			<roundCorners>0.005</roundCorners>
 			<showSnapshotNoVideo>true</showSnapshotNoVideo>
-            <showSnapshotDelay>true</showSnapshotDelay>
+      <showSnapshotDelay>true</showSnapshotDelay>
 			<zIndex>8</zIndex>
 		</video>
+
 		<datetime name="md_releasedate,md_lastplayed">
 			<origin>0 0.5</origin>
 			<fontPath>${fontBold}</fontPath>
 			<color>${gameMetadataColor}</color>
 			<lineSpacing>1</lineSpacing>
 		</datetime>
+
 		<text name="md_name,md_players,md_genre,md_developer,md_publisher,md_playcount,md_gametime_custom">
 			<origin>0 0.5</origin>
 			<fontPath>${fontBold}</fontPath>
@@ -317,13 +330,16 @@ Licnese: Creative Commons CC-BY-NC-SA
 			<lineSpacing>1</lineSpacing>
 			<value>Unknown</value>
 		</text>
+
 		<datetime name="md_releasedate">
 			<value>Unknown</value>
 			<format>%Y</format>
 		</datetime>
+
 		<datetime name="md_lastplayed">
 			<value>Unknown</value>
 		</datetime>
+
 		<rating name="md_rating">
 			<origin>0.5 0.5</origin>
 			<filledPath>./_inc/images/icon-star-filled.svg</filledPath>
@@ -332,7 +348,8 @@ Licnese: Creative Commons CC-BY-NC-SA
 			<visible ifSubset="metadata-option:rating">true</visible>
 			<visible ifSubset="metadata-option:playtime">false</visible>
 		</rating>
-		<text name="md_gametime_custom"  extra="true">
+
+		<text name="md_gametime_custom" extra="true">
 			<visible ifSubset="metadata-option:rating">false</visible>
 			<visible ifSubset="metadata-option:playtime">true</visible>
 			<text>{game:gametime} > 0 ? formatseconds({game:gametime}) : "Never"</text>
@@ -342,18 +359,21 @@ Licnese: Creative Commons CC-BY-NC-SA
 			<autoScrollDelay>500000</autoScrollDelay>
 			<zIndex>4</zIndex>
 		</text>
+
 		<text name="md_genre">
 			<forceUppercase>false</forceUppercase>
 			<autoScroll>horizontal</autoScroll>
 			<autoScrollSpeed>50</autoScrollSpeed>
 			<autoScrollDelay>5000</autoScrollDelay>
 		</text>
+
 		<text name="md_name">
 			<autoScroll>horizontal</autoScroll>
 			<autoScrollSpeed>50</autoScrollSpeed>
 			<autoScrollDelay>5000</autoScrollDelay>
 			<alignment>left</alignment>
 		</text>
+
 		<text name="md_description">
 			<origin>0.5 0</origin>
 			<fontPath>${fontRegular}</fontPath>
@@ -363,10 +383,12 @@ Licnese: Creative Commons CC-BY-NC-SA
 			<color>${gameMetadataColor}</color>
 		</text>
 	</view>
-	<view name="grid" >
+
+	<view name="grid">
 		<video name="md_video">
 			<visible>false</visible>
 		</video>
+
 		<image name="md_marquee">
 			<visible>false</visible>
 		</image>
@@ -406,15 +428,19 @@ Licnese: Creative Commons CC-BY-NC-SA
 		<text name="md_players">
 			<visible>false</visible>
 		</text>
+
 		<text name="md_developer">
 			<visible>false</visible>
 		</text>
+
 		<text name="md_publisher" extra="true">
 			<visible>false</visible>
 		</text>
+
 		<datetime name="md_lastplayed">
 			<visible>false</visible>
 		</datetime>
+
 		<text name="md_playcount" extra="true">
 			<visible>false</visible>
 		</text>
@@ -428,21 +454,27 @@ Licnese: Creative Commons CC-BY-NC-SA
 		<image name="game-metadata-background-shadow-base" extra="true">
 			<visible>false</visible>
 		</image>
+
 		<image name="game-metadata-background-image-base" extra="true">
 			<visible>false</visible>
 		</image>
+
 		<datetime name="md_releasedate,md_lastplayed">
 			<visible>false</visible>
 		</datetime>
+
 		<text name="md_name,md_players,md_genre,md_developer,md_publisher,md_playcount,md_gametime_custom">
 			<visible>false</visible>
 		</text>
+
 		<text name="md_description">
 			<visible>false</visible>
 		</text>
+
 		<rating name="md_rating">
 			<visible>false</visible>
 		</rating>
+
 		<image name="playtime-logo">
 			<visible>false</visible>
 		</image>
@@ -460,16 +492,16 @@ Licnese: Creative Commons CC-BY-NC-SA
 			<logoRotationOrigin>5 0.5</logoRotationOrigin>
 			<logoAlignment>center</logoAlignment>
 			<imageSource>marquee</imageSource>
-            <lineSpacing>1.2</lineSpacing>
+      <lineSpacing>1.2</lineSpacing>
 		</gamecarousel>
 	</view>
 
 	<!-- Detailed Game Grid View -->
-	<subset name="autogriddetailedsize" displayName="Automatic Grid-Detailed Size" appliesTo="grid-detailed" >
-		<include name="automatic" displayName="Automatic"/>
-		<include name="large" displayName="2 Columns"/>
-		<include name="medium" displayName="3 Columns"/>
-		<include name="small" displayName="4 Columns"/>
+	<subset name="autogriddetailedsize" displayName="Automatic Grid-Detailed Size" appliesTo="grid-detailed">
+		<include name="automatic" displayName="Automatic" />
+		<include name="large" displayName="2 Columns" />
+		<include name="medium" displayName="3 Columns" />
+		<include name="small" displayName="4 Columns" />
 	</subset>
 
 	<!-- Aspect Ratios -->
@@ -477,5 +509,4 @@ Licnese: Creative Commons CC-BY-NC-SA
    <include ifSubset="aspect-ratio:16-10|16-10-auto">./aspect-ratio-16-10.xml</include>
    <include ifSubset="aspect-ratio:4-3|4-3-auto">./aspect-ratio-4-3.xml</include>
    <include ifSubset="aspect-ratio:1-1|1-1-auto">./aspect-ratio-1-1.xml</include>
-
 </theme>
