@@ -2,6 +2,9 @@
 <theme>
   <formatVersion>7</formatVersion>
 
+  <!-- Include -->
+  <include>./_inc/variables/variables.xml</include>
+
   <!-- Subset: Auto Grid Options -->
 	<subset name="autogridsize" displayName="Automatic Grid Size" appliesTo="grid">
 		<include name="automatic" displayName="Automatic" />
@@ -38,7 +41,7 @@
 			<scrollbarSize>0.005</scrollbarSize>
 			<scrollbarAlignment>right</scrollbarAlignment>
 			<autoLayoutSelectedZoom>1.05</autoLayoutSelectedZoom>
-      <zIndex>3</zIndex>
+			<zIndex>${zUI}</zIndex>
 		</imagegrid>
 
 		<gridtile name="default">

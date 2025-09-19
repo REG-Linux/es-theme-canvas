@@ -5,6 +5,9 @@
     based on 1920 x 1080
     -->
 
+  <!-- Include -->
+  <include>./_inc/variables/variables.xml</include>
+
 	<!-- System View Grid -->
 	<view name="system" ifSubset="system-view:grid">
 		<imagegrid name="imagegrid">
@@ -24,7 +27,7 @@
 		</text>
 
 		<imagegrid name="imagegrid">
-			<zIndex>20</zIndex>
+			<zIndex>${zUI}</zIndex>
 			<pos>0.008 0.08</pos>
 			<size>0.975 0.9</size>
 			<autoLayout ifSubset="sysgridsize:automatic">3 2</autoLayout>
@@ -64,7 +67,7 @@
 						<origin>0.5</origin>
 						<maxSize>.92 0.98</maxSize>
 						<linearSmooth>true</linearSmooth>
-						<zIndex>6</zIndex>
+						<zIndex>${zSelector}</zIndex>
 						<color>00000000</color>
 						<storyboard event="activate" repeat="forever">
 							<animation property="path" to="${themePath}/_inc/system-view/4-5.png" />
@@ -97,9 +100,9 @@
 						<origin>0.5</origin>
 						<maxSize>0.845 0.895</maxSize>
 						<roundCorners>${CornersSmall}</roundCorners>
-						<opacity>0.6</opacity>
+						<opacity>${lowOpacity}</opacity>
 						<color>${BackdropColor}</color>
-						<zIndex>3</zIndex>
+						<zIndex>${zUI}</zIndex>
 					</image>
 
 					<image name="shade" extra="true">
@@ -108,8 +111,8 @@
 						<origin>0.5</origin>
 						<maxSize>0.95 0.98</maxSize>
 						<roundCorners>${CornersSmall}</roundCorners>
-						<opacity>0.6</opacity>
-						<zIndex>2</zIndex>
+						<opacity>${lowOpacity}</opacity>
+						<zIndex>${zBackgroundArt}</zIndex>
 					</image>
 
 					<image name="systemBack" extra="true">
@@ -121,9 +124,9 @@
 					</image>
 
 					<image name="systemBack" extra="true">
-						<opacity>.90</opacity>
+						<opacity>${mediumOpacity}</opacity>
 						<linearSmooth>true</linearSmooth>
-						<zIndex>4</zIndex>
+						<zIndex>${zUI}</zIndex>
 						<storyboard event="activate">
 						  <animation property="opacity" to="1.00" duration="250" mode="easeOut" />
 						</storyboard>
@@ -135,7 +138,7 @@
 
 					<image name="theLogoImage" pos="0.5 0.65" origin="0.5 0" maxSize="0.45 0.25" linearSmooth="true" extra="true">
 						<path>${themePath}/_inc/systems/logos/{system:theme}.svg</path>
-						<zIndex>5</zIndex>
+						<zIndex>${zIcons}</zIndex>
 						<color>${systemInfoColor}</color>
 					</image>
 
@@ -152,10 +155,10 @@
 							<fontPath>${fontBold}</fontPath>
 							<color>${systemInfoColor}</color>
 							<scale>1</scale>
-							<zIndex>5</zIndex>
+							<zIndex>${zText}</zIndex>
 						</text>
 
-						<opacity>0.9</opacity>
+						<opacity>${mediumOpacity}</opacity>
 						<storyboard event="activate">
 							<animation property="opacity" to="1" />
 						</storyboard>
@@ -219,8 +222,8 @@
 					<maxSize>0.8 0.9</maxSize>
 					<roundCorners ifSubset="font-size:medium|large">${CornersMedium}</roundCorners>
 					<roundCorners ifSubset="font-size:small">${CornersSmall}</roundCorners>
-					<opacity>0.6</opacity>
-					<zIndex>4</zIndex>
+					<opacity>${lowOpacity}</opacity>
+					<zIndex>${zUI}</zIndex>
 					<color>${BackdropColor}</color>
 				</image>
 
@@ -231,8 +234,8 @@
 					<maxSize>0.99 0.998</maxSize>
 					<roundCorners ifSubset="font-size:medium|large">${CornersMedium}</roundCorners>
 					<roundCorners ifSubset="font-size:small">${CornersSmall}</roundCorners>
-					<opacity>0.6</opacity>
-					<zIndex>2</zIndex>
+					<opacity>${lowOpacity}</opacity>
+					<zIndex>${zBackgroundArt}</zIndex>
 				</image>
 
 				<image name="systemBack" extra="true">
@@ -241,9 +244,9 @@
 					<origin>0.5</origin>
 					<maxSize>0.75 0.8</maxSize>
 					<scale>1</scale>
-					<opacity>.90</opacity>
+					<opacity>${mediumOpacity}</opacity>
 					<linearSmooth>true</linearSmooth>
-					<zIndex>5</zIndex>
+					<zIndex>${zIcons}</zIndex>
 				</image>
 
 				<image name="systemBack" extra="true">
@@ -265,7 +268,7 @@
 					<fontPath>${fontBold}</fontPath>
 					<color>${systemInfoColor}</color>
 					<scale>1</scale>
-					<zIndex>6</zIndex>
+					<zIndex>${zText}</zIndex>
 				</text>
 
 				<text name="fallbackText" alignment="center" multiLine="true">
@@ -279,12 +282,12 @@
 					<fontPath>${fontBold}</fontPath>
 					<color>${systemInfoColor}</color>
 					<scale>1.5</scale>
-					<zIndex>6</zIndex>
+					<zIndex>${zText}</zIndex>
 				</text>
 
 				<image name="theLogoImage" pos="0.5 0.8" origin="0.5 1" maxSize="0.45 0.20" linearSmooth="true">
 					<path>${themePath}/_inc/systems/logos/{system:theme}.svg</path>
-					<zIndex>6</zIndex>
+					<zIndex>${zIcons}</zIndex>
 					<color>${systemInfoColor}</color>
 				</image>
 			</itemTemplate>
@@ -497,7 +500,7 @@
       <origin>0.5 0.5</origin>
       <pos>0.75 0.50648148147</pos>
       <size>0.4453125 0.8972222528</size>
-      <zIndex>2</zIndex>
+      <zIndex>${zBackgroundArt}</zIndex>
 			<linearSmooth>true</linearSmooth>
       <path>./_inc/images/gamelist/gamelist-background-shadow.webp</path>
 			<visible>true</visible>
@@ -507,7 +510,7 @@
       <origin>0.5 0.5</origin>
       <pos>0.75 0.50648148147</pos>
       <size>0.4140625 0.84166666666</size>
-      <zIndex>3</zIndex>
+      <zIndex>${zUI}</zIndex>
 			<linearSmooth>true</linearSmooth>
 			<path>${gamelistBackgroundImageCalculated}</path>
 			<visible>true</visible>
@@ -520,7 +523,7 @@
 			<primaryColor>${gamelistPrimaryColor}</primaryColor>
 			<secondaryColor>${gamelistSecondaryColor}</secondaryColor>
 			<horizontalMargin>0.008333333333333</horizontalMargin>
-			<zIndex>4</zIndex>
+			<zIndex>${zText}</zIndex>
 			<pos>${gamelistPos}</pos>
 			<size>${gamelistSize}</size>
 			<fontSize>${gamelistFontSize}</fontSize>

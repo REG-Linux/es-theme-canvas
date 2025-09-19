@@ -1,4 +1,5 @@
-<theme><formatVersion>7</formatVersion>
+<theme>
+  <formatVersion>7</formatVersion>
   <variables ifSubset="font-size:small">
     <systemDescriptionFontSize>0.038</systemDescriptionFontSize>
     <systemYearFontSize>0.038</systemYearFontSize>

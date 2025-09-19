@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<theme>
+  <formatVersion>7</formatVersion>
+  <variables>
+    <!-- Z-Index Hierarchy (Reorganized 0-10) -->
+    <zBackground>0</zBackground>
+    <zBackgroundArt>1</zBackgroundArt>
+    <zUI>2</zUI>
+    <zMetadata>3</zMetadata>
+    <zText>4</zText>
+    <zIcons>5</zIcons>
+    <zOverlay>6</zOverlay>
+    <zVideo>7</zVideo>
+    <zSelector>8</zSelector>
+    <zHelp>9</zHelp>
+    <zTop>10</zTop>
+
+    <!-- Base Font Sizes -->
+    <baseFontSize>0.035</baseFontSize>
+    <smallFontSize>0.025</smallFontSize>
+    <largeFontSize>0.045</largeFontSize>
+
+    <!-- Common Spacing -->
+    <baseMargin>0.02</baseMargin>
+    <smallMargin>0.01</smallMargin>
+    <largeMargin>0.04</largeMargin>
+
+    <!-- Opacity Values -->
+    <lowOpacity>0.6</lowOpacity>
+    <mediumOpacity>0.8</mediumOpacity>
+    <highOpacity>1.0</highOpacity>
+  </variables>
+</theme>

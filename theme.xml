@@ -9,7 +9,9 @@ Licnese: Creative Commons CC-BY-NC-SA
 	<formatVersion>7</formatVersion>
 
 	<!-- Includes -->
+	<include>./_inc/variables/variables.xml</include>
 	<include>./_inc/fonts/fonts.xml</include>
+	<include>./colors.xml</include>
 
 	<!-- Aspect Ratios -->
 	<subset name="aspect-ratio" displayName="Aspect Ratio">
@@ -54,7 +56,6 @@ Licnese: Creative Commons CC-BY-NC-SA
 		<include name="snes" displayName="Snes" />
 		<include name="famicom" displayName="Famicom" />
 	</subset>
-  <include>./colors.xml</include>
 
 	<!-- Subset: Font Size -->
 	<subset name="font-size" displayName="Font Size">
@@ -93,7 +94,7 @@ Licnese: Creative Commons CC-BY-NC-SA
       <size>0.2 0.03</size>
       <itemSpacing>0.003</itemSpacing>
       <color>${systemInfoColor}</color>
-      <!-- controllers -->
+      <zIndex>${zIcons}</zIndex>
       <imagePath>./_inc/images/gamepad.svg</imagePath>
       <gunPath>./_inc/images/gun.svg</gunPath>
       <wheelPath>./_inc/images/wheel.svg</wheelPath>
@@ -109,6 +110,7 @@ Licnese: Creative Commons CC-BY-NC-SA
       <pos>0.93 0.012</pos>
       <origin>0.5 0.5</origin>
       <size>0.04 0.04</size>
+      <zIndex>${zIcons}</zIndex>
       <full>./_inc/images/battery/battery-icon-100.svg</full>
       <at75>./_inc/images/battery/battery-icon-75.svg</at75>
       <at50>./_inc/images/battery/battery-icon-50.svg</at50>
@@ -131,6 +133,7 @@ Licnese: Creative Commons CC-BY-NC-SA
       <size>0.18 0.1</size>
       <alignment>center</alignment>
       <verticalAlignment>center</verticalAlignment>
+      <zIndex>${zText}</zIndex>
     </text>
   </view>
 
@@ -150,7 +153,7 @@ Licnese: Creative Commons CC-BY-NC-SA
 
 		<menuText name="menutext">
 			<fontPath>${fontBold}</fontPath>
-			<fontSize>0.035</fontSize>
+			<fontSize>${baseFontSize}</fontSize>
 			<color>${helpTextColor}</color>
 			<separatorColor>${gamelistSelectorColor}</separatorColor>
 			<selectedColor>${gamelistSelectedColor}</selectedColor>
@@ -159,7 +162,7 @@ Licnese: Creative Commons CC-BY-NC-SA
 
 		<menuTextSmall name="menutextsmall">
 			<fontPath>${fontBold}</fontPath>
-			<fontSize>0.025</fontSize>
+			<fontSize>${smallFontSize}</fontSize>
 			<color>${helpTextColor}</color>
 		</menuTextSmall>
 
@@ -180,6 +183,7 @@ Licnese: Creative Commons CC-BY-NC-SA
 		<menuBackground name="menubg">
 			<color>${menuBackgroundColor}</color>
 			<cornerSize>20 20</cornerSize>
+			<zIndex>${zUI}</zIndex>
 		</menuBackground>
 
 		<menuIcons name="menuicons">
@@ -211,6 +215,7 @@ Licnese: Creative Commons CC-BY-NC-SA
 			<fontPath>${fontBold}</fontPath>
 			<textColor>${helpTextColor}</textColor>
 			<iconColor>${helpTextColor}</iconColor>
+			<zIndex>${zHelp}</zIndex>
 			<iconA>./_inc/images/help-button-east.svg</iconA>
 			<iconB>./_inc/images/help-button-south.svg</iconB>
 			<iconX>./_inc/images/help-button-north.svg</iconX>
@@ -225,7 +230,7 @@ Licnese: Creative Commons CC-BY-NC-SA
 			<pos>0.5 0.5</pos>
 			<minSize>1 1</minSize>
 			<linearSmooth>true</linearSmooth>
-			<zIndex>0</zIndex>
+			<zIndex>${zBackgroundArt}</zIndex>
 		</image>
 	</view>
 
@@ -235,10 +240,9 @@ Licnese: Creative Commons CC-BY-NC-SA
 			<origin ifSubset="system-view:grid">1 0.5</origin>
 			<origin ifSubset="system-view:carousel">0.5 0.5</origin>
 			<path>./_inc/images/gamescount.svg</path>
-			<opacity>1</opacity>
 			<color>${systemInfoColor}</color>
-			<linearSmooth>true</linearSmooth>
-			<zIndex>3</zIndex>
+			<opacity>${highOpacity}</opacity>
+			<zIndex>${zIcons}</zIndex>
 			<visible ifSubset="system-view:grid">true</visible>
 			<visible ifSubset="system-view:carousel">false</visible>
 		</image>
@@ -246,17 +250,16 @@ Licnese: Creative Commons CC-BY-NC-SA
 		<image name="countline" extra="true">
 			<origin>0.5 0.5</origin>
 			<path>./_inc/images/countline.svg</path>
-			<opacity>1</opacity>
 			<color>${systemInfoColor}</color>
-			<linearSmooth>true</linearSmooth>
-			<zIndex>3</zIndex>
+			<opacity>${highOpacity}</opacity>
+			<zIndex>${zIcons}</zIndex>
 			<visible ifSubset="system-view:grid">false</visible>
 			<visible ifSubset="system-view:carousel">true</visible>
 		</image>
 
 		<text name="systemInfo">
 			<fontPath>${fontBold}</fontPath>
-			<zIndex>3</zIndex>
+			<zIndex>${zText}</zIndex>
 			<color>${systemInfoColor}</color>
 			<lineSpacing>1</lineSpacing>
       <size>0 ${systemDescriptionFontSize}</size>
@@ -276,7 +279,7 @@ Licnese: Creative Commons CC-BY-NC-SA
 			<text>{system:total}</text>
 			<fontPath>${fontBold}</fontPath>
 			<origin>0 0.5</origin>
-			<zIndex>3</zIndex>
+			<zIndex>${zText}</zIndex>
 			<color>${systemInfoColor}</color>
 			<alignment>left</alignment>
 			<lineSpacing>1</lineSpacing>
@@ -289,10 +292,10 @@ Licnese: Creative Commons CC-BY-NC-SA
 	<view name="basic, detailed, gamecarousel, grid">
 		<image name="logo" origin="0.5 0.5" linearSmooth="true">
 			<path>./_inc/systems/logos/${system.theme}.svg</path>
-			<zIndex>2</zIndex>
+			<zIndex>${zUI}</zIndex>
 			<color>${systemInfoColor}</color>
 			<visible>true</visible>
-			<opacity>0.8</opacity>
+			<opacity>${mediumOpacity}</opacity>
 		</image>
 	</view>
 
@@ -300,9 +303,9 @@ Licnese: Creative Commons CC-BY-NC-SA
 	<view name="detailed, gamecarousel, grid">
 		<image name="playtime-logo" origin="0.5 0.5" linearSmooth="true" extra="true">
 			<path>./_inc/images/playtime-icon.svg</path>
-			<zIndex>4</zIndex>
+			<zIndex>${zUI}</zIndex>
 			<color>${gameMetadataColor}</color>
-			<opacity>0.7</opacity>
+			<opacity>${lowOpacity}</opacity>
 			<visible ifSubset="metadata-option:rating">false</visible>
 			<visible ifSubset="metadata-option:playtime">true</visible>
 		</image>
@@ -313,7 +316,7 @@ Licnese: Creative Commons CC-BY-NC-SA
 			<roundCorners>0.005</roundCorners>
 			<showSnapshotNoVideo>true</showSnapshotNoVideo>
       <showSnapshotDelay>true</showSnapshotDelay>
-			<zIndex>8</zIndex>
+			<zIndex>${zVideo}</zIndex>
 		</video>
 
 		<datetime name="md_releasedate,md_lastplayed">
@@ -345,6 +348,7 @@ Licnese: Creative Commons CC-BY-NC-SA
 			<filledPath>./_inc/images/icon-star-filled.svg</filledPath>
 			<unfilledPath>./_inc/images/icon-star-unfilled.svg</unfilledPath>
 			<color>${gameMetadataColor}</color>
+			<zIndex>${zMetadata}</zIndex>
 			<visible ifSubset="metadata-option:rating">true</visible>
 			<visible ifSubset="metadata-option:playtime">false</visible>
 		</rating>
@@ -357,7 +361,7 @@ Licnese: Creative Commons CC-BY-NC-SA
 			<autoScroll>horizontal</autoScroll>
 			<autoScrollSpeed>50</autoScrollSpeed>
 			<autoScrollDelay>500000</autoScrollDelay>
-			<zIndex>4</zIndex>
+			<zIndex>${zMetadata}</zIndex>
 		</text>
 
 		<text name="md_genre">
@@ -381,6 +385,7 @@ Licnese: Creative Commons CC-BY-NC-SA
 			<autoScrollSpeed>50</autoScrollSpeed>
 			<autoScrollDelay>5000</autoScrollDelay>
 			<color>${gameMetadataColor}</color>
+			<zIndex>${zMetadata}</zIndex>
 		</text>
 	</view>
 
@@ -399,12 +404,13 @@ Licnese: Creative Commons CC-BY-NC-SA
 		<!-- Start: Extended Metadata -->
 		<image name="game-metadata-background-shadow-extended" extra="true">
 			<origin>0.5 0.5</origin>
-			<zIndex>2</zIndex>
+			<zIndex>${zUI}</zIndex>
 			<linearSmooth>true</linearSmooth>
 		</image>
+
 		<image name="game-metadata-background-image-extended" extra="true">
 			<origin>0.5 0.5</origin>
-			<zIndex>3</zIndex>
+			<zIndex>${zMetadata}</zIndex>
 			<linearSmooth>true</linearSmooth>
 		</image>
 	</view>
@@ -413,12 +419,13 @@ Licnese: Creative Commons CC-BY-NC-SA
 	<view name="detailed, gamecarousel, grid" ifSubset="font-size:medium|large,metadata:on">
 		<image name="game-metadata-background-shadow-base" extra="true">
 			<origin>0.5 0.5</origin>
-			<zIndex>2</zIndex>
+			<zIndex>${zUI}</zIndex>
 			<linearSmooth>true</linearSmooth>
 		</image>
+
 		<image name="game-metadata-background-image-base" extra="true">
 			<origin>0.5 0.5</origin>
-			<zIndex>3</zIndex>
+			<zIndex>${zUI}</zIndex>
 			<linearSmooth>true</linearSmooth>
 		</image>
 	</view>
@@ -483,7 +490,7 @@ Licnese: Creative Commons CC-BY-NC-SA
 	<!-- Carousel Detailed View -->
 	<view name="gamecarousel">
 		<gamecarousel name="gamecarousel">
-			<zIndex>3</zIndex>
+		  <zIndex>${zUI}</zIndex>
 			<type>vertical_wheel</type>
 			<size>1 1</size>
 			<logoScale>1.2</logoScale>

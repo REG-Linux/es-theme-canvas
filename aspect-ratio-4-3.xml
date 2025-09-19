@@ -5,6 +5,9 @@
     based on 640x480
     -->
 
+  <!-- Include -->
+  <include>./_inc/variables/variables.xml</include>
+
 	<!-- System View Grid -->
 	<view name="system" ifSubset="system-view:grid">
 		<imagegrid name="imagegrid">
@@ -242,39 +245,39 @@
 	<!-- Detailed - Textlist Background  -->
 	<view name="detailed, basic">
 		<image name="game-list-background-shadow" extra="true">
-			<origin>0.5 0.5</origin>
-			<pos>0.75 0.50648148147</pos>
-      <zIndex>2</zIndex>
-			<linearSmooth>true</linearSmooth>
+      <origin>0.5 0.5</origin>
+      <pos>0.75 0.50648148147</pos>
+      <zIndex>${zBackgroundArt}</zIndex>
+      <linearSmooth>true</linearSmooth>
       <path>./_inc/images/gamelist/gamelist-background-shadow.webp</path>
-			<size>0.48984375 0.8972222528</size>
-			<visible>true</visible>
+      <size>0.48984375 0.8972222528</size>
+      <visible>true</visible>
 		</image>
 
 		<image name="game-list-background" extra="true">
-			<origin>0.5 0.5</origin>
-			<pos>0.75 0.50648148147</pos>
-      <zIndex>3</zIndex>
-			<linearSmooth>true</linearSmooth>
-			<path>${gamelistBackgroundImageCalculated}</path>
-			<size>0.45546875 0.84166666666</size>
-			<visible>true</visible>
+      <origin>0.5 0.5</origin>
+      <pos>0.75 0.50648148147</pos>
+      <zIndex>${zUI}</zIndex>
+      <linearSmooth>true</linearSmooth>
+      <path>${gamelistBackgroundImageCalculated}</path>
+      <size>0.45546875 0.84166666666</size>
+      <visible>true</visible>
 		</image>
 
 		<textlist name="gamelist">
-			<fontPath>${fontBold}</fontPath>
-			<selectorColor>${gamelistSelectorColor}</selectorColor>
-			<selectedColor>${gamelistSelectedColor}</selectedColor>
-			<primaryColor>${gamelistPrimaryColor}</primaryColor>
-			<secondaryColor>${gamelistSecondaryColor}</secondaryColor>
-			<horizontalMargin>0.008333333333333</horizontalMargin>
-			<zIndex>4</zIndex>
-			<pos>${gamelistPos}</pos>
-			<size>${gamelistSize}</size>
-			<fontSize>${gamelistFontSize}</fontSize>
-			<selectorHeight>${gamelistSelectorHeight}</selectorHeight>
-			<lines>${linecount}</lines>
-			<alignment>left</alignment>
+      <fontPath>${fontBold}</fontPath>
+      <selectorColor>${gamelistSelectorColor}</selectorColor>
+      <selectedColor>${gamelistSelectedColor}</selectedColor>
+      <primaryColor>${gamelistPrimaryColor}</primaryColor>
+      <secondaryColor>${gamelistSecondaryColor}</secondaryColor>
+      <horizontalMargin>0.008333333333333</horizontalMargin>
+      <zIndex>${zText}</zIndex>
+      <pos>${gamelistPos}</pos>
+      <size>${gamelistSize}</size>
+      <fontSize>${gamelistFontSize}</fontSize>
+      <selectorHeight>${gamelistSelectorHeight}</selectorHeight>
+      <lines>${linecount}</lines>
+      <alignment>left</alignment>
 		</textlist>
 	</view>
 
