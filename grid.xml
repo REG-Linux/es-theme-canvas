@@ -1,34 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <theme>
-    <formatVersion>7</formatVersion>
+  <formatVersion>7</formatVersion>
 
-   <!-- Subset: Auto Grid Options -->
-	<subset name="autogridsize" displayName="Automatic Grid Size" appliesTo="grid" >
-		<include name="automatic" displayName="Automatic"/>
-		<include name="large" displayName="2 Rows"/>
-		<include name="medium" displayName="3 Rows"/>
-		<include name="small" displayName="4 Rows"/>
+  <!-- Include -->
+  <include>./_inc/variables/variables.xml</include>
+
+  <!-- Subset: Auto Grid Options -->
+	<subset name="autogridsize" displayName="Automatic Grid Size" appliesTo="grid">
+		<include name="automatic" displayName="Automatic" />
+		<include name="large" displayName="2 Rows" />
+		<include name="medium" displayName="3 Rows" />
+		<include name="small" displayName="4 Rows" />
 	</subset>
 
 	<!-- Game Grid View -->
 	<view name="grid">
 		<imagegrid name="gamegrid" ifSubset="autogridsize:automatic">
-    		<autoLayout ifSubset="aspect-ratio:16-9|16-9-auto">0 2</autoLayout>
+  		<autoLayout ifSubset="aspect-ratio:16-9|16-9-auto">0 2</autoLayout>
 			<autoLayout ifSubset="aspect-ratio:16-10|16-10-auto">0 3</autoLayout>
 			<autoLayout ifSubset="aspect-ratio:1-1|1-1-auto">0 3</autoLayout>
 			<autoLayout ifSubset="aspect-ratio:4-3|4-3-auto">0 2</autoLayout>
 		</imagegrid>
+
 		<imagegrid name="gamegrid" ifSubset="autogridsize:small,medium,large">
 			<autoLayout ifSubset="autogriddetailedsize:large">0 2</autoLayout>
 			<autoLayout ifSubset="autogriddetailedsize:medium">0 3</autoLayout>
 			<autoLayout ifSubset="autogriddetailedsize:small">0 4</autoLayout>
 		</imagegrid>
+
 		<imagegrid name="gamegrid">
 			<imageSizeMode>minSize</imageSizeMode>
 			<margin>0.015</margin>
-      		<pos>0.0125 0.08</pos>
-      		<size ifSubset="metadata:on">0.975 0.72</size>
-      		<size ifSubset="metadata:off">0.975 0.78</size>
+  		<pos>0.0125 0.08</pos>
+  		<size ifSubset="metadata:on">0.975 0.72</size>
+  		<size ifSubset="metadata:off">0.975 0.78</size>
 			<padding>7 7 7 7</padding>
 			<imageSource>cover</imageSource>
 			<scrollbarColor>${secondaryColor}</scrollbarColor>
@@ -36,8 +41,9 @@
 			<scrollbarSize>0.005</scrollbarSize>
 			<scrollbarAlignment>right</scrollbarAlignment>
 			<autoLayoutSelectedZoom>1.05</autoLayoutSelectedZoom>
-            <zIndex>3</zIndex>
+			<zIndex>${zUI}</zIndex>
 		</imagegrid>
+
 		<gridtile name="default">
 			<backgroundColor>00000007</backgroundColor>
 			<backgroundEdgeColor>00000007</backgroundEdgeColor>
@@ -45,18 +51,20 @@
 			<selectionMode>image</selectionMode>
 			<imageSizeMode>maxSize</imageSizeMode>
 			<padding>3.5 3.5</padding>
-              <path>./_inc/system-view/square-bg.png</path>
+      <path>./_inc/system-view/square-bg.png</path>
 		</gridtile>
-    	<image name="gridtile.image">
+
+    <image name="gridtile.image">
 			<linearSmooth>true</linearSmooth>
 			<roundCorners>${CornersGrid}</roundCorners>
 			<scale>0.99</scale>
-    	</image>
-    	<ninepatch name="gridtile.background:selected">
+    </image>
+
+   	<ninepatch name="gridtile.background:selected">
 			<color>${systemCarouselSelectorColor}</color>
 			<animateColor>${systemCarouselSelectorColor}00</animateColor>
 			<animateColorTime>800</animateColorTime>
 			<scale>0.9</scale>
-    	</ninepatch>
+    </ninepatch>
 	</view>
 </theme>

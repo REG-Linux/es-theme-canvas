@@ -1,10 +1,110 @@
+# EditorConfig for es-theme-canvas project
+# https://editorconfig.org/
+
 root = true
 
 [*]
 charset = utf-8
 end_of_line = lf
-indent_style = space
-indent_size = 4
-tab_width = 8
-trim_trailing_whitespace = true
 insert_final_newline = true
+trim_trailing_whitespace = true
+
+# XML files (theme definitions)
+[*.xml]
+indent_style = space
+indent_size = 2
+max_line_length = 120
+
+# Mustache templates
+[*.mustache]
+indent_style = space
+indent_size = 2
+max_line_length = 100
+
+# YAML configuration files
+[*.yml]
+[*.yaml]
+indent_style = space
+indent_size = 2
+max_line_length = 80
+
+# JSON files
+[*.json]
+indent_style = space
+indent_size = 2
+max_line_length = 100
+
+# JavaScript files
+[*.js]
+indent_style = space
+indent_size = 2
+max_line_length = 100
+
+# CSS files
+[*.css]
+indent_style = space
+indent_size = 2
+max_line_length = 100
+
+# Shell scripts
+[*.sh]
+indent_style = space
+indent_size = 2
+max_line_length = 80
+
+# Markdown documentation
+[*.md]
+indent_style = space
+indent_size = 2
+max_line_length = 80
+trim_trailing_whitespace = false
+
+# Git ignore and similar files
+[.gitignore]
+[.editorconfig]
+[*.ini]
+[*.conf]
+indent_style = space
+indent_size = 2
+max_line_length = 80
+
+# License file
+[LICENSE]
+[LICENSE.*]
+indent_style = space
+indent_size = 2
+max_line_length = 80
+
+# Specific theme directories
+[theme.xml]
+indent_style = space
+indent_size = 2
+max_line_length = 120
+
+[art/*.xml]
+indent_style = space
+indent_size = 2
+max_line_length = 120
+
+[fonts/*.xml]
+indent_style = space
+indent_size = 2
+max_line_length = 120
+
+# Configuration files in root
+[config/*.yml]
+[config/*.yaml]
+indent_style = space
+indent_size = 2
+max_line_length = 80
+
+# Script files
+[scripts/*.js]
+indent_style = space
+indent_size = 2
+max_line_length = 100
+
+[scripts/*.sh]
+indent_style = space
+indent_size = 2
+max_line_length = 80

@@ -1,10 +1,12 @@
 <theme>
 	<formatVersion>7</formatVersion>
-
     <!--
-    16-9 aspect ratio
+    1:1 aspect ratio
     based on 1920 x 1080
     -->
+
+  <!-- Include -->
+  <include>./_inc/variables/variables.xml</include>
 
 	<!-- System View Grid -->
 	<view name="system" ifSubset="system-view:grid">
@@ -12,18 +14,20 @@
 			<h>0.85</h>
 			<w>0.985</w>
 		</imagegrid>
+
 		<image name="gamesicon" extra="true">
 			<pos>0.075 0.05</pos>
-            <size>0 ${systemInfoFontSize}</size>
+      <size>0 ${systemInfoFontSize}</size>
 		</image>
+
 		<text name="systemInfoGrid">
 			<pos>0.085 0.05</pos>
 			<size>0 ${systemInfoFontSize}</size>
-            <fontSize>${systemInfoFontSize}</fontSize>
+      <fontSize>${systemInfoFontSize}</fontSize>
 		</text>
 
 		<imagegrid name="imagegrid">
-			<zIndex>20</zIndex>
+			<zIndex>${zUI}</zIndex>
 			<pos>0.008 0.08</pos>
 			<size>0.975 0.9</size>
 			<autoLayout ifSubset="sysgridsize:automatic">3 2</autoLayout>
@@ -49,11 +53,13 @@
 				<container>
 					<scale>1</scale>
 					<storyboard event="activate">
-						<animation property="scale" to="1.05" duration="150" mode="easeOut"/>
+					  <animation property="scale" to="1.05" duration="150" mode="easeOut" />
 					</storyboard>
+
 					<storyboard event="deactivate">
-						<animation property="scale" to="1" duration="250" mode="easeOut"/>
+					  <animation property="scale" to="1" duration="250" mode="easeOut" />
 					</storyboard>
+
 					<!-- Selector -->
 					<image name="selector" extra="true">
 						<path>${themePath}/_inc/system-view/4-5.png</path>
@@ -61,37 +67,54 @@
 						<origin>0.5</origin>
 						<maxSize>.92 0.98</maxSize>
 						<linearSmooth>true</linearSmooth>
-						<zIndex>6</zIndex>
+						<zIndex>${zSelector}</zIndex>
 						<color>00000000</color>
 						<storyboard event="activate" repeat="forever">
-							<animation property="path" to="${themePath}/_inc/system-view/4-5.png"/>
-							<animation property="color" from="${systemCarouselSelectorColor}00" to="${systemCarouselSelectorColor}" duration="1000" mode="easeOut"/>
-							<animation property="color" from="${systemCarouselSelectorColor}" to="${systemCarouselSelectorColor}00" begin="1500" duration="1000" mode="easeOut"/>
+							<animation property="path" to="${themePath}/_inc/system-view/4-5.png" />
+							<animation
+                property="color"
+                from="${systemCarouselSelectorColor}00"
+                to="${systemCarouselSelectorColor}"
+                duration="1000"
+                mode="easeOut"
+              />
+							<animation
+                property="color"
+                from="${systemCarouselSelectorColor}"
+                to="${systemCarouselSelectorColor}00"
+                begin="1500"
+                duration="1000"
+                mode="easeOut"
+              />
 						</storyboard>
+
 						<storyboard event="deactivate">
-							<animation property="path" to="${themePath}/_inc/system-view/4-5.png"/>
-							<animation property="color" to="00000000"/>
+							<animation property="path" to="${themePath}/_inc/system-view/4-5.png" />
+							<animation property="color" to="00000000" />
 						</storyboard>
 					</image>
+
 					<image name="backdrop" extra="true">
 						<path>./_inc/system-view/icon.png</path>
 						<pos>0.5 0.5</pos>
 						<origin>0.5</origin>
 						<maxSize>0.845 0.895</maxSize>
 						<roundCorners>${CornersSmall}</roundCorners>
-						<opacity>0.6</opacity>
+						<opacity>${lowOpacity}</opacity>
 						<color>${BackdropColor}</color>
-						<zIndex>3</zIndex>
-						</image>
+						<zIndex>${zUI}</zIndex>
+					</image>
+
 					<image name="shade" extra="true">
 						<path>./_inc/system-view/4-5-bg.png</path>
 						<pos>0.5 0.5</pos>
 						<origin>0.5</origin>
 						<maxSize>0.95 0.98</maxSize>
 						<roundCorners>${CornersSmall}</roundCorners>
-						<opacity>0.6</opacity>
-						<zIndex>2</zIndex>
-						</image>
+						<opacity>${lowOpacity}</opacity>
+						<zIndex>${zBackgroundArt}</zIndex>
+					</image>
+
 					<image name="systemBack" extra="true">
 						<path>${themePath}/_inc/systems/carousel-icons-icons/{system:theme}.webp</path>
 						<pos>0.5 0.45</pos>
@@ -99,22 +122,26 @@
 						<maxSize>0.8 0.9</maxSize>
 						<scale>1</scale>
 					</image>
+
 					<image name="systemBack" extra="true">
-						<opacity>.90</opacity>
+						<opacity>${mediumOpacity}</opacity>
 						<linearSmooth>true</linearSmooth>
-						<zIndex>4</zIndex>
+						<zIndex>${zUI}</zIndex>
 						<storyboard event="activate">
-						<animation property="opacity" to="1.00" duration="250" mode="easeOut"/>
+						  <animation property="opacity" to="1.00" duration="250" mode="easeOut" />
 						</storyboard>
+
 						<storyboard event="deactivate">
-						<animation property="opacity" to=".90" duration="250" mode="easeOut"/>
+						  <animation property="opacity" to=".90" duration="250" mode="easeOut" />
 						</storyboard>
 					</image>
+
 					<image name="theLogoImage" pos="0.5 0.65" origin="0.5 0" maxSize="0.45 0.25" linearSmooth="true" extra="true">
 						<path>${themePath}/_inc/systems/logos/{system:theme}.svg</path>
-						<zIndex>5</zIndex>
+						<zIndex>${zIcons}</zIndex>
 						<color>${systemInfoColor}</color>
-						</image>
+					</image>
+
 					<container padding="0">
 						<text name="fallbackText" alignment="center" multiLine="true">
 							<origin>0 0.5</origin>
@@ -124,18 +151,20 @@
 							<visible>false</visible>
 							<visible>!exists("${themePath}/_inc/systems/carousel-icons-icons/" + {system:theme} + ".webp")</visible>
 							<text>{system:fullName}</text>
-								<fontSize>${systemDescriptionFontSize}</fontSize>
-								<fontPath>${fontBold}</fontPath>
+							<fontSize>${systemDescriptionFontSize}</fontSize>
+							<fontPath>${fontBold}</fontPath>
 							<color>${systemInfoColor}</color>
 							<scale>1</scale>
-							<zIndex>5</zIndex>
+							<zIndex>${zText}</zIndex>
 						</text>
-						<opacity>0.9</opacity>
+
+						<opacity>${mediumOpacity}</opacity>
 						<storyboard event="activate">
-							<animation property="opacity" to="1"/>
+							<animation property="opacity" to="1" />
 						</storyboard>
+
 						<storyboard event="deactivate">
-							<animation property="opacity" to="0.9" duration="250" mode="easeOut"/>
+							<animation property="opacity" to="0.9" duration="250" mode="easeOut" />
 						</storyboard>
 					</container>
 				</container>
@@ -153,11 +182,13 @@
 			<pos>0.5 0.858</pos>
 			<size>0 ${helpFontSize}</size>
 		</image>
+
 		<text name="systemInfo">
 			<pos>0.5 0.90</pos>
 			<size>1 ${systemInfoFontSize}</size>
 			<fontSize>${systemInfoFontSize}</fontSize>
 		</text>
+
 		<carousel name="systemcarousel">
 			<type>horizontal</type>
 			<origin>0.5 0.5</origin>
@@ -177,11 +208,13 @@
 			<!-- System View: Carousel (Icon)-->
 			<itemTemplate>
 				<storyboard event="activate">
-					<animation property="scale" to="1.05" duration="150" mode="easeOut"/>
+					<animation property="scale" to="1.05" duration="150" mode="easeOut" />
 				</storyboard>
+
 				<storyboard event="deactivate">
-					<animation property="scale" to="1" duration="250" mode="easeOut"/>
+					<animation property="scale" to="1" duration="250" mode="easeOut" />
 				</storyboard>
+
 				<image name="backdrop" extra="true">
 					<path>./_inc/system-view/icon.png</path>
 					<pos>0.5 0.5</pos>
@@ -189,10 +222,11 @@
 					<maxSize>0.8 0.9</maxSize>
 					<roundCorners ifSubset="font-size:medium|large">${CornersMedium}</roundCorners>
 					<roundCorners ifSubset="font-size:small">${CornersSmall}</roundCorners>
-					<opacity>0.6</opacity>
-					<zIndex>4</zIndex>
+					<opacity>${lowOpacity}</opacity>
+					<zIndex>${zUI}</zIndex>
 					<color>${BackdropColor}</color>
 				</image>
+
 				<image name="shade" extra="true">
 					<path>${themePath}/_inc/system-view/4-5-bg.png</path>
 					<pos>0.5 0.5</pos>
@@ -200,39 +234,43 @@
 					<maxSize>0.99 0.998</maxSize>
 					<roundCorners ifSubset="font-size:medium|large">${CornersMedium}</roundCorners>
 					<roundCorners ifSubset="font-size:small">${CornersSmall}</roundCorners>
-					<opacity>0.6</opacity>
-					<zIndex>2</zIndex>
+					<opacity>${lowOpacity}</opacity>
+					<zIndex>${zBackgroundArt}</zIndex>
 				</image>
+
 				<image name="systemBack" extra="true">
 					<path>${themePath}/_inc/systems/carousel-icons-icons/{system:theme}.webp</path>
 					<pos>0.5 0.45</pos>
 					<origin>0.5</origin>
 					<maxSize>0.75 0.8</maxSize>
 					<scale>1</scale>
-					<opacity>.90</opacity>
+					<opacity>${mediumOpacity}</opacity>
 					<linearSmooth>true</linearSmooth>
-					<zIndex>5</zIndex>
+					<zIndex>${zIcons}</zIndex>
 				</image>
+
 				<image name="systemBack" extra="true">
 					<storyboard event="activate">
-					<animation property="opacity" to="1.00" duration="250" mode="easeOut"/>
+					<animation property="opacity" to="1.00" duration="250" mode="easeOut" />
 					</storyboard>
 					<storyboard event="deactivate">
-					<animation property="opacity" to=".90" duration="250" mode="easeOut"/>
+					<animation property="opacity" to=".90" duration="250" mode="easeOut" />
 					</storyboard>
 				</image>
+
 				<text name="systemyear" alignment="center" multiLine="true">
 					<origin>0.5 0</origin>
 					<pos>0.5 0.75</pos>
 					<size>0.5 0.2</size>
 					<forceUppercase>true</forceUppercase>
 					<text>{system:releaseYear}</text>
-						<fontSize>${systemDescriptionFontSize}</fontSize>
-						<fontPath>${fontBold}</fontPath>
+					<fontSize>${systemDescriptionFontSize}</fontSize>
+					<fontPath>${fontBold}</fontPath>
 					<color>${systemInfoColor}</color>
 					<scale>1</scale>
-					<zIndex>6</zIndex>
+					<zIndex>${zText}</zIndex>
 				</text>
+
 				<text name="fallbackText" alignment="center" multiLine="true">
 					<origin>0 0.5</origin>
 					<pos>0 1</pos>
@@ -244,15 +282,17 @@
 					<fontPath>${fontBold}</fontPath>
 					<color>${systemInfoColor}</color>
 					<scale>1.5</scale>
-					<zIndex>6</zIndex>
+					<zIndex>${zText}</zIndex>
 				</text>
+
 				<image name="theLogoImage" pos="0.5 0.8" origin="0.5 1" maxSize="0.45 0.20" linearSmooth="true">
 					<path>${themePath}/_inc/systems/logos/{system:theme}.svg</path>
-					<zIndex>6</zIndex>
+					<zIndex>${zIcons}</zIndex>
 					<color>${systemInfoColor}</color>
 				</image>
 			</itemTemplate>
 		</carousel>
+
 		<text name="systemInfoGrid" extra="true">
             <visible>false</visible>
 		</text>
@@ -267,29 +307,34 @@
 			<maxLogoCount>5</maxLogoCount>
 			<scaledLogoSpacing>${logospacing}</scaledLogoSpacing>
 		</gamecarousel>
+
 		<image name="logo">
 			<pos>0.255 0.88</pos>
 			<maxSize>0.25 .08</maxSize>
 		</image>
 	</view>
+
 	<view name="basic">
 		<image name="logo">
 			<pos>0.255 0.5</pos>
 			<maxSize>0.35 .35</maxSize>
 		</image>
 	</view>
+
 	<view name="detailed">
 		<image name="logo">
 			<pos>0.255 0.88</pos>
 			<maxSize>0.25 .08</maxSize>
 		</image>
 	</view>
+
 	<view name="grid" ifSubset="metadata:on">
 		<image name="logo">
 			<pos>0.255 0.88</pos>
 			<maxSize>0.25 .08</maxSize>
 		</image>
 	</view>
+
 	<view name="grid" ifSubset="metadata:off">
 		<image name="logo">
 			<pos>0.5 0.91</pos>
@@ -298,155 +343,179 @@
 	</view>
 
 	<!-- Grid View Extended-->
-	<view name="grid" ifSubset="font-size:small,metadata:on" >
-
+	<view name="grid" ifSubset="font-size:small,metadata:on">
 		<!-- Metadata Toggle-->
 		<video name="md_video,">
 			<visible>false</visible>
 		</video>
+
 		<image name="md_marquee,md_image,md_thumbnail">
 			<visible>false</visible>
 		</image>
+
 		<text name="md_description">
 			<visible>false</visible>
 		</text>
 
 		<!-- Metadata-->
 		<image name="game-metadata-background-shadow-extended" extra="true">
-            <pos>0.731 0.884</pos>
-            <size>0.46944928757 0.13288403122</size>
-            <path>./_inc/images/simple/gamelist-metadata-background-shadow-extended.webp</path>
+      <pos>0.731 0.884</pos>
+      <size>0.46944928757 0.13288403122</size>
+      <path>./_inc/images/simple/gamelist-metadata-background-shadow-extended.webp</path>
 		</image>
+
 		<image name="game-metadata-background-image-extended" extra="true">
-            <pos>0.731 0.884</pos>
-            <size>0.45076433396 0.09612302346</size>
+      <pos>0.731 0.884</pos>
+      <size>0.45076433396 0.09612302346</size>
 			<path>./_inc/images/simple/${gamelistMetadataBackgroundImage}-extended.webp</path>
 		</image>
+
 		<rating name="md_rating">
-            <pos>0.621 0.911</pos>
-            <size>0 0.0225</size>
+      <pos>0.621 0.911</pos>
+      <size>0 0.0225</size>
 		</rating>
+
 		<datetime name="md_releasedate">
-            <pos>0.529 0.912</pos>
-            <size>0.046 ${metaDatafontSize}</size>
+      <pos>0.529 0.912</pos>
+      <size>0.046 ${metaDatafontSize}</size>
 			<fontSize>${metaDatafontSize}</fontSize>
 		</datetime>
+
 		<text name="md_name">
-            <pos>0.529 0.856</pos>
-            <size>.31 ${metaDatafontSize}</size>
+      <pos>0.529 0.856</pos>
+      <size>.31 ${metaDatafontSize}</size>
 			<fontSize>${metaDatafontSize}</fontSize>
 		</text>
+
 		<text name="md_players">
 			<visible>false</visible>
 		</text>
+
 		<text name="md_genre">
-            <pos>0.6911 0.912</pos>
-            <size>0.148 ${metaDatafontSize}</size>
+      <pos>0.6911 0.912</pos>
+      <size>0.148 ${metaDatafontSize}</size>
 			<fontSize>${metaDatafontSize}</fontSize>
 		</text>
+
 		<text name="md_developer">
 			<visible>false</visible>
 		</text>
+
 		<text name="md_publisher" extra="true">
 			<visible>false</visible>
 		</text>
+
 		<datetime name="md_lastplayed">
 			<value>Never</value>
-            <pos>0.872 0.8556</pos>
-            <size>0.084 ${metaDatafontSize}</size>
+      <pos>0.872 0.8556</pos>
+      <size>0.084 ${metaDatafontSize}</size>
 			<size>0.1 ${metaDatafontSize}</size>
 			<fontSize>${metaDatafontSize}</fontSize>
 		</datetime>
+
 		<text name="md_playcount" extra="true">
-            <pos>0.872 0.912</pos>
-            <size>0.084 ${metaDatafontSize}</size>
+      <pos>0.872 0.912</pos>
+      <size>0.084 ${metaDatafontSize}</size>
 			<fontSize>${metaDatafontSize}</fontSize>
 		</text>
+
 		<text name="md_gametime_custom">
-			 <pos>0.6041 0.912</pos>
-            <size>0.056 ${metaDatafontSize}</size>
+			<pos>0.6041 0.912</pos>
+      <size>0.056 ${metaDatafontSize}</size>
 			<fontSize>${metaDatafontSize}</fontSize>
 		</text>
+
 		<image name="playtime-logo">
 			<pos>0.594 0.912</pos>
-	        <size>0 0.025</size>
+	    <size>0 0.025</size>
 		</image>
 	</view>
 
 	<!-- Grid View Base-->
-	<view name="grid" ifSubset="font-size:medium|large,metadata:on" >
-
+	<view name="grid" ifSubset="font-size:medium|large,metadata:on">
 		<!-- Metadata Toggle-->
 		<video name="md_video,">
 			<visible>false</visible>
 		</video>
+
 		<image name="md_marquee,md_image,md_thumbnail">
 			<visible>false</visible>
 		</image>
+
 		<text name="md_description">
 			<visible>false</visible>
 		</text>
+
 		<!-- Metadata-->
 		<image name="game-metadata-background-shadow-base" extra="true">
-            <pos>0.725 0.88</pos>
-            <size>0.4880998133 0.1771787083</size>
-            <path>./_inc/images/simple/gamelist-metadata-background-shadow-base.webp</path>
+      <pos>0.725 0.88</pos>
+      <size>0.4880998133 0.1771787083</size>
+      <path>./_inc/images/simple/gamelist-metadata-background-shadow-base.webp</path>
 		</image>
+
 		<image name="game-metadata-background-image-base" extra="true">
-            <pos>0.725 0.88</pos>
-            <size>0.46318654182 0.1281640313</size>
-            <path>./_inc/images/simple/${gamelistMetadataBackgroundImage}-base.webp</path>
+      <pos>0.725 0.88</pos>
+      <size>0.46318654182 0.1281640313</size>
+      <path>./_inc/images/simple/${gamelistMetadataBackgroundImage}-base.webp</path>
 		</image>
+
 		<rating name="md_rating">
-            <pos>0.647 0.918</pos>
-            <size>0 0.03</size>
+      <pos>0.647 0.918</pos>
+      <size>0 0.03</size>
 		</rating>
-            <datetime name="md_releasedate">
-            <pos>0.524 0.918</pos>
-            <size>0.06 ${metaDatafontSize}</size>
+
+    <datetime name="md_releasedate">
+      <pos>0.524 0.918</pos>
+      <size>0.06 ${metaDatafontSize}</size>
 			<fontSize>${metaDatafontSize}</fontSize>
 		</datetime>
+
 		<text name="md_name">
-            <pos>0.524 0.842</pos>
-            <size>.432 ${metaDatafontSize}</size>
+      <pos>0.524 0.842</pos>
+      <size>.432 ${metaDatafontSize}</size>
 			<fontSize>${metaDatafontSize}</fontSize>
 		</text>
+
 		<text name="md_genre">
-            <pos>0.740 0.918</pos>
-            <size>0.215 ${metaDatafontSize}</size>
+      <pos>0.740 0.918</pos>
+      <size>0.215 ${metaDatafontSize}</size>
 			<fontSize>${metaDatafontSize}</fontSize>
 		</text>
+
 		<text name="md_gametime_custom">
-			 <pos>0.624 0.918</pos>
-            <size>0.072 ${metaDatafontSize}</size>
+		  <pos>0.624 0.918</pos>
+      <size>0.072 ${metaDatafontSize}</size>
 			<fontSize>${metaDatafontSize}</fontSize>
 		</text>
+
 		<image name="playtime-logo">
 			<pos>0.61 0.918</pos>
-	        <size>0 0.030</size>
+      <size>0 0.030</size>
 		</image>
 	</view>
 
 	<!-- Detailed - Textlist Background  -->
 	<view name="detailed, basic">
 		<image name="game-list-background-shadow" extra="true">
-            <origin>0.5 0.5</origin>
-            <pos>0.75 0.50648148147</pos>
-            <size>0.4453125 0.8972222528</size>
-            <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <pos>0.75 0.50648148147</pos>
+      <size>0.4453125 0.8972222528</size>
+      <zIndex>${zBackgroundArt}</zIndex>
 			<linearSmooth>true</linearSmooth>
-            <path>./_inc/images/gamelist/gamelist-background-shadow.webp</path>
+      <path>./_inc/images/gamelist/gamelist-background-shadow.webp</path>
 			<visible>true</visible>
 		</image>
+
 		<image name="game-list-background" extra="true">
-            <origin>0.5 0.5</origin>
-            <pos>0.75 0.50648148147</pos>
-            <size>0.4140625 0.84166666666</size>
-            <zIndex>3</zIndex>
+      <origin>0.5 0.5</origin>
+      <pos>0.75 0.50648148147</pos>
+      <size>0.4140625 0.84166666666</size>
+      <zIndex>${zUI}</zIndex>
 			<linearSmooth>true</linearSmooth>
 			<path>${gamelistBackgroundImageCalculated}</path>
 			<visible>true</visible>
 		</image>
+
 		<textlist name="gamelist">
 			<fontPath>${fontBold}</fontPath>
 			<selectorColor>${gamelistSelectorColor}</selectorColor>
@@ -454,7 +523,7 @@
 			<primaryColor>${gamelistPrimaryColor}</primaryColor>
 			<secondaryColor>${gamelistSecondaryColor}</secondaryColor>
 			<horizontalMargin>0.008333333333333</horizontalMargin>
-			<zIndex>4</zIndex>
+			<zIndex>${zText}</zIndex>
 			<pos>${gamelistPos}</pos>
 			<size>${gamelistSize}</size>
 			<fontSize>${gamelistFontSize}</fontSize>
@@ -465,143 +534,165 @@
 	</view>
 
 	<!-- Detailed - Small Metadata -->
-	<view name="detailed, gamecarousel" ifSubset="font-size:small,metadata:on" >
+	<view name="detailed, gamecarousel" ifSubset="font-size:small,metadata:on">
 		<video name="md_video">
 			<pos>0.25 0.28</pos>
 			<maxSize>0.448958333333333 0.38</maxSize>
 			<visible>true</visible>
 		</video>
+
 		<image name="game-metadata-background-shadow-extended" extra="true">
-            <pos>0.25 0.66058187797</pos>
-            <size>0.41089191099 0.36407719227</size>
-            <path>./_inc/images/detailed/gamelist-metadata-background-shadow-extended.webp</path>
+      <pos>0.25 0.66058187797</pos>
+      <size>0.41089191099 0.36407719227</size>
+      <path>./_inc/images/detailed/gamelist-metadata-background-shadow-extended.webp</path>
 		</image>
+
 		<image name="game-metadata-background-image-extended" extra="true">
-            <pos>0.25 0.66058187797</pos>
-            <size>0.386 0.31916375594</size>
+      <pos>0.25 0.66058187797</pos>
+      <size>0.386 0.31916375594</size>
 			<path>./_inc/images/detailed/${gamelistMetadataBackgroundImage}-extended.webp</path>
 		</image>
+
 		<rating name="md_rating">
-            <pos>0.1056875 0.561</pos>
-            <size>0 ${metaDatafontSize}</size>
+      <pos>0.1056875 0.561</pos>
+      <size>0 ${metaDatafontSize}</size>
 		</rating>
+
 		<datetime name="md_releasedate">
-            <pos>0.0771875 0.605</pos>
-            <size>0 ${metaDatafontSize}</size>
+      <pos>0.0771875 0.605</pos>
+      <size>0 ${metaDatafontSize}</size>
 			<fontSize>${metaDatafontSize}</fontSize>
 		</datetime>
+
 		<text name="md_name">
-            <pos>0.0771875 0.517</pos>
-            <size>0.365 ${metaDatafontSize}</size>
+      <pos>0.0771875 0.517</pos>
+      <size>0.365 ${metaDatafontSize}</size>
 			<fontSize>${metaDatafontSize}</fontSize>
 		</text>
+
 		<text name="md_players">
-            <pos>0.0771875 0.651</pos>
-            <size>0 ${metaDatafontSize}</size>
+      <pos>0.0771875 0.651</pos>
+      <size>0 ${metaDatafontSize}</size>
 			<fontSize>${metaDatafontSize}</fontSize>
 		</text>
+
 		<text name="md_genre">
-            <pos>0.1831875 0.562</pos>
-            <size>0.258 ${metaDatafontSize}</size>
+      <pos>0.1831875 0.562</pos>
+      <size>0.258 ${metaDatafontSize}</size>
 			<fontSize>${metaDatafontSize}</fontSize>
 		</text>
+
 		<text name="md_developer">
-            <pos>0.1831875 0.606</pos>
-            <size>0.146 ${metaDatafontSize}</size>
+      <pos>0.1831875 0.606</pos>
+      <size>0.146 ${metaDatafontSize}</size>
 			<fontSize>${metaDatafontSize}</fontSize>
 		</text>
+
 		<text name="md_publisher" extra="true">
-            <pos>0.1831875 0.651</pos>
-            <size>0.146 ${metaDatafontSize}</size>
+      <pos>0.1831875 0.651</pos>
+      <size>0.146 ${metaDatafontSize}</size>
 			<fontSize>${metaDatafontSize}</fontSize>
 		</text>
+
 		<datetime name="md_lastplayed">
 			<value>Never</value>
-            <pos>0.3576875 0.606</pos>
-            <size>0.084 ${metaDatafontSize}</size>
+      <pos>0.3576875 0.606</pos>
+      <size>0.084 ${metaDatafontSize}</size>
 			<fontSize>${metaDatafontSize}</fontSize>
 		</datetime>
+
 		<text name="md_playcount" extra="true">
-            <pos>0.3576875 0.651</pos>
-            <size>0.084 ${metaDatafontSize}</size>
+      <pos>0.3576875 0.651</pos>
+      <size>0.084 ${metaDatafontSize}</size>
 			<fontSize>${metaDatafontSize}</fontSize>
 		</text>
+
 		<text name="md_description">
-            <pos>0.25 ${descriptionPos}</pos>
-            <size>0.3768 ${descriptionHeight}</size>
+      <pos>0.25 ${descriptionPos}</pos>
+      <size>0.3768 ${descriptionHeight}</size>
 			<fontSize>${descriptionFontSize}</fontSize>
 			<lineSpacing>${descriptionLineSpacing}</lineSpacing>
 			<visible>true</visible>
 		</text>
+
 		<text name="md_gametime_custom">
-			 <pos>0.0771875 0.562</pos>
-            <size>0.07 ${metaDatafontSize}</size>
+		  <pos>0.0771875 0.562</pos>
+      <size>0.07 ${metaDatafontSize}</size>
 			<fontSize>${metaDatafontSize}</fontSize>
 		</text>
+
 		<image name="playtime-logo">
 			<pos>0.067 0.562</pos>
-	        <size>0 0.023</size>
+      <size>0 0.023</size>
 		</image>
 	</view>
 
 	<!-- Detailed - Medium/Large Metadata -->
-	<view name="detailed, gamecarousel" ifSubset="font-size:medium|large,metadata:on" >
+	<view name="detailed, gamecarousel" ifSubset="font-size:medium|large,metadata:on">
 		<video name="md_video">
 			<pos>0.25 0.28</pos>
 			<maxSize>0.448958333333333 0.38</maxSize>
 			<visible>true</visible>
 		</video>
+
 		<image name="game-metadata-background-shadow-base" extra="true">
 			<pos>0.255 0.6622</pos>
 			<size>0.4930952592 0.33764766516</size>
-            <path>./_inc/images/detailed/gamelist-metadata-background-shadow-base.webp</path>
+      <path>./_inc/images/detailed/gamelist-metadata-background-shadow-base.webp</path>
 		</image>
+
 		<image name="game-metadata-background-image-base" extra="true">
 			<pos>0.255 0.6622</pos>
 			<size>0.4632 0.29289</size>
-            <path>./_inc/images/detailed/${gamelistMetadataBackgroundImage}-base.webp</path>
+      <path>./_inc/images/detailed/${gamelistMetadataBackgroundImage}-base.webp</path>
 		</image>
+
 		<rating name="md_rating">
 			<pos>0.2075 0.61</pos>
-            <size>0 ${metaDatafontSize}</size>
+      <size>0 ${metaDatafontSize}</size>
 		</rating>
-            <datetime name="md_releasedate">
-            <pos>0.0625 0.608</pos>
-            <size>0.068 ${metaDatafontSize}</size>
+
+    <datetime name="md_releasedate">
+      <pos>0.0625 0.608</pos>
+      <size>0.068 ${metaDatafontSize}</size>
 			<fontSize>${metaDatafontSize}</fontSize>
 		</datetime>
+
 		<text name="md_name">
-            <pos>0.0625 0.54</pos>
-            <size>.4225 0.05</size>
+      <pos>0.0625 0.54</pos>
+      <size>.4225 0.05</size>
 			<fontSize>${metaDatafontSize}</fontSize>
 		</text>
+
 		<text name="md_genre">
 			<pos>0.32 0.608</pos>
-             <size>0.165 0.05</size>
+      <size>0.165 0.05</size>
 			<fontSize>${metaDatafontSize}</fontSize>
 		</text>
 
 		<text name="md_description">
 			<pos>0.255 ${descriptionPos}</pos>
-            <size>0.45 ${descriptionHeight}</size>
+      <size>0.45 ${descriptionHeight}</size>
 			<fontSize>${descriptionFontSize}</fontSize>
 			<lineSpacing>${descriptionLineSpacing}</lineSpacing>
 			<visible>true</visible>
 		</text>
+
 		<text name="md_gametime_custom">
-			 <pos>0.177 0.608</pos>
-            <size>0.094 ${metaDatafontSize}</size>
+		  <pos>0.177 0.608</pos>
+      <size>0.094 ${metaDatafontSize}</size>
 			<fontSize>${metaDatafontSize}</fontSize>
 		</text>
+
 		<image name="playtime-logo">
 			<pos>0.165 0.608</pos>
-	        <size>0 0.035</size>
+      <size>0 0.035</size>
 		</image>
 	</view>
 
 	<!-- Detailed - Metadata Off -->
-	<view name="detailed, gamecarousel" ifSubset="metadata:off" >
-	<video name="md_video">
+	<view name="detailed, gamecarousel" ifSubset="metadata:off">
+	  <video name="md_video">
 			<pos>0.255 0.48</pos>
 			<maxSize>0.386 0.40</maxSize>
 			<visible>true</visible>
@@ -610,13 +701,13 @@
 
 	<!-- Detailed Grid View-->
 	<!-- Detailed Grid- Small Metadata -->
-	<view name="grid" ifSubset="metadata:off" >
-        <video name="md_video,">
-            <visible>false</visible>
-        </video>
-        <image name="md_marquee,md_image,md_thumbnail">
-            <visible>false</visible>
-        </image>
-	</view>
+	<view name="grid" ifSubset="metadata:off">
+    <video name="md_video,">
+      <visible>false</visible>
+    </video>
 
+    <image name="md_marquee,md_image,md_thumbnail">
+      <visible>false</visible>
+    </image>
+	</view>
 </theme>
