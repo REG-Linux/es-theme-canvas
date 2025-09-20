@@ -199,7 +199,7 @@
 			<color>ffffff00</color>
 			<logoScale>1.3</logoScale>
 			<scaledLogoSpacing>${logospacing}</scaledLogoSpacing>
-			<minLogoOpacity>0.9</minLogoOpacity>
+			<minLogoOpacity>${highOpacity}</minLogoOpacity>
 			<logoAlignment>center</logoAlignment>
 			<defaultTransition>instant</defaultTransition>
 			<systemInfoDelay>0.05</systemInfoDelay>
