@@ -224,8 +224,8 @@ Licnese: Creative Commons CC-BY-NC-SA
 
 		<!-- System Backgrounds -->
 		<image name="background-art" extra="true">
-			<path ifSubset="color-scheme:light|dark|retro|neon|sony|snes|famicom|pastel">${backgroundArtPath}.jpg</path>
 			<path ifSubset="color-scheme:light|dark|retro|neon|sony|snes|famicom|pastel">${backgroundArtPath}.webp</path>
+			<path ifSubset="color-scheme:light|dark|retro|neon|sony|snes|famicom|pastel">${backgroundArtPath}.jpg</path>
 			<origin>0.5 0.5</origin>
 			<pos>0.5 0.5</pos>
 			<minSize>1 1</minSize>
