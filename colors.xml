@@ -5,7 +5,6 @@
     <backgroundColor>846D21</backgroundColor>
     <systemInfoColor>5b5a58</systemInfoColor>
     <systemCarouselTextColor>5b5a58</systemCarouselTextColor>
-    <systemCarouselTextBackgroundColor>00000000</systemCarouselTextBackgroundColor>
     <systemCarouselSelectorColor>93cbb7</systemCarouselSelectorColor>
     <gamelistLogoColor>5b5a58</gamelistLogoColor>
     <gamelistBackgroundImage>gamelist-background-light</gamelistBackgroundImage>
@@ -20,6 +19,7 @@
     <backgroundArtPath>${themePath}/wallpapers/retro</backgroundArtPath>
     <backgroundArtOpacity>${highOpacity}</backgroundArtOpacity>
     <menuBackgroundColor>fbf6de</menuBackgroundColor>
+    <menuBackgroundColorTitle>faf1c5</menuBackgroundColorTitle>
   </variables>
 
   <variables ifSubset="color-scheme:dark">
@@ -27,7 +27,6 @@
     <backgroundColor>373737</backgroundColor>
     <systemInfoColor>cccccc</systemInfoColor>
     <systemCarouselTextColor>cccccc</systemCarouselTextColor>
-    <systemCarouselTextBackgroundColor>00000000</systemCarouselTextBackgroundColor>
     <systemCarouselSelectorColor>ffffff</systemCarouselSelectorColor>
     <gamelistLogoColor>cccccc</gamelistLogoColor>
     <gamelistBackgroundImage>gamelist-background-dark</gamelistBackgroundImage>
@@ -42,6 +41,7 @@
     <backgroundArtPath>${themePath}/wallpapers/dark</backgroundArtPath>
     <backgroundArtOpacity>${highOpacity}</backgroundArtOpacity>
     <menuBackgroundColor>373737</menuBackgroundColor>
+    <menuBackgroundColorTitle>1c1c1c</menuBackgroundColorTitle>
   </variables>
 
   <variables ifSubset="color-scheme:light">
@@ -49,7 +49,6 @@
     <backgroundColor>373737</backgroundColor>
     <systemInfoColor>555555</systemInfoColor>
     <systemCarouselTextColor>555555</systemCarouselTextColor>
-    <systemCarouselTextBackgroundColor>00000000</systemCarouselTextBackgroundColor>
     <systemCarouselSelectorColor>FFFFFF</systemCarouselSelectorColor>
     <gamelistLogoColor>555555</gamelistLogoColor>
     <gamelistBackgroundImage>gamelist-background-light</gamelistBackgroundImage>
@@ -64,6 +63,7 @@
     <backgroundArtPath>${themePath}/wallpapers/light</backgroundArtPath>
     <backgroundArtOpacity>${mediumOpacity}</backgroundArtOpacity>
     <menuBackgroundColor>ffffff</menuBackgroundColor>
+    <menuBackgroundColorTitle>c2c2c2</menuBackgroundColorTitle>
   </variables>
 
   <variables ifSubset="color-scheme:neon">
@@ -71,7 +71,6 @@
     <backgroundColor>74006c</backgroundColor>
     <systemInfoColor>FFFFFF</systemInfoColor>
     <systemCarouselTextColor>FFFFFF</systemCarouselTextColor>
-    <systemCarouselTextBackgroundColor>00000000</systemCarouselTextBackgroundColor>
     <systemCarouselSelectorColor>74006c</systemCarouselSelectorColor>
     <gamelistLogoColor>FFFFFF</gamelistLogoColor>
     <gamelistBackgroundImage>gamelist-background-dark</gamelistBackgroundImage>
@@ -86,6 +85,7 @@
     <backgroundArtPath>${themePath}/wallpapers/neon</backgroundArtPath>
     <backgroundArtOpacity>${mediumOpacity}</backgroundArtOpacity>
     <menuBackgroundColor>111111</menuBackgroundColor>
+    <menuBackgroundColorTitle>212121</menuBackgroundColorTitle>
   </variables>
 
   <variables ifSubset="color-scheme:pastel">
@@ -93,7 +93,6 @@
     <backgroundColor>bbbbbb</backgroundColor>
     <systemInfoColor>777777</systemInfoColor>
     <systemCarouselTextColor>777777</systemCarouselTextColor>
-    <systemCarouselTextBackgroundColor>00000000</systemCarouselTextBackgroundColor>
     <systemCarouselSelectorColor>A7C7E7</systemCarouselSelectorColor>
     <gamelistLogoColor>777777</gamelistLogoColor>
     <gamelistBackgroundImage>gamelist-background-light</gamelistBackgroundImage>
@@ -108,6 +107,7 @@
     <backgroundArtPath>${themePath}/wallpapers/pastel</backgroundArtPath>
     <backgroundArtOpacity>${mediumOpacity}</backgroundArtOpacity>
     <menuBackgroundColor>ffffff</menuBackgroundColor>
+    <menuBackgroundColorTitle>dedede</menuBackgroundColorTitle>
   </variables>
 
   <variables ifSubset="color-scheme:famicom">
@@ -115,7 +115,6 @@
     <backgroundColor>846D21</backgroundColor>
     <systemInfoColor>e4e5ca</systemInfoColor>
     <systemCarouselTextColor>3b3b3b</systemCarouselTextColor>
-    <systemCarouselTextBackgroundColor>00000000</systemCarouselTextBackgroundColor>
     <systemCarouselSelectorColor>846D21</systemCarouselSelectorColor>
     <gamelistLogoColor>e4e5ca</gamelistLogoColor>
     <gamelistBackgroundImage>gamelist-background-beige</gamelistBackgroundImage>
@@ -130,6 +129,7 @@
     <backgroundArtPath>${themePath}/wallpapers/famicom</backgroundArtPath>
     <backgroundArtOpacity>${highOpacity}</backgroundArtOpacity>
     <menuBackgroundColor>771f26</menuBackgroundColor>
+    <menuBackgroundColorTitle>612b2f</menuBackgroundColorTitle>
   </variables>
 
   <variables ifSubset="color-scheme:snes">
@@ -137,7 +137,6 @@
     <backgroundColor>bdbcc1</backgroundColor>
     <systemInfoColor>3c3b3b</systemInfoColor>
     <systemCarouselTextColor>3b3b3b</systemCarouselTextColor>
-    <systemCarouselTextBackgroundColor>00000000</systemCarouselTextBackgroundColor>
     <systemCarouselSelectorColor>4a3580</systemCarouselSelectorColor>
     <gamelistLogoColor>3c3b3b</gamelistLogoColor>
     <gamelistBackgroundImage>gamelist-background-retro</gamelistBackgroundImage>
@@ -152,6 +151,7 @@
     <backgroundArtPath>${themePath}/wallpapers/snes</backgroundArtPath>
     <backgroundArtOpacity>${highOpacity}</backgroundArtOpacity>
     <menuBackgroundColor>bdbcc1</menuBackgroundColor>
+    <menuBackgroundColorTitle>a2a1a6</menuBackgroundColorTitle>
   </variables>
 
   <variables ifSubset="color-scheme:sony">
@@ -159,7 +159,6 @@
     <backgroundColor>ffffff</backgroundColor>
     <systemInfoColor>ffffff</systemInfoColor>
     <systemCarouselTextColor>ffffff</systemCarouselTextColor>
-    <systemCarouselTextBackgroundColor>00000000</systemCarouselTextBackgroundColor>
     <systemCarouselSelectorColor>ffffff</systemCarouselSelectorColor>
     <gamelistLogoColor>ffffff</gamelistLogoColor>
     <gamelistBackgroundImage>gamelist-background-clear</gamelistBackgroundImage>
@@ -173,6 +172,7 @@
     <BackdropColor>ffffff</BackdropColor>
     <backgroundArtPath>${themePath}/wallpapers/sony</backgroundArtPath>
     <backgroundArtOpacity>${mediumOpacity}</backgroundArtOpacity>
-    <menuBackgroundColor>207cc575</menuBackgroundColor>
+    <menuBackgroundColor>207cc5</menuBackgroundColor>
+    <menuBackgroundColorTitle>0a65ad</menuBackgroundColorTitle>
   </variables>
 </theme>
