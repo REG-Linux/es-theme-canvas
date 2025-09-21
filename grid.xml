@@ -51,7 +51,6 @@
 			<selectionMode>image</selectionMode>
 			<imageSizeMode>maxSize</imageSizeMode>
 			<padding>3.5 3.5</padding>
-      <path>./_inc/system-view/square-bg.png</path>
 		</gridtile>
 
     <image name="gridtile.image">

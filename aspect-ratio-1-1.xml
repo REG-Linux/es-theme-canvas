@@ -63,7 +63,7 @@
 
 					<!-- Selector -->
 					<image name="selector" extra="true">
-						<path>${themePath}/_inc/system-view/4-5.png</path>
+						<path>${themePath}/_inc/system-view/4-5.webp</path>
 						<pos>0.5 0.5</pos>
 						<origin>0.5</origin>
 						<maxSize>.92 0.98</maxSize>
@@ -71,7 +71,7 @@
 						<zIndex>${zSelector}</zIndex>
 						<color>00000000</color>
 						<storyboard event="activate" repeat="forever">
-							<animation property="path" to="${themePath}/_inc/system-view/4-5.png" />
+							<animation property="path" to="${themePath}/_inc/system-view/4-5.webp" />
 							<animation
                 property="color"
                 from="${systemCarouselSelectorColor}00"
@@ -90,13 +90,13 @@
 						</storyboard>
 
 						<storyboard event="deactivate">
-							<animation property="path" to="${themePath}/_inc/system-view/4-5.png" />
+							<animation property="path" to="${themePath}/_inc/system-view/4-5.webp" />
 							<animation property="color" to="00000000" />
 						</storyboard>
 					</image>
 
 					<image name="backdrop" extra="true">
-						<path>./_inc/system-view/icon.png</path>
+						<path>./_inc/system-view/icon.webp</path>
 						<pos>0.5 0.5</pos>
 						<origin>0.5</origin>
 						<maxSize>0.845 0.895</maxSize>
@@ -107,7 +107,7 @@
 					</image>
 
 					<image name="shade" extra="true">
-						<path>./_inc/system-view/4-5-bg.png</path>
+						<path>./_inc/system-view/4-5-bg.webp</path>
 						<pos>0.5 0.5</pos>
 						<origin>0.5</origin>
 						<maxSize>0.95 0.98</maxSize>
@@ -217,7 +217,7 @@
 				</storyboard>
 
 				<image name="backdrop" extra="true">
-					<path>./_inc/system-view/icon.png</path>
+					<path>./_inc/system-view/icon.webp</path>
 					<pos>0.5 0.5</pos>
 					<origin>0.5</origin>
 					<maxSize>0.8 0.9</maxSize>
@@ -229,7 +229,7 @@
 				</image>
 
 				<image name="shade" extra="true">
-					<path>${themePath}/_inc/system-view/4-5-bg.png</path>
+					<path>${themePath}/_inc/system-view/4-5-bg.webp</path>
 					<pos>0.5 0.5</pos>
 					<origin>0.5</origin>
 					<maxSize>0.99 0.998</maxSize>
