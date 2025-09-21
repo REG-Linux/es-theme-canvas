@@ -1,44 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <theme>
   <formatVersion>7</formatVersion>
-  <!-- Variables -->
-  <subset name="color-scheme" displayName="Color Scheme">
-    <include name="retro" displayName="Retro" />
-    <include name="dark" displayName="Dark" />
-    <include name="light" displayName="Light" />
-    <include name="neon" displayName="Neon" />
-    <include name="pastel" displayName="Pastel" />
-    <include name="sony" displayName="Sony" />
-    <include name="snes" displayName="Snes" />
-    <include name="famicom" displayName="Famicom" />
-  </subset>
-
   <!-- Include -->
-  <include>./_inc/variables/variables.xml</include>
   <include>./colors.xml</include>
 
   <view name="splash">
-    <splash name="splash">
-      <backgroundColor>000000</backgroundColor>
-    </splash>
-
     <image name="background">
       <origin>0.5 0.5</origin>
       <pos>0.5 0.5</pos>
       <minSize>1 1</minSize>
-      <linearSmooth>true</linearSmooth>
-      <zIndex>${zBackgroundArt}</zIndex>
+      <zIndex>0</zIndex>
       <path>${backgroundArtPath}.webp</path>
-      <path>${backgroundArtPath}.jpg</path>
     </image>
 
     <image name="logo" extra="true">
-      <path>./_inc/images/logo/logo.png</path>
+      <path>./_inc/images/logo/logo.webp</path>
       <pos>0.5 0.4</pos>
       <origin>0.5 0.5</origin>
       <maxSize>0.4 0.4</maxSize>
-      <zIndex>${zTop}</zIndex>
-      <opacity>${highOpacity}</opacity>
+      <zIndex>10</zIndex>
     </image>
 
     <image name="progressbar">
@@ -46,7 +26,7 @@
       <origin>0.5 0.5</origin>
       <color>${systemCarouselSelectorColor}</color>
       <colorEnd>${systemCarouselSelectorColor}</colorEnd>
-      <zIndex>${zSelector}</zIndex>
+      <zIndex>2</zIndex>
     </image>
 
     <image name="progressbar:active">
@@ -62,7 +42,7 @@
       <fontSize>0.04</fontSize>
       <color>${gamelistLogoColor}</color>
       <forceUppercase>true</forceUppercase>
-      <zIndex>${zText}</zIndex>
+      <zIndex>4</zIndex>
     </text>
   </view>
 </theme>
