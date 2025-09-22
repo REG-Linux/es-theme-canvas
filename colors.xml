@@ -112,8 +112,8 @@
     <systemCarouselTextColor>3b3b3b</systemCarouselTextColor>
     <systemCarouselSelectorColor>4a3580</systemCarouselSelectorColor>
     <gamelistLogoColor>3c3b3b</gamelistLogoColor>
-    <gamelistBackgroundImage>gamelist-background-default</gamelistBackgroundImage>
-    <gamelistMetadataBackgroundImage>gamelist-metadata-background-default</gamelistMetadataBackgroundImage>
+    <gamelistBackgroundImage>gamelist-background-purple</gamelistBackgroundImage>
+    <gamelistMetadataBackgroundImage>gamelist-metadata-background-purple</gamelistMetadataBackgroundImage>
     <gamelistSelectorColor>4a3580</gamelistSelectorColor>
     <gamelistSelectedColor>ffffff</gamelistSelectedColor>
     <gamelistPrimaryColor>3c3b3b</gamelistPrimaryColor>
@@ -154,8 +154,8 @@
     <systemCarouselTextColor>5b5a58</systemCarouselTextColor>
     <systemCarouselSelectorColor>93cbb7</systemCarouselSelectorColor>
     <gamelistLogoColor>5b5a58</gamelistLogoColor>
-    <gamelistBackgroundImage>gamelist-background-default</gamelistBackgroundImage>
-    <gamelistMetadataBackgroundImage>gamelist-metadata-background-default</gamelistMetadataBackgroundImage>
+    <gamelistBackgroundImage>gamelist-background-light</gamelistBackgroundImage>
+    <gamelistMetadataBackgroundImage>gamelist-metadata-background-light</gamelistMetadataBackgroundImage>
     <gamelistSelectorColor>488788</gamelistSelectorColor>
     <gamelistSelectedColor>ffffff</gamelistSelectedColor>
     <gamelistPrimaryColor>777777</gamelistPrimaryColor>
