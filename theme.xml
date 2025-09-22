@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!--
 Name: Canvas
-Version: 1.0
+Version: 1.2
 Author: Siddy212
-Licnese: Creative Commons CC-BY-NC-SA
+License: Creative Commons CC-BY-NC-SA
 -->
 <theme defaultTransition="instant">
 	<formatVersion>7</formatVersion>
@@ -47,15 +47,15 @@ Licnese: Creative Commons CC-BY-NC-SA
 
 	<!-- Subset: Color Scheme -->
 	<subset name="color-scheme" displayName="Color Scheme">
-		<include name="retro" displayName="Retro" />
-		<include name="dark" displayName="Dark" />
-		<include name="light" displayName="Light" />
-		<include name="neon" displayName="Neon" />
-		<include name="pastel" displayName="Pastel" />
-		<include name="sony" displayName="Sony" />
-		<include name="snes" displayName="Snes" />
-		<include name="famicom" displayName="Famicom" />
-	</subset>
+    <include name="default" displayName="Default" />
+    <include name="dark" displayName="Dark" />
+    <include name="light" displayName="Light" />
+    <include name="neon" displayName="Neon" />
+    <include name="pastel" displayName="Pastel" />
+    <include name="sony" displayName="Sony" />
+    <include name="snes" displayName="Snes" />
+    <include name="famicom" displayName="Famicom" />
+  </subset>
 
 	<!-- Subset: Font Size -->
 	<subset name="font-size" displayName="Font Size">
@@ -171,7 +171,7 @@ Licnese: Creative Commons CC-BY-NC-SA
 			<fontSize>0.0325</fontSize>
 			<color>${helpTextColor}</color>
 			<separatorColor>${helpTextColor}</separatorColor>
-			<backgroundColor>00000000</backgroundColor>
+			<backgroundColor>${menuBackgroundColorTitle}</backgroundColor>
 			<lineSpacing>2.5</lineSpacing>
 		</menuGroup>
 
@@ -224,12 +224,10 @@ Licnese: Creative Commons CC-BY-NC-SA
 
 		<!-- System Backgrounds -->
 		<image name="background-art" extra="true">
-			<path ifSubset="color-scheme:light|dark|retro|neon|sony|snes|famicom|pastel">${backgroundArtPath}.jpg</path>
-			<path ifSubset="color-scheme:light|dark|retro|neon|sony|snes|famicom|pastel">${backgroundArtPath}.webp</path>
+			<path ifSubset="color-scheme:light|dark|default|neon|sony|snes|famicom|pastel">${backgroundArtPath}.webp</path>
 			<origin>0.5 0.5</origin>
 			<pos>0.5 0.5</pos>
 			<minSize>1 1</minSize>
-			<linearSmooth>true</linearSmooth>
 			<zIndex>${zBackgroundArt}</zIndex>
 		</image>
 	</view>

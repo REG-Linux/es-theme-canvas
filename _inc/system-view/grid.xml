@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" ?>
 <theme defaultTransition="instant">
   <formatVersion>7</formatVersion>
 
@@ -43,7 +44,7 @@
           </storyboard>
 
           <image name="selector" extra="true">
-            <path>${themePath}/_inc/system-view/4-5.png</path>
+            <path>${themePath}/_inc/system-view/4-5.webp</path>
             <pos>0.5 0.5</pos>
             <origin>0.5</origin>
             <maxSize>1 1</maxSize>

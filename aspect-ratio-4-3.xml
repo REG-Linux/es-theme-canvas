@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" ?>
 <theme>
 	<formatVersion>7</formatVersion>
     <!--
@@ -110,12 +111,14 @@
       <pos>0.701 0.894</pos>
       <size>0.5508204974 0.11693794746</size>
       <path>./_inc/images/simple/gamelist-metadata-background-shadow-extended.webp</path>
+      <zIndex>${zBackgroundArt}</zIndex>
 		</image>
 
 		<image name="game-metadata-background-image-extended" extra="true">
 			<pos>0.701 0.894</pos>
       <size>0.5288968185 0.08458826063</size>
 			<path>./_inc/images/simple/${gamelistMetadataBackgroundImage}-extended.webp</path>
+      <zIndex>${zBackgroundArt}</zIndex>
 		</image>
 
 		<rating name="md_rating">
@@ -199,12 +202,14 @@
       <pos>0.705 0.885</pos>
       <size>0.57270378092 0.1559172633</size>
       <path>./_inc/images/simple/gamelist-metadata-background-shadow-base.webp</path>
+      <zIndex>${zBackgroundArt}</zIndex>
 		</image>
 
 		<image name="game-metadata-background-image-base" extra="true">
       <pos>0.705 0.885</pos>
       <size>0.54347220906 0.11278434754</size>
       <path>./_inc/images/simple/${gamelistMetadataBackgroundImage}-base.webp</path>
+      <zIndex>${zBackgroundArt}</zIndex>
 		</image>
 
 		<rating name="md_rating">
@@ -293,12 +298,14 @@
       <pos>0.255 0.67058187797</pos>
       <size>0.49307029318 0.35497526246</size>
       <path>./_inc/images/detailed/gamelist-metadata-background-shadow-extended.webp</path>
+      <zIndex>${zBackgroundArt}</zIndex>
 		</image>
 
 		<image name="game-metadata-background-image-extended" extra="true">
 			<pos>0.255 0.67058187797</pos>
       <size>0.4632 0.31118466204</size>
 			<path>./_inc/images/detailed/${gamelistMetadataBackgroundImage}-extended.webp</path>
+			<zIndex>${zBackgroundArt}</zIndex>
 		</image>
 
 		<rating name="md_rating">
@@ -387,12 +394,14 @@
       <pos>0.255 0.6622</pos>
       <size>0.4930952592 0.33764766516</size>
       <path>./_inc/images/detailed/gamelist-metadata-background-shadow-base.webp</path>
+      <zIndex>${zBackgroundArt}</zIndex>
 		</image>
 
 		<image name="game-metadata-background-image-base" extra="true">
       <pos>0.255 0.6622</pos>
       <size>0.4632 0.29289</size>
       <path>./_inc/images/detailed/${gamelistMetadataBackgroundImage}-base.webp</path>
+      <zIndex>${zBackgroundArt}</zIndex>
 		</image>
 
 		<rating name="md_rating">
