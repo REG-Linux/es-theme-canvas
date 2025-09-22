@@ -1,28 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <theme>
-  <!--   Preset Color Schemes   -->
-  <variables ifSubset="color-scheme:retro">
-    <helpTextColor>5b5a58</helpTextColor>
-    <backgroundColor>846D21</backgroundColor>
-    <systemInfoColor>5b5a58</systemInfoColor>
-    <systemCarouselTextColor>5b5a58</systemCarouselTextColor>
-    <systemCarouselSelectorColor>93cbb7</systemCarouselSelectorColor>
-    <gamelistLogoColor>5b5a58</gamelistLogoColor>
-    <gamelistBackgroundImage>gamelist-background-light</gamelistBackgroundImage>
-    <gamelistBackgroundOpacity>${highOpacity}</gamelistBackgroundOpacity>
-    <gamelistMetadataBackgroundImage>gamelist-metadata-background-light</gamelistMetadataBackgroundImage>
-    <gamelistSelectorColor>488788</gamelistSelectorColor>
-    <gamelistSelectedColor>ffffff</gamelistSelectedColor>
-    <gamelistPrimaryColor>777777</gamelistPrimaryColor>
-    <gamelistSecondaryColor>777777</gamelistSecondaryColor>
-    <gameMetadataColor>777777</gameMetadataColor>
-    <BackdropColor>ffffff</BackdropColor>
-    <backgroundArtPath>${themePath}/wallpapers/retro</backgroundArtPath>
-    <backgroundArtOpacity>${highOpacity}</backgroundArtOpacity>
-    <menuBackgroundColor>fbf6de</menuBackgroundColor>
-    <menuBackgroundColorTitle>faf1c5</menuBackgroundColorTitle>
-  </variables>
-
   <variables ifSubset="color-scheme:dark">
     <helpTextColor>999999</helpTextColor>
     <backgroundColor>373737</backgroundColor>
@@ -31,7 +8,6 @@
     <systemCarouselSelectorColor>ffffff</systemCarouselSelectorColor>
     <gamelistLogoColor>cccccc</gamelistLogoColor>
     <gamelistBackgroundImage>gamelist-background-dark</gamelistBackgroundImage>
-    <gamelistBackgroundOpacity>${highOpacity}</gamelistBackgroundOpacity>
     <gamelistMetadataBackgroundImage>gamelist-metadata-background-dark</gamelistMetadataBackgroundImage>
     <gamelistSelectorColor>777777</gamelistSelectorColor>
     <gamelistSelectedColor>ffffff</gamelistSelectedColor>
@@ -53,7 +29,6 @@
     <systemCarouselSelectorColor>FFFFFF</systemCarouselSelectorColor>
     <gamelistLogoColor>555555</gamelistLogoColor>
     <gamelistBackgroundImage>gamelist-background-light</gamelistBackgroundImage>
-    <gamelistBackgroundOpacity>${mediumOpacity}</gamelistBackgroundOpacity>
     <gamelistMetadataBackgroundImage>gamelist-metadata-background-light</gamelistMetadataBackgroundImage>
     <gamelistSelectorColor>404040</gamelistSelectorColor>
     <gamelistSelectedColor>ffffff</gamelistSelectedColor>
@@ -75,7 +50,6 @@
     <systemCarouselSelectorColor>74006c</systemCarouselSelectorColor>
     <gamelistLogoColor>FFFFFF</gamelistLogoColor>
     <gamelistBackgroundImage>gamelist-background-dark</gamelistBackgroundImage>
-    <gamelistBackgroundOpacity>${highOpacity}</gamelistBackgroundOpacity>
     <gamelistMetadataBackgroundImage>gamelist-metadata-background-dark</gamelistMetadataBackgroundImage>
     <gamelistSelectorColor>b304c5</gamelistSelectorColor>
     <gamelistSelectedColor>ffffff</gamelistSelectedColor>
@@ -97,7 +71,6 @@
     <systemCarouselSelectorColor>A7C7E7</systemCarouselSelectorColor>
     <gamelistLogoColor>777777</gamelistLogoColor>
     <gamelistBackgroundImage>gamelist-background-light</gamelistBackgroundImage>
-    <gamelistBackgroundOpacity>${lowOpacity}</gamelistBackgroundOpacity>
     <gamelistMetadataBackgroundImage>gamelist-metadata-background-light</gamelistMetadataBackgroundImage>
     <gamelistSelectorColor>A7C7E7</gamelistSelectorColor>
     <gamelistSelectedColor>ffffff</gamelistSelectedColor>
@@ -119,7 +92,6 @@
     <systemCarouselSelectorColor>846D21</systemCarouselSelectorColor>
     <gamelistLogoColor>e4e5ca</gamelistLogoColor>
     <gamelistBackgroundImage>gamelist-background-beige</gamelistBackgroundImage>
-    <gamelistBackgroundOpacity>${mediumOpacity}</gamelistBackgroundOpacity>
     <gamelistMetadataBackgroundImage>gamelist-metadata-background-beige</gamelistMetadataBackgroundImage>
     <gamelistSelectorColor>846D21</gamelistSelectorColor>
     <gamelistSelectedColor>ffffff</gamelistSelectedColor>
@@ -140,9 +112,8 @@
     <systemCarouselTextColor>3b3b3b</systemCarouselTextColor>
     <systemCarouselSelectorColor>4a3580</systemCarouselSelectorColor>
     <gamelistLogoColor>3c3b3b</gamelistLogoColor>
-    <gamelistBackgroundImage>gamelist-background-retro</gamelistBackgroundImage>
-    <gamelistBackgroundOpacity>${highOpacity}</gamelistBackgroundOpacity>
-    <gamelistMetadataBackgroundImage>gamelist-metadata-background-retro</gamelistMetadataBackgroundImage>
+    <gamelistBackgroundImage>gamelist-background-default</gamelistBackgroundImage>
+    <gamelistMetadataBackgroundImage>gamelist-metadata-background-default</gamelistMetadataBackgroundImage>
     <gamelistSelectorColor>4a3580</gamelistSelectorColor>
     <gamelistSelectedColor>ffffff</gamelistSelectedColor>
     <gamelistPrimaryColor>3c3b3b</gamelistPrimaryColor>
@@ -163,7 +134,6 @@
     <systemCarouselSelectorColor>ffffff</systemCarouselSelectorColor>
     <gamelistLogoColor>ffffff</gamelistLogoColor>
     <gamelistBackgroundImage>gamelist-background-clear</gamelistBackgroundImage>
-    <gamelistBackgroundOpacity>${lowOpacity}</gamelistBackgroundOpacity>
     <gamelistMetadataBackgroundImage>gamelist-metadata-background-clear</gamelistMetadataBackgroundImage>
     <gamelistSelectorColor>253f81</gamelistSelectorColor>
     <gamelistSelectedColor>ffffff</gamelistSelectedColor>
@@ -175,5 +145,26 @@
     <backgroundArtOpacity>${mediumOpacity}</backgroundArtOpacity>
     <menuBackgroundColor>207cc5</menuBackgroundColor>
     <menuBackgroundColorTitle>0a65ad</menuBackgroundColorTitle>
+  </variables>
+
+  <variables ifSubset="color-scheme:default">
+    <helpTextColor>5b5a58</helpTextColor>
+    <backgroundColor>846D21</backgroundColor>
+    <systemInfoColor>5b5a58</systemInfoColor>
+    <systemCarouselTextColor>5b5a58</systemCarouselTextColor>
+    <systemCarouselSelectorColor>93cbb7</systemCarouselSelectorColor>
+    <gamelistLogoColor>5b5a58</gamelistLogoColor>
+    <gamelistBackgroundImage>gamelist-background-default</gamelistBackgroundImage>
+    <gamelistMetadataBackgroundImage>gamelist-metadata-background-default</gamelistMetadataBackgroundImage>
+    <gamelistSelectorColor>488788</gamelistSelectorColor>
+    <gamelistSelectedColor>ffffff</gamelistSelectedColor>
+    <gamelistPrimaryColor>777777</gamelistPrimaryColor>
+    <gamelistSecondaryColor>777777</gamelistSecondaryColor>
+    <gameMetadataColor>777777</gameMetadataColor>
+    <BackdropColor>ffffff</BackdropColor>
+    <backgroundArtPath>${themePath}/wallpapers/default</backgroundArtPath>
+    <backgroundArtOpacity>${highOpacity}</backgroundArtOpacity>
+    <menuBackgroundColor>fbf6de</menuBackgroundColor>
+    <menuBackgroundColorTitle>faf1c5</menuBackgroundColorTitle>
   </variables>
 </theme>
