@@ -38,7 +38,7 @@
       <pos>0.5 0.7</pos>
       <origin>0.5 0.5</origin>
       <alignment>center</alignment>
-      <fontPath>./_inc/fonts/Gilroy-Bold.woff2</fontPath>
+      <fontPath>./_inc/fonts/Inter-Bold.otf</fontPath>
       <fontSize>0.04</fontSize>
       <color>${gamelistLogoColor}</color>
       <forceUppercase>true</forceUppercase>
