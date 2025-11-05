@@ -54,6 +54,7 @@
     <BackdropColor>291c0a</BackdropColor>
     <backgroundArtPath>${themePath}/wallpapers/retro</backgroundArtPath>
     <menuBackgroundColor>ac9358</menuBackgroundColor>
+    <menuTextColor>3b290d</menuTextColor>
     <systemProgressbarSelectorColor>9e8444</systemProgressbarSelectorColor>
   </variables>
 
