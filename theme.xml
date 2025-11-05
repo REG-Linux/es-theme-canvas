@@ -492,7 +492,6 @@ License: Creative Commons CC-BY-NC-SA
 			<type>vertical_wheel</type>
 			<size>1 1</size>
 			<logoScale>1.2</logoScale>
-			<color>00000000</color>
 			<logoRotation>-7</logoRotation>
 			<logoRotationOrigin>5 0.5</logoRotationOrigin>
 			<logoAlignment>center</logoAlignment>

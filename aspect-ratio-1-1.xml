@@ -68,7 +68,6 @@
 						<maxSize>.92 0.98</maxSize>
 						<linearSmooth>true</linearSmooth>
 						<zIndex>${zSelector}</zIndex>
-						<color>00000000</color>
 						<storyboard event="activate" repeat="forever">
 							<animation property="path" to="${themePath}/_inc/system-view/4-5.webp" />
 							<animation

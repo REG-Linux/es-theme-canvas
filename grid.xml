@@ -44,8 +44,8 @@
 		</imagegrid>
 
 		<gridtile name="default">
-			<backgroundColor>00000007</backgroundColor>
-			<backgroundEdgeColor>00000007</backgroundEdgeColor>
+			<backgroundColor>00000000</backgroundColor>
+			<backgroundEdgeColor>00000000</backgroundEdgeColor>
 			<backgroundCornerSize>11 11</backgroundCornerSize>
 			<selectionMode>image</selectionMode>
 			<imageSizeMode>maxSize</imageSizeMode>
