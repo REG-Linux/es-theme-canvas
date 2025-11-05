@@ -61,19 +61,19 @@
     <helpTextColor>FFFFFF</helpTextColor>
     <systemInfoColor>FFFFFF</systemInfoColor>
     <systemCarouselSelectorColor>b304c5</systemCarouselSelectorColor>
-    <gamelistLogoColor>FFFFFF</gamelistLogoColor>
+    <gamelistLogoColor>bdbdbd</gamelistLogoColor>
     <gamelistBackgroundImage>gamelist-background-dark</gamelistBackgroundImage>
     <gamelistMetadataBackgroundImage>gamelist-metadata-background-dark</gamelistMetadataBackgroundImage>
     <gamelistSelectorColor>b304c5</gamelistSelectorColor>
-    <gamelistSelectedColor>ffffff</gamelistSelectedColor>
-    <gamelistPrimaryColor>FFFFFF</gamelistPrimaryColor>
-    <gamelistSecondaryColor>FFFFFF</gamelistSecondaryColor>
-    <gameMetadataColor>FFFFFF</gameMetadataColor>
+    <gamelistSelectedColor>fff732</gamelistSelectedColor>
+    <gamelistPrimaryColor>bdbdbd</gamelistPrimaryColor>
+    <gamelistSecondaryColor>bdbdbd</gamelistSecondaryColor>
+    <gameMetadataColor>bdbdbd</gameMetadataColor>
     <BackdropColor>111111</BackdropColor>
     <backgroundArtPath>${themePath}/wallpapers/neon</backgroundArtPath>
-    <menuBackgroundColor>111111</menuBackgroundColor>
-    <menuBackgroundColorTitle>212121</menuBackgroundColorTitle>
-    <menuTextColor>FFFFFF</menuTextColor>
+    <menuBackgroundColor>3f2452</menuBackgroundColor>
+    <menuBackgroundColorTitle>513863</menuBackgroundColorTitle>
+    <menuTextColor>bdbdbd</menuTextColor>
     <systemProgressbarSelectorColor>74006c</systemProgressbarSelectorColor>
   </variables>
 
