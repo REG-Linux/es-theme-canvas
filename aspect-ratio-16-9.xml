@@ -112,7 +112,7 @@
 		<image name="game-metadata-background-image-extended" extra="true">
       <pos>0.731 0.884</pos>
       <size>0.45076433396 0.09612302346</size>
-			<path>./_inc/images/simple/${fgamelistMetadataBackgroundImage}-extended.webp</path>
+			<path>./_inc/images/simple/${gamelistMetadataBackgroundImage}-extended.webp</path>
 			<zIndex>${zBackgroundArt}</zIndex>
 		</image>
 
