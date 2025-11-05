@@ -24,8 +24,7 @@
     <image name="progressbar">
       <pos>0.5 0.6</pos>
       <origin>0.5 0.5</origin>
-      <color>${systemCarouselSelectorColor}</color>
-      <colorEnd>${systemCarouselSelectorColor}</colorEnd>
+      <color>${systemProgressbarSelectorColor}</color>
       <zIndex>2</zIndex>
     </image>
 
