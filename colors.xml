@@ -1,9 +1,7 @@
 <theme>
   <variables ifSubset="color-scheme:dark">
     <helpTextColor>999999</helpTextColor>
-    <backgroundColor>373737</backgroundColor>
     <systemInfoColor>cccccc</systemInfoColor>
-    <systemCarouselTextColor>cccccc</systemCarouselTextColor>
     <systemCarouselSelectorColor>b5b5b5</systemCarouselSelectorColor>
     <gamelistLogoColor>cccccc</gamelistLogoColor>
     <gamelistBackgroundImage>gamelist-background-dark</gamelistBackgroundImage>
@@ -15,17 +13,15 @@
     <gameMetadataColor>bbbbbb</gameMetadataColor>
     <BackdropColor>000000</BackdropColor>
     <backgroundArtPath>${themePath}/wallpapers/dark</backgroundArtPath>
-    <backgroundArtOpacity>${highOpacity}</backgroundArtOpacity>
     <menuBackgroundColor>373737</menuBackgroundColor>
     <menuBackgroundColorTitle>1c1c1c</menuBackgroundColorTitle>
+    <menuTextColor>999999</menuTextColor>
     <systemProgressbarSelectorColor>b3b3b3</systemProgressbarSelectorColor>
   </variables>
 
   <variables ifSubset="color-scheme:light">
     <helpTextColor>555555</helpTextColor>
-    <backgroundColor>373737</backgroundColor>
     <systemInfoColor>555555</systemInfoColor>
-    <systemCarouselTextColor>555555</systemCarouselTextColor>
     <systemCarouselSelectorColor>404040</systemCarouselSelectorColor>
     <gamelistLogoColor>555555</gamelistLogoColor>
     <gamelistBackgroundImage>gamelist-background-light</gamelistBackgroundImage>
@@ -37,17 +33,33 @@
     <gameMetadataColor>666666</gameMetadataColor>
     <BackdropColor>ffffff</BackdropColor>
     <backgroundArtPath>${themePath}/wallpapers/light</backgroundArtPath>
-    <backgroundArtOpacity>${highOpacity}</backgroundArtOpacity>
     <menuBackgroundColor>ffffff</menuBackgroundColor>
     <menuBackgroundColorTitle>c2c2c2</menuBackgroundColorTitle>
+    <menuTextColor>555555</menuTextColor>
     <systemProgressbarSelectorColor>999999</systemProgressbarSelectorColor>
+  </variables>
+
+  <variables ifSubset="color-scheme:retro">
+    <helpTextColor>ffffff</helpTextColor>
+    <systemInfoColor>ffffff</systemInfoColor>
+    <systemCarouselSelectorColor>dbba70</systemCarouselSelectorColor>
+    <gamelistLogoColor>f7cd6e</gamelistLogoColor>
+    <gamelistBackgroundImage>gamelist-background-retro</gamelistBackgroundImage>
+    <gamelistMetadataBackgroundImage>gamelist-metadata-background-retro</gamelistMetadataBackgroundImage>
+    <gamelistSelectorColor>3b290d</gamelistSelectorColor>
+    <gamelistSelectedColor>ffffff</gamelistSelectedColor>
+    <gamelistPrimaryColor>3b290d</gamelistPrimaryColor>
+    <gamelistSecondaryColor>3b290d</gamelistSecondaryColor>
+    <gameMetadataColor>3b290d</gameMetadataColor>
+    <BackdropColor>291c0a</BackdropColor>
+    <backgroundArtPath>${themePath}/wallpapers/retro</backgroundArtPath>
+    <menuBackgroundColor>ac9358</menuBackgroundColor>
+    <systemProgressbarSelectorColor>9e8444</systemProgressbarSelectorColor>
   </variables>
 
   <variables ifSubset="color-scheme:neon">
     <helpTextColor>FFFFFF</helpTextColor>
-    <backgroundColor>74006c</backgroundColor>
     <systemInfoColor>FFFFFF</systemInfoColor>
-    <systemCarouselTextColor>FFFFFF</systemCarouselTextColor>
     <systemCarouselSelectorColor>b304c5</systemCarouselSelectorColor>
     <gamelistLogoColor>FFFFFF</gamelistLogoColor>
     <gamelistBackgroundImage>gamelist-background-dark</gamelistBackgroundImage>
@@ -59,17 +71,15 @@
     <gameMetadataColor>FFFFFF</gameMetadataColor>
     <BackdropColor>111111</BackdropColor>
     <backgroundArtPath>${themePath}/wallpapers/neon</backgroundArtPath>
-    <backgroundArtOpacity>${highOpacity}</backgroundArtOpacity>
     <menuBackgroundColor>111111</menuBackgroundColor>
     <menuBackgroundColorTitle>212121</menuBackgroundColorTitle>
+    <menuTextColor>FFFFFF</menuTextColor>
     <systemProgressbarSelectorColor>74006c</systemProgressbarSelectorColor>
   </variables>
 
   <variables ifSubset="color-scheme:pastel">
     <helpTextColor>777777</helpTextColor>
-    <backgroundColor>bbbbbb</backgroundColor>
     <systemInfoColor>777777</systemInfoColor>
-    <systemCarouselTextColor>777777</systemCarouselTextColor>
     <systemCarouselSelectorColor>A7C7E7</systemCarouselSelectorColor>
     <gamelistLogoColor>777777</gamelistLogoColor>
     <gamelistBackgroundImage>gamelist-background-light</gamelistBackgroundImage>
@@ -81,17 +91,15 @@
     <gameMetadataColor>777777</gameMetadataColor>
     <BackdropColor>ffffff</BackdropColor>
     <backgroundArtPath>${themePath}/wallpapers/pastel</backgroundArtPath>
-    <backgroundArtOpacity>${highOpacity}</backgroundArtOpacity>
     <menuBackgroundColor>ffffff</menuBackgroundColor>
     <menuBackgroundColorTitle>dedede</menuBackgroundColorTitle>
+    <menuTextColor>777777</menuTextColor>
     <systemProgressbarSelectorColor>c9def4</systemProgressbarSelectorColor>
   </variables>
 
   <variables ifSubset="color-scheme:famicom">
     <helpTextColor>e4e5ca</helpTextColor>
-    <backgroundColor>846D21</backgroundColor>
     <systemInfoColor>e4e5ca</systemInfoColor>
-    <systemCarouselTextColor>3b3b3b</systemCarouselTextColor>
     <systemCarouselSelectorColor>846D21</systemCarouselSelectorColor>
     <gamelistLogoColor>e4e5ca</gamelistLogoColor>
     <gamelistBackgroundImage>gamelist-background-beige</gamelistBackgroundImage>
@@ -103,17 +111,15 @@
     <gameMetadataColor>3b3b3b</gameMetadataColor>
     <BackdropColor>fbf6de</BackdropColor>
     <backgroundArtPath>${themePath}/wallpapers/famicom</backgroundArtPath>
-    <backgroundArtOpacity>${highOpacity}</backgroundArtOpacity>
     <menuBackgroundColor>771f26</menuBackgroundColor>
     <menuBackgroundColorTitle>612b2f</menuBackgroundColorTitle>
+    <menuTextColor>e4e5ca</menuTextColor>
     <systemProgressbarSelectorColor>d6be74</systemProgressbarSelectorColor>
   </variables>
 
   <variables ifSubset="color-scheme:snes">
     <helpTextColor>3c3b3b</helpTextColor>
-    <backgroundColor>bdbcc1</backgroundColor>
     <systemInfoColor>3c3b3b</systemInfoColor>
-    <systemCarouselTextColor>3b3b3b</systemCarouselTextColor>
     <systemCarouselSelectorColor>4a3580</systemCarouselSelectorColor>
     <gamelistLogoColor>3c3b3b</gamelistLogoColor>
     <gamelistBackgroundImage>gamelist-background-purple</gamelistBackgroundImage>
@@ -125,17 +131,15 @@
     <gameMetadataColor>3c3b3b</gameMetadataColor>
     <BackdropColor>dedede</BackdropColor>
     <backgroundArtPath>${themePath}/wallpapers/snes</backgroundArtPath>
-    <backgroundArtOpacity>${highOpacity}</backgroundArtOpacity>
     <menuBackgroundColor>bdbcc1</menuBackgroundColor>
     <menuBackgroundColorTitle>a2a1a6</menuBackgroundColorTitle>
+    <menuTextColor>3c3b3b</menuTextColor>
     <systemProgressbarSelectorColor>8c71cf</systemProgressbarSelectorColor>
   </variables>
 
   <variables ifSubset="color-scheme:sony">
     <helpTextColor>ffffff</helpTextColor>
-    <backgroundColor>ffffff</backgroundColor>
     <systemInfoColor>ffffff</systemInfoColor>
-    <systemCarouselTextColor>ffffff</systemCarouselTextColor>
     <systemCarouselSelectorColor>0034b5</systemCarouselSelectorColor>
     <gamelistLogoColor>ffffff</gamelistLogoColor>
     <gamelistBackgroundImage>gamelist-background-clear</gamelistBackgroundImage>
@@ -147,17 +151,15 @@
     <gameMetadataColor>ffffff</gameMetadataColor>
     <BackdropColor>ffffff</BackdropColor>
     <backgroundArtPath>${themePath}/wallpapers/sony</backgroundArtPath>
-    <backgroundArtOpacity>${highOpacity}</backgroundArtOpacity>
     <menuBackgroundColor>207cc5</menuBackgroundColor>
     <menuBackgroundColorTitle>0a65ad</menuBackgroundColorTitle>
+    <menuTextColor>ffffff</menuTextColor>
     <systemProgressbarSelectorColor>6889de</systemProgressbarSelectorColor>
   </variables>
 
   <variables ifSubset="color-scheme:default">
     <helpTextColor>5b5a58</helpTextColor>
-    <backgroundColor>846D21</backgroundColor>
     <systemInfoColor>5b5a58</systemInfoColor>
-    <systemCarouselTextColor>5b5a58</systemCarouselTextColor>
     <systemCarouselSelectorColor>488788</systemCarouselSelectorColor>
     <gamelistLogoColor>5b5a58</gamelistLogoColor>
     <gamelistBackgroundImage>gamelist-background-light</gamelistBackgroundImage>
@@ -169,9 +171,9 @@
     <gameMetadataColor>777777</gameMetadataColor>
     <BackdropColor>ffffff</BackdropColor>
     <backgroundArtPath>${themePath}/wallpapers/default</backgroundArtPath>
-    <backgroundArtOpacity>${highOpacity}</backgroundArtOpacity>
     <menuBackgroundColor>fbf6de</menuBackgroundColor>
     <menuBackgroundColorTitle>faf1c5</menuBackgroundColorTitle>
+    <menuTextColor>5b5a58</menuTextColor>
     <systemProgressbarSelectorColor>93cbb7</systemProgressbarSelectorColor>
   </variables>
 </theme>

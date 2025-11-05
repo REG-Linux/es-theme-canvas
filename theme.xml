@@ -50,6 +50,7 @@ License: Creative Commons CC-BY-NC-SA
     <include name="default" displayName="Default" />
     <include name="dark" displayName="Dark" />
     <include name="light" displayName="Light" />
+    <include name="retro" displayName="Retro" />
     <include name="neon" displayName="Neon" />
     <include name="pastel" displayName="Pastel" />
     <include name="sony" displayName="Sony" />
@@ -142,19 +143,19 @@ License: Creative Commons CC-BY-NC-SA
 		<menuText name="menutitle">
 			<fontPath>${fontBold}</fontPath>
 			<fontSize>0.03</fontSize>
-			<color>${helpTextColor}</color>
+			<color>${menuTextColor}</color>
 		</menuText>
 
 		<menuText name="menufooter">
 			<fontPath>${fontLight}</fontPath>
 			<fontSize>0.025</fontSize>
-			<color>${helpTextColor}</color>
+			<color>${menuTextColor}</color>
 		</menuText>
 
 		<menuText name="menutext">
 			<fontPath>${fontBold}</fontPath>
 			<fontSize>${baseFontSize}</fontSize>
-			<color>${helpTextColor}</color>
+			<color>${menuTextColor}</color>
 			<separatorColor>${gamelistSelectorColor}</separatorColor>
 			<selectedColor>${gamelistSelectedColor}</selectedColor>
 			<selectorColor>${gamelistSelectorColor}</selectorColor>
@@ -163,14 +164,14 @@ License: Creative Commons CC-BY-NC-SA
 		<menuTextSmall name="menutextsmall">
 			<fontPath>${fontBold}</fontPath>
 			<fontSize>${smallFontSize}</fontSize>
-			<color>${helpTextColor}</color>
+			<color>${menuTextColor}</color>
 		</menuTextSmall>
 
 		<menuGroup name="menugroup">
 			<fontPath>${fontRegular}</fontPath>
 			<fontSize>0.0325</fontSize>
-			<color>${helpTextColor}</color>
-			<separatorColor>${helpTextColor}</separatorColor>
+			<color>${menuTextColor}</color>
+			<separatorColor>${menuTextColor}</separatorColor>
 			<backgroundColor>${menuBackgroundColorTitle}</backgroundColor>
 			<lineSpacing>2.5</lineSpacing>
 		</menuGroup>
@@ -224,7 +225,7 @@ License: Creative Commons CC-BY-NC-SA
 
 		<!-- System Backgrounds -->
 		<image name="background-art" extra="true">
-			<path ifSubset="color-scheme:light|dark|default|neon|sony|snes|famicom|pastel">${backgroundArtPath}.webp</path>
+			<path ifSubset="color-scheme:light|dark|default|retro|neon|sony|snes|famicom|pastel">${backgroundArtPath}.webp</path>
 			<origin>0.5 0.5</origin>
 			<pos>0.5 0.5</pos>
 			<minSize>1 1</minSize>
