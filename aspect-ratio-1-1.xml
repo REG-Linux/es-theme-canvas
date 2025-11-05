@@ -196,7 +196,6 @@
 			<logoSize>${itemsize}</logoSize>
 			<maxLogoCount>${itemcount}</maxLogoCount>
 			<color>ffffff00</color>
-			<logoScale>1.3</logoScale>
 			<scaledLogoSpacing>${logospacing}</scaledLogoSpacing>
 			<minLogoOpacity>${highOpacity}</minLogoOpacity>
 			<logoAlignment>center</logoAlignment>
@@ -300,7 +299,6 @@
 	<view name="gamecarousel">
 		<gamecarousel name="gamecarousel">
 			<logoSize>${itemSizeCarousel}</logoSize>
-			<logoScale>1.3</logoScale>
 			<pos>0.022 -0.18</pos>
 			<size>1.45 1.3</size>
 			<maxLogoCount>5</maxLogoCount>

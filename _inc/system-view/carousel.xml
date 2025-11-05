@@ -13,8 +13,7 @@
       <size>1 1</size>
       <logoSize>${itemsize}</logoSize>
       <maxLogoCount>${itemcount}</maxLogoCount>
-      <color>ffffff00</color>
-      <logoScale>1.3</logoScale>
+      <color>00000000</color>
       <scaledLogoSpacing>${logospacing}</scaledLogoSpacing>
       <minLogoOpacity>${mediumOpacity}</minLogoOpacity>
       <logoAlignment>center</logoAlignment>
