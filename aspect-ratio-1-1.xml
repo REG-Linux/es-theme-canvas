@@ -115,7 +115,8 @@
 					</image>
 
 					<image name="systemBack" extra="true">
-						<path>${themePath}/_inc/systems/carousel-icons-icons/{system:theme}.webp</path>
+						<path ifSubset="icon-scheme:icon">${themePath}/_inc/systems/carousel-icons-icons/{system:theme}.webp</path>
+						<path ifSubset="icon-scheme:art">${themePath}/_inc/systems/carousel-icons-art/{system:theme}.webp</path>
 						<pos>0.5 0.45</pos>
 						<origin>0.5</origin>
 						<maxSize>0.8 0.9</maxSize>

@@ -45,6 +45,12 @@ License: Creative Commons CC-BY-NC-SA
 		<include name="5x4" displayName="5X4" />
 	</subset>
 
+	<!-- Subset: Icon Scheme -->
+   <subset name="icon-scheme" displayName="System Icon Style">
+      <include name="icon" displayName="Icons" />
+      <include name="art" displayName="Art" />
+   </subset>
+
 	<!-- Subset: Color Scheme -->
 	<subset name="color-scheme" displayName="Color Scheme">
     <include name="default" displayName="Default" />
