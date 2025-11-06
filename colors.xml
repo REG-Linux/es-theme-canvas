@@ -39,26 +39,6 @@
     <systemProgressbarSelectorColor>999999</systemProgressbarSelectorColor>
   </variables>
 
-  <variables ifSubset="color-scheme:retro">
-    <helpTextColor>ffffff</helpTextColor>
-    <systemInfoColor>ffffff</systemInfoColor>
-    <systemCarouselSelectorColor>dbba70</systemCarouselSelectorColor>
-    <gamelistLogoColor>f7cd6e</gamelistLogoColor>
-    <gamelistBackgroundImage>gamelist-background-retro</gamelistBackgroundImage>
-    <gamelistMetadataBackgroundImage>gamelist-metadata-background-retro</gamelistMetadataBackgroundImage>
-    <gamelistSelectorColor>3b290d</gamelistSelectorColor>
-    <gamelistSelectedColor>ffffff</gamelistSelectedColor>
-    <gamelistPrimaryColor>3b290d</gamelistPrimaryColor>
-    <gamelistSecondaryColor>3b290d</gamelistSecondaryColor>
-    <gameMetadataColor>3b290d</gameMetadataColor>
-    <BackdropColor>291c0a</BackdropColor>
-    <backgroundArtPath>${themePath}/wallpapers/retro</backgroundArtPath>
-    <menuBackgroundColor>ac9358</menuBackgroundColor>
-    <menuBackgroundColorTitle>887852</menuBackgroundColorTitle>
-    <menuTextColor>3b290d</menuTextColor>
-    <systemProgressbarSelectorColor>9e8444</systemProgressbarSelectorColor>
-  </variables>
-
   <variables ifSubset="color-scheme:neon">
     <helpTextColor>FFFFFF</helpTextColor>
     <systemInfoColor>FFFFFF</systemInfoColor>
@@ -177,5 +157,25 @@
     <menuBackgroundColorTitle>faf1c5</menuBackgroundColorTitle>
     <menuTextColor>5b5a58</menuTextColor>
     <systemProgressbarSelectorColor>93cbb7</systemProgressbarSelectorColor>
+  </variables>
+
+  <variables ifSubset="color-scheme:retro">
+    <helpTextColor>ffffff</helpTextColor>
+    <systemInfoColor>ffffff</systemInfoColor>
+    <systemCarouselSelectorColor>dbba70</systemCarouselSelectorColor>
+    <gamelistLogoColor>f7cd6e</gamelistLogoColor>
+    <gamelistBackgroundImage>gamelist-background-retro</gamelistBackgroundImage>
+    <gamelistMetadataBackgroundImage>gamelist-metadata-background-retro</gamelistMetadataBackgroundImage>
+    <gamelistSelectorColor>3b290d</gamelistSelectorColor>
+    <gamelistSelectedColor>ffffff</gamelistSelectedColor>
+    <gamelistPrimaryColor>3b290d</gamelistPrimaryColor>
+    <gamelistSecondaryColor>3b290d</gamelistSecondaryColor>
+    <gameMetadataColor>3b290d</gameMetadataColor>
+    <BackdropColor>291c0a</BackdropColor>
+    <backgroundArtPath>${themePath}/wallpapers/retro</backgroundArtPath>
+    <menuBackgroundColor>ac9358</menuBackgroundColor>
+    <menuBackgroundColorTitle>887852</menuBackgroundColorTitle>
+    <menuTextColor>3b290d</menuTextColor>
+    <systemProgressbarSelectorColor>9e8444</systemProgressbarSelectorColor>
   </variables>
 </theme>

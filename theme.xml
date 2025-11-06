@@ -27,8 +27,8 @@ License: Creative Commons CC-BY-NC-SA
 
 	<!-- Subset: System View Options -->
 	<subset name="system-view" displayName="System View">
-		<include name="carousel" displayName="Carousel" />
 		<include name="grid" displayName="Grid" />
+		<include name="carousel" displayName="Carousel" />
 	</subset>
 
 	<!-- Subset: System Grid Sizes -->
@@ -53,10 +53,10 @@ License: Creative Commons CC-BY-NC-SA
 
 	<!-- Subset: Color Scheme -->
 	<subset name="color-scheme" displayName="Color Scheme">
+    <include name="retro" displayName="Retro" />
     <include name="default" displayName="Default" />
     <include name="dark" displayName="Dark" />
     <include name="light" displayName="Light" />
-    <include name="retro" displayName="Retro" />
     <include name="neon" displayName="Neon" />
     <include name="pastel" displayName="Pastel" />
     <include name="sony" displayName="Sony" />
