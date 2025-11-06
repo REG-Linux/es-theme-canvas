@@ -45,7 +45,6 @@
 	<view name="gamecarousel">
 		<gamecarousel name="gamecarousel">
 			<logoSize>${itemSizeCarousel}</logoSize>
-			<logoScale>1.4</logoScale>
 			<pos>0.022 -0.18</pos>
 			<size>1.45 1.3</size>
 			<maxLogoCount>7</maxLogoCount>
