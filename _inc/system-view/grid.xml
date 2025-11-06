@@ -97,7 +97,7 @@
 
           <image name="systemBack" extra="true">
             <path
-              ifSubset="icon-scheme:icons"
+              ifSubset="icon-scheme:icon"
             >firstfile("${themePath}/_inc/systems/carousel-icons-icons/" + {system:theme} + ".webp","${themePath}/_inc/systems/carousel-icons-icons/_default.webp")</path>
             <pos>0.5 0.45</pos>
             <origin>0.5</origin>
