@@ -16,6 +16,7 @@
     <menuBackgroundColor>373737</menuBackgroundColor>
     <menuBackgroundColorTitle>1c1c1c</menuBackgroundColorTitle>
     <menuTextColor>999999</menuTextColor>
+    <menuInputMode>dark</menuInputMode>
     <systemProgressbarSelectorColor>b3b3b3</systemProgressbarSelectorColor>
   </variables>
 
@@ -36,6 +37,7 @@
     <menuBackgroundColor>ffffff</menuBackgroundColor>
     <menuBackgroundColorTitle>c2c2c2</menuBackgroundColorTitle>
     <menuTextColor>555555</menuTextColor>
+    <menuInputMode>light</menuInputMode>
     <systemProgressbarSelectorColor>999999</systemProgressbarSelectorColor>
   </variables>
 
@@ -56,6 +58,7 @@
     <menuBackgroundColor>3f2452</menuBackgroundColor>
     <menuBackgroundColorTitle>513863</menuBackgroundColorTitle>
     <menuTextColor>bdbdbd</menuTextColor>
+    <menuInputMode>dark</menuInputMode>
     <systemProgressbarSelectorColor>74006c</systemProgressbarSelectorColor>
   </variables>
 
@@ -76,6 +79,7 @@
     <menuBackgroundColor>ffffff</menuBackgroundColor>
     <menuBackgroundColorTitle>dedede</menuBackgroundColorTitle>
     <menuTextColor>777777</menuTextColor>
+    <menuInputMode>dark</menuInputMode>
     <systemProgressbarSelectorColor>c9def4</systemProgressbarSelectorColor>
   </variables>
 
@@ -96,6 +100,7 @@
     <menuBackgroundColor>771f26</menuBackgroundColor>
     <menuBackgroundColorTitle>612b2f</menuBackgroundColorTitle>
     <menuTextColor>e4e5ca</menuTextColor>
+    <menuInputMode>dark</menuInputMode>
     <systemProgressbarSelectorColor>d6be74</systemProgressbarSelectorColor>
   </variables>
 
@@ -116,6 +121,7 @@
     <menuBackgroundColor>bdbcc1</menuBackgroundColor>
     <menuBackgroundColorTitle>a2a1a6</menuBackgroundColorTitle>
     <menuTextColor>3c3b3b</menuTextColor>
+    <menuInputMode>light</menuInputMode>
     <systemProgressbarSelectorColor>8c71cf</systemProgressbarSelectorColor>
   </variables>
 
@@ -136,6 +142,7 @@
     <menuBackgroundColor>207cc5</menuBackgroundColor>
     <menuBackgroundColorTitle>0a65ad</menuBackgroundColorTitle>
     <menuTextColor>ffffff</menuTextColor>
+    <menuInputMode>dark</menuInputMode>
     <systemProgressbarSelectorColor>6889de</systemProgressbarSelectorColor>
   </variables>
 
@@ -156,6 +163,7 @@
     <menuBackgroundColor>fbf6de</menuBackgroundColor>
     <menuBackgroundColorTitle>faf1c5</menuBackgroundColorTitle>
     <menuTextColor>5b5a58</menuTextColor>
+    <menuInputMode>light</menuInputMode>
     <systemProgressbarSelectorColor>93cbb7</systemProgressbarSelectorColor>
   </variables>
 
@@ -176,6 +184,7 @@
     <menuBackgroundColor>ac9358</menuBackgroundColor>
     <menuBackgroundColorTitle>887852</menuBackgroundColorTitle>
     <menuTextColor>3b290d</menuTextColor>
+    <menuInputMode>light</menuInputMode>
     <systemProgressbarSelectorColor>9e8444</systemProgressbarSelectorColor>
   </variables>
 </theme>

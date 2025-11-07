@@ -183,8 +183,8 @@ License: Creative Commons CC-BY-NC-SA
 		</menuGroup>
 
 		<menuTextEdit name="menutextedit">
-			<inactive>./_inc/images/menu-textinput.png</inactive>
-			<active>./_inc/images/menu-textinput-active.png</active>
+			<inactive>./_inc/images/menu-textinput-${menuInputMode}.png</inactive>
+			<active>./_inc/images/menu-textinput-active-${menuInputMode}.png</active>
 		</menuTextEdit>
 
 		<menuBackground name="menubg">
