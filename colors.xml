@@ -83,27 +83,6 @@
     <systemProgressbarSelectorColor>c9def4</systemProgressbarSelectorColor>
   </variables>
 
-  <variables ifSubset="color-scheme:famicom">
-    <helpTextColor>e4e5ca</helpTextColor>
-    <systemInfoColor>e4e5ca</systemInfoColor>
-    <systemCarouselSelectorColor>846D21</systemCarouselSelectorColor>
-    <gamelistLogoColor>e4e5ca</gamelistLogoColor>
-    <gamelistBackgroundImage>gamelist-background-beige</gamelistBackgroundImage>
-    <gamelistMetadataBackgroundImage>gamelist-metadata-background-beige</gamelistMetadataBackgroundImage>
-    <gamelistSelectorColor>846D21</gamelistSelectorColor>
-    <gamelistSelectedColor>ffffff</gamelistSelectedColor>
-    <gamelistPrimaryColor>3b3b3b</gamelistPrimaryColor>
-    <gamelistSecondaryColor>3b3b3b</gamelistSecondaryColor>
-    <gameMetadataColor>3b3b3b</gameMetadataColor>
-    <BackdropColor>fbf6de</BackdropColor>
-    <backgroundArtPath>${themePath}/wallpapers/famicom</backgroundArtPath>
-    <menuBackgroundColor>771f26</menuBackgroundColor>
-    <menuBackgroundColorTitle>612b2f</menuBackgroundColorTitle>
-    <menuTextColor>e4e5ca</menuTextColor>
-    <menuInputMode>dark</menuInputMode>
-    <systemProgressbarSelectorColor>d6be74</systemProgressbarSelectorColor>
-  </variables>
-
   <variables ifSubset="color-scheme:snes">
     <helpTextColor>3c3b3b</helpTextColor>
     <systemInfoColor>3c3b3b</systemInfoColor>
