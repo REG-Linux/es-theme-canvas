@@ -83,7 +83,7 @@
     <systemProgressbarSelectorColor>c9def4</systemProgressbarSelectorColor>
   </variables>
 
-  <variables ifSubset="color-scheme:snes">
+  <variables ifSubset="color-scheme:purple">
     <helpTextColor>3c3b3b</helpTextColor>
     <systemInfoColor>3c3b3b</systemInfoColor>
     <systemCarouselSelectorColor>4a3580</systemCarouselSelectorColor>
@@ -96,7 +96,7 @@
     <gamelistSecondaryColor>3c3b3b</gamelistSecondaryColor>
     <gameMetadataColor>3c3b3b</gameMetadataColor>
     <BackdropColor>dedede</BackdropColor>
-    <backgroundArtPath>${themePath}/wallpapers/snes</backgroundArtPath>
+    <backgroundArtPath>${themePath}/wallpapers/purple</backgroundArtPath>
     <menuBackgroundColor>bdbcc1</menuBackgroundColor>
     <menuBackgroundColorTitle>a2a1a6</menuBackgroundColorTitle>
     <menuTextColor>3c3b3b</menuTextColor>
