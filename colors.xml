@@ -104,7 +104,7 @@
     <systemProgressbarSelectorColor>8c71cf</systemProgressbarSelectorColor>
   </variables>
 
-  <variables ifSubset="color-scheme:default">
+  <variables ifSubset="color-scheme:beige">
     <helpTextColor>5b5a58</helpTextColor>
     <systemInfoColor>5b5a58</systemInfoColor>
     <systemCarouselSelectorColor>488788</systemCarouselSelectorColor>
@@ -117,7 +117,7 @@
     <gamelistSecondaryColor>777777</gamelistSecondaryColor>
     <gameMetadataColor>777777</gameMetadataColor>
     <BackdropColor>ffffff</BackdropColor>
-    <backgroundArtPath>${themePath}/wallpapers/default</backgroundArtPath>
+    <backgroundArtPath>${themePath}/wallpapers/beige</backgroundArtPath>
     <menuBackgroundColor>fbf6de</menuBackgroundColor>
     <menuBackgroundColorTitle>faf1c5</menuBackgroundColorTitle>
     <menuTextColor>5b5a58</menuTextColor>
