@@ -154,8 +154,8 @@ jobs:
                       matches = re.findall(pattern, content, re.IGNORECASE)
                       for match in matches:
                           # Resolve theme path variables
-                          resolved = match.replace('${themePath}', './themes/default')
-                          resolved = resolved.replace('${theme}', './themes/default')
+                          resolved = match.replace('${themePath}', './themes/retro')
+                          resolved = resolved.replace('${theme}', './themes/retro')
                           
                           if resolved.startswith('./') or resolved.startswith('/'):
                               if not Path(resolved).exists():

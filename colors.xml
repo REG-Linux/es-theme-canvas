@@ -83,28 +83,7 @@
     <systemProgressbarSelectorColor>c9def4</systemProgressbarSelectorColor>
   </variables>
 
-  <variables ifSubset="color-scheme:famicom">
-    <helpTextColor>e4e5ca</helpTextColor>
-    <systemInfoColor>e4e5ca</systemInfoColor>
-    <systemCarouselSelectorColor>846D21</systemCarouselSelectorColor>
-    <gamelistLogoColor>e4e5ca</gamelistLogoColor>
-    <gamelistBackgroundImage>gamelist-background-beige</gamelistBackgroundImage>
-    <gamelistMetadataBackgroundImage>gamelist-metadata-background-beige</gamelistMetadataBackgroundImage>
-    <gamelistSelectorColor>846D21</gamelistSelectorColor>
-    <gamelistSelectedColor>ffffff</gamelistSelectedColor>
-    <gamelistPrimaryColor>3b3b3b</gamelistPrimaryColor>
-    <gamelistSecondaryColor>3b3b3b</gamelistSecondaryColor>
-    <gameMetadataColor>3b3b3b</gameMetadataColor>
-    <BackdropColor>fbf6de</BackdropColor>
-    <backgroundArtPath>${themePath}/wallpapers/famicom</backgroundArtPath>
-    <menuBackgroundColor>771f26</menuBackgroundColor>
-    <menuBackgroundColorTitle>612b2f</menuBackgroundColorTitle>
-    <menuTextColor>e4e5ca</menuTextColor>
-    <menuInputMode>dark</menuInputMode>
-    <systemProgressbarSelectorColor>d6be74</systemProgressbarSelectorColor>
-  </variables>
-
-  <variables ifSubset="color-scheme:snes">
+  <variables ifSubset="color-scheme:purple">
     <helpTextColor>3c3b3b</helpTextColor>
     <systemInfoColor>3c3b3b</systemInfoColor>
     <systemCarouselSelectorColor>4a3580</systemCarouselSelectorColor>
@@ -117,7 +96,7 @@
     <gamelistSecondaryColor>3c3b3b</gamelistSecondaryColor>
     <gameMetadataColor>3c3b3b</gameMetadataColor>
     <BackdropColor>dedede</BackdropColor>
-    <backgroundArtPath>${themePath}/wallpapers/snes</backgroundArtPath>
+    <backgroundArtPath>${themePath}/wallpapers/purple</backgroundArtPath>
     <menuBackgroundColor>bdbcc1</menuBackgroundColor>
     <menuBackgroundColorTitle>a2a1a6</menuBackgroundColorTitle>
     <menuTextColor>3c3b3b</menuTextColor>
@@ -125,28 +104,7 @@
     <systemProgressbarSelectorColor>8c71cf</systemProgressbarSelectorColor>
   </variables>
 
-  <variables ifSubset="color-scheme:sony">
-    <helpTextColor>ffffff</helpTextColor>
-    <systemInfoColor>ffffff</systemInfoColor>
-    <systemCarouselSelectorColor>0034b5</systemCarouselSelectorColor>
-    <gamelistLogoColor>ffffff</gamelistLogoColor>
-    <gamelistBackgroundImage>gamelist-background-clear</gamelistBackgroundImage>
-    <gamelistMetadataBackgroundImage>gamelist-metadata-background-clear</gamelistMetadataBackgroundImage>
-    <gamelistSelectorColor>253f81</gamelistSelectorColor>
-    <gamelistSelectedColor>ffffff</gamelistSelectedColor>
-    <gamelistPrimaryColor>ffffff</gamelistPrimaryColor>
-    <gamelistSecondaryColor>ffffff</gamelistSecondaryColor>
-    <gameMetadataColor>ffffff</gameMetadataColor>
-    <BackdropColor>ffffff</BackdropColor>
-    <backgroundArtPath>${themePath}/wallpapers/sony</backgroundArtPath>
-    <menuBackgroundColor>207cc5</menuBackgroundColor>
-    <menuBackgroundColorTitle>0a65ad</menuBackgroundColorTitle>
-    <menuTextColor>ffffff</menuTextColor>
-    <menuInputMode>dark</menuInputMode>
-    <systemProgressbarSelectorColor>6889de</systemProgressbarSelectorColor>
-  </variables>
-
-  <variables ifSubset="color-scheme:default">
+  <variables ifSubset="color-scheme:beige">
     <helpTextColor>5b5a58</helpTextColor>
     <systemInfoColor>5b5a58</systemInfoColor>
     <systemCarouselSelectorColor>488788</systemCarouselSelectorColor>
@@ -159,7 +117,7 @@
     <gamelistSecondaryColor>777777</gamelistSecondaryColor>
     <gameMetadataColor>777777</gameMetadataColor>
     <BackdropColor>ffffff</BackdropColor>
-    <backgroundArtPath>${themePath}/wallpapers/default</backgroundArtPath>
+    <backgroundArtPath>${themePath}/wallpapers/beige</backgroundArtPath>
     <menuBackgroundColor>fbf6de</menuBackgroundColor>
     <menuBackgroundColorTitle>faf1c5</menuBackgroundColorTitle>
     <menuTextColor>5b5a58</menuTextColor>
