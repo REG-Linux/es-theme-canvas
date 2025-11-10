@@ -125,27 +125,6 @@
     <systemProgressbarSelectorColor>8c71cf</systemProgressbarSelectorColor>
   </variables>
 
-  <variables ifSubset="color-scheme:sony">
-    <helpTextColor>ffffff</helpTextColor>
-    <systemInfoColor>ffffff</systemInfoColor>
-    <systemCarouselSelectorColor>0034b5</systemCarouselSelectorColor>
-    <gamelistLogoColor>ffffff</gamelistLogoColor>
-    <gamelistBackgroundImage>gamelist-background-clear</gamelistBackgroundImage>
-    <gamelistMetadataBackgroundImage>gamelist-metadata-background-clear</gamelistMetadataBackgroundImage>
-    <gamelistSelectorColor>253f81</gamelistSelectorColor>
-    <gamelistSelectedColor>ffffff</gamelistSelectedColor>
-    <gamelistPrimaryColor>ffffff</gamelistPrimaryColor>
-    <gamelistSecondaryColor>ffffff</gamelistSecondaryColor>
-    <gameMetadataColor>ffffff</gameMetadataColor>
-    <BackdropColor>ffffff</BackdropColor>
-    <backgroundArtPath>${themePath}/wallpapers/sony</backgroundArtPath>
-    <menuBackgroundColor>207cc5</menuBackgroundColor>
-    <menuBackgroundColorTitle>0a65ad</menuBackgroundColorTitle>
-    <menuTextColor>ffffff</menuTextColor>
-    <menuInputMode>dark</menuInputMode>
-    <systemProgressbarSelectorColor>6889de</systemProgressbarSelectorColor>
-  </variables>
-
   <variables ifSubset="color-scheme:default">
     <helpTextColor>5b5a58</helpTextColor>
     <systemInfoColor>5b5a58</systemInfoColor>

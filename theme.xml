@@ -59,7 +59,6 @@ License: Creative Commons CC-BY-NC-SA
     <include name="light" displayName="Light" />
     <include name="neon" displayName="Neon" />
     <include name="pastel" displayName="Pastel" />
-    <include name="sony" displayName="Sony" />
     <include name="snes" displayName="Snes" />
     <include name="famicom" displayName="Famicom" />
   </subset>
@@ -231,7 +230,7 @@ License: Creative Commons CC-BY-NC-SA
 
 		<!-- System Backgrounds -->
 		<image name="background-art" extra="true">
-			<path ifSubset="color-scheme:light|dark|default|retro|neon|sony|snes|famicom|pastel">${backgroundArtPath}.webp</path>
+			<path ifSubset="color-scheme:light|dark|default|retro|neon|snes|famicom|pastel">${backgroundArtPath}.webp</path>
 			<origin>0.5 0.5</origin>
 			<pos>0.5 0.5</pos>
 			<minSize>1 1</minSize>
