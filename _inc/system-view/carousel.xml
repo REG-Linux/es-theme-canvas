@@ -19,7 +19,6 @@
       <logoAlignment>center</logoAlignment>
       <defaultTransition>instant</defaultTransition>
       <systemInfoDelay>0.05</systemInfoDelay>
-      <linearSmooth>true</linearSmooth>
 
       <!-- System View: Carousel (Icon)-->
       <itemTemplate ifSubset="icon-scheme:icon">

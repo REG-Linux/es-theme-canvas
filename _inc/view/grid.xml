@@ -2,7 +2,7 @@
   <formatVersion>7</formatVersion>
 
   <!-- Include -->
-  <include>../variables/variables.xml</include>
+  <include>${themePath}/_inc/variables/variables.xml</include>
 
   <!-- Subset: Auto Grid Options -->
 	<subset name="autogridsize" displayName="Automatic Grid Size" appliesTo="grid">
@@ -28,7 +28,6 @@
 		</imagegrid>
 
 		<imagegrid name="gamegrid">
-			<imageSizeMode>minSize</imageSizeMode>
 			<margin>0.015</margin>
   		<pos>0.0125 0.08</pos>
   		<size ifSubset="metadata:on">0.975 0.72</size>
@@ -48,7 +47,6 @@
 			<backgroundEdgeColor>00000000</backgroundEdgeColor>
 			<backgroundCornerSize>11 11</backgroundCornerSize>
 			<selectionMode>image</selectionMode>
-			<imageSizeMode>maxSize</imageSizeMode>
 			<padding>3.5 3.5</padding>
 		</gridtile>
 

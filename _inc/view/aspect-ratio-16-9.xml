@@ -6,7 +6,7 @@
     -->
 
   <!-- Include -->
-  <include>../variables/variables.xml</include>
+  <include>${themePath}/_inc/variables/variables.xml</include>
 
 	<!-- System View Grid -->
 	<view name="system" ifSubset="system-view:grid">

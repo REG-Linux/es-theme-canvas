@@ -452,7 +452,7 @@ License: Creative Commons CC-BY-NC-SA
 	</view>
 
 	<!-- Game Grid View -->
-	<include name="grid">./grid.xml</include>
+	<include name="grid">./_inc/view/grid.xml</include>
 
 	<!-- Off Metadata Toggle -->
 	<view name="detailed, gamecarousel, grid, grid-detailed" ifSubset="metadata:off">
@@ -507,8 +507,8 @@ License: Creative Commons CC-BY-NC-SA
 	</subset>
 
 	<!-- Aspect Ratios -->
-   <include ifSubset="aspect-ratio:16-9|16-9-auto">./aspect-ratio-16-9.xml</include>
-   <include ifSubset="aspect-ratio:16-10|16-10-auto">./aspect-ratio-16-10.xml</include>
-   <include ifSubset="aspect-ratio:4-3|4-3-auto">./aspect-ratio-4-3.xml</include>
-   <include ifSubset="aspect-ratio:1-1|1-1-auto">./aspect-ratio-1-1.xml</include>
+   <include ifSubset="aspect-ratio:16-9|16-9-auto">${themePath}/_inc/view/aspect-ratio-16-9.xml</include>
+   <include ifSubset="aspect-ratio:16-10|16-10-auto">${themePath}/_inc/view/aspect-ratio-16-10.xml</include>
+   <include ifSubset="aspect-ratio:4-3|4-3-auto">${themePath}/_inc/view/aspect-ratio-4-3.xml</include>
+   <include ifSubset="aspect-ratio:1-1|1-1-auto">${themePath}/_inc/view/aspect-ratio-1-1.xml</include>
 </theme>
