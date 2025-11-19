@@ -14,11 +14,6 @@
     <zHelp>9</zHelp>
     <zTop>10</zTop>
 
-    <!-- Base Font Sizes -->
-    <baseFontSize>0.035</baseFontSize>
-    <smallFontSize>0.025</smallFontSize>
-    <largeFontSize>0.045</largeFontSize>
-
     <!-- Common Spacing -->
     <baseMargin>0.02</baseMargin>
     <smallMargin>0.01</smallMargin>

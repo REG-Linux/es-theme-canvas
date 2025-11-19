@@ -154,27 +154,21 @@ License: Creative Commons CC-BY-NC-SA
 		</menuText>
 
 		<menuText name="menutext">
-			<fontPath>${fontBold}</fontPath>
-			<fontSize>${baseFontSize}</fontSize>
+			<fontPath>${fontRegular}</fontPath>
+			<fontSize>0.028</fontSize>
 			<color>${menuTextColor}</color>
 			<separatorColor>${gamelistSelectorColor}</separatorColor>
 			<selectedColor>${gamelistSelectedColor}</selectedColor>
 			<selectorColor>${gamelistSelectorColor}</selectorColor>
 		</menuText>
 
-		<menuTextSmall name="menutextsmall">
-			<fontPath>${fontBold}</fontPath>
-			<fontSize>${smallFontSize}</fontSize>
-			<color>${menuTextColor}</color>
-		</menuTextSmall>
-
 		<menuGroup name="menugroup">
-			<fontPath>${fontRegular}</fontPath>
-			<fontSize>0.0325</fontSize>
+		  <alignment>center</alignment>
+			<fontPath>${fontBold}</fontPath>
+			<fontSize>0.025</fontSize>
 			<color>${menuTextColor}</color>
 			<separatorColor>${menuTextColor}</separatorColor>
 			<backgroundColor>${menuBackgroundColorTitle}</backgroundColor>
-			<lineSpacing>2.5</lineSpacing>
 		</menuGroup>
 
 		<menuTextEdit name="menutextedit">
