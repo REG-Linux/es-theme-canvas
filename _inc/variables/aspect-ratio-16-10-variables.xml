@@ -6,7 +6,7 @@
     <itemcount>3.5</itemcount>
     <itemsize>0.293 0.36</itemsize>
     <logospacing>1.2</logospacing>
-    <helpFontSize>0.022</helpFontSize>
+    <helpFontSize>0.020</helpFontSize>
     <gamelistBackgroundImageCalculated
       cache="true"
     >${themePath}/_inc/images/gamelist/${gamelistBackgroundImage}-small.webp</gamelistBackgroundImageCalculated>
@@ -52,7 +52,7 @@
     <itemcount>1.5</itemcount>
     <itemsize>0.44 0.54</itemsize>
     <logospacing>-0.75</logospacing>
-    <helpFontSize>0.024</helpFontSize>
+    <helpFontSize>0.022</helpFontSize>
     <gamelistBackgroundImageCalculated
       cache="true"
     >${themePath}/_inc/images/gamelist/${gamelistBackgroundImage}-large.webp</gamelistBackgroundImageCalculated>
@@ -70,8 +70,8 @@
   </variables>
 
   <variables>
-    <systemInfoFontSize>0.04</systemInfoFontSize>
-    <indicatorFontSize>0.04</indicatorFontSize>
+    <systemInfoFontSize>0.036</systemInfoFontSize>
+    <indicatorFontSize>0.036</indicatorFontSize>
     <helpPos>0.97</helpPos>
     <CornersGrid>10</CornersGrid>
     <CornersSmall>20</CornersSmall>
