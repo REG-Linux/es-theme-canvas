@@ -11,7 +11,7 @@ License: Creative Commons CC-BY-NC-SA
 	<!-- Includes -->
 	<include>./_inc/variables/variables.xml</include>
 	<include>./_inc/fonts/fonts.xml</include>
-	<include>./colors.xml</include>
+	<include>./_inc/colors.xml</include>
 
 	<!-- Aspect Ratios -->
 	<subset name="aspect-ratio" displayName="Aspect Ratio">

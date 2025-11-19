@@ -2,7 +2,7 @@
 <theme>
   <formatVersion>7</formatVersion>
   <!-- Include -->
-  <include>./colors.xml</include>
+  <include>./_inc/colors.xml</include>
 
   <view name="splash">
     <image name="background">
