@@ -2,7 +2,7 @@
   <formatVersion>7</formatVersion>
 
   <!-- Include -->
-  <include>./_inc/variables/variables.xml</include>
+  <include>../variables/variables.xml</include>
 
   <!-- Subset: Auto Grid Options -->
 	<subset name="autogridsize" displayName="Automatic Grid Size" appliesTo="grid">
