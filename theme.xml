@@ -111,9 +111,7 @@ License: Creative Commons CC-BY-NC-SA
 
     <batteryIndicator name="batteryIndicator">
       <color>${systemInfoColor}</color>
-      <lineSpacing>1</lineSpacing>
       <pos>0.93 0.012</pos>
-      <origin>0.5 0.5</origin>
       <size>0.04 0.04</size>
       <zIndex>${zIcons}</zIndex>
       <full>./_inc/images/battery/battery-icon-100.svg</full>
@@ -125,7 +123,6 @@ License: Creative Commons CC-BY-NC-SA
       <networkIcon>./_inc/images/network-icon-on.svg</networkIcon>
       <planemodeIcon>./_inc/images/network-icon-off.svg</planemodeIcon>
       <horizontalAlignment>center</horizontalAlignment>
-      <verticalAlignment>center</verticalAlignment>
     </batteryIndicator>
 
     <text name="clock">
@@ -188,7 +185,6 @@ License: Creative Commons CC-BY-NC-SA
 		<menuBackground name="menubg">
 			<color>${menuBackgroundColor}</color>
 			<cornerSize>20 20</cornerSize>
-			<zIndex>${zUI}</zIndex>
 		</menuBackground>
 
 		<menuIcons name="menuicons">
@@ -220,7 +216,6 @@ License: Creative Commons CC-BY-NC-SA
 			<fontPath>${fontBold}</fontPath>
 			<textColor>${helpTextColor}</textColor>
 			<iconColor>${helpTextColor}</iconColor>
-			<zIndex>${zHelp}</zIndex>
 			<iconA>./_inc/images/help-button-east.svg</iconA>
 			<iconB>./_inc/images/help-button-south.svg</iconB>
 			<iconX>./_inc/images/help-button-north.svg</iconX>
@@ -500,7 +495,6 @@ License: Creative Commons CC-BY-NC-SA
 			<logoRotationOrigin>5 0.5</logoRotationOrigin>
 			<logoAlignment>center</logoAlignment>
 			<imageSource>marquee</imageSource>
-      <lineSpacing>1.2</lineSpacing>
 		</gamecarousel>
 	</view>
 
