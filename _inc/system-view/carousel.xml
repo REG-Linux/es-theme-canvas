@@ -3,7 +3,7 @@
   <formatVersion>7</formatVersion>
 
   <!-- Include -->
-  <include>./_inc/variables/variables.xml</include>
+  <include>${themePath}/_inc/variables/variables.xml</include>
 
   <view name="system" ifSubset="system-view:carousel">
     <carousel name="systemcarousel">
@@ -19,7 +19,6 @@
       <logoAlignment>center</logoAlignment>
       <defaultTransition>instant</defaultTransition>
       <systemInfoDelay>0.05</systemInfoDelay>
-      <linearSmooth>true</linearSmooth>
 
       <!-- System View: Carousel (Icon)-->
       <itemTemplate ifSubset="icon-scheme:icon">
@@ -30,7 +29,7 @@
           <animation property="scale" to="1" duration="250" mode="easeOut" />
         </storyboard>
         <image name="backdrop" extra="true">
-          <path>./_inc/system-view/icon.webp</path>
+          <path>${themePath}/_inc/images/icon.webp</path>
           <pos>0.5 0.5</pos>
           <origin>0.5</origin>
           <maxSize>1 1</maxSize>
@@ -40,7 +39,7 @@
         </image>
 
         <image name="shade" extra="true">
-          <path>./_inc/system-view/4-5-bg.webp</path>
+          <path>${themePath}/_inc/images/4-5-bg.webp</path>
           <pos>0.5 0.5</pos>
           <origin>0.5</origin>
           <maxSize>1 1</maxSize>
@@ -114,7 +113,7 @@
 					<animation property="scale" to="1" duration="250" mode="easeOut" />
 				</storyboard>
 				<image name="shade" extra="true">
-					<path>./_inc/system-view/square-bg.webp</path>
+					<path>${themePath}/_inc/images/square-bg.webp</path>
 					<pos>0.5 0.82</pos>
 					<origin>0.5 1</origin>
 					<maxSize>0.84 0.84</maxSize>

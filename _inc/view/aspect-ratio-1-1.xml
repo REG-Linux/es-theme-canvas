@@ -6,7 +6,7 @@
     -->
 
   <!-- Include -->
-  <include>./_inc/variables/variables.xml</include>
+  <include>${themePath}/_inc/variables/variables.xml</include>
 
 	<!-- System View Grid -->
 	<view name="system" ifSubset="system-view:grid">
@@ -62,14 +62,14 @@
 
 					<!-- Selector -->
 					<image name="selector" extra="true">
-						<path>${themePath}/_inc/system-view/4-5.webp</path>
+						<path>${themePath}/_inc/images/4-5.webp</path>
 						<pos>0.5 0.5</pos>
 						<origin>0.5</origin>
 						<maxSize>.92 0.98</maxSize>
 						<linearSmooth>true</linearSmooth>
 						<zIndex>${zSelector}</zIndex>
 						<storyboard event="activate" repeat="forever">
-							<animation property="path" to="${themePath}/_inc/system-view/4-5.webp" />
+							<animation property="path" to="${themePath}/_inc/images/4-5.webp" />
 							<animation
                 property="color"
                 from="${systemCarouselSelectorColor}00"
@@ -88,13 +88,13 @@
 						</storyboard>
 
 						<storyboard event="deactivate">
-							<animation property="path" to="${themePath}/_inc/system-view/4-5.webp" />
+							<animation property="path" to="${themePath}/_inc/images/4-5.webp" />
 							<animation property="color" to="00000000" />
 						</storyboard>
 					</image>
 
 					<image name="backdrop" extra="true">
-						<path>./_inc/system-view/icon.webp</path>
+						<path>${themePath}/_inc/images/icon.webp</path>
 						<pos>0.5 0.5</pos>
 						<origin>0.5</origin>
 						<maxSize>0.845 0.895</maxSize>
@@ -105,7 +105,7 @@
 					</image>
 
 					<image name="shade" extra="true">
-						<path>./_inc/system-view/4-5-bg.webp</path>
+						<path>${themePath}/_inc/images/4-5-bg.webp</path>
 						<pos>0.5 0.5</pos>
 						<origin>0.5</origin>
 						<maxSize>0.95 0.98</maxSize>
@@ -215,7 +215,7 @@
 				</storyboard>
 
 				<image name="backdrop" extra="true">
-					<path>./_inc/system-view/icon.webp</path>
+					<path>${themePath}/_inc/images/icon.webp</path>
 					<pos>0.5 0.5</pos>
 					<origin>0.5</origin>
 					<maxSize>0.8 0.9</maxSize>
@@ -227,7 +227,7 @@
 				</image>
 
 				<image name="shade" extra="true">
-					<path>${themePath}/_inc/system-view/4-5-bg.webp</path>
+					<path>${themePath}/_inc/images/4-5-bg.webp</path>
 					<pos>0.5 0.5</pos>
 					<origin>0.5</origin>
 					<maxSize>0.99 0.998</maxSize>
@@ -359,14 +359,14 @@
 		<image name="game-metadata-background-shadow-extended" extra="true">
       <pos>0.731 0.884</pos>
       <size>0.46944928757 0.13288403122</size>
-      <path>./_inc/images/simple/gamelist-metadata-background-shadow-extended.webp</path>
+      <path>${themePath}/_inc/images/simple/gamelist-metadata-background-shadow-extended.webp</path>
       <zIndex>${zBackgroundArt}</zIndex>
 		</image>
 
 		<image name="game-metadata-background-image-extended" extra="true">
       <pos>0.731 0.884</pos>
       <size>0.45076433396 0.09612302346</size>
-			<path>./_inc/images/simple/${gamelistMetadataBackgroundImage}-extended.webp</path>
+			<path>${themePath}/_inc/images/simple/${gamelistMetadataBackgroundImage}-extended.webp</path>
 			<zIndex>${zBackgroundArt}</zIndex>
 		</image>
 
@@ -450,14 +450,14 @@
 		<image name="game-metadata-background-shadow-base" extra="true">
       <pos>0.725 0.88</pos>
       <size>0.4880998133 0.1771787083</size>
-      <path>./_inc/images/simple/gamelist-metadata-background-shadow-base.webp</path>
+      <path>${themePath}/_inc/images/simple/gamelist-metadata-background-shadow-base.webp</path>
       <zIndex>${zBackgroundArt}</zIndex>
 		</image>
 
 		<image name="game-metadata-background-image-base" extra="true">
       <pos>0.725 0.88</pos>
       <size>0.46318654182 0.1281640313</size>
-      <path>./_inc/images/simple/${gamelistMetadataBackgroundImage}-base.webp</path>
+      <path>${themePath}/_inc/images/simple/${gamelistMetadataBackgroundImage}-base.webp</path>
       <zIndex>${zBackgroundArt}</zIndex>
 		</image>
 
@@ -504,7 +504,7 @@
       <size>0.4453125 0.8972222528</size>
       <zIndex>${zBackgroundArt}</zIndex>
 			<linearSmooth>true</linearSmooth>
-      <path>./_inc/images/gamelist/gamelist-background-shadow.webp</path>
+      <path>${themePath}/_inc/images/gamelist/gamelist-background-shadow.webp</path>
 			<visible>true</visible>
 		</image>
 
@@ -546,14 +546,14 @@
 		<image name="game-metadata-background-shadow-extended" extra="true">
       <pos>0.25 0.66058187797</pos>
       <size>0.41089191099 0.36407719227</size>
-      <path>./_inc/images/detailed/gamelist-metadata-background-shadow-extended.webp</path>
+      <path>${themePath}/_inc/images/detailed/gamelist-metadata-background-shadow-extended.webp</path>
       <zIndex>${zBackgroundArt}</zIndex>
 		</image>
 
 		<image name="game-metadata-background-image-extended" extra="true">
       <pos>0.25 0.66058187797</pos>
       <size>0.386 0.31916375594</size>
-			<path>./_inc/images/detailed/${gamelistMetadataBackgroundImage}-extended.webp</path>
+			<path>${themePath}/_inc/images/detailed/${gamelistMetadataBackgroundImage}-extended.webp</path>
 			<zIndex>${zBackgroundArt}</zIndex>
 		</image>
 
@@ -642,14 +642,14 @@
 		<image name="game-metadata-background-shadow-base" extra="true">
 			<pos>0.255 0.6622</pos>
 			<size>0.4930952592 0.33764766516</size>
-      <path>./_inc/images/detailed/gamelist-metadata-background-shadow-base.webp</path>
+      <path>${themePath}/_inc/images/detailed/gamelist-metadata-background-shadow-base.webp</path>
       <zIndex>${zBackgroundArt}</zIndex>
 		</image>
 
 		<image name="game-metadata-background-image-base" extra="true">
 			<pos>0.255 0.6622</pos>
 			<size>0.4632 0.29289</size>
-      <path>./_inc/images/detailed/${gamelistMetadataBackgroundImage}-base.webp</path>
+      <path>${themePath}/_inc/images/detailed/${gamelistMetadataBackgroundImage}-base.webp</path>
       <zIndex>${zBackgroundArt}</zIndex>
 		</image>
 

@@ -3,7 +3,7 @@
   <formatVersion>7</formatVersion>
 
   <!-- Include -->
-  <include>./_inc/variables/variables.xml</include>
+  <include>${themePath}/_inc/variables/variables.xml</include>
 
   <view name="system">
     <imagegrid name="imagegrid">
@@ -45,7 +45,7 @@
           </storyboard>
 
           <image name="selector" extra="true">
-            <path>${themePath}/_inc/system-view/4-5.webp</path>
+            <path>${themePath}/_inc/images/4-5.webp</path>
             <pos>0.5 0.5</pos>
             <origin>0.5</origin>
             <maxSize>1 1</maxSize>
@@ -53,7 +53,7 @@
             <zIndex>${zSelector}</zIndex>
             <color>00000000</color>
             <storyboard event="activate" repeat="forever">
-                <animation property="path" to="${themePath}/_inc/system-view/4-5.webp" />
+                <animation property="path" to="${themePath}/_inc/images/4-5.webp" />
                 <animation
                 property="color"
                 from="${systemCarouselSelectorColor}00"
@@ -71,13 +71,13 @@
               />
             </storyboard>
             <storyboard event="deactivate">
-                <animation property="path" to="${themePath}/_inc/system-view/4-5.webp" />
+                <animation property="path" to="${themePath}/_inc/images/4-5.webp" />
                 <animation property="color" to="00000000" />
             </storyboard>
           </image>
 
           <image name="backdrop" extra="true">
-            <path>./_inc/system-view/icon.webp</path>
+            <path>${themePath}/_inc/images/icon.webp</path>
             <pos>0.5 0.5</pos>
             <origin>0.5</origin>
             <maxSize>1 1</maxSize>
@@ -87,7 +87,7 @@
           </image>
 
           <image name="shade" extra="true">
-            <path>./_inc/system-view/4-5-bg.webp</path>
+            <path>${themePath}/_inc/images/4-5-bg.webp</path>
             <pos>0.5 0.5</pos>
             <origin>0.5</origin>
             <maxSize>1 1</maxSize>
@@ -161,7 +161,7 @@
           </storyboard>
 
           <image name="selector" extra="true">
-            <path>{themePath}/_inc/system-view/square.webp</path>
+            <path>{themePath}/_inc/images/square.webp</path>
             <pos>0.5 0.74</pos>
             <origin>0.5 1</origin>
             <maxSize>0.77 0.67</maxSize>
@@ -170,7 +170,7 @@
             <color>00000000</color>
 
             <storyboard event="activate" repeat="forever">
-              <animation property="path" to="${themePath}/_inc/system-view/square.webp" />
+              <animation property="path" to="${themePath}/_inc/images/square.webp" />
               <animation
                 property="color"
                 from="${systemCarouselSelectorColor}00"
@@ -188,13 +188,13 @@
               />
             </storyboard>
             <storyboard event="deactivate">
-              <animation property="path" to="${themePath}/_inc/system-view/square.webp" />
+              <animation property="path" to="${themePath}/_inc/images/square.webp" />
               <animation property="color" to="00000000" />
             </storyboard>
           </image>
 
           <image name="shade" extra="true">
-            <path>./_inc/system-view/square-bg.webp</path>
+            <path>${themePath}/_inc/images/square-bg.webp</path>
             <pos>0.5 0.77</pos>
             <origin>0.5 1</origin>
             <maxSize>0.84 0.74</maxSize>
