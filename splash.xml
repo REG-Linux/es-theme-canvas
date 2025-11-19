@@ -2,7 +2,7 @@
 <theme>
   <formatVersion>7</formatVersion>
   <!-- Include -->
-  <include>./_inc/colors.xml</include>
+  <include>${themePath}/_inc/colors.xml</include>
 
   <view name="splash">
     <image name="background">
@@ -14,7 +14,7 @@
     </image>
 
     <image name="logo" extra="true">
-      <path>./_inc/images/logo/logo.webp</path>
+      <path>${themePath}/_inc/images/logo/logo.webp</path>
       <pos>0.5 0.4</pos>
       <origin>0.5 0.5</origin>
       <maxSize>0.4 0.4</maxSize>
@@ -37,7 +37,7 @@
       <pos>0.5 0.7</pos>
       <origin>0.5 0.5</origin>
       <alignment>center</alignment>
-      <fontPath>./_inc/fonts/Inter-Bold.otf</fontPath>
+      <fontPath>${themePath}/_inc/fonts/Inter-Bold.otf</fontPath>
       <fontSize>0.04</fontSize>
       <color>${gamelistLogoColor}</color>
       <forceUppercase>true</forceUppercase>

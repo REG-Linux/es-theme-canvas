@@ -77,7 +77,7 @@
           </image>
 
           <image name="backdrop" extra="true">
-            <path>./_inc/images/icon.webp</path>
+            <path>${themePath}/_inc/images/icon.webp</path>
             <pos>0.5 0.5</pos>
             <origin>0.5</origin>
             <maxSize>1 1</maxSize>
@@ -87,7 +87,7 @@
           </image>
 
           <image name="shade" extra="true">
-            <path>./_inc/images/4-5-bg.webp</path>
+            <path>${themePath}/_inc/images/4-5-bg.webp</path>
             <pos>0.5 0.5</pos>
             <origin>0.5</origin>
             <maxSize>1 1</maxSize>
@@ -194,7 +194,7 @@
           </image>
 
           <image name="shade" extra="true">
-            <path>./_inc/images/square-bg.webp</path>
+            <path>${themePath}/_inc/images/square-bg.webp</path>
             <pos>0.5 0.77</pos>
             <origin>0.5 1</origin>
             <maxSize>0.84 0.74</maxSize>

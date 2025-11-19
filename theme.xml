@@ -9,9 +9,9 @@ License: Creative Commons CC-BY-NC-SA
 	<formatVersion>7</formatVersion>
 
 	<!-- Includes -->
-	<include>./_inc/variables/variables.xml</include>
-	<include>./_inc/fonts/fonts.xml</include>
-	<include>./_inc/colors.xml</include>
+	<include>${themePath}/_inc/variables/variables.xml</include>
+	<include>${themePath}/_inc/fonts/fonts.xml</include>
+	<include>${themePath}/_inc/colors.xml</include>
 
 	<!-- Aspect Ratios -->
 	<subset name="aspect-ratio" displayName="Aspect Ratio">
@@ -82,14 +82,14 @@ License: Creative Commons CC-BY-NC-SA
 	</subset>
 
 	<!-- Aspect Ratios Variables -->
-	<include ifSubset="aspect-ratio:16-9|16-9-auto">./_inc/variables/aspect-ratio-16-9-variables.xml</include>
-	<include ifSubset="aspect-ratio:16-10|16-10-auto">./_inc/variables/aspect-ratio-16-10-variables.xml</include>
-	<include ifSubset="aspect-ratio:4-3|4-3-auto">./_inc/variables/aspect-ratio-4-3-variables.xml</include>
-	<include ifSubset="aspect-ratio:1-1|1-1-auto">./_inc/variables/aspect-ratio-1-1-variables.xml</include>
+	<include ifSubset="aspect-ratio:16-9|16-9-auto">${themePath}/_inc/variables/aspect-ratio-16-9-variables.xml</include>
+	<include ifSubset="aspect-ratio:16-10|16-10-auto">${themePath}/_inc/variables/aspect-ratio-16-10-variables.xml</include>
+	<include ifSubset="aspect-ratio:4-3|4-3-auto">${themePath}/_inc/variables/aspect-ratio-4-3-variables.xml</include>
+	<include ifSubset="aspect-ratio:1-1|1-1-auto">${themePath}/_inc/variables/aspect-ratio-1-1-variables.xml</include>
 
 	<!-- SystemView Include -->
-	<include ifSubset="system-view:grid">./_inc/system-view/grid.xml</include>
-	<include ifSubset="system-view:carousel">./_inc/system-view/carousel.xml</include>
+	<include ifSubset="system-view:grid">${themePath}/_inc/system-view/grid.xml</include>
+	<include ifSubset="system-view:carousel">${themePath}/_inc/system-view/carousel.xml</include>
 
 	<!-- Screen View -->
 	<view name="screen">
@@ -100,9 +100,9 @@ License: Creative Commons CC-BY-NC-SA
       <itemSpacing>0.003</itemSpacing>
       <color>${systemInfoColor}</color>
       <zIndex>${zIcons}</zIndex>
-      <imagePath>./_inc/images/gamepad.svg</imagePath>
-      <gunPath>./_inc/images/gun.svg</gunPath>
-      <wheelPath>./_inc/images/wheel.svg</wheelPath>
+      <imagePath>${themePath}/_inc/images/gamepad.svg</imagePath>
+      <gunPath>${themePath}/_inc/images/gun.svg</gunPath>
+      <wheelPath>${themePath}/_inc/images/wheel.svg</wheelPath>
       <activityColor>A0A0FFC0</activityColor>
       <hotkeyColor>FFA0A0C0</hotkeyColor>
       <horizontalAlignment ifSubset="system-view:grid">right</horizontalAlignment>
@@ -114,14 +114,14 @@ License: Creative Commons CC-BY-NC-SA
       <pos>0.93 0.012</pos>
       <size>0.04 0.04</size>
       <zIndex>${zIcons}</zIndex>
-      <full>./_inc/images/battery/battery-icon-100.svg</full>
-      <at75>./_inc/images/battery/battery-icon-75.svg</at75>
-      <at50>./_inc/images/battery/battery-icon-50.svg</at50>
-      <at25>./_inc/images/battery/battery-icon-25.svg</at25>
-      <empty>./_inc/images/battery/battery-icon-0.svg</empty>
-      <incharge>./_inc/images/battery/battery-icon-charging.svg</incharge>
-      <networkIcon>./_inc/images/network-icon-on.svg</networkIcon>
-      <planemodeIcon>./_inc/images/network-icon-off.svg</planemodeIcon>
+      <full>${themePath}/_inc/images/battery/battery-icon-100.svg</full>
+      <at75>${themePath}/_inc/images/battery/battery-icon-75.svg</at75>
+      <at50>${themePath}/_inc/images/battery/battery-icon-50.svg</at50>
+      <at25>${themePath}/_inc/images/battery/battery-icon-25.svg</at25>
+      <empty>${themePath}/_inc/images/battery/battery-icon-0.svg</empty>
+      <incharge>${themePath}/_inc/images/battery/battery-icon-charging.svg</incharge>
+      <networkIcon>${themePath}/_inc/images/network-icon-on.svg</networkIcon>
+      <planemodeIcon>${themePath}/_inc/images/network-icon-off.svg</planemodeIcon>
       <horizontalAlignment>center</horizontalAlignment>
     </batteryIndicator>
 
@@ -178,8 +178,8 @@ License: Creative Commons CC-BY-NC-SA
 		</menuGroup>
 
 		<menuTextEdit name="menutextedit">
-			<inactive>./_inc/images/menu-textinput-${menuInputMode}.png</inactive>
-			<active>./_inc/images/menu-textinput-active-${menuInputMode}.png</active>
+			<inactive>${themePath}/_inc/images/menu-textinput-${menuInputMode}.png</inactive>
+			<active>${themePath}/_inc/images/menu-textinput-active-${menuInputMode}.png</active>
 		</menuTextEdit>
 
 		<menuBackground name="menubg">
@@ -188,21 +188,21 @@ License: Creative Commons CC-BY-NC-SA
 		</menuBackground>
 
 		<menuIcons name="menuicons">
-			<iconSystem>./_inc/images/menu/System.png</iconSystem>
-			<iconUpdates>./_inc/images/menu/Updates.png</iconUpdates>
-			<iconControllers>./_inc/images/menu/Controllers.png</iconControllers>
-			<iconGames>./_inc/images/menu/Games.png</iconGames>
-			<iconUI>./_inc/images/menu/UI.png</iconUI>
-			<iconSound>./_inc/images/menu/Sound.png</iconSound>
-			<iconNetwork>./_inc/images/menu/Network.png</iconNetwork>
-			<iconScraper>./_inc/images/menu/Scraper.png</iconScraper>
-			<iconAdvanced>./_inc/images/menu/Advanced.png</iconAdvanced>
-			<iconQuit>./_inc/images/menu/Quit.png</iconQuit>
-			<iconRetroachievements>./_inc/images/menu/Achievements.png</iconRetroachievements>
-			<iconKodi>./_inc/images/menu/Kodi.png</iconKodi>
-			<iconRestart>./_inc/images/menu/Restart.png</iconRestart>
-			<iconShutdown>./_inc/images/menu/Shutdown.png</iconShutdown>
-			<iconFastShutdown>./_inc/images/menu/Fastshutdown.png</iconFastShutdown>
+			<iconSystem>${themePath}/_inc/images/menu/System.png</iconSystem>
+			<iconUpdates>${themePath}/_inc/images/menu/Updates.png</iconUpdates>
+			<iconControllers>${themePath}/_inc/images/menu/Controllers.png</iconControllers>
+			<iconGames>${themePath}/_inc/images/menu/Games.png</iconGames>
+			<iconUI>${themePath}/_inc/images/menu/UI.png</iconUI>
+			<iconSound>${themePath}/_inc/images/menu/Sound.png</iconSound>
+			<iconNetwork>${themePath}/_inc/images/menu/Network.png</iconNetwork>
+			<iconScraper>${themePath}/_inc/images/menu/Scraper.png</iconScraper>
+			<iconAdvanced>${themePath}/_inc/images/menu/Advanced.png</iconAdvanced>
+			<iconQuit>${themePath}/_inc/images/menu/Quit.png</iconQuit>
+			<iconRetroachievements>${themePath}/_inc/images/menu/Achievements.png</iconRetroachievements>
+			<iconKodi>${themePath}/_inc/images/menu/Kodi.png</iconKodi>
+			<iconRestart>${themePath}/_inc/images/menu/Restart.png</iconRestart>
+			<iconShutdown>${themePath}/_inc/images/menu/Shutdown.png</iconShutdown>
+			<iconFastShutdown>${themePath}/_inc/images/menu/Fastshutdown.png</iconFastShutdown>
 		</menuIcons>
  	</view>
 
@@ -216,10 +216,10 @@ License: Creative Commons CC-BY-NC-SA
 			<fontPath>${fontBold}</fontPath>
 			<textColor>${helpTextColor}</textColor>
 			<iconColor>${helpTextColor}</iconColor>
-			<iconA>./_inc/images/help-button-east.svg</iconA>
-			<iconB>./_inc/images/help-button-south.svg</iconB>
-			<iconX>./_inc/images/help-button-north.svg</iconX>
-			<iconY>./_inc/images/help-button-west.svg</iconY>
+			<iconA>${themePath}/_inc/images/help-button-east.svg</iconA>
+			<iconB>${themePath}/_inc/images/help-button-south.svg</iconB>
+			<iconX>${themePath}/_inc/images/help-button-north.svg</iconX>
+			<iconY>${themePath}/_inc/images/help-button-west.svg</iconY>
 		</helpsystem>
 
 		<!-- System Backgrounds -->
@@ -237,7 +237,7 @@ License: Creative Commons CC-BY-NC-SA
 		<image name="gamesicon" extra="true">
 			<origin ifSubset="system-view:grid">1 0.5</origin>
 			<origin ifSubset="system-view:carousel">0.5 0.5</origin>
-			<path>./_inc/images/gamescount.svg</path>
+			<path>${themePath}/_inc/images/gamescount.svg</path>
 			<color>${systemInfoColor}</color>
 			<opacity>${highOpacity}</opacity>
 			<zIndex>${zIcons}</zIndex>
@@ -247,7 +247,7 @@ License: Creative Commons CC-BY-NC-SA
 
 		<image name="countline" extra="true">
 			<origin>0.5 0.5</origin>
-			<path>./_inc/images/countline.svg</path>
+			<path>${themePath}/_inc/images/countline.svg</path>
 			<color>${systemInfoColor}</color>
 			<opacity>${highOpacity}</opacity>
 			<zIndex>${zIcons}</zIndex>
@@ -289,7 +289,7 @@ License: Creative Commons CC-BY-NC-SA
 	<!-- Gamelist: System Logo -->
 	<view name="basic, detailed, gamecarousel, grid">
 		<image name="logo" origin="0.5 0.5" linearSmooth="true">
-			<path>./_inc/systems/logos/${system.theme}.svg</path>
+			<path>${themePath}/_inc/systems/logos/${system.theme}.svg</path>
 			<zIndex>${zUI}</zIndex>
 			<color>${systemInfoColor}</color>
 			<visible>true</visible>
@@ -300,7 +300,7 @@ License: Creative Commons CC-BY-NC-SA
 	<!-- Gamelist: Full Metadata Call -->
 	<view name="detailed, gamecarousel, grid">
 		<image name="playtime-logo" origin="0.5 0.5" linearSmooth="true" extra="true">
-			<path>./_inc/images/playtime-icon.svg</path>
+			<path>${themePath}/_inc/images/playtime-icon.svg</path>
 			<zIndex>${zUI}</zIndex>
 			<color>${gameMetadataColor}</color>
 			<opacity>${lowOpacity}</opacity>
@@ -343,8 +343,8 @@ License: Creative Commons CC-BY-NC-SA
 
 		<rating name="md_rating">
 			<origin>0.5 0.5</origin>
-			<filledPath>./_inc/images/icon-star-filled.svg</filledPath>
-			<unfilledPath>./_inc/images/icon-star-unfilled.svg</unfilledPath>
+			<filledPath>${themePath}/_inc/images/icon-star-filled.svg</filledPath>
+			<unfilledPath>${themePath}/_inc/images/icon-star-unfilled.svg</unfilledPath>
 			<color>${gameMetadataColor}</color>
 			<zIndex>${zMetadata}</zIndex>
 			<visible ifSubset="metadata-option:rating">true</visible>
@@ -452,7 +452,7 @@ License: Creative Commons CC-BY-NC-SA
 	</view>
 
 	<!-- Game Grid View -->
-	<include name="grid">./_inc/view/grid.xml</include>
+	<include name="grid">${themePath}/_inc/view/grid.xml</include>
 
 	<!-- Off Metadata Toggle -->
 	<view name="detailed, gamecarousel, grid, grid-detailed" ifSubset="metadata:off">

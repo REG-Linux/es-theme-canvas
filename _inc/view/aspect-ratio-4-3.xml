@@ -108,14 +108,14 @@
 		<image name="game-metadata-background-shadow-extended" extra="true">
       <pos>0.701 0.894</pos>
       <size>0.5508204974 0.11693794746</size>
-      <path>./_inc/images/simple/gamelist-metadata-background-shadow-extended.webp</path>
+      <path>${themePath}/_inc/images/simple/gamelist-metadata-background-shadow-extended.webp</path>
       <zIndex>${zBackgroundArt}</zIndex>
 		</image>
 
 		<image name="game-metadata-background-image-extended" extra="true">
 			<pos>0.701 0.894</pos>
       <size>0.5288968185 0.08458826063</size>
-			<path>./_inc/images/simple/${gamelistMetadataBackgroundImage}-extended.webp</path>
+			<path>${themePath}/_inc/images/simple/${gamelistMetadataBackgroundImage}-extended.webp</path>
       <zIndex>${zBackgroundArt}</zIndex>
 		</image>
 
@@ -199,14 +199,14 @@
 		<image name="game-metadata-background-shadow-base" extra="true">
       <pos>0.705 0.885</pos>
       <size>0.57270378092 0.1559172633</size>
-      <path>./_inc/images/simple/gamelist-metadata-background-shadow-base.webp</path>
+      <path>${themePath}/_inc/images/simple/gamelist-metadata-background-shadow-base.webp</path>
       <zIndex>${zBackgroundArt}</zIndex>
 		</image>
 
 		<image name="game-metadata-background-image-base" extra="true">
       <pos>0.705 0.885</pos>
       <size>0.54347220906 0.11278434754</size>
-      <path>./_inc/images/simple/${gamelistMetadataBackgroundImage}-base.webp</path>
+      <path>${themePath}/_inc/images/simple/${gamelistMetadataBackgroundImage}-base.webp</path>
       <zIndex>${zBackgroundArt}</zIndex>
 		</image>
 
@@ -252,7 +252,7 @@
       <pos>0.75 0.50648148147</pos>
       <zIndex>${zBackgroundArt}</zIndex>
       <linearSmooth>true</linearSmooth>
-      <path>./_inc/images/gamelist/gamelist-background-shadow.webp</path>
+      <path>${themePath}/_inc/images/gamelist/gamelist-background-shadow.webp</path>
       <size>0.48984375 0.8972222528</size>
       <visible>true</visible>
 		</image>
@@ -295,14 +295,14 @@
 		<image name="game-metadata-background-shadow-extended" extra="true">
       <pos>0.255 0.67058187797</pos>
       <size>0.49307029318 0.35497526246</size>
-      <path>./_inc/images/detailed/gamelist-metadata-background-shadow-extended.webp</path>
+      <path>${themePath}/_inc/images/detailed/gamelist-metadata-background-shadow-extended.webp</path>
       <zIndex>${zBackgroundArt}</zIndex>
 		</image>
 
 		<image name="game-metadata-background-image-extended" extra="true">
 			<pos>0.255 0.67058187797</pos>
       <size>0.4632 0.31118466204</size>
-			<path>./_inc/images/detailed/${gamelistMetadataBackgroundImage}-extended.webp</path>
+			<path>${themePath}/_inc/images/detailed/${gamelistMetadataBackgroundImage}-extended.webp</path>
 			<zIndex>${zBackgroundArt}</zIndex>
 		</image>
 
@@ -391,14 +391,14 @@
 		<image name="game-metadata-background-shadow-base" extra="true">
       <pos>0.255 0.6622</pos>
       <size>0.4930952592 0.33764766516</size>
-      <path>./_inc/images/detailed/gamelist-metadata-background-shadow-base.webp</path>
+      <path>${themePath}/_inc/images/detailed/gamelist-metadata-background-shadow-base.webp</path>
       <zIndex>${zBackgroundArt}</zIndex>
 		</image>
 
 		<image name="game-metadata-background-image-base" extra="true">
       <pos>0.255 0.6622</pos>
       <size>0.4632 0.29289</size>
-      <path>./_inc/images/detailed/${gamelistMetadataBackgroundImage}-base.webp</path>
+      <path>${themePath}/_inc/images/detailed/${gamelistMetadataBackgroundImage}-base.webp</path>
       <zIndex>${zBackgroundArt}</zIndex>
 		</image>
 

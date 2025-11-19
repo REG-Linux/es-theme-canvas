@@ -9,7 +9,7 @@
     <helpFontSize>0.022</helpFontSize>
     <gamelistBackgroundImageCalculated
       cache="true"
-    >./_inc/images/gamelist/${gamelistBackgroundImage}-small.webp</gamelistBackgroundImageCalculated>
+    >${themePath}/_inc/images/gamelist/${gamelistBackgroundImage}-small.webp</gamelistBackgroundImageCalculated>
     <gamelistFontSize>0.025</gamelistFontSize>
     <gamelistSelectorHeight>0.04</gamelistSelectorHeight>
     <gamelistPos>0.563 0.115</gamelistPos>
@@ -32,7 +32,7 @@
     <helpFontSize>0.023</helpFontSize>
     <gamelistBackgroundImageCalculated
       cache="true"
-    >./_inc/images/gamelist/${gamelistBackgroundImage}-medium.webp</gamelistBackgroundImageCalculated>
+    >${themePath}/_inc/images/gamelist/${gamelistBackgroundImage}-medium.webp</gamelistBackgroundImageCalculated>
     <gamelistFontSize>0.03</gamelistFontSize>
     <gamelistSelectorHeight>0.051</gamelistSelectorHeight>
     <gamelistPos>0.563 0.135</gamelistPos>
@@ -55,7 +55,7 @@
     <helpFontSize>0.024</helpFontSize>
     <gamelistBackgroundImageCalculated
       cache="true"
-    >./_inc/images/gamelist/${gamelistBackgroundImage}-large.webp</gamelistBackgroundImageCalculated>
+    >${themePath}/_inc/images/gamelist/${gamelistBackgroundImage}-large.webp</gamelistBackgroundImageCalculated>
     <gamelistFontSize>0.036</gamelistFontSize>
     <gamelistSelectorHeight>0.064</gamelistSelectorHeight>
     <gamelistPos>0.563 0.129</gamelistPos>
