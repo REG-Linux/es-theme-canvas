@@ -519,7 +519,7 @@
 		</image>
 
 		<textlist name="gamelist">
-			<fontPath>${fontBold}</fontPath>
+			<fontPath>${fontRegular}</fontPath>
 			<selectorColor>${gamelistSelectorColor}</selectorColor>
 			<selectedColor>${gamelistSelectedColor}</selectedColor>
 			<primaryColor>${gamelistPrimaryColor}</primaryColor>
