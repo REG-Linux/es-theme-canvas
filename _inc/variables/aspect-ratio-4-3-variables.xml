@@ -37,7 +37,7 @@
     <gamelistBackgroundImageCalculated
       cache="true"
     >${themePath}/_inc/images/gamelist/${gamelistBackgroundImage}-medium.webp</gamelistBackgroundImageCalculated>
-    <gamelistFontSize>0.03</gamelistFontSize>
+    <gamelistFontSize>0.027</gamelistFontSize>
     <gamelistSelectorHeight>0.051</gamelistSelectorHeight>
     <gamelistPos>0.56 0.134</gamelistPos>
     <gamelistSize>0.383 0.752</gamelistSize>
@@ -62,7 +62,7 @@
     <gamelistBackgroundImageCalculated
       cache="true"
     >${themePath}/_inc/images/gamelist/${gamelistBackgroundImage}-large.webp</gamelistBackgroundImageCalculated>
-    <gamelistFontSize>0.036</gamelistFontSize>
+    <gamelistFontSize>0.033</gamelistFontSize>
     <gamelistSelectorHeight>0.064</gamelistSelectorHeight>
     <gamelistPos>0.56 0.129</gamelistPos>
     <gamelistSize>0.383 0.763</gamelistSize>
