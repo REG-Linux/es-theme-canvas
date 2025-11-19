@@ -47,8 +47,8 @@ License: Creative Commons CC-BY-NC-SA
 
 	<!-- Subset: Icon Scheme -->
    <subset name="icon-scheme" displayName="System Icon Style">
-      <include name="icon" displayName="Icons" />
-      <include name="art" displayName="Art" />
+    <include name="icon" displayName="Icons" />
+    <include name="art" displayName="Art" />
    </subset>
 
 	<!-- Subset: Color Scheme -->
@@ -203,7 +203,7 @@ License: Creative Commons CC-BY-NC-SA
 	<!-- All Views -->
 	<view name="system, basic, detailed, gamecarousel, grid">
 		<!-- Help System -->
-		<helpsystem name="help">
+		<helpsystem alignment="center" name="help">
 			<origin>0.5 0.5</origin>
 			<pos>0.5 ${helpPos}</pos>
 			<fontSize>${helpFontSize}</fontSize>
