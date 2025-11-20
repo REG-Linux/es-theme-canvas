@@ -162,6 +162,12 @@ License: Creative Commons CC-BY-NC-SA
 			<selectorColor>${gamelistSelectorColor}</selectorColor>
 		</menuText>
 
+		<menuTextSmall name="menutextsmall">
+			<fontPath>${fontBold}</fontPath>
+			<fontSize>0.03</fontSize>
+			<color>${menuTextColor}</color>
+		</menuTextSmall>
+
 		<menuGroup name="menugroup">
 		  <alignment>center</alignment>
 			<fontPath>${fontBold}</fontPath>
