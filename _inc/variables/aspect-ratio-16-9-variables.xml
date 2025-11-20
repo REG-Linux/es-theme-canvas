@@ -19,7 +19,7 @@
     <descriptionPos>0.685</descriptionPos>
     <descriptionHeight>0.135</descriptionHeight>
     <descriptionFontSize>0.025</descriptionFontSize>
-    <descriptionLineSpacing>1.35</descriptionLineSpacing>
+    <descriptionLineSpacing>1</descriptionLineSpacing>
     <linecount>17</linecount>
   </variables>
 
@@ -42,7 +42,7 @@
     <descriptionPos>0.656</descriptionPos>
     <descriptionHeight>0.15</descriptionHeight>
     <descriptionFontSize>0.027</descriptionFontSize>
-    <descriptionLineSpacing>1.5</descriptionLineSpacing>
+    <descriptionLineSpacing>1</descriptionLineSpacing>
     <linecount>13</linecount>
   </variables>
 
@@ -65,7 +65,7 @@
     <descriptionPos>0.656</descriptionPos>
     <descriptionHeight>0.15</descriptionHeight>
     <descriptionFontSize>0.032</descriptionFontSize>
-    <descriptionLineSpacing>1.6</descriptionLineSpacing>
+    <descriptionLineSpacing>1</descriptionLineSpacing>
     <linecount>11</linecount>
   </variables>
 
