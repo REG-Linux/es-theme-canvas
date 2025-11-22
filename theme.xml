@@ -143,19 +143,19 @@ License: Creative Commons CC-BY-NC-SA
 	<view name="menu">
 		<menuText name="menutitle">
 			<fontPath>${fontBold}</fontPath>
-			<fontSize>0.03</fontSize>
+			<fontSize>0.034</fontSize>
 			<color>${menuTextColor}</color>
 		</menuText>
 
 		<menuText name="menufooter">
-			<fontPath>${fontLight}</fontPath>
-			<fontSize>0.025</fontSize>
+			<fontPath>${fontRegular}</fontPath>
+			<fontSize>0.02</fontSize>
 			<color>${menuTextColor}</color>
 		</menuText>
 
 		<menuText name="menutext">
-			<fontPath>${fontRegular}</fontPath>
-			<fontSize>0.028</fontSize>
+			<fontPath>${fontBold}</fontPath>
+			<fontSize>0.025</fontSize>
 			<color>${menuTextColor}</color>
 			<separatorColor>${gamelistSelectorColor}</separatorColor>
 			<selectedColor>${gamelistSelectedColor}</selectedColor>
@@ -163,15 +163,15 @@ License: Creative Commons CC-BY-NC-SA
 		</menuText>
 
 		<menuTextSmall name="menutextsmall">
-			<fontPath>${fontBold}</fontPath>
-			<fontSize>0.03</fontSize>
+			<fontPath>${fontRegular}</fontPath>
+			<fontSize>0.016</fontSize>
 			<color>${menuTextColor}</color>
 		</menuTextSmall>
 
 		<menuGroup name="menugroup">
 		  <alignment>center</alignment>
-			<fontPath>${fontBold}</fontPath>
-			<fontSize>0.025</fontSize>
+			<fontPath>${fontRegular}</fontPath>
+			<fontSize>0.02</fontSize>
 			<color>${menuTextColor}</color>
 			<separatorColor>${menuTextColor}</separatorColor>
 			<backgroundColor>${menuBackgroundColorTitle}</backgroundColor>
@@ -319,14 +319,14 @@ License: Creative Commons CC-BY-NC-SA
 
 		<datetime name="md_releasedate,md_lastplayed">
 			<origin>0 0.5</origin>
-			<fontPath>${fontBold}</fontPath>
+			<fontPath>${fontRegular}</fontPath>
 			<color>${gameMetadataColor}</color>
 			<lineSpacing>1</lineSpacing>
 		</datetime>
 
 		<text name="md_name,md_players,md_genre,md_developer,md_publisher,md_playcount,md_gametime_custom">
 			<origin>0 0.5</origin>
-			<fontPath>${fontBold}</fontPath>
+			<fontPath>${fontRegular}</fontPath>
 			<color>${gameMetadataColor}</color>
 			<lineSpacing>1</lineSpacing>
 			<value>Unknown</value>
