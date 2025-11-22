@@ -166,7 +166,7 @@
 					<text>{system:fullName}</text>
 					<fontSize>${systemDescriptionFontSize}</fontSize>
 					<fontPath>${fontBold}</fontPath>
-          <color>${systemInfoColor}</color>
+					<color>${systemInfoColor}</color>
 					<scale>1</scale>
 					<zIndex>${zText}</zIndex>
 				</text>
