@@ -1,0 +1,236 @@
+{
+  "formatVersion": 7.0,
+  "nodes": [
+    {
+      "type": "include",
+      "path": "${themePath}/_inc/variables/variables.json"
+    },
+    {
+      "type": "subset",
+      "name": "autogridsize",
+      "displayName": "Automatic Grid Size",
+      "appliesTo": "grid",
+      "nodes": [
+        {
+          "type": "include",
+          "name": "automatic",
+          "displayName": "Automatic"
+        },
+        {
+          "type": "include",
+          "name": "large",
+          "displayName": "2 Rows"
+        },
+        {
+          "type": "include",
+          "name": "medium",
+          "displayName": "3 Rows"
+        },
+        {
+          "type": "include",
+          "name": "small",
+          "displayName": "4 Rows"
+        }
+      ]
+    },
+    {
+      "type": "view",
+      "name": "grid",
+      "elements": [
+        {
+          "type": "imagegrid",
+          "name": "gamegrid",
+          "filters": {
+            "ifSubset": "autogridsize:automatic"
+          },
+          "props": [
+            {
+              "name": "autoLayout",
+              "value": "0 2",
+              "filters": {
+                "ifSubset": "aspect-ratio:16-9|16-9-auto"
+              }
+            },
+            {
+              "name": "autoLayout",
+              "value": "0 3",
+              "filters": {
+                "ifSubset": "aspect-ratio:16-10|16-10-auto"
+              }
+            },
+            {
+              "name": "autoLayout",
+              "value": "0 3",
+              "filters": {
+                "ifSubset": "aspect-ratio:1-1|1-1-auto"
+              }
+            },
+            {
+              "name": "autoLayout",
+              "value": "0 2",
+              "filters": {
+                "ifSubset": "aspect-ratio:4-3|4-3-auto"
+              }
+            }
+          ]
+        },
+        {
+          "type": "imagegrid",
+          "name": "gamegrid",
+          "filters": {
+            "ifSubset": "autogridsize:small,medium,large"
+          },
+          "props": [
+            {
+              "name": "autoLayout",
+              "value": "0 2",
+              "filters": {
+                "ifSubset": "autogriddetailedsize:large"
+              }
+            },
+            {
+              "name": "autoLayout",
+              "value": "0 3",
+              "filters": {
+                "ifSubset": "autogriddetailedsize:medium"
+              }
+            },
+            {
+              "name": "autoLayout",
+              "value": "0 4",
+              "filters": {
+                "ifSubset": "autogriddetailedsize:small"
+              }
+            }
+          ]
+        },
+        {
+          "type": "imagegrid",
+          "name": "gamegrid",
+          "props": [
+            {
+              "name": "margin",
+              "value": "0.015"
+            },
+            {
+              "name": "pos",
+              "value": "0.0125 0.08"
+            },
+            {
+              "name": "size",
+              "value": "0.975 0.72",
+              "filters": {
+                "ifSubset": "metadata:on"
+              }
+            },
+            {
+              "name": "size",
+              "value": "0.975 0.78",
+              "filters": {
+                "ifSubset": "metadata:off"
+              }
+            },
+            {
+              "name": "padding",
+              "value": "7 7 7 7"
+            },
+            {
+              "name": "imageSource",
+              "value": "cover"
+            },
+            {
+              "name": "scrollbarColor",
+              "value": "${secondaryColor}"
+            },
+            {
+              "name": "scrollbarCorner",
+              "value": "0.49"
+            },
+            {
+              "name": "scrollbarSize",
+              "value": "0.005"
+            },
+            {
+              "name": "scrollbarAlignment",
+              "value": "right"
+            },
+            {
+              "name": "autoLayoutSelectedZoom",
+              "value": "1.05"
+            },
+            {
+              "name": "zIndex",
+              "value": "${zUI}"
+            }
+          ]
+        },
+        {
+          "type": "gridtile",
+          "name": "default",
+          "props": [
+            {
+              "name": "backgroundColor",
+              "value": "00000000"
+            },
+            {
+              "name": "backgroundEdgeColor",
+              "value": "00000000"
+            },
+            {
+              "name": "backgroundCornerSize",
+              "value": "11 11"
+            },
+            {
+              "name": "selectionMode",
+              "value": "image"
+            },
+            {
+              "name": "padding",
+              "value": "3.5 3.5"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "name": "gridtile.image",
+          "props": [
+            {
+              "name": "linearSmooth",
+              "value": "true"
+            },
+            {
+              "name": "roundCorners",
+              "value": "${CornersGrid}"
+            },
+            {
+              "name": "scale",
+              "value": "0.99"
+            }
+          ]
+        },
+        {
+          "type": "ninepatch",
+          "name": "gridtile.background:selected",
+          "props": [
+            {
+              "name": "color",
+              "value": "${systemCarouselSelectorColor}"
+            },
+            {
+              "name": "animateColor",
+              "value": "${systemCarouselSelectorColor}00"
+            },
+            {
+              "name": "animateColorTime",
+              "value": "800"
+            },
+            {
+              "name": "scale",
+              "value": "0.9"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

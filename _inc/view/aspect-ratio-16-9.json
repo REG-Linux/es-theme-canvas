@@ -1,0 +1,1369 @@
+{
+  "formatVersion": 7.0,
+  "nodes": [
+    {
+      "type": "include",
+      "path": "${themePath}/_inc/variables/variables.json"
+    },
+    {
+      "type": "view",
+      "name": "system",
+      "filters": {
+        "ifSubset": "system-view:grid"
+      },
+      "elements": [
+        {
+          "type": "imagegrid",
+          "name": "imagegrid",
+          "props": [
+            {
+              "name": "h",
+              "value": "0.85"
+            },
+            {
+              "name": "w",
+              "value": "0.985"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "name": "gamesicon",
+          "extra": true,
+          "props": [
+            {
+              "name": "pos",
+              "value": "0.075 0.05"
+            },
+            {
+              "name": "size",
+              "value": "0 ${systemInfoFontSize}"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "systemInfoGrid",
+          "props": [
+            {
+              "name": "pos",
+              "value": "0.085 0.05"
+            },
+            {
+              "name": "size",
+              "value": "0 ${systemInfoFontSize}"
+            },
+            {
+              "name": "fontSize",
+              "value": "${systemInfoFontSize}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "view",
+      "name": "system",
+      "filters": {
+        "ifSubset": "system-view:carousel"
+      },
+      "elements": [
+        {
+          "type": "image",
+          "name": "countline",
+          "extra": true,
+          "props": [
+            {
+              "name": "pos",
+              "value": "0.5 0.878"
+            },
+            {
+              "name": "size",
+              "value": "0 ${helpFontSize}"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "systemInfo",
+          "props": [
+            {
+              "name": "pos",
+              "value": "0.5 0.92"
+            },
+            {
+              "name": "size",
+              "value": "1 ${systemInfoFontSize}"
+            },
+            {
+              "name": "fontSize",
+              "value": "${systemInfoFontSize}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "view",
+      "name": "gamecarousel",
+      "elements": [
+        {
+          "type": "gamecarousel",
+          "name": "gamecarousel",
+          "props": [
+            {
+              "name": "logoSize",
+              "value": "${itemSizeCarousel}"
+            },
+            {
+              "name": "pos",
+              "value": "0.022 -0.18"
+            },
+            {
+              "name": "size",
+              "value": "1.45 1.3"
+            },
+            {
+              "name": "maxLogoCount",
+              "value": "5"
+            },
+            {
+              "name": "scaledLogoSpacing",
+              "value": "${logospacing}"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "name": "logo",
+          "props": [
+            {
+              "name": "pos",
+              "value": "0.255 0.88"
+            },
+            {
+              "name": "maxSize",
+              "value": "0.25 .08"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "view",
+      "name": "basic",
+      "elements": [
+        {
+          "type": "image",
+          "name": "logo",
+          "props": [
+            {
+              "name": "pos",
+              "value": "0.255 0.5"
+            },
+            {
+              "name": "maxSize",
+              "value": "0.35 .35"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "view",
+      "name": "detailed",
+      "elements": [
+        {
+          "type": "image",
+          "name": "logo",
+          "props": [
+            {
+              "name": "pos",
+              "value": "0.255 0.88"
+            },
+            {
+              "name": "maxSize",
+              "value": "0.25 .08"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "view",
+      "name": "grid",
+      "filters": {
+        "ifSubset": "metadata:on"
+      },
+      "elements": [
+        {
+          "type": "image",
+          "name": "logo",
+          "props": [
+            {
+              "name": "pos",
+              "value": "0.255 0.88"
+            },
+            {
+              "name": "maxSize",
+              "value": "0.25 .08"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "view",
+      "name": "grid",
+      "filters": {
+        "ifSubset": "metadata:off"
+      },
+      "elements": [
+        {
+          "type": "image",
+          "name": "logo",
+          "props": [
+            {
+              "name": "pos",
+              "value": "0.5 0.91"
+            },
+            {
+              "name": "maxSize",
+              "value": "0.23 .07"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "view",
+      "name": "grid",
+      "filters": {
+        "ifSubset": "font-size:small,metadata:on"
+      },
+      "elements": [
+        {
+          "type": "video",
+          "name": "md_video,",
+          "props": [
+            {
+              "name": "visible",
+              "value": "false"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "name": "md_marquee,md_image,md_thumbnail",
+          "props": [
+            {
+              "name": "visible",
+              "value": "false"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "md_description",
+          "props": [
+            {
+              "name": "visible",
+              "value": "false"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "name": "game-metadata-background-shadow-extended",
+          "extra": true,
+          "props": [
+            {
+              "name": "pos",
+              "value": "0.731 0.884"
+            },
+            {
+              "name": "size",
+              "value": "0.46944928757 0.13288403122"
+            },
+            {
+              "name": "path",
+              "value": "${themePath}/_inc/images/simple/gamelist-metadata-background-shadow-extended.webp"
+            },
+            {
+              "name": "zIndex",
+              "value": "${zBackgroundArt}"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "name": "game-metadata-background-image-extended",
+          "extra": true,
+          "props": [
+            {
+              "name": "pos",
+              "value": "0.731 0.884"
+            },
+            {
+              "name": "size",
+              "value": "0.45076433396 0.09612302346"
+            },
+            {
+              "name": "path",
+              "value": "${themePath}/_inc/images/simple/${gamelistMetadataBackgroundImage}-extended.webp"
+            },
+            {
+              "name": "zIndex",
+              "value": "${zBackgroundArt}"
+            }
+          ]
+        },
+        {
+          "type": "rating",
+          "name": "md_rating",
+          "props": [
+            {
+              "name": "pos",
+              "value": "0.621 0.911"
+            },
+            {
+              "name": "size",
+              "value": "0 0.0225"
+            }
+          ]
+        },
+        {
+          "type": "datetime",
+          "name": "md_releasedate",
+          "props": [
+            {
+              "name": "pos",
+              "value": "0.529 0.912"
+            },
+            {
+              "name": "size",
+              "value": "0.046 ${metaDatafontSize}"
+            },
+            {
+              "name": "fontSize",
+              "value": "${metaDatafontSize}"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "md_name",
+          "props": [
+            {
+              "name": "pos",
+              "value": "0.529 0.856"
+            },
+            {
+              "name": "size",
+              "value": ".31 ${metaDatafontSize}"
+            },
+            {
+              "name": "fontSize",
+              "value": "${metaDatafontSize}"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "md_players",
+          "props": [
+            {
+              "name": "visible",
+              "value": "false"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "md_genre",
+          "props": [
+            {
+              "name": "pos",
+              "value": "0.6911 0.912"
+            },
+            {
+              "name": "size",
+              "value": "0.148 ${metaDatafontSize}"
+            },
+            {
+              "name": "fontSize",
+              "value": "${metaDatafontSize}"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "md_developer",
+          "props": [
+            {
+              "name": "visible",
+              "value": "false"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "md_publisher",
+          "extra": true,
+          "props": [
+            {
+              "name": "visible",
+              "value": "false"
+            }
+          ]
+        },
+        {
+          "type": "datetime",
+          "name": "md_lastplayed",
+          "props": [
+            {
+              "name": "value",
+              "value": "Never"
+            },
+            {
+              "name": "pos",
+              "value": "0.872 0.8556"
+            },
+            {
+              "name": "size",
+              "value": "0.084 ${metaDatafontSize}"
+            },
+            {
+              "name": "size",
+              "value": "0.1 ${metaDatafontSize}"
+            },
+            {
+              "name": "fontSize",
+              "value": "${metaDatafontSize}"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "md_playcount",
+          "extra": true,
+          "props": [
+            {
+              "name": "pos",
+              "value": "0.872 0.912"
+            },
+            {
+              "name": "size",
+              "value": "0.084 ${metaDatafontSize}"
+            },
+            {
+              "name": "fontSize",
+              "value": "${metaDatafontSize}"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "md_gametime_custom",
+          "props": [
+            {
+              "name": "pos",
+              "value": "0.6041 0.912"
+            },
+            {
+              "name": "size",
+              "value": "0.056 ${metaDatafontSize}"
+            },
+            {
+              "name": "fontSize",
+              "value": "${metaDatafontSize}"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "name": "playtime-logo",
+          "props": [
+            {
+              "name": "pos",
+              "value": "0.594 0.912"
+            },
+            {
+              "name": "size",
+              "value": "0 0.025"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "view",
+      "name": "grid",
+      "filters": {
+        "ifSubset": "font-size:medium|large,metadata:on"
+      },
+      "elements": [
+        {
+          "type": "video",
+          "name": "md_video,",
+          "props": [
+            {
+              "name": "visible",
+              "value": "false"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "name": "md_marquee,md_image,md_thumbnail",
+          "props": [
+            {
+              "name": "visible",
+              "value": "false"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "md_description",
+          "props": [
+            {
+              "name": "visible",
+              "value": "false"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "name": "game-metadata-background-shadow-base",
+          "extra": true,
+          "props": [
+            {
+              "name": "pos",
+              "value": "0.725 0.88"
+            },
+            {
+              "name": "size",
+              "value": "0.4880998133 0.1771787083"
+            },
+            {
+              "name": "path",
+              "value": "${themePath}/_inc/images/simple/gamelist-metadata-background-shadow-base.webp"
+            },
+            {
+              "name": "zIndex",
+              "value": "${zBackgroundArt}"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "name": "game-metadata-background-image-base",
+          "extra": true,
+          "props": [
+            {
+              "name": "pos",
+              "value": "0.725 0.88"
+            },
+            {
+              "name": "size",
+              "value": "0.46318654182 0.1281640313"
+            },
+            {
+              "name": "path",
+              "value": "${themePath}/_inc/images/simple/${gamelistMetadataBackgroundImage}-base.webp"
+            },
+            {
+              "name": "zIndex",
+              "value": "${zBackgroundArt}"
+            }
+          ]
+        },
+        {
+          "type": "rating",
+          "name": "md_rating",
+          "props": [
+            {
+              "name": "pos",
+              "value": "0.647 0.918"
+            },
+            {
+              "name": "size",
+              "value": "0 0.03"
+            }
+          ]
+        },
+        {
+          "type": "datetime",
+          "name": "md_releasedate",
+          "props": [
+            {
+              "name": "pos",
+              "value": "0.524 0.918"
+            },
+            {
+              "name": "size",
+              "value": "0.06 ${metaDatafontSize}"
+            },
+            {
+              "name": "fontSize",
+              "value": "${metaDatafontSize}"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "md_name",
+          "props": [
+            {
+              "name": "pos",
+              "value": "0.524 0.842"
+            },
+            {
+              "name": "size",
+              "value": ".432 ${metaDatafontSize}"
+            },
+            {
+              "name": "fontSize",
+              "value": "${metaDatafontSize}"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "md_genre",
+          "props": [
+            {
+              "name": "pos",
+              "value": "0.740 0.918"
+            },
+            {
+              "name": "size",
+              "value": "0.215 ${metaDatafontSize}"
+            },
+            {
+              "name": "fontSize",
+              "value": "${metaDatafontSize}"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "md_gametime_custom",
+          "props": [
+            {
+              "name": "pos",
+              "value": "0.624 0.918"
+            },
+            {
+              "name": "size",
+              "value": "0.072 ${metaDatafontSize}"
+            },
+            {
+              "name": "fontSize",
+              "value": "${metaDatafontSize}"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "name": "playtime-logo",
+          "props": [
+            {
+              "name": "pos",
+              "value": "0.61 0.918"
+            },
+            {
+              "name": "size",
+              "value": "0 0.030"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "view",
+      "name": "detailed, basic",
+      "elements": [
+        {
+          "type": "image",
+          "name": "game-list-background-shadow",
+          "extra": true,
+          "props": [
+            {
+              "name": "origin",
+              "value": "0.5 0.5"
+            },
+            {
+              "name": "pos",
+              "value": "0.75 0.50648148147"
+            },
+            {
+              "name": "size",
+              "value": "0.4453125 0.8972222528"
+            },
+            {
+              "name": "zIndex",
+              "value": "${zBackgroundArt}"
+            },
+            {
+              "name": "linearSmooth",
+              "value": "true"
+            },
+            {
+              "name": "path",
+              "value": "${themePath}/_inc/images/gamelist/gamelist-background-shadow.webp"
+            },
+            {
+              "name": "visible",
+              "value": "true"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "name": "game-list-background",
+          "extra": true,
+          "props": [
+            {
+              "name": "origin",
+              "value": "0.5 0.5"
+            },
+            {
+              "name": "pos",
+              "value": "0.75 0.50648148147"
+            },
+            {
+              "name": "size",
+              "value": "0.4140625 0.84166666666"
+            },
+            {
+              "name": "zIndex",
+              "value": "${zBackgroundArt}"
+            },
+            {
+              "name": "linearSmooth",
+              "value": "true"
+            },
+            {
+              "name": "path",
+              "value": "${gamelistBackgroundImageCalculated}"
+            },
+            {
+              "name": "visible",
+              "value": "true"
+            }
+          ]
+        },
+        {
+          "type": "textlist",
+          "name": "gamelist",
+          "props": [
+            {
+              "name": "fontPath",
+              "value": "${fontRegular}"
+            },
+            {
+              "name": "selectorColor",
+              "value": "${gamelistSelectorColor}"
+            },
+            {
+              "name": "selectedColor",
+              "value": "${gamelistSelectedColor}"
+            },
+            {
+              "name": "primaryColor",
+              "value": "${gamelistPrimaryColor}"
+            },
+            {
+              "name": "secondaryColor",
+              "value": "${gamelistSecondaryColor}"
+            },
+            {
+              "name": "horizontalMargin",
+              "value": "0.008333333333333"
+            },
+            {
+              "name": "zIndex",
+              "value": "${zText}"
+            },
+            {
+              "name": "pos",
+              "value": "${gamelistPos}"
+            },
+            {
+              "name": "size",
+              "value": "${gamelistSize}"
+            },
+            {
+              "name": "fontSize",
+              "value": "${gamelistFontSize}"
+            },
+            {
+              "name": "selectorHeight",
+              "value": "${gamelistSelectorHeight}"
+            },
+            {
+              "name": "lines",
+              "value": "${linecount}"
+            },
+            {
+              "name": "alignment",
+              "value": "left"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "view",
+      "name": "detailed, gamecarousel",
+      "filters": {
+        "ifSubset": "font-size:small,metadata:on"
+      },
+      "elements": [
+        {
+          "type": "video",
+          "name": "md_video",
+          "props": [
+            {
+              "name": "pos",
+              "value": "0.25 0.28"
+            },
+            {
+              "name": "maxSize",
+              "value": "0.448958333333333 0.38"
+            },
+            {
+              "name": "visible",
+              "value": "true"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "name": "game-metadata-background-shadow-extended",
+          "extra": true,
+          "props": [
+            {
+              "name": "pos",
+              "value": "0.25 0.66058187797"
+            },
+            {
+              "name": "size",
+              "value": "0.41089191099 0.36407719227"
+            },
+            {
+              "name": "path",
+              "value": "${themePath}/_inc/images/detailed/gamelist-metadata-background-shadow-extended.webp"
+            },
+            {
+              "name": "zIndex",
+              "value": "${zBackgroundArt}"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "name": "game-metadata-background-image-extended",
+          "extra": true,
+          "props": [
+            {
+              "name": "pos",
+              "value": "0.25 0.66058187797"
+            },
+            {
+              "name": "size",
+              "value": "0.386 0.31916375594"
+            },
+            {
+              "name": "path",
+              "value": "${themePath}/_inc/images/detailed/${gamelistMetadataBackgroundImage}-extended.webp"
+            },
+            {
+              "name": "zIndex",
+              "value": "${zBackgroundArt}"
+            }
+          ]
+        },
+        {
+          "type": "rating",
+          "name": "md_rating",
+          "props": [
+            {
+              "name": "pos",
+              "value": "0.1056875 0.561"
+            },
+            {
+              "name": "size",
+              "value": "0 ${metaDatafontSize}"
+            }
+          ]
+        },
+        {
+          "type": "datetime",
+          "name": "md_releasedate",
+          "props": [
+            {
+              "name": "pos",
+              "value": "0.0771875 0.605"
+            },
+            {
+              "name": "size",
+              "value": "0 ${metaDatafontSize}"
+            },
+            {
+              "name": "fontSize",
+              "value": "${metaDatafontSize}"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "md_name",
+          "props": [
+            {
+              "name": "pos",
+              "value": "0.0771875 0.517"
+            },
+            {
+              "name": "size",
+              "value": "0.365 ${metaDatafontSize}"
+            },
+            {
+              "name": "fontSize",
+              "value": "${metaDatafontSize}"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "md_players",
+          "props": [
+            {
+              "name": "pos",
+              "value": "0.0771875 0.651"
+            },
+            {
+              "name": "size",
+              "value": "0 ${metaDatafontSize}"
+            },
+            {
+              "name": "fontSize",
+              "value": "${metaDatafontSize}"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "md_genre",
+          "props": [
+            {
+              "name": "pos",
+              "value": "0.1831875 0.562"
+            },
+            {
+              "name": "size",
+              "value": "0.258 ${metaDatafontSize}"
+            },
+            {
+              "name": "fontSize",
+              "value": "${metaDatafontSize}"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "md_developer",
+          "props": [
+            {
+              "name": "pos",
+              "value": "0.1831875 0.606"
+            },
+            {
+              "name": "size",
+              "value": "0.146 ${metaDatafontSize}"
+            },
+            {
+              "name": "fontSize",
+              "value": "${metaDatafontSize}"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "md_publisher",
+          "extra": true,
+          "props": [
+            {
+              "name": "pos",
+              "value": "0.1831875 0.651"
+            },
+            {
+              "name": "size",
+              "value": "0.146 ${metaDatafontSize}"
+            },
+            {
+              "name": "fontSize",
+              "value": "${metaDatafontSize}"
+            }
+          ]
+        },
+        {
+          "type": "datetime",
+          "name": "md_lastplayed",
+          "props": [
+            {
+              "name": "value",
+              "value": "Never"
+            },
+            {
+              "name": "pos",
+              "value": "0.3576875 0.606"
+            },
+            {
+              "name": "size",
+              "value": "0.084 ${metaDatafontSize}"
+            },
+            {
+              "name": "fontSize",
+              "value": "${metaDatafontSize}"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "md_playcount",
+          "extra": true,
+          "props": [
+            {
+              "name": "pos",
+              "value": "0.3576875 0.651"
+            },
+            {
+              "name": "size",
+              "value": "0.084 ${metaDatafontSize}"
+            },
+            {
+              "name": "fontSize",
+              "value": "${metaDatafontSize}"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "md_description",
+          "props": [
+            {
+              "name": "pos",
+              "value": "0.25 ${descriptionPos}"
+            },
+            {
+              "name": "size",
+              "value": "0.3768 ${descriptionHeight}"
+            },
+            {
+              "name": "fontSize",
+              "value": "${descriptionFontSize}"
+            },
+            {
+              "name": "lineSpacing",
+              "value": "${descriptionLineSpacing}"
+            },
+            {
+              "name": "visible",
+              "value": "true"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "md_gametime_custom",
+          "props": [
+            {
+              "name": "pos",
+              "value": "0.0771875 0.562"
+            },
+            {
+              "name": "size",
+              "value": "0.07 ${metaDatafontSize}"
+            },
+            {
+              "name": "fontSize",
+              "value": "${metaDatafontSize}"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "name": "playtime-logo",
+          "props": [
+            {
+              "name": "pos",
+              "value": "0.067 0.562"
+            },
+            {
+              "name": "size",
+              "value": "0 0.023"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "view",
+      "name": "detailed, gamecarousel",
+      "filters": {
+        "ifSubset": "font-size:medium|large,metadata:on"
+      },
+      "elements": [
+        {
+          "type": "video",
+          "name": "md_video",
+          "props": [
+            {
+              "name": "pos",
+              "value": "0.25 0.28"
+            },
+            {
+              "name": "maxSize",
+              "value": "0.448958333333333 0.38"
+            },
+            {
+              "name": "visible",
+              "value": "true"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "name": "game-metadata-background-shadow-base",
+          "extra": true,
+          "props": [
+            {
+              "name": "pos",
+              "value": "0.255 0.6622"
+            },
+            {
+              "name": "size",
+              "value": "0.4930952592 0.33764766516"
+            },
+            {
+              "name": "path",
+              "value": "${themePath}/_inc/images/detailed/gamelist-metadata-background-shadow-base.webp"
+            },
+            {
+              "name": "zIndex",
+              "value": "${zBackgroundArt}"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "name": "game-metadata-background-image-base",
+          "extra": true,
+          "props": [
+            {
+              "name": "pos",
+              "value": "0.255 0.6622"
+            },
+            {
+              "name": "size",
+              "value": "0.4632 0.29289"
+            },
+            {
+              "name": "path",
+              "value": "${themePath}/_inc/images/detailed/${gamelistMetadataBackgroundImage}-base.webp"
+            },
+            {
+              "name": "zIndex",
+              "value": "${zBackgroundArt}"
+            }
+          ]
+        },
+        {
+          "type": "rating",
+          "name": "md_rating",
+          "props": [
+            {
+              "name": "pos",
+              "value": "0.2075 0.61"
+            },
+            {
+              "name": "size",
+              "value": "0 ${metaDatafontSize}"
+            }
+          ]
+        },
+        {
+          "type": "datetime",
+          "name": "md_releasedate",
+          "props": [
+            {
+              "name": "pos",
+              "value": "0.0625 0.608"
+            },
+            {
+              "name": "size",
+              "value": "0.068 ${metaDatafontSize}"
+            },
+            {
+              "name": "fontSize",
+              "value": "${metaDatafontSize}"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "md_name",
+          "props": [
+            {
+              "name": "pos",
+              "value": "0.0625 0.54"
+            },
+            {
+              "name": "size",
+              "value": ".4225 0.05"
+            },
+            {
+              "name": "fontSize",
+              "value": "${metaDatafontSize}"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "md_genre",
+          "props": [
+            {
+              "name": "pos",
+              "value": "0.32 0.608"
+            },
+            {
+              "name": "size",
+              "value": "0.165 0.05"
+            },
+            {
+              "name": "fontSize",
+              "value": "${metaDatafontSize}"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "md_description",
+          "props": [
+            {
+              "name": "pos",
+              "value": "0.255 ${descriptionPos}"
+            },
+            {
+              "name": "size",
+              "value": "0.45 ${descriptionHeight}"
+            },
+            {
+              "name": "fontSize",
+              "value": "${descriptionFontSize}"
+            },
+            {
+              "name": "lineSpacing",
+              "value": "${descriptionLineSpacing}"
+            },
+            {
+              "name": "visible",
+              "value": "true"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "md_gametime_custom",
+          "props": [
+            {
+              "name": "pos",
+              "value": "0.177 0.608"
+            },
+            {
+              "name": "size",
+              "value": "0.094 ${metaDatafontSize}"
+            },
+            {
+              "name": "fontSize",
+              "value": "${metaDatafontSize}"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "name": "playtime-logo",
+          "props": [
+            {
+              "name": "pos",
+              "value": "0.165 0.608"
+            },
+            {
+              "name": "size",
+              "value": "0 0.035"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "view",
+      "name": "detailed, gamecarousel",
+      "filters": {
+        "ifSubset": "metadata:off"
+      },
+      "elements": [
+        {
+          "type": "video",
+          "name": "md_video",
+          "props": [
+            {
+              "name": "pos",
+              "value": "0.255 0.48"
+            },
+            {
+              "name": "maxSize",
+              "value": "0.386 0.40"
+            },
+            {
+              "name": "visible",
+              "value": "true"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "view",
+      "name": "grid",
+      "filters": {
+        "ifSubset": "metadata:off"
+      },
+      "elements": [
+        {
+          "type": "video",
+          "name": "md_video,",
+          "props": [
+            {
+              "name": "visible",
+              "value": "false"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "name": "md_marquee,md_image,md_thumbnail",
+          "props": [
+            {
+              "name": "visible",
+              "value": "false"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

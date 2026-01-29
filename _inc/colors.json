@@ -1,0 +1,887 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "helpTextColor",
+      "value": "999999",
+      "filters": {
+        "ifSubset": "color-scheme:dark"
+      }
+    },
+    {
+      "key": "systemInfoColor",
+      "value": "cccccc",
+      "filters": {
+        "ifSubset": "color-scheme:dark"
+      }
+    },
+    {
+      "key": "systemCarouselSelectorColor",
+      "value": "b5b5b5",
+      "filters": {
+        "ifSubset": "color-scheme:dark"
+      }
+    },
+    {
+      "key": "gamelistLogoColor",
+      "value": "cccccc",
+      "filters": {
+        "ifSubset": "color-scheme:dark"
+      }
+    },
+    {
+      "key": "gamelistBackgroundImage",
+      "value": "gamelist-background-dark",
+      "filters": {
+        "ifSubset": "color-scheme:dark"
+      }
+    },
+    {
+      "key": "gamelistMetadataBackgroundImage",
+      "value": "gamelist-metadata-background-dark",
+      "filters": {
+        "ifSubset": "color-scheme:dark"
+      }
+    },
+    {
+      "key": "gamelistSelectorColor",
+      "value": "777777",
+      "filters": {
+        "ifSubset": "color-scheme:dark"
+      }
+    },
+    {
+      "key": "gamelistSelectedColor",
+      "value": "ffffff",
+      "filters": {
+        "ifSubset": "color-scheme:dark"
+      }
+    },
+    {
+      "key": "gamelistPrimaryColor",
+      "value": "777777",
+      "filters": {
+        "ifSubset": "color-scheme:dark"
+      }
+    },
+    {
+      "key": "gamelistSecondaryColor",
+      "value": "777777",
+      "filters": {
+        "ifSubset": "color-scheme:dark"
+      }
+    },
+    {
+      "key": "gameMetadataColor",
+      "value": "bbbbbb",
+      "filters": {
+        "ifSubset": "color-scheme:dark"
+      }
+    },
+    {
+      "key": "BackdropColor",
+      "value": "000000",
+      "filters": {
+        "ifSubset": "color-scheme:dark"
+      }
+    },
+    {
+      "key": "backgroundArtPath",
+      "value": "${themePath}/wallpapers/dark",
+      "filters": {
+        "ifSubset": "color-scheme:dark"
+      }
+    },
+    {
+      "key": "menuBackgroundColor",
+      "value": "373737",
+      "filters": {
+        "ifSubset": "color-scheme:dark"
+      }
+    },
+    {
+      "key": "menuBackgroundColorTitle",
+      "value": "1c1c1c",
+      "filters": {
+        "ifSubset": "color-scheme:dark"
+      }
+    },
+    {
+      "key": "menuTextColor",
+      "value": "999999",
+      "filters": {
+        "ifSubset": "color-scheme:dark"
+      }
+    },
+    {
+      "key": "menuInputMode",
+      "value": "dark",
+      "filters": {
+        "ifSubset": "color-scheme:dark"
+      }
+    },
+    {
+      "key": "systemProgressbarSelectorColor",
+      "value": "b3b3b3",
+      "filters": {
+        "ifSubset": "color-scheme:dark"
+      }
+    },
+    {
+      "key": "helpTextColor",
+      "value": "555555",
+      "filters": {
+        "ifSubset": "color-scheme:light"
+      }
+    },
+    {
+      "key": "systemInfoColor",
+      "value": "555555",
+      "filters": {
+        "ifSubset": "color-scheme:light"
+      }
+    },
+    {
+      "key": "systemCarouselSelectorColor",
+      "value": "404040",
+      "filters": {
+        "ifSubset": "color-scheme:light"
+      }
+    },
+    {
+      "key": "gamelistLogoColor",
+      "value": "555555",
+      "filters": {
+        "ifSubset": "color-scheme:light"
+      }
+    },
+    {
+      "key": "gamelistBackgroundImage",
+      "value": "gamelist-background-light",
+      "filters": {
+        "ifSubset": "color-scheme:light"
+      }
+    },
+    {
+      "key": "gamelistMetadataBackgroundImage",
+      "value": "gamelist-metadata-background-light",
+      "filters": {
+        "ifSubset": "color-scheme:light"
+      }
+    },
+    {
+      "key": "gamelistSelectorColor",
+      "value": "404040",
+      "filters": {
+        "ifSubset": "color-scheme:light"
+      }
+    },
+    {
+      "key": "gamelistSelectedColor",
+      "value": "ffffff",
+      "filters": {
+        "ifSubset": "color-scheme:light"
+      }
+    },
+    {
+      "key": "gamelistPrimaryColor",
+      "value": "666666",
+      "filters": {
+        "ifSubset": "color-scheme:light"
+      }
+    },
+    {
+      "key": "gamelistSecondaryColor",
+      "value": "666666",
+      "filters": {
+        "ifSubset": "color-scheme:light"
+      }
+    },
+    {
+      "key": "gameMetadataColor",
+      "value": "666666",
+      "filters": {
+        "ifSubset": "color-scheme:light"
+      }
+    },
+    {
+      "key": "BackdropColor",
+      "value": "ffffff",
+      "filters": {
+        "ifSubset": "color-scheme:light"
+      }
+    },
+    {
+      "key": "backgroundArtPath",
+      "value": "${themePath}/wallpapers/light",
+      "filters": {
+        "ifSubset": "color-scheme:light"
+      }
+    },
+    {
+      "key": "menuBackgroundColor",
+      "value": "ffffff",
+      "filters": {
+        "ifSubset": "color-scheme:light"
+      }
+    },
+    {
+      "key": "menuBackgroundColorTitle",
+      "value": "c2c2c2",
+      "filters": {
+        "ifSubset": "color-scheme:light"
+      }
+    },
+    {
+      "key": "menuTextColor",
+      "value": "555555",
+      "filters": {
+        "ifSubset": "color-scheme:light"
+      }
+    },
+    {
+      "key": "menuInputMode",
+      "value": "light",
+      "filters": {
+        "ifSubset": "color-scheme:light"
+      }
+    },
+    {
+      "key": "systemProgressbarSelectorColor",
+      "value": "999999",
+      "filters": {
+        "ifSubset": "color-scheme:light"
+      }
+    },
+    {
+      "key": "helpTextColor",
+      "value": "FFFFFF",
+      "filters": {
+        "ifSubset": "color-scheme:neon"
+      }
+    },
+    {
+      "key": "systemInfoColor",
+      "value": "FFFFFF",
+      "filters": {
+        "ifSubset": "color-scheme:neon"
+      }
+    },
+    {
+      "key": "systemCarouselSelectorColor",
+      "value": "b304c5",
+      "filters": {
+        "ifSubset": "color-scheme:neon"
+      }
+    },
+    {
+      "key": "gamelistLogoColor",
+      "value": "bdbdbd",
+      "filters": {
+        "ifSubset": "color-scheme:neon"
+      }
+    },
+    {
+      "key": "gamelistBackgroundImage",
+      "value": "gamelist-background-dark",
+      "filters": {
+        "ifSubset": "color-scheme:neon"
+      }
+    },
+    {
+      "key": "gamelistMetadataBackgroundImage",
+      "value": "gamelist-metadata-background-dark",
+      "filters": {
+        "ifSubset": "color-scheme:neon"
+      }
+    },
+    {
+      "key": "gamelistSelectorColor",
+      "value": "b304c5",
+      "filters": {
+        "ifSubset": "color-scheme:neon"
+      }
+    },
+    {
+      "key": "gamelistSelectedColor",
+      "value": "fff732",
+      "filters": {
+        "ifSubset": "color-scheme:neon"
+      }
+    },
+    {
+      "key": "gamelistPrimaryColor",
+      "value": "bdbdbd",
+      "filters": {
+        "ifSubset": "color-scheme:neon"
+      }
+    },
+    {
+      "key": "gamelistSecondaryColor",
+      "value": "bdbdbd",
+      "filters": {
+        "ifSubset": "color-scheme:neon"
+      }
+    },
+    {
+      "key": "gameMetadataColor",
+      "value": "bdbdbd",
+      "filters": {
+        "ifSubset": "color-scheme:neon"
+      }
+    },
+    {
+      "key": "BackdropColor",
+      "value": "111111",
+      "filters": {
+        "ifSubset": "color-scheme:neon"
+      }
+    },
+    {
+      "key": "backgroundArtPath",
+      "value": "${themePath}/wallpapers/neon",
+      "filters": {
+        "ifSubset": "color-scheme:neon"
+      }
+    },
+    {
+      "key": "menuBackgroundColor",
+      "value": "3f2452",
+      "filters": {
+        "ifSubset": "color-scheme:neon"
+      }
+    },
+    {
+      "key": "menuBackgroundColorTitle",
+      "value": "513863",
+      "filters": {
+        "ifSubset": "color-scheme:neon"
+      }
+    },
+    {
+      "key": "menuTextColor",
+      "value": "bdbdbd",
+      "filters": {
+        "ifSubset": "color-scheme:neon"
+      }
+    },
+    {
+      "key": "menuInputMode",
+      "value": "dark",
+      "filters": {
+        "ifSubset": "color-scheme:neon"
+      }
+    },
+    {
+      "key": "systemProgressbarSelectorColor",
+      "value": "74006c",
+      "filters": {
+        "ifSubset": "color-scheme:neon"
+      }
+    },
+    {
+      "key": "helpTextColor",
+      "value": "777777",
+      "filters": {
+        "ifSubset": "color-scheme:pastel"
+      }
+    },
+    {
+      "key": "systemInfoColor",
+      "value": "777777",
+      "filters": {
+        "ifSubset": "color-scheme:pastel"
+      }
+    },
+    {
+      "key": "systemCarouselSelectorColor",
+      "value": "A7C7E7",
+      "filters": {
+        "ifSubset": "color-scheme:pastel"
+      }
+    },
+    {
+      "key": "gamelistLogoColor",
+      "value": "777777",
+      "filters": {
+        "ifSubset": "color-scheme:pastel"
+      }
+    },
+    {
+      "key": "gamelistBackgroundImage",
+      "value": "gamelist-background-light",
+      "filters": {
+        "ifSubset": "color-scheme:pastel"
+      }
+    },
+    {
+      "key": "gamelistMetadataBackgroundImage",
+      "value": "gamelist-metadata-background-light",
+      "filters": {
+        "ifSubset": "color-scheme:pastel"
+      }
+    },
+    {
+      "key": "gamelistSelectorColor",
+      "value": "A7C7E7",
+      "filters": {
+        "ifSubset": "color-scheme:pastel"
+      }
+    },
+    {
+      "key": "gamelistSelectedColor",
+      "value": "ffffff",
+      "filters": {
+        "ifSubset": "color-scheme:pastel"
+      }
+    },
+    {
+      "key": "gamelistPrimaryColor",
+      "value": "777777",
+      "filters": {
+        "ifSubset": "color-scheme:pastel"
+      }
+    },
+    {
+      "key": "gamelistSecondaryColor",
+      "value": "777777",
+      "filters": {
+        "ifSubset": "color-scheme:pastel"
+      }
+    },
+    {
+      "key": "gameMetadataColor",
+      "value": "777777",
+      "filters": {
+        "ifSubset": "color-scheme:pastel"
+      }
+    },
+    {
+      "key": "BackdropColor",
+      "value": "ffffff",
+      "filters": {
+        "ifSubset": "color-scheme:pastel"
+      }
+    },
+    {
+      "key": "backgroundArtPath",
+      "value": "${themePath}/wallpapers/pastel",
+      "filters": {
+        "ifSubset": "color-scheme:pastel"
+      }
+    },
+    {
+      "key": "menuBackgroundColor",
+      "value": "ffffff",
+      "filters": {
+        "ifSubset": "color-scheme:pastel"
+      }
+    },
+    {
+      "key": "menuBackgroundColorTitle",
+      "value": "dedede",
+      "filters": {
+        "ifSubset": "color-scheme:pastel"
+      }
+    },
+    {
+      "key": "menuTextColor",
+      "value": "777777",
+      "filters": {
+        "ifSubset": "color-scheme:pastel"
+      }
+    },
+    {
+      "key": "menuInputMode",
+      "value": "dark",
+      "filters": {
+        "ifSubset": "color-scheme:pastel"
+      }
+    },
+    {
+      "key": "systemProgressbarSelectorColor",
+      "value": "c9def4",
+      "filters": {
+        "ifSubset": "color-scheme:pastel"
+      }
+    },
+    {
+      "key": "helpTextColor",
+      "value": "3c3b3b",
+      "filters": {
+        "ifSubset": "color-scheme:purple"
+      }
+    },
+    {
+      "key": "systemInfoColor",
+      "value": "3c3b3b",
+      "filters": {
+        "ifSubset": "color-scheme:purple"
+      }
+    },
+    {
+      "key": "systemCarouselSelectorColor",
+      "value": "4a3580",
+      "filters": {
+        "ifSubset": "color-scheme:purple"
+      }
+    },
+    {
+      "key": "gamelistLogoColor",
+      "value": "3c3b3b",
+      "filters": {
+        "ifSubset": "color-scheme:purple"
+      }
+    },
+    {
+      "key": "gamelistBackgroundImage",
+      "value": "gamelist-background-purple",
+      "filters": {
+        "ifSubset": "color-scheme:purple"
+      }
+    },
+    {
+      "key": "gamelistMetadataBackgroundImage",
+      "value": "gamelist-metadata-background-purple",
+      "filters": {
+        "ifSubset": "color-scheme:purple"
+      }
+    },
+    {
+      "key": "gamelistSelectorColor",
+      "value": "4a3580",
+      "filters": {
+        "ifSubset": "color-scheme:purple"
+      }
+    },
+    {
+      "key": "gamelistSelectedColor",
+      "value": "ffffff",
+      "filters": {
+        "ifSubset": "color-scheme:purple"
+      }
+    },
+    {
+      "key": "gamelistPrimaryColor",
+      "value": "3c3b3b",
+      "filters": {
+        "ifSubset": "color-scheme:purple"
+      }
+    },
+    {
+      "key": "gamelistSecondaryColor",
+      "value": "3c3b3b",
+      "filters": {
+        "ifSubset": "color-scheme:purple"
+      }
+    },
+    {
+      "key": "gameMetadataColor",
+      "value": "3c3b3b",
+      "filters": {
+        "ifSubset": "color-scheme:purple"
+      }
+    },
+    {
+      "key": "BackdropColor",
+      "value": "dedede",
+      "filters": {
+        "ifSubset": "color-scheme:purple"
+      }
+    },
+    {
+      "key": "backgroundArtPath",
+      "value": "${themePath}/wallpapers/purple",
+      "filters": {
+        "ifSubset": "color-scheme:purple"
+      }
+    },
+    {
+      "key": "menuBackgroundColor",
+      "value": "bdbcc1",
+      "filters": {
+        "ifSubset": "color-scheme:purple"
+      }
+    },
+    {
+      "key": "menuBackgroundColorTitle",
+      "value": "a2a1a6",
+      "filters": {
+        "ifSubset": "color-scheme:purple"
+      }
+    },
+    {
+      "key": "menuTextColor",
+      "value": "3c3b3b",
+      "filters": {
+        "ifSubset": "color-scheme:purple"
+      }
+    },
+    {
+      "key": "menuInputMode",
+      "value": "light",
+      "filters": {
+        "ifSubset": "color-scheme:purple"
+      }
+    },
+    {
+      "key": "systemProgressbarSelectorColor",
+      "value": "8c71cf",
+      "filters": {
+        "ifSubset": "color-scheme:purple"
+      }
+    },
+    {
+      "key": "helpTextColor",
+      "value": "5b5a58",
+      "filters": {
+        "ifSubset": "color-scheme:beige"
+      }
+    },
+    {
+      "key": "systemInfoColor",
+      "value": "5b5a58",
+      "filters": {
+        "ifSubset": "color-scheme:beige"
+      }
+    },
+    {
+      "key": "systemCarouselSelectorColor",
+      "value": "488788",
+      "filters": {
+        "ifSubset": "color-scheme:beige"
+      }
+    },
+    {
+      "key": "gamelistLogoColor",
+      "value": "5b5a58",
+      "filters": {
+        "ifSubset": "color-scheme:beige"
+      }
+    },
+    {
+      "key": "gamelistBackgroundImage",
+      "value": "gamelist-background-light",
+      "filters": {
+        "ifSubset": "color-scheme:beige"
+      }
+    },
+    {
+      "key": "gamelistMetadataBackgroundImage",
+      "value": "gamelist-metadata-background-light",
+      "filters": {
+        "ifSubset": "color-scheme:beige"
+      }
+    },
+    {
+      "key": "gamelistSelectorColor",
+      "value": "488788",
+      "filters": {
+        "ifSubset": "color-scheme:beige"
+      }
+    },
+    {
+      "key": "gamelistSelectedColor",
+      "value": "ffffff",
+      "filters": {
+        "ifSubset": "color-scheme:beige"
+      }
+    },
+    {
+      "key": "gamelistPrimaryColor",
+      "value": "777777",
+      "filters": {
+        "ifSubset": "color-scheme:beige"
+      }
+    },
+    {
+      "key": "gamelistSecondaryColor",
+      "value": "777777",
+      "filters": {
+        "ifSubset": "color-scheme:beige"
+      }
+    },
+    {
+      "key": "gameMetadataColor",
+      "value": "777777",
+      "filters": {
+        "ifSubset": "color-scheme:beige"
+      }
+    },
+    {
+      "key": "BackdropColor",
+      "value": "ffffff",
+      "filters": {
+        "ifSubset": "color-scheme:beige"
+      }
+    },
+    {
+      "key": "backgroundArtPath",
+      "value": "${themePath}/wallpapers/beige",
+      "filters": {
+        "ifSubset": "color-scheme:beige"
+      }
+    },
+    {
+      "key": "menuBackgroundColor",
+      "value": "fbf6de",
+      "filters": {
+        "ifSubset": "color-scheme:beige"
+      }
+    },
+    {
+      "key": "menuBackgroundColorTitle",
+      "value": "faf1c5",
+      "filters": {
+        "ifSubset": "color-scheme:beige"
+      }
+    },
+    {
+      "key": "menuTextColor",
+      "value": "5b5a58",
+      "filters": {
+        "ifSubset": "color-scheme:beige"
+      }
+    },
+    {
+      "key": "menuInputMode",
+      "value": "light",
+      "filters": {
+        "ifSubset": "color-scheme:beige"
+      }
+    },
+    {
+      "key": "systemProgressbarSelectorColor",
+      "value": "93cbb7",
+      "filters": {
+        "ifSubset": "color-scheme:beige"
+      }
+    },
+    {
+      "key": "helpTextColor",
+      "value": "ffffff",
+      "filters": {
+        "ifSubset": "color-scheme:retro"
+      }
+    },
+    {
+      "key": "systemInfoColor",
+      "value": "ffffff",
+      "filters": {
+        "ifSubset": "color-scheme:retro"
+      }
+    },
+    {
+      "key": "systemCarouselSelectorColor",
+      "value": "dbba70",
+      "filters": {
+        "ifSubset": "color-scheme:retro"
+      }
+    },
+    {
+      "key": "gamelistLogoColor",
+      "value": "f7cd6e",
+      "filters": {
+        "ifSubset": "color-scheme:retro"
+      }
+    },
+    {
+      "key": "gamelistBackgroundImage",
+      "value": "gamelist-background-retro",
+      "filters": {
+        "ifSubset": "color-scheme:retro"
+      }
+    },
+    {
+      "key": "gamelistMetadataBackgroundImage",
+      "value": "gamelist-metadata-background-retro",
+      "filters": {
+        "ifSubset": "color-scheme:retro"
+      }
+    },
+    {
+      "key": "gamelistSelectorColor",
+      "value": "3b290d",
+      "filters": {
+        "ifSubset": "color-scheme:retro"
+      }
+    },
+    {
+      "key": "gamelistSelectedColor",
+      "value": "ffffff",
+      "filters": {
+        "ifSubset": "color-scheme:retro"
+      }
+    },
+    {
+      "key": "gamelistPrimaryColor",
+      "value": "3b290d",
+      "filters": {
+        "ifSubset": "color-scheme:retro"
+      }
+    },
+    {
+      "key": "gamelistSecondaryColor",
+      "value": "3b290d",
+      "filters": {
+        "ifSubset": "color-scheme:retro"
+      }
+    },
+    {
+      "key": "gameMetadataColor",
+      "value": "3b290d",
+      "filters": {
+        "ifSubset": "color-scheme:retro"
+      }
+    },
+    {
+      "key": "BackdropColor",
+      "value": "291c0a",
+      "filters": {
+        "ifSubset": "color-scheme:retro"
+      }
+    },
+    {
+      "key": "backgroundArtPath",
+      "value": "${themePath}/wallpapers/retro",
+      "filters": {
+        "ifSubset": "color-scheme:retro"
+      }
+    },
+    {
+      "key": "menuBackgroundColor",
+      "value": "ac9358",
+      "filters": {
+        "ifSubset": "color-scheme:retro"
+      }
+    },
+    {
+      "key": "menuBackgroundColorTitle",
+      "value": "887852",
+      "filters": {
+        "ifSubset": "color-scheme:retro"
+      }
+    },
+    {
+      "key": "menuTextColor",
+      "value": "3b290d",
+      "filters": {
+        "ifSubset": "color-scheme:retro"
+      }
+    },
+    {
+      "key": "menuInputMode",
+      "value": "light",
+      "filters": {
+        "ifSubset": "color-scheme:retro"
+      }
+    },
+    {
+      "key": "systemProgressbarSelectorColor",
+      "value": "9e8444",
+      "filters": {
+        "ifSubset": "color-scheme:retro"
+      }
+    }
+  ]
+}

@@ -1,0 +1,1711 @@
+{
+  "defaultTransition": "instant",
+  "formatVersion": 7.0,
+  "nodes": [
+    {
+      "type": "include",
+      "path": "${themePath}/_inc/variables/variables.json"
+    },
+    {
+      "type": "include",
+      "path": "${themePath}/_inc/fonts/fonts.json"
+    },
+    {
+      "type": "include",
+      "path": "${themePath}/_inc/colors.json"
+    },
+    {
+      "type": "subset",
+      "name": "aspect-ratio",
+      "displayName": "Aspect Ratio",
+      "nodes": [
+        {
+          "type": "include",
+          "name": "1-1-auto",
+          "displayName": "Automatic",
+          "filters": {
+            "if": "{screen.ratio} == '1/1'"
+          }
+        },
+        {
+          "type": "include",
+          "name": "16-9-auto",
+          "displayName": "Automatic",
+          "filters": {
+            "if": "{screen.ratio} == '16/9'"
+          }
+        },
+        {
+          "type": "include",
+          "name": "16-10-auto",
+          "displayName": "Automatic",
+          "filters": {
+            "if": "{screen.ratio} == '16/10'"
+          }
+        },
+        {
+          "type": "include",
+          "name": "4-3-auto",
+          "displayName": "Automatic",
+          "filters": {
+            "if": "{screen.ratio} == '4/3'"
+          }
+        },
+        {
+          "type": "include",
+          "name": "16-9",
+          "displayName": "16:9"
+        },
+        {
+          "type": "include",
+          "name": "16-10",
+          "displayName": "16:10"
+        },
+        {
+          "type": "include",
+          "name": "4-3",
+          "displayName": "4:3"
+        },
+        {
+          "type": "include",
+          "name": "1-1",
+          "displayName": "1:1"
+        }
+      ]
+    },
+    {
+      "type": "subset",
+      "name": "system-view",
+      "displayName": "System View",
+      "nodes": [
+        {
+          "type": "include",
+          "name": "grid",
+          "displayName": "Grid"
+        },
+        {
+          "type": "include",
+          "name": "carousel",
+          "displayName": "Carousel"
+        }
+      ]
+    },
+    {
+      "type": "subset",
+      "name": "sysgridsize",
+      "displayName": "System Grid Size",
+      "filters": {
+        "ifSubset": "system-view:grid"
+      },
+      "nodes": [
+        {
+          "type": "include",
+          "name": "automatic",
+          "displayName": "Automatic"
+        },
+        {
+          "type": "include",
+          "name": "3x1",
+          "displayName": "3X1"
+        },
+        {
+          "type": "include",
+          "name": "3x2",
+          "displayName": "3X2"
+        },
+        {
+          "type": "include",
+          "name": "3x3",
+          "displayName": "3X3"
+        },
+        {
+          "type": "include",
+          "name": "4x2",
+          "displayName": "4X2"
+        },
+        {
+          "type": "include",
+          "name": "4x3",
+          "displayName": "4X3"
+        },
+        {
+          "type": "include",
+          "name": "4x4",
+          "displayName": "4X4"
+        },
+        {
+          "type": "include",
+          "name": "5x2",
+          "displayName": "5X2"
+        },
+        {
+          "type": "include",
+          "name": "5x3",
+          "displayName": "5X3"
+        },
+        {
+          "type": "include",
+          "name": "5x4",
+          "displayName": "5X4"
+        }
+      ]
+    },
+    {
+      "type": "subset",
+      "name": "icon-scheme",
+      "displayName": "System Icon Style",
+      "nodes": [
+        {
+          "type": "include",
+          "name": "icon",
+          "displayName": "Icons"
+        },
+        {
+          "type": "include",
+          "name": "art",
+          "displayName": "Art"
+        }
+      ]
+    },
+    {
+      "type": "subset",
+      "name": "color-scheme",
+      "displayName": "Color Scheme",
+      "nodes": [
+        {
+          "type": "include",
+          "name": "retro",
+          "displayName": "Retro"
+        },
+        {
+          "type": "include",
+          "name": "beige",
+          "displayName": "Beige"
+        },
+        {
+          "type": "include",
+          "name": "dark",
+          "displayName": "Dark"
+        },
+        {
+          "type": "include",
+          "name": "light",
+          "displayName": "Light"
+        },
+        {
+          "type": "include",
+          "name": "neon",
+          "displayName": "Neon"
+        },
+        {
+          "type": "include",
+          "name": "pastel",
+          "displayName": "Pastel"
+        },
+        {
+          "type": "include",
+          "name": "purple",
+          "displayName": "Purple"
+        }
+      ]
+    },
+    {
+      "type": "subset",
+      "name": "font-size",
+      "displayName": "Font Size",
+      "nodes": [
+        {
+          "type": "include",
+          "name": "medium",
+          "displayName": "Default"
+        },
+        {
+          "type": "include",
+          "name": "small",
+          "displayName": "Small"
+        },
+        {
+          "type": "include",
+          "name": "large",
+          "displayName": "Large"
+        }
+      ]
+    },
+    {
+      "type": "subset",
+      "name": "metadata",
+      "displayName": "Metadata",
+      "nodes": [
+        {
+          "type": "include",
+          "name": "on",
+          "displayName": "On"
+        },
+        {
+          "type": "include",
+          "name": "off",
+          "displayName": "Off"
+        }
+      ]
+    },
+    {
+      "type": "subset",
+      "name": "metadata-option",
+      "displayName": "Metadata Rating/Playtime",
+      "nodes": [
+        {
+          "type": "include",
+          "name": "rating",
+          "displayName": "Rating"
+        },
+        {
+          "type": "include",
+          "name": "playtime",
+          "displayName": "Playtime"
+        }
+      ]
+    },
+    {
+      "type": "include",
+      "path": "${themePath}/_inc/variables/aspect-ratio-16-9-variables.json",
+      "filters": {
+        "ifSubset": "aspect-ratio:16-9|16-9-auto"
+      }
+    },
+    {
+      "type": "include",
+      "path": "${themePath}/_inc/variables/aspect-ratio-16-10-variables.json",
+      "filters": {
+        "ifSubset": "aspect-ratio:16-10|16-10-auto"
+      }
+    },
+    {
+      "type": "include",
+      "path": "${themePath}/_inc/variables/aspect-ratio-4-3-variables.json",
+      "filters": {
+        "ifSubset": "aspect-ratio:4-3|4-3-auto"
+      }
+    },
+    {
+      "type": "include",
+      "path": "${themePath}/_inc/variables/aspect-ratio-1-1-variables.json",
+      "filters": {
+        "ifSubset": "aspect-ratio:1-1|1-1-auto"
+      }
+    },
+    {
+      "type": "include",
+      "path": "${themePath}/_inc/system-view/grid.json",
+      "filters": {
+        "ifSubset": "system-view:grid"
+      }
+    },
+    {
+      "type": "include",
+      "path": "${themePath}/_inc/system-view/carousel.json",
+      "filters": {
+        "ifSubset": "system-view:carousel"
+      }
+    },
+    {
+      "type": "view",
+      "name": "screen",
+      "elements": [
+        {
+          "type": "controllerActivity",
+          "name": "controllerActivity",
+          "props": [
+            {
+              "name": "pos",
+              "value": "0.7 0.02",
+              "filters": {
+                "ifSubset": "system-view:grid"
+              }
+            },
+            {
+              "name": "pos",
+              "value": "0.04 0.02",
+              "filters": {
+                "ifSubset": "system-view:carousel"
+              }
+            },
+            {
+              "name": "size",
+              "value": "0.2 0.03"
+            },
+            {
+              "name": "itemSpacing",
+              "value": "0.003"
+            },
+            {
+              "name": "color",
+              "value": "${systemInfoColor}"
+            },
+            {
+              "name": "zIndex",
+              "value": "${zIcons}"
+            },
+            {
+              "name": "imagePath",
+              "value": "${themePath}/_inc/images/gamepad.svg"
+            },
+            {
+              "name": "gunPath",
+              "value": "${themePath}/_inc/images/gun.svg"
+            },
+            {
+              "name": "wheelPath",
+              "value": "${themePath}/_inc/images/wheel.svg"
+            },
+            {
+              "name": "activityColor",
+              "value": "A0A0FFC0"
+            },
+            {
+              "name": "hotkeyColor",
+              "value": "FFA0A0C0"
+            },
+            {
+              "name": "horizontalAlignment",
+              "value": "right",
+              "filters": {
+                "ifSubset": "system-view:grid"
+              }
+            },
+            {
+              "name": "horizontalAlignment",
+              "value": "left",
+              "filters": {
+                "ifSubset": "system-view:carousel"
+              }
+            }
+          ]
+        },
+        {
+          "type": "batteryIndicator",
+          "name": "batteryIndicator",
+          "props": [
+            {
+              "name": "color",
+              "value": "${systemInfoColor}"
+            },
+            {
+              "name": "pos",
+              "value": "0.93 0.012"
+            },
+            {
+              "name": "size",
+              "value": "0.04 0.04"
+            },
+            {
+              "name": "zIndex",
+              "value": "${zIcons}"
+            },
+            {
+              "name": "full",
+              "value": "${themePath}/_inc/images/battery/battery-icon-100.svg"
+            },
+            {
+              "name": "at75",
+              "value": "${themePath}/_inc/images/battery/battery-icon-75.svg"
+            },
+            {
+              "name": "at50",
+              "value": "${themePath}/_inc/images/battery/battery-icon-50.svg"
+            },
+            {
+              "name": "at25",
+              "value": "${themePath}/_inc/images/battery/battery-icon-25.svg"
+            },
+            {
+              "name": "empty",
+              "value": "${themePath}/_inc/images/battery/battery-icon-0.svg"
+            },
+            {
+              "name": "incharge",
+              "value": "${themePath}/_inc/images/battery/battery-icon-charging.svg"
+            },
+            {
+              "name": "networkIcon",
+              "value": "${themePath}/_inc/images/network-icon-on.svg"
+            },
+            {
+              "name": "planemodeIcon",
+              "value": "${themePath}/_inc/images/network-icon-off.svg"
+            },
+            {
+              "name": "horizontalAlignment",
+              "value": "center"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "clock",
+          "props": [
+            {
+              "name": "color",
+              "value": "${systemInfoColor}"
+            },
+            {
+              "name": "fontPath",
+              "value": "${fontBold}"
+            },
+            {
+              "name": "fontSize",
+              "value": "${indicatorFontSize}"
+            },
+            {
+              "name": "lineSpacing",
+              "value": "1"
+            },
+            {
+              "name": "pos",
+              "value": "0.5 0.04"
+            },
+            {
+              "name": "origin",
+              "value": "0.5 0.5"
+            },
+            {
+              "name": "size",
+              "value": "0.18 0.1"
+            },
+            {
+              "name": "alignment",
+              "value": "center"
+            },
+            {
+              "name": "verticalAlignment",
+              "value": "center"
+            },
+            {
+              "name": "zIndex",
+              "value": "${zText}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "view",
+      "name": "menu",
+      "elements": [
+        {
+          "type": "menuText",
+          "name": "menutitle",
+          "props": [
+            {
+              "name": "fontPath",
+              "value": "${fontBold}"
+            },
+            {
+              "name": "fontSize",
+              "value": "0.034"
+            },
+            {
+              "name": "color",
+              "value": "${menuTextColor}"
+            }
+          ]
+        },
+        {
+          "type": "menuText",
+          "name": "menufooter",
+          "props": [
+            {
+              "name": "fontPath",
+              "value": "${fontRegular}"
+            },
+            {
+              "name": "fontSize",
+              "value": "0.02"
+            },
+            {
+              "name": "color",
+              "value": "${menuTextColor}"
+            }
+          ]
+        },
+        {
+          "type": "menuText",
+          "name": "menutext",
+          "props": [
+            {
+              "name": "fontPath",
+              "value": "${fontBold}"
+            },
+            {
+              "name": "fontSize",
+              "value": "0.025"
+            },
+            {
+              "name": "color",
+              "value": "${menuTextColor}"
+            },
+            {
+              "name": "separatorColor",
+              "value": "${gamelistSelectorColor}"
+            },
+            {
+              "name": "selectedColor",
+              "value": "${gamelistSelectedColor}"
+            },
+            {
+              "name": "selectorColor",
+              "value": "${gamelistSelectorColor}"
+            }
+          ]
+        },
+        {
+          "type": "menuTextSmall",
+          "name": "menutextsmall",
+          "props": [
+            {
+              "name": "fontPath",
+              "value": "${fontRegular}"
+            },
+            {
+              "name": "fontSize",
+              "value": "0.016"
+            },
+            {
+              "name": "color",
+              "value": "${menuTextColor}"
+            }
+          ]
+        },
+        {
+          "type": "menuGroup",
+          "name": "menugroup",
+          "props": [
+            {
+              "name": "alignment",
+              "value": "center"
+            },
+            {
+              "name": "fontPath",
+              "value": "${fontRegular}"
+            },
+            {
+              "name": "fontSize",
+              "value": "0.02"
+            },
+            {
+              "name": "color",
+              "value": "${menuTextColor}"
+            },
+            {
+              "name": "separatorColor",
+              "value": "${menuTextColor}"
+            },
+            {
+              "name": "backgroundColor",
+              "value": "${menuBackgroundColorTitle}"
+            }
+          ]
+        },
+        {
+          "type": "menuTextEdit",
+          "name": "menutextedit",
+          "props": [
+            {
+              "name": "inactive",
+              "value": "${themePath}/_inc/images/menu-textinput-${menuInputMode}.png"
+            },
+            {
+              "name": "active",
+              "value": "${themePath}/_inc/images/menu-textinput-active-${menuInputMode}.png"
+            }
+          ]
+        },
+        {
+          "type": "menuBackground",
+          "name": "menubg",
+          "props": [
+            {
+              "name": "color",
+              "value": "${menuBackgroundColor}"
+            },
+            {
+              "name": "cornerSize",
+              "value": "20 20"
+            }
+          ]
+        },
+        {
+          "type": "menuIcons",
+          "name": "menuicons",
+          "props": [
+            {
+              "name": "iconSystem",
+              "value": "${themePath}/_inc/images/menu/System.png"
+            },
+            {
+              "name": "iconUpdates",
+              "value": "${themePath}/_inc/images/menu/Updates.png"
+            },
+            {
+              "name": "iconControllers",
+              "value": "${themePath}/_inc/images/menu/Controllers.png"
+            },
+            {
+              "name": "iconGames",
+              "value": "${themePath}/_inc/images/menu/Games.png"
+            },
+            {
+              "name": "iconUI",
+              "value": "${themePath}/_inc/images/menu/UI.png"
+            },
+            {
+              "name": "iconSound",
+              "value": "${themePath}/_inc/images/menu/Sound.png"
+            },
+            {
+              "name": "iconNetwork",
+              "value": "${themePath}/_inc/images/menu/Network.png"
+            },
+            {
+              "name": "iconScraper",
+              "value": "${themePath}/_inc/images/menu/Scraper.png"
+            },
+            {
+              "name": "iconAdvanced",
+              "value": "${themePath}/_inc/images/menu/Advanced.png"
+            },
+            {
+              "name": "iconQuit",
+              "value": "${themePath}/_inc/images/menu/Quit.png"
+            },
+            {
+              "name": "iconRetroachievements",
+              "value": "${themePath}/_inc/images/menu/Achievements.png"
+            },
+            {
+              "name": "iconKodi",
+              "value": "${themePath}/_inc/images/menu/Kodi.png"
+            },
+            {
+              "name": "iconRestart",
+              "value": "${themePath}/_inc/images/menu/Restart.png"
+            },
+            {
+              "name": "iconShutdown",
+              "value": "${themePath}/_inc/images/menu/Shutdown.png"
+            },
+            {
+              "name": "iconFastShutdown",
+              "value": "${themePath}/_inc/images/menu/Fastshutdown.png"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "view",
+      "name": "system, basic, detailed, gamecarousel, grid",
+      "elements": [
+        {
+          "type": "helpsystem",
+          "name": "help",
+          "props": [
+            {
+              "name": "alignment",
+              "value": "center"
+            },
+            {
+              "name": "origin",
+              "value": "0.5 0.5"
+            },
+            {
+              "name": "pos",
+              "value": "0.5 ${helpPos}"
+            },
+            {
+              "name": "fontSize",
+              "value": "${helpFontSize}"
+            },
+            {
+              "name": "fontPath",
+              "value": "${fontBold}"
+            },
+            {
+              "name": "textColor",
+              "value": "${helpTextColor}"
+            },
+            {
+              "name": "iconColor",
+              "value": "${helpTextColor}"
+            },
+            {
+              "name": "iconA",
+              "value": "${themePath}/_inc/images/help-button-east.svg"
+            },
+            {
+              "name": "iconB",
+              "value": "${themePath}/_inc/images/help-button-south.svg"
+            },
+            {
+              "name": "iconX",
+              "value": "${themePath}/_inc/images/help-button-north.svg"
+            },
+            {
+              "name": "iconY",
+              "value": "${themePath}/_inc/images/help-button-west.svg"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "name": "background-art",
+          "extra": true,
+          "props": [
+            {
+              "name": "path",
+              "value": "${backgroundArtPath}.webp",
+              "filters": {
+                "ifSubset": "color-scheme:beige|dark|light|neon|pastel|purple|retro"
+              }
+            },
+            {
+              "name": "origin",
+              "value": "0.5 0.5"
+            },
+            {
+              "name": "pos",
+              "value": "0.5 0.5"
+            },
+            {
+              "name": "minSize",
+              "value": "1 1"
+            },
+            {
+              "name": "zIndex",
+              "value": "${zBackgroundArt}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "view",
+      "name": "system",
+      "elements": [
+        {
+          "type": "image",
+          "name": "gamesicon",
+          "extra": true,
+          "props": [
+            {
+              "name": "origin",
+              "value": "1 0.5",
+              "filters": {
+                "ifSubset": "system-view:grid"
+              }
+            },
+            {
+              "name": "origin",
+              "value": "0.5 0.5",
+              "filters": {
+                "ifSubset": "system-view:carousel"
+              }
+            },
+            {
+              "name": "path",
+              "value": "${themePath}/_inc/images/gamescount.svg"
+            },
+            {
+              "name": "color",
+              "value": "${systemInfoColor}"
+            },
+            {
+              "name": "opacity",
+              "value": "${highOpacity}"
+            },
+            {
+              "name": "zIndex",
+              "value": "${zIcons}"
+            },
+            {
+              "name": "visible",
+              "value": "true",
+              "filters": {
+                "ifSubset": "system-view:grid"
+              }
+            },
+            {
+              "name": "visible",
+              "value": "false",
+              "filters": {
+                "ifSubset": "system-view:carousel"
+              }
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "name": "countline",
+          "extra": true,
+          "props": [
+            {
+              "name": "origin",
+              "value": "0.5 0.5"
+            },
+            {
+              "name": "path",
+              "value": "${themePath}/_inc/images/countline.svg"
+            },
+            {
+              "name": "color",
+              "value": "${systemInfoColor}"
+            },
+            {
+              "name": "opacity",
+              "value": "${highOpacity}"
+            },
+            {
+              "name": "zIndex",
+              "value": "${zIcons}"
+            },
+            {
+              "name": "visible",
+              "value": "false",
+              "filters": {
+                "ifSubset": "system-view:grid"
+              }
+            },
+            {
+              "name": "visible",
+              "value": "true",
+              "filters": {
+                "ifSubset": "system-view:carousel"
+              }
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "systemInfo",
+          "props": [
+            {
+              "name": "fontPath",
+              "value": "${fontBold}"
+            },
+            {
+              "name": "zIndex",
+              "value": "${zText}"
+            },
+            {
+              "name": "color",
+              "value": "${systemInfoColor}"
+            },
+            {
+              "name": "lineSpacing",
+              "value": "1"
+            },
+            {
+              "name": "size",
+              "value": "0 ${systemDescriptionFontSize}"
+            },
+            {
+              "name": "fontSize",
+              "value": "${systemDescriptionFontSize}"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "systemInfo",
+          "filters": {
+            "ifSubset": "system-view:grid"
+          },
+          "props": [
+            {
+              "name": "origin",
+              "value": "0 0.5"
+            },
+            {
+              "name": "alignment",
+              "value": "left"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "systemInfo",
+          "filters": {
+            "ifSubset": "system-view:carousel"
+          },
+          "props": [
+            {
+              "name": "origin",
+              "value": "0.5 0.5"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "systemInfoGrid",
+          "extra": true,
+          "props": [
+            {
+              "name": "text",
+              "value": "{system:total}"
+            },
+            {
+              "name": "fontPath",
+              "value": "${fontBold}"
+            },
+            {
+              "name": "origin",
+              "value": "0 0.5"
+            },
+            {
+              "name": "zIndex",
+              "value": "${zText}"
+            },
+            {
+              "name": "color",
+              "value": "${systemInfoColor}"
+            },
+            {
+              "name": "alignment",
+              "value": "left"
+            },
+            {
+              "name": "lineSpacing",
+              "value": "1"
+            },
+            {
+              "name": "size",
+              "value": "0 ${systemDescriptionFontSize}"
+            },
+            {
+              "name": "fontSize",
+              "value": "${systemDescriptionFontSize}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "view",
+      "name": "basic, detailed, gamecarousel, grid",
+      "elements": [
+        {
+          "type": "image",
+          "name": "logo",
+          "props": [
+            {
+              "name": "origin",
+              "value": "0.5 0.5"
+            },
+            {
+              "name": "linearSmooth",
+              "value": "true"
+            },
+            {
+              "name": "path",
+              "value": "${themePath}/_inc/systems/logos/${system.theme}.svg"
+            },
+            {
+              "name": "zIndex",
+              "value": "${zUI}"
+            },
+            {
+              "name": "color",
+              "value": "${systemInfoColor}"
+            },
+            {
+              "name": "visible",
+              "value": "true"
+            },
+            {
+              "name": "opacity",
+              "value": "${mediumOpacity}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "view",
+      "name": "detailed, gamecarousel, grid",
+      "elements": [
+        {
+          "type": "image",
+          "name": "playtime-logo",
+          "extra": true,
+          "props": [
+            {
+              "name": "origin",
+              "value": "0.5 0.5"
+            },
+            {
+              "name": "linearSmooth",
+              "value": "true"
+            },
+            {
+              "name": "path",
+              "value": "${themePath}/_inc/images/playtime-icon.svg"
+            },
+            {
+              "name": "zIndex",
+              "value": "${zUI}"
+            },
+            {
+              "name": "color",
+              "value": "${gameMetadataColor}"
+            },
+            {
+              "name": "opacity",
+              "value": "${lowOpacity}"
+            },
+            {
+              "name": "visible",
+              "value": "false",
+              "filters": {
+                "ifSubset": "metadata-option:rating"
+              }
+            },
+            {
+              "name": "visible",
+              "value": "true",
+              "filters": {
+                "ifSubset": "metadata-option:playtime"
+              }
+            }
+          ]
+        },
+        {
+          "type": "video",
+          "name": "md_video",
+          "props": [
+            {
+              "name": "origin",
+              "value": "0.5 0.5"
+            },
+            {
+              "name": "delay",
+              "value": "1.4"
+            },
+            {
+              "name": "roundCorners",
+              "value": "0.005"
+            },
+            {
+              "name": "showSnapshotNoVideo",
+              "value": "true"
+            },
+            {
+              "name": "showSnapshotDelay",
+              "value": "true"
+            },
+            {
+              "name": "zIndex",
+              "value": "${zVideo}"
+            }
+          ]
+        },
+        {
+          "type": "datetime",
+          "name": "md_releasedate,md_lastplayed",
+          "props": [
+            {
+              "name": "origin",
+              "value": "0 0.5"
+            },
+            {
+              "name": "fontPath",
+              "value": "${fontRegular}"
+            },
+            {
+              "name": "color",
+              "value": "${gameMetadataColor}"
+            },
+            {
+              "name": "lineSpacing",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "md_name,md_players,md_genre,md_developer,md_publisher,md_playcount,md_gametime_custom",
+          "props": [
+            {
+              "name": "origin",
+              "value": "0 0.5"
+            },
+            {
+              "name": "fontPath",
+              "value": "${fontRegular}"
+            },
+            {
+              "name": "color",
+              "value": "${gameMetadataColor}"
+            },
+            {
+              "name": "lineSpacing",
+              "value": "1"
+            },
+            {
+              "name": "value",
+              "value": "Unknown"
+            }
+          ]
+        },
+        {
+          "type": "datetime",
+          "name": "md_releasedate",
+          "props": [
+            {
+              "name": "value",
+              "value": "Unknown"
+            },
+            {
+              "name": "format",
+              "value": "%Y"
+            }
+          ]
+        },
+        {
+          "type": "datetime",
+          "name": "md_lastplayed",
+          "props": [
+            {
+              "name": "value",
+              "value": "Unknown"
+            }
+          ]
+        },
+        {
+          "type": "rating",
+          "name": "md_rating",
+          "props": [
+            {
+              "name": "origin",
+              "value": "0.5 0.5"
+            },
+            {
+              "name": "filledPath",
+              "value": "${themePath}/_inc/images/icon-star-filled.svg"
+            },
+            {
+              "name": "unfilledPath",
+              "value": "${themePath}/_inc/images/icon-star-unfilled.svg"
+            },
+            {
+              "name": "color",
+              "value": "${gameMetadataColor}"
+            },
+            {
+              "name": "zIndex",
+              "value": "${zMetadata}"
+            },
+            {
+              "name": "visible",
+              "value": "true",
+              "filters": {
+                "ifSubset": "metadata-option:rating"
+              }
+            },
+            {
+              "name": "visible",
+              "value": "false",
+              "filters": {
+                "ifSubset": "metadata-option:playtime"
+              }
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "md_gametime_custom",
+          "extra": true,
+          "props": [
+            {
+              "name": "visible",
+              "value": "false",
+              "filters": {
+                "ifSubset": "metadata-option:rating"
+              }
+            },
+            {
+              "name": "visible",
+              "value": "true",
+              "filters": {
+                "ifSubset": "metadata-option:playtime"
+              }
+            },
+            {
+              "name": "text",
+              "value": "{game:gametime} > 0 ? formatseconds({game:gametime}) : \"Never\""
+            },
+            {
+              "name": "color",
+              "value": "${gameMetadataColor}"
+            },
+            {
+              "name": "autoScroll",
+              "value": "horizontal"
+            },
+            {
+              "name": "autoScrollSpeed",
+              "value": "50"
+            },
+            {
+              "name": "autoScrollDelay",
+              "value": "500000"
+            },
+            {
+              "name": "zIndex",
+              "value": "${zMetadata}"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "md_genre",
+          "props": [
+            {
+              "name": "forceUppercase",
+              "value": "false"
+            },
+            {
+              "name": "autoScroll",
+              "value": "horizontal"
+            },
+            {
+              "name": "autoScrollSpeed",
+              "value": "50"
+            },
+            {
+              "name": "autoScrollDelay",
+              "value": "5000"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "md_name",
+          "props": [
+            {
+              "name": "autoScroll",
+              "value": "horizontal"
+            },
+            {
+              "name": "autoScrollSpeed",
+              "value": "50"
+            },
+            {
+              "name": "autoScrollDelay",
+              "value": "5000"
+            },
+            {
+              "name": "alignment",
+              "value": "left"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "md_description",
+          "props": [
+            {
+              "name": "origin",
+              "value": "0.5 0"
+            },
+            {
+              "name": "fontPath",
+              "value": "${fontRegular}"
+            },
+            {
+              "name": "autoScroll",
+              "value": "vertical"
+            },
+            {
+              "name": "autoScrollSpeed",
+              "value": "50"
+            },
+            {
+              "name": "autoScrollDelay",
+              "value": "5000"
+            },
+            {
+              "name": "color",
+              "value": "${gameMetadataColor}"
+            },
+            {
+              "name": "zIndex",
+              "value": "${zMetadata}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "view",
+      "name": "grid",
+      "elements": [
+        {
+          "type": "video",
+          "name": "md_video",
+          "props": [
+            {
+              "name": "visible",
+              "value": "false"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "name": "md_marquee",
+          "props": [
+            {
+              "name": "visible",
+              "value": "false"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "view",
+      "name": "detailed, gamecarousel, grid",
+      "filters": {
+        "ifSubset": "font-size:small,metadata:on"
+      },
+      "elements": [
+        {
+          "type": "image",
+          "name": "game-metadata-background-shadow-extended",
+          "extra": true,
+          "props": [
+            {
+              "name": "origin",
+              "value": "0.5 0.5"
+            },
+            {
+              "name": "zIndex",
+              "value": "${zUI}"
+            },
+            {
+              "name": "linearSmooth",
+              "value": "true"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "name": "game-metadata-background-image-extended",
+          "extra": true,
+          "props": [
+            {
+              "name": "origin",
+              "value": "0.5 0.5"
+            },
+            {
+              "name": "zIndex",
+              "value": "${zMetadata}"
+            },
+            {
+              "name": "linearSmooth",
+              "value": "true"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "view",
+      "name": "detailed, gamecarousel, grid",
+      "filters": {
+        "ifSubset": "font-size:medium|large,metadata:on"
+      },
+      "elements": [
+        {
+          "type": "image",
+          "name": "game-metadata-background-shadow-base",
+          "extra": true,
+          "props": [
+            {
+              "name": "origin",
+              "value": "0.5 0.5"
+            },
+            {
+              "name": "zIndex",
+              "value": "${zUI}"
+            },
+            {
+              "name": "linearSmooth",
+              "value": "true"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "name": "game-metadata-background-image-base",
+          "extra": true,
+          "props": [
+            {
+              "name": "origin",
+              "value": "0.5 0.5"
+            },
+            {
+              "name": "zIndex",
+              "value": "${zUI}"
+            },
+            {
+              "name": "linearSmooth",
+              "value": "true"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "view",
+      "name": "detailed, gamecarousel, grid",
+      "filters": {
+        "ifSubset": "font-size:medium|large,metadata:on"
+      },
+      "elements": [
+        {
+          "type": "text",
+          "name": "md_players",
+          "props": [
+            {
+              "name": "visible",
+              "value": "false"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "md_developer",
+          "props": [
+            {
+              "name": "visible",
+              "value": "false"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "md_publisher",
+          "extra": true,
+          "props": [
+            {
+              "name": "visible",
+              "value": "false"
+            }
+          ]
+        },
+        {
+          "type": "datetime",
+          "name": "md_lastplayed",
+          "props": [
+            {
+              "name": "visible",
+              "value": "false"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "md_playcount",
+          "extra": true,
+          "props": [
+            {
+              "name": "visible",
+              "value": "false"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "include",
+      "path": "${themePath}/_inc/view/grid.json",
+      "name": "grid"
+    },
+    {
+      "type": "view",
+      "name": "detailed, gamecarousel, grid, grid-detailed",
+      "filters": {
+        "ifSubset": "metadata:off"
+      },
+      "elements": [
+        {
+          "type": "image",
+          "name": "game-metadata-background-shadow-base",
+          "extra": true,
+          "props": [
+            {
+              "name": "visible",
+              "value": "false"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "name": "game-metadata-background-image-base",
+          "extra": true,
+          "props": [
+            {
+              "name": "visible",
+              "value": "false"
+            }
+          ]
+        },
+        {
+          "type": "datetime",
+          "name": "md_releasedate,md_lastplayed",
+          "props": [
+            {
+              "name": "visible",
+              "value": "false"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "md_name,md_players,md_genre,md_developer,md_publisher,md_playcount,md_gametime_custom",
+          "props": [
+            {
+              "name": "visible",
+              "value": "false"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "md_description",
+          "props": [
+            {
+              "name": "visible",
+              "value": "false"
+            }
+          ]
+        },
+        {
+          "type": "rating",
+          "name": "md_rating",
+          "props": [
+            {
+              "name": "visible",
+              "value": "false"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "name": "playtime-logo",
+          "props": [
+            {
+              "name": "visible",
+              "value": "false"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "view",
+      "name": "gamecarousel",
+      "elements": [
+        {
+          "type": "gamecarousel",
+          "name": "gamecarousel",
+          "props": [
+            {
+              "name": "zIndex",
+              "value": "${zUI}"
+            },
+            {
+              "name": "type",
+              "value": "vertical_wheel"
+            },
+            {
+              "name": "size",
+              "value": "1 1"
+            },
+            {
+              "name": "logoRotation",
+              "value": "-7"
+            },
+            {
+              "name": "logoRotationOrigin",
+              "value": "5 0.5"
+            },
+            {
+              "name": "logoAlignment",
+              "value": "center"
+            },
+            {
+              "name": "imageSource",
+              "value": "marquee"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "subset",
+      "name": "autogriddetailedsize",
+      "displayName": "Automatic Grid-Detailed Size",
+      "appliesTo": "grid-detailed",
+      "nodes": [
+        {
+          "type": "include",
+          "name": "automatic",
+          "displayName": "Automatic"
+        },
+        {
+          "type": "include",
+          "name": "large",
+          "displayName": "2 Columns"
+        },
+        {
+          "type": "include",
+          "name": "medium",
+          "displayName": "3 Columns"
+        },
+        {
+          "type": "include",
+          "name": "small",
+          "displayName": "4 Columns"
+        }
+      ]
+    },
+    {
+      "type": "include",
+      "path": "${themePath}/_inc/view/aspect-ratio-16-9.json",
+      "filters": {
+        "ifSubset": "aspect-ratio:16-9|16-9-auto"
+      }
+    },
+    {
+      "type": "include",
+      "path": "${themePath}/_inc/view/aspect-ratio-16-10.json",
+      "filters": {
+        "ifSubset": "aspect-ratio:16-10|16-10-auto"
+      }
+    },
+    {
+      "type": "include",
+      "path": "${themePath}/_inc/view/aspect-ratio-4-3.json",
+      "filters": {
+        "ifSubset": "aspect-ratio:4-3|4-3-auto"
+      }
+    },
+    {
+      "type": "include",
+      "path": "${themePath}/_inc/view/aspect-ratio-1-1.json",
+      "filters": {
+        "ifSubset": "aspect-ratio:1-1|1-1-auto"
+      }
+    }
+  ]
+}

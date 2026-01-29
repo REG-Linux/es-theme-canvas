@@ -1,0 +1,21 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "fontRegular",
+      "value": "${themePath}/_inc/fonts/Inter-Regular.otf"
+    },
+    {
+      "key": "fontBold",
+      "value": "${themePath}/_inc/fonts/Inter-Bold.otf"
+    },
+    {
+      "key": "fontLogo",
+      "value": "${themePath}/_inc/fonts/Inter-Bold.otf"
+    },
+    {
+      "key": "spacerImage",
+      "value": "${themePath}/_inc/images/space.png"
+    }
+  ]
+}

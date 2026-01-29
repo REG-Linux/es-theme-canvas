@@ -1,0 +1,61 @@
+{
+  "formatVersion": 7.0,
+  "variables": [
+    {
+      "key": "zBackground",
+      "value": "0"
+    },
+    {
+      "key": "zBackgroundArt",
+      "value": "1"
+    },
+    {
+      "key": "zUI",
+      "value": "2"
+    },
+    {
+      "key": "zMetadata",
+      "value": "3"
+    },
+    {
+      "key": "zText",
+      "value": "4"
+    },
+    {
+      "key": "zIcons",
+      "value": "5"
+    },
+    {
+      "key": "zOverlay",
+      "value": "6"
+    },
+    {
+      "key": "zVideo",
+      "value": "7"
+    },
+    {
+      "key": "zSelector",
+      "value": "8"
+    },
+    {
+      "key": "zHelp",
+      "value": "9"
+    },
+    {
+      "key": "zTop",
+      "value": "10"
+    },
+    {
+      "key": "lowOpacity",
+      "value": "0.6"
+    },
+    {
+      "key": "mediumOpacity",
+      "value": "0.8"
+    },
+    {
+      "key": "highOpacity",
+      "value": "1.0"
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "formatVersion": 7.0,
+  "nodes": [
+    {
+      "type": "include",
+      "path": "${themePath}/_inc/colors.json"
+    },
+    {
+      "type": "view",
+      "name": "splash",
+      "elements": [
+        {
+          "type": "image",
+          "name": "background",
+          "props": [
+            {
+              "name": "origin",
+              "value": "0.5 0.5"
+            },
+            {
+              "name": "pos",
+              "value": "0.5 0.5"
+            },
+            {
+              "name": "minSize",
+              "value": "1 1"
+            },
+            {
+              "name": "zIndex",
+              "value": "0"
+            },
+            {
+              "name": "path",
+              "value": "${backgroundArtPath}.webp"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "name": "logo",
+          "extra": true,
+          "props": [
+            {
+              "name": "path",
+              "value": "${themePath}/_inc/images/logo/logo.webp"
+            },
+            {
+              "name": "pos",
+              "value": "0.5 0.4"
+            },
+            {
+              "name": "origin",
+              "value": "0.5 0.5"
+            },
+            {
+              "name": "maxSize",
+              "value": "0.4 0.4"
+            },
+            {
+              "name": "zIndex",
+              "value": "10"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "name": "progressbar",
+          "props": [
+            {
+              "name": "pos",
+              "value": "0.5 0.6"
+            },
+            {
+              "name": "origin",
+              "value": "0.5 0.5"
+            },
+            {
+              "name": "color",
+              "value": "${systemProgressbarSelectorColor}"
+            },
+            {
+              "name": "zIndex",
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "name": "progressbar:active",
+          "props": [
+            {
+              "name": "color",
+              "value": "${gamelistSelectorColor}"
+            },
+            {
+              "name": "colorEnd",
+              "value": "${gamelistSelectorColor}"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "label",
+          "props": [
+            {
+              "name": "pos",
+              "value": "0.5 0.7"
+            },
+            {
+              "name": "origin",
+              "value": "0.5 0.5"
+            },
+            {
+              "name": "alignment",
+              "value": "center"
+            },
+            {
+              "name": "fontPath",
+              "value": "${themePath}/_inc/fonts/Inter-Bold.otf"
+            },
+            {
+              "name": "fontSize",
+              "value": "0.04"
+            },
+            {
+              "name": "color",
+              "value": "${gamelistLogoColor}"
+            },
+            {
+              "name": "forceUppercase",
+              "value": "true"
+            },
+            {
+              "name": "zIndex",
+              "value": "4"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
