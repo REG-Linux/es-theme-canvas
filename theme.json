@@ -825,7 +825,7 @@
             },
             {
               "name": "zIndex",
-              "value": "${zUI}"
+              "value": "${zMetadata}"
             },
             {
               "name": "linearSmooth",

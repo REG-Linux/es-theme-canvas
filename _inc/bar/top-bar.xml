@@ -43,8 +43,8 @@
       <imagePath>${themePath}/_inc/images/gamepad.svg</imagePath>
       <gunPath>${themePath}/_inc/images/gun.svg</gunPath>
       <wheelPath>${themePath}/_inc/images/wheel.svg</wheelPath>
-      <activityColor>#A0A0FFC0</activityColor>
-      <hotkeyColor>#FFA0A0C0</hotkeyColor>
+      <activityColor>A0A0FFC0</activityColor>
+      <hotkeyColor>FFA0A0C0</hotkeyColor>
     </controllerActivity>
 
     <batteryIndicator name="batteryIndicator">

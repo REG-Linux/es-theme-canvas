@@ -86,7 +86,7 @@
       }
     },
     {
-      "key": "BackdropColor",
+      "key": "backdropColor",
       "value": "000000",
       "filters": {
         "ifSubset": "color-scheme:dark"
