@@ -1,6 +1,6 @@
 {
   "defaultTransition": "instant",
-  "formatVersion": 7.0,
+  "formatVersion": 7,
   "nodes": [
     {
       "type": "include",

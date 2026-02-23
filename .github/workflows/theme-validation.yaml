@@ -575,7 +575,7 @@ jobs:
   deploy-release:
     runs-on: ubuntu-latest
     needs: [package-release]
-    if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags/')
+    if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags/') && needs.package-release.result == 'success'
 
     permissions:
       contents: write
@@ -587,12 +587,26 @@ jobs:
           fetch-depth: 0
 
       - name: Download packages
+        id: download
         uses: actions/download-artifact@v4
         with:
           name: release-packages
           path: packages/
+        continue-on-error: true
+
+      - name: Check if packages exist
+        id: check-packages
+        run: |
+          if [ -d "packages" ] && [ "$(ls -A packages 2>/dev/null)" ]; then
+            echo "packages_exist=true" >> $GITHUB_OUTPUT
+            echo "✅ Packages found"
+          else
+            echo "packages_exist=false" >> $GITHUB_OUTPUT
+            echo "⚠️ No packages found - artifact may have expired or upload failed"
+          fi
 
       - name: Generate release notes
+        if: steps.check-packages.outputs.packages_exist == 'true'
         run: |
           VERSION=${GITHUB_REF#refs/tags/}
 
@@ -616,6 +630,7 @@ jobs:
           EOF
 
       - name: Create GitHub Release
+        if: steps.check-packages.outputs.packages_exist == 'true'
         uses: softprops/action-gh-release@v2
         with:
           files: packages/*
@@ -625,10 +640,22 @@ jobs:
           draft: false
           prerelease: ${{ contains(github.ref_name, 'beta') || contains(github.ref_name, 'alpha') || contains(github.ref_name, 'rc') }}
 
+      - name: Warning if packages missing
+        if: steps.check-packages.outputs.packages_exist == 'false'
+        run: |
+          echo "⚠️ Release not created - packages artifact not found"
+          echo "This may be due to:"
+          echo "  - Artifact expiration (default: 90 days)"
+          echo "  - Upload failure in package-release job"
+          echo "  - Workflow cancellation"
+          echo ""
+          echo "Please re-run the workflow or check the package-release job logs"
+          exit 1
+
   cleanup:
     runs-on: ubuntu-latest
     needs: [deploy-release]
-    if: always() && github.event_name == 'push' && startsWith(github.ref, 'refs/tags/')
+    if: always() && github.event_name == 'push' && startsWith(github.ref, 'refs/tags/') && (needs.deploy-release.result == 'success' || needs.deploy-release.result == 'failure')
 
     steps:
       - name: Clean up artifacts

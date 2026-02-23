@@ -27,9 +27,13 @@ def load_schema(schema_path):
 
     elements = {}
     for element in data.get("elements", []):
-        elements[element["name"]] = {prop["name"] for prop in element.get("properties", [])}
+        elements[element["name"]] = {
+            prop["name"] for prop in element.get("properties", [])
+        }
 
-    aliases = {alias["alias"]: alias["target"] for alias in data.get("element_aliases", [])}
+    aliases = {
+        alias["alias"]: alias["target"] for alias in data.get("element_aliases", [])
+    }
     base_classes = {item["type"]: item["base"] for item in data.get("base_classes", [])}
 
     return {"elements": elements, "aliases": aliases, "base_classes": base_classes}
@@ -165,7 +169,12 @@ def convert_element(node, schema):
             prop_name = "animateSelection"
 
         known_element = is_element_tag(child.tag, schema)
-        if not has_children and (prop_name in property_set or is_shader or node.tag == "menuIcons" or not known_element):
+        if not has_children and (
+            prop_name in property_set
+            or is_shader
+            or node.tag == "menuIcons"
+            or not known_element
+        ):
             value = (child.text or "").strip()
             entry = {"name": prop_name, "value": value}
             if child_filters:
@@ -194,6 +203,12 @@ def convert_include(node, rewrite):
 
     for key in ("subset", "name", "displayName", "subSetDisplayName", "appliesTo"):
         if key in node.attrib:
+            # appliesTo is only valid in subsets, not in direct includes
+            if key == "appliesTo":
+                print(
+                    f"Warning: 'appliesTo' in include may not be valid outside a subset context",
+                    file=sys.stderr,
+                )
             obj[key] = node.attrib[key]
 
     filters = extract_filters(node.attrib)
@@ -321,7 +336,12 @@ def convert_theme(xml_path, schema, rewrite):
     for child in root:
         if child.tag == "formatVersion":
             try:
-                format_version = float((child.text or "").strip())
+                version_str = (child.text or "").strip()
+                # Keep as int if no decimal point, otherwise float
+                if "." in version_str:
+                    format_version = float(version_str)
+                else:
+                    format_version = int(version_str)
             except ValueError:
                 format_version = None
             continue
@@ -368,11 +388,19 @@ def collect_xml_files(target):
 def main():
     parser = argparse.ArgumentParser(description="Convert ES theme XML to JSON.")
     parser.add_argument("input", help="Theme XML file or directory.")
-    parser.add_argument("--output", help="Output file path (only for single input file).")
-    parser.add_argument("--schema", default=os.path.join("resources", "theme_schema.json"),
-                        help="Path to theme_schema.json.")
-    parser.add_argument("--no-rewrite-includes", action="store_true",
-                        help="Do not rewrite .xml include paths to .json.")
+    parser.add_argument(
+        "--output", help="Output file path (only for single input file)."
+    )
+    parser.add_argument(
+        "--schema",
+        default=os.path.join("resources", "theme_schema.json"),
+        help="Path to theme_schema.json.",
+    )
+    parser.add_argument(
+        "--no-rewrite-includes",
+        action="store_true",
+        help="Do not rewrite .xml include paths to .json.",
+    )
     args = parser.parse_args()
 
     schema = load_schema(args.schema)
@@ -385,7 +413,9 @@ def main():
         output_paths = []
         for xml_path in xml_files:
             if os.path.basename(xml_path).lower() == "theme.xml":
-                output_paths.append(os.path.join(os.path.dirname(xml_path), "theme.json"))
+                output_paths.append(
+                    os.path.join(os.path.dirname(xml_path), "theme.json")
+                )
             else:
                 base, _ = os.path.splitext(xml_path)
                 output_paths.append(base + ".json")
@@ -396,6 +426,12 @@ def main():
             theme = convert_theme(xml_path, schema, rewrite_includes)
         except ET.ParseError as exc:
             print(f"Skipping {xml_path}: XML parse error {exc}", file=sys.stderr)
+            continue
+        except Exception as exc:
+            print(
+                f"Skipping {xml_path}: Unexpected error {type(exc).__name__}: {exc}",
+                file=sys.stderr,
+            )
             continue
 
         if theme is None:
