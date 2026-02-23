@@ -9,6 +9,13 @@
       }
     },
     {
+      "key": "helpIconColor",
+      "value": "dddddd",
+      "filters": {
+        "ifSubset": "color-scheme:dark"
+      }
+    },
+    {
       "key": "systemInfoColor",
       "value": "eeeeee",
       "filters": {
@@ -79,7 +86,7 @@
       }
     },
     {
-      "key": "BackdropColor",
+      "key": "backdropColor",
       "value": "000000",
       "filters": {
         "ifSubset": "color-scheme:dark"
@@ -129,6 +136,13 @@
     },
     {
       "key": "helpTextColor",
+      "value": "333333",
+      "filters": {
+        "ifSubset": "color-scheme:light"
+      }
+    },
+    {
+      "key": "helpIconColor",
       "value": "333333",
       "filters": {
         "ifSubset": "color-scheme:light"
@@ -261,6 +275,13 @@
       }
     },
     {
+      "key": "helpIconColor",
+      "value": "FFFFFF",
+      "filters": {
+        "ifSubset": "color-scheme:neon"
+      }
+    },
+    {
       "key": "systemInfoColor",
       "value": "FFFFFF",
       "filters": {
@@ -381,6 +402,13 @@
     },
     {
       "key": "helpTextColor",
+      "value": "555555",
+      "filters": {
+        "ifSubset": "color-scheme:pastel"
+      }
+    },
+    {
+      "key": "helpIconColor",
       "value": "555555",
       "filters": {
         "ifSubset": "color-scheme:pastel"
@@ -513,6 +541,13 @@
       }
     },
     {
+      "key": "helpIconColor",
+      "value": "2a2929",
+      "filters": {
+        "ifSubset": "color-scheme:purple"
+      }
+    },
+    {
       "key": "systemInfoColor",
       "value": "2a2929",
       "filters": {
@@ -639,6 +674,13 @@
       }
     },
     {
+      "key": "helpIconColor",
+      "value": "494846",
+      "filters": {
+        "ifSubset": "color-scheme:beige"
+      }
+    },
+    {
       "key": "systemInfoColor",
       "value": "494846",
       "filters": {
@@ -759,6 +801,13 @@
     },
     {
       "key": "helpTextColor",
+      "value": "ffffff",
+      "filters": {
+        "ifSubset": "color-scheme:retro"
+      }
+    },
+    {
+      "key": "helpIconColor",
       "value": "ffffff",
       "filters": {
         "ifSubset": "color-scheme:retro"

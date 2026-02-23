@@ -25,6 +25,911 @@
               "value": "0.985"
             }
           ]
+        },
+        {
+          "type": "imagegrid",
+          "name": "imagegrid",
+          "props": [
+            {
+              "name": "zIndex",
+              "value": "${zUI}"
+            },
+            {
+              "name": "pos",
+              "value": "0.008 0.08"
+            },
+            {
+              "name": "size",
+              "value": "0.975 0.9"
+            },
+            {
+              "name": "autoLayout",
+              "value": "3 2",
+              "filters": {
+                "ifSubset": "sysgridsize:automatic"
+              }
+            },
+            {
+              "name": "autoLayout",
+              "value": "4 2",
+              "filters": {
+                "ifSubset": "sysgridsize:automatic,aspect-ratio:16-9|16-9-auto|16-10|16-10-auto"
+              }
+            },
+            {
+              "name": "autoLayout",
+              "value": "3 3",
+              "filters": {
+                "ifSubset": "sysgridsize:automatic,aspect-ratio:1-1|1-1-auto"
+              }
+            },
+            {
+              "name": "autoLayout",
+              "value": "3 1",
+              "filters": {
+                "ifSubset": "sysgridsize:3x1"
+              }
+            },
+            {
+              "name": "autoLayout",
+              "value": "3 2",
+              "filters": {
+                "ifSubset": "sysgridsize:3x2"
+              }
+            },
+            {
+              "name": "autoLayout",
+              "value": "3 3",
+              "filters": {
+                "ifSubset": "sysgridsize:3x3"
+              }
+            },
+            {
+              "name": "autoLayout",
+              "value": "4 2",
+              "filters": {
+                "ifSubset": "sysgridsize:4x2"
+              }
+            },
+            {
+              "name": "autoLayout",
+              "value": "4 3",
+              "filters": {
+                "ifSubset": "sysgridsize:4x3"
+              }
+            },
+            {
+              "name": "autoLayout",
+              "value": "4 4",
+              "filters": {
+                "ifSubset": "sysgridsize:4x4"
+              }
+            },
+            {
+              "name": "autoLayout",
+              "value": "5 4",
+              "filters": {
+                "ifSubset": "sysgridsize:5x4"
+              }
+            },
+            {
+              "name": "cellProportion",
+              "value": "1"
+            },
+            {
+              "name": "margin",
+              "value": "0"
+            },
+            {
+              "name": "padding",
+              "value": "0 0 0 0"
+            },
+            {
+              "name": "scrollbarColor",
+              "value": "96969620"
+            },
+            {
+              "name": "scrollbarCorner",
+              "value": "0.49"
+            },
+            {
+              "name": "scrollbarSize",
+              "value": "0.005"
+            },
+            {
+              "name": "scrollbarAlignment",
+              "value": "right"
+            }
+          ],
+          "children": [
+            {
+              "type": "itemTemplate",
+              "children": [
+                {
+                  "type": "container",
+                  "props": [
+                    {
+                      "name": "scale",
+                      "value": "1"
+                    }
+                  ],
+                  "children": [
+                    {
+                      "type": "storyboard",
+                      "event": "activate",
+                      "animations": [
+                        {
+                          "property": "scale",
+                          "to": "1.05",
+                          "duration": "150",
+                          "mode": "easeOut"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "storyboard",
+                      "event": "deactivate",
+                      "animations": [
+                        {
+                          "property": "scale",
+                          "to": true,
+                          "duration": "250",
+                          "mode": "easeOut"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "image",
+                      "name": "selector",
+                      "extra": true,
+                      "props": [
+                        {
+                          "name": "path",
+                          "value": "${themePath}/_inc/images/4-5.webp"
+                        },
+                        {
+                          "name": "pos",
+                          "value": "0.5 0.5"
+                        },
+                        {
+                          "name": "origin",
+                          "value": "0.5"
+                        },
+                        {
+                          "name": "maxSize",
+                          "value": ".92 0.98"
+                        },
+                        {
+                          "name": "linearSmooth",
+                          "value": "true"
+                        },
+                        {
+                          "name": "zIndex",
+                          "value": "${zSelector}"
+                        }
+                      ],
+                      "children": [
+                        {
+                          "type": "storyboard",
+                          "event": "activate",
+                          "repeat": "forever",
+                          "animations": [
+                            {
+                              "property": "path",
+                              "to": "${themePath}/_inc/images/4-5.webp"
+                            },
+                            {
+                              "property": "color",
+                              "from": "${systemCarouselSelectorColor}00",
+                              "to": "${systemCarouselSelectorColor}",
+                              "duration": "1000",
+                              "mode": "easeOut"
+                            },
+                            {
+                              "property": "color",
+                              "from": "${systemCarouselSelectorColor}",
+                              "to": "${systemCarouselSelectorColor}00",
+                              "begin": "1500",
+                              "duration": "1000",
+                              "mode": "easeOut"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "storyboard",
+                          "event": "deactivate",
+                          "animations": [
+                            {
+                              "property": "path",
+                              "to": "${themePath}/_inc/images/4-5.webp"
+                            },
+                            {
+                              "property": "color",
+                              "to": "00000000"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "image",
+                      "name": "backdrop",
+                      "extra": true,
+                      "props": [
+                        {
+                          "name": "path",
+                          "value": "${themePath}/_inc/images/icon.webp"
+                        },
+                        {
+                          "name": "pos",
+                          "value": "0.5 0.5"
+                        },
+                        {
+                          "name": "origin",
+                          "value": "0.5"
+                        },
+                        {
+                          "name": "maxSize",
+                          "value": "0.845 0.895"
+                        },
+                        {
+                          "name": "roundCorners",
+                          "value": "${CornersSmall}"
+                        },
+                        {
+                          "name": "opacity",
+                          "value": "${lowOpacity}"
+                        },
+                        {
+                          "name": "color",
+                          "value": "${BackdropColor}"
+                        },
+                        {
+                          "name": "zIndex",
+                          "value": "${zUI}"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "image",
+                      "name": "shade",
+                      "extra": true,
+                      "props": [
+                        {
+                          "name": "path",
+                          "value": "${themePath}/_inc/images/4-5-bg.webp"
+                        },
+                        {
+                          "name": "pos",
+                          "value": "0.5 0.5"
+                        },
+                        {
+                          "name": "origin",
+                          "value": "0.5"
+                        },
+                        {
+                          "name": "maxSize",
+                          "value": "0.95 0.98"
+                        },
+                        {
+                          "name": "roundCorners",
+                          "value": "${CornersSmall}"
+                        },
+                        {
+                          "name": "opacity",
+                          "value": "${lowOpacity}"
+                        },
+                        {
+                          "name": "zIndex",
+                          "value": "${zBackgroundArt}"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "image",
+                      "name": "systemBack",
+                      "extra": true,
+                      "props": [
+                        {
+                          "name": "path",
+                          "value": "firstfile(\"${themePath}/_inc/systems/carousel-icons-icons/${system:theme}.webp\", \"${themePath}/_inc/systems/carousel-icons-icons/_default.webp\")",
+                          "filters": {
+                            "ifSubset": "icon-scheme:icon"
+                          }
+                        },
+                        {
+                          "name": "path",
+                          "value": "firstfile(\"${themePath}/_inc/systems/carousel-icons-art/${system:theme}.webp\", \"${themePath}/_inc/systems/carousel-icons-art/_default.webp\")",
+                          "filters": {
+                            "ifSubset": "icon-scheme:art"
+                          }
+                        },
+                        {
+                          "name": "pos",
+                          "value": "0.5 0.45"
+                        },
+                        {
+                          "name": "origin",
+                          "value": "0.5"
+                        },
+                        {
+                          "name": "maxSize",
+                          "value": "0.8 0.9"
+                        },
+                        {
+                          "name": "scale",
+                          "value": "1"
+                        },
+                        {
+                          "name": "opacity",
+                          "value": "${mediumOpacity}"
+                        },
+                        {
+                          "name": "linearSmooth",
+                          "value": "true"
+                        },
+                        {
+                          "name": "zIndex",
+                          "value": "${zBackgroundArt}"
+                        }
+                      ],
+                      "children": [
+                        {
+                          "type": "storyboard",
+                          "event": "activate",
+                          "animations": [
+                            {
+                              "property": "opacity",
+                              "to": "1.00",
+                              "duration": "250",
+                              "mode": "easeOut"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "storyboard",
+                          "event": "deactivate",
+                          "animations": [
+                            {
+                              "property": "opacity",
+                              "to": ".90",
+                              "duration": "250",
+                              "mode": "easeOut"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "image",
+                      "name": "theLogoImage",
+                      "extra": true,
+                      "props": [
+                        {
+                          "name": "pos",
+                          "value": "0.5 0.65"
+                        },
+                        {
+                          "name": "origin",
+                          "value": "0.5 0"
+                        },
+                        {
+                          "name": "maxSize",
+                          "value": "0.45 0.25"
+                        },
+                        {
+                          "name": "linearSmooth",
+                          "value": "true"
+                        },
+                        {
+                          "name": "path",
+                          "value": "${themePath}/_inc/systems/logos/{system:theme}.svg"
+                        },
+                        {
+                          "name": "zIndex",
+                          "value": "${zIcons}"
+                        },
+                        {
+                          "name": "color",
+                          "value": "${systemInfoColor}"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "container",
+                      "props": [
+                        {
+                          "name": "padding",
+                          "value": "0"
+                        },
+                        {
+                          "name": "opacity",
+                          "value": "${mediumOpacity}"
+                        }
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "name": "fallbackText",
+                          "props": [
+                            {
+                              "name": "alignment",
+                              "value": "center"
+                            },
+                            {
+                              "name": "multiLine",
+                              "value": "true"
+                            },
+                            {
+                              "name": "origin",
+                              "value": "0 0.5"
+                            },
+                            {
+                              "name": "pos",
+                              "value": "0 0.5"
+                            },
+                            {
+                              "name": "size",
+                              "value": "1 1"
+                            },
+                            {
+                              "name": "forceUppercase",
+                              "value": "true"
+                            },
+                            {
+                              "name": "visible",
+                              "value": "!exists(\"${themePath}/_inc/systems/carousel-icons-icons/\" + {system:theme} + \".webp\")"
+                            },
+                            {
+                              "name": "text",
+                              "value": "{system:fullName}"
+                            },
+                            {
+                              "name": "fontSize",
+                              "value": "${systemDescriptionFontSize}"
+                            },
+                            {
+                              "name": "fontPath",
+                              "value": "${fontBold}"
+                            },
+                            {
+                              "name": "color",
+                              "value": "${systemInfoColor}"
+                            },
+                            {
+                              "name": "scale",
+                              "value": "1"
+                            },
+                            {
+                              "name": "zIndex",
+                              "value": "${zText}"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "storyboard",
+                          "event": "activate",
+                          "animations": [
+                            {
+                              "property": "opacity",
+                              "to": true
+                            }
+                          ]
+                        },
+                        {
+                          "type": "storyboard",
+                          "event": "deactivate",
+                          "animations": [
+                            {
+                              "property": "opacity",
+                              "to": "0.9",
+                              "duration": "250",
+                              "mode": "easeOut"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "view",
+      "name": "system",
+      "filters": {
+        "ifSubset": "system-view:carousel"
+      },
+      "elements": [
+        {
+          "type": "carousel",
+          "name": "systemcarousel",
+          "props": [
+            {
+              "name": "type",
+              "value": "horizontal"
+            },
+            {
+              "name": "origin",
+              "value": "0.5 0.5"
+            },
+            {
+              "name": "pos",
+              "value": "0.5 0.48"
+            },
+            {
+              "name": "size",
+              "value": "1 1"
+            },
+            {
+              "name": "logoSize",
+              "value": "${itemsize}"
+            },
+            {
+              "name": "maxLogoCount",
+              "value": "${itemcount}"
+            },
+            {
+              "name": "color",
+              "value": "ffffff00"
+            },
+            {
+              "name": "scaledLogoSpacing",
+              "value": "${logospacing}"
+            },
+            {
+              "name": "minLogoOpacity",
+              "value": "${highOpacity}"
+            },
+            {
+              "name": "logoAlignment",
+              "value": "center"
+            },
+            {
+              "name": "defaultTransition",
+              "value": "instant"
+            },
+            {
+              "name": "linearSmooth",
+              "value": "true"
+            }
+          ],
+          "children": [
+            {
+              "type": "itemTemplate",
+              "children": [
+                {
+                  "type": "storyboard",
+                  "event": "activate",
+                  "animations": [
+                    {
+                      "property": "scale",
+                      "to": "1.05",
+                      "duration": "150",
+                      "mode": "easeOut"
+                    }
+                  ]
+                },
+                {
+                  "type": "storyboard",
+                  "event": "deactivate",
+                  "animations": [
+                    {
+                      "property": "scale",
+                      "to": true,
+                      "duration": "250",
+                      "mode": "easeOut"
+                    }
+                  ]
+                },
+                {
+                  "type": "image",
+                  "name": "backdrop",
+                  "extra": true,
+                  "props": [
+                    {
+                      "name": "path",
+                      "value": "${themePath}/_inc/images/icon.webp"
+                    },
+                    {
+                      "name": "pos",
+                      "value": "0.5 0.5"
+                    },
+                    {
+                      "name": "origin",
+                      "value": "0.5"
+                    },
+                    {
+                      "name": "maxSize",
+                      "value": "0.8 0.9"
+                    },
+                    {
+                      "name": "roundCorners",
+                      "value": "${CornersMedium}",
+                      "filters": {
+                        "ifSubset": "font-size:medium|large"
+                      }
+                    },
+                    {
+                      "name": "roundCorners",
+                      "value": "${CornersSmall}",
+                      "filters": {
+                        "ifSubset": "font-size:small"
+                      }
+                    },
+                    {
+                      "name": "opacity",
+                      "value": "${lowOpacity}"
+                    },
+                    {
+                      "name": "zIndex",
+                      "value": "${zUI}"
+                    },
+                    {
+                      "name": "color",
+                      "value": "${BackdropColor}"
+                    }
+                  ]
+                },
+                {
+                  "type": "image",
+                  "name": "shade",
+                  "extra": true,
+                  "props": [
+                    {
+                      "name": "path",
+                      "value": "${themePath}/_inc/images/4-5-bg.webp"
+                    },
+                    {
+                      "name": "pos",
+                      "value": "0.5 0.5"
+                    },
+                    {
+                      "name": "origin",
+                      "value": "0.5"
+                    },
+                    {
+                      "name": "maxSize",
+                      "value": "0.99 0.998"
+                    },
+                    {
+                      "name": "roundCorners",
+                      "value": "${CornersMedium}",
+                      "filters": {
+                        "ifSubset": "font-size:medium|large"
+                      }
+                    },
+                    {
+                      "name": "roundCorners",
+                      "value": "${CornersSmall}",
+                      "filters": {
+                        "ifSubset": "font-size:small"
+                      }
+                    },
+                    {
+                      "name": "opacity",
+                      "value": "${lowOpacity}"
+                    },
+                    {
+                      "name": "zIndex",
+                      "value": "${zBackgroundArt}"
+                    }
+                  ]
+                },
+                {
+                  "type": "image",
+                  "name": "systemBack",
+                  "extra": true,
+                  "props": [
+                    {
+                      "name": "path",
+                      "value": "${themePath}/_inc/systems/carousel-icons-icons/{system:theme}.webp"
+                    },
+                    {
+                      "name": "pos",
+                      "value": "0.5 0.45"
+                    },
+                    {
+                      "name": "origin",
+                      "value": "0.5"
+                    },
+                    {
+                      "name": "maxSize",
+                      "value": "0.75 0.8"
+                    },
+                    {
+                      "name": "scale",
+                      "value": "1"
+                    },
+                    {
+                      "name": "opacity",
+                      "value": "${mediumOpacity}"
+                    },
+                    {
+                      "name": "linearSmooth",
+                      "value": "true"
+                    },
+                    {
+                      "name": "zIndex",
+                      "value": "${zIcons}"
+                    }
+                  ],
+                  "children": [
+                    {
+                      "type": "storyboard",
+                      "event": "activate",
+                      "animations": [
+                        {
+                          "property": "opacity",
+                          "to": "1.00",
+                          "duration": "250",
+                          "mode": "easeOut"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "storyboard",
+                      "event": "deactivate",
+                      "animations": [
+                        {
+                          "property": "opacity",
+                          "to": ".90",
+                          "duration": "250",
+                          "mode": "easeOut"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "name": "systemyear",
+                  "props": [
+                    {
+                      "name": "alignment",
+                      "value": "center"
+                    },
+                    {
+                      "name": "multiLine",
+                      "value": "true"
+                    },
+                    {
+                      "name": "origin",
+                      "value": "0.5 0"
+                    },
+                    {
+                      "name": "pos",
+                      "value": "0.5 0.75"
+                    },
+                    {
+                      "name": "size",
+                      "value": "0.5 0.2"
+                    },
+                    {
+                      "name": "forceUppercase",
+                      "value": "true"
+                    },
+                    {
+                      "name": "text",
+                      "value": "{system:releaseYear}"
+                    },
+                    {
+                      "name": "fontSize",
+                      "value": "${systemDescriptionFontSize}"
+                    },
+                    {
+                      "name": "fontPath",
+                      "value": "${fontBold}"
+                    },
+                    {
+                      "name": "color",
+                      "value": "${systemInfoColor}"
+                    },
+                    {
+                      "name": "scale",
+                      "value": "1"
+                    },
+                    {
+                      "name": "zIndex",
+                      "value": "${zText}"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "name": "fallbackText",
+                  "props": [
+                    {
+                      "name": "alignment",
+                      "value": "center"
+                    },
+                    {
+                      "name": "multiLine",
+                      "value": "true"
+                    },
+                    {
+                      "name": "origin",
+                      "value": "0 0.5"
+                    },
+                    {
+                      "name": "pos",
+                      "value": "0 1"
+                    },
+                    {
+                      "name": "size",
+                      "value": "1 1"
+                    },
+                    {
+                      "name": "forceUppercase",
+                      "value": "true"
+                    },
+                    {
+                      "name": "text",
+                      "value": "{system:fullName}"
+                    },
+                    {
+                      "name": "fontSize",
+                      "value": "${systemDescriptionFontSize}"
+                    },
+                    {
+                      "name": "fontPath",
+                      "value": "${fontBold}"
+                    },
+                    {
+                      "name": "color",
+                      "value": "${systemInfoColor}"
+                    },
+                    {
+                      "name": "scale",
+                      "value": "1.5"
+                    },
+                    {
+                      "name": "zIndex",
+                      "value": "${zText}"
+                    }
+                  ]
+                },
+                {
+                  "type": "image",
+                  "name": "theLogoImage",
+                  "props": [
+                    {
+                      "name": "pos",
+                      "value": "0.5 0.8"
+                    },
+                    {
+                      "name": "origin",
+                      "value": "0.5 1"
+                    },
+                    {
+                      "name": "maxSize",
+                      "value": "0.45 0.20"
+                    },
+                    {
+                      "name": "linearSmooth",
+                      "value": "true"
+                    },
+                    {
+                      "name": "path",
+                      "value": "${themePath}/_inc/systems/logos/{system:theme}.svg"
+                    },
+                    {
+                      "name": "zIndex",
+                      "value": "${zIcons}"
+                    },
+                    {
+                      "name": "color",
+                      "value": "${systemInfoColor}"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -169,7 +1074,7 @@
       "elements": [
         {
           "type": "video",
-          "name": "md_video,",
+          "name": "md_video",
           "props": [
             {
               "name": "visible",
@@ -664,7 +1569,7 @@
             },
             {
               "name": "zIndex",
-              "value": "${zBackgroundArt}"
+              "value": "${zUI}"
             },
             {
               "name": "linearSmooth",
@@ -1274,7 +2179,7 @@
       "elements": [
         {
           "type": "video",
-          "name": "md_video,",
+          "name": "md_video",
           "props": [
             {
               "name": "visible",

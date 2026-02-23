@@ -1,5 +1,4 @@
 {
-  "defaultTransition": "instant",
   "formatVersion": 7.0,
   "nodes": [
     {
@@ -95,6 +94,37 @@
                 },
                 {
                   "type": "image",
+                  "name": "shade",
+                  "extra": true,
+                  "props": [
+                    {
+                      "name": "path",
+                      "value": "${themePath}/_inc/images/4-5-bg.webp"
+                    },
+                    {
+                      "name": "pos",
+                      "value": "0.5 0.5"
+                    },
+                    {
+                      "name": "origin",
+                      "value": "0.5"
+                    },
+                    {
+                      "name": "maxSize",
+                      "value": "1 1"
+                    },
+                    {
+                      "name": "opacity",
+                      "value": "${lowOpacity}"
+                    },
+                    {
+                      "name": "zIndex",
+                      "value": "${zUI}"
+                    }
+                  ]
+                },
+                {
+                  "type": "image",
                   "name": "backdrop",
                   "extra": true,
                   "props": [
@@ -130,46 +160,15 @@
                 },
                 {
                   "type": "image",
-                  "name": "shade",
-                  "extra": true,
-                  "props": [
-                    {
-                      "name": "path",
-                      "value": "${themePath}/_inc/images/4-5-bg.webp"
-                    },
-                    {
-                      "name": "pos",
-                      "value": "0.5 0.5"
-                    },
-                    {
-                      "name": "origin",
-                      "value": "0.5"
-                    },
-                    {
-                      "name": "maxSize",
-                      "value": "1 1"
-                    },
-                    {
-                      "name": "opacity",
-                      "value": "${lowOpacity}"
-                    },
-                    {
-                      "name": "zIndex",
-                      "value": "${zUI}"
-                    }
-                  ]
-                },
-                {
-                  "type": "image",
                   "name": "systemBack",
                   "extra": true,
+                  "filters": {
+                    "ifSubset": "icon-scheme:icon"
+                  },
                   "props": [
                     {
                       "name": "path",
-                      "value": "firstfile(\"${themePath}/_inc/systems/carousel-icons-icons/\" + {system:theme} + \".webp\",\"${themePath}/_inc/systems/carousel-icons-icons/_default.webp\")",
-                      "filters": {
-                        "ifSubset": "icon-scheme:icon"
-                      }
+                      "value": "firstfile(\"${themePath}/_inc/systems/carousel-icons-icons/\" + {system:theme} + \".webp\",\"${themePath}/_inc/systems/carousel-icons-icons/_default.webp\")"
                     },
                     {
                       "name": "pos",
@@ -199,12 +198,7 @@
                       "name": "zIndex",
                       "value": "${zUI}"
                     }
-                  ]
-                },
-                {
-                  "type": "image",
-                  "name": "systemBack",
-                  "extra": true,
+                  ],
                   "children": [
                     {
                       "type": "storyboard",
@@ -250,7 +244,7 @@
                     },
                     {
                       "name": "pos",
-                      "value": "0.5 0.75"
+                      "value": "0.5 0.78"
                     },
                     {
                       "name": "size",
@@ -266,11 +260,11 @@
                     },
                     {
                       "name": "fontSize",
-                      "value": "${systemDescriptionFontSize}"
+                      "value": "${systemYearFontSize}"
                     },
                     {
                       "name": "fontPath",
-                      "value": "${fontBold}"
+                      "value": "${fontRegular}"
                     },
                     {
                       "name": "color",
@@ -300,15 +294,15 @@
                     },
                     {
                       "name": "origin",
-                      "value": "0 0.5"
+                      "value": "0.5 0.5"
                     },
                     {
                       "name": "pos",
-                      "value": "0 0.72"
+                      "value": "0.5 0.72"
                     },
                     {
                       "name": "size",
-                      "value": "1 1"
+                      "value": "0.6 0.2"
                     },
                     {
                       "name": "forceUppercase",
@@ -347,6 +341,7 @@
                 {
                   "type": "image",
                   "name": "theLogoImage",
+                  "extra": true,
                   "props": [
                     {
                       "name": "pos",
@@ -455,13 +450,13 @@
                   "type": "image",
                   "name": "systemBack",
                   "extra": true,
+                  "filters": {
+                    "ifSubset": "icon-scheme:art"
+                  },
                   "props": [
                     {
                       "name": "path",
-                      "value": "firstfile(\"${themePath}/_inc/systems/carousel-icons-art/\" + {system:theme} + \".webp\",\"${themePath}/_inc/systems/carousel-icons-art/_default.webp\")",
-                      "filters": {
-                        "ifSubset": "icon-scheme:art"
-                      }
+                      "value": "firstfile(\"${themePath}/_inc/systems/carousel-icons-art/\" + {system:theme} + \".webp\",\"${themePath}/_inc/systems/carousel-icons-art/_default.webp\")"
                     },
                     {
                       "name": "pos",
@@ -545,7 +540,7 @@
                     },
                     {
                       "name": "fontPath",
-                      "value": "${fontBold}"
+                      "value": "${fontRegular}"
                     },
                     {
                       "name": "color",
@@ -564,6 +559,7 @@
                 {
                   "type": "image",
                   "name": "theLogoImage",
+                  "extra": true,
                   "props": [
                     {
                       "name": "pos",
@@ -609,23 +605,19 @@
                     },
                     {
                       "name": "origin",
-                      "value": "0 0.5"
+                      "value": "0.5 0.5"
                     },
                     {
                       "name": "pos",
-                      "value": "0 0.88"
+                      "value": "0.5 0.88"
                     },
                     {
                       "name": "size",
-                      "value": "1 1"
+                      "value": "0.5 0.2"
                     },
                     {
                       "name": "forceUppercase",
                       "value": "true"
-                    },
-                    {
-                      "name": "visible",
-                      "value": "false"
                     },
                     {
                       "name": "visible",

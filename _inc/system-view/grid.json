@@ -1,5 +1,4 @@
 {
-  "defaultTransition": "instant",
   "formatVersion": 7.0,
   "nodes": [
     {
@@ -144,6 +143,30 @@
               "type": "itemTemplate",
               "children": [
                 {
+                  "type": "storyboard",
+                  "event": "activate",
+                  "animations": [
+                    {
+                      "property": "scale",
+                      "to": "1.05",
+                      "duration": "150",
+                      "mode": "easeOut"
+                    }
+                  ]
+                },
+                {
+                  "type": "storyboard",
+                  "event": "deactivate",
+                  "animations": [
+                    {
+                      "property": "scale",
+                      "to": true,
+                      "duration": "250",
+                      "mode": "easeOut"
+                    }
+                  ]
+                },
+                {
                   "type": "container",
                   "filters": {
                     "ifSubset": "icon-scheme:icon"
@@ -159,30 +182,6 @@
                     }
                   ],
                   "children": [
-                    {
-                      "type": "storyboard",
-                      "event": "activate",
-                      "animations": [
-                        {
-                          "property": "scale",
-                          "to": "1.05",
-                          "duration": "150",
-                          "mode": "easeOut"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "storyboard",
-                      "event": "deactivate",
-                      "animations": [
-                        {
-                          "property": "scale",
-                          "to": true,
-                          "duration": "250",
-                          "mode": "easeOut"
-                        }
-                      ]
-                    },
                     {
                       "type": "image",
                       "name": "selector",
@@ -330,13 +329,13 @@
                       "type": "image",
                       "name": "systemBack",
                       "extra": true,
+                      "filters": {
+                        "ifSubset": "icon-scheme:icon"
+                      },
                       "props": [
                         {
                           "name": "path",
-                          "value": "firstfile(\"${themePath}/_inc/systems/carousel-icons-icons/\" + {system:theme} + \".webp\",\"${themePath}/_inc/systems/carousel-icons-icons/_default.webp\")",
-                          "filters": {
-                            "ifSubset": "icon-scheme:icon"
-                          }
+                          "value": "firstfile(\"${themePath}/_inc/systems/carousel-icons-icons/\" + {system:theme} + \".webp\",\"${themePath}/_inc/systems/carousel-icons-icons/_default.webp\")"
                         },
                         {
                           "name": "pos",
@@ -456,15 +455,15 @@
                             },
                             {
                               "name": "origin",
-                              "value": "0 0.5"
+                              "value": "0.5 0.5"
                             },
                             {
                               "name": "pos",
-                              "value": "0 0.5"
+                              "value": "0.5 0.72"
                             },
                             {
                               "name": "size",
-                              "value": "1 1"
+                              "value": "0.6 0.2"
                             },
                             {
                               "name": "forceUppercase",
@@ -496,7 +495,7 @@
                             },
                             {
                               "name": "zIndex",
-                              "value": "5"
+                              "value": "${zText}"
                             }
                           ]
                         },
@@ -543,37 +542,13 @@
                   ],
                   "children": [
                     {
-                      "type": "storyboard",
-                      "event": "activate",
-                      "animations": [
-                        {
-                          "property": "scale",
-                          "to": "1.05",
-                          "duration": "150",
-                          "mode": "easeOut"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "storyboard",
-                      "event": "deactivate",
-                      "animations": [
-                        {
-                          "property": "scale",
-                          "to": true,
-                          "duration": "250",
-                          "mode": "easeOut"
-                        }
-                      ]
-                    },
-                    {
                       "type": "image",
                       "name": "selector",
                       "extra": true,
                       "props": [
                         {
                           "name": "path",
-                          "value": "{themePath}/_inc/images/square.webp"
+                          "value": "${themePath}/_inc/images/square.webp"
                         },
                         {
                           "name": "pos",
@@ -678,13 +653,13 @@
                       "type": "image",
                       "name": "systemBack",
                       "extra": true,
+                      "filters": {
+                        "ifSubset": "icon-scheme:art|custom-art"
+                      },
                       "props": [
                         {
                           "name": "path",
-                          "value": "firstfile(\"${themePath}/_inc/systems/carousel-icons-art/\" + {system:theme} + \".webp\",\"${themePath}/_inc/systems/carousel-icons-art/_default.webp\")",
-                          "filters": {
-                            "ifSubset": "icon-scheme:art"
-                          }
+                          "value": "firstfile(\"${themePath}/_inc/systems/carousel-icons-art/\" + {system:theme} + \".webp\",\"${themePath}/_inc/systems/carousel-icons-art/_default.webp\")"
                         },
                         {
                           "name": "pos",
@@ -749,6 +724,7 @@
                     {
                       "type": "image",
                       "name": "theLogoImage",
+                      "extra": true,
                       "props": [
                         {
                           "name": "pos",
@@ -794,23 +770,19 @@
                         },
                         {
                           "name": "origin",
-                          "value": "0 0.5"
+                          "value": "0.5 0.5"
                         },
                         {
                           "name": "pos",
-                          "value": "0 0.82"
+                          "value": "0.5 0.85"
                         },
                         {
                           "name": "size",
-                          "value": "1 1"
+                          "value": "0.8 0.2"
                         },
                         {
                           "name": "forceUppercase",
                           "value": "true"
-                        },
-                        {
-                          "name": "visible",
-                          "value": "false"
                         },
                         {
                           "name": "visible",
@@ -838,7 +810,7 @@
                         },
                         {
                           "name": "zIndex",
-                          "value": "10"
+                          "value": "${zText}"
                         }
                       ]
                     },

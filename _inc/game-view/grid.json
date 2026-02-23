@@ -140,7 +140,7 @@
             },
             {
               "name": "scrollbarColor",
-              "value": "${secondaryColor}"
+              "value": "${gamelistSecondaryColor}"
             },
             {
               "name": "scrollbarCorner",

@@ -1,8 +1,29 @@
 <theme>
-	<variables>
-		<fontRegular>${themePath}/_inc/fonts/Inter-Regular.otf</fontRegular>
-		<fontBold>${themePath}/_inc/fonts/Inter-Bold.otf</fontBold>
-		<fontLogo>${themePath}/_inc/fonts/Inter-Bold.otf</fontLogo>
-		<spacerImage>${themePath}/_inc/images/space.png</spacerImage>
-	</variables>
+  <!--
+    Font Configuration
+    Note: Primary font variables are defined in fonts.json
+    This file is for reference only
+  -->
+  <variables>
+    <!-- Default fonts -->
+    <fontRegular>${themePath}/_inc/fonts/Inter-Regular.otf</fontRegular>
+    <fontBold>${themePath}/_inc/fonts/Inter-Bold.otf</fontBold>
+    <fontLogo>${themePath}/_inc/fonts/Inter-Bold.otf</fontLogo>
+    <spacerImage>${themePath}/_inc/images/space.png</spacerImage>
+
+    <!-- Top bar -->
+    <topBarFontSize>0.025</topBarFontSize>
+
+    <!-- Bottom bar -->
+    <bottomBarFontSize>0.025</bottomBarFontSize>
+
+    <!-- System View Font Sizes (Grid/Carousel) - Default (medium) -->
+    <systemDescriptionFontSize>0.03</systemDescriptionFontSize>
+    <systemYearFontSize>0.03</systemYearFontSize>
+
+    <!-- Game View Font Sizes - Default (medium, 16:9|16:10|1:1) -->
+    <gamelistFontSize>0.031</gamelistFontSize>
+    <metaDatafontSize>0.035</metaDatafontSize>
+    <descriptionFontSize>0.031</descriptionFontSize>
+  </variables>
 </theme>

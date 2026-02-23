@@ -64,7 +64,7 @@
 	<view name="grid" ifSubset="font-size:small,metadata:on">
 
 		<!-- Metadata Toggle-->
-		<video name="md_video,">
+		<video name="md_video">
 			<visible>false</visible>
 		</video>
 
@@ -154,7 +154,7 @@
 	<!-- Grid View Base-->
 	<view name="grid" ifSubset="font-size:medium|large,metadata:on">
 		<!-- Metadata Toggle-->
-		<video name="md_video,">
+		<video name="md_video">
 			<visible>false</visible>
 		</video>
 
@@ -428,7 +428,7 @@
 
 	<!-- Detailed Grid View-->
 	<view name="grid" ifSubset="metadata:off">
-		<video name="md_video,">
+		<video name="md_video">
 			<visible>false</visible>
 		</video>
 

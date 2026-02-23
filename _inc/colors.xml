@@ -1,6 +1,7 @@
 <theme>
   <variables ifSubset="color-scheme:dark">
     <helpTextColor>dddddd</helpTextColor>
+    <helpIconColor>dddddd</helpIconColor>
     <systemInfoColor>eeeeee</systemInfoColor>
     <systemCarouselSelectorColor>cccccc</systemCarouselSelectorColor>
     <gamelistLogoColor>eeeeee</gamelistLogoColor>
@@ -11,7 +12,7 @@
     <gamelistPrimaryColor>5f5f5f</gamelistPrimaryColor>
     <gamelistSecondaryColor>5f5f5f</gamelistSecondaryColor>
     <gameMetadataColor>dddddd</gameMetadataColor>
-    <BackdropColor>000000</BackdropColor>
+    <backdropColor>000000</backdropColor>
     <backgroundArtPath>${themePath}/wallpapers/dark</backgroundArtPath>
     <menuBackgroundColor>373737</menuBackgroundColor>
     <menuBackgroundColorTitle>1c1c1c</menuBackgroundColorTitle>
@@ -22,6 +23,7 @@
 
   <variables ifSubset="color-scheme:light">
     <helpTextColor>333333</helpTextColor>
+    <helpIconColor>333333</helpIconColor>
     <systemInfoColor>333333</systemInfoColor>
     <systemCarouselSelectorColor>222222</systemCarouselSelectorColor>
     <gamelistLogoColor>333333</gamelistLogoColor>
@@ -43,6 +45,7 @@
 
   <variables ifSubset="color-scheme:neon">
     <helpTextColor>FFFFFF</helpTextColor>
+    <helpIconColor>FFFFFF</helpIconColor>
     <systemInfoColor>FFFFFF</systemInfoColor>
     <systemCarouselSelectorColor>d43ff4</systemCarouselSelectorColor>
     <gamelistLogoColor>eeeeee</gamelistLogoColor>
@@ -64,6 +67,7 @@
 
   <variables ifSubset="color-scheme:pastel">
     <helpTextColor>555555</helpTextColor>
+    <helpIconColor>555555</helpIconColor>
     <systemInfoColor>555555</systemInfoColor>
     <systemCarouselSelectorColor>85a5c5</systemCarouselSelectorColor>
     <gamelistLogoColor>555555</gamelistLogoColor>
@@ -85,6 +89,7 @@
 
   <variables ifSubset="color-scheme:purple">
     <helpTextColor>2a2929</helpTextColor>
+    <helpIconColor>2a2929</helpIconColor>
     <systemInfoColor>2a2929</systemInfoColor>
     <systemCarouselSelectorColor>382a6a</systemCarouselSelectorColor>
     <gamelistLogoColor>2a2929</gamelistLogoColor>
@@ -106,6 +111,7 @@
 
   <variables ifSubset="color-scheme:beige">
     <helpTextColor>494846</helpTextColor>
+    <helpIconColor>494846</helpIconColor>
     <systemInfoColor>494846</systemInfoColor>
     <systemCarouselSelectorColor>3a6b6c</systemCarouselSelectorColor>
     <gamelistLogoColor>494846</gamelistLogoColor>
@@ -127,6 +133,7 @@
 
   <variables ifSubset="color-scheme:retro">
     <helpTextColor>ffffff</helpTextColor>
+    <helpIconColor>ffffff</helpIconColor>
     <systemInfoColor>ffffff</systemInfoColor>
     <systemCarouselSelectorColor>ebca80</systemCarouselSelectorColor>
     <gamelistLogoColor>fff0a0</gamelistLogoColor>

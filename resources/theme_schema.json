@@ -5,13 +5,24 @@
       "properties": [
         { "name": "pos" },
         { "name": "size" },
+        { "name": "origin" },
         { "name": "color" },
         { "name": "fontSize" },
+        { "name": "fontPath" },
         { "name": "text" },
+        { "name": "value" },
+        { "name": "alignment" },
         { "name": "horizontalAlignment" },
         { "name": "verticalAlignment" },
         { "name": "forceUppercase" },
-        { "name": "lineSpacing" }
+        { "name": "lineSpacing" },
+        { "name": "autoScroll" },
+        { "name": "autoScrollSpeed" },
+        { "name": "autoScrollDelay" },
+        { "name": "visible" },
+        { "name": "opacity" },
+        { "name": "zIndex" },
+        { "name": "multiLine" }
       ]
     },
     {
@@ -19,12 +30,19 @@
       "properties": [
         { "name": "pos" },
         { "name": "size" },
+        { "name": "minSize" },
+        { "name": "maxSize" },
         { "name": "path" },
         { "name": "tile" },
         { "name": "color" },
         { "name": "origin" },
         { "name": "rotation" },
-        { "name": "zIndex" }
+        { "name": "visible" },
+        { "name": "opacity" },
+        { "name": "linearSmooth" },
+        { "name": "roundCorners" },
+        { "name": "zIndex" },
+        { "name": "extra" }
       ]
     },
     {
@@ -43,10 +61,16 @@
       "properties": [
         { "name": "pos" },
         { "name": "size" },
+        { "name": "origin" },
         { "name": "color" },
         { "name": "fontSize" },
+        { "name": "fontPath" },
         { "name": "format" },
-        { "name": "displayRelative" }
+        { "name": "value" },
+        { "name": "displayRelative" },
+        { "name": "lineSpacing" },
+        { "name": "visible" },
+        { "name": "zIndex" }
       ]
     },
     {
@@ -54,11 +78,14 @@
       "properties": [
         { "name": "pos" },
         { "name": "size" },
+        { "name": "origin" },
         { "name": "color" },
         { "name": "filledPath" },
         { "name": "unfilledPath" },
         { "name": "visibleCount" },
-        { "name": "displayCount" }
+        { "name": "displayCount" },
+        { "name": "visible" },
+        { "name": "zIndex" }
       ]
     },
     {
@@ -70,11 +97,15 @@
       "properties": [
         { "name": "pos" },
         { "name": "size" },
+        { "name": "origin" },
         { "name": "path" },
         { "name": "delay" },
         { "name": "volume" },
         { "name": "showSnapshotNoVideo" },
-        { "name": "showSnapshotDelay" }
+        { "name": "showSnapshotDelay" },
+        { "name": "roundCorners" },
+        { "name": "visible" },
+        { "name": "zIndex" }
       ]
     },
     {
@@ -110,6 +141,22 @@
         { "name": "circular" },
         { "name": "horizontal" },
         { "name": "enableMasking" }
+      ]
+    },
+    {
+      "name": "gamecarousel",
+      "properties": [
+        { "name": "type" },
+        { "name": "pos" },
+        { "name": "size" },
+        { "name": "origin" },
+        { "name": "logoScale" },
+        { "name": "logoRotation" },
+        { "name": "logoRotationOrigin" },
+        { "name": "logoAlignment" },
+        { "name": "maxLogoCount" },
+        { "name": "zIndex" },
+        { "name": "imageSource" }
       ]
     },
     {

@@ -92,9 +92,9 @@ License: Creative Commons CC-BY-NC-SA
 	<include ifSubset="system-view:carousel">${themePath}/_inc/system-view/carousel.xml</include>
 
 	<!-- Screen View -->
-	<include>${themePath}/_inc/view/top-bar.xml</include>
-	<include>${themePath}/_inc/view/bottom-bar.xml</include>
-	<include>${themePath}/_inc/view/menu.xml</include>
+	<include>${themePath}/_inc/bar/top-bar.xml</include>
+	<include>${themePath}/_inc/bar/bottom-bar.xml</include>
+	<include>${themePath}/_inc/menu/menu.xml</include>
 
 	<!-- All Views -->
 	<view name="system, basic, detailed, gamecarousel, grid">
@@ -180,7 +180,7 @@ License: Creative Commons CC-BY-NC-SA
 			<color>${gameMetadataColor}</color>
 			<autoScroll>horizontal</autoScroll>
 			<autoScrollSpeed>50</autoScrollSpeed>
-			<autoScrollDelay>500000</autoScrollDelay>
+			<autoScrollDelay>5000</autoScrollDelay>
 			<zIndex>${zMetadata}</zIndex>
 		</text>
 
@@ -246,7 +246,7 @@ License: Creative Commons CC-BY-NC-SA
 
 		<image name="game-metadata-background-image-base" extra="true">
 			<origin>0.5 0.5</origin>
-			<zIndex>${zUI}</zIndex>
+			<zIndex>${zMetadata}</zIndex>
 			<linearSmooth>true</linearSmooth>
 		</image>
 	</view>
@@ -275,7 +275,7 @@ License: Creative Commons CC-BY-NC-SA
 	</view>
 
 	<!-- Game Grid View -->
-	<include name="grid">${themePath}/_inc/view/grid.xml</include>
+	<include name="grid">${themePath}/_inc/game-view/grid.xml</include>
 
 	<!-- Off Metadata Toggle -->
 	<view name="detailed, gamecarousel, grid, grid-detailed" ifSubset="metadata:off">
@@ -330,8 +330,8 @@ License: Creative Commons CC-BY-NC-SA
 	</subset>
 
 	<!-- Aspect Ratios -->
-   <include ifSubset="aspect-ratio:16-9|16-9-auto">${themePath}/_inc/view/aspect-ratio-16-9.xml</include>
-   <include ifSubset="aspect-ratio:16-10|16-10-auto">${themePath}/_inc/view/aspect-ratio-16-10.xml</include>
-   <include ifSubset="aspect-ratio:4-3|4-3-auto">${themePath}/_inc/view/aspect-ratio-4-3.xml</include>
-   <include ifSubset="aspect-ratio:1-1|1-1-auto">${themePath}/_inc/view/aspect-ratio-1-1.xml</include>
+   <include ifSubset="aspect-ratio:16-9|16-9-auto">${themePath}/_inc/game-view/aspect-ratio-16-9.xml</include>
+   <include ifSubset="aspect-ratio:16-10|16-10-auto">${themePath}/_inc/game-view/aspect-ratio-16-10.xml</include>
+   <include ifSubset="aspect-ratio:4-3|4-3-auto">${themePath}/_inc/game-view/aspect-ratio-4-3.xml</include>
+   <include ifSubset="aspect-ratio:1-1|1-1-auto">${themePath}/_inc/game-view/aspect-ratio-1-1.xml</include>
 </theme>

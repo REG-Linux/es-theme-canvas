@@ -3,13 +3,14 @@
   <!-- Bottom Bar Elements -->
   <view name="system, basic, detailed, gamecarousel, grid">
     <!-- Help System -->
-    <helpsystem alignment="center" name="help">
+    <helpsystem name="help">
       <origin>0.5 0.5</origin>
-      <pos>0.5 ${helpPos}</pos>
-      <fontSize>${helpFontSize}</fontSize>
+      <pos>0.5 0.97</pos>
+      <size>1 0</size>
+      <fontSize>${bottomBarFontSize}</fontSize>
       <fontPath>${fontBold}</fontPath>
       <textColor>${helpTextColor}</textColor>
-      <iconColor>${helpTextColor}</iconColor>
+      <iconColor>${helpIconColor}</iconColor>
       <iconA>${themePath}/_inc/images/help-button-east.svg</iconA>
       <iconB>${themePath}/_inc/images/help-button-south.svg</iconB>
       <iconX>${themePath}/_inc/images/help-button-north.svg</iconX>

@@ -34,7 +34,7 @@
   		<size ifSubset="metadata:off">0.975 0.78</size>
 			<padding>10 10 10 10</padding>
 			<imageSource>cover</imageSource>
-			<scrollbarColor>${secondaryColor}</scrollbarColor>
+			<scrollbarColor>${gamelistSecondaryColor}</scrollbarColor>
 			<scrollbarCorner>0.49</scrollbarCorner>
 			<scrollbarSize>0.005</scrollbarSize>
 			<scrollbarAlignment>right</scrollbarAlignment>

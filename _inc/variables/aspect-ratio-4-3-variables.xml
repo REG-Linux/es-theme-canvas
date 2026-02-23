@@ -1,87 +1,80 @@
 <theme>
   <formatVersion>7</formatVersion>
   <variables ifSubset="font-size:small">
-    <systemDescriptionFontSize>0.019</systemDescriptionFontSize>
-    <systemYearFontSize>0.024</systemYearFontSize>
     <itemcount>3.5</itemcount>
     <itemsize>0.293 0.36</itemsize>
     <logospacing>1.2</logospacing>
-    <helpFontSize>0.024</helpFontSize>
-    <helpFontSizeSmall>0.019</helpFontSizeSmall>
     <helpPosSmall>0.03</helpPosSmall>
     <gamelistBackgroundImageCalculated
       cache="true"
     >${themePath}/_inc/images/gamelist/${gamelistBackgroundImage}-small.webp</gamelistBackgroundImageCalculated>
-    <gamelistFontSize>0.026</gamelistFontSize>
     <gamelistSelectorHeight>0.04</gamelistSelectorHeight>
     <gamelistPos>0.557 0.118</gamelistPos>
     <gamelistSize>0.384 0.786</gamelistSize>
     <itemSizeCarousel>0.2 0.25</itemSizeCarousel>
-    <metaDatafontSize>0.023</metaDatafontSize>
     <descriptionPos>0.69</descriptionPos>
     <descriptionHeight>0.135</descriptionHeight>
-    <descriptionFontSize>0.026</descriptionFontSize>
     <descriptionLineSpacing>1.1</descriptionLineSpacing>
     <linecount>17</linecount>
   </variables>
 
   <variables ifSubset="font-size:medium">
-    <systemDescriptionFontSize>0.024</systemDescriptionFontSize>
-    <systemYearFontSize>0.029</systemYearFontSize>
     <itemcount>3</itemcount>
     <itemsize>0.34 0.46</itemsize>
     <logospacing>0.2</logospacing>
-    <helpFontSize>0.026</helpFontSize>
-    <helpFontSizeSmall>0.019</helpFontSizeSmall>
     <helpPosSmall>0.03</helpPosSmall>
     <gamelistBackgroundImageCalculated
       cache="true"
     >${themePath}/_inc/images/gamelist/${gamelistBackgroundImage}-medium.webp</gamelistBackgroundImageCalculated>
-    <gamelistFontSize>0.031</gamelistFontSize>
     <gamelistSelectorHeight>0.051</gamelistSelectorHeight>
     <gamelistPos>0.56 0.134</gamelistPos>
     <gamelistSize>0.383 0.752</gamelistSize>
     <itemSizeCarousel>0.2 0.25</itemSizeCarousel>
-    <metaDatafontSize>0.031</metaDatafontSize>
     <descriptionPos>0.656</descriptionPos>
     <descriptionHeight>0.15</descriptionHeight>
-    <descriptionFontSize>0.031</descriptionFontSize>
     <descriptionLineSpacing>1.1</descriptionLineSpacing>
     <linecount>13</linecount>
   </variables>
 
   <variables ifSubset="font-size:large">
-    <systemDescriptionFontSize>0.024</systemDescriptionFontSize>
-    <systemYearFontSize>0.042</systemYearFontSize>
     <itemcount>1.5</itemcount>
     <itemsize>0.44 0.54</itemsize>
     <logospacing>-0.75</logospacing>
-    <helpFontSize>0.026</helpFontSize>
-    <helpFontSizeSmall>0.019</helpFontSizeSmall>
     <helpPosSmall>0.03</helpPosSmall>
     <gamelistBackgroundImageCalculated
       cache="true"
     >${themePath}/_inc/images/gamelist/${gamelistBackgroundImage}-large.webp</gamelistBackgroundImageCalculated>
-    <gamelistFontSize>0.037</gamelistFontSize>
     <gamelistSelectorHeight>0.064</gamelistSelectorHeight>
     <gamelistPos>0.56 0.129</gamelistPos>
     <gamelistSize>0.383 0.763</gamelistSize>
     <itemSizeCarousel>0.2 0.25</itemSizeCarousel>
-    <metaDatafontSize>0.036</metaDatafontSize>
     <descriptionPos>0.656</descriptionPos>
     <descriptionHeight>0.15</descriptionHeight>
-    <descriptionFontSize>0.036</descriptionFontSize>
     <descriptionLineSpacing>1.1</descriptionLineSpacing>
     <linecount>11</linecount>
   </variables>
 
   <variables>
-    <systemInfoFontSize>0.036</systemInfoFontSize>
-    <indicatorFontSize>0.033</indicatorFontSize>
     <helpPos>0.97</helpPos>
     <CornersGrid>5</CornersGrid>
     <CornersSmall>10</CornersSmall>
     <CornersMedium>20</CornersMedium>
     <CornersLarge>30</CornersLarge>
+    <controllerActivityPos>0.705</controllerActivityPos>
+  </variables>
+
+  <!-- 4:3 + Small: Override font sizes -->
+  <variables ifSubset="font-size:small">
+    <systemDescriptionFontSize>0.019</systemDescriptionFontSize>
+    <systemYearFontSize>0.024</systemYearFontSize>
+    <metaDatafontSize>0.023</metaDatafontSize>
+    <descriptionFontSize>0.026</descriptionFontSize>
+  </variables>
+
+  <!-- 4:3 + Large: Override font sizes -->
+  <variables ifSubset="font-size:large">
+    <systemYearFontSize>0.042</systemYearFontSize>
+    <metaDatafontSize>0.036</metaDatafontSize>
+    <descriptionFontSize>0.036</descriptionFontSize>
   </variables>
 </theme>
