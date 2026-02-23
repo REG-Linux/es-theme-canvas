@@ -60,6 +60,7 @@
     <CornersSmall>10</CornersSmall>
     <CornersMedium>20</CornersMedium>
     <CornersLarge>30</CornersLarge>
+    <controllerActivityPos>0.705</controllerActivityPos>
   </variables>
 
   <!-- 4:3 + Small: Override font sizes -->

@@ -272,6 +272,10 @@
     {
       "key": "CornersLarge",
       "value": "60"
+    },
+    {
+      "key": "controllerActivityPos",
+      "value": "0.738"
     }
   ]
 }

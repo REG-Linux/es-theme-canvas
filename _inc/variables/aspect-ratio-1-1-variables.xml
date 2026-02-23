@@ -57,5 +57,6 @@
     <CornersSmall>20</CornersSmall>
     <CornersMedium>40</CornersMedium>
     <CornersLarge>60</CornersLarge>
+    <controllerActivityPos>0.738</controllerActivityPos>
   </variables>
 </theme>

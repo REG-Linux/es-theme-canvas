@@ -34,10 +34,10 @@
     </text>
 
     <controllerActivity name="controllerActivity">
-      <pos>0.735 0.02</pos>
+      <pos>${controllerActivityPos} 0.02</pos>
       <size>0.15 ${topBarFontSize}</size>
       <horizontalAlignment>right</horizontalAlignment>
-      <itemSpacing>0.003</itemSpacing>
+      <itemSpacing>0.005</itemSpacing>
       <color>${systemInfoColor}</color>
       <zIndex>${zIcons}</zIndex>
       <imagePath>${themePath}/_inc/images/gamepad.svg</imagePath>
@@ -50,7 +50,6 @@
     <batteryIndicator name="batteryIndicator">
       <pos>0.93 0.01</pos>
       <size>0.04 0.04</size>
-      <verticalAlignment>right</verticalAlignment>
       <color>${systemInfoColor}</color>
       <full>${themePath}/_inc/images/battery/battery-icon-100.svg</full>
       <at75>${themePath}/_inc/images/battery/battery-icon-75.svg</at75>

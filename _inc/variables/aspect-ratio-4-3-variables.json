@@ -295,6 +295,10 @@
       "value": "30"
     },
     {
+      "key": "controllerActivityPos",
+      "value": "0.705"
+    },
+    {
       "key": "systemDescriptionFontSize",
       "value": "0.019",
       "filters": {

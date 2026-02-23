@@ -117,7 +117,7 @@
           "props": [
             {
               "name": "pos",
-              "value": "0.735 0.02"
+              "value": "${controllerActivityPos} 0.02"
             },
             {
               "name": "size",
@@ -129,7 +129,7 @@
             },
             {
               "name": "itemSpacing",
-              "value": "0.003"
+              "value": "0.005"
             },
             {
               "name": "color",
@@ -172,10 +172,6 @@
             {
               "name": "size",
               "value": "0.04 0.04"
-            },
-            {
-              "name": "verticalAlignment",
-              "value": "right"
             },
             {
               "name": "color",
