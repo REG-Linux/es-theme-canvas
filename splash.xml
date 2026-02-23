@@ -36,7 +36,7 @@
     <text name="label">
       <pos>0.5 0.7</pos>
       <origin>0.5 0.5</origin>
-      <alignment>center</alignment>
+      <horizontalAlignment>center</horizontalAlignment>
       <fontPath>${themePath}/_inc/fonts/Inter-Bold.otf</fontPath>
       <fontSize>0.04</fontSize>
       <color>${gamelistLogoColor}</color>
