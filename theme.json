@@ -898,7 +898,7 @@
     },
     {
       "type": "include",
-      "path": "${themePath}/_inc/view/grid.json",
+      "path": "${themePath}/_inc/game-view/grid.json",
       "name": "grid"
     },
     {
@@ -1052,28 +1052,28 @@
     },
     {
       "type": "include",
-      "path": "${themePath}/_inc/view/aspect-ratio-16-9.json",
+      "path": "${themePath}/_inc/game-view/aspect-ratio-16-9.json",
       "filters": {
         "ifSubset": "aspect-ratio:16-9|16-9-auto"
       }
     },
     {
       "type": "include",
-      "path": "${themePath}/_inc/view/aspect-ratio-16-10.json",
+      "path": "${themePath}/_inc/game-view/aspect-ratio-16-10.json",
       "filters": {
         "ifSubset": "aspect-ratio:16-10|16-10-auto"
       }
     },
     {
       "type": "include",
-      "path": "${themePath}/_inc/view/aspect-ratio-4-3.json",
+      "path": "${themePath}/_inc/game-view/aspect-ratio-4-3.json",
       "filters": {
         "ifSubset": "aspect-ratio:4-3|4-3-auto"
       }
     },
     {
       "type": "include",
-      "path": "${themePath}/_inc/view/aspect-ratio-1-1.json",
+      "path": "${themePath}/_inc/game-view/aspect-ratio-1-1.json",
       "filters": {
         "ifSubset": "aspect-ratio:1-1|1-1-auto"
       }
