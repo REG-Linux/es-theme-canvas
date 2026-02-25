@@ -12,7 +12,7 @@
     <gamelistPrimaryColor>5f5f5f</gamelistPrimaryColor>
     <gamelistSecondaryColor>5f5f5f</gamelistSecondaryColor>
     <gameMetadataColor>dddddd</gameMetadataColor>
-    <backdropColor>000000</backdropColor>
+    <BackdropColor>000000</BackdropColor>
     <backgroundArtPath>${themePath}/wallpapers/dark</backgroundArtPath>
     <menuBackgroundColor>373737</menuBackgroundColor>
     <menuBackgroundColorTitle>1c1c1c</menuBackgroundColorTitle>
