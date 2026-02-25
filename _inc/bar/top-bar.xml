@@ -49,7 +49,7 @@
 
     <batteryIndicator name="batteryIndicator">
       <pos>0.93 0.01</pos>
-      <size>0.04 0.04</size>
+      <size>0.05 0.05</size>
       <color>${systemInfoColor}</color>
       <full>${themePath}/_inc/images/battery/battery-icon-100.svg</full>
       <at75>${themePath}/_inc/images/battery/battery-icon-75.svg</at75>

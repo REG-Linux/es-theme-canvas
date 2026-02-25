@@ -11,19 +11,30 @@
     <fontLogo>${themePath}/_inc/fonts/Inter-Bold.otf</fontLogo>
     <spacerImage>${themePath}/_inc/images/space.png</spacerImage>
 
-    <!-- Top bar -->
-    <topBarFontSize>0.025</topBarFontSize>
+    <!-- Top bar - Default (screens >= 720p) -->
+    <topBarFontSize>0.03</topBarFontSize>
 
-    <!-- Bottom bar -->
-    <bottomBarFontSize>0.025</bottomBarFontSize>
+    <!-- Bottom bar - Default (screens >= 720p) -->
+    <bottomBarFontSize>0.03</bottomBarFontSize>
 
     <!-- System View Font Sizes (Grid/Carousel) - Default (medium) -->
-    <systemDescriptionFontSize>0.03</systemDescriptionFontSize>
-    <systemYearFontSize>0.03</systemYearFontSize>
+    <systemDescriptionFontSize>0.028</systemDescriptionFontSize>
+    <systemYearFontSize>0.028</systemYearFontSize>
 
     <!-- Game View Font Sizes - Default (medium, 16:9|16:10|1:1) -->
-    <gamelistFontSize>0.031</gamelistFontSize>
-    <metaDatafontSize>0.035</metaDatafontSize>
-    <descriptionFontSize>0.031</descriptionFontSize>
+    <gamelistFontSize>0.028</gamelistFontSize>
+    <metaDatafontSize>0.03</metaDatafontSize>
+    <descriptionFontSize>0.028</descriptionFontSize>
+  </variables>
+
+  <!-- Tiny Screens (< 480p, e.g., 320x240, 480x320) -->
+  <variables tinyScreen="true">
+    <topBarFontSize>0.032</topBarFontSize>
+    <bottomBarFontSize>0.032</bottomBarFontSize>
+    <systemDescriptionFontSize>0.03</systemDescriptionFontSize>
+    <systemYearFontSize>0.03</systemYearFontSize>
+    <gamelistFontSize>0.03</gamelistFontSize>
+    <metaDatafontSize>0.032</metaDatafontSize>
+    <descriptionFontSize>0.03</descriptionFontSize>
   </variables>
 </theme>

@@ -19,31 +19,80 @@
     },
     {
       "key": "topBarFontSize",
-      "value": "0.025"
+      "value": "0.03"
     },
     {
       "key": "bottomBarFontSize",
-      "value": "0.025"
+      "value": "0.03"
     },
     {
       "key": "systemDescriptionFontSize",
-      "value": "0.03"
+      "value": "0.028"
     },
     {
       "key": "systemYearFontSize",
-      "value": "0.03"
+      "value": "0.028"
     },
     {
       "key": "gamelistFontSize",
-      "value": "0.031"
+      "value": "0.028"
     },
     {
       "key": "metaDatafontSize",
-      "value": "0.035"
+      "value": "0.03"
     },
     {
       "key": "descriptionFontSize",
-      "value": "0.031"
+      "value": "0.028"
+    },
+    {
+      "key": "topBarFontSize",
+      "value": "0.032",
+      "filters": {
+        "tinyScreen": "true"
+      }
+    },
+    {
+      "key": "bottomBarFontSize",
+      "value": "0.032",
+      "filters": {
+        "tinyScreen": "true"
+      }
+    },
+    {
+      "key": "systemDescriptionFontSize",
+      "value": "0.03",
+      "filters": {
+        "tinyScreen": "true"
+      }
+    },
+    {
+      "key": "systemYearFontSize",
+      "value": "0.03",
+      "filters": {
+        "tinyScreen": "true"
+      }
+    },
+    {
+      "key": "gamelistFontSize",
+      "value": "0.03",
+      "filters": {
+        "tinyScreen": "true"
+      }
+    },
+    {
+      "key": "metaDatafontSize",
+      "value": "0.032",
+      "filters": {
+        "tinyScreen": "true"
+      }
+    },
+    {
+      "key": "descriptionFontSize",
+      "value": "0.03",
+      "filters": {
+        "tinyScreen": "true"
+      }
     }
   ]
 }

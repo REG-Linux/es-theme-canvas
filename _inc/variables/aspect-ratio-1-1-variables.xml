@@ -57,6 +57,17 @@
     <CornersSmall>20</CornersSmall>
     <CornersMedium>40</CornersMedium>
     <CornersLarge>60</CornersLarge>
-    <controllerActivityPos>0.738</controllerActivityPos>
+    <controllerActivityPos>0.728</controllerActivityPos>
+  </variables>
+
+  <!-- Small Screens (480p-720p, e.g., 640x480, 800x600) -->
+  <variables verticalScreen="true">
+    <topBarFontSize>0.032</topBarFontSize>
+    <bottomBarFontSize>0.032</bottomBarFontSize>
+    <systemDescriptionFontSize>0.03</systemDescriptionFontSize>
+    <systemYearFontSize>0.03</systemYearFontSize>
+    <gamelistFontSize>0.03</gamelistFontSize>
+    <metaDatafontSize>0.032</metaDatafontSize>
+    <descriptionFontSize>0.03</descriptionFontSize>
   </variables>
 </theme>
