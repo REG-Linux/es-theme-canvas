@@ -11,10 +11,10 @@
       <fontPath>${fontBold}</fontPath>
       <textColor>${helpTextColor}</textColor>
       <iconColor>${helpIconColor}</iconColor>
-      <iconA>${themePath}/_inc/images/help-button-east.svg</iconA>
-      <iconB>${themePath}/_inc/images/help-button-south.svg</iconB>
-      <iconX>${themePath}/_inc/images/help-button-north.svg</iconX>
-      <iconY>${themePath}/_inc/images/help-button-west.svg</iconY>
+      <iconA>${themePath}/_inc/images/buttons/help-button-east.svg</iconA>
+      <iconB>${themePath}/_inc/images/buttons/help-button-south.svg</iconB>
+      <iconX>${themePath}/_inc/images/buttons/help-button-north.svg</iconX>
+      <iconY>${themePath}/_inc/images/buttons/help-button-west.svg</iconY>
     </helpsystem>
   </view>
 </theme>

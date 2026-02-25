@@ -39,19 +39,19 @@
             },
             {
               "name": "iconA",
-              "value": "${themePath}/_inc/images/help-button-east.svg"
+              "value": "${themePath}/_inc/images/buttons/help-button-east.svg"
             },
             {
               "name": "iconB",
-              "value": "${themePath}/_inc/images/help-button-south.svg"
+              "value": "${themePath}/_inc/images/buttons/help-button-south.svg"
             },
             {
               "name": "iconX",
-              "value": "${themePath}/_inc/images/help-button-north.svg"
+              "value": "${themePath}/_inc/images/buttons/help-button-north.svg"
             },
             {
               "name": "iconY",
-              "value": "${themePath}/_inc/images/help-button-west.svg"
+              "value": "${themePath}/_inc/images/buttons/help-button-west.svg"
             }
           ]
         }

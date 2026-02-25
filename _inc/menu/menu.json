@@ -125,11 +125,11 @@
           "props": [
             {
               "name": "inactive",
-              "value": "${themePath}/_inc/images/menu-textinput-${menuInputMode}.png"
+              "value": "${themePath}/_inc/images/menu/menu-textinput-${menuInputMode}.png"
             },
             {
               "name": "active",
-              "value": "${themePath}/_inc/images/menu-textinput-active-${menuInputMode}.png"
+              "value": "${themePath}/_inc/images/menu/menu-textinput-active-${menuInputMode}.png"
             }
           ]
         },
