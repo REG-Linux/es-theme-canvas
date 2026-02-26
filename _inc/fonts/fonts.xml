@@ -12,29 +12,29 @@
     <spacerImage>${themePath}/_inc/images/space.png</spacerImage>
 
     <!-- Top bar - Default (screens >= 720p) -->
-    <topBarFontSize>0.03</topBarFontSize>
+    <topBarFontSize>0.028</topBarFontSize>
 
     <!-- Bottom bar - Default (screens >= 720p) -->
-    <bottomBarFontSize>0.03</bottomBarFontSize>
+    <bottomBarFontSize>0.028</bottomBarFontSize>
 
     <!-- System View Font Sizes (Grid/Carousel) - Default (medium) -->
-    <systemDescriptionFontSize>0.028</systemDescriptionFontSize>
-    <systemYearFontSize>0.028</systemYearFontSize>
+    <systemDescriptionFontSize>0.026</systemDescriptionFontSize>
+    <systemYearFontSize>0.026</systemYearFontSize>
 
     <!-- Game View Font Sizes - Default (medium, 16:9|16:10|1:1) -->
-    <gamelistFontSize>0.028</gamelistFontSize>
-    <metaDatafontSize>0.03</metaDatafontSize>
-    <descriptionFontSize>0.028</descriptionFontSize>
+    <gamelistFontSize>0.026</gamelistFontSize>
+    <metaDatafontSize>0.028</metaDatafontSize>
+    <descriptionFontSize>0.026</descriptionFontSize>
   </variables>
 
   <!-- Tiny Screens (< 480p, e.g., 320x240, 480x320) -->
   <variables tinyScreen="true">
-    <topBarFontSize>0.032</topBarFontSize>
-    <bottomBarFontSize>0.032</bottomBarFontSize>
-    <systemDescriptionFontSize>0.03</systemDescriptionFontSize>
-    <systemYearFontSize>0.03</systemYearFontSize>
-    <gamelistFontSize>0.03</gamelistFontSize>
-    <metaDatafontSize>0.032</metaDatafontSize>
-    <descriptionFontSize>0.03</descriptionFontSize>
+    <topBarFontSize>0.028</topBarFontSize>
+    <bottomBarFontSize>0.028</bottomBarFontSize>
+    <systemDescriptionFontSize>0.026</systemDescriptionFontSize>
+    <systemYearFontSize>0.026</systemYearFontSize>
+    <gamelistFontSize>0.026</gamelistFontSize>
+    <metaDatafontSize>0.028</metaDatafontSize>
+    <descriptionFontSize>0.026</descriptionFontSize>
   </variables>
 </theme>

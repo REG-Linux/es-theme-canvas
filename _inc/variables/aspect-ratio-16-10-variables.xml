@@ -62,12 +62,12 @@
 
   <!-- Small Screens (480p-720p, e.g., 640x480, 800x600) -->
   <variables verticalScreen="true">
-    <topBarFontSize>0.032</topBarFontSize>
-    <bottomBarFontSize>0.032</bottomBarFontSize>
-    <systemDescriptionFontSize>0.03</systemDescriptionFontSize>
-    <systemYearFontSize>0.03</systemYearFontSize>
-    <gamelistFontSize>0.03</gamelistFontSize>
-    <metaDatafontSize>0.032</metaDatafontSize>
-    <descriptionFontSize>0.03</descriptionFontSize>
+    <topBarFontSize>0.026</topBarFontSize>
+    <bottomBarFontSize>0.026</bottomBarFontSize>
+    <systemDescriptionFontSize>0.024</systemDescriptionFontSize>
+    <systemYearFontSize>0.024</systemYearFontSize>
+    <gamelistFontSize>0.024</gamelistFontSize>
+    <metaDatafontSize>0.026</metaDatafontSize>
+    <descriptionFontSize>0.024</descriptionFontSize>
   </variables>
 </theme>

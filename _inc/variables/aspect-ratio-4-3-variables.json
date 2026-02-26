@@ -300,49 +300,49 @@
     },
     {
       "key": "topBarFontSize",
-      "value": "0.032",
+      "value": "0.026",
       "filters": {
         "verticalScreen": "true"
       }
     },
     {
       "key": "bottomBarFontSize",
-      "value": "0.032",
+      "value": "0.026",
       "filters": {
         "verticalScreen": "true"
       }
     },
     {
       "key": "systemDescriptionFontSize",
-      "value": "0.03",
+      "value": "0.024",
       "filters": {
         "verticalScreen": "true"
       }
     },
     {
       "key": "systemYearFontSize",
-      "value": "0.03",
+      "value": "0.024",
       "filters": {
         "verticalScreen": "true"
       }
     },
     {
       "key": "gamelistFontSize",
-      "value": "0.03",
+      "value": "0.024",
       "filters": {
         "verticalScreen": "true"
       }
     },
     {
       "key": "metaDatafontSize",
-      "value": "0.032",
+      "value": "0.026",
       "filters": {
         "verticalScreen": "true"
       }
     },
     {
       "key": "descriptionFontSize",
-      "value": "0.03",
+      "value": "0.024",
       "filters": {
         "verticalScreen": "true"
       }
