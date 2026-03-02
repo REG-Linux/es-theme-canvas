@@ -60,7 +60,7 @@
     <CornersSmall>10</CornersSmall>
     <CornersMedium>20</CornersMedium>
     <CornersLarge>30</CornersLarge>
-    <controllerActivityPos>0.705</controllerActivityPos>
+    <controllerActivityPos>0.69</controllerActivityPos>
   </variables>
 
   <!-- Small Screens (480p-720p, e.g., 640x480, 800x600) -->
