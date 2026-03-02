@@ -98,10 +98,9 @@
             <path
             >firstfile("${themePath}/_inc/systems/carousel-icons-icons/" + {system:theme} + ".webp","${themePath}/_inc/systems/carousel-icons-icons/_default.webp")</path>
             <pos>0.5 0.45</pos>
-            <origin>0.5</origin>
+            <origin>0.5 0.5</origin>
             <maxSize>0.8 0.9</maxSize>
             <scale>1</scale>
-            <opacity>${mediumOpacity}</opacity>
             <linearSmooth>true</linearSmooth>
             <zIndex>${zUI}</zIndex>
 
@@ -114,7 +113,14 @@
             </storyboard>
           </image>
 
-          <image name="theLogoImage" pos="0.5 0.65" origin="0.5 0" maxSize="0.45 0.25" linearSmooth="true" extra="true">
+          <image
+            name="theLogoImage"
+            pos="0.5 0.72"
+            origin="0.5 0.5"
+            maxSize="0.45 0.25"
+            linearSmooth="true"
+            extra="true"
+          >
             <path>${themePath}/_inc/systems/logos/{system:theme}.svg</path>
             <zIndex>${zIcons}</zIndex>
             <color>${systemInfoColor}</color>
@@ -123,7 +129,7 @@
           <container padding="0">
             <text name="fallbackText" alignment="center" multiLine="true">
               <origin>0.5 0.5</origin>
-              <pos>0.5 0.72</pos>
+              <pos>0.5 0.78</pos>
               <size>0.6 0.2</size>
               <forceUppercase>true</forceUppercase>
               <visible>!exists("${themePath}/_inc/systems/logos/" + {system:theme} + ".svg")</visible>
@@ -202,7 +208,6 @@
             <maxSize>0.75 0.65</maxSize>
             <scale>1</scale>
             <roundCorners>${CornersSmall}</roundCorners>
-            <opacity>${mediumOpacity}</opacity>
             <linearSmooth>true</linearSmooth>
             <zIndex>${zUI}</zIndex>
 

@@ -187,10 +187,6 @@
                       "value": "1"
                     },
                     {
-                      "name": "opacity",
-                      "value": "${mediumOpacity}"
-                    },
-                    {
                       "name": "linearSmooth",
                       "value": "true"
                     },
@@ -487,10 +483,6 @@
                       "filters": {
                         "ifSubset": "font-size:small"
                       }
-                    },
-                    {
-                      "name": "opacity",
-                      "value": "${highOpacity}"
                     },
                     {
                       "name": "linearSmooth",

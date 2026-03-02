@@ -343,7 +343,7 @@
                         },
                         {
                           "name": "origin",
-                          "value": "0.5"
+                          "value": "0.5 0.5"
                         },
                         {
                           "name": "maxSize",
@@ -352,10 +352,6 @@
                         {
                           "name": "scale",
                           "value": "1"
-                        },
-                        {
-                          "name": "opacity",
-                          "value": "${mediumOpacity}"
                         },
                         {
                           "name": "linearSmooth",
@@ -400,11 +396,11 @@
                       "props": [
                         {
                           "name": "pos",
-                          "value": "0.5 0.65"
+                          "value": "0.5 0.72"
                         },
                         {
                           "name": "origin",
-                          "value": "0.5 0"
+                          "value": "0.5 0.5"
                         },
                         {
                           "name": "maxSize",
@@ -459,7 +455,7 @@
                             },
                             {
                               "name": "pos",
-                              "value": "0.5 0.72"
+                              "value": "0.5 0.78"
                             },
                             {
                               "name": "size",
@@ -680,10 +676,6 @@
                         {
                           "name": "roundCorners",
                           "value": "${CornersSmall}"
-                        },
-                        {
-                          "name": "opacity",
-                          "value": "${mediumOpacity}"
                         },
                         {
                           "name": "linearSmooth",

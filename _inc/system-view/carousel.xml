@@ -53,7 +53,6 @@
           <origin>0.5</origin>
           <maxSize>0.75 0.8</maxSize>
           <scale>1</scale>
-          <opacity>${mediumOpacity}</opacity>
           <linearSmooth>true</linearSmooth>
           <zIndex>${zUI}</zIndex>
 
@@ -127,7 +126,6 @@
           <scale>1</scale>
           <roundCorners ifSubset="font-size:medium|large">${CornersLarge}</roundCorners>
           <roundCorners ifSubset="font-size:small">${CornersMedium}</roundCorners>
-          <opacity>${highOpacity}</opacity>
           <linearSmooth>true</linearSmooth>
           <zIndex>${zUI}</zIndex>
         </image>
