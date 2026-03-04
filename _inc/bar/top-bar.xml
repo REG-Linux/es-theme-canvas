@@ -5,7 +5,7 @@
     <image name="gamesicon" extra="true">
       <pos>0.03 0.02</pos>
       <size>${topBarFontSize} 0</size>
-      <path>${themePath}/_inc/images/gamescount.svg</path>
+      <path>${themePath}/_inc/images/icons/gamescount.svg</path>
       <color>${systemInfoColor}</color>
       <zIndex>${zIcons}</zIndex>
     </image>
@@ -40,9 +40,9 @@
       <itemSpacing>0.005</itemSpacing>
       <color>${systemInfoColor}</color>
       <zIndex>${zIcons}</zIndex>
-      <imagePath>${themePath}/_inc/images/gamepad.svg</imagePath>
-      <gunPath>${themePath}/_inc/images/gun.svg</gunPath>
-      <wheelPath>${themePath}/_inc/images/wheel.svg</wheelPath>
+      <imagePath>${themePath}/_inc/images/icons/gamepad.svg</imagePath>
+      <gunPath>${themePath}/_inc/images/icons/gun.svg</gunPath>
+      <wheelPath>${themePath}/_inc/images/icons/wheel.svg</wheelPath>
       <activityColor>A0A0FFC0</activityColor>
       <hotkeyColor>FFA0A0C0</hotkeyColor>
     </controllerActivity>
