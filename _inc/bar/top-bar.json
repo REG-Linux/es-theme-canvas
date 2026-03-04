@@ -20,7 +20,7 @@
             },
             {
               "name": "path",
-              "value": "${themePath}/_inc/images/gamescount.svg"
+              "value": "${themePath}/_inc/images/icons/gamescount.svg"
             },
             {
               "name": "color",
@@ -141,15 +141,15 @@
             },
             {
               "name": "imagePath",
-              "value": "${themePath}/_inc/images/gamepad.svg"
+              "value": "${themePath}/_inc/images/icons/gamepad.svg"
             },
             {
               "name": "gunPath",
-              "value": "${themePath}/_inc/images/gun.svg"
+              "value": "${themePath}/_inc/images/icons/gun.svg"
             },
             {
               "name": "wheelPath",
-              "value": "${themePath}/_inc/images/wheel.svg"
+              "value": "${themePath}/_inc/images/icons/wheel.svg"
             },
             {
               "name": "activityColor",
