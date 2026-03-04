@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <theme>
   <!-- View: Menu -->
   <view name="menu">
@@ -39,8 +39,8 @@
     </menuGroup>
 
     <menuTextEdit name="menutextedit">
-      <inactive>${themePath}/_inc/images/menu-textinput-${menuInputMode}.png</inactive>
-      <active>${themePath}/_inc/images/menu-textinput-active-${menuInputMode}.png</active>
+      <inactive>${themePath}/_inc/images/menu/menu-textinput-${menuInputMode}.png</inactive>
+      <active>${themePath}/_inc/images/menu/menu-textinput-active-${menuInputMode}.png</active>
     </menuTextEdit>
 
     <menuBackground name="menubg">

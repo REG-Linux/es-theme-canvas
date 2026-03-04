@@ -99,7 +99,7 @@
                   "props": [
                     {
                       "name": "path",
-                      "value": "${themePath}/_inc/images/4-5-bg.webp"
+                      "value": "${themePath}/_inc/images/backgrounds/4-5-bg.webp"
                     },
                     {
                       "name": "pos",
@@ -130,7 +130,7 @@
                   "props": [
                     {
                       "name": "path",
-                      "value": "${themePath}/_inc/images/icon.webp"
+                      "value": "${themePath}/_inc/images/icons/icon.webp"
                     },
                     {
                       "name": "pos",
@@ -185,10 +185,6 @@
                     {
                       "name": "scale",
                       "value": "1"
-                    },
-                    {
-                      "name": "opacity",
-                      "value": "${mediumOpacity}"
                     },
                     {
                       "name": "linearSmooth",
@@ -412,7 +408,7 @@
                   "props": [
                     {
                       "name": "path",
-                      "value": "${themePath}/_inc/images/square-bg.webp"
+                      "value": "${themePath}/_inc/images/backgrounds/square-bg.webp"
                     },
                     {
                       "name": "pos",
@@ -487,10 +483,6 @@
                       "filters": {
                         "ifSubset": "font-size:small"
                       }
-                    },
-                    {
-                      "name": "opacity",
-                      "value": "${highOpacity}"
                     },
                     {
                       "name": "linearSmooth",

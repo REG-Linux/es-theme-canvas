@@ -44,7 +44,7 @@
           <padding>10 10 10 10</padding>
 
           <image name="selector" extra="true">
-            <path>${themePath}/_inc/images/4-5.webp</path>
+            <path>${themePath}/_inc/images/backgrounds/4-5.webp</path>
             <pos>0.5 0.5</pos>
             <origin>0.5</origin>
             <maxSize>1 1</maxSize>
@@ -52,7 +52,7 @@
             <zIndex>${zSelector}</zIndex>
             <color>00000000</color>
             <storyboard event="activate" repeat="forever">
-              <animation property="path" to="${themePath}/_inc/images/4-5.webp" />
+              <animation property="path" to="${themePath}/_inc/images/backgrounds/4-5.webp" />
               <animation
                 property="color"
                 from="${systemCarouselSelectorColor}00"
@@ -70,13 +70,13 @@
               />
             </storyboard>
             <storyboard event="deactivate">
-              <animation property="path" to="${themePath}/_inc/images/4-5.webp" />
+              <animation property="path" to="${themePath}/_inc/images/backgrounds/4-5.webp" />
               <animation property="color" to="00000000" />
             </storyboard>
           </image>
 
           <image name="backdrop" extra="true">
-            <path>${themePath}/_inc/images/icon.webp</path>
+            <path>${themePath}/_inc/images/icons/icon.webp</path>
             <pos>0.5 0.5</pos>
             <origin>0.5</origin>
             <maxSize>1 1</maxSize>
@@ -86,7 +86,7 @@
           </image>
 
           <image name="shade" extra="true">
-            <path>${themePath}/_inc/images/4-5-bg.webp</path>
+            <path>${themePath}/_inc/images/backgrounds/4-5-bg.webp</path>
             <pos>0.5 0.5</pos>
             <origin>0.5</origin>
             <maxSize>1 1</maxSize>
@@ -98,10 +98,9 @@
             <path
             >firstfile("${themePath}/_inc/systems/carousel-icons-icons/" + {system:theme} + ".webp","${themePath}/_inc/systems/carousel-icons-icons/_default.webp")</path>
             <pos>0.5 0.45</pos>
-            <origin>0.5</origin>
+            <origin>0.5 0.5</origin>
             <maxSize>0.8 0.9</maxSize>
             <scale>1</scale>
-            <opacity>${mediumOpacity}</opacity>
             <linearSmooth>true</linearSmooth>
             <zIndex>${zUI}</zIndex>
 
@@ -114,7 +113,14 @@
             </storyboard>
           </image>
 
-          <image name="theLogoImage" pos="0.5 0.65" origin="0.5 0" maxSize="0.45 0.25" linearSmooth="true" extra="true">
+          <image
+            name="theLogoImage"
+            pos="0.5 0.72"
+            origin="0.5 0.5"
+            maxSize="0.45 0.25"
+            linearSmooth="true"
+            extra="true"
+          >
             <path>${themePath}/_inc/systems/logos/{system:theme}.svg</path>
             <zIndex>${zIcons}</zIndex>
             <color>${systemInfoColor}</color>
@@ -123,7 +129,7 @@
           <container padding="0">
             <text name="fallbackText" alignment="center" multiLine="true">
               <origin>0.5 0.5</origin>
-              <pos>0.5 0.72</pos>
+              <pos>0.5 0.78</pos>
               <size>0.6 0.2</size>
               <forceUppercase>true</forceUppercase>
               <visible>!exists("${themePath}/_inc/systems/logos/" + {system:theme} + ".svg")</visible>
@@ -153,7 +159,7 @@
           <scale>1</scale>
 
           <image name="selector" extra="true">
-            <path>${themePath}/_inc/images/square.webp</path>
+            <path>${themePath}/_inc/images/backgrounds/square.webp</path>
             <pos>0.5 0.74</pos>
             <origin>0.5 1</origin>
             <maxSize>0.77 0.67</maxSize>
@@ -162,7 +168,7 @@
             <color>00000000</color>
 
             <storyboard event="activate" repeat="forever">
-              <animation property="path" to="${themePath}/_inc/images/square.webp" />
+              <animation property="path" to="${themePath}/_inc/images/backgrounds/square.webp" />
               <animation
                 property="color"
                 from="${systemCarouselSelectorColor}00"
@@ -180,13 +186,13 @@
               />
             </storyboard>
             <storyboard event="deactivate">
-              <animation property="path" to="${themePath}/_inc/images/square.webp" />
+              <animation property="path" to="${themePath}/_inc/images/backgrounds/square.webp" />
               <animation property="color" to="00000000" />
             </storyboard>
           </image>
 
           <image name="shade" extra="true">
-            <path>${themePath}/_inc/images/square-bg.webp</path>
+            <path>${themePath}/_inc/images/backgrounds/square-bg.webp</path>
             <pos>0.5 0.77</pos>
             <origin>0.5 1</origin>
             <maxSize>0.84 0.74</maxSize>
@@ -202,7 +208,6 @@
             <maxSize>0.75 0.65</maxSize>
             <scale>1</scale>
             <roundCorners>${CornersSmall}</roundCorners>
-            <opacity>${mediumOpacity}</opacity>
             <linearSmooth>true</linearSmooth>
             <zIndex>${zUI}</zIndex>
 

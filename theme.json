@@ -414,7 +414,7 @@
             },
             {
               "name": "path",
-              "value": "${themePath}/_inc/images/playtime-icon.svg"
+              "value": "${themePath}/_inc/images/icons/playtime-icon.svg"
             },
             {
               "name": "zIndex",
@@ -556,11 +556,11 @@
             },
             {
               "name": "filledPath",
-              "value": "${themePath}/_inc/images/icon-star-filled.svg"
+              "value": "${themePath}/_inc/images/icons/icon-star-filled.svg"
             },
             {
               "name": "unfilledPath",
-              "value": "${themePath}/_inc/images/icon-star-unfilled.svg"
+              "value": "${themePath}/_inc/images/icons/icon-star-unfilled.svg"
             },
             {
               "name": "color",
@@ -898,8 +898,7 @@
     },
     {
       "type": "include",
-      "path": "${themePath}/_inc/game-view/grid.json",
-      "name": "grid"
+      "path": "${themePath}/_inc/game-view/grid.json"
     },
     {
       "type": "view",

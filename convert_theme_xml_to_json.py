@@ -1,11 +1,18 @@
 #!/usr/bin/env python3
 # SPDX-License-Identifier: AGPL-3.0-only
+"""
+Convert Emulation Station theme XML files to JSON format.
+
+This script converts theme XML files to JSON format compatible with Emulation Station.
+It handles includes, views, subsets, features, and variables.
+"""
 
 import argparse
 import json
 import os
 import sys
 import xml.etree.ElementTree as ET
+from pathlib import Path
 
 FILTER_KEYS = {
     "if",
@@ -22,8 +29,22 @@ FILTER_KEYS = {
 
 
 def load_schema(schema_path):
-    with open(schema_path, "r", encoding="utf-8") as handle:
-        data = json.load(handle)
+    """Load and parse the theme schema JSON file."""
+    if not os.path.exists(schema_path):
+        print(f"Error: Schema file not found: {schema_path}", file=sys.stderr)
+        sys.exit(1)
+
+    try:
+        with open(schema_path, "r", encoding="utf-8") as handle:
+            data = json.load(handle)
+    except json.JSONDecodeError as exc:
+        print(
+            f"Error: Invalid JSON in schema file {schema_path}: {exc}", file=sys.stderr
+        )
+        sys.exit(1)
+    except IOError as exc:
+        print(f"Error: Cannot read schema file {schema_path}: {exc}", file=sys.stderr)
+        sys.exit(1)
 
     elements = {}
     for element in data.get("elements", []):
@@ -85,34 +106,34 @@ def rewrite_include_path(path, rewrite):
 
 
 def convert_storyboard(node):
-    obj = {"type": "storyboard"}
+    obj: dict = {"type": "storyboard"}
     for key in ("event", "repeat", "repeatAt", "repeatat"):
         if key in node.attrib:
             if key == "repeatat":
-                obj["repeatAt"] = node.attrib[key]
+                obj["repeatAt"] = str(node.attrib[key])
             else:
-                obj[key] = node.attrib[key]
+                obj[key] = str(node.attrib[key])
 
     animations = []
     sounds = []
     for child in node:
         if child.tag == "animation":
-            anim = {}
+            anim: dict = {}
             for attr, value in child.attrib.items():
                 if attr in ("mode", "easingMode"):
-                    anim["mode"] = value
+                    anim["mode"] = str(value)
                 elif attr in ("autoreverse", "autoReverse"):
                     anim["autoReverse"] = normalize_bool(value)
                 else:
                     anim[attr] = normalize_bool(value)
             animations.append(anim)
         elif child.tag == "sound":
-            snd = {}
+            snd: dict = {}
             for attr, value in child.attrib.items():
                 if attr in ("autoreverse", "autoReverse"):
                     snd["autoReverse"] = normalize_bool(value)
                 elif attr == "at":
-                    snd["begin"] = value
+                    snd["begin"] = str(value)
                 else:
                     snd[attr] = normalize_bool(value)
             sounds.append(snd)
@@ -126,14 +147,14 @@ def convert_storyboard(node):
 
 
 def convert_element(node, schema):
-    obj = {"type": node.tag}
+    obj: dict = {"type": node.tag}
 
     if "name" in node.attrib:
-        obj["name"] = node.attrib["name"]
+        obj["name"] = str(node.attrib["name"])
     if "extra" in node.attrib:
         obj["extra"] = normalize_bool(node.attrib["extra"])
     if "importProperties" in node.attrib:
-        obj["importProperties"] = node.attrib["importProperties"]
+        obj["importProperties"] = str(node.attrib["importProperties"])
 
     filters = extract_filters(node.attrib)
     if filters:
@@ -176,7 +197,7 @@ def convert_element(node, schema):
             or not known_element
         ):
             value = (child.text or "").strip()
-            entry = {"name": prop_name, "value": value}
+            entry: dict = {"name": prop_name, "value": value}
             if child_filters:
                 entry["filters"] = child_filters
             props.append(entry)
@@ -196,20 +217,15 @@ def convert_element(node, schema):
 
 
 def convert_include(node, rewrite):
-    obj = {"type": "include"}
+    """Convert an XML include element to JSON format."""
+    obj: dict = {"type": "include"}
     path = (node.text or "").strip()
     if path:
         obj["path"] = rewrite_include_path(path, rewrite)
 
     for key in ("subset", "name", "displayName", "subSetDisplayName", "appliesTo"):
         if key in node.attrib:
-            # appliesTo is only valid in subsets, not in direct includes
-            if key == "appliesTo":
-                print(
-                    f"Warning: 'appliesTo' in include may not be valid outside a subset context",
-                    file=sys.stderr,
-                )
-            obj[key] = node.attrib[key]
+            obj[key] = str(node.attrib[key])
 
     filters = extract_filters(node.attrib)
     if filters:
@@ -219,19 +235,19 @@ def convert_include(node, rewrite):
 
 
 def convert_view(node, schema, node_type):
-    obj = {"type": node_type}
+    obj: dict = {"type": node_type}
     if "name" in node.attrib:
-        obj["name"] = node.attrib["name"]
+        obj["name"] = str(node.attrib["name"])
     if "displayName" in node.attrib:
-        obj["displayName"] = node.attrib["displayName"]
+        obj["displayName"] = str(node.attrib["displayName"])
     if "inherits" in node.attrib:
-        obj["inherits"] = node.attrib["inherits"]
+        obj["inherits"] = str(node.attrib["inherits"])
     if "extraTransition" in node.attrib:
-        obj["extraTransition"] = node.attrib["extraTransition"]
+        obj["extraTransition"] = str(node.attrib["extraTransition"])
     if "extraTransitionSpeed" in node.attrib:
-        obj["extraTransitionSpeed"] = node.attrib["extraTransitionSpeed"]
+        obj["extraTransitionSpeed"] = str(node.attrib["extraTransitionSpeed"])
     if "extraTransitionDirection" in node.attrib:
-        obj["extraTransitionDirection"] = node.attrib["extraTransitionDirection"]
+        obj["extraTransitionDirection"] = str(node.attrib["extraTransitionDirection"])
 
     filters = extract_filters(node.attrib)
     if filters:
@@ -248,15 +264,15 @@ def convert_view(node, schema, node_type):
 
 
 def convert_subset(node, schema, rewrite):
-    obj = {"type": "subset"}
+    obj: dict = {"type": "subset"}
     if "name" in node.attrib:
-        obj["name"] = node.attrib["name"]
+        obj["name"] = str(node.attrib["name"])
     if "displayName" in node.attrib:
-        obj["displayName"] = node.attrib["displayName"]
+        obj["displayName"] = str(node.attrib["displayName"])
     if "subSetDisplayName" in node.attrib:
-        obj["subSetDisplayName"] = node.attrib["subSetDisplayName"]
+        obj["subSetDisplayName"] = str(node.attrib["subSetDisplayName"])
     if "appliesTo" in node.attrib:
-        obj["appliesTo"] = node.attrib["appliesTo"]
+        obj["appliesTo"] = str(node.attrib["appliesTo"])
 
     filters = extract_filters(node.attrib)
     if filters:
@@ -274,9 +290,9 @@ def convert_subset(node, schema, rewrite):
 
 
 def convert_feature(node, schema, rewrite):
-    obj = {"type": "feature"}
+    obj: dict = {"type": "feature"}
     if "supported" in node.attrib:
-        obj["supported"] = node.attrib["supported"]
+        obj["supported"] = str(node.attrib["supported"])
 
     filters = extract_filters(node.attrib)
     if filters:
@@ -319,18 +335,31 @@ def convert_variables(root):
 
 
 def convert_theme(xml_path, schema, rewrite):
-    tree = ET.parse(xml_path)
-    root = tree.getroot()
-    if root.tag != "theme":
+    """Convert a theme XML file to JSON format."""
+    try:
+        tree = ET.parse(xml_path)
+    except ET.ParseError as exc:
+        print(f"Error: XML parse error in {xml_path}: {exc}", file=sys.stderr)
+        return None
+    except IOError as exc:
+        print(f"Error: Cannot read file {xml_path}: {exc}", file=sys.stderr)
         return None
 
-    theme = {}
-    if "defaultView" in root.attrib:
-        theme["defaultView"] = root.attrib["defaultView"]
-    if "defaultTransition" in root.attrib:
-        theme["defaultTransition"] = root.attrib["defaultTransition"]
+    root = tree.getroot()
+    if root.tag != "theme":
+        print(
+            f"Warning: {xml_path} does not have a <theme> root element, skipping",
+            file=sys.stderr,
+        )
+        return None
 
-    format_version = None
+    theme: dict = {}
+    if "defaultView" in root.attrib:
+        theme["defaultView"] = str(root.attrib["defaultView"])
+    if "defaultTransition" in root.attrib:
+        theme["defaultTransition"] = str(root.attrib["defaultTransition"])
+
+    format_version: int | float | None = None
     nodes = []
 
     for child in root:
@@ -347,6 +376,7 @@ def convert_theme(xml_path, schema, rewrite):
             continue
 
         if child.tag == "variables":
+            # Variables are handled separately by convert_variables()
             continue
 
         if child.tag == "include":
@@ -364,6 +394,7 @@ def convert_theme(xml_path, schema, rewrite):
         format_version = 7
     theme["formatVersion"] = format_version
 
+    # Process variables that are direct children of <theme>
     vars_entries = convert_variables(root)
     if vars_entries:
         theme["variables"] = vars_entries
@@ -386,27 +417,56 @@ def collect_xml_files(target):
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Convert ES theme XML to JSON.")
-    parser.add_argument("input", help="Theme XML file or directory.")
+    """Main entry point for the theme XML to JSON converter."""
+    parser = argparse.ArgumentParser(
+        description="Convert Emulation Station theme XML files to JSON format."
+    )
+    parser.add_argument("input", help="Theme XML file or directory to convert.")
     parser.add_argument(
-        "--output", help="Output file path (only for single input file)."
+        "--output", "-o", help="Output file path (only used for single input file)."
     )
     parser.add_argument(
         "--schema",
-        default=os.path.join("resources", "theme_schema.json"),
-        help="Path to theme_schema.json.",
+        "-s",
+        default=None,
+        help="Path to theme_schema.json (default: resources/theme_schema.json relative to script location).",
     )
     parser.add_argument(
         "--no-rewrite-includes",
         action="store_true",
         help="Do not rewrite .xml include paths to .json.",
     )
+    parser.add_argument(
+        "--verbose", "-v", action="store_true", help="Enable verbose output."
+    )
     args = parser.parse_args()
 
-    schema = load_schema(args.schema)
+    # Determine schema path
+    if args.schema:
+        schema_path = args.schema
+    else:
+        # Default: look for schema in resources/ relative to script location
+        script_dir = Path(__file__).parent
+        schema_path = script_dir / "resources" / "theme_schema.json"
+
+    schema_path = str(schema_path)
+
+    # Load schema
+    schema = load_schema(schema_path)
     rewrite_includes = not args.no_rewrite_includes
 
+    # Validate input path
+    if not os.path.exists(args.input):
+        print(f"Error: Input path does not exist: {args.input}", file=sys.stderr)
+        return 1
+
     xml_files = collect_xml_files(args.input)
+
+    if not xml_files:
+        print("No XML files found to convert.", file=sys.stderr)
+        return 1
+
+    # Determine output paths
     if len(xml_files) == 1 and args.output:
         output_paths = [args.output]
     else:
@@ -420,33 +480,53 @@ def main():
                 base, _ = os.path.splitext(xml_path)
                 output_paths.append(base + ".json")
 
+    if args.verbose:
+        print(f"Found {len(xml_files)} XML file(s) to convert:")
+        for xml_path in xml_files:
+            print(f"  - {xml_path}")
+
+    # Convert files
     converted = 0
+    failed = 0
+
     for xml_path, output_path in zip(xml_files, output_paths):
+        if args.verbose:
+            print(f"Converting: {xml_path} -> {output_path}")
+
         try:
             theme = convert_theme(xml_path, schema, rewrite_includes)
-        except ET.ParseError as exc:
-            print(f"Skipping {xml_path}: XML parse error {exc}", file=sys.stderr)
-            continue
         except Exception as exc:
             print(
-                f"Skipping {xml_path}: Unexpected error {type(exc).__name__}: {exc}",
+                f"Error converting {xml_path}: {type(exc).__name__}: {exc}",
                 file=sys.stderr,
             )
+            failed += 1
             continue
 
         if theme is None:
+            failed += 1
             continue
 
-        out_dir = os.path.dirname(output_path)
-        if out_dir:
-            os.makedirs(out_dir, exist_ok=True)
-        with open(output_path, "w", encoding="utf-8") as handle:
-            json.dump(theme, handle, indent=2)
-            handle.write("\n")
-        converted += 1
+        try:
+            out_dir = os.path.dirname(output_path)
+            if out_dir:
+                os.makedirs(out_dir, exist_ok=True)
+            with open(output_path, "w", encoding="utf-8") as handle:
+                json.dump(theme, handle, indent=2, ensure_ascii=False)
+                handle.write("\n")
+            converted += 1
+            if args.verbose:
+                print(f"  ✓ Successfully converted to {output_path}")
+        except IOError as exc:
+            print(f"Error writing output file {output_path}: {exc}", file=sys.stderr)
+            failed += 1
+
+    # Summary
+    print(
+        f"Conversion complete: {converted} file(s) converted, {failed} file(s) failed."
+    )
 
     if converted == 0:
-        print("No theme XML files converted.", file=sys.stderr)
         return 1
 
     return 0

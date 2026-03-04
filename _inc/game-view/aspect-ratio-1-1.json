@@ -185,7 +185,7 @@
                       "props": [
                         {
                           "name": "path",
-                          "value": "${themePath}/_inc/images/4-5.webp"
+                          "value": "${themePath}/_inc/images/backgrounds/4-5.webp"
                         },
                         {
                           "name": "pos",
@@ -216,7 +216,7 @@
                           "animations": [
                             {
                               "property": "path",
-                              "to": "${themePath}/_inc/images/4-5.webp"
+                              "to": "${themePath}/_inc/images/backgrounds/4-5.webp"
                             },
                             {
                               "property": "color",
@@ -241,7 +241,7 @@
                           "animations": [
                             {
                               "property": "path",
-                              "to": "${themePath}/_inc/images/4-5.webp"
+                              "to": "${themePath}/_inc/images/backgrounds/4-5.webp"
                             },
                             {
                               "property": "color",
@@ -258,7 +258,7 @@
                       "props": [
                         {
                           "name": "path",
-                          "value": "${themePath}/_inc/images/icon.webp"
+                          "value": "${themePath}/_inc/images/icons/icon.webp"
                         },
                         {
                           "name": "pos",
@@ -297,7 +297,7 @@
                       "props": [
                         {
                           "name": "path",
-                          "value": "${themePath}/_inc/images/4-5-bg.webp"
+                          "value": "${themePath}/_inc/images/backgrounds/4-5-bg.webp"
                         },
                         {
                           "name": "pos",
@@ -633,7 +633,7 @@
                   "props": [
                     {
                       "name": "path",
-                      "value": "${themePath}/_inc/images/icon.webp"
+                      "value": "${themePath}/_inc/images/icons/icon.webp"
                     },
                     {
                       "name": "pos",
@@ -682,7 +682,7 @@
                   "props": [
                     {
                       "name": "path",
-                      "value": "${themePath}/_inc/images/4-5-bg.webp"
+                      "value": "${themePath}/_inc/images/backgrounds/4-5-bg.webp"
                     },
                     {
                       "name": "pos",

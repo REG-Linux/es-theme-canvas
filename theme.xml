@@ -46,21 +46,21 @@ License: Creative Commons CC-BY-NC-SA
 	</subset>
 
 	<!-- Subset: Icon Scheme -->
-   <subset name="icon-scheme" displayName="System Icon Style">
-    <include name="icon" displayName="Icons" />
-    <include name="art" displayName="Art" />
-   </subset>
+	<subset name="icon-scheme" displayName="System Icon Style">
+		<include name="icon" displayName="Icons" />
+		<include name="art" displayName="Art" />
+	</subset>
 
 	<!-- Subset: Color Scheme -->
 	<subset name="color-scheme" displayName="Color Scheme">
-    <include name="retro" displayName="Retro" />
-    <include name="beige" displayName="Beige" />
-    <include name="dark" displayName="Dark" />
-    <include name="light" displayName="Light" />
-    <include name="neon" displayName="Neon" />
-    <include name="pastel" displayName="Pastel" />
-    <include name="purple" displayName="Purple" />
-  </subset>
+		<include name="retro" displayName="Retro" />
+		<include name="beige" displayName="Beige" />
+		<include name="dark" displayName="Dark" />
+		<include name="light" displayName="Light" />
+		<include name="neon" displayName="Neon" />
+		<include name="pastel" displayName="Pastel" />
+		<include name="purple" displayName="Purple" />
+	</subset>
 
 	<!-- Subset: Font Size -->
 	<subset name="font-size" displayName="Font Size">
@@ -122,7 +122,7 @@ License: Creative Commons CC-BY-NC-SA
 	<!-- Gamelist: Full Metadata Call -->
 	<view name="detailed, gamecarousel, grid">
 		<image name="playtime-logo" origin="0.5 0.5" linearSmooth="true" extra="true">
-			<path>${themePath}/_inc/images/playtime-icon.svg</path>
+			<path>${themePath}/_inc/images/icons/playtime-icon.svg</path>
 			<zIndex>${zUI}</zIndex>
 			<color>${gameMetadataColor}</color>
 			<opacity>${lowOpacity}</opacity>
@@ -165,8 +165,8 @@ License: Creative Commons CC-BY-NC-SA
 
 		<rating name="md_rating">
 			<origin>0.5 0.5</origin>
-			<filledPath>${themePath}/_inc/images/icon-star-filled.svg</filledPath>
-			<unfilledPath>${themePath}/_inc/images/icon-star-unfilled.svg</unfilledPath>
+			<filledPath>${themePath}/_inc/images/icons/icon-star-filled.svg</filledPath>
+			<unfilledPath>${themePath}/_inc/images/icons/icon-star-unfilled.svg</unfilledPath>
 			<color>${gameMetadataColor}</color>
 			<zIndex>${zMetadata}</zIndex>
 			<visible ifSubset="metadata-option:rating">true</visible>
@@ -275,7 +275,7 @@ License: Creative Commons CC-BY-NC-SA
 	</view>
 
 	<!-- Game Grid View -->
-	<include name="grid">${themePath}/_inc/game-view/grid.xml</include>
+	<include>${themePath}/_inc/game-view/grid.xml</include>
 
 	<!-- Off Metadata Toggle -->
 	<view name="detailed, gamecarousel, grid, grid-detailed" ifSubset="metadata:off">
