@@ -199,29 +199,6 @@
         },
         {
           "type": "image",
-          "name": "game-metadata-background-shadow-extended",
-          "extra": true,
-          "props": [
-            {
-              "name": "pos",
-              "value": "0.731 0.884"
-            },
-            {
-              "name": "size",
-              "value": "0.52161031952 0.13288403122"
-            },
-            {
-              "name": "path",
-              "value": "${themePath}/_inc/images/simple/gamelist-metadata-background-shadow-extended.webp"
-            },
-            {
-              "name": "zIndex",
-              "value": "${zBackgroundArt}"
-            }
-          ]
-        },
-        {
-          "type": "image",
           "name": "game-metadata-background-image-extended",
           "extra": true,
           "props": [
@@ -451,29 +428,6 @@
             {
               "name": "visible",
               "value": "false"
-            }
-          ]
-        },
-        {
-          "type": "image",
-          "name": "game-metadata-background-shadow-base",
-          "extra": true,
-          "props": [
-            {
-              "name": "pos",
-              "value": "0.725 0.88"
-            },
-            {
-              "name": "size",
-              "value": "0.54233312588 0.1771787083"
-            },
-            {
-              "name": "path",
-              "value": "${themePath}/_inc/images/simple/gamelist-metadata-background-shadow-base.webp"
-            },
-            {
-              "name": "zIndex",
-              "value": "${zBackgroundArt}"
             }
           ]
         },
