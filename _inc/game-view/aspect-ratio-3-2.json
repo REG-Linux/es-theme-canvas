@@ -204,11 +204,11 @@
           "props": [
             {
               "name": "pos",
-              "value": "0.731 0.884"
+              "value": "0.701 0.894"
             },
             {
               "name": "size",
-              "value": "0.45076433396 0.09612302346"
+              "value": "0.5288968185 0.08458826063"
             },
             {
               "name": "path",
@@ -226,11 +226,11 @@
           "props": [
             {
               "name": "pos",
-              "value": "0.621 0.911"
+              "value": "0.57 0.919"
             },
             {
               "name": "size",
-              "value": "0 0.0225"
+              "value": "0 0.019"
             }
           ]
         },
@@ -240,11 +240,11 @@
           "props": [
             {
               "name": "pos",
-              "value": "0.529 0.912"
+              "value": "0.464 0.919"
             },
             {
               "name": "size",
-              "value": "0.046 ${metaDatafontSize}"
+              "value": "0.05 ${metaDatafontSize}"
             },
             {
               "name": "fontSize",
@@ -258,11 +258,11 @@
           "props": [
             {
               "name": "pos",
-              "value": "0.529 0.856"
+              "value": "0.464 0.8695"
             },
             {
               "name": "size",
-              "value": ".31 ${metaDatafontSize}"
+              "value": ".364 ${metaDatafontSize}"
             },
             {
               "name": "fontSize",
@@ -286,11 +286,11 @@
           "props": [
             {
               "name": "pos",
-              "value": "0.6911 0.912"
+              "value": "0.654 0.919"
             },
             {
               "name": "size",
-              "value": "0.148 ${metaDatafontSize}"
+              "value": "0.174 ${metaDatafontSize}"
             },
             {
               "name": "fontSize",
@@ -329,11 +329,11 @@
             },
             {
               "name": "pos",
-              "value": "0.872 0.8556"
+              "value": "0.866 0.8695"
             },
             {
               "name": "size",
-              "value": "0.1 ${metaDatafontSize}"
+              "value": "0.099 ${metaDatafontSize}"
             },
             {
               "name": "fontSize",
@@ -348,11 +348,11 @@
           "props": [
             {
               "name": "pos",
-              "value": "0.872 0.912"
+              "value": "0.866 0.919"
             },
             {
               "name": "size",
-              "value": "0.084 ${metaDatafontSize}"
+              "value": "0.099 ${metaDatafontSize}"
             },
             {
               "name": "fontSize",
@@ -366,11 +366,11 @@
           "props": [
             {
               "name": "pos",
-              "value": "0.6041 0.912"
+              "value": "0.55 0.919"
             },
             {
               "name": "size",
-              "value": "0.056 ${metaDatafontSize}"
+              "value": "0.065 ${metaDatafontSize}"
             },
             {
               "name": "fontSize",
@@ -384,7 +384,7 @@
           "props": [
             {
               "name": "pos",
-              "value": "0.594 0.912"
+              "value": "0.542 0.9185"
             },
             {
               "name": "size",
@@ -438,11 +438,11 @@
           "props": [
             {
               "name": "pos",
-              "value": "0.725 0.88"
+              "value": "0.705 0.885"
             },
             {
               "name": "size",
-              "value": "0.46318654182 0.1281640313"
+              "value": "0.54347220906 0.11278434754"
             },
             {
               "name": "path",
@@ -460,11 +460,11 @@
           "props": [
             {
               "name": "pos",
-              "value": "0.647 0.918"
+              "value": "0.615 0.918"
             },
             {
               "name": "size",
-              "value": "0 0.03"
+              "value": "0 0.027"
             }
           ]
         },
@@ -474,11 +474,11 @@
           "props": [
             {
               "name": "pos",
-              "value": "0.524 0.918"
+              "value": "0.470 0.918"
             },
             {
               "name": "size",
-              "value": "0.06 ${metaDatafontSize}"
+              "value": "0.07 ${metaDatafontSize}"
             },
             {
               "name": "fontSize",
@@ -492,11 +492,11 @@
           "props": [
             {
               "name": "pos",
-              "value": "0.524 0.842"
+              "value": "0.472 0.8525"
             },
             {
               "name": "size",
-              "value": ".432 ${metaDatafontSize}"
+              "value": ".495 ${metaDatafontSize}"
             },
             {
               "name": "fontSize",
@@ -510,11 +510,11 @@
           "props": [
             {
               "name": "pos",
-              "value": "0.740 0.918"
+              "value": "0.723 0.9185"
             },
             {
               "name": "size",
-              "value": "0.215 ${metaDatafontSize}"
+              "value": "0.252 ${metaDatafontSize}"
             },
             {
               "name": "fontSize",
@@ -528,11 +528,11 @@
           "props": [
             {
               "name": "pos",
-              "value": "0.624 0.918"
+              "value": "0.583 0.9185"
             },
             {
               "name": "size",
-              "value": "0.072 ${metaDatafontSize}"
+              "value": "0.090 ${metaDatafontSize}"
             },
             {
               "name": "fontSize",
@@ -546,7 +546,7 @@
           "props": [
             {
               "name": "pos",
-              "value": "0.61 0.918"
+              "value": "0.57 0.9185"
             },
             {
               "name": "size",
@@ -575,7 +575,7 @@
             },
             {
               "name": "size",
-              "value": "0.4453125 0.8972222528"
+              "value": "0.48984375 0.8972222528"
             },
             {
               "name": "zIndex",
@@ -610,11 +610,11 @@
             },
             {
               "name": "size",
-              "value": "0.4140625 0.84166666666"
+              "value": "0.45546875 0.84166666666"
             },
             {
               "name": "zIndex",
-              "value": "${zBackgroundArt}"
+              "value": "${zUI}"
             },
             {
               "name": "linearSmooth",
@@ -707,7 +707,7 @@
           "props": [
             {
               "name": "pos",
-              "value": "0.25 0.28"
+              "value": "0.255 0.28"
             },
             {
               "name": "maxSize",
@@ -726,11 +726,11 @@
           "props": [
             {
               "name": "pos",
-              "value": "0.25 0.66058187797"
+              "value": "0.255 0.67058187797"
             },
             {
               "name": "size",
-              "value": "0.41089191099 0.36407719227"
+              "value": "0.49307029318 0.35497526246"
             },
             {
               "name": "path",
@@ -749,11 +749,11 @@
           "props": [
             {
               "name": "pos",
-              "value": "0.25 0.66058187797"
+              "value": "0.255 0.67058187797"
             },
             {
               "name": "size",
-              "value": "0.386 0.31916375594"
+              "value": "0.4632 0.31118466204"
             },
             {
               "name": "path",
@@ -771,11 +771,11 @@
           "props": [
             {
               "name": "pos",
-              "value": "0.1056875 0.561"
+              "value": "0.0825 0.575"
             },
             {
               "name": "size",
-              "value": "0 ${metaDatafontSize}"
+              "value": "0 0.025"
             }
           ]
         },
@@ -785,7 +785,7 @@
           "props": [
             {
               "name": "pos",
-              "value": "0.0771875 0.605"
+              "value": "0.050 0.618"
             },
             {
               "name": "size",
@@ -803,11 +803,11 @@
           "props": [
             {
               "name": "pos",
-              "value": "0.0771875 0.517"
+              "value": "0.050 0.532"
             },
             {
               "name": "size",
-              "value": "0.365 ${metaDatafontSize}"
+              "value": "0.435 ${metaDatafontSize}"
             },
             {
               "name": "fontSize",
@@ -821,7 +821,7 @@
           "props": [
             {
               "name": "pos",
-              "value": "0.0771875 0.651"
+              "value": "0.050 0.662"
             },
             {
               "name": "size",
@@ -839,11 +839,11 @@
           "props": [
             {
               "name": "pos",
-              "value": "0.1831875 0.562"
+              "value": "0.175 0.5745"
             },
             {
               "name": "size",
-              "value": "0.258 ${metaDatafontSize}"
+              "value": "0.31 ${metaDatafontSize}"
             },
             {
               "name": "fontSize",
@@ -857,11 +857,11 @@
           "props": [
             {
               "name": "pos",
-              "value": "0.1831875 0.606"
+              "value": "0.175 0.618"
             },
             {
               "name": "size",
-              "value": "0.146 ${metaDatafontSize}"
+              "value": "0.175 ${metaDatafontSize}"
             },
             {
               "name": "fontSize",
@@ -876,11 +876,11 @@
           "props": [
             {
               "name": "pos",
-              "value": "0.1831875 0.651"
+              "value": "0.175 0.662"
             },
             {
               "name": "size",
-              "value": "0.146 ${metaDatafontSize}"
+              "value": "0.175 ${metaDatafontSize}"
             },
             {
               "name": "fontSize",
@@ -898,11 +898,11 @@
             },
             {
               "name": "pos",
-              "value": "0.3576875 0.606"
+              "value": "0.385 0.618"
             },
             {
               "name": "size",
-              "value": "0.084 ${metaDatafontSize}"
+              "value": "0.1 ${metaDatafontSize}"
             },
             {
               "name": "fontSize",
@@ -917,11 +917,11 @@
           "props": [
             {
               "name": "pos",
-              "value": "0.3576875 0.651"
+              "value": "0.385 0.662"
             },
             {
               "name": "size",
-              "value": "0.084 ${metaDatafontSize}"
+              "value": "0.1 ${metaDatafontSize}"
             },
             {
               "name": "fontSize",
@@ -935,11 +935,11 @@
           "props": [
             {
               "name": "pos",
-              "value": "0.25 ${descriptionPos}"
+              "value": "0.255 ${descriptionPos}"
             },
             {
               "name": "size",
-              "value": "0.3768 ${descriptionHeight}"
+              "value": "0.45 ${descriptionHeight}"
             },
             {
               "name": "fontSize",
@@ -961,11 +961,11 @@
           "props": [
             {
               "name": "pos",
-              "value": "0.0771875 0.562"
+              "value": "0.050 0.5745"
             },
             {
               "name": "size",
-              "value": "0.07 ${metaDatafontSize}"
+              "value": "0.086 ${metaDatafontSize}"
             },
             {
               "name": "fontSize",
@@ -979,11 +979,11 @@
           "props": [
             {
               "name": "pos",
-              "value": "0.067 0.562"
+              "value": "0.036 0.5745"
             },
             {
               "name": "size",
-              "value": "0 0.023"
+              "value": "0 0.021"
             }
           ]
         }
@@ -1002,7 +1002,7 @@
           "props": [
             {
               "name": "pos",
-              "value": "0.25 0.28"
+              "value": "0.255 0.28"
             },
             {
               "name": "maxSize",
@@ -1066,11 +1066,11 @@
           "props": [
             {
               "name": "pos",
-              "value": "0.2075 0.61"
+              "value": "0.208 0.61"
             },
             {
               "name": "size",
-              "value": "0 ${metaDatafontSize}"
+              "value": "0 0.027"
             }
           ]
         },
@@ -1080,11 +1080,11 @@
           "props": [
             {
               "name": "pos",
-              "value": "0.0625 0.608"
+              "value": "0.061 0.608"
             },
             {
               "name": "size",
-              "value": "0.068 ${metaDatafontSize}"
+              "value": "0.075 ${metaDatafontSize}"
             },
             {
               "name": "fontSize",
@@ -1160,11 +1160,11 @@
           "props": [
             {
               "name": "pos",
-              "value": "0.177 0.608"
+              "value": "0.182 0.608"
             },
             {
               "name": "size",
-              "value": "0.094 ${metaDatafontSize}"
+              "value": "0.09 ${metaDatafontSize}"
             },
             {
               "name": "fontSize",
@@ -1182,7 +1182,7 @@
             },
             {
               "name": "size",
-              "value": "0 0.035"
+              "value": "0 0.030"
             }
           ]
         }
