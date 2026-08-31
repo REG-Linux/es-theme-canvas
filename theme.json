@@ -53,6 +53,14 @@
         },
         {
           "type": "include",
+          "name": "3-2-auto",
+          "displayName": "Automatic",
+          "filters": {
+            "if": "{screen.ratio} == '3/2'"
+          }
+        },
+        {
+          "type": "include",
           "name": "16-9",
           "displayName": "16:9"
         },
@@ -65,6 +73,11 @@
           "type": "include",
           "name": "4-3",
           "displayName": "4:3"
+        },
+        {
+          "type": "include",
+          "name": "3-2",
+          "displayName": "3:2"
         },
         {
           "type": "include",
@@ -306,6 +319,13 @@
       "path": "${themePath}/_inc/variables/aspect-ratio-4-3-variables.json",
       "filters": {
         "ifSubset": "aspect-ratio:4-3|4-3-auto"
+      }
+    },
+    {
+      "type": "include",
+      "path": "${themePath}/_inc/variables/aspect-ratio-3-2-variables.json",
+      "filters": {
+        "ifSubset": "aspect-ratio:3-2|3-2-auto"
       }
     },
     {
@@ -1066,6 +1086,13 @@
       "path": "${themePath}/_inc/game-view/aspect-ratio-4-3.json",
       "filters": {
         "ifSubset": "aspect-ratio:4-3|4-3-auto"
+      }
+    },
+    {
+      "type": "include",
+      "path": "${themePath}/_inc/game-view/aspect-ratio-3-2.json",
+      "filters": {
+        "ifSubset": "aspect-ratio:3-2|3-2-auto"
       }
     },
     {

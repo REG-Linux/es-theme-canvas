@@ -1,0 +1,333 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "itemcount",
+      "value": "3.5",
+      "filters": {
+        "ifSubset": "font-size:small"
+      }
+    },
+    {
+      "key": "itemsize",
+      "value": "0.293 0.36",
+      "filters": {
+        "ifSubset": "font-size:small"
+      }
+    },
+    {
+      "key": "logospacing",
+      "value": "1.2",
+      "filters": {
+        "ifSubset": "font-size:small"
+      }
+    },
+    {
+      "key": "gamelistBackgroundImageCalculated",
+      "value": "${themePath}/_inc/images/gamelist/${gamelistBackgroundImage}-small.webp",
+      "filters": {
+        "ifSubset": "font-size:small",
+        "cache": "true"
+      }
+    },
+    {
+      "key": "gamelistSelectorHeight",
+      "value": "0.041",
+      "filters": {
+        "ifSubset": "font-size:small"
+      }
+    },
+    {
+      "key": "gamelistPos",
+      "value": "0.557291666666667 0.117666666666667",
+      "filters": {
+        "ifSubset": "font-size:small"
+      }
+    },
+    {
+      "key": "gamelistSize",
+      "value": "0.38375 0.786",
+      "filters": {
+        "ifSubset": "font-size:small"
+      }
+    },
+    {
+      "key": "itemSizeCarousel",
+      "value": "0.22 0.27",
+      "filters": {
+        "ifSubset": "font-size:small"
+      }
+    },
+    {
+      "key": "descriptionPos",
+      "value": "0.69",
+      "filters": {
+        "ifSubset": "font-size:small"
+      }
+    },
+    {
+      "key": "descriptionHeight",
+      "value": "0.135",
+      "filters": {
+        "ifSubset": "font-size:small"
+      }
+    },
+    {
+      "key": "descriptionLineSpacing",
+      "value": "1.35",
+      "filters": {
+        "ifSubset": "font-size:small"
+      }
+    },
+    {
+      "key": "linecount",
+      "value": "16",
+      "filters": {
+        "ifSubset": "font-size:small"
+      }
+    },
+    {
+      "key": "itemcount",
+      "value": "3",
+      "filters": {
+        "ifSubset": "font-size:medium"
+      }
+    },
+    {
+      "key": "itemsize",
+      "value": "0.34 0.46",
+      "filters": {
+        "ifSubset": "font-size:medium"
+      }
+    },
+    {
+      "key": "logospacing",
+      "value": "0.2",
+      "filters": {
+        "ifSubset": "font-size:medium"
+      }
+    },
+    {
+      "key": "gamelistBackgroundImageCalculated",
+      "value": "${themePath}/_inc/images/gamelist/${gamelistBackgroundImage}-medium.webp",
+      "filters": {
+        "ifSubset": "font-size:medium",
+        "cache": "true"
+      }
+    },
+    {
+      "key": "gamelistSelectorHeight",
+      "value": "0.051388888888889",
+      "filters": {
+        "ifSubset": "font-size:medium"
+      }
+    },
+    {
+      "key": "gamelistPos",
+      "value": "0.559591666666667 0.133666666666667",
+      "filters": {
+        "ifSubset": "font-size:medium"
+      }
+    },
+    {
+      "key": "gamelistSize",
+      "value": "0.38275 0.7515",
+      "filters": {
+        "ifSubset": "font-size:medium"
+      }
+    },
+    {
+      "key": "itemSizeCarousel",
+      "value": "0.22 0.27",
+      "filters": {
+        "ifSubset": "font-size:medium"
+      }
+    },
+    {
+      "key": "descriptionPos",
+      "value": "0.656",
+      "filters": {
+        "ifSubset": "font-size:medium"
+      }
+    },
+    {
+      "key": "descriptionHeight",
+      "value": "0.155",
+      "filters": {
+        "ifSubset": "font-size:medium"
+      }
+    },
+    {
+      "key": "descriptionLineSpacing",
+      "value": "1.5",
+      "filters": {
+        "ifSubset": "font-size:medium"
+      }
+    },
+    {
+      "key": "linecount",
+      "value": "12",
+      "filters": {
+        "ifSubset": "font-size:medium"
+      }
+    },
+    {
+      "key": "itemcount",
+      "value": "1.5",
+      "filters": {
+        "ifSubset": "font-size:large"
+      }
+    },
+    {
+      "key": "itemsize",
+      "value": "0.44 0.54",
+      "filters": {
+        "ifSubset": "font-size:large"
+      }
+    },
+    {
+      "key": "logospacing",
+      "value": "-0.75",
+      "filters": {
+        "ifSubset": "font-size:large"
+      }
+    },
+    {
+      "key": "gamelistBackgroundImageCalculated",
+      "value": "${themePath}/_inc/images/gamelist/${gamelistBackgroundImage}-large.webp",
+      "filters": {
+        "ifSubset": "font-size:large",
+        "cache": "true"
+      }
+    },
+    {
+      "key": "gamelistSelectorHeight",
+      "value": "0.066",
+      "filters": {
+        "ifSubset": "font-size:large"
+      }
+    },
+    {
+      "key": "gamelistPos",
+      "value": "0.559591666666667 0.129166666666667",
+      "filters": {
+        "ifSubset": "font-size:large"
+      }
+    },
+    {
+      "key": "gamelistSize",
+      "value": "0.38275 0.763",
+      "filters": {
+        "ifSubset": "font-size:large"
+      }
+    },
+    {
+      "key": "itemSizeCarousel",
+      "value": "0.22 0.27",
+      "filters": {
+        "ifSubset": "font-size:large"
+      }
+    },
+    {
+      "key": "descriptionPos",
+      "value": "0.656",
+      "filters": {
+        "ifSubset": "font-size:large"
+      }
+    },
+    {
+      "key": "descriptionHeight",
+      "value": "0.155",
+      "filters": {
+        "ifSubset": "font-size:large"
+      }
+    },
+    {
+      "key": "descriptionLineSpacing",
+      "value": "1.6",
+      "filters": {
+        "ifSubset": "font-size:large"
+      }
+    },
+    {
+      "key": "linecount",
+      "value": "10",
+      "filters": {
+        "ifSubset": "font-size:large"
+      }
+    },
+    {
+      "key": "helpPos",
+      "value": "0.97"
+    },
+    {
+      "key": "CornersGrid",
+      "value": "7"
+    },
+    {
+      "key": "CornersSmall",
+      "value": "14"
+    },
+    {
+      "key": "CornersMedium",
+      "value": "25"
+    },
+    {
+      "key": "CornersLarge",
+      "value": "45"
+    },
+    {
+      "key": "controllerActivityPos",
+      "value": "0.720"
+    },
+    {
+      "key": "topBarFontSize",
+      "value": "0.026",
+      "filters": {
+        "verticalScreen": "true"
+      }
+    },
+    {
+      "key": "bottomBarFontSize",
+      "value": "0.026",
+      "filters": {
+        "verticalScreen": "true"
+      }
+    },
+    {
+      "key": "systemDescriptionFontSize",
+      "value": "0.024",
+      "filters": {
+        "verticalScreen": "true"
+      }
+    },
+    {
+      "key": "systemYearFontSize",
+      "value": "0.024",
+      "filters": {
+        "verticalScreen": "true"
+      }
+    },
+    {
+      "key": "gamelistFontSize",
+      "value": "0.024",
+      "filters": {
+        "verticalScreen": "true"
+      }
+    },
+    {
+      "key": "metaDatafontSize",
+      "value": "0.026",
+      "filters": {
+        "verticalScreen": "true"
+      }
+    },
+    {
+      "key": "descriptionFontSize",
+      "value": "0.024",
+      "filters": {
+        "verticalScreen": "true"
+      }
+    }
+  ]
+}
