@@ -5863,6 +5863,20 @@
       "id": "menu",
       "children": [
         {
+          "type": "image",
+          "id": "dim",
+          "src": ":/scroll_gradient.png",
+          "fit": "fill",
+          "visible": "{!dialog.open}",
+          "style": {
+            "position": "absolute",
+            "left": 0,
+            "top": 0,
+            "width": "100%",
+            "height": "100%"
+          }
+        },
+        {
           "id": "menuBox",
           "style": {
             "position": "absolute",
@@ -7122,6 +7136,19 @@
     "dialog": {
       "id": "dialog",
       "children": [
+        {
+          "type": "image",
+          "id": "dim",
+          "src": ":/scroll_gradient.png",
+          "fit": "fill",
+          "style": {
+            "position": "absolute",
+            "left": 0,
+            "top": 0,
+            "width": "100%",
+            "height": "100%"
+          }
+        },
         {
           "id": "dialogBox",
           "style": {
