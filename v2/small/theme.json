@@ -1896,6 +1896,23 @@
       "default": "$gamelist/grid.gamegrid.template.states.selected.style.scale",
       "large": 1.2,
       "medium": 1.2
+    },
+    "selected.systemBack": {
+      "style": {
+        "opacity": 1.0
+      },
+      "transitions": {
+        "opacity": {
+          "duration": 250,
+          "easing": "easeOutQuad"
+        }
+      }
+    },
+    "selected.button": {
+      "style": {
+        "tint": "$gamelistSelectorColor",
+        "borderImage": "../../_inc/images/menu/button_filled.png"
+      }
     }
   },
   "defs": {
@@ -2023,6 +2040,370 @@
         }
       }
     },
+    "container": {
+      "type": "box",
+      "id": "container",
+      "style": {
+        "position": "absolute",
+        "left": 0,
+        "top": 0,
+        "width": "100%",
+        "height": "100%"
+      },
+      "children": [
+        {
+          "id": "container-content",
+          "style": {
+            "position": "absolute",
+            "left": 10.0,
+            "top": 10.0,
+            "right": 10.0,
+            "bottom": 10.0
+          },
+          "children": [
+            {
+              "type": "image",
+              "id": "selector",
+              "fit": "contain",
+              "position": [
+                "50%",
+                "50%"
+              ],
+              "src": "../../_inc/images/backgrounds/4-5.webp",
+              "style": {
+                "position": "absolute",
+                "left": "50%",
+                "top": "50%",
+                "maxWidth": "100%",
+                "maxHeight": "100%",
+                "translate": [
+                  "-50%",
+                  "-50%"
+                ],
+                "zIndex": 8.0
+              },
+              "tint": "#00000000",
+              "states": {
+                "selected": {
+                  "animations": "$system.imagegrid.template.container.container-content.selector.states.selected.animations",
+                  "style": {}
+                }
+              }
+            },
+            {
+              "use": "backdrop"
+            },
+            {
+              "type": "image",
+              "id": "shade",
+              "fit": "contain",
+              "position": [
+                "50%",
+                "50%"
+              ],
+              "src": "../../_inc/images/backgrounds/4-5-bg.webp",
+              "style": {
+                "position": "absolute",
+                "left": "50%",
+                "top": "50%",
+                "maxWidth": "100%",
+                "maxHeight": "100%",
+                "translate": [
+                  "-50%",
+                  "-50%"
+                ],
+                "opacity": 0.6,
+                "zIndex": 2.0
+              }
+            },
+            {
+              "type": "image",
+              "id": "systemBack",
+              "fit": "contain",
+              "position": [
+                "50%",
+                "50%"
+              ],
+              "src": "{firstFile(\"$(themeDir)/../../_inc/systems/carousel-icons-icons/\" + item.theme + \".webp\",\"$(themeDir)/../../_inc/systems/carousel-icons-icons/_default.webp\")}",
+              "style": {
+                "position": "absolute",
+                "left": "50%",
+                "top": "45%",
+                "maxWidth": "80%",
+                "maxHeight": "90%",
+                "translate": [
+                  "-50%",
+                  "-50%"
+                ],
+                "zIndex": 2.0,
+                "opacity": 0.8999
+              },
+              "states": {
+                "selected": "$selected.systemBack"
+              },
+              "transitions": {
+                "opacity": {
+                  "duration": 250,
+                  "easing": "easeOutQuad"
+                }
+              }
+            },
+            {
+              "type": "image",
+              "id": "theLogoImage",
+              "fit": "contain",
+              "position": [
+                "50%",
+                "50%"
+              ],
+              "src": "../../_inc/systems/logos/{item.theme}.svg",
+              "style": {
+                "position": "absolute",
+                "left": "50%",
+                "top": "72%",
+                "maxWidth": "45%",
+                "maxHeight": "25%",
+                "translate": [
+                  "-50%",
+                  "-50%"
+                ],
+                "zIndex": 5.0
+              },
+              "tint": "$systemInfoColor"
+            },
+            {
+              "type": "box",
+              "id": "container",
+              "style": {
+                "position": "absolute",
+                "left": 0,
+                "top": 0,
+                "width": "100%",
+                "height": "100%",
+                "opacity": 0.8999
+              },
+              "states": {
+                "selected": {
+                  "style": {
+                    "opacity": 1.0
+                  }
+                }
+              },
+              "transitions": {
+                "opacity": {
+                  "duration": 250,
+                  "easing": "easeOutQuad"
+                }
+              },
+              "children": [
+                {
+                  "use": "fallbackText"
+                }
+              ]
+            }
+          ],
+          "if": {
+            "icon-scheme": [
+              "icon"
+            ]
+          }
+        },
+        {
+          "type": "image",
+          "id": "selector",
+          "src": "../../_inc/images/backgrounds/square.svg",
+          "style": {
+            "position": "absolute",
+            "left": "50%",
+            "top": "47.5%",
+            "width": "65%",
+            "height": "84%",
+            "translate": [
+              "-50%",
+              "-50%"
+            ],
+            "zIndex": 8.0
+          },
+          "tint": "#00000000",
+          "states": {
+            "selected": {
+              "animations": [
+                {
+                  "property": "tint",
+                  "keyframes": [
+                    [
+                      0,
+                      "#ebca8000"
+                    ],
+                    [
+                      1000,
+                      "#ebca80ff"
+                    ]
+                  ],
+                  "easing": "easeOutQuad",
+                  "loop": true
+                },
+                {
+                  "property": "tint",
+                  "keyframes": [
+                    [
+                      1500,
+                      "#ebca80ff"
+                    ],
+                    [
+                      2500,
+                      "#ebca8000"
+                    ]
+                  ],
+                  "easing": "easeOutQuad",
+                  "loop": true
+                }
+              ]
+            }
+          },
+          "if": {
+            "icon-scheme": [
+              "art"
+            ]
+          }
+        },
+        {
+          "type": "image",
+          "id": "shade",
+          "fit": "contain",
+          "position": [
+            "50%",
+            "100%"
+          ],
+          "src": "../../_inc/images/backgrounds/square-bg.webp",
+          "style": {
+            "position": "absolute",
+            "left": "50%",
+            "top": "77%",
+            "maxWidth": "84%",
+            "maxHeight": "74%",
+            "translate": [
+              "-50%",
+              "-100%"
+            ],
+            "zIndex": 2.0
+          },
+          "if": {
+            "icon-scheme": [
+              "art"
+            ]
+          }
+        },
+        {
+          "type": "image",
+          "id": "systemBack",
+          "fit": "contain",
+          "position": [
+            "50%",
+            "100%"
+          ],
+          "src": "{firstFile(\"$(themeDir)/../../_inc/systems/carousel-icons-art/\" + item.theme + \".webp\",\"$(themeDir)/../../_inc/systems/carousel-icons-art/_default.webp\")}",
+          "style": {
+            "position": "absolute",
+            "left": "50%",
+            "top": "71%",
+            "maxWidth": "74%",
+            "maxHeight": "64%",
+            "translate": [
+              "-50%",
+              "-100%"
+            ],
+            "zIndex": 2.0,
+            "opacity": 0.8999
+          },
+          "states": {
+            "selected": "$selected.systemBack"
+          },
+          "transitions": {
+            "opacity": {
+              "duration": 250,
+              "easing": "easeOutQuad"
+            }
+          },
+          "if": {
+            "icon-scheme": [
+              "art"
+            ]
+          }
+        },
+        {
+          "type": "image",
+          "id": "theLogoImage",
+          "fit": "contain",
+          "position": [
+            "50%",
+            "0%"
+          ],
+          "src": "../../_inc/systems/logos/{item.theme}.svg",
+          "style": {
+            "position": "absolute",
+            "left": "50%",
+            "top": "75.5%",
+            "maxWidth": "60%",
+            "maxHeight": "18%",
+            "translate": [
+              "-50%",
+              "-0%"
+            ],
+            "zIndex": 5.0
+          },
+          "if": {
+            "icon-scheme": [
+              "art"
+            ]
+          }
+        },
+        {
+          "use": "fallbackText",
+          "fontSize": "2.6vmin",
+          "style": {
+            "top": "85%",
+            "width": "80%",
+            "color": "#ffffffff"
+          },
+          "if": {
+            "icon-scheme": [
+              "art"
+            ]
+          }
+        },
+        {
+          "type": "box",
+          "id": "container",
+          "style": {
+            "position": "absolute",
+            "left": 0,
+            "top": 0,
+            "width": "100%",
+            "height": "100%",
+            "opacity": 0.8999
+          },
+          "states": {
+            "selected": {
+              "style": {
+                "opacity": 1.0
+              }
+            }
+          },
+          "transitions": {
+            "opacity": {
+              "duration": 250,
+              "easing": "easeOutQuad"
+            }
+          },
+          "if": {
+            "icon-scheme": [
+              "art"
+            ]
+          }
+        }
+      ]
+    },
     "icon": {
       "type": "image",
       "id": "icon",
@@ -2070,71 +2451,6 @@
           "style": {
             "visible": true
           }
-        }
-      }
-    },
-    "shade": {
-      "type": "image",
-      "id": "shade",
-      "fit": "contain",
-      "position": [
-        "50%",
-        "50%"
-      ],
-      "src": "../../_inc/images/backgrounds/4-5-bg.webp",
-      "style": {
-        "position": "absolute",
-        "left": "50%",
-        "top": "50%",
-        "maxWidth": "100%",
-        "maxHeight": "100%",
-        "translate": [
-          "-50%",
-          "-50%"
-        ],
-        "opacity": 0.6,
-        "zIndex": 2.0
-      }
-    },
-    "systemBack": {
-      "type": "image",
-      "id": "systemBack",
-      "fit": "contain",
-      "position": [
-        "50%",
-        "50%"
-      ],
-      "src": "{firstFile(\"$(themeDir)/../../_inc/systems/carousel-icons-icons/\" + item.theme + \".webp\",\"$(themeDir)/../../_inc/systems/carousel-icons-icons/_default.webp\")}",
-      "style": {
-        "position": "absolute",
-        "left": "50%",
-        "top": "45%",
-        "maxWidth": "80%",
-        "maxHeight": "90%",
-        "translate": [
-          "-50%",
-          "-50%"
-        ],
-        "zIndex": 2.0,
-        "opacity": 0.8999
-      },
-      "states": {
-        "selected": {
-          "style": {
-            "opacity": 1.0
-          },
-          "transitions": {
-            "opacity": {
-              "duration": 250,
-              "easing": "easeOutQuad"
-            }
-          }
-        }
-      },
-      "transitions": {
-        "opacity": {
-          "duration": 250,
-          "easing": "easeOutQuad"
         }
       }
     },
@@ -2245,12 +2561,7 @@
           ]
         },
         "states": {
-          "selected": {
-            "style": {
-              "tint": "$gamelistSelectorColor",
-              "borderImage": "../../_inc/images/menu/button_filled.png"
-            }
-          }
+          "selected": "$selected.button"
         },
         "children": [
           {
@@ -2974,304 +3285,7 @@
             "id": "tile",
             "children": [
               {
-                "type": "box",
-                "id": "container",
-                "style": {
-                  "position": "absolute",
-                  "left": 0,
-                  "top": 0,
-                  "width": "100%",
-                  "height": "100%"
-                },
-                "children": [
-                  {
-                    "id": "container-content",
-                    "style": {
-                      "position": "absolute",
-                      "left": 10.0,
-                      "top": 10.0,
-                      "right": 10.0,
-                      "bottom": 10.0
-                    },
-                    "children": [
-                      {
-                        "type": "image",
-                        "id": "selector",
-                        "fit": "contain",
-                        "position": [
-                          "50%",
-                          "50%"
-                        ],
-                        "src": "../../_inc/images/backgrounds/4-5.webp",
-                        "style": {
-                          "position": "absolute",
-                          "left": "50%",
-                          "top": "50%",
-                          "maxWidth": "100%",
-                          "maxHeight": "100%",
-                          "translate": [
-                            "-50%",
-                            "-50%"
-                          ],
-                          "zIndex": 8.0
-                        },
-                        "tint": "#00000000",
-                        "states": {
-                          "selected": {
-                            "animations": "$system.imagegrid.template.container.container-content.selector.states.selected.animations",
-                            "style": {}
-                          }
-                        }
-                      },
-                      {
-                        "use": "backdrop"
-                      },
-                      {
-                        "use": "shade"
-                      },
-                      {
-                        "use": "systemBack"
-                      },
-                      {
-                        "type": "image",
-                        "id": "theLogoImage",
-                        "fit": "contain",
-                        "position": [
-                          "50%",
-                          "50%"
-                        ],
-                        "src": "../../_inc/systems/logos/{item.theme}.svg",
-                        "style": {
-                          "position": "absolute",
-                          "left": "50%",
-                          "top": "72%",
-                          "maxWidth": "45%",
-                          "maxHeight": "25%",
-                          "translate": [
-                            "-50%",
-                            "-50%"
-                          ],
-                          "zIndex": 5.0
-                        },
-                        "tint": "$systemInfoColor"
-                      },
-                      {
-                        "type": "box",
-                        "id": "container",
-                        "style": {
-                          "position": "absolute",
-                          "left": 0,
-                          "top": 0,
-                          "width": "100%",
-                          "height": "100%",
-                          "opacity": 0.8999
-                        },
-                        "states": {
-                          "selected": {
-                            "style": {
-                              "opacity": 1.0
-                            }
-                          }
-                        },
-                        "transitions": {
-                          "opacity": {
-                            "duration": 250,
-                            "easing": "easeOutQuad"
-                          }
-                        },
-                        "children": [
-                          {
-                            "use": "fallbackText"
-                          }
-                        ]
-                      }
-                    ],
-                    "if": {
-                      "icon-scheme": [
-                        "icon"
-                      ]
-                    }
-                  },
-                  {
-                    "type": "image",
-                    "id": "selector",
-                    "src": "../../_inc/images/backgrounds/square.svg",
-                    "style": {
-                      "position": "absolute",
-                      "left": "50%",
-                      "top": "47.5%",
-                      "width": "65%",
-                      "height": "84%",
-                      "translate": [
-                        "-50%",
-                        "-50%"
-                      ],
-                      "zIndex": 8.0
-                    },
-                    "tint": "#00000000",
-                    "states": {
-                      "selected": {
-                        "animations": [
-                          {
-                            "property": "tint",
-                            "keyframes": [
-                              [
-                                0,
-                                "#ebca8000"
-                              ],
-                              [
-                                1000,
-                                "#ebca80ff"
-                              ]
-                            ],
-                            "easing": "easeOutQuad",
-                            "loop": true
-                          },
-                          {
-                            "property": "tint",
-                            "keyframes": [
-                              [
-                                1500,
-                                "#ebca80ff"
-                              ],
-                              [
-                                2500,
-                                "#ebca8000"
-                              ]
-                            ],
-                            "easing": "easeOutQuad",
-                            "loop": true
-                          }
-                        ]
-                      }
-                    },
-                    "if": {
-                      "icon-scheme": [
-                        "art"
-                      ]
-                    }
-                  },
-                  {
-                    "type": "image",
-                    "id": "shade",
-                    "fit": "contain",
-                    "position": [
-                      "50%",
-                      "100%"
-                    ],
-                    "src": "../../_inc/images/backgrounds/square-bg.webp",
-                    "style": {
-                      "position": "absolute",
-                      "left": "50%",
-                      "top": "77%",
-                      "maxWidth": "84%",
-                      "maxHeight": "74%",
-                      "translate": [
-                        "-50%",
-                        "-100%"
-                      ],
-                      "zIndex": 2.0
-                    },
-                    "if": {
-                      "icon-scheme": [
-                        "art"
-                      ]
-                    }
-                  },
-                  {
-                    "use": "systemBack",
-                    "position": [
-                      "50%",
-                      "100%"
-                    ],
-                    "src": "{firstFile(\"$(themeDir)/../../_inc/systems/carousel-icons-art/\" + item.theme + \".webp\",\"$(themeDir)/../../_inc/systems/carousel-icons-art/_default.webp\")}",
-                    "style": {
-                      "top": "71%",
-                      "maxWidth": "74%",
-                      "maxHeight": "64%",
-                      "translate": [
-                        "-50%",
-                        "-100%"
-                      ]
-                    },
-                    "if": {
-                      "icon-scheme": [
-                        "art"
-                      ]
-                    }
-                  },
-                  {
-                    "type": "image",
-                    "id": "theLogoImage",
-                    "fit": "contain",
-                    "position": [
-                      "50%",
-                      "0%"
-                    ],
-                    "src": "../../_inc/systems/logos/{item.theme}.svg",
-                    "style": {
-                      "position": "absolute",
-                      "left": "50%",
-                      "top": "75.5%",
-                      "maxWidth": "60%",
-                      "maxHeight": "18%",
-                      "translate": [
-                        "-50%",
-                        "-0%"
-                      ],
-                      "zIndex": 5.0
-                    },
-                    "if": {
-                      "icon-scheme": [
-                        "art"
-                      ]
-                    }
-                  },
-                  {
-                    "use": "fallbackText",
-                    "fontSize": "2.6vmin",
-                    "style": {
-                      "top": "85%",
-                      "width": "80%",
-                      "color": "#ffffffff"
-                    },
-                    "if": {
-                      "icon-scheme": [
-                        "art"
-                      ]
-                    }
-                  },
-                  {
-                    "type": "box",
-                    "id": "container",
-                    "style": {
-                      "position": "absolute",
-                      "left": 0,
-                      "top": 0,
-                      "width": "100%",
-                      "height": "100%",
-                      "opacity": 0.8999
-                    },
-                    "states": {
-                      "selected": {
-                        "style": {
-                          "opacity": 1.0
-                        }
-                      }
-                    },
-                    "transitions": {
-                      "opacity": {
-                        "duration": 250,
-                        "easing": "easeOutQuad"
-                      }
-                    },
-                    "if": {
-                      "icon-scheme": [
-                        "art"
-                      ]
-                    }
-                  }
-                ]
+                "use": "container"
               }
             ],
             "style": {
@@ -3395,17 +3409,62 @@
             },
             "children": [
               {
-                "use": "shade"
+                "type": "image",
+                "id": "shade",
+                "fit": "contain",
+                "position": [
+                  "50%",
+                  "50%"
+                ],
+                "src": "../../_inc/images/backgrounds/4-5-bg.webp",
+                "style": {
+                  "position": "absolute",
+                  "left": "50%",
+                  "top": "50%",
+                  "maxWidth": "100%",
+                  "maxHeight": "100%",
+                  "translate": [
+                    "-50%",
+                    "-50%"
+                  ],
+                  "opacity": 0.6,
+                  "zIndex": 2.0
+                }
               },
               {
                 "use": "backdrop",
                 "tint": "#291c0aff"
               },
               {
-                "use": "systemBack",
+                "type": "image",
+                "id": "systemBack",
+                "fit": "contain",
+                "position": [
+                  "50%",
+                  "50%"
+                ],
+                "src": "{firstFile(\"$(themeDir)/../../_inc/systems/carousel-icons-icons/\" + item.theme + \".webp\",\"$(themeDir)/../../_inc/systems/carousel-icons-icons/_default.webp\")}",
                 "style": {
+                  "position": "absolute",
+                  "left": "50%",
+                  "top": "45%",
                   "maxWidth": "75%",
-                  "maxHeight": "80%"
+                  "maxHeight": "80%",
+                  "translate": [
+                    "-50%",
+                    "-50%"
+                  ],
+                  "zIndex": 2.0,
+                  "opacity": 0.8999
+                },
+                "states": {
+                  "selected": "$selected.systemBack"
+                },
+                "transitions": {
+                  "opacity": {
+                    "duration": 250,
+                    "easing": "easeOutQuad"
+                  }
                 }
               },
               {
@@ -3823,12 +3882,7 @@
                       "height": "{((min((menu.maxH > 0 ? menu.maxH : 0.75 * screen.h), (menu.subtitle != \"\" ? ((fontCapHeight(\"$(themeDir)/../../_inc/fonts/Inter-Bold.otf\", (0.0333333 * min(screen.w, screen.h)), 1) + 0.05 * screen.h) + 0.019 * screen.h) * ((fontCapHeight(\"$(themeDir)/../../_inc/fonts/Inter-Bold.otf\", (0.0333333 * min(screen.w, screen.h)), 1) + 0.05 * screen.h) + (textHeight(\"$(themeDir)/../../_inc/fonts/Inter-Regular.otf\", (0.0145833 * min(screen.w, screen.h)), 1, menu.subtitle, 0.88 * screen.w, 1.1) + 0.019 * screen.h)) / (fontCapHeight(\"$(themeDir)/../../_inc/fonts/Inter-Bold.otf\", (0.0333333 * min(screen.w, screen.h)), 1) + 0.05 * screen.h) : (menu.subtitle != \"\" ? (fontCapHeight(\"$(themeDir)/../../_inc/fonts/Inter-Bold.otf\", (0.0333333 * min(screen.w, screen.h)), 1) + 0.05 * screen.h) + 0.019 * screen.h : fontCapHeight(\"$(themeDir)/../../_inc/fonts/Inter-Bold.otf\", (0.0333333 * min(screen.w, screen.h)), 1) + 0.0637 * screen.h)) + fontHeight(\"$(themeDir)/../../_inc/fonts/Inter-Bold.otf\", (0.025 * min(screen.w, screen.h)), 1) * 1.5 * 4.2 * 3 + 0.0296 * screen.h * 0.6 + (fontHeight(\"$(themeDir)/../../_inc/fonts/Inter-Bold.otf\", (0.025 * min(screen.w, screen.h)), 1) * 1.5 + 0.0296 * screen.h + (menu.buttons > 0 ? 2 : 0)) + 2) - (menu.subtitle != \"\" ? ((fontCapHeight(\"$(themeDir)/../../_inc/fonts/Inter-Bold.otf\", (0.0333333 * min(screen.w, screen.h)), 1) + 0.05 * screen.h) + 0.019 * screen.h) * ((fontCapHeight(\"$(themeDir)/../../_inc/fonts/Inter-Bold.otf\", (0.0333333 * min(screen.w, screen.h)), 1) + 0.05 * screen.h) + (textHeight(\"$(themeDir)/../../_inc/fonts/Inter-Regular.otf\", (0.0145833 * min(screen.w, screen.h)), 1, menu.subtitle, 0.88 * screen.w, 1.1) + 0.019 * screen.h)) / (fontCapHeight(\"$(themeDir)/../../_inc/fonts/Inter-Bold.otf\", (0.0333333 * min(screen.w, screen.h)), 1) + 0.05 * screen.h) : (menu.subtitle != \"\" ? (fontCapHeight(\"$(themeDir)/../../_inc/fonts/Inter-Bold.otf\", (0.0333333 * min(screen.w, screen.h)), 1) + 0.05 * screen.h) + 0.019 * screen.h : fontCapHeight(\"$(themeDir)/../../_inc/fonts/Inter-Bold.otf\", (0.0333333 * min(screen.w, screen.h)), 1) + 0.0637 * screen.h)) - (fontHeight(\"$(themeDir)/../../_inc/fonts/Inter-Bold.otf\", (0.025 * min(screen.w, screen.h)), 1) * 1.5 + 0.0296 * screen.h + (menu.buttons > 0 ? 2 : 0))) / 3) - 0.04 * ((menu.fixedW > 0 ? menu.fixedW : min(screen.h, screen.w * 0.9)) / 3)}"
                     },
                     "states": {
-                      "selected": {
-                        "style": {
-                          "tint": "$gamelistSelectorColor",
-                          "borderImage": "../../_inc/images/menu/button_filled.png"
-                        }
-                      }
+                      "selected": "$selected.button"
                     }
                   },
                   {
@@ -3929,12 +3983,7 @@
                       "height": "{((min((menu.maxH > 0 ? menu.maxH : 0.75 * screen.h), (menu.subtitle != \"\" ? ((fontCapHeight(\"$(themeDir)/../../_inc/fonts/Inter-Bold.otf\", (0.0333333 * min(screen.w, screen.h)), 1) + 0.05 * screen.h) + 0.019 * screen.h) * ((fontCapHeight(\"$(themeDir)/../../_inc/fonts/Inter-Bold.otf\", (0.0333333 * min(screen.w, screen.h)), 1) + 0.05 * screen.h) + (textHeight(\"$(themeDir)/../../_inc/fonts/Inter-Regular.otf\", (0.0145833 * min(screen.w, screen.h)), 1, menu.subtitle, 0.88 * screen.w, 1.1) + 0.019 * screen.h)) / (fontCapHeight(\"$(themeDir)/../../_inc/fonts/Inter-Bold.otf\", (0.0333333 * min(screen.w, screen.h)), 1) + 0.05 * screen.h) : (menu.subtitle != \"\" ? (fontCapHeight(\"$(themeDir)/../../_inc/fonts/Inter-Bold.otf\", (0.0333333 * min(screen.w, screen.h)), 1) + 0.05 * screen.h) + 0.019 * screen.h : fontCapHeight(\"$(themeDir)/../../_inc/fonts/Inter-Bold.otf\", (0.0333333 * min(screen.w, screen.h)), 1) + 0.0637 * screen.h)) + fontHeight(\"$(themeDir)/../../_inc/fonts/Inter-Bold.otf\", (0.025 * min(screen.w, screen.h)), 1) * 1.5 * 4.2 * 2 + 0.0296 * screen.h * 0.6 + (fontHeight(\"$(themeDir)/../../_inc/fonts/Inter-Bold.otf\", (0.025 * min(screen.w, screen.h)), 1) * 1.5 + 0.0296 * screen.h + (menu.buttons > 0 ? 2 : 0)) + 2) - (menu.subtitle != \"\" ? ((fontCapHeight(\"$(themeDir)/../../_inc/fonts/Inter-Bold.otf\", (0.0333333 * min(screen.w, screen.h)), 1) + 0.05 * screen.h) + 0.019 * screen.h) * ((fontCapHeight(\"$(themeDir)/../../_inc/fonts/Inter-Bold.otf\", (0.0333333 * min(screen.w, screen.h)), 1) + 0.05 * screen.h) + (textHeight(\"$(themeDir)/../../_inc/fonts/Inter-Regular.otf\", (0.0145833 * min(screen.w, screen.h)), 1, menu.subtitle, 0.88 * screen.w, 1.1) + 0.019 * screen.h)) / (fontCapHeight(\"$(themeDir)/../../_inc/fonts/Inter-Bold.otf\", (0.0333333 * min(screen.w, screen.h)), 1) + 0.05 * screen.h) : (menu.subtitle != \"\" ? (fontCapHeight(\"$(themeDir)/../../_inc/fonts/Inter-Bold.otf\", (0.0333333 * min(screen.w, screen.h)), 1) + 0.05 * screen.h) + 0.019 * screen.h : fontCapHeight(\"$(themeDir)/../../_inc/fonts/Inter-Bold.otf\", (0.0333333 * min(screen.w, screen.h)), 1) + 0.0637 * screen.h)) - (fontHeight(\"$(themeDir)/../../_inc/fonts/Inter-Bold.otf\", (0.025 * min(screen.w, screen.h)), 1) * 1.5 + 0.0296 * screen.h + (menu.buttons > 0 ? 2 : 0))) / 2) - 0.04 * ((menu.fixedW > 0 ? menu.fixedW : min(screen.h, screen.w * 0.9)) / 3)}"
                     },
                     "states": {
-                      "selected": {
-                        "style": {
-                          "tint": "$gamelistSelectorColor",
-                          "borderImage": "../../_inc/images/menu/button_filled.png"
-                        }
-                      }
+                      "selected": "$selected.button"
                     }
                   },
                   {
@@ -4035,12 +4084,7 @@
                       "height": "{((min((menu.maxH > 0 ? menu.maxH : 0.75 * screen.h), (menu.subtitle != \"\" ? ((fontCapHeight(\"$(themeDir)/../../_inc/fonts/Inter-Bold.otf\", (0.0333333 * min(screen.w, screen.h)), 1) + 0.05 * screen.h) + 0.019 * screen.h) * ((fontCapHeight(\"$(themeDir)/../../_inc/fonts/Inter-Bold.otf\", (0.0333333 * min(screen.w, screen.h)), 1) + 0.05 * screen.h) + (textHeight(\"$(themeDir)/../../_inc/fonts/Inter-Regular.otf\", (0.0145833 * min(screen.w, screen.h)), 1, menu.subtitle, 0.88 * screen.w, 1.1) + 0.019 * screen.h)) / (fontCapHeight(\"$(themeDir)/../../_inc/fonts/Inter-Bold.otf\", (0.0333333 * min(screen.w, screen.h)), 1) + 0.05 * screen.h) : (menu.subtitle != \"\" ? (fontCapHeight(\"$(themeDir)/../../_inc/fonts/Inter-Bold.otf\", (0.0333333 * min(screen.w, screen.h)), 1) + 0.05 * screen.h) + 0.019 * screen.h : fontCapHeight(\"$(themeDir)/../../_inc/fonts/Inter-Bold.otf\", (0.0333333 * min(screen.w, screen.h)), 1) + 0.0637 * screen.h)) + fontHeight(\"$(themeDir)/../../_inc/fonts/Inter-Bold.otf\", (0.025 * min(screen.w, screen.h)), 1) * 1.5 * 4.2 * 2 + 0.0296 * screen.h * 0.6 + (fontHeight(\"$(themeDir)/../../_inc/fonts/Inter-Bold.otf\", (0.025 * min(screen.w, screen.h)), 1) * 1.5 + 0.0296 * screen.h + (menu.buttons > 0 ? 2 : 0)) + 2) - (menu.subtitle != \"\" ? ((fontCapHeight(\"$(themeDir)/../../_inc/fonts/Inter-Bold.otf\", (0.0333333 * min(screen.w, screen.h)), 1) + 0.05 * screen.h) + 0.019 * screen.h) * ((fontCapHeight(\"$(themeDir)/../../_inc/fonts/Inter-Bold.otf\", (0.0333333 * min(screen.w, screen.h)), 1) + 0.05 * screen.h) + (textHeight(\"$(themeDir)/../../_inc/fonts/Inter-Regular.otf\", (0.0145833 * min(screen.w, screen.h)), 1, menu.subtitle, 0.88 * screen.w, 1.1) + 0.019 * screen.h)) / (fontCapHeight(\"$(themeDir)/../../_inc/fonts/Inter-Bold.otf\", (0.0333333 * min(screen.w, screen.h)), 1) + 0.05 * screen.h) : (menu.subtitle != \"\" ? (fontCapHeight(\"$(themeDir)/../../_inc/fonts/Inter-Bold.otf\", (0.0333333 * min(screen.w, screen.h)), 1) + 0.05 * screen.h) + 0.019 * screen.h : fontCapHeight(\"$(themeDir)/../../_inc/fonts/Inter-Bold.otf\", (0.0333333 * min(screen.w, screen.h)), 1) + 0.0637 * screen.h)) - (fontHeight(\"$(themeDir)/../../_inc/fonts/Inter-Bold.otf\", (0.025 * min(screen.w, screen.h)), 1) * 1.5 + 0.0296 * screen.h + (menu.buttons > 0 ? 2 : 0))) / 2) - 0.04 * ((menu.fixedW > 0 ? menu.fixedW : min(screen.h, screen.w * 0.9)) / 2)}"
                     },
                     "states": {
-                      "selected": {
-                        "style": {
-                          "tint": "$gamelistSelectorColor",
-                          "borderImage": "../../_inc/images/menu/button_filled.png"
-                        }
-                      }
+                      "selected": "$selected.button"
                     }
                   },
                   {
@@ -4640,49 +4684,10 @@
                   }
                 },
                 {
-                  "type": "repeat",
-                  "id": "buttons",
-                  "source": "menuButtons",
+                  "use": "buttons",
                   "style": {
-                    "position": "absolute",
-                    "left": 0,
-                    "width": "100%",
-                    "bottom": "{0.0148 * screen.h + 2}",
-                    "height": "{fontHeight(\"$(themeDir)/../../_inc/fonts/Inter-Bold.otf\", (0.025 * min(screen.w, screen.h)), 1) * 1.5}",
-                    "flexDirection": "row",
-                    "justifyContent": "center"
-                  },
-                  "template": {
-                    "id": "button",
-                    "font": "$(themeDir)/../../_inc/fonts/Inter-Bold.otf",
-                    "fontMenu": true,
-                    "fontSize": "2.5vmin",
-                    "borderImage": "../../_inc/images/menu/button.png",
-                    "borderImageSlice": 20.0,
-                    "tint": "$menuTextColor",
-                    "style": {
-                      "width": "{max(textWidth(item.label), textWidth(\"DELETE\")) + max(12, 0.014 * screen.w)}",
-                      "height": "100%",
-                      "margin": [
-                        0,
-                        "0.26vw",
-                        0,
-                        "0.26vw"
-                      ]
-                    },
-                    "states": {
-                      "selected": {
-                        "style": {
-                          "tint": "$gamelistSelectorColor",
-                          "borderImage": "../../_inc/images/menu/button_filled.png"
-                        }
-                      }
-                    },
-                    "children": [
-                      {
-                        "use": "buttonLabel"
-                      }
-                    ]
+                    "top": null,
+                    "bottom": "{0.0148 * screen.h + 2}"
                   }
                 }
               ]
@@ -5076,22 +5081,15 @@
           }
         },
         {
-          "type": "image",
-          "id": "game-metadata-background-shadow-base",
+          "use": "game-metadata-background-shadow-base",
+          "src": null,
           "style": {
-            "position": "absolute",
+            "width": null,
+            "height": null,
             "left": "0%",
             "top": "0%",
-            "translate": "$metadata/translate.1",
             "zIndex": "$gamelist/grid.game-metadata-background-shadow-base.style.zIndex"
-          },
-          "if": {
-            "font-size": [
-              "medium",
-              "large"
-            ]
-          },
-          "visible": "$metadata/visible.1"
+          }
         },
         {
           "use": "game-metadata-background-image-base",
@@ -5104,23 +5102,16 @@
           }
         },
         {
-          "type": "video",
-          "id": "md_video",
+          "use": "md_video",
+          "fit": null,
+          "position": null,
           "visible": false,
-          "src": "{game.video}",
           "style": {
-            "position": "absolute",
+            "maxWidth": null,
+            "maxHeight": null,
             "left": "0%",
-            "top": "0%",
-            "translate": [
-              "-50%",
-              "-50%"
-            ],
-            "zIndex": 7.0
-          },
-          "poster": "{firstFile(game.image, game.thumbnail)}",
-          "delay": 1400.0,
-          "showPoster": 3
+            "top": "0%"
+          }
         },
         {
           "use": "md_releasedate",
@@ -5215,25 +5206,15 @@
           }
         },
         {
-          "type": "text",
-          "id": "md_description",
+          "use": "md_description",
           "visible": false,
-          "text": "{game.desc}",
-          "font": "../../_inc/fonts/Inter-Regular.otf",
           "fontSize": "3.5vmin",
-          "valign": "top",
           "lineHeight": 1.2,
-          "wrap": true,
           "style": {
-            "position": "absolute",
+            "width": null,
+            "height": null,
             "left": "0%",
-            "top": "0%",
-            "translate": [
-              "-50%",
-              "-0%"
-            ],
-            "zIndex": 3.0,
-            "color": "$gameMetadataColor"
+            "top": "0%"
           }
         },
         {
@@ -5288,22 +5269,14 @@
           "use": "help"
         },
         {
-          "type": "image",
-          "id": "game-metadata-background-shadow-extended",
+          "use": "game-metadata-background-shadow-extended",
+          "src": null,
           "style": {
-            "position": "absolute",
+            "width": null,
+            "height": null,
             "left": "0%",
             "top": "0%",
-            "translate": [
-              "-50%",
-              "-50%"
-            ],
             "zIndex": 2.0
-          },
-          "if": {
-            "font-size": [
-              "small"
-            ]
           }
         },
         {
