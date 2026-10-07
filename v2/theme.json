@@ -5722,7 +5722,7 @@
           "id": "dim",
           "src": ":/scroll_gradient.png",
           "fit": "fill",
-          "visible": "{!dialog.open}",
+          "visible": "{(!dialog.open) && !screen.fullScreenMenus}",
           "style": {
             "position": "absolute",
             "left": 0,
@@ -6996,6 +6996,7 @@
           "id": "dim",
           "src": ":/scroll_gradient.png",
           "fit": "fill",
+          "visible": "{(true) && !screen.fullScreenMenus}",
           "style": {
             "position": "absolute",
             "left": 0,
