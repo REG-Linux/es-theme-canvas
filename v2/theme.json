@@ -2996,12 +2996,12 @@
     },
     "gamelist/detailed.md_lastplayed.style.width": {
       "by": "font-size",
-      "default": "auto",
+      "default": "{0.24 * screen.w - textWidth(\":/ubuntu_condensed.ttf\", floor(0.035 * min(screen.w, screen.h)), 0, tr(\"Last played\") + \": \")}",
       "small": "8.4%"
     },
     "gamelist/detailed.md_lastplayed.style.height": {
       "by": "font-size",
-      "default": "auto",
+      "default": "{fontHeight(\":/ubuntu_condensed.ttf\", floor(0.035 * min(screen.w, screen.h)), 0) * 1.5}",
       "small": "2.8%"
     },
     "gamelist/detailed.md_name.style.left": {
@@ -3043,6 +3043,16 @@
       "by": "font-size",
       "default": "0%",
       "small": "65.1%"
+    },
+    "gamelist/detailed.md_players.style.width": {
+      "by": "font-size",
+      "default": "{0.24 * screen.w - textWidth(\":/ubuntu_condensed.ttf\", floor(0.035 * min(screen.w, screen.h)), 0, tr(\"Players\") + \": \")}",
+      "small": "auto"
+    },
+    "gamelist/detailed.md_players.style.height": {
+      "by": "font-size",
+      "default": "{fontHeight(\":/ubuntu_condensed.ttf\", floor(0.035 * min(screen.w, screen.h)), 0) * 1.5}",
+      "small": "auto"
     },
     "gamelist/detailed.md_genre.style.left": {
       "by": "font-size",
@@ -3086,12 +3096,12 @@
     },
     "gamelist/detailed.md_developer.style.width": {
       "by": "font-size",
-      "default": "auto",
+      "default": "{0.24 * screen.w - textWidth(\":/ubuntu_condensed.ttf\", floor(0.035 * min(screen.w, screen.h)), 0, tr(\"Developer\") + \": \")}",
       "small": "14.6%"
     },
     "gamelist/detailed.md_developer.style.height": {
       "by": "font-size",
-      "default": "auto",
+      "default": "{fontHeight(\":/ubuntu_condensed.ttf\", floor(0.035 * min(screen.w, screen.h)), 0) * 1.5}",
       "small": "2.8%"
     },
     "gamelist/detailed.md_publisher.visible": {
@@ -3116,12 +3126,12 @@
     },
     "gamelist/detailed.md_publisher.style.width": {
       "by": "font-size",
-      "default": "auto",
+      "default": "{0.24 * screen.w - textWidth(\":/ubuntu_condensed.ttf\", floor(0.035 * min(screen.w, screen.h)), 0, tr(\"Publisher\") + \": \")}",
       "small": "14.6%"
     },
     "gamelist/detailed.md_publisher.style.height": {
       "by": "font-size",
-      "default": "auto",
+      "default": "{fontHeight(\":/ubuntu_condensed.ttf\", floor(0.035 * min(screen.w, screen.h)), 0) * 1.5}",
       "small": "2.8%"
     },
     "gamelist/detailed.md_playcount.visible": {
@@ -3146,12 +3156,12 @@
     },
     "gamelist/detailed.md_playcount.style.width": {
       "by": "font-size",
-      "default": "auto",
+      "default": "{0.24 * screen.w - textWidth(\":/ubuntu_condensed.ttf\", floor(0.035 * min(screen.w, screen.h)), 0, tr(\"Times played\") + \": \")}",
       "small": "8.4%"
     },
     "gamelist/detailed.md_playcount.style.height": {
       "by": "font-size",
-      "default": "auto",
+      "default": "{fontHeight(\":/ubuntu_condensed.ttf\", floor(0.035 * min(screen.w, screen.h)), 0) * 1.5}",
       "small": "2.8%"
     },
     "gamelist/detailed.md_gametime_custom.style.left@font-size": {
@@ -3251,12 +3261,12 @@
     },
     "gamelist/grid.md_lastplayed.style.width": {
       "by": "font-size",
-      "default": "auto",
+      "default": "{0.24 * screen.w - textWidth(\":/ubuntu_condensed.ttf\", floor(0.035 * min(screen.w, screen.h)), 0, tr(\"Last played\") + \": \")}",
       "small": "10%"
     },
     "gamelist/grid.md_lastplayed.style.height": {
       "by": "font-size",
-      "default": "auto",
+      "default": "{fontHeight(\":/ubuntu_condensed.ttf\", floor(0.035 * min(screen.w, screen.h)), 0) * 1.5}",
       "small": "2.8%"
     },
     "gamelist/grid.md_name.style.left@font-size": {
@@ -3311,12 +3321,12 @@
     },
     "gamelist/grid.md_playcount.style.width": {
       "by": "font-size",
-      "default": "auto",
+      "default": "{0.24 * screen.w - textWidth(\":/ubuntu_condensed.ttf\", floor(0.035 * min(screen.w, screen.h)), 0, tr(\"Times played\") + \": \")}",
       "small": "8.4%"
     },
     "gamelist/grid.md_playcount.style.height": {
       "by": "font-size",
-      "default": "auto",
+      "default": "{fontHeight(\":/ubuntu_condensed.ttf\", floor(0.035 * min(screen.w, screen.h)), 0) * 1.5}",
       "small": "2.8%"
     },
     "gamelist/grid.md_gametime_custom.style.left@font-size": {
@@ -3416,12 +3426,12 @@
     },
     "gamelist/gamecarousel.md_lastplayed.style.width": {
       "by": "font-size",
-      "default": "auto",
+      "default": "{0.24 * screen.w - textWidth(\":/ubuntu_condensed.ttf\", floor(0.035 * min(screen.w, screen.h)), 0, tr(\"Last played\") + \": \")}",
       "small": "8.4%"
     },
     "gamelist/gamecarousel.md_lastplayed.style.height": {
       "by": "font-size",
-      "default": "auto",
+      "default": "{fontHeight(\":/ubuntu_condensed.ttf\", floor(0.035 * min(screen.w, screen.h)), 0) * 1.5}",
       "small": "2.8%"
     },
     "gamelist/gamecarousel.md_name.style.left": {
@@ -3463,6 +3473,16 @@
       "by": "font-size",
       "default": "0%",
       "small": "65.1%"
+    },
+    "gamelist/gamecarousel.md_players.style.width": {
+      "by": "font-size",
+      "default": "{0.24 * screen.w - textWidth(\":/ubuntu_condensed.ttf\", floor(0.035 * min(screen.w, screen.h)), 0, tr(\"Players\") + \": \")}",
+      "small": "auto"
+    },
+    "gamelist/gamecarousel.md_players.style.height": {
+      "by": "font-size",
+      "default": "{fontHeight(\":/ubuntu_condensed.ttf\", floor(0.035 * min(screen.w, screen.h)), 0) * 1.5}",
+      "small": "auto"
     },
     "gamelist/gamecarousel.md_genre.style.left": {
       "by": "font-size",
@@ -3506,12 +3526,12 @@
     },
     "gamelist/gamecarousel.md_developer.style.width": {
       "by": "font-size",
-      "default": "auto",
+      "default": "{0.24 * screen.w - textWidth(\":/ubuntu_condensed.ttf\", floor(0.035 * min(screen.w, screen.h)), 0, tr(\"Developer\") + \": \")}",
       "small": "14.6%"
     },
     "gamelist/gamecarousel.md_developer.style.height": {
       "by": "font-size",
-      "default": "auto",
+      "default": "{fontHeight(\":/ubuntu_condensed.ttf\", floor(0.035 * min(screen.w, screen.h)), 0) * 1.5}",
       "small": "2.8%"
     },
     "gamelist/gamecarousel.md_publisher.visible": {
@@ -3536,12 +3556,12 @@
     },
     "gamelist/gamecarousel.md_publisher.style.width": {
       "by": "font-size",
-      "default": "auto",
+      "default": "{0.24 * screen.w - textWidth(\":/ubuntu_condensed.ttf\", floor(0.035 * min(screen.w, screen.h)), 0, tr(\"Publisher\") + \": \")}",
       "small": "14.6%"
     },
     "gamelist/gamecarousel.md_publisher.style.height": {
       "by": "font-size",
-      "default": "auto",
+      "default": "{fontHeight(\":/ubuntu_condensed.ttf\", floor(0.035 * min(screen.w, screen.h)), 0) * 1.5}",
       "small": "2.8%"
     },
     "gamelist/gamecarousel.md_playcount.visible": {
@@ -3566,12 +3586,12 @@
     },
     "gamelist/gamecarousel.md_playcount.style.width": {
       "by": "font-size",
-      "default": "auto",
+      "default": "{0.24 * screen.w - textWidth(\":/ubuntu_condensed.ttf\", floor(0.035 * min(screen.w, screen.h)), 0, tr(\"Times played\") + \": \")}",
       "small": "8.4%"
     },
     "gamelist/gamecarousel.md_playcount.style.height": {
       "by": "font-size",
-      "default": "auto",
+      "default": "{fontHeight(\":/ubuntu_condensed.ttf\", floor(0.035 * min(screen.w, screen.h)), 0) * 1.5}",
       "small": "2.8%"
     },
     "gamelist/gamecarousel.md_gametime_custom.style.left@font-size": {
@@ -3779,12 +3799,12 @@
     "gamelist/detailed.md_releasedate.style.width@metadata": {
       "by": "metadata",
       "default": "$gamelist/detailed.md_releasedate.style.width@font-size",
-      "off": "auto"
+      "off": "{0.24 * screen.w - textWidth(\":/ubuntu_condensed.ttf\", floor(0.035 * min(screen.w, screen.h)), 0, tr(\"Released\") + \": \")}"
     },
     "gamelist/detailed.md_releasedate.style.height@metadata": {
       "by": "metadata",
       "default": "$gamelist/detailed.md_releasedate.style.height@font-size",
-      "off": "auto"
+      "off": "{fontHeight(\":/ubuntu_condensed.ttf\", floor(0.035 * min(screen.w, screen.h)), 0) * 1.5}"
     },
     "gamelist/detailed.md_name.fontSize": {
       "by": "metadata",
@@ -3839,12 +3859,12 @@
     "gamelist/detailed.md_genre.style.width@metadata": {
       "by": "metadata",
       "default": "$gamelist/detailed.md_genre.style.width",
-      "off": "auto"
+      "off": "{0.24 * screen.w - textWidth(\":/ubuntu_condensed.ttf\", floor(0.035 * min(screen.w, screen.h)), 0, tr(\"Genre\") + \": \")}"
     },
     "gamelist/detailed.md_genre.style.height@metadata": {
       "by": "metadata",
       "default": "$gamelist/detailed.md_genre.style.height",
-      "off": "auto"
+      "off": "{fontHeight(\":/ubuntu_condensed.ttf\", floor(0.035 * min(screen.w, screen.h)), 0) * 1.5}"
     },
     "gamelist/detailed.md_gametime_custom.fontSize": {
       "by": "metadata",
@@ -4064,12 +4084,12 @@
     "gamelist/grid.md_releasedate.style.width@metadata": {
       "by": "metadata",
       "default": "$gamelist/grid.md_releasedate.style.width@font-size",
-      "off": "auto"
+      "off": "{0.24 * screen.w - textWidth(\":/ubuntu_condensed.ttf\", floor(0.035 * min(screen.w, screen.h)), 0, tr(\"Released\") + \": \")}"
     },
     "gamelist/grid.md_releasedate.style.height@metadata": {
       "by": "metadata",
       "default": "$gamelist/grid.md_releasedate.style.height",
-      "off": "auto"
+      "off": "{fontHeight(\":/ubuntu_condensed.ttf\", floor(0.035 * min(screen.w, screen.h)), 0) * 1.5}"
     },
     "gamelist/grid.md_name.fontSize": {
       "by": "metadata",
@@ -4124,12 +4144,12 @@
     "gamelist/grid.md_genre.style.width@metadata": {
       "by": "metadata",
       "default": "$gamelist/grid.md_genre.style.width@font-size",
-      "off": "auto"
+      "off": "{0.24 * screen.w - textWidth(\":/ubuntu_condensed.ttf\", floor(0.035 * min(screen.w, screen.h)), 0, tr(\"Genre\") + \": \")}"
     },
     "gamelist/grid.md_genre.style.height@metadata": {
       "by": "metadata",
       "default": "$gamelist/grid.md_genre.style.height",
-      "off": "auto"
+      "off": "{fontHeight(\":/ubuntu_condensed.ttf\", floor(0.035 * min(screen.w, screen.h)), 0) * 1.5}"
     },
     "gamelist/grid.md_gametime_custom.fontSize": {
       "by": "metadata",
@@ -4366,12 +4386,12 @@
     "gamelist/gamecarousel.md_releasedate.style.width@metadata": {
       "by": "metadata",
       "default": "$gamelist/gamecarousel.md_releasedate.style.width@font-size",
-      "off": "auto"
+      "off": "{0.24 * screen.w - textWidth(\":/ubuntu_condensed.ttf\", floor(0.035 * min(screen.w, screen.h)), 0, tr(\"Released\") + \": \")}"
     },
     "gamelist/gamecarousel.md_releasedate.style.height@metadata": {
       "by": "metadata",
       "default": "$gamelist/gamecarousel.md_releasedate.style.height@font-size",
-      "off": "auto"
+      "off": "{fontHeight(\":/ubuntu_condensed.ttf\", floor(0.035 * min(screen.w, screen.h)), 0) * 1.5}"
     },
     "gamelist/gamecarousel.md_name.fontSize": {
       "by": "metadata",
@@ -4426,12 +4446,12 @@
     "gamelist/gamecarousel.md_genre.style.width@metadata": {
       "by": "metadata",
       "default": "$gamelist/gamecarousel.md_genre.style.width",
-      "off": "auto"
+      "off": "{0.24 * screen.w - textWidth(\":/ubuntu_condensed.ttf\", floor(0.035 * min(screen.w, screen.h)), 0, tr(\"Genre\") + \": \")}"
     },
     "gamelist/gamecarousel.md_genre.style.height@metadata": {
       "by": "metadata",
       "default": "$gamelist/gamecarousel.md_genre.style.height",
-      "off": "auto"
+      "off": "{fontHeight(\":/ubuntu_condensed.ttf\", floor(0.035 * min(screen.w, screen.h)), 0) * 1.5}"
     },
     "gamelist/gamecarousel.md_gametime_custom.fontSize": {
       "by": "metadata",
@@ -6298,7 +6318,8 @@
                     "flexDirection": "column",
                     "overflow": "hidden",
                     "flexShrink": 0,
-                    "maxHeight": "{(menu.fixedH > 0 ? menu.fixedH : (menu.maxH > 0 ? menu.maxH : 0.75 * screen.h)) - (menu.subtitle != \"\" ? ((fontCapHeight(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.0333333 * min(screen.w, screen.h)), 1) + 0.05 * screen.h) + 0.019 * screen.h) * ((fontCapHeight(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.0333333 * min(screen.w, screen.h)), 1) + 0.05 * screen.h) + (textHeight(\"$(themeDir)/../_inc/fonts/Inter-Regular.otf\", (0.0157407 * min(screen.w, screen.h)), 1, menu.subtitle, 0.88 * screen.w, 1.1) + 0.019 * screen.h)) / (fontCapHeight(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.0333333 * min(screen.w, screen.h)), 1) + 0.05 * screen.h) : (menu.subtitle != \"\" ? (fontCapHeight(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.0333333 * min(screen.w, screen.h)), 1) + 0.05 * screen.h) + 0.019 * screen.h : fontCapHeight(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.0333333 * min(screen.w, screen.h)), 1) + 0.0637 * screen.h)) - (fontHeight(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.025 * min(screen.w, screen.h)), 1) * 1.5 + 0.0296 * screen.h + (menu.buttons > 0 ? 2 : 0)) - (menu.scrolls ? 0.01 : 2)}"
+                    "maxHeight": "{(menu.fixedH > 0 ? menu.fixedH : (menu.maxH > 0 ? menu.maxH : 0.75 * screen.h)) - (menu.subtitle != \"\" ? ((fontCapHeight(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.0333333 * min(screen.w, screen.h)), 1) + 0.05 * screen.h) + 0.019 * screen.h) * ((fontCapHeight(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.0333333 * min(screen.w, screen.h)), 1) + 0.05 * screen.h) + (textHeight(\"$(themeDir)/../_inc/fonts/Inter-Regular.otf\", (0.0157407 * min(screen.w, screen.h)), 1, menu.subtitle, 0.88 * screen.w, 1.1) + 0.019 * screen.h)) / (fontCapHeight(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.0333333 * min(screen.w, screen.h)), 1) + 0.05 * screen.h) : (menu.subtitle != \"\" ? (fontCapHeight(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.0333333 * min(screen.w, screen.h)), 1) + 0.05 * screen.h) + 0.019 * screen.h : fontCapHeight(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.0333333 * min(screen.w, screen.h)), 1) + 0.0637 * screen.h)) - (fontHeight(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.025 * min(screen.w, screen.h)), 1) * 1.5 + 0.0296 * screen.h + (menu.buttons > 0 ? 2 : 0)) - (menu.scrolls ? 0.01 : 2)}",
+                    "snapItems": "{menu.fixedH <= 0}"
                   },
                   "template": {
                     "id": "row",
@@ -6431,9 +6452,10 @@
                         "lineHeight": 1.5,
                         "style": {
                           "height": "100%",
-                          "flexShrink": 0,
+                          "display": "{((item.kind == \"option\" || item.kind == \"multiselect\") || item.kind == \"text\") && item.description == \"\" ? \"flex\" : \"none\"}",
                           "color": "$menu.listPlace.listBox.rows.template.labelFit.style.color",
-                          "display": "{((item.kind == \"option\" || item.kind == \"multiselect\") || item.kind == \"text\") && item.description == \"\" ? \"flex\" : \"none\"}"
+                          "flexGrow": "{item.valueFills ? 0 : 1}",
+                          "flexShrink": 0
                         },
                         "states": {
                           "selected": {
@@ -6508,6 +6530,7 @@
                         "id": "labelBlockFit",
                         "style": {
                           "height": "100%",
+                          "flexGrow": "{item.valueFills ? 0 : 1}",
                           "flexShrink": 0,
                           "flexDirection": "column",
                           "display": "{!(item.kind == \"group\") && !(item.description == \"\") && ((item.kind == \"option\" || item.kind == \"multiselect\") || item.kind == \"text\") ? \"flex\" : \"none\"}"
@@ -6567,7 +6590,14 @@
                         "id": "option",
                         "style": {
                           "height": "100%",
-                          "flexGrow": 1,
+                          "flexGrow": "{item.valueFills ? 1 : 0}",
+                          "flexShrink": 0,
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            24
+                          ],
                           "flexDirection": "row",
                           "justifyContent": "flex-end",
                           "alignItems": "center",
@@ -6698,7 +6728,7 @@
                       {
                         "type": "image",
                         "id": "arrow",
-                        "src": ":/arrow.svg",
+                        "src": "{item.trailIcon != \"\" ? item.trailIcon : \":/arrow.svg\"}",
                         "tint": "$menu.listPlace.listBox.rows.template.arrow.tint",
                         "style": {
                           "height": "{round(fontCapHeight(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.025 * min(screen.w, screen.h)), 1))}",
@@ -7802,7 +7832,9 @@
               "-50%"
             ],
             "zIndex": 40.0,
-            "color": "$gamelist/detailed.md_players.style.color"
+            "color": "$gamelist/detailed.md_players.style.color",
+            "width": "$gamelist/detailed.md_players.style.width",
+            "height": "$gamelist/detailed.md_players.style.height"
           }
         },
         {
@@ -8592,7 +8624,9 @@
               "-50%"
             ],
             "zIndex": 40.0,
-            "color": "$gamelist/grid.md_players.style.color"
+            "color": "$gamelist/grid.md_players.style.color",
+            "width": "{0.24 * screen.w - textWidth(\":/ubuntu_condensed.ttf\", floor(0.035 * min(screen.w, screen.h)), 0, tr(\"Players\") + \": \")}",
+            "height": "{fontHeight(\":/ubuntu_condensed.ttf\", floor(0.035 * min(screen.w, screen.h)), 0) * 1.5}"
           }
         },
         {
@@ -8636,7 +8670,9 @@
               "-50%"
             ],
             "zIndex": 40.0,
-            "color": "$gamelist/grid.md_developer.style.color"
+            "color": "$gamelist/grid.md_developer.style.color",
+            "width": "{0.24 * screen.w - textWidth(\":/ubuntu_condensed.ttf\", floor(0.035 * min(screen.w, screen.h)), 0, tr(\"Developer\") + \": \")}",
+            "height": "{fontHeight(\":/ubuntu_condensed.ttf\", floor(0.035 * min(screen.w, screen.h)), 0) * 1.5}"
           }
         },
         {
@@ -8657,7 +8693,9 @@
               "-50%"
             ],
             "zIndex": 40.0,
-            "color": "$gamelist/grid.md_publisher.style.color"
+            "color": "$gamelist/grid.md_publisher.style.color",
+            "width": "{0.24 * screen.w - textWidth(\":/ubuntu_condensed.ttf\", floor(0.035 * min(screen.w, screen.h)), 0, tr(\"Publisher\") + \": \")}",
+            "height": "{fontHeight(\":/ubuntu_condensed.ttf\", floor(0.035 * min(screen.w, screen.h)), 0) * 1.5}"
           }
         },
         {
@@ -9366,7 +9404,9 @@
               "-50%"
             ],
             "zIndex": 40.0,
-            "color": "$gamelist/gamecarousel.md_players.style.color"
+            "color": "$gamelist/gamecarousel.md_players.style.color",
+            "width": "$gamelist/gamecarousel.md_players.style.width",
+            "height": "$gamelist/gamecarousel.md_players.style.height"
           }
         },
         {
