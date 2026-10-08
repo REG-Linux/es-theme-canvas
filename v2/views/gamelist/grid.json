@@ -1,0 +1,295 @@
+{
+  "views": {
+    "gamelist/grid": {
+      "id": "grid",
+      "children": [
+        {
+          "type": "repeat",
+          "id": "gamegrid",
+          "source": "games",
+          "grid": "$gamelist/grid.gamegrid.grid@autogridsize",
+          "cursor": {"duration": 250},
+          "template": {
+            "id": "tile",
+            "states": {
+              "selected": {
+                "style": {
+                  "scale": "$gamelist/grid.gamegrid.template.states.selected.style.scale@autogridsize"
+                }
+              }
+            },
+            "children": [
+              {
+                "id": "area",
+                "style": {
+                  "position": "absolute",
+                  "left": 5.0,
+                  "top": 5.0,
+                  "right": 5.0,
+                  "bottom": 5.0
+                },
+                "children": [
+                  {
+                    "id": "slot",
+                    "style": {
+                      "position": "absolute",
+                      "top": 0,
+                      "bottom": 0,
+                      "left": "{firstFile(item.thumbnail, item.image) == \"\" ? 5 : 0}%",
+                      "width": "{firstFile(item.thumbnail, item.image) == \"\" ? 90 : 100}%",
+                      "flexDirection": "row",
+                      "justifyContent": "center",
+                      "alignItems": "center"
+                    },
+                    "children": [
+                      {
+                        "id": "background",
+                        "borderImage": ":/frame.png",
+                        "borderImageSlice": 11.0,
+                        "tint": "#00000000",
+                        "states": {
+                          "selected": {
+                            "style": {"tint": "$systemCarouselSelectorColor"},
+                            "animations": "$gamelist/grid.gamegrid.template.area.slot.background.states.selected.animations"
+                          }
+                        },
+                        "style": {
+                          "margin": [-5.0, -5.0, -5.0, -5.0],
+                          "padding": [5.0, 5.0, 5.0, 5.0]
+                        },
+                        "children": [
+                          {
+                            "type": "image",
+                            "id": "image",
+                            "src": "{firstFile(item.thumbnail, item.image) == \"\" ? \":/cartridge.svg\" : firstFile(item.thumbnail, item.image)}",
+                            "fit": "contain",
+                            "tint": "#ffffffdd",
+                            "states": {"selected": {"style": {"tint": "#ffffffff"}}},
+                            "style": {"scale": 0.99}
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "id": "label",
+                "text": "{item.name}",
+                "visible": "{firstFile(item.thumbnail, item.image) == \"\"}",
+                "font": ":/ubuntu_condensed.ttf",
+                "fontSize": "3.5vmin",
+                "lineHeight": 1.5,
+                "valign": "center",
+                "wrap": true,
+                "style": {
+                  "position": "absolute",
+                  "left": "10%",
+                  "top": "20%",
+                  "width": "80%",
+                  "height": "70%",
+                  "color": "#ffffffff"
+                }
+              }
+            ],
+            "style": {
+              "width": "$gamelist/grid.gamegrid.template.style.width@autogridsize",
+              "height": "$gamelist/grid.gamegrid.template.style.height@autogridsize",
+              "flexShrink": "$gamelist/grid.gamegrid.template.style.flexShrink"
+            }
+          },
+          "style": {
+            "position": "absolute",
+            "left": "2%",
+            "top": "8%",
+            "width": "96%",
+            "height": "$gamelist/grid.gamegrid.style.height",
+            "zIndex": 2.0,
+            "flexDirection": "row",
+            "flexWrap": "wrap",
+            "overflow": "hidden",
+            "columnGap": "2.5vw",
+            "rowGap": "2.5vh",
+            "padding": ["10px", "10px", "10px", "10px"]
+          }
+        },
+        {"use": "background-art"},
+        {
+          "use": "playtime-logo",
+          "style": {
+            "left": "$gamelist/grid.playtime-logo.style.left@metadata",
+            "top": "$metadata/top.9",
+            "height": "$gamelist/grid.playtime-logo.style.height@metadata"
+          }
+        },
+        {
+          "use": "game-metadata-background-shadow-base",
+          "src": null,
+          "style": {
+            "width": null,
+            "height": null,
+            "left": "0%",
+            "top": "0%",
+            "zIndex": "$gamelist/grid.game-metadata-background-shadow-base.style.zIndex"
+          }
+        },
+        {
+          "use": "game-metadata-background-image-base",
+          "src": "$gamelist/grid.game-metadata-background-image-base.src@metadata",
+          "style": {
+            "left": "$gamelist/grid.game-metadata-background-image-base.style.left@metadata",
+            "top": "$gamelist/grid.game-metadata-background-image-base.style.top@metadata",
+            "width": "$gamelist/grid.game-metadata-background-image-base.style.width@metadata",
+            "height": "$gamelist/grid.game-metadata-background-image-base.style.height@metadata"
+          }
+        },
+        {
+          "use": "md_video",
+          "fit": null,
+          "position": null,
+          "visible": false,
+          "style": {"maxWidth": null, "maxHeight": null, "left": "0%", "top": "0%"}
+        },
+        {
+          "use": "md_releasedate",
+          "style": {
+            "left": "$gamelist/grid.md_releasedate.style.left@metadata",
+            "top": "$gamelist/grid.md_releasedate.style.top@metadata",
+            "width": "$gamelist/grid.md_releasedate.style.width@metadata",
+            "height": "$metadata/height.10"
+          }
+        },
+        {
+          "use": "md_lastplayed",
+          "style": {
+            "left": "$font-size/left.11",
+            "top": "$gamelist/grid.md_lastplayed.style.top",
+            "width": "$gamelist/grid.md_lastplayed.style.width"
+          }
+        },
+        {
+          "use": "md_name",
+          "style": {
+            "left": "$gamelist/grid.md_name.style.left@metadata",
+            "top": "$gamelist/grid.md_name.style.top@metadata",
+            "width": "$gamelist/grid.md_name.style.width@metadata",
+            "height": "$metadata/height.11"
+          }
+        },
+        {
+          "use": "md_players",
+          "visible": false,
+          "fontSize": "3.5vmin",
+          "style": {
+            "left": "0%",
+            "top": "0%",
+            "width": "{0.24 * screen.w - textWidth(\":/ubuntu_condensed.ttf\", floor(0.035 * min(screen.w, screen.h)), 0, tr(\"Players\") + \": \")}",
+            "height": "{fontHeight(\":/ubuntu_condensed.ttf\", floor(0.035 * min(screen.w, screen.h)), 0) * 1.5}"
+          }
+        },
+        {
+          "use": "md_genre",
+          "style": {
+            "left": "$gamelist/grid.md_genre.style.left@metadata",
+            "top": "$metadata/top.9",
+            "width": "$gamelist/grid.md_genre.style.width@metadata",
+            "height": "$metadata/height.10"
+          }
+        },
+        {
+          "use": "md_developer",
+          "visible": false,
+          "fontSize": "3.5vmin",
+          "style": {
+            "left": "0%",
+            "top": "0%",
+            "width": "{0.24 * screen.w - textWidth(\":/ubuntu_condensed.ttf\", floor(0.035 * min(screen.w, screen.h)), 0, tr(\"Developer\") + \": \")}",
+            "height": "{fontHeight(\":/ubuntu_condensed.ttf\", floor(0.035 * min(screen.w, screen.h)), 0) * 1.5}"
+          }
+        },
+        {
+          "use": "md_publisher",
+          "visible": false,
+          "fontSize": "3.5vmin",
+          "style": {
+            "left": "0%",
+            "top": "0%",
+            "width": "{0.24 * screen.w - textWidth(\":/ubuntu_condensed.ttf\", floor(0.035 * min(screen.w, screen.h)), 0, tr(\"Publisher\") + \": \")}",
+            "height": "{fontHeight(\":/ubuntu_condensed.ttf\", floor(0.035 * min(screen.w, screen.h)), 0) * 1.5}"
+          }
+        },
+        {
+          "use": "md_playcount",
+          "style": {"left": "$font-size/left.11", "top": "$gamelist/grid.md_playcount.style.top"}
+        },
+        {
+          "use": "md_gametime_custom",
+          "style": {
+            "left": "$gamelist/grid.md_gametime_custom.style.left@metadata",
+            "top": "$metadata/top.9",
+            "width": "$gamelist/grid.md_gametime_custom.style.width@metadata",
+            "height": "$metadata/height.11"
+          }
+        },
+        {
+          "use": "md_rating",
+          "style": {
+            "left": "$gamelist/grid.md_rating.style.left@metadata",
+            "top": "$gamelist/grid.md_rating.style.top@metadata",
+            "height": "$gamelist/grid.md_rating.style.height@metadata"
+          }
+        },
+        {
+          "use": "md_description",
+          "visible": false,
+          "fontSize": "3.5vmin",
+          "lineHeight": 1.2,
+          "style": {"width": null, "height": null, "left": "0%", "top": "0%"}
+        },
+        {
+          "type": "image",
+          "id": "md_marquee",
+          "visible": false,
+          "src": "{firstFile(game.marquee, game.wheel)}",
+          "style": {"position": "absolute", "left": "0%", "top": "0%", "zIndex": 30.0}
+        },
+        {
+          "type": "image",
+          "id": "md_image",
+          "visible": false,
+          "src": "{firstFile(game.image)}",
+          "style": {"position": "absolute", "left": "0%", "top": "0%", "zIndex": 30.0}
+        },
+        {
+          "type": "image",
+          "id": "md_thumbnail",
+          "visible": false,
+          "src": "{firstFile(game.thumbnail)}",
+          "style": {"position": "absolute", "left": "0%", "top": "0%", "zIndex": 30.0}
+        },
+        {
+          "use": "logo",
+          "style": {
+            "left": "$gamelist/grid.logo.style.left",
+            "top": "$gamelist/grid.logo.style.top",
+            "maxWidth": "$gamelist/grid.logo.style.maxWidth",
+            "maxHeight": "$gamelist/grid.logo.style.maxHeight"
+          }
+        },
+        {"use": "logoText"},
+        {"use": "help"},
+        {
+          "use": "game-metadata-background-shadow-extended",
+          "src": null,
+          "style": {"width": null, "height": null, "left": "0%", "top": "0%", "zIndex": 2.0}
+        },
+        {
+          "use": "game-metadata-background-image-extended",
+          "src": "../_inc/images/simple/gamelist-metadata-background-retro-extended.webp",
+          "style": {"left": "73.1%", "top": "88.4%", "width": "45.08%", "height": "9.612%"}
+        }
+      ]
+    }
+  }
+}

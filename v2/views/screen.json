@@ -1,0 +1,199 @@
+{
+  "views": {
+    "screen": {
+      "id": "screen",
+      "children": [
+        {
+          "type": "text",
+          "id": "clock",
+          "text": "{clock.time}",
+          "font": "../_inc/fonts/Inter-Bold.otf",
+          "fontSize": "2.8vmin",
+          "align": "center",
+          "valign": "top",
+          "lineHeight": 1.5,
+          "style": {
+            "position": "absolute",
+            "left": "50%",
+            "top": "2%",
+            "width": "15%",
+            "height": "2.8%",
+            "translate": ["-50%", "-50%"],
+            "zIndex": 4.0,
+            "color": "$systemInfoColor"
+          },
+          "visible": "{settings.DrawClock && clock.time != \"\" && screen.statusBar}"
+        },
+        {
+          "id": "batteryIndicator",
+          "style": {
+            "position": "absolute",
+            "left": "93%",
+            "top": "1%",
+            "width": "5%",
+            "height": "5%",
+            "flexDirection": "row",
+            "alignItems": "center",
+            "justifyContent": "flex-end",
+            "zIndex": 5.0
+          },
+          "children": [
+            {
+              "id": "planemode",
+              "style": {
+                "display": "{(settings.ShowNetworkIndicator && network.planemode) && screen.statusBar ? \"flex\" : \"none\"}",
+                "aspectRatio": 1,
+                "height": "100%",
+                "flexShrink": 0,
+                "flexDirection": "row",
+                "justifyContent": "center",
+                "alignItems": "center",
+                "margin": [0, "0.5vh", 0, 0]
+              },
+              "children": [
+                {
+                  "type": "image",
+                  "id": "icon",
+                  "src": "$(themeDir)/../_inc/images/network/network-icon-off.svg",
+                  "fit": "contain",
+                  "tint": "$systemInfoColor",
+                  "style": {"maxWidth": "5vw", "maxHeight": "5vh", "height": "5vh"}
+                }
+              ]
+            },
+            {
+              "id": "network",
+              "style": {
+                "display": "{(settings.ShowNetworkIndicator && network.connected && !network.planemode) && screen.statusBar ? \"flex\" : \"none\"}",
+                "aspectRatio": 1,
+                "height": "100%",
+                "flexShrink": 0,
+                "flexDirection": "row",
+                "justifyContent": "center",
+                "alignItems": "center",
+                "margin": [0, "0.5vh", 0, 0]
+              },
+              "children": [
+                {
+                  "type": "image",
+                  "id": "icon",
+                  "src": "$(themeDir)/../_inc/images/network/network-icon-on.svg",
+                  "fit": "contain",
+                  "tint": "$systemInfoColor",
+                  "style": {"maxWidth": "5vw", "maxHeight": "5vh", "height": "5vh"}
+                }
+              ]
+            },
+            {
+              "id": "battery",
+              "style": {
+                "display": "{(battery.has && settings.ShowBattery != \"\") && screen.statusBar ? \"flex\" : \"none\"}",
+                "aspectRatio": 1,
+                "height": "100%",
+                "flexShrink": 0,
+                "flexDirection": "row",
+                "justifyContent": "center",
+                "alignItems": "center",
+                "margin": [0, "0.5vh", 0, 0]
+              },
+              "children": [
+                {
+                  "type": "image",
+                  "id": "icon",
+                  "src": "{battery.charging ? \"$(themeDir)/../_inc/images/battery/battery-icon-charging.svg\" : battery.level > 75 ? \"$(themeDir)/../_inc/images/battery/battery-icon-100.svg\" : battery.level > 50 ? \"$(themeDir)/../_inc/images/battery/battery-icon-75.svg\" : battery.level > 25 ? \"$(themeDir)/../_inc/images/battery/battery-icon-50.svg\" : battery.level > 5 ? \"$(themeDir)/../_inc/images/battery/battery-icon-25.svg\" : \"$(themeDir)/../_inc/images/battery/battery-icon-0.svg\"}",
+                  "fit": "contain",
+                  "tint": "$systemInfoColor",
+                  "style": {"maxWidth": "5vw", "maxHeight": "5vh", "height": "5vh"}
+                }
+              ]
+            },
+            {
+              "id": "batteryText",
+              "style": {
+                "display": "{(battery.has && settings.ShowBattery != \"\" && settings.ShowBattery == \"text\") && screen.statusBar ? \"flex\" : \"none\"}",
+                "flexShrink": 0,
+                "flexDirection": "row",
+                "justifyContent": "center",
+                "alignItems": "center",
+                "margin": [0, "0.5vh", 0, 0]
+              },
+              "children": [
+                {
+                  "type": "text",
+                  "id": "level",
+                  "text": "{battery.level}%",
+                  "font": ":/ubuntu_condensed.ttf",
+                  "fontSize": "3.5vh",
+                  "lineHeight": 1.0,
+                  "style": {"color": "$systemInfoColor"}
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "repeat",
+          "id": "controllerActivity",
+          "source": "controllers",
+          "visible": "{screen.controllers}",
+          "style": {
+            "position": "absolute",
+            "width": "15%",
+            "height": "2.8%",
+            "left": "$screen.controllerActivity.style.left",
+            "top": "2%",
+            "flexDirection": "row",
+            "alignItems": "center",
+            "justifyContent": "flex-end",
+            "zIndex": 5.0
+          },
+          "template": {
+            "id": "controller",
+            "style": {
+              "height": "100%",
+              "flexDirection": "row",
+              "alignItems": "center",
+              "flexShrink": 0
+            },
+            "children": [
+              {
+                "id": "slot",
+                "style": {
+                  "height": "100%",
+                  "aspectRatio": 1,
+                  "flexDirection": "row",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "margin": [0, "0.5vw", 0, 0]
+                },
+                "children": [
+                  {
+                    "type": "image",
+                    "id": "icon",
+                    "src": "{item.kind == \"wheel\" ? \"$(themeDir)/../_inc/images/icons/wheel.svg\" : item.kind == \"gun\" ? \"$(themeDir)/../_inc/images/icons/gun.svg\" : \"$(themeDir)/../_inc/images/icons/gamepad.svg\"}",
+                    "fit": "contain",
+                    "tint": "$color-scheme/tint.1",
+                    "style": {"height": "100%"}
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "id": "battery",
+                "text": "{item.battery}% ",
+                "font": ":/ubuntu_condensed.ttf",
+                "fontSize": "1.96vh",
+                "lineHeight": 1.0,
+                "style": {
+                  "color": "$color-scheme/tint.1",
+                  "display": "{settings.ShowControllerBattery && item.battery >= 0 ? \"flex\" : \"none\"}",
+                  "margin": [0, "0.5vw", 0, 0]
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

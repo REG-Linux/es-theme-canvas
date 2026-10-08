@@ -1,0 +1,30 @@
+{
+  "views": {
+    "gamelist/basic": {
+      "id": "basic",
+      "children": [
+        {"use": "gamelist"},
+        {"use": "background-art"},
+        {
+          "type": "image",
+          "id": "console-icon",
+          "fit": "contain",
+          "position": ["0%", "0%"],
+          "style": {
+            "position": "absolute",
+            "left": "25.5%",
+            "top": "75%",
+            "maxWidth": "45%",
+            "maxHeight": "25%"
+          },
+          "if": {"aspect-ratio": ["auto", "4-3"]}
+        },
+        {"use": "game-list-background-shadow"},
+        {"use": "game-list-background"},
+        {"use": "logo", "style": {"top": "50%", "maxWidth": "35%", "maxHeight": "35%"}},
+        {"use": "logoText"},
+        {"use": "help"}
+      ]
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "views": {
+    "gamelist/detailed": {
+      "id": "detailed",
+      "children": [
+        {"use": "gamelist"},
+        {"use": "background-art"},
+        {"use": "playtime-logo"},
+        {"use": "game-metadata-background-shadow-base"},
+        {"use": "game-metadata-background-image-base"},
+        {"use": "game-list-background-shadow"},
+        {"use": "game-list-background"},
+        {"use": "md_video"},
+        {"use": "md_releasedate"},
+        {"use": "md_lastplayed"},
+        {"use": "md_name"},
+        {"use": "md_players"},
+        {"use": "md_genre"},
+        {"use": "md_developer"},
+        {"use": "md_publisher"},
+        {"use": "md_playcount"},
+        {"use": "md_gametime_custom"},
+        {"use": "md_rating"},
+        {"use": "md_description"},
+        {"use": "logo"},
+        {"use": "logoText"},
+        {"use": "help"},
+        {"use": "game-metadata-background-shadow-extended"},
+        {"use": "game-metadata-background-image-extended"}
+      ]
+    }
+  }
+}
