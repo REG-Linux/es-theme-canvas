@@ -45,7 +45,7 @@
             "position": "absolute",
             "left": "3%",
             "top": "2%",
-            "width": "2.8%",
+            "width": "$system.gamesicon.style.width",
             "zIndex": 5.0
           },
           "replayShown": true,
@@ -55,7 +55,7 @@
           "type": "text",
           "id": "systemInfo",
           "font": "../_inc/fonts/Inter-Bold.otf",
-          "fontSize": "2.8vmin",
+          "fontSize": "$system.systemInfo.fontSize",
           "align": "left",
           "valign": "center",
           "lineHeight": 1.5,
@@ -64,7 +64,7 @@
             "left": "7%",
             "top": "2%",
             "width": "30%",
-            "height": "2.8%",
+            "height": "$system.gamesicon.style.width",
             "opacity": 0.0,
             "zIndex": 4.0,
             "color": "$systemInfoColor"
@@ -157,7 +157,11 @@
                   "color": "#ffffffff"
                 }
               },
-              {"use": "fallbackText", "style": {"top": "72%", "color": "#ffffffff"}},
+              {
+                "use": "fallbackText",
+                "fontSize": "2.6vmin",
+                "style": {"top": "72%", "color": "#ffffffff"}
+              },
               {
                 "type": "image",
                 "id": "theLogoImage",

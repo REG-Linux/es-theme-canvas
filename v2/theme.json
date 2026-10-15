@@ -1,6 +1,6 @@
 {
   "format": "reg-theme/2",
-  "name": "canvas-main",
+  "name": "es-theme-canvas",
   "generator": "regstation --theme-convert (from ES theme.json)",
   "options": {
     "aspect-ratio": {
@@ -46,6 +46,7 @@
       "default": "automatic"
     }
   },
+  "envScreen": {"ratios": ["1/1", "16/10", "16/9", "3/2", "4/3"], "sizes": []},
   "include": [
     "vars.json",
     "components.json",

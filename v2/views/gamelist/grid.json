@@ -157,7 +157,7 @@
             "left": "$gamelist/grid.md_releasedate.style.left@metadata",
             "top": "$gamelist/grid.md_releasedate.style.top@metadata",
             "width": "$gamelist/grid.md_releasedate.style.width@metadata",
-            "height": "$metadata/height.10"
+            "height": "$gamelist/grid.md_releasedate.style.height@env.screen"
           }
         },
         {
@@ -174,7 +174,7 @@
             "left": "$gamelist/grid.md_name.style.left@metadata",
             "top": "$gamelist/grid.md_name.style.top@metadata",
             "width": "$gamelist/grid.md_name.style.width@metadata",
-            "height": "$metadata/height.11"
+            "height": "$gamelist/grid.md_name.style.height@env.screen"
           }
         },
         {
@@ -194,7 +194,7 @@
             "left": "$gamelist/grid.md_genre.style.left@metadata",
             "top": "$metadata/top.9",
             "width": "$gamelist/grid.md_genre.style.width@metadata",
-            "height": "$metadata/height.10"
+            "height": "$gamelist/grid.md_releasedate.style.height@env.screen"
           }
         },
         {
@@ -229,7 +229,7 @@
             "left": "$gamelist/grid.md_gametime_custom.style.left@metadata",
             "top": "$metadata/top.9",
             "width": "$gamelist/grid.md_gametime_custom.style.width@metadata",
-            "height": "$metadata/height.11"
+            "height": "$gamelist/grid.md_name.style.height@env.screen"
           }
         },
         {

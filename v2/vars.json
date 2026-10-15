@@ -2,7 +2,7 @@
   "vars": {
     "autoLayout.columns.0.2.0.96.0.72.1": {
       "by": "screen",
-      "default": 5.0,
+      "default": 4.0,
       "16:9": 5.0,
       "16:10": 4.0,
       "4:3": 4.0,
@@ -12,7 +12,7 @@
     },
     "autoLayout.columns.0.3.0.96.0.72.1": {
       "by": "screen",
-      "default": 7.0,
+      "default": 6.0,
       "16:9": 7.0,
       "16:10": 6.0,
       "4:3": 5.0,
@@ -467,6 +467,16 @@
       "pastel": "#555555ff",
       "purple": "#2a2929ff"
     },
+    "screen.levels.template.levelTrack.style.background": {
+      "by": "color-scheme",
+      "default": "#51381180",
+      "beige": "#49484680",
+      "dark": "#dddddd80",
+      "light": "#33333380",
+      "neon": "#eeeeee80",
+      "pastel": "#55555580",
+      "purple": "#2a292980"
+    },
     "gamelistSelectorColor": {
       "by": "color-scheme",
       "default": "#513811ff",
@@ -499,6 +509,23 @@
       "purple": "#2a2929c0"
     },
     "color-scheme/color.2": {"by": "color-scheme", "default": "#ffffffc0", "neon": "#fff732c0"},
+    "dialog.panelBox.field.borderImage": {
+      "by": "color-scheme",
+      "default": "{dialog.fieldFocused ? \"$(themeDir)/../_inc/images/menu/menu-textinput-active-light.png\" : \"$(themeDir)/../_inc/images/menu/menu-textinput-light.png\"}",
+      "dark": "{dialog.fieldFocused ? \"$(themeDir)/../_inc/images/menu/menu-textinput-active-dark.png\" : \"$(themeDir)/../_inc/images/menu/menu-textinput-dark.png\"}",
+      "neon": "{dialog.fieldFocused ? \"$(themeDir)/../_inc/images/menu/menu-textinput-active-dark.png\" : \"$(themeDir)/../_inc/images/menu/menu-textinput-dark.png\"}",
+      "pastel": "{dialog.fieldFocused ? \"$(themeDir)/../_inc/images/menu/menu-textinput-active-dark.png\" : \"$(themeDir)/../_inc/images/menu/menu-textinput-dark.png\"}"
+    },
+    "dialog.panelBox.keys.template.style.background": {
+      "by": "color-scheme",
+      "default": "{item.active ? \"#513811ff\" : \"00000000\"}",
+      "beige": "{item.active ? \"#3a6b6cff\" : \"00000000\"}",
+      "dark": "{item.active ? \"#5f5f5fff\" : \"00000000\"}",
+      "light": "{item.active ? \"#222222ff\" : \"00000000\"}",
+      "neon": "{item.active ? \"#d43ff4ff\" : \"00000000\"}",
+      "pastel": "{item.active ? \"#85a5c5ff\" : \"00000000\"}",
+      "purple": "{item.active ? \"#382a6aff\" : \"00000000\"}"
+    },
     "gamelistPrimaryColor": {
       "by": "color-scheme",
       "default": "#513811ff",
@@ -1039,6 +1066,72 @@
       "default": "$gamelist/grid.gamegrid.template.states.selected.style.scale",
       "large": 1.2,
       "medium": 1.2
+    },
+    "system.imagegrid.template.container.container-content.container.fallbackText.fontSize": {
+      "by": "env.screen",
+      "default": "2.6vmin",
+      "0|1||": "2.4vmin",
+      "1|1||": "2.4vmin"
+    },
+    "system.gamesicon.style.width": {
+      "by": "env.screen",
+      "default": "2.8%",
+      "0|1||": "2.6%",
+      "1|1||": "2.6%"
+    },
+    "system.systemInfo.fontSize": {
+      "by": "env.screen",
+      "default": "2.8vmin",
+      "0|1||": "2.6vmin",
+      "1|1||": "2.6vmin"
+    },
+    "screen.controllerActivity.template.battery.fontSize": {
+      "by": "env.screen",
+      "default": "1.96vh",
+      "0|1||": "1.82vh",
+      "1|1||": "1.82vh"
+    },
+    "gamelist/detailed.md_releasedate.fontSize@env.screen": {
+      "by": "env.screen",
+      "default": "$metadata/fontSize.1",
+      "0|1||": "2.6vmin",
+      "1|1||": "2.6vmin"
+    },
+    "gamelist/detailed.md_releasedate.style.height@env.screen": {
+      "by": "env.screen",
+      "default": "$metadata/height.4",
+      "0|1||": "2.6%",
+      "1|1||": "2.6%"
+    },
+    "gamelist/detailed.md_gametime_custom.style.height@env.screen": {
+      "by": "env.screen",
+      "default": "$metadata/height.7",
+      "0|1||": "2.6%",
+      "1|1||": "2.6%"
+    },
+    "gamelist/detailed.md_rating.style.height@env.screen": {
+      "by": "env.screen",
+      "default": "$metadata/height.8",
+      "0|1||": "2.6%",
+      "1|1||": "2.6%"
+    },
+    "gamelist/detailed.md_description.fontSize@env.screen": {
+      "by": "env.screen",
+      "default": "$metadata/fontSize.2",
+      "0|1||": "2.4vmin",
+      "1|1||": "2.4vmin"
+    },
+    "gamelist/grid.md_releasedate.style.height@env.screen": {
+      "by": "env.screen",
+      "default": "$metadata/height.10",
+      "0|1||": "2.6%",
+      "1|1||": "2.6%"
+    },
+    "gamelist/grid.md_name.style.height@env.screen": {
+      "by": "env.screen",
+      "default": "$metadata/height.11",
+      "0|1||": "2.6%",
+      "1|1||": "2.6%"
     },
     "selected.systemBack": {
       "style": {"opacity": 1.0},
