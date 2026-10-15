@@ -8,7 +8,7 @@
           "id": "clock",
           "text": "{clock.time}",
           "font": "../_inc/fonts/Inter-Bold.otf",
-          "fontSize": "2.8vmin",
+          "fontSize": "$system.systemInfo.fontSize",
           "align": "center",
           "valign": "top",
           "lineHeight": 1.5,
@@ -17,7 +17,7 @@
             "left": "50%",
             "top": "2%",
             "width": "15%",
-            "height": "2.8%",
+            "height": "$system.gamesicon.style.width",
             "translate": ["-50%", "-50%"],
             "zIndex": 4.0,
             "color": "$systemInfoColor"
@@ -139,7 +139,7 @@
           "style": {
             "position": "absolute",
             "width": "15%",
-            "height": "2.8%",
+            "height": "$system.gamesicon.style.width",
             "left": "$screen.controllerActivity.style.left",
             "top": "2%",
             "flexDirection": "row",
@@ -182,7 +182,7 @@
                 "id": "battery",
                 "text": "{item.battery}% ",
                 "font": ":/ubuntu_condensed.ttf",
-                "fontSize": "1.96vh",
+                "fontSize": "$screen.controllerActivity.template.battery.fontSize",
                 "lineHeight": 1.0,
                 "style": {
                   "color": "$color-scheme/tint.1",
@@ -192,6 +192,390 @@
               }
             ]
           }
+        },
+        {
+          "type": "repeat",
+          "id": "notifications",
+          "source": "notifications",
+          "pinned": true,
+          "style": {
+            "position": "absolute",
+            "left": "50%",
+            "top": "2vh",
+            "translate": ["-50%", 0],
+            "flexDirection": "column",
+            "alignItems": "center",
+            "rowGap": "1vh",
+            "zIndex": 1000
+          },
+          "template": {
+            "id": "notification",
+            "borderImage": ":/frame.png",
+            "borderImageSlice": 20.0,
+            "tint": "$menuBackgroundColor",
+            "style": {
+              "padding": ["1vh", "1.5vw", "1vh", "1.5vw"],
+              "maxWidth": "90vw",
+              "opacity": "{item.opacity}",
+              "scale": "{item.scale}"
+            },
+            "children": [
+              {
+                "type": "text",
+                "id": "notificationText",
+                "text": "{item.text}",
+                "font": "$(themeDir)/../_inc/fonts/Inter-Regular.otf",
+                "fontMenu": true,
+                "fontSize": "3.5vmin",
+                "align": "center",
+                "wrap": true,
+                "style": {"color": "$menuTextColor"}
+              }
+            ]
+          }
+        },
+        {
+          "type": "repeat",
+          "id": "levels",
+          "source": "levels",
+          "pinned": true,
+          "style": {
+            "position": "absolute",
+            "left": "2vw",
+            "top": "4vh",
+            "flexDirection": "row",
+            "columnGap": "1vw",
+            "zIndex": 1000
+          },
+          "template": {
+            "id": "level",
+            "borderImage": ":/frame.png",
+            "borderImageSlice": 20.0,
+            "tint": "$menuBackgroundColor",
+            "style": {
+              "width": "{(2 * 0.006 * screen.w + 0.08 * screen.h)}",
+              "height": "{(2.5 * (2 * 0.006 * screen.w + 0.08 * screen.h))}",
+              "padding": "0.6vw",
+              "flexDirection": "column",
+              "alignItems": "stretch",
+              "opacity": "{item.opacity}",
+              "scale": "{item.opacity}"
+            },
+            "children": [
+              {
+                "id": "levelTrack",
+                "style": {
+                  "height": "{((2.5 * (2 * 0.006 * screen.w + 0.08 * screen.h)) - 0.05 * screen.h - 3 * 0.006 * screen.w)}",
+                  "margin": ["0.6vw", 0, 0, 0],
+                  "background": "$screen.levels.template.levelTrack.style.background",
+                  "flexDirection": "column",
+                  "justifyContent": "flex-end"
+                },
+                "children": [
+                  {
+                    "id": "levelFill",
+                    "style": {
+                      "height": "{item.value * ((2.5 * (2 * 0.006 * screen.w + 0.08 * screen.h)) - 0.05 * screen.h - 3 * 0.006 * screen.w)}",
+                      "background": "$menuTextColor"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "id": "levelLabel",
+                "text": "{item.label}",
+                "font": "$(themeDir)/../_inc/fonts/Inter-Regular.otf",
+                "fontMenu": true,
+                "fontSize": "3.5vmin",
+                "align": "center",
+                "style": {"color": "$menuTextColor", "height": "{0.05 * screen.h}"}
+              }
+            ]
+          }
+        },
+        {
+          "type": "repeat",
+          "id": "tasks",
+          "source": "tasks",
+          "pinned": true,
+          "style": {
+            "position": "absolute",
+            "right": "1vw",
+            "top": "2vh",
+            "flexDirection": "column",
+            "rowGap": "1vw",
+            "zIndex": 1000
+          },
+          "template": {
+            "id": "task",
+            "borderImage": ":/frame.png",
+            "borderImageSlice": 20.0,
+            "tint": "$menuBackgroundColor",
+            "style": {
+              "width": "36vw",
+              "padding": "1vw",
+              "flexDirection": "column",
+              "opacity": "{item.opacity}"
+            },
+            "children": [
+              {"use": "taskTitle"},
+              {"use": "taskText"},
+              {"use": "taskAction"},
+              {
+                "id": "taskProgress",
+                "style": {
+                  "width": "{item.progress * 0.34 * screen.w}",
+                  "height": "0.5vh",
+                  "margin": ["0.5vh", 0, 0, 0],
+                  "background": "$gamelistSelectorColor",
+                  "display": "{item.progress >= 0 ? \"flex\" : \"none\"}"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "repeat",
+          "id": "centerTasks",
+          "source": "centerTasks",
+          "pinned": true,
+          "style": {
+            "position": "absolute",
+            "left": "50%",
+            "top": "50%",
+            "translate": ["-50%", "-50%"],
+            "flexDirection": "column",
+            "rowGap": "1vw",
+            "zIndex": 1000
+          },
+          "template": {
+            "id": "task",
+            "borderImage": ":/frame.png",
+            "borderImageSlice": 20.0,
+            "tint": "$menuBackgroundColor",
+            "style": {
+              "width": "36vw",
+              "padding": "1vw",
+              "flexDirection": "column",
+              "opacity": "{item.opacity}"
+            },
+            "children": [
+              {"use": "taskTitle", "align": "center"},
+              {"use": "taskText", "align": "center"},
+              {"use": "taskAction", "align": "center"},
+              {
+                "id": "taskProgress",
+                "style": {
+                  "width": "{item.progress * 0.34 * screen.w}",
+                  "height": "0.5vh",
+                  "margin": ["0.5vh", 0, 0, 0],
+                  "background": "$gamelistSelectorColor",
+                  "display": "{item.progress >= 0 ? \"flex\" : \"none\"}"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "id": "screensaver",
+          "pinned": true,
+          "style": {
+            "position": "absolute",
+            "left": "0",
+            "top": "0",
+            "width": "100%",
+            "height": "100%",
+            "zIndex": 2000,
+            "display": "{screensaver.active ? \"flex\" : \"none\"}"
+          },
+          "children": [
+            {
+              "id": "screensaverBlack",
+              "style": {
+                "position": "absolute",
+                "left": "0",
+                "top": "0",
+                "width": "100%",
+                "height": "100%",
+                "background": "#000000ff",
+                "opacity": "{screensaver.background}"
+              }
+            },
+            {
+              "id": "screensaverViewport",
+              "style": {
+                "position": "absolute",
+                "left": "{screensaver.x}",
+                "top": "{screensaver.y}",
+                "width": "{screensaver.w}",
+                "height": "{screensaver.h}",
+                "overflow": "hidden"
+              },
+              "children": [
+                {
+                  "type": "image",
+                  "id": "screensaverPrevious",
+                  "src": "{screensaver.previousImage}",
+                  "fit": "contain",
+                  "style": {
+                    "position": "absolute",
+                    "left": "0",
+                    "top": "0",
+                    "width": "100%",
+                    "height": "100%",
+                    "opacity": "{screensaver.previousOpacity}",
+                    "display": "{screensaver.previousImage != \"\" && !screensaver.stretch ? \"flex\" : \"none\"}"
+                  }
+                },
+                {
+                  "type": "image",
+                  "id": "screensaverPreviousCover",
+                  "src": "{screensaver.previousImage}",
+                  "fit": "cover",
+                  "style": {
+                    "position": "absolute",
+                    "left": "0",
+                    "top": "0",
+                    "width": "100%",
+                    "height": "100%",
+                    "opacity": "{screensaver.previousOpacity}",
+                    "display": "{screensaver.previousImage != \"\" && screensaver.stretch ? \"flex\" : \"none\"}"
+                  }
+                },
+                {
+                  "type": "image",
+                  "id": "screensaverImage",
+                  "src": "{screensaver.image}",
+                  "fit": "contain",
+                  "style": {
+                    "position": "absolute",
+                    "left": "0",
+                    "top": "0",
+                    "width": "100%",
+                    "height": "100%",
+                    "opacity": "{screensaver.imageOpacity}",
+                    "display": "{screensaver.image != \"\" && !screensaver.stretch ? \"flex\" : \"none\"}"
+                  }
+                },
+                {
+                  "type": "image",
+                  "id": "screensaverImageCover",
+                  "src": "{screensaver.image}",
+                  "fit": "cover",
+                  "style": {
+                    "position": "absolute",
+                    "left": "0",
+                    "top": "0",
+                    "width": "100%",
+                    "height": "100%",
+                    "opacity": "{screensaver.imageOpacity}",
+                    "display": "{screensaver.image != \"\" && screensaver.stretch ? \"flex\" : \"none\"}"
+                  }
+                },
+                {
+                  "type": "video",
+                  "id": "screensaverVideo",
+                  "src": "gui:screensaver",
+                  "fit": "contain",
+                  "style": {
+                    "position": "absolute",
+                    "left": "0",
+                    "top": "0",
+                    "width": "100%",
+                    "height": "100%",
+                    "opacity": "{screensaver.videoOpacity}",
+                    "display": "{screensaver.video && !screensaver.stretch ? \"flex\" : \"none\"}"
+                  }
+                },
+                {
+                  "type": "video",
+                  "id": "screensaverVideoCover",
+                  "src": "gui:screensaver",
+                  "fit": "cover",
+                  "style": {
+                    "position": "absolute",
+                    "left": "0",
+                    "top": "0",
+                    "width": "100%",
+                    "height": "100%",
+                    "opacity": "{screensaver.videoOpacity}",
+                    "display": "{screensaver.video && screensaver.stretch ? \"flex\" : \"none\"}"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "image",
+              "id": "screensaverMarquee",
+              "src": "{screensaver.marquee}",
+              "fit": "contain",
+              "style": {
+                "position": "absolute",
+                "left": "{screensaver.x + 0.3 * screensaver.w}",
+                "top": "{screensaver.y + 0.05 * screensaver.h}",
+                "width": "{0.4 * screensaver.w}",
+                "height": "{0.22 * screensaver.h}",
+                "opacity": "{screensaver.infoOpacity}",
+                "display": "{screensaver.marquee != \"\" ? \"flex\" : \"none\"}"
+              }
+            },
+            {
+              "type": "text",
+              "id": "screensaverGame",
+              "text": "{screensaver.gameName}",
+              "font": "$(themeDir)/../_inc/fonts/Inter-Bold.otf",
+              "fontMenu": true,
+              "fontSize": "{screensaver.fontSize}",
+              "align": "center",
+              "valign": "center",
+              "style": {
+                "position": "absolute",
+                "left": "{screensaver.gameX}",
+                "top": "{screensaver.gameY}",
+                "width": "{screensaver.gameW}",
+                "height": "{screensaver.gameH}",
+                "color": "#ffffffff",
+                "opacity": "{screensaver.infoOpacity}",
+                "display": "{screensaver.gameName != \"\" && screensaver.marquee == \"\" ? \"flex\" : \"none\"}"
+              }
+            },
+            {
+              "type": "text",
+              "id": "screensaverSystem",
+              "text": "{screensaver.systemName}",
+              "font": "$(themeDir)/../_inc/fonts/Inter-Bold.otf",
+              "fontMenu": true,
+              "fontSize": "{0.66 * screensaver.fontSize}",
+              "align": "center",
+              "valign": "center",
+              "style": {
+                "position": "absolute",
+                "left": "{screensaver.gameX}",
+                "top": "{screensaver.systemY}",
+                "width": "{screensaver.gameW}",
+                "height": "{screensaver.systemH}",
+                "color": "#d0d0d0ff",
+                "opacity": "{screensaver.infoOpacity}",
+                "display": "{screensaver.systemName != \"\" && screensaver.showSystem ? \"flex\" : \"none\"}"
+              }
+            },
+            {
+              "type": "image",
+              "id": "screensaverDecoration",
+              "src": "{screensaver.decoration}",
+              "fit": "contain",
+              "style": {
+                "position": "absolute",
+                "left": "{(screen.w - screensaver.decorationW) / 2}",
+                "top": "0",
+                "width": "{screensaver.decorationW}",
+                "height": "100%",
+                "opacity": "{screensaver.decorationOpacity}",
+                "display": "{screensaver.decoration != \"\" ? \"flex\" : \"none\"}"
+              }
+            }
+          ]
         }
       ]
     }

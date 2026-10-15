@@ -6,12 +6,12 @@
       "text": "{item.description}",
       "font": "$(themeDir)/../_inc/fonts/Inter-Regular.otf",
       "fontMenu": true,
-      "fontSize": "1.57407vmin",
+      "fontSize": "1.58333vmin",
       "align": "left",
       "valign": "top",
       "lineHeight": 1.5,
       "style": {
-        "height": "{1.1 * fontHeight(\"$(themeDir)/../_inc/fonts/Inter-Regular.otf\", (0.0157407 * min(screen.w, screen.h)), 1) * 1.5}",
+        "height": "{1.1 * fontHeight(\"$(themeDir)/../_inc/fonts/Inter-Regular.otf\", (0.0158333 * min(screen.w, screen.h)), 1) * 1.5}",
         "flexShrink": 0,
         "color": "$color-scheme/color.1",
         "display": "{true ? \"flex\" : \"none\"}"
@@ -24,7 +24,7 @@
       "visible": "{!exists(\"$(themeDir)/../_inc/systems/logos/\" + item.theme + \".svg\")}",
       "text": "{item.fullName}",
       "font": "../_inc/fonts/Inter-Bold.otf",
-      "fontSize": "2.6vmin",
+      "fontSize": "$system.imagegrid.template.container.container-content.container.fallbackText.fontSize",
       "align": "center",
       "valign": "center",
       "transform": "uppercase",
@@ -297,6 +297,7 @@
         },
         {
           "use": "fallbackText",
+          "fontSize": "2.6vmin",
           "style": {"top": "85%", "width": "80%", "color": "#ffffffff"},
           "if": {"icon-scheme": ["art"]}
         },
@@ -323,7 +324,7 @@
       "src": "{firstFile(item.button == \"a\" ? \"$(themeDir)/../_inc/images/buttons/help-button-east.svg\" : item.button == \"b\" ? \"$(themeDir)/../_inc/images/buttons/help-button-south.svg\" : item.button == \"x\" ? \"$(themeDir)/../_inc/images/buttons/help-button-north.svg\" : item.button == \"y\" ? \"$(themeDir)/../_inc/images/buttons/help-button-west.svg\" : \"\", item.icon)}",
       "tint": "$helpIconColor",
       "font": "../_inc/fonts/Inter-Bold.otf",
-      "fontSize": "2.8vmin",
+      "fontSize": "$system.systemInfo.fontSize",
       "style": {"height": "{round(1.25 * self.capHeight)}", "margin": [0, "0.42vw", 0, 0]}
     },
     "label": {
@@ -332,7 +333,7 @@
       "text": "{screen.w / screen.h < 1.4 ? item.labelShort : item.label}",
       "transform": "uppercase",
       "font": "../_inc/fonts/Inter-Bold.otf",
-      "fontSize": "2.8vmin",
+      "fontSize": "$system.systemInfo.fontSize",
       "lineHeight": 1.5,
       "style": {"color": "$helpIconColor", "flexShrink": 0}
     },
@@ -412,7 +413,7 @@
         "position": "absolute",
         "left": 0,
         "width": "100%",
-        "top": "{(menu.fixedH > 0 ? menu.fixedH : menu.mode == \"grid9\" ? min((menu.maxH > 0 ? menu.maxH : 0.75 * screen.h), (menu.subtitle != \"\" ? (screen.fullScreenMenus && menu.mode != \"list\" ? (fontCapHeight(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.0333333 * min(screen.w, screen.h)), 1) + 0.05 * screen.h) + 0.019 * screen.h + (textHeight(\"$(themeDir)/../_inc/fonts/Inter-Regular.otf\", (0.0157407 * min(screen.w, screen.h)), 1, menu.subtitle, 0.88 * screen.w, 1.1) + 0.019 * screen.h) : ((fontCapHeight(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.0333333 * min(screen.w, screen.h)), 1) + 0.05 * screen.h) + 0.019 * screen.h) * ((fontCapHeight(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.0333333 * min(screen.w, screen.h)), 1) + 0.05 * screen.h) + (textHeight(\"$(themeDir)/../_inc/fonts/Inter-Regular.otf\", (0.0157407 * min(screen.w, screen.h)), 1, menu.subtitle, 0.88 * screen.w, 1.1) + 0.019 * screen.h)) / (fontCapHeight(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.0333333 * min(screen.w, screen.h)), 1) + 0.05 * screen.h)) : (menu.subtitle != \"\" ? (fontCapHeight(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.0333333 * min(screen.w, screen.h)), 1) + 0.05 * screen.h) + 0.019 * screen.h : fontCapHeight(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.0333333 * min(screen.w, screen.h)), 1) + 0.0637 * screen.h)) + fontHeight(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.025 * min(screen.w, screen.h)), 1) * 1.5 * 4.2 * 3 + 0.0296 * screen.h * 0.6 + (fontHeight(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.025 * min(screen.w, screen.h)), 1) * 1.5 + 0.0296 * screen.h + (menu.buttons > 0 ? 2 : 0)) + 2) : min((menu.maxH > 0 ? menu.maxH : 0.75 * screen.h), (menu.subtitle != \"\" ? (screen.fullScreenMenus && menu.mode != \"list\" ? (fontCapHeight(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.0333333 * min(screen.w, screen.h)), 1) + 0.05 * screen.h) + 0.019 * screen.h + (textHeight(\"$(themeDir)/../_inc/fonts/Inter-Regular.otf\", (0.0157407 * min(screen.w, screen.h)), 1, menu.subtitle, 0.88 * screen.w, 1.1) + 0.019 * screen.h) : ((fontCapHeight(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.0333333 * min(screen.w, screen.h)), 1) + 0.05 * screen.h) + 0.019 * screen.h) * ((fontCapHeight(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.0333333 * min(screen.w, screen.h)), 1) + 0.05 * screen.h) + (textHeight(\"$(themeDir)/../_inc/fonts/Inter-Regular.otf\", (0.0157407 * min(screen.w, screen.h)), 1, menu.subtitle, 0.88 * screen.w, 1.1) + 0.019 * screen.h)) / (fontCapHeight(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.0333333 * min(screen.w, screen.h)), 1) + 0.05 * screen.h)) : (menu.subtitle != \"\" ? (fontCapHeight(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.0333333 * min(screen.w, screen.h)), 1) + 0.05 * screen.h) + 0.019 * screen.h : fontCapHeight(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.0333333 * min(screen.w, screen.h)), 1) + 0.0637 * screen.h)) + fontHeight(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.025 * min(screen.w, screen.h)), 1) * 1.5 * 4.2 * 2 + 0.0296 * screen.h * 0.6 + (fontHeight(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.025 * min(screen.w, screen.h)), 1) * 1.5 + 0.0296 * screen.h + (menu.buttons > 0 ? 2 : 0)) + 2)) - (fontHeight(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.025 * min(screen.w, screen.h)), 1) * 1.5 + 0.0296 * screen.h + (menu.buttons > 0 ? 2 : 0)) + 0.0148 * screen.h}",
+        "top": "{(menu.fixedH > 0 ? menu.fixedH : menu.mode == \"grid9\" ? min((menu.maxH > 0 ? menu.maxH : 0.75 * screen.h), (menu.subtitle != \"\" ? (screen.fullScreenMenus && menu.mode != \"list\" ? (fontCapHeight(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.0333333 * min(screen.w, screen.h)), 1) + 0.05 * screen.h) + 0.019 * screen.h + (textHeight(\"$(themeDir)/../_inc/fonts/Inter-Regular.otf\", (0.0158333 * min(screen.w, screen.h)), 1, menu.subtitle, 0.88 * screen.w, 1.1) + 0.019 * screen.h) : ((fontCapHeight(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.0333333 * min(screen.w, screen.h)), 1) + 0.05 * screen.h) + 0.019 * screen.h) * ((fontCapHeight(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.0333333 * min(screen.w, screen.h)), 1) + 0.05 * screen.h) + (textHeight(\"$(themeDir)/../_inc/fonts/Inter-Regular.otf\", (0.0158333 * min(screen.w, screen.h)), 1, menu.subtitle, 0.88 * screen.w, 1.1) + 0.019 * screen.h)) / (fontCapHeight(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.0333333 * min(screen.w, screen.h)), 1) + 0.05 * screen.h)) : (menu.subtitle != \"\" ? (fontCapHeight(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.0333333 * min(screen.w, screen.h)), 1) + 0.05 * screen.h) + 0.019 * screen.h : fontCapHeight(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.0333333 * min(screen.w, screen.h)), 1) + 0.0637 * screen.h)) + fontHeight(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.025 * min(screen.w, screen.h)), 1) * 1.5 * 4.2 * 3 + 0.0296 * screen.h * 0.6 + (fontHeight(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.025 * min(screen.w, screen.h)), 1) * 1.5 + 0.0296 * screen.h + (menu.buttons > 0 ? 2 : 0)) + 2) : min((menu.maxH > 0 ? menu.maxH : 0.75 * screen.h), (menu.subtitle != \"\" ? (screen.fullScreenMenus && menu.mode != \"list\" ? (fontCapHeight(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.0333333 * min(screen.w, screen.h)), 1) + 0.05 * screen.h) + 0.019 * screen.h + (textHeight(\"$(themeDir)/../_inc/fonts/Inter-Regular.otf\", (0.0158333 * min(screen.w, screen.h)), 1, menu.subtitle, 0.88 * screen.w, 1.1) + 0.019 * screen.h) : ((fontCapHeight(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.0333333 * min(screen.w, screen.h)), 1) + 0.05 * screen.h) + 0.019 * screen.h) * ((fontCapHeight(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.0333333 * min(screen.w, screen.h)), 1) + 0.05 * screen.h) + (textHeight(\"$(themeDir)/../_inc/fonts/Inter-Regular.otf\", (0.0158333 * min(screen.w, screen.h)), 1, menu.subtitle, 0.88 * screen.w, 1.1) + 0.019 * screen.h)) / (fontCapHeight(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.0333333 * min(screen.w, screen.h)), 1) + 0.05 * screen.h)) : (menu.subtitle != \"\" ? (fontCapHeight(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.0333333 * min(screen.w, screen.h)), 1) + 0.05 * screen.h) + 0.019 * screen.h : fontCapHeight(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.0333333 * min(screen.w, screen.h)), 1) + 0.0637 * screen.h)) + fontHeight(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.025 * min(screen.w, screen.h)), 1) * 1.5 * 4.2 * 2 + 0.0296 * screen.h * 0.6 + (fontHeight(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.025 * min(screen.w, screen.h)), 1) * 1.5 + 0.0296 * screen.h + (menu.buttons > 0 ? 2 : 0)) + 2)) - (fontHeight(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.025 * min(screen.w, screen.h)), 1) * 1.5 + 0.0296 * screen.h + (menu.buttons > 0 ? 2 : 0)) + 0.0148 * screen.h}",
         "height": "{fontHeight(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.025 * min(screen.w, screen.h)), 1) * 1.5}",
         "flexDirection": "row",
         "justifyContent": "center"
@@ -453,13 +454,34 @@
       ],
       "id": "md_rating-filled"
     },
+    "message": {
+      "type": "text",
+      "id": "message",
+      "text": "{dialog.text}",
+      "font": "$(themeDir)/../_inc/fonts/Inter-Bold.otf",
+      "fontMenu": true,
+      "fontSize": "2.5vmin",
+      "align": "{dialog.icon != \"\" ? \"left\" : \"center\"}",
+      "valign": "center",
+      "lineHeight": 1.5,
+      "wrap": true,
+      "style": {
+        "position": "absolute",
+        "left": "{((dialog.icon != \"\" ? (dialog.icon != \"\" ? 2 * fontCapHeight(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.025 * min(screen.w, screen.h)), 1) : 0) + 2 * (0.01 * screen.w) : 0) + 2 * (0.01 * screen.w)) / 2}",
+        "top": 0,
+        "width": "{((((textWidth(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.025 * min(screen.w, screen.h)), 1, dialog.text) + 0.03 * screen.w) < 0.6 * screen.w && ((dialog.buttons > 0 ? max(textWidth(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.025 * min(screen.w, screen.h)), 1, dialog.button0), textWidth(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.025 * min(screen.w, screen.h)), 1, \"DELETE\")) + max(12, 0.014 * screen.w) : 0) + (dialog.buttons > 1 ? max(textWidth(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.025 * min(screen.w, screen.h)), 1, dialog.button1), textWidth(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.025 * min(screen.w, screen.h)), 1, \"DELETE\")) + max(12, 0.014 * screen.w) : 0) + (dialog.buttons > 2 ? max(textWidth(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.025 * min(screen.w, screen.h)), 1, dialog.button2), textWidth(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.025 * min(screen.w, screen.h)), 1, \"DELETE\")) + max(12, 0.014 * screen.w) : 0) + 0.0052083 * screen.w * dialog.buttons) < 0.6 * screen.w) ? max(max(((dialog.buttons > 0 ? max(textWidth(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.025 * min(screen.w, screen.h)), 1, dialog.button0), textWidth(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.025 * min(screen.w, screen.h)), 1, \"DELETE\")) + max(12, 0.014 * screen.w) : 0) + (dialog.buttons > 1 ? max(textWidth(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.025 * min(screen.w, screen.h)), 1, dialog.button1), textWidth(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.025 * min(screen.w, screen.h)), 1, \"DELETE\")) + max(12, 0.014 * screen.w) : 0) + (dialog.buttons > 2 ? max(textWidth(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.025 * min(screen.w, screen.h)), 1, dialog.button2), textWidth(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.025 * min(screen.w, screen.h)), 1, \"DELETE\")) + max(12, 0.014 * screen.w) : 0) + 0.0052083 * screen.w * dialog.buttons), (textWidth(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.025 * min(screen.w, screen.h)), 1, dialog.text) + 0.03 * screen.w) + 3 * (0.01 * screen.w)) + (dialog.icon != \"\" ? (dialog.icon != \"\" ? 2 * fontCapHeight(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.025 * min(screen.w, screen.h)), 1) : 0) + 2 * (0.01 * screen.w) : 0), 0.3 * screen.w) : 0.6 * screen.w) + 2 * (0.01 * screen.w)) - 2 * (0.01 * screen.w)}",
+        "height": "{max((fontHeight(\":/ubuntu_condensed.ttf\", floor(0.085 * min(screen.w, screen.h)), 0) * 1.5), textHeight(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.025 * min(screen.w, screen.h)), 1, dialog.text, (((textWidth(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.025 * min(screen.w, screen.h)), 1, dialog.text) + 0.03 * screen.w) < 0.6 * screen.w && ((dialog.buttons > 0 ? max(textWidth(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.025 * min(screen.w, screen.h)), 1, dialog.button0), textWidth(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.025 * min(screen.w, screen.h)), 1, \"DELETE\")) + max(12, 0.014 * screen.w) : 0) + (dialog.buttons > 1 ? max(textWidth(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.025 * min(screen.w, screen.h)), 1, dialog.button1), textWidth(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.025 * min(screen.w, screen.h)), 1, \"DELETE\")) + max(12, 0.014 * screen.w) : 0) + (dialog.buttons > 2 ? max(textWidth(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.025 * min(screen.w, screen.h)), 1, dialog.button2), textWidth(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.025 * min(screen.w, screen.h)), 1, \"DELETE\")) + max(12, 0.014 * screen.w) : 0) + 0.0052083 * screen.w * dialog.buttons) < 0.6 * screen.w) ? max(max(((dialog.buttons > 0 ? max(textWidth(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.025 * min(screen.w, screen.h)), 1, dialog.button0), textWidth(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.025 * min(screen.w, screen.h)), 1, \"DELETE\")) + max(12, 0.014 * screen.w) : 0) + (dialog.buttons > 1 ? max(textWidth(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.025 * min(screen.w, screen.h)), 1, dialog.button1), textWidth(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.025 * min(screen.w, screen.h)), 1, \"DELETE\")) + max(12, 0.014 * screen.w) : 0) + (dialog.buttons > 2 ? max(textWidth(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.025 * min(screen.w, screen.h)), 1, dialog.button2), textWidth(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.025 * min(screen.w, screen.h)), 1, \"DELETE\")) + max(12, 0.014 * screen.w) : 0) + 0.0052083 * screen.w * dialog.buttons), (textWidth(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.025 * min(screen.w, screen.h)), 1, dialog.text) + 0.03 * screen.w) + 3 * (0.01 * screen.w)) + (dialog.icon != \"\" ? (dialog.icon != \"\" ? 2 * fontCapHeight(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.025 * min(screen.w, screen.h)), 1) : 0) + 2 * (0.01 * screen.w) : 0), 0.3 * screen.w) : 0.6 * screen.w), 1.5) * 1.225)}",
+        "padding": [0, "1.5vw", 0, "1.5vw"],
+        "color": "$menuTextColor"
+      }
+    },
     "subtitle": {
       "type": "text",
       "id": "subtitle",
       "text": "{menu.subtitle}",
       "font": "$(themeDir)/../_inc/fonts/Inter-Regular.otf",
       "fontMenu": true,
-      "fontSize": "1.57407vmin",
+      "fontSize": "1.58333vmin",
       "align": "center",
       "valign": "top",
       "lineHeight": 1.1,
@@ -469,10 +491,40 @@
         "width": "100%",
         "color": "$menuTextColor",
         "top": "{(menu.subtitle != \"\" ? (fontCapHeight(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.0333333 * min(screen.w, screen.h)), 1) + 0.05 * screen.h) + 0.019 * screen.h : fontCapHeight(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.0333333 * min(screen.w, screen.h)), 1) + 0.0637 * screen.h)}",
-        "height": "{(menu.subtitle != \"\" ? (screen.fullScreenMenus && menu.mode != \"list\" ? (fontCapHeight(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.0333333 * min(screen.w, screen.h)), 1) + 0.05 * screen.h) + 0.019 * screen.h + (textHeight(\"$(themeDir)/../_inc/fonts/Inter-Regular.otf\", (0.0157407 * min(screen.w, screen.h)), 1, menu.subtitle, 0.88 * screen.w, 1.1) + 0.019 * screen.h) : ((fontCapHeight(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.0333333 * min(screen.w, screen.h)), 1) + 0.05 * screen.h) + 0.019 * screen.h) * ((fontCapHeight(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.0333333 * min(screen.w, screen.h)), 1) + 0.05 * screen.h) + (textHeight(\"$(themeDir)/../_inc/fonts/Inter-Regular.otf\", (0.0157407 * min(screen.w, screen.h)), 1, menu.subtitle, 0.88 * screen.w, 1.1) + 0.019 * screen.h)) / (fontCapHeight(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.0333333 * min(screen.w, screen.h)), 1) + 0.05 * screen.h)) : (menu.subtitle != \"\" ? (fontCapHeight(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.0333333 * min(screen.w, screen.h)), 1) + 0.05 * screen.h) + 0.019 * screen.h : fontCapHeight(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.0333333 * min(screen.w, screen.h)), 1) + 0.0637 * screen.h)) - (menu.subtitle != \"\" ? (fontCapHeight(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.0333333 * min(screen.w, screen.h)), 1) + 0.05 * screen.h) + 0.019 * screen.h : fontCapHeight(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.0333333 * min(screen.w, screen.h)), 1) + 0.0637 * screen.h)}"
+        "height": "{(menu.subtitle != \"\" ? (screen.fullScreenMenus && menu.mode != \"list\" ? (fontCapHeight(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.0333333 * min(screen.w, screen.h)), 1) + 0.05 * screen.h) + 0.019 * screen.h + (textHeight(\"$(themeDir)/../_inc/fonts/Inter-Regular.otf\", (0.0158333 * min(screen.w, screen.h)), 1, menu.subtitle, 0.88 * screen.w, 1.1) + 0.019 * screen.h) : ((fontCapHeight(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.0333333 * min(screen.w, screen.h)), 1) + 0.05 * screen.h) + 0.019 * screen.h) * ((fontCapHeight(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.0333333 * min(screen.w, screen.h)), 1) + 0.05 * screen.h) + (textHeight(\"$(themeDir)/../_inc/fonts/Inter-Regular.otf\", (0.0158333 * min(screen.w, screen.h)), 1, menu.subtitle, 0.88 * screen.w, 1.1) + 0.019 * screen.h)) / (fontCapHeight(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.0333333 * min(screen.w, screen.h)), 1) + 0.05 * screen.h)) : (menu.subtitle != \"\" ? (fontCapHeight(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.0333333 * min(screen.w, screen.h)), 1) + 0.05 * screen.h) + 0.019 * screen.h : fontCapHeight(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.0333333 * min(screen.w, screen.h)), 1) + 0.0637 * screen.h)) - (menu.subtitle != \"\" ? (fontCapHeight(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.0333333 * min(screen.w, screen.h)), 1) + 0.05 * screen.h) + 0.019 * screen.h : fontCapHeight(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.0333333 * min(screen.w, screen.h)), 1) + 0.0637 * screen.h)}"
       },
       "wrap": true,
       "visible": "{menu.subtitle != \"\"}"
+    },
+    "taskAction": {
+      "type": "text",
+      "id": "taskAction",
+      "text": "{item.action}",
+      "font": "$(themeDir)/../_inc/fonts/Inter-Bold.otf",
+      "fontMenu": true,
+      "fontSize": "3.5vmin",
+      "align": "left",
+      "style": {"color": "$menuTextColor", "display": "{item.action != \"\" ? \"flex\" : \"none\"}"}
+    },
+    "taskText": {
+      "type": "text",
+      "id": "taskText",
+      "text": "{item.text}",
+      "font": "$(themeDir)/../_inc/fonts/Inter-Bold.otf",
+      "fontMenu": true,
+      "fontSize": "3.5vmin",
+      "align": "left",
+      "style": {"color": "$menuTextColor"}
+    },
+    "taskTitle": {
+      "type": "text",
+      "id": "taskTitle",
+      "text": "{item.title}",
+      "font": "$(themeDir)/../_inc/fonts/Inter-Bold.otf",
+      "fontMenu": true,
+      "fontSize": "3.5vmin",
+      "align": "left",
+      "style": {"color": "$menuTextColor"}
     },
     "title": {
       "type": "text",
@@ -654,7 +706,7 @@
             "id": "label",
             "text": "{item.name}",
             "font": "../_inc/fonts/Inter-Regular.otf",
-            "fontSize": "2.6vmin",
+            "fontSize": "$system.imagegrid.template.container.container-content.container.fallbackText.fontSize",
             "lineHeight": 1.5,
             "align": "left",
             "valign": "center",
@@ -684,7 +736,7 @@
       "source": "help",
       "visible": "{screen.statusBar}",
       "font": "../_inc/fonts/Inter-Bold.otf",
-      "fontSize": "2.8vmin",
+      "fontSize": "$system.systemInfo.fontSize",
       "fitItems": true,
       "pinned": true,
       "style": {
@@ -700,7 +752,7 @@
       "template": {
         "id": "entry",
         "font": "../_inc/fonts/Inter-Bold.otf",
-        "fontSize": "2.8vmin",
+        "fontSize": "$system.systemInfo.fontSize",
         "style": {
           "height": "{round(1.25 * self.capHeight)}",
           "flexDirection": "row",
@@ -734,7 +786,7 @@
       "id": "md_description",
       "text": "{game.desc}",
       "font": "../_inc/fonts/Inter-Regular.otf",
-      "fontSize": "$metadata/fontSize.2",
+      "fontSize": "$gamelist/detailed.md_description.fontSize@env.screen",
       "valign": "top",
       "lineHeight": "$metadata/lineHeight.1",
       "wrap": true,
@@ -776,7 +828,7 @@
       "visible": "$metadata-option/visible.1",
       "text": "{game.gametime > 0 ? formatSeconds(game.gametime) : \"Never\"}",
       "font": "../_inc/fonts/Inter-Regular.otf",
-      "fontSize": "$metadata/fontSize.1",
+      "fontSize": "$gamelist/detailed.md_releasedate.fontSize@env.screen",
       "valign": "center",
       "lineHeight": 1.2,
       "style": {
@@ -784,7 +836,7 @@
         "left": "$metadata/left.7",
         "top": "$metadata/top.1",
         "width": "$metadata/width.6",
-        "height": "$metadata/height.7",
+        "height": "$gamelist/detailed.md_gametime_custom.style.height@env.screen",
         "translate": ["-0%", "-50%"],
         "zIndex": 3.0,
         "color": "$gameMetadataColor"
@@ -795,7 +847,7 @@
       "id": "md_genre",
       "text": "{game.genre != \"\" ? game.genre : game.folder ? \"\" : tr(\"Unknown\")}",
       "font": "../_inc/fonts/Inter-Regular.otf",
-      "fontSize": "$metadata/fontSize.1",
+      "fontSize": "$gamelist/detailed.md_releasedate.fontSize@env.screen",
       "valign": "center",
       "lineHeight": 1.2,
       "style": {
@@ -835,7 +887,7 @@
       "id": "md_name",
       "text": "{game.name}",
       "font": "../_inc/fonts/Inter-Regular.otf",
-      "fontSize": "$metadata/fontSize.1",
+      "fontSize": "$gamelist/detailed.md_releasedate.fontSize@env.screen",
       "align": "left",
       "valign": "center",
       "lineHeight": 1.2,
@@ -918,7 +970,7 @@
         "position": "absolute",
         "left": "$metadata/left.8",
         "top": "$metadata/top.7",
-        "height": "$metadata/height.8",
+        "height": "$gamelist/detailed.md_rating.style.height@env.screen",
         "translate": "$metadata/translate.1",
         "zIndex": 3.0,
         "aspectRatio": "$metadata/aspectRatio.1",
@@ -932,7 +984,7 @@
       "id": "md_releasedate",
       "text": "{game.releasedate != \"\" ? game.releasedate : tr(\"Unknown\")}",
       "font": "../_inc/fonts/Inter-Regular.otf",
-      "fontSize": "$metadata/fontSize.1",
+      "fontSize": "$gamelist/detailed.md_releasedate.fontSize@env.screen",
       "valign": "center",
       "lineHeight": 1.2,
       "style": {
@@ -940,7 +992,7 @@
         "left": "$metadata/left.4",
         "top": "$metadata/top.4",
         "width": "$metadata/width.3",
-        "height": "$metadata/height.4",
+        "height": "$gamelist/detailed.md_releasedate.style.height@env.screen",
         "translate": ["-0%", "-50%"],
         "zIndex": 40.0,
         "color": "$gameMetadataColor"
