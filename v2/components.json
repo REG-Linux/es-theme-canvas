@@ -11,12 +11,13 @@
       "valign": "top",
       "lineHeight": 1.5,
       "style": {
-        "height": "{1.1 * fontHeight(\"$(themeDir)/../_inc/fonts/Inter-Regular.otf\", (0.0158333 * min(screen.w, screen.h)), 1) * 1.5}",
+        "height": "{(item.wrap && !item.valueFills) ? \"auto\" : 1.1 * fontHeight(\"$(themeDir)/../_inc/fonts/Inter-Regular.otf\", (0.0158333 * min(screen.w, screen.h)), 1) * 1.5}",
         "flexShrink": 0,
         "color": "$color-scheme/color.1",
         "display": "{true ? \"flex\" : \"none\"}"
       },
-      "states": {"selected": {"style": {"color": "$color-scheme/color.2"}}}
+      "states": {"selected": {"style": {"color": "$color-scheme/color.2"}}},
+      "wrap": "{(item.wrap && !item.valueFills)}"
     },
     "fallbackText": {
       "type": "text",

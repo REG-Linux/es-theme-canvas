@@ -365,7 +365,7 @@
                   "template": {
                     "id": "row",
                     "style": {
-                      "height": "{item.kind == \"group\" ? fontHeight(\"$(themeDir)/../_inc/fonts/Inter-Regular.otf\", (0.02 * min(screen.w, screen.h)), 1) * 2 : item.description != \"\" ? fontHeight(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.025 * min(screen.w, screen.h)), 1) * 1.5 + fontHeight(\"$(themeDir)/../_inc/fonts/Inter-Regular.otf\", (0.0158333 * min(screen.w, screen.h)), 1) * 1.5 : fontHeight(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.025 * min(screen.w, screen.h)), 1) * 1.5}",
+                      "height": "{item.kind == \"group\" ? fontHeight(\"$(themeDir)/../_inc/fonts/Inter-Regular.otf\", (0.02 * min(screen.w, screen.h)), 1) * 2 : item.description != \"\" ? ((item.wrap && !item.valueFills) ? \"auto\" : fontHeight(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.025 * min(screen.w, screen.h)), 1) * 1.5 + fontHeight(\"$(themeDir)/../_inc/fonts/Inter-Regular.otf\", (0.0158333 * min(screen.w, screen.h)), 1) * 1.5) : fontHeight(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.025 * min(screen.w, screen.h)), 1) * 1.5}",
                       "flexShrink": 0,
                       "flexDirection": "row",
                       "alignItems": "center"
@@ -475,25 +475,45 @@
                       {
                         "id": "labelBlock",
                         "style": {
-                          "height": "100%",
+                          "height": "{(item.wrap && !item.valueFills) ? \"auto\" : \"100%\"}",
                           "flexGrow": 1,
                           "flexShrink": 1,
                           "minWidth": 0,
                           "flexDirection": "column",
                           "display": "{!(item.kind == \"group\") && !(item.description == \"\") && !((item.kind == \"option\" || item.kind == \"multiselect\") || item.kind == \"text\") ? \"flex\" : \"none\"}"
                         },
-                        "children": [{"use": "labelTop"}, {"use": "description"}]
+                        "children": [
+                          {"use": "labelTop"},
+                          {"use": "description"},
+                          {
+                            "id": "descriptionEnd",
+                            "style": {
+                              "height": "{(item.wrap && !item.valueFills) ? 0.1 * fontHeight(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.025 * min(screen.w, screen.h)), 1) * 1.5 : 0}",
+                              "flexShrink": 0
+                            }
+                          }
+                        ]
                       },
                       {
                         "id": "labelBlockFit",
                         "style": {
-                          "height": "100%",
+                          "height": "{(item.wrap && !item.valueFills) ? \"auto\" : \"100%\"}",
                           "flexGrow": "{item.valueFills ? 0 : 1}",
                           "flexShrink": 0,
                           "flexDirection": "column",
                           "display": "{!(item.kind == \"group\") && !(item.description == \"\") && ((item.kind == \"option\" || item.kind == \"multiselect\") || item.kind == \"text\") ? \"flex\" : \"none\"}"
                         },
-                        "children": [{"use": "labelTop"}, {"use": "description"}]
+                        "children": [
+                          {"use": "labelTop"},
+                          {"use": "description"},
+                          {
+                            "id": "descriptionEndFit",
+                            "style": {
+                              "height": "{(item.wrap && !item.valueFills) ? 0.1 * fontHeight(\"$(themeDir)/../_inc/fonts/Inter-Bold.otf\", (0.025 * min(screen.w, screen.h)), 1) * 1.5 : 0}",
+                              "flexShrink": 0
+                            }
+                          }
+                        ]
                       },
                       {
                         "id": "option",

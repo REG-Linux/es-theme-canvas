@@ -176,47 +176,99 @@
     "el|menu|menutitle|p|color": "$color-scheme/el|menu|menufooter|p|color.1",
     "el|menu|menutitle|p|fontPath": "s:%R/_inc/fonts/Inter-Bold.otf",
     "el|menu|menutitle|p|fontSize": "f:0.0340000018",
-    "subsets|0": "$facts.subsets|0",
-    "subsets|1": "$facts.subsets|1",
-    "subsets|2": "$facts.subsets|2",
-    "subsets|3": "$facts.subsets|3",
-    "subsets|4": "$facts.subsets|4",
-    "subsets|5": "$facts.subsets|5",
-    "subsets|6": "$facts.subsets|6",
-    "subsets|7": "$facts.subsets|7",
-    "subsets|8": "$facts.subsets|8@env.screen",
-    "subsets|9": "$facts.subsets|9@env.screen",
-    "subsets|10": "$facts.subsets|10@env.screen",
-    "subsets|11": "$facts.subsets|11@env.screen",
-    "subsets|12": "$facts.subsets|12@env.screen",
-    "subsets|13": "$facts.subsets|13@env.screen",
-    "subsets|14": "$facts.subsets|14@env.screen",
-    "subsets|15": "$facts.subsets|15@env.screen",
-    "subsets|16": "$facts.subsets|16@env.screen",
-    "subsets|17": "$facts.subsets|17@env.screen",
-    "subsets|18": "$facts.subsets|18@env.screen",
-    "subsets|19": "$facts.subsets|19@env.screen",
-    "subsets|20": "$facts.subsets|20@env.screen",
-    "subsets|21": "$facts.subsets|21@env.screen",
-    "subsets|22": "$facts.subsets|22@env.screen",
-    "subsets|23": "$facts.subsets|23@env.screen",
-    "subsets|24": "$facts.subsets|24@env.screen",
-    "subsets|25": "$facts.subsets|25@env.screen",
-    "subsets|26": "$facts.subsets|26@env.screen",
-    "subsets|27": "$facts.subsets|27@env.screen",
-    "subsets|28": "$facts.subsets|28@env.screen",
-    "subsets|29": "$facts.subsets|29@env.screen",
-    "subsets|30": "$facts.subsets|30@env.screen",
-    "subsets|31": "$facts.subsets|31@env.screen",
-    "subsets|32": "$facts.subsets|32@env.screen",
-    "subsets|33": "$facts.subsets|33@env.screen",
-    "subsets|34": "$facts.subsets|34@env.screen",
-    "subsets|35": "$facts.subsets|35@env.screen",
-    "subsets|36": "$facts.subsets|36@env.screen",
-    "subsets|37": "$facts.subsets|37@env.screen",
-    "subsets|38": "$facts.subsets|38@env.screen",
-    "subsets|39": "$facts.subsets|39@env.screen",
-    "subsets|40": "$facts.subsets|40@env.screen",
+    "subset|aspect-ratio|16-9-auto|dn": "$facts.subset|aspect-ratio|16-9-auto|dn",
+    "subset|aspect-ratio|16-9-auto|at": "$facts.subset|aspect-ratio|16-9-auto|at",
+    "subsetTitle|aspect-ratio": "Aspect Ratio",
+    "subset|aspect-ratio|16-9|dn": "16:9",
+    "subset|aspect-ratio|16-9|at": "",
+    "subset|aspect-ratio|16-10|dn": "16:10",
+    "subset|aspect-ratio|16-10|at": "",
+    "subset|aspect-ratio|4-3|dn": "4:3",
+    "subset|aspect-ratio|4-3|at": "",
+    "subset|aspect-ratio|3-2|dn": "3:2",
+    "subset|aspect-ratio|3-2|at": "",
+    "subset|aspect-ratio|1-1|dn": "1:1",
+    "subset|aspect-ratio|1-1|at": "",
+    "subset|system-view|grid|dn": "Grid",
+    "subset|system-view|grid|at": "",
+    "subsetTitle|system-view": "System View",
+    "subset|system-view|carousel|dn": "Carousel",
+    "subset|system-view|carousel|at": "",
+    "subset|sysgridsize|automatic|dn": "$facts.subset|sysgridsize|automatic|dn",
+    "subset|sysgridsize|automatic|at": "$system-view/subset|sysgridsize|automatic|at.1",
+    "subsetTitle|sysgridsize": "$facts.subsetTitle|sysgridsize",
+    "subset|sysgridsize|3x1|dn": "$facts.subset|sysgridsize|3x1|dn",
+    "subset|sysgridsize|3x1|at": "$system-view/subset|sysgridsize|automatic|at.1",
+    "subset|sysgridsize|3x2|dn": "$facts.subset|sysgridsize|3x2|dn",
+    "subset|sysgridsize|3x2|at": "$system-view/subset|sysgridsize|automatic|at.1",
+    "subset|sysgridsize|3x3|dn": "$facts.subset|sysgridsize|3x3|dn",
+    "subset|sysgridsize|3x3|at": "$system-view/subset|sysgridsize|automatic|at.1",
+    "subset|sysgridsize|4x2|dn": "$facts.subset|sysgridsize|4x2|dn",
+    "subset|sysgridsize|4x2|at": "$system-view/subset|sysgridsize|automatic|at.1",
+    "subset|sysgridsize|4x3|dn": "$facts.subset|sysgridsize|4x3|dn",
+    "subset|sysgridsize|4x3|at": "$system-view/subset|sysgridsize|automatic|at.1",
+    "subset|sysgridsize|4x4|dn": "$facts.subset|sysgridsize|4x4|dn",
+    "subset|sysgridsize|4x4|at": "$system-view/subset|sysgridsize|automatic|at.1",
+    "subset|sysgridsize|5x2|dn": "$facts.subset|sysgridsize|5x2|dn",
+    "subset|sysgridsize|5x2|at": "$system-view/subset|sysgridsize|automatic|at.1",
+    "subset|sysgridsize|5x3|dn": "$facts.subset|sysgridsize|5x3|dn",
+    "subset|sysgridsize|5x3|at": "$system-view/subset|sysgridsize|automatic|at.1",
+    "subset|sysgridsize|5x4|dn": "$facts.subset|sysgridsize|5x4|dn",
+    "subset|sysgridsize|5x4|at": "$system-view/subset|sysgridsize|automatic|at.1",
+    "subset|icon-scheme|icon|dn": "Icons",
+    "subset|icon-scheme|icon|at": "",
+    "subsetTitle|icon-scheme": "System Icon Style",
+    "subset|icon-scheme|art|dn": "Art",
+    "subset|icon-scheme|art|at": "",
+    "subset|color-scheme|retro|dn": "Retro",
+    "subset|color-scheme|retro|at": "",
+    "subsetTitle|color-scheme": "Color Scheme",
+    "subset|color-scheme|beige|dn": "Beige",
+    "subset|color-scheme|beige|at": "",
+    "subset|color-scheme|dark|dn": "Dark",
+    "subset|color-scheme|dark|at": "",
+    "subset|color-scheme|light|dn": "Light",
+    "subset|color-scheme|light|at": "",
+    "subset|color-scheme|neon|dn": "Neon",
+    "subset|color-scheme|neon|at": "",
+    "subset|color-scheme|pastel|dn": "Pastel",
+    "subset|color-scheme|pastel|at": "",
+    "subset|color-scheme|purple|dn": "Purple",
+    "subset|color-scheme|purple|at": "",
+    "subset|font-size|medium|dn": "Default",
+    "subset|font-size|medium|at": "",
+    "subsetTitle|font-size": "Font Size",
+    "subset|font-size|small|dn": "Small",
+    "subset|font-size|small|at": "",
+    "subset|font-size|large|dn": "Large",
+    "subset|font-size|large|at": "",
+    "subset|metadata|on|dn": "On",
+    "subset|metadata|on|at": "",
+    "subsetTitle|metadata": "Metadata",
+    "subset|metadata|off|dn": "Off",
+    "subset|metadata|off|at": "",
+    "subset|metadata-option|rating|dn": "Rating",
+    "subset|metadata-option|rating|at": "",
+    "subsetTitle|metadata-option": "Metadata Rating/Playtime",
+    "subset|metadata-option|playtime|dn": "Playtime",
+    "subset|metadata-option|playtime|at": "",
+    "subset|transition-style|instant|dn": "Instant",
+    "subset|transition-style|instant|at": "",
+    "subsetTitle|transition-style": "Transition Style",
+    "subset|transition-style|fade|dn": "Fade",
+    "subset|transition-style|fade|at": "",
+    "subset|transition-style|slide|dn": "Slide",
+    "subset|transition-style|slide|at": "",
+    "subset|autogridsize|automatic|dn": "Automatic",
+    "subset|autogridsize|automatic|at": "grid",
+    "subsetTitle|autogridsize": "Automatic Grid Size",
+    "subset|autogridsize|large|dn": "2 Rows",
+    "subset|autogridsize|large|at": "grid",
+    "subset|autogridsize|medium|dn": "3 Rows",
+    "subset|autogridsize|medium|at": "grid",
+    "subset|autogridsize|small|dn": "4 Rows",
+    "subset|autogridsize|small|at": "grid",
+    "subsets": "$facts.subsets@env.screen",
     "el|system|systemcarousel|type": "$facts.el|system|systemcarousel|type",
     "el|system|systemcarousel|p|color": "$facts.el|system|systemcarousel|p|color",
     "el|system|systemcarousel|p|defaultTransition": "$facts.el|system|systemcarousel|p|defaultTransition",
@@ -229,6 +281,14 @@
     "el|system|systemcarousel|p|scaledLogoSpacing": "$facts.el|system|systemcarousel|p|scaledLogoSpacing",
     "el|system|systemcarousel|p|size": "$facts.el|system|systemcarousel|p|size",
     "el|system|systemcarousel|p|type": "$facts.el|system|systemcarousel|p|type",
+    "subset|aspect-ratio|1-1-auto|dn": "$facts.subset|aspect-ratio|1-1-auto|dn",
+    "subset|aspect-ratio|1-1-auto|at": "$facts.subset|aspect-ratio|16-9-auto|at",
+    "subset|aspect-ratio|16-10-auto|dn": "$facts.subset|aspect-ratio|16-10-auto|dn",
+    "subset|aspect-ratio|16-10-auto|at": "$facts.subset|aspect-ratio|16-9-auto|at",
+    "subset|aspect-ratio|3-2-auto|dn": "$facts.subset|aspect-ratio|3-2-auto|dn",
+    "subset|aspect-ratio|3-2-auto|at": "$facts.subset|aspect-ratio|16-9-auto|at",
+    "subset|aspect-ratio|4-3-auto|dn": "$facts.subset|aspect-ratio|4-3-auto|dn",
+    "subset|aspect-ratio|4-3-auto|at": "$facts.subset|aspect-ratio|16-9-auto|at",
     "theme|root": ".."
   },
   "vars": {
@@ -483,506 +543,86 @@
       "default": "",
       "carousel": "carousel"
     },
-    "facts.subsets|0": {
-      "by": "env.screen",
-      "default": "aspect-ratio\n16-9-auto\nAutomatic\nAspect Ratio\n",
-      "0|0||": "aspect-ratio\n16-9\n16:9\nAspect Ratio\n",
-      "0|0|1/1|": "aspect-ratio\n1-1-auto\nAutomatic\nAspect Ratio\n",
-      "0|0|16/10|": "aspect-ratio\n16-10-auto\nAutomatic\nAspect Ratio\n",
-      "0|0|3/2|": "aspect-ratio\n3-2-auto\nAutomatic\nAspect Ratio\n",
-      "0|0|4/3|": "aspect-ratio\n4-3-auto\nAutomatic\nAspect Ratio\n",
-      "1|0||": "aspect-ratio\n16-9\n16:9\nAspect Ratio\n",
-      "1|0|1/1|": "aspect-ratio\n1-1-auto\nAutomatic\nAspect Ratio\n",
-      "1|0|16/10|": "aspect-ratio\n16-10-auto\nAutomatic\nAspect Ratio\n",
-      "1|0|3/2|": "aspect-ratio\n3-2-auto\nAutomatic\nAspect Ratio\n",
-      "1|0|4/3|": "aspect-ratio\n4-3-auto\nAutomatic\nAspect Ratio\n",
-      "0|1||": "aspect-ratio\n16-9\n16:9\nAspect Ratio\n",
-      "1|1||": "aspect-ratio\n16-9\n16:9\nAspect Ratio\n"
-    },
-    "facts.subsets|1": {
-      "by": "env.screen",
-      "default": "aspect-ratio\n16-9\n16:9\nAspect Ratio\n",
-      "0|0||": "aspect-ratio\n16-10\n16:10\nAspect Ratio\n",
-      "1|0||": "aspect-ratio\n16-10\n16:10\nAspect Ratio\n",
-      "0|1||": "aspect-ratio\n16-10\n16:10\nAspect Ratio\n",
-      "1|1||": "aspect-ratio\n16-10\n16:10\nAspect Ratio\n"
-    },
-    "facts.subsets|10": {
+    "facts.subsetTitle|sysgridsize": {
       "by": "system-view",
-      "default": "sysgridsize\n3x2\n3×2\nSystem Grid Size\n",
-      "carousel": "color-scheme\nretro\nRetro\nColor Scheme\n"
-    },
-    "facts.subsets|10@env.screen": {
-      "by": "env.screen",
-      "default": "$facts.subsets|10",
-      "0|0||": "sysgridsize\n3x3\n3×3\nSystem Grid Size\n",
-      "1|0||": "sysgridsize\n3x3\n3×3\nSystem Grid Size\n",
-      "0|1||": "sysgridsize\n3x3\n3×3\nSystem Grid Size\n",
-      "1|1||": "sysgridsize\n3x3\n3×3\nSystem Grid Size\n"
-    },
-    "facts.subsets|11": {
-      "by": "system-view",
-      "default": "sysgridsize\n3x3\n3×3\nSystem Grid Size\n",
-      "carousel": "color-scheme\nbeige\nBeige\nColor Scheme\n"
-    },
-    "facts.subsets|11@env.screen": {
-      "by": "env.screen",
-      "default": "$facts.subsets|11",
-      "0|0||": "sysgridsize\n4x2\n4×2\nSystem Grid Size\n",
-      "1|0||": "sysgridsize\n4x2\n4×2\nSystem Grid Size\n",
-      "0|1||": "sysgridsize\n4x2\n4×2\nSystem Grid Size\n",
-      "1|1||": "sysgridsize\n4x2\n4×2\nSystem Grid Size\n"
-    },
-    "facts.subsets|12": {
-      "by": "system-view",
-      "default": "sysgridsize\n4x2\n4×2\nSystem Grid Size\n",
-      "carousel": "color-scheme\ndark\nDark\nColor Scheme\n"
-    },
-    "facts.subsets|12@env.screen": {
-      "by": "env.screen",
-      "default": "$facts.subsets|12",
-      "0|0||": "sysgridsize\n4x3\n4×3\nSystem Grid Size\n",
-      "1|0||": "sysgridsize\n4x3\n4×3\nSystem Grid Size\n",
-      "0|1||": "sysgridsize\n4x3\n4×3\nSystem Grid Size\n",
-      "1|1||": "sysgridsize\n4x3\n4×3\nSystem Grid Size\n"
-    },
-    "facts.subsets|13": {
-      "by": "system-view",
-      "default": "sysgridsize\n4x3\n4×3\nSystem Grid Size\n",
-      "carousel": "color-scheme\nlight\nLight\nColor Scheme\n"
-    },
-    "facts.subsets|13@env.screen": {
-      "by": "env.screen",
-      "default": "$facts.subsets|13",
-      "0|0||": "sysgridsize\n4x4\n4×4\nSystem Grid Size\n",
-      "1|0||": "sysgridsize\n4x4\n4×4\nSystem Grid Size\n",
-      "0|1||": "sysgridsize\n4x4\n4×4\nSystem Grid Size\n",
-      "1|1||": "sysgridsize\n4x4\n4×4\nSystem Grid Size\n"
-    },
-    "facts.subsets|14": {
-      "by": "system-view",
-      "default": "sysgridsize\n4x4\n4×4\nSystem Grid Size\n",
-      "carousel": "color-scheme\nneon\nNeon\nColor Scheme\n"
-    },
-    "facts.subsets|14@env.screen": {
-      "by": "env.screen",
-      "default": "$facts.subsets|14",
-      "0|0||": "sysgridsize\n5x2\n5×2\nSystem Grid Size\n",
-      "1|0||": "sysgridsize\n5x2\n5×2\nSystem Grid Size\n",
-      "0|1||": "sysgridsize\n5x2\n5×2\nSystem Grid Size\n",
-      "1|1||": "sysgridsize\n5x2\n5×2\nSystem Grid Size\n"
-    },
-    "facts.subsets|15": {
-      "by": "system-view",
-      "default": "sysgridsize\n5x2\n5×2\nSystem Grid Size\n",
-      "carousel": "color-scheme\npastel\nPastel\nColor Scheme\n"
-    },
-    "facts.subsets|15@env.screen": {
-      "by": "env.screen",
-      "default": "$facts.subsets|15",
-      "0|0||": "sysgridsize\n5x3\n5×3\nSystem Grid Size\n",
-      "1|0||": "sysgridsize\n5x3\n5×3\nSystem Grid Size\n",
-      "0|1||": "sysgridsize\n5x3\n5×3\nSystem Grid Size\n",
-      "1|1||": "sysgridsize\n5x3\n5×3\nSystem Grid Size\n"
-    },
-    "facts.subsets|16": {
-      "by": "system-view",
-      "default": "sysgridsize\n5x3\n5×3\nSystem Grid Size\n",
-      "carousel": "color-scheme\npurple\nPurple\nColor Scheme\n"
-    },
-    "facts.subsets|16@env.screen": {
-      "by": "env.screen",
-      "default": "$facts.subsets|16",
-      "0|0||": "sysgridsize\n5x4\n5×4\nSystem Grid Size\n",
-      "1|0||": "sysgridsize\n5x4\n5×4\nSystem Grid Size\n",
-      "0|1||": "sysgridsize\n5x4\n5×4\nSystem Grid Size\n",
-      "1|1||": "sysgridsize\n5x4\n5×4\nSystem Grid Size\n"
-    },
-    "facts.subsets|17": {
-      "by": "system-view",
-      "default": "sysgridsize\n5x4\n5×4\nSystem Grid Size\n",
-      "carousel": "font-size\nmedium\nDefault\nFont Size\n"
-    },
-    "facts.subsets|17@env.screen": {
-      "by": "env.screen",
-      "default": "$facts.subsets|17",
-      "0|0||": "icon-scheme\nicon\nIcons\nSystem Icon Style\n",
-      "1|0||": "icon-scheme\nicon\nIcons\nSystem Icon Style\n",
-      "0|1||": "icon-scheme\nicon\nIcons\nSystem Icon Style\n",
-      "1|1||": "icon-scheme\nicon\nIcons\nSystem Icon Style\n"
-    },
-    "facts.subsets|18": {
-      "by": "system-view",
-      "default": "icon-scheme\nicon\nIcons\nSystem Icon Style\n",
-      "carousel": "font-size\nsmall\nSmall\nFont Size\n"
-    },
-    "facts.subsets|18@env.screen": {
-      "by": "env.screen",
-      "default": "$facts.subsets|18",
-      "0|0||": "icon-scheme\nart\nArt\nSystem Icon Style\n",
-      "1|0||": "icon-scheme\nart\nArt\nSystem Icon Style\n",
-      "0|1||": "icon-scheme\nart\nArt\nSystem Icon Style\n",
-      "1|1||": "icon-scheme\nart\nArt\nSystem Icon Style\n"
-    },
-    "facts.subsets|19": {
-      "by": "system-view",
-      "default": "icon-scheme\nart\nArt\nSystem Icon Style\n",
-      "carousel": "font-size\nlarge\nLarge\nFont Size\n"
-    },
-    "facts.subsets|19@env.screen": {
-      "by": "env.screen",
-      "default": "$facts.subsets|19",
-      "0|0||": "color-scheme\nretro\nRetro\nColor Scheme\n",
-      "1|0||": "color-scheme\nretro\nRetro\nColor Scheme\n",
-      "0|1||": "color-scheme\nretro\nRetro\nColor Scheme\n",
-      "1|1||": "color-scheme\nretro\nRetro\nColor Scheme\n"
-    },
-    "facts.subsets|2": {
-      "by": "env.screen",
-      "default": "aspect-ratio\n16-10\n16:10\nAspect Ratio\n",
-      "0|0||": "aspect-ratio\n4-3\n4:3\nAspect Ratio\n",
-      "1|0||": "aspect-ratio\n4-3\n4:3\nAspect Ratio\n",
-      "0|1||": "aspect-ratio\n4-3\n4:3\nAspect Ratio\n",
-      "1|1||": "aspect-ratio\n4-3\n4:3\nAspect Ratio\n"
-    },
-    "facts.subsets|20": {
-      "by": "system-view",
-      "default": "color-scheme\nretro\nRetro\nColor Scheme\n",
-      "carousel": "metadata\non\nOn\nMetadata\n"
-    },
-    "facts.subsets|20@env.screen": {
-      "by": "env.screen",
-      "default": "$facts.subsets|20",
-      "0|0||": "color-scheme\nbeige\nBeige\nColor Scheme\n",
-      "1|0||": "color-scheme\nbeige\nBeige\nColor Scheme\n",
-      "0|1||": "color-scheme\nbeige\nBeige\nColor Scheme\n",
-      "1|1||": "color-scheme\nbeige\nBeige\nColor Scheme\n"
-    },
-    "facts.subsets|21": {
-      "by": "system-view",
-      "default": "color-scheme\nbeige\nBeige\nColor Scheme\n",
-      "carousel": "metadata\noff\nOff\nMetadata\n"
-    },
-    "facts.subsets|21@env.screen": {
-      "by": "env.screen",
-      "default": "$facts.subsets|21",
-      "0|0||": "color-scheme\ndark\nDark\nColor Scheme\n",
-      "1|0||": "color-scheme\ndark\nDark\nColor Scheme\n",
-      "0|1||": "color-scheme\ndark\nDark\nColor Scheme\n",
-      "1|1||": "color-scheme\ndark\nDark\nColor Scheme\n"
-    },
-    "facts.subsets|22": {
-      "by": "system-view",
-      "default": "color-scheme\ndark\nDark\nColor Scheme\n",
-      "carousel": "metadata-option\nrating\nRating\nMetadata Rating/Playtime\n"
-    },
-    "facts.subsets|22@env.screen": {
-      "by": "env.screen",
-      "default": "$facts.subsets|22",
-      "0|0||": "color-scheme\nlight\nLight\nColor Scheme\n",
-      "1|0||": "color-scheme\nlight\nLight\nColor Scheme\n",
-      "0|1||": "color-scheme\nlight\nLight\nColor Scheme\n",
-      "1|1||": "color-scheme\nlight\nLight\nColor Scheme\n"
-    },
-    "facts.subsets|23": {
-      "by": "system-view",
-      "default": "color-scheme\nlight\nLight\nColor Scheme\n",
-      "carousel": "metadata-option\nplaytime\nPlaytime\nMetadata Rating/Playtime\n"
-    },
-    "facts.subsets|23@env.screen": {
-      "by": "env.screen",
-      "default": "$facts.subsets|23",
-      "0|0||": "color-scheme\nneon\nNeon\nColor Scheme\n",
-      "1|0||": "color-scheme\nneon\nNeon\nColor Scheme\n",
-      "0|1||": "color-scheme\nneon\nNeon\nColor Scheme\n",
-      "1|1||": "color-scheme\nneon\nNeon\nColor Scheme\n"
-    },
-    "facts.subsets|24": {
-      "by": "system-view",
-      "default": "color-scheme\nneon\nNeon\nColor Scheme\n",
-      "carousel": "transition-style\ninstant\nInstant\nTransition Style\n"
-    },
-    "facts.subsets|24@env.screen": {
-      "by": "env.screen",
-      "default": "$facts.subsets|24",
-      "0|0||": "color-scheme\npastel\nPastel\nColor Scheme\n",
-      "1|0||": "color-scheme\npastel\nPastel\nColor Scheme\n",
-      "0|1||": "color-scheme\npastel\nPastel\nColor Scheme\n",
-      "1|1||": "color-scheme\npastel\nPastel\nColor Scheme\n"
-    },
-    "facts.subsets|25": {
-      "by": "system-view",
-      "default": "color-scheme\npastel\nPastel\nColor Scheme\n",
-      "carousel": "transition-style\nfade\nFade\nTransition Style\n"
-    },
-    "facts.subsets|25@env.screen": {
-      "by": "env.screen",
-      "default": "$facts.subsets|25",
-      "0|0||": "color-scheme\npurple\nPurple\nColor Scheme\n",
-      "1|0||": "color-scheme\npurple\nPurple\nColor Scheme\n",
-      "0|1||": "color-scheme\npurple\nPurple\nColor Scheme\n",
-      "1|1||": "color-scheme\npurple\nPurple\nColor Scheme\n"
-    },
-    "facts.subsets|26": {
-      "by": "system-view",
-      "default": "color-scheme\npurple\nPurple\nColor Scheme\n",
-      "carousel": "transition-style\nslide\nSlide\nTransition Style\n"
-    },
-    "facts.subsets|26@env.screen": {
-      "by": "env.screen",
-      "default": "$facts.subsets|26",
-      "0|0||": "font-size\nmedium\nDefault\nFont Size\n",
-      "1|0||": "font-size\nmedium\nDefault\nFont Size\n",
-      "0|1||": "font-size\nmedium\nDefault\nFont Size\n",
-      "1|1||": "font-size\nmedium\nDefault\nFont Size\n"
-    },
-    "facts.subsets|27": {
-      "by": "system-view",
-      "default": "font-size\nmedium\nDefault\nFont Size\n",
-      "carousel": "autogridsize\nautomatic\nAutomatic\nAutomatic Grid Size\ngrid"
-    },
-    "facts.subsets|27@env.screen": {
-      "by": "env.screen",
-      "default": "$facts.subsets|27",
-      "0|0||": "font-size\nsmall\nSmall\nFont Size\n",
-      "1|0||": "font-size\nsmall\nSmall\nFont Size\n",
-      "0|1||": "font-size\nsmall\nSmall\nFont Size\n",
-      "1|1||": "font-size\nsmall\nSmall\nFont Size\n"
-    },
-    "facts.subsets|28": {
-      "by": "system-view",
-      "default": "font-size\nsmall\nSmall\nFont Size\n",
-      "carousel": "autogridsize\nlarge\n2 Rows\nAutomatic Grid Size\ngrid"
-    },
-    "facts.subsets|28@env.screen": {
-      "by": "env.screen",
-      "default": "$facts.subsets|28",
-      "0|0||": "font-size\nlarge\nLarge\nFont Size\n",
-      "1|0||": "font-size\nlarge\nLarge\nFont Size\n",
-      "0|1||": "font-size\nlarge\nLarge\nFont Size\n",
-      "1|1||": "font-size\nlarge\nLarge\nFont Size\n"
-    },
-    "facts.subsets|29": {
-      "by": "system-view",
-      "default": "font-size\nlarge\nLarge\nFont Size\n",
-      "carousel": "autogridsize\nmedium\n3 Rows\nAutomatic Grid Size\ngrid"
-    },
-    "facts.subsets|29@env.screen": {
-      "by": "env.screen",
-      "default": "$facts.subsets|29",
-      "0|0||": "metadata\non\nOn\nMetadata\n",
-      "1|0||": "metadata\non\nOn\nMetadata\n",
-      "0|1||": "metadata\non\nOn\nMetadata\n",
-      "1|1||": "metadata\non\nOn\nMetadata\n"
-    },
-    "facts.subsets|3": {
-      "by": "env.screen",
-      "default": "aspect-ratio\n4-3\n4:3\nAspect Ratio\n",
-      "0|0||": "aspect-ratio\n3-2\n3:2\nAspect Ratio\n",
-      "1|0||": "aspect-ratio\n3-2\n3:2\nAspect Ratio\n",
-      "0|1||": "aspect-ratio\n3-2\n3:2\nAspect Ratio\n",
-      "1|1||": "aspect-ratio\n3-2\n3:2\nAspect Ratio\n"
-    },
-    "facts.subsets|30": {
-      "by": "system-view",
-      "default": "metadata\non\nOn\nMetadata\n",
-      "carousel": "autogridsize\nsmall\n4 Rows\nAutomatic Grid Size\ngrid"
-    },
-    "facts.subsets|30@env.screen": {
-      "by": "env.screen",
-      "default": "$facts.subsets|30",
-      "0|0||": "metadata\noff\nOff\nMetadata\n",
-      "1|0||": "metadata\noff\nOff\nMetadata\n",
-      "0|1||": "metadata\noff\nOff\nMetadata\n",
-      "1|1||": "metadata\noff\nOff\nMetadata\n"
-    },
-    "facts.subsets|31": {
-      "by": "system-view",
-      "default": "metadata\noff\nOff\nMetadata\n",
+      "default": "System Grid Size",
       "carousel": ""
     },
-    "facts.subsets|31@env.screen": {
-      "by": "env.screen",
-      "default": "$facts.subsets|31",
-      "0|0||": "metadata-option\nrating\nRating\nMetadata Rating/Playtime\n",
-      "1|0||": "metadata-option\nrating\nRating\nMetadata Rating/Playtime\n",
-      "0|1||": "metadata-option\nrating\nRating\nMetadata Rating/Playtime\n",
-      "1|1||": "metadata-option\nrating\nRating\nMetadata Rating/Playtime\n"
-    },
-    "facts.subsets|32": {
+    "facts.subsets": {
       "by": "system-view",
-      "default": "metadata-option\nrating\nRating\nMetadata Rating/Playtime\n",
-      "carousel": ""
+      "default": "aspect-ratio|16-9-auto\naspect-ratio|16-9\naspect-ratio|16-10\naspect-ratio|4-3\naspect-ratio|3-2\naspect-ratio|1-1\nsystem-view|grid\nsystem-view|carousel\nsysgridsize|automatic\nsysgridsize|3x1\nsysgridsize|3x2\nsysgridsize|3x3\nsysgridsize|4x2\nsysgridsize|4x3\nsysgridsize|4x4\nsysgridsize|5x2\nsysgridsize|5x3\nsysgridsize|5x4\nicon-scheme|icon\nicon-scheme|art\ncolor-scheme|retro\ncolor-scheme|beige\ncolor-scheme|dark\ncolor-scheme|light\ncolor-scheme|neon\ncolor-scheme|pastel\ncolor-scheme|purple\nfont-size|medium\nfont-size|small\nfont-size|large\nmetadata|on\nmetadata|off\nmetadata-option|rating\nmetadata-option|playtime\ntransition-style|instant\ntransition-style|fade\ntransition-style|slide\nautogridsize|automatic\nautogridsize|large\nautogridsize|medium\nautogridsize|small",
+      "carousel": "aspect-ratio|16-9-auto\naspect-ratio|16-9\naspect-ratio|16-10\naspect-ratio|4-3\naspect-ratio|3-2\naspect-ratio|1-1\nsystem-view|grid\nsystem-view|carousel\nicon-scheme|icon\nicon-scheme|art\ncolor-scheme|retro\ncolor-scheme|beige\ncolor-scheme|dark\ncolor-scheme|light\ncolor-scheme|neon\ncolor-scheme|pastel\ncolor-scheme|purple\nfont-size|medium\nfont-size|small\nfont-size|large\nmetadata|on\nmetadata|off\nmetadata-option|rating\nmetadata-option|playtime\ntransition-style|instant\ntransition-style|fade\ntransition-style|slide\nautogridsize|automatic\nautogridsize|large\nautogridsize|medium\nautogridsize|small"
     },
-    "facts.subsets|32@env.screen": {
+    "facts.subsets@env.screen": {
       "by": "env.screen",
-      "default": "$facts.subsets|32",
-      "0|0||": "metadata-option\nplaytime\nPlaytime\nMetadata Rating/Playtime\n",
-      "1|0||": "metadata-option\nplaytime\nPlaytime\nMetadata Rating/Playtime\n",
-      "0|1||": "metadata-option\nplaytime\nPlaytime\nMetadata Rating/Playtime\n",
-      "1|1||": "metadata-option\nplaytime\nPlaytime\nMetadata Rating/Playtime\n"
+      "default": "$facts.subsets",
+      "0|0||": "aspect-ratio|16-9\naspect-ratio|16-10\naspect-ratio|4-3\naspect-ratio|3-2\naspect-ratio|1-1\nsystem-view|grid\nsystem-view|carousel\nsysgridsize|automatic\nsysgridsize|3x1\nsysgridsize|3x2\nsysgridsize|3x3\nsysgridsize|4x2\nsysgridsize|4x3\nsysgridsize|4x4\nsysgridsize|5x2\nsysgridsize|5x3\nsysgridsize|5x4\nicon-scheme|icon\nicon-scheme|art\ncolor-scheme|retro\ncolor-scheme|beige\ncolor-scheme|dark\ncolor-scheme|light\ncolor-scheme|neon\ncolor-scheme|pastel\ncolor-scheme|purple\nfont-size|medium\nfont-size|small\nfont-size|large\nmetadata|on\nmetadata|off\nmetadata-option|rating\nmetadata-option|playtime\ntransition-style|instant\ntransition-style|fade\ntransition-style|slide\nautogridsize|automatic\nautogridsize|large\nautogridsize|medium\nautogridsize|small",
+      "0|0|1/1|": "aspect-ratio|1-1-auto\naspect-ratio|16-9\naspect-ratio|16-10\naspect-ratio|4-3\naspect-ratio|3-2\naspect-ratio|1-1\nsystem-view|grid\nsystem-view|carousel\nsysgridsize|automatic\nsysgridsize|3x1\nsysgridsize|3x2\nsysgridsize|3x3\nsysgridsize|4x2\nsysgridsize|4x3\nsysgridsize|4x4\nsysgridsize|5x2\nsysgridsize|5x3\nsysgridsize|5x4\nicon-scheme|icon\nicon-scheme|art\ncolor-scheme|retro\ncolor-scheme|beige\ncolor-scheme|dark\ncolor-scheme|light\ncolor-scheme|neon\ncolor-scheme|pastel\ncolor-scheme|purple\nfont-size|medium\nfont-size|small\nfont-size|large\nmetadata|on\nmetadata|off\nmetadata-option|rating\nmetadata-option|playtime\ntransition-style|instant\ntransition-style|fade\ntransition-style|slide\nautogridsize|automatic\nautogridsize|large\nautogridsize|medium\nautogridsize|small",
+      "0|0|16/10|": "aspect-ratio|16-10-auto\naspect-ratio|16-9\naspect-ratio|16-10\naspect-ratio|4-3\naspect-ratio|3-2\naspect-ratio|1-1\nsystem-view|grid\nsystem-view|carousel\nsysgridsize|automatic\nsysgridsize|3x1\nsysgridsize|3x2\nsysgridsize|3x3\nsysgridsize|4x2\nsysgridsize|4x3\nsysgridsize|4x4\nsysgridsize|5x2\nsysgridsize|5x3\nsysgridsize|5x4\nicon-scheme|icon\nicon-scheme|art\ncolor-scheme|retro\ncolor-scheme|beige\ncolor-scheme|dark\ncolor-scheme|light\ncolor-scheme|neon\ncolor-scheme|pastel\ncolor-scheme|purple\nfont-size|medium\nfont-size|small\nfont-size|large\nmetadata|on\nmetadata|off\nmetadata-option|rating\nmetadata-option|playtime\ntransition-style|instant\ntransition-style|fade\ntransition-style|slide\nautogridsize|automatic\nautogridsize|large\nautogridsize|medium\nautogridsize|small",
+      "0|0|3/2|": "aspect-ratio|3-2-auto\naspect-ratio|16-9\naspect-ratio|16-10\naspect-ratio|4-3\naspect-ratio|3-2\naspect-ratio|1-1\nsystem-view|grid\nsystem-view|carousel\nsysgridsize|automatic\nsysgridsize|3x1\nsysgridsize|3x2\nsysgridsize|3x3\nsysgridsize|4x2\nsysgridsize|4x3\nsysgridsize|4x4\nsysgridsize|5x2\nsysgridsize|5x3\nsysgridsize|5x4\nicon-scheme|icon\nicon-scheme|art\ncolor-scheme|retro\ncolor-scheme|beige\ncolor-scheme|dark\ncolor-scheme|light\ncolor-scheme|neon\ncolor-scheme|pastel\ncolor-scheme|purple\nfont-size|medium\nfont-size|small\nfont-size|large\nmetadata|on\nmetadata|off\nmetadata-option|rating\nmetadata-option|playtime\ntransition-style|instant\ntransition-style|fade\ntransition-style|slide\nautogridsize|automatic\nautogridsize|large\nautogridsize|medium\nautogridsize|small",
+      "0|0|4/3|": "aspect-ratio|4-3-auto\naspect-ratio|16-9\naspect-ratio|16-10\naspect-ratio|4-3\naspect-ratio|3-2\naspect-ratio|1-1\nsystem-view|grid\nsystem-view|carousel\nsysgridsize|automatic\nsysgridsize|3x1\nsysgridsize|3x2\nsysgridsize|3x3\nsysgridsize|4x2\nsysgridsize|4x3\nsysgridsize|4x4\nsysgridsize|5x2\nsysgridsize|5x3\nsysgridsize|5x4\nicon-scheme|icon\nicon-scheme|art\ncolor-scheme|retro\ncolor-scheme|beige\ncolor-scheme|dark\ncolor-scheme|light\ncolor-scheme|neon\ncolor-scheme|pastel\ncolor-scheme|purple\nfont-size|medium\nfont-size|small\nfont-size|large\nmetadata|on\nmetadata|off\nmetadata-option|rating\nmetadata-option|playtime\ntransition-style|instant\ntransition-style|fade\ntransition-style|slide\nautogridsize|automatic\nautogridsize|large\nautogridsize|medium\nautogridsize|small",
+      "1|0||": "aspect-ratio|16-9\naspect-ratio|16-10\naspect-ratio|4-3\naspect-ratio|3-2\naspect-ratio|1-1\nsystem-view|grid\nsystem-view|carousel\nsysgridsize|automatic\nsysgridsize|3x1\nsysgridsize|3x2\nsysgridsize|3x3\nsysgridsize|4x2\nsysgridsize|4x3\nsysgridsize|4x4\nsysgridsize|5x2\nsysgridsize|5x3\nsysgridsize|5x4\nicon-scheme|icon\nicon-scheme|art\ncolor-scheme|retro\ncolor-scheme|beige\ncolor-scheme|dark\ncolor-scheme|light\ncolor-scheme|neon\ncolor-scheme|pastel\ncolor-scheme|purple\nfont-size|medium\nfont-size|small\nfont-size|large\nmetadata|on\nmetadata|off\nmetadata-option|rating\nmetadata-option|playtime\ntransition-style|instant\ntransition-style|fade\ntransition-style|slide\nautogridsize|automatic\nautogridsize|large\nautogridsize|medium\nautogridsize|small",
+      "1|0|1/1|": "aspect-ratio|1-1-auto\naspect-ratio|16-9\naspect-ratio|16-10\naspect-ratio|4-3\naspect-ratio|3-2\naspect-ratio|1-1\nsystem-view|grid\nsystem-view|carousel\nsysgridsize|automatic\nsysgridsize|3x1\nsysgridsize|3x2\nsysgridsize|3x3\nsysgridsize|4x2\nsysgridsize|4x3\nsysgridsize|4x4\nsysgridsize|5x2\nsysgridsize|5x3\nsysgridsize|5x4\nicon-scheme|icon\nicon-scheme|art\ncolor-scheme|retro\ncolor-scheme|beige\ncolor-scheme|dark\ncolor-scheme|light\ncolor-scheme|neon\ncolor-scheme|pastel\ncolor-scheme|purple\nfont-size|medium\nfont-size|small\nfont-size|large\nmetadata|on\nmetadata|off\nmetadata-option|rating\nmetadata-option|playtime\ntransition-style|instant\ntransition-style|fade\ntransition-style|slide\nautogridsize|automatic\nautogridsize|large\nautogridsize|medium\nautogridsize|small",
+      "1|0|16/10|": "aspect-ratio|16-10-auto\naspect-ratio|16-9\naspect-ratio|16-10\naspect-ratio|4-3\naspect-ratio|3-2\naspect-ratio|1-1\nsystem-view|grid\nsystem-view|carousel\nsysgridsize|automatic\nsysgridsize|3x1\nsysgridsize|3x2\nsysgridsize|3x3\nsysgridsize|4x2\nsysgridsize|4x3\nsysgridsize|4x4\nsysgridsize|5x2\nsysgridsize|5x3\nsysgridsize|5x4\nicon-scheme|icon\nicon-scheme|art\ncolor-scheme|retro\ncolor-scheme|beige\ncolor-scheme|dark\ncolor-scheme|light\ncolor-scheme|neon\ncolor-scheme|pastel\ncolor-scheme|purple\nfont-size|medium\nfont-size|small\nfont-size|large\nmetadata|on\nmetadata|off\nmetadata-option|rating\nmetadata-option|playtime\ntransition-style|instant\ntransition-style|fade\ntransition-style|slide\nautogridsize|automatic\nautogridsize|large\nautogridsize|medium\nautogridsize|small",
+      "1|0|3/2|": "aspect-ratio|3-2-auto\naspect-ratio|16-9\naspect-ratio|16-10\naspect-ratio|4-3\naspect-ratio|3-2\naspect-ratio|1-1\nsystem-view|grid\nsystem-view|carousel\nsysgridsize|automatic\nsysgridsize|3x1\nsysgridsize|3x2\nsysgridsize|3x3\nsysgridsize|4x2\nsysgridsize|4x3\nsysgridsize|4x4\nsysgridsize|5x2\nsysgridsize|5x3\nsysgridsize|5x4\nicon-scheme|icon\nicon-scheme|art\ncolor-scheme|retro\ncolor-scheme|beige\ncolor-scheme|dark\ncolor-scheme|light\ncolor-scheme|neon\ncolor-scheme|pastel\ncolor-scheme|purple\nfont-size|medium\nfont-size|small\nfont-size|large\nmetadata|on\nmetadata|off\nmetadata-option|rating\nmetadata-option|playtime\ntransition-style|instant\ntransition-style|fade\ntransition-style|slide\nautogridsize|automatic\nautogridsize|large\nautogridsize|medium\nautogridsize|small",
+      "1|0|4/3|": "aspect-ratio|4-3-auto\naspect-ratio|16-9\naspect-ratio|16-10\naspect-ratio|4-3\naspect-ratio|3-2\naspect-ratio|1-1\nsystem-view|grid\nsystem-view|carousel\nsysgridsize|automatic\nsysgridsize|3x1\nsysgridsize|3x2\nsysgridsize|3x3\nsysgridsize|4x2\nsysgridsize|4x3\nsysgridsize|4x4\nsysgridsize|5x2\nsysgridsize|5x3\nsysgridsize|5x4\nicon-scheme|icon\nicon-scheme|art\ncolor-scheme|retro\ncolor-scheme|beige\ncolor-scheme|dark\ncolor-scheme|light\ncolor-scheme|neon\ncolor-scheme|pastel\ncolor-scheme|purple\nfont-size|medium\nfont-size|small\nfont-size|large\nmetadata|on\nmetadata|off\nmetadata-option|rating\nmetadata-option|playtime\ntransition-style|instant\ntransition-style|fade\ntransition-style|slide\nautogridsize|automatic\nautogridsize|large\nautogridsize|medium\nautogridsize|small",
+      "0|1||": "aspect-ratio|16-9\naspect-ratio|16-10\naspect-ratio|4-3\naspect-ratio|3-2\naspect-ratio|1-1\nsystem-view|grid\nsystem-view|carousel\nsysgridsize|automatic\nsysgridsize|3x1\nsysgridsize|3x2\nsysgridsize|3x3\nsysgridsize|4x2\nsysgridsize|4x3\nsysgridsize|4x4\nsysgridsize|5x2\nsysgridsize|5x3\nsysgridsize|5x4\nicon-scheme|icon\nicon-scheme|art\ncolor-scheme|retro\ncolor-scheme|beige\ncolor-scheme|dark\ncolor-scheme|light\ncolor-scheme|neon\ncolor-scheme|pastel\ncolor-scheme|purple\nfont-size|medium\nfont-size|small\nfont-size|large\nmetadata|on\nmetadata|off\nmetadata-option|rating\nmetadata-option|playtime\ntransition-style|instant\ntransition-style|fade\ntransition-style|slide\nautogridsize|automatic\nautogridsize|large\nautogridsize|medium\nautogridsize|small",
+      "1|1||": "aspect-ratio|16-9\naspect-ratio|16-10\naspect-ratio|4-3\naspect-ratio|3-2\naspect-ratio|1-1\nsystem-view|grid\nsystem-view|carousel\nsysgridsize|automatic\nsysgridsize|3x1\nsysgridsize|3x2\nsysgridsize|3x3\nsysgridsize|4x2\nsysgridsize|4x3\nsysgridsize|4x4\nsysgridsize|5x2\nsysgridsize|5x3\nsysgridsize|5x4\nicon-scheme|icon\nicon-scheme|art\ncolor-scheme|retro\ncolor-scheme|beige\ncolor-scheme|dark\ncolor-scheme|light\ncolor-scheme|neon\ncolor-scheme|pastel\ncolor-scheme|purple\nfont-size|medium\nfont-size|small\nfont-size|large\nmetadata|on\nmetadata|off\nmetadata-option|rating\nmetadata-option|playtime\ntransition-style|instant\ntransition-style|fade\ntransition-style|slide\nautogridsize|automatic\nautogridsize|large\nautogridsize|medium\nautogridsize|small"
     },
-    "facts.subsets|33": {
-      "by": "system-view",
-      "default": "metadata-option\nplaytime\nPlaytime\nMetadata Rating/Playtime\n",
-      "carousel": ""
-    },
-    "facts.subsets|33@env.screen": {
+    "facts.subset|aspect-ratio|1-1-auto|dn": {
       "by": "env.screen",
-      "default": "$facts.subsets|33",
-      "0|0||": "transition-style\ninstant\nInstant\nTransition Style\n",
-      "1|0||": "transition-style\ninstant\nInstant\nTransition Style\n",
-      "0|1||": "transition-style\ninstant\nInstant\nTransition Style\n",
-      "1|1||": "transition-style\ninstant\nInstant\nTransition Style\n"
+      "default": "",
+      "0|0|1/1|": "Automatic",
+      "1|0|1/1|": "Automatic"
     },
-    "facts.subsets|34": {
-      "by": "system-view",
-      "default": "transition-style\ninstant\nInstant\nTransition Style\n",
-      "carousel": ""
-    },
-    "facts.subsets|34@env.screen": {
+    "facts.subset|aspect-ratio|16-10-auto|dn": {
       "by": "env.screen",
-      "default": "$facts.subsets|34",
-      "0|0||": "transition-style\nfade\nFade\nTransition Style\n",
-      "1|0||": "transition-style\nfade\nFade\nTransition Style\n",
-      "0|1||": "transition-style\nfade\nFade\nTransition Style\n",
-      "1|1||": "transition-style\nfade\nFade\nTransition Style\n"
+      "default": "",
+      "0|0|16/10|": "Automatic",
+      "1|0|16/10|": "Automatic"
     },
-    "facts.subsets|35": {
-      "by": "system-view",
-      "default": "transition-style\nfade\nFade\nTransition Style\n",
-      "carousel": ""
-    },
-    "facts.subsets|35@env.screen": {
+    "facts.subset|aspect-ratio|16-9-auto|at": {"by": "env.screen", "default": ""},
+    "facts.subset|aspect-ratio|16-9-auto|dn": {
       "by": "env.screen",
-      "default": "$facts.subsets|35",
-      "0|0||": "transition-style\nslide\nSlide\nTransition Style\n",
-      "1|0||": "transition-style\nslide\nSlide\nTransition Style\n",
-      "0|1||": "transition-style\nslide\nSlide\nTransition Style\n",
-      "1|1||": "transition-style\nslide\nSlide\nTransition Style\n"
-    },
-    "facts.subsets|36": {
-      "by": "system-view",
-      "default": "transition-style\nslide\nSlide\nTransition Style\n",
-      "carousel": ""
-    },
-    "facts.subsets|36@env.screen": {
-      "by": "env.screen",
-      "default": "$facts.subsets|36",
-      "0|0||": "autogridsize\nautomatic\nAutomatic\nAutomatic Grid Size\ngrid",
-      "1|0||": "autogridsize\nautomatic\nAutomatic\nAutomatic Grid Size\ngrid",
-      "0|1||": "autogridsize\nautomatic\nAutomatic\nAutomatic Grid Size\ngrid",
-      "1|1||": "autogridsize\nautomatic\nAutomatic\nAutomatic Grid Size\ngrid"
-    },
-    "facts.subsets|37": {
-      "by": "system-view",
-      "default": "autogridsize\nautomatic\nAutomatic\nAutomatic Grid Size\ngrid",
-      "carousel": ""
-    },
-    "facts.subsets|37@env.screen": {
-      "by": "env.screen",
-      "default": "$facts.subsets|37",
-      "0|0||": "autogridsize\nlarge\n2 Rows\nAutomatic Grid Size\ngrid",
-      "1|0||": "autogridsize\nlarge\n2 Rows\nAutomatic Grid Size\ngrid",
-      "0|1||": "autogridsize\nlarge\n2 Rows\nAutomatic Grid Size\ngrid",
-      "1|1||": "autogridsize\nlarge\n2 Rows\nAutomatic Grid Size\ngrid"
-    },
-    "facts.subsets|38": {
-      "by": "system-view",
-      "default": "autogridsize\nlarge\n2 Rows\nAutomatic Grid Size\ngrid",
-      "carousel": ""
-    },
-    "facts.subsets|38@env.screen": {
-      "by": "env.screen",
-      "default": "$facts.subsets|38",
-      "0|0||": "autogridsize\nmedium\n3 Rows\nAutomatic Grid Size\ngrid",
-      "1|0||": "autogridsize\nmedium\n3 Rows\nAutomatic Grid Size\ngrid",
-      "0|1||": "autogridsize\nmedium\n3 Rows\nAutomatic Grid Size\ngrid",
-      "1|1||": "autogridsize\nmedium\n3 Rows\nAutomatic Grid Size\ngrid"
-    },
-    "facts.subsets|39": {
-      "by": "system-view",
-      "default": "autogridsize\nmedium\n3 Rows\nAutomatic Grid Size\ngrid",
-      "carousel": ""
-    },
-    "facts.subsets|39@env.screen": {
-      "by": "env.screen",
-      "default": "$facts.subsets|39",
-      "0|0||": "autogridsize\nsmall\n4 Rows\nAutomatic Grid Size\ngrid",
-      "1|0||": "autogridsize\nsmall\n4 Rows\nAutomatic Grid Size\ngrid",
-      "0|1||": "autogridsize\nsmall\n4 Rows\nAutomatic Grid Size\ngrid",
-      "1|1||": "autogridsize\nsmall\n4 Rows\nAutomatic Grid Size\ngrid"
-    },
-    "facts.subsets|4": {
-      "by": "env.screen",
-      "default": "aspect-ratio\n3-2\n3:2\nAspect Ratio\n",
-      "0|0||": "aspect-ratio\n1-1\n1:1\nAspect Ratio\n",
-      "1|0||": "aspect-ratio\n1-1\n1:1\nAspect Ratio\n",
-      "0|1||": "aspect-ratio\n1-1\n1:1\nAspect Ratio\n",
-      "1|1||": "aspect-ratio\n1-1\n1:1\nAspect Ratio\n"
-    },
-    "facts.subsets|40": {
-      "by": "system-view",
-      "default": "autogridsize\nsmall\n4 Rows\nAutomatic Grid Size\ngrid",
-      "carousel": ""
-    },
-    "facts.subsets|40@env.screen": {
-      "by": "env.screen",
-      "default": "$facts.subsets|40",
+      "default": "Automatic",
       "0|0||": "",
+      "0|0|1/1|": "",
+      "0|0|16/10|": "",
+      "0|0|3/2|": "",
+      "0|0|4/3|": "",
       "1|0||": "",
+      "1|0|1/1|": "",
+      "1|0|16/10|": "",
+      "1|0|3/2|": "",
+      "1|0|4/3|": "",
       "0|1||": "",
       "1|1||": ""
     },
-    "facts.subsets|5": {
+    "facts.subset|aspect-ratio|3-2-auto|dn": {
       "by": "env.screen",
-      "default": "aspect-ratio\n1-1\n1:1\nAspect Ratio\n",
-      "0|0||": "system-view\ngrid\nGrid\nSystem View\n",
-      "1|0||": "system-view\ngrid\nGrid\nSystem View\n",
-      "0|1||": "system-view\ngrid\nGrid\nSystem View\n",
-      "1|1||": "system-view\ngrid\nGrid\nSystem View\n"
+      "default": "",
+      "0|0|3/2|": "Automatic",
+      "1|0|3/2|": "Automatic"
     },
-    "facts.subsets|6": {
+    "facts.subset|aspect-ratio|4-3-auto|dn": {
       "by": "env.screen",
-      "default": "system-view\ngrid\nGrid\nSystem View\n",
-      "0|0||": "system-view\ncarousel\nCarousel\nSystem View\n",
-      "1|0||": "system-view\ncarousel\nCarousel\nSystem View\n",
-      "0|1||": "system-view\ncarousel\nCarousel\nSystem View\n",
-      "1|1||": "system-view\ncarousel\nCarousel\nSystem View\n"
+      "default": "",
+      "0|0|4/3|": "Automatic",
+      "1|0|4/3|": "Automatic"
     },
-    "facts.subsets|7": {
-      "by": "env.screen",
-      "default": "system-view\ncarousel\nCarousel\nSystem View\n",
-      "0|0||": "sysgridsize\nautomatic\nAutomatic\nSystem Grid Size\n",
-      "1|0||": "sysgridsize\nautomatic\nAutomatic\nSystem Grid Size\n",
-      "0|1||": "sysgridsize\nautomatic\nAutomatic\nSystem Grid Size\n",
-      "1|1||": "sysgridsize\nautomatic\nAutomatic\nSystem Grid Size\n"
-    },
-    "facts.subsets|8": {
+    "facts.subset|sysgridsize|3x1|dn": {"by": "system-view", "default": "3×1", "carousel": ""},
+    "facts.subset|sysgridsize|3x2|dn": {"by": "system-view", "default": "3×2", "carousel": ""},
+    "facts.subset|sysgridsize|3x3|dn": {"by": "system-view", "default": "3×3", "carousel": ""},
+    "facts.subset|sysgridsize|4x2|dn": {"by": "system-view", "default": "4×2", "carousel": ""},
+    "facts.subset|sysgridsize|4x3|dn": {"by": "system-view", "default": "4×3", "carousel": ""},
+    "facts.subset|sysgridsize|4x4|dn": {"by": "system-view", "default": "4×4", "carousel": ""},
+    "facts.subset|sysgridsize|5x2|dn": {"by": "system-view", "default": "5×2", "carousel": ""},
+    "facts.subset|sysgridsize|5x3|dn": {"by": "system-view", "default": "5×3", "carousel": ""},
+    "facts.subset|sysgridsize|5x4|dn": {"by": "system-view", "default": "5×4", "carousel": ""},
+    "facts.subset|sysgridsize|automatic|dn": {
       "by": "system-view",
-      "default": "sysgridsize\nautomatic\nAutomatic\nSystem Grid Size\n",
-      "carousel": "icon-scheme\nicon\nIcons\nSystem Icon Style\n"
-    },
-    "facts.subsets|8@env.screen": {
-      "by": "env.screen",
-      "default": "$facts.subsets|8",
-      "0|0||": "sysgridsize\n3x1\n3×1\nSystem Grid Size\n",
-      "1|0||": "sysgridsize\n3x1\n3×1\nSystem Grid Size\n",
-      "0|1||": "sysgridsize\n3x1\n3×1\nSystem Grid Size\n",
-      "1|1||": "sysgridsize\n3x1\n3×1\nSystem Grid Size\n"
-    },
-    "facts.subsets|9": {
-      "by": "system-view",
-      "default": "sysgridsize\n3x1\n3×1\nSystem Grid Size\n",
-      "carousel": "icon-scheme\nart\nArt\nSystem Icon Style\n"
-    },
-    "facts.subsets|9@env.screen": {
-      "by": "env.screen",
-      "default": "$facts.subsets|9",
-      "0|0||": "sysgridsize\n3x2\n3×2\nSystem Grid Size\n",
-      "1|0||": "sysgridsize\n3x2\n3×2\nSystem Grid Size\n",
-      "0|1||": "sysgridsize\n3x2\n3×2\nSystem Grid Size\n",
-      "1|1||": "sysgridsize\n3x2\n3×2\nSystem Grid Size\n"
+      "default": "Automatic",
+      "carousel": ""
     },
     "font-size/el|basic|gamelist|p|lines.1": {
       "by": "font-size",
@@ -1008,6 +648,7 @@
       "small": "p:0.349000007,0.787999988",
       "large": "p:0.349000007,0.763000011"
     },
+    "system-view/subset|sysgridsize|automatic|at.1": {"by": "system-view", "default": ""},
     "system-view/view|system|elements.1": {
       "by": "system-view",
       "default": "imagegrid",
