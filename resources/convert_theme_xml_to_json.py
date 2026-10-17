@@ -20,6 +20,7 @@ FILTER_KEYS = {
     "tinyScreen",
     "verticalScreen",
     "ifHelpPrompts",
+    "ifDualScreen",
     "ifCheevos",
     "ifArch",
     "ifNotArch",

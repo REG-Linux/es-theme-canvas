@@ -1,0 +1,1113 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": ""
+    },
+    {
+      "key": "systemDevice",
+      "value": ""
+    },
+    {
+      "key": "systemYears",
+      "value": "{system:releaseYear}"
+    },
+    {
+      "key": "secTextColor",
+      "value": "${systemInfoColor}"
+    },
+    {
+      "key": "secPanelColor",
+      "value": "${BackdropColor}"
+    }
+  ],
+  "nodes": [
+    {
+      "type": "include",
+      "path": "${themePath}/_inc/systems/info/$system.json"
+    },
+    {
+      "type": "view",
+      "name": "secondarysystem, secondarygamelist, playing",
+      "elements": [
+        {
+          "type": "image",
+          "name": "sec-background",
+          "extra": true,
+          "props": [
+            {
+              "name": "path",
+              "value": "${backgroundArtPath}.webp"
+            },
+            {
+              "name": "origin",
+              "value": "0.5 0.5"
+            },
+            {
+              "name": "pos",
+              "value": "0.5 0.5"
+            },
+            {
+              "name": "minSize",
+              "value": "1 1"
+            },
+            {
+              "name": "zIndex",
+              "value": "${zBackgroundArt}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "view",
+      "name": "secondarysystem",
+      "elements": [
+        {
+          "type": "image",
+          "name": "sec-device",
+          "extra": true,
+          "props": [
+            {
+              "name": "path",
+              "value": "firstfile(\"${systemDevice}\", \"${themePath}/_inc/systems/devices/\" + {system:theme} + \".webp\", \"${themePath}/_inc/systems/carousel-icons-art/\" + {system:theme} + \".webp\", \"${themePath}/_inc/systems/carousel-icons-art/_default.webp\")"
+            },
+            {
+              "name": "origin",
+              "value": "0.5 0.5"
+            },
+            {
+              "name": "pos",
+              "value": "0.5 0.56"
+            },
+            {
+              "name": "maxSize",
+              "value": "0.752 0.672"
+            },
+            {
+              "name": "linearSmooth",
+              "value": "true"
+            },
+            {
+              "name": "zIndex",
+              "value": "${zUI}"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "name": "sec-logo",
+          "extra": true,
+          "props": [
+            {
+              "name": "path",
+              "value": "${themePath}/_inc/systems/logos/{system:theme}.svg"
+            },
+            {
+              "name": "origin",
+              "value": "0.5 0"
+            },
+            {
+              "name": "pos",
+              "value": "0.5 0.02"
+            },
+            {
+              "name": "maxSize",
+              "value": "0.75 0.105"
+            },
+            {
+              "name": "color",
+              "value": "${secTextColor}"
+            },
+            {
+              "name": "linearSmooth",
+              "value": "true"
+            },
+            {
+              "name": "zIndex",
+              "value": "${zIcons}"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "sec-fullname",
+          "extra": true,
+          "props": [
+            {
+              "name": "text",
+              "value": "{system:fullName}"
+            },
+            {
+              "name": "visible",
+              "value": "!exists(\"${themePath}/_inc/systems/logos/\" + {system:theme} + \".svg\")"
+            },
+            {
+              "name": "origin",
+              "value": "0.5 0"
+            },
+            {
+              "name": "pos",
+              "value": "0.5 0.02"
+            },
+            {
+              "name": "size",
+              "value": "0.9 0.11"
+            },
+            {
+              "name": "alignment",
+              "value": "center"
+            },
+            {
+              "name": "forceUppercase",
+              "value": "true"
+            },
+            {
+              "name": "fontPath",
+              "value": "${fontBold}"
+            },
+            {
+              "name": "fontSize",
+              "value": "0.075"
+            },
+            {
+              "name": "color",
+              "value": "${secTextColor}"
+            },
+            {
+              "name": "zIndex",
+              "value": "${zText}"
+            }
+          ]
+        },
+        {
+          "type": "rectangle",
+          "name": "sec-panel",
+          "extra": true,
+          "props": [
+            {
+              "name": "pos",
+              "value": "0.03 0.5"
+            },
+            {
+              "name": "size",
+              "value": "0.94 0.48"
+            },
+            {
+              "name": "color",
+              "value": "${secPanelColor}4D"
+            },
+            {
+              "name": "roundCorners",
+              "value": "12"
+            },
+            {
+              "name": "zIndex",
+              "value": "${zMetadata}"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "sec-year",
+          "extra": true,
+          "props": [
+            {
+              "name": "text",
+              "value": "${systemYears}"
+            },
+            {
+              "name": "visible",
+              "value": "{system:collection} + {system:isGroup} == 0"
+            },
+            {
+              "name": "pos",
+              "value": "0.05 0.515"
+            },
+            {
+              "name": "size",
+              "value": "0.5 0.05"
+            },
+            {
+              "name": "alignment",
+              "value": "left"
+            },
+            {
+              "name": "fontPath",
+              "value": "${fontBold}"
+            },
+            {
+              "name": "fontSize",
+              "value": "0.04"
+            },
+            {
+              "name": "color",
+              "value": "${secTextColor}"
+            },
+            {
+              "name": "zIndex",
+              "value": "${zText}"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "sec-hardware",
+          "extra": true,
+          "props": [
+            {
+              "name": "text",
+              "value": "{system:hardwareType}"
+            },
+            {
+              "name": "pos",
+              "value": "0.55 0.515"
+            },
+            {
+              "name": "size",
+              "value": "0.4 0.05"
+            },
+            {
+              "name": "alignment",
+              "value": "right"
+            },
+            {
+              "name": "forceUppercase",
+              "value": "true"
+            },
+            {
+              "name": "fontPath",
+              "value": "${fontBold}"
+            },
+            {
+              "name": "fontSize",
+              "value": "0.04"
+            },
+            {
+              "name": "color",
+              "value": "${secTextColor}"
+            },
+            {
+              "name": "opacity",
+              "value": "0.85"
+            },
+            {
+              "name": "zIndex",
+              "value": "${zText}"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "sec-trivia",
+          "extra": true,
+          "props": [
+            {
+              "name": "text",
+              "value": "${systemTrivia}"
+            },
+            {
+              "name": "pos",
+              "value": "0.05 0.575"
+            },
+            {
+              "name": "size",
+              "value": "0.9 0.34"
+            },
+            {
+              "name": "alignment",
+              "value": "left"
+            },
+            {
+              "name": "verticalAlignment",
+              "value": "top"
+            },
+            {
+              "name": "multiLine",
+              "value": "true"
+            },
+            {
+              "name": "autoScroll",
+              "value": "vertical"
+            },
+            {
+              "name": "autoScrollSpeed",
+              "value": "50"
+            },
+            {
+              "name": "autoScrollDelay",
+              "value": "5000"
+            },
+            {
+              "name": "fontPath",
+              "value": "${fontRegular}"
+            },
+            {
+              "name": "fontSize",
+              "value": "0.032"
+            },
+            {
+              "name": "lineSpacing",
+              "value": "1.2"
+            },
+            {
+              "name": "color",
+              "value": "${secTextColor}"
+            },
+            {
+              "name": "zIndex",
+              "value": "${zText}"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "sec-games",
+          "extra": true,
+          "props": [
+            {
+              "name": "text",
+              "value": "YOUR GAMES: {system:total}"
+            },
+            {
+              "name": "pos",
+              "value": "0.05 0.925"
+            },
+            {
+              "name": "size",
+              "value": "0.9 0.04"
+            },
+            {
+              "name": "alignment",
+              "value": "right"
+            },
+            {
+              "name": "fontPath",
+              "value": "${fontRegular}"
+            },
+            {
+              "name": "fontSize",
+              "value": "0.03"
+            },
+            {
+              "name": "color",
+              "value": "${secTextColor}"
+            },
+            {
+              "name": "opacity",
+              "value": "0.75"
+            },
+            {
+              "name": "zIndex",
+              "value": "${zText}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "view",
+      "name": "secondarygamelist",
+      "elements": [
+        {
+          "type": "image",
+          "name": "sec-shot",
+          "extra": true,
+          "props": [
+            {
+              "name": "path",
+              "value": "firstfile({game:image}, {game:thumbnail})"
+            },
+            {
+              "name": "origin",
+              "value": "0.5 0.5"
+            },
+            {
+              "name": "pos",
+              "value": "0.5 0.31"
+            },
+            {
+              "name": "maxSize",
+              "value": "0.92 0.58"
+            },
+            {
+              "name": "roundCorners",
+              "value": "0.01"
+            },
+            {
+              "name": "linearSmooth",
+              "value": "true"
+            },
+            {
+              "name": "zIndex",
+              "value": "${zUI}"
+            }
+          ]
+        },
+        {
+          "type": "video",
+          "name": "sec-video",
+          "extra": true,
+          "props": [
+            {
+              "name": "path",
+              "value": "{game:video}"
+            },
+            {
+              "name": "origin",
+              "value": "0.5 0.5"
+            },
+            {
+              "name": "pos",
+              "value": "0.5 0.31"
+            },
+            {
+              "name": "maxSize",
+              "value": "0.92 0.58"
+            },
+            {
+              "name": "delay",
+              "value": "1.0"
+            },
+            {
+              "name": "roundCorners",
+              "value": "0.01"
+            },
+            {
+              "name": "zIndex",
+              "value": "${zVideo}"
+            }
+          ]
+        },
+        {
+          "type": "rectangle",
+          "name": "sec-game-panel",
+          "extra": true,
+          "props": [
+            {
+              "name": "pos",
+              "value": "0.02 0.615"
+            },
+            {
+              "name": "size",
+              "value": "0.96 0.37"
+            },
+            {
+              "name": "color",
+              "value": "${secPanelColor}4D"
+            },
+            {
+              "name": "roundCorners",
+              "value": "12"
+            },
+            {
+              "name": "zIndex",
+              "value": "${zMetadata}"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "sec-name",
+          "extra": true,
+          "props": [
+            {
+              "name": "text",
+              "value": "{game:name}"
+            },
+            {
+              "name": "pos",
+              "value": "0.04 0.63"
+            },
+            {
+              "name": "size",
+              "value": "0.92 0.06"
+            },
+            {
+              "name": "alignment",
+              "value": "left"
+            },
+            {
+              "name": "autoScroll",
+              "value": "horizontal"
+            },
+            {
+              "name": "autoScrollSpeed",
+              "value": "50"
+            },
+            {
+              "name": "autoScrollDelay",
+              "value": "3000"
+            },
+            {
+              "name": "fontPath",
+              "value": "${fontBold}"
+            },
+            {
+              "name": "fontSize",
+              "value": "0.045"
+            },
+            {
+              "name": "color",
+              "value": "${secTextColor}"
+            },
+            {
+              "name": "zIndex",
+              "value": "${zText}"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "sec-facts",
+          "extra": true,
+          "props": [
+            {
+              "name": "text",
+              "value": "{game:releaseYear}"
+            },
+            {
+              "name": "pos",
+              "value": "0.04 0.69"
+            },
+            {
+              "name": "size",
+              "value": "0.12 0.04"
+            },
+            {
+              "name": "alignment",
+              "value": "left"
+            },
+            {
+              "name": "fontPath",
+              "value": "${fontRegular}"
+            },
+            {
+              "name": "fontSize",
+              "value": "0.032"
+            },
+            {
+              "name": "color",
+              "value": "${secTextColor}"
+            },
+            {
+              "name": "zIndex",
+              "value": "${zText}"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "sec-developer",
+          "extra": true,
+          "props": [
+            {
+              "name": "text",
+              "value": "{game:developer}"
+            },
+            {
+              "name": "pos",
+              "value": "0.16 0.69"
+            },
+            {
+              "name": "size",
+              "value": "0.36 0.04"
+            },
+            {
+              "name": "alignment",
+              "value": "left"
+            },
+            {
+              "name": "fontPath",
+              "value": "${fontRegular}"
+            },
+            {
+              "name": "fontSize",
+              "value": "0.032"
+            },
+            {
+              "name": "color",
+              "value": "${secTextColor}"
+            },
+            {
+              "name": "zIndex",
+              "value": "${zText}"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "sec-genre",
+          "extra": true,
+          "props": [
+            {
+              "name": "text",
+              "value": "{game:genre}"
+            },
+            {
+              "name": "pos",
+              "value": "0.52 0.69"
+            },
+            {
+              "name": "size",
+              "value": "0.26 0.04"
+            },
+            {
+              "name": "alignment",
+              "value": "left"
+            },
+            {
+              "name": "fontPath",
+              "value": "${fontRegular}"
+            },
+            {
+              "name": "fontSize",
+              "value": "0.032"
+            },
+            {
+              "name": "color",
+              "value": "${secTextColor}"
+            },
+            {
+              "name": "zIndex",
+              "value": "${zText}"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "sec-players",
+          "extra": true,
+          "props": [
+            {
+              "name": "text",
+              "value": "{game:players}"
+            },
+            {
+              "name": "pos",
+              "value": "0.78 0.69"
+            },
+            {
+              "name": "size",
+              "value": "0.18 0.04"
+            },
+            {
+              "name": "alignment",
+              "value": "right"
+            },
+            {
+              "name": "fontPath",
+              "value": "${fontRegular}"
+            },
+            {
+              "name": "fontSize",
+              "value": "0.032"
+            },
+            {
+              "name": "color",
+              "value": "${secTextColor}"
+            },
+            {
+              "name": "zIndex",
+              "value": "${zText}"
+            }
+          ]
+        },
+        {
+          "type": "rating",
+          "name": "sec-rating",
+          "extra": true,
+          "props": [
+            {
+              "name": "value",
+              "value": "{game:rating}"
+            },
+            {
+              "name": "pos",
+              "value": "0.04 0.74"
+            },
+            {
+              "name": "size",
+              "value": "0 0.03"
+            },
+            {
+              "name": "filledPath",
+              "value": "${themePath}/_inc/images/icons/icon-star-filled.svg"
+            },
+            {
+              "name": "unfilledPath",
+              "value": "${themePath}/_inc/images/icons/icon-star-unfilled.svg"
+            },
+            {
+              "name": "color",
+              "value": "${secTextColor}"
+            },
+            {
+              "name": "zIndex",
+              "value": "${zMetadata}"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "sec-description",
+          "extra": true,
+          "props": [
+            {
+              "name": "text",
+              "value": "{game:desc}"
+            },
+            {
+              "name": "pos",
+              "value": "0.04 0.79"
+            },
+            {
+              "name": "size",
+              "value": "0.92 0.19"
+            },
+            {
+              "name": "alignment",
+              "value": "left"
+            },
+            {
+              "name": "verticalAlignment",
+              "value": "top"
+            },
+            {
+              "name": "multiLine",
+              "value": "true"
+            },
+            {
+              "name": "autoScroll",
+              "value": "vertical"
+            },
+            {
+              "name": "autoScrollSpeed",
+              "value": "50"
+            },
+            {
+              "name": "autoScrollDelay",
+              "value": "5000"
+            },
+            {
+              "name": "fontPath",
+              "value": "${fontRegular}"
+            },
+            {
+              "name": "fontSize",
+              "value": "0.03"
+            },
+            {
+              "name": "lineSpacing",
+              "value": "1.2"
+            },
+            {
+              "name": "color",
+              "value": "${secTextColor}"
+            },
+            {
+              "name": "zIndex",
+              "value": "${zText}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "view",
+      "name": "playing",
+      "elements": [
+        {
+          "type": "image",
+          "name": "play-logo",
+          "extra": true,
+          "props": [
+            {
+              "name": "path",
+              "value": "${themePath}/_inc/systems/logos/{system:theme}.svg"
+            },
+            {
+              "name": "origin",
+              "value": "0.5 0"
+            },
+            {
+              "name": "pos",
+              "value": "0.5 0.04"
+            },
+            {
+              "name": "maxSize",
+              "value": "0.4 0.07"
+            },
+            {
+              "name": "color",
+              "value": "${secTextColor}"
+            },
+            {
+              "name": "linearSmooth",
+              "value": "true"
+            },
+            {
+              "name": "zIndex",
+              "value": "${zIcons}"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "name": "play-art",
+          "extra": true,
+          "props": [
+            {
+              "name": "path",
+              "value": "firstfile({game:marquee}, {game:image}, {game:thumbnail})"
+            },
+            {
+              "name": "origin",
+              "value": "0.5 0.5"
+            },
+            {
+              "name": "pos",
+              "value": "0.5 0.3"
+            },
+            {
+              "name": "maxSize",
+              "value": "0.8 0.3"
+            },
+            {
+              "name": "linearSmooth",
+              "value": "true"
+            },
+            {
+              "name": "zIndex",
+              "value": "${zUI}"
+            }
+          ]
+        },
+        {
+          "type": "rectangle",
+          "name": "play-panel",
+          "extra": true,
+          "props": [
+            {
+              "name": "pos",
+              "value": "0.04 0.465"
+            },
+            {
+              "name": "size",
+              "value": "0.92 0.51"
+            },
+            {
+              "name": "color",
+              "value": "${secPanelColor}99"
+            },
+            {
+              "name": "roundCorners",
+              "value": "12"
+            },
+            {
+              "name": "zIndex",
+              "value": "${zMetadata}"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "play-name",
+          "extra": true,
+          "props": [
+            {
+              "name": "text",
+              "value": "{game:name}"
+            },
+            {
+              "name": "pos",
+              "value": "0.05 0.48"
+            },
+            {
+              "name": "size",
+              "value": "0.9 0.06"
+            },
+            {
+              "name": "alignment",
+              "value": "center"
+            },
+            {
+              "name": "fontPath",
+              "value": "${fontBold}"
+            },
+            {
+              "name": "fontSize",
+              "value": "0.045"
+            },
+            {
+              "name": "color",
+              "value": "${secTextColor}"
+            },
+            {
+              "name": "zIndex",
+              "value": "${zText}"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "play-controls",
+          "extra": true,
+          "props": [
+            {
+              "name": "text",
+              "value": "{game:controls}"
+            },
+            {
+              "name": "visible",
+              "value": "{game:controls} != \"\""
+            },
+            {
+              "name": "pos",
+              "value": "0.1 0.57"
+            },
+            {
+              "name": "size",
+              "value": "0.8 0.3"
+            },
+            {
+              "name": "alignment",
+              "value": "left"
+            },
+            {
+              "name": "verticalAlignment",
+              "value": "top"
+            },
+            {
+              "name": "multiLine",
+              "value": "true"
+            },
+            {
+              "name": "fontPath",
+              "value": "${fontRegular}"
+            },
+            {
+              "name": "fontSize",
+              "value": "0.032"
+            },
+            {
+              "name": "lineSpacing",
+              "value": "1.2"
+            },
+            {
+              "name": "color",
+              "value": "${secTextColor}"
+            },
+            {
+              "name": "zIndex",
+              "value": "${zText}"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "play-description",
+          "extra": true,
+          "props": [
+            {
+              "name": "text",
+              "value": "{game:desc}"
+            },
+            {
+              "name": "visible",
+              "value": "{game:controls} == \"\""
+            },
+            {
+              "name": "pos",
+              "value": "0.06 0.57"
+            },
+            {
+              "name": "size",
+              "value": "0.88 0.3"
+            },
+            {
+              "name": "alignment",
+              "value": "left"
+            },
+            {
+              "name": "verticalAlignment",
+              "value": "top"
+            },
+            {
+              "name": "multiLine",
+              "value": "true"
+            },
+            {
+              "name": "fontPath",
+              "value": "${fontRegular}"
+            },
+            {
+              "name": "fontSize",
+              "value": "0.03"
+            },
+            {
+              "name": "lineSpacing",
+              "value": "1.2"
+            },
+            {
+              "name": "color",
+              "value": "${secTextColor}"
+            },
+            {
+              "name": "opacity",
+              "value": "${mediumOpacity}"
+            },
+            {
+              "name": "zIndex",
+              "value": "${zText}"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "play-hint",
+          "extra": true,
+          "props": [
+            {
+              "name": "text",
+              "value": "HOTKEY + START: EXIT GAME"
+            },
+            {
+              "name": "pos",
+              "value": "0.05 0.92"
+            },
+            {
+              "name": "size",
+              "value": "0.9 0.04"
+            },
+            {
+              "name": "alignment",
+              "value": "center"
+            },
+            {
+              "name": "fontPath",
+              "value": "${fontRegular}"
+            },
+            {
+              "name": "fontSize",
+              "value": "0.03"
+            },
+            {
+              "name": "color",
+              "value": "${secTextColor}"
+            },
+            {
+              "name": "opacity",
+              "value": "${lowOpacity}"
+            },
+            {
+              "name": "zIndex",
+              "value": "${zText}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
