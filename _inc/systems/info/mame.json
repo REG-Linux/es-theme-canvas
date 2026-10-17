@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "MAME is an emulation software that aims to recreate the hardware of many systems."
+    },
+    {
+      "key": "systemYears",
+      "value": "1997-"
+    }
+  ]
+}

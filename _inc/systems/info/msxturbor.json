@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "MSX TurboR is the fourth and final version of the MSX home computer standard.\nIt followed the MSX 2+."
+    },
+    {
+      "key": "systemYears",
+      "value": "1990-?"
+    }
+  ]
+}

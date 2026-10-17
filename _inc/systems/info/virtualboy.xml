@@ -1,0 +1,12 @@
+<theme>
+  <formatVersion>7</formatVersion>
+  <!-- Wikidata Q164651 (CC0) -->
+  <variables>
+    <systemTrivia>Virtual Boy is a table-top video game console developed by Nintendo.
+First released in July 1995 and discontinued in 1996.
+It launched at $179.99 in the US.
+About 770,000 units were sold.
+Processors include the NEC V810.</systemTrivia>
+    <systemYears>1995-1996</systemYears>
+  </variables>
+</theme>

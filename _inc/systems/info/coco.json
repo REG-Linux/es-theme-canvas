@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "TRS-80 Color Computer is a line of home computers.\nMade by Tandy Corporation.\nProcessors include the Motorola 6809."
+    },
+    {
+      "key": "systemYears",
+      "value": "1980-1991"
+    }
+  ]
+}

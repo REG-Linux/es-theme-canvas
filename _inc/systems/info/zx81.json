@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "Sinclair ZX81 is a home computer produced by Sinclair Research.\nFirst released in 1981 and discontinued in 1984.\nAbout 1.5 million units were sold.\nIt followed the Sinclair ZX80 and was succeeded by the ZX Spectrum.\nProcessors include the Zilog Z80A."
+    },
+    {
+      "key": "systemYears",
+      "value": "1981-1984"
+    }
+  ]
+}

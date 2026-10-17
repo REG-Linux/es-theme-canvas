@@ -1,0 +1,10 @@
+<theme>
+  <formatVersion>7</formatVersion>
+  <!-- Wikidata Q3108233 (CC0) -->
+  <variables>
+    <systemTrivia>Camputers Lynx is a 1980s 8-bit British home computer.
+First released in March 1983 and discontinued in 1984.
+Processors include the Zilog Z80.</systemTrivia>
+    <systemYears>1983-1984</systemYears>
+  </variables>
+</theme>

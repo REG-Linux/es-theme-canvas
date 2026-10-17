@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "Ikemen GO is an open-source fighting game engine."
+    },
+    {
+      "key": "systemYears",
+      "value": "2021"
+    }
+  ]
+}

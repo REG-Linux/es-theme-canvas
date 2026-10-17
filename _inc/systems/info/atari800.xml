@@ -1,0 +1,10 @@
+<theme>
+  <formatVersion>7</formatVersion>
+  <!-- Wikidata Q4889765 (CC0) -->
+  <variables>
+    <systemTrivia>Atari 800 is a home computer model.
+First released in 1979 and discontinued in 1992.
+Processors include the MOS Technology 6502.</systemTrivia>
+    <systemYears>1979-1992</systemYears>
+  </variables>
+</theme>

@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "Handheld electronic game is a small, portable device for playing electronic games."
+    },
+    {
+      "key": "systemYears",
+      "value": "1979-?"
+    }
+  ]
+}

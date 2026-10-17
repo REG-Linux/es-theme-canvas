@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "Philips Videopac+ G7400 is a third-generation home video game console released by Philips.\nFirst released in 1983.\nIt followed the Magnavox Odyssey 2 and was succeeded by the Philips CD-i.\nProcessors include the Intel 8048."
+    },
+    {
+      "key": "systemYears",
+      "value": "1983-?"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "Texas Instruments TI-99/4A is a home computer by Texas Instruments.\nIts library has 330 games.\nIt followed the Texas Instruments TI-99/4.\nProcessors include the Texas Instruments TMS9900."
+    },
+    {
+      "key": "systemYears",
+      "value": "1981-1984"
+    }
+  ]
+}

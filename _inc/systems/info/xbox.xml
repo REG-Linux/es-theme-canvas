@@ -1,0 +1,12 @@
+<theme>
+  <formatVersion>7</formatVersion>
+  <!-- Wikidata Q132020 (CC0) -->
+  <variables>
+    <systemTrivia>Xbox is a video game console by Microsoft.
+First released in North America in November 2001 and discontinued in 2006.
+About 24 million units were sold.
+It was succeeded by the Xbox 360.
+Processors include the X-CPU.</systemTrivia>
+    <systemYears>2003-2006</systemYears>
+  </variables>
+</theme>

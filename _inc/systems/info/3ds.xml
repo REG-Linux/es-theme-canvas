@@ -1,0 +1,12 @@
+<theme>
+  <formatVersion>7</formatVersion>
+  <!-- Wikidata Q203597 (CC0) -->
+  <variables>
+    <systemTrivia>Nintendo 3DS is a portable 3D dual-screen handheld by Nintendo.
+First released in Japan in February 2011 and discontinued in 2020.
+About 75.9 million units were sold.
+It followed the Nintendo DSi and was succeeded by the Nintendo Switch.
+Processors include the Original Nintendo 3DS CPU.</systemTrivia>
+    <systemYears>2011-2020</systemYears>
+  </variables>
+</theme>

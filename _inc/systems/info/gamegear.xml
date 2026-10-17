@@ -1,0 +1,13 @@
+<theme>
+  <formatVersion>7</formatVersion>
+  <!-- Wikidata Q751719 (CC0) -->
+  <variables>
+    <systemTrivia>Game Gear is a handheld game console developed by Sega.
+First released in Japan in October 1990 and discontinued in 2002.
+It launched at $149.99 in the US.
+About 10.6 million units were sold.
+It was succeeded by the Sega Nomad.
+Processors include the Zilog Z80.</systemTrivia>
+    <systemYears>1990-2002</systemYears>
+  </variables>
+</theme>

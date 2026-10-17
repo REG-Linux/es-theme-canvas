@@ -1,0 +1,12 @@
+<theme>
+  <formatVersion>7</formatVersion>
+  <!-- Wikidata Q868531 (CC0) -->
+  <variables>
+    <systemTrivia>Commander Keen is a video game series by id Software.
+First released in December 1990.
+Developed by id Software.
+Genre: platformer.
+Game modes: single-player.</systemTrivia>
+    <systemYears>1990</systemYears>
+  </variables>
+</theme>

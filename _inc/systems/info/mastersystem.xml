@@ -1,0 +1,12 @@
+<theme>
+  <formatVersion>7</formatVersion>
+  <!-- Wikidata Q209868 (CC0) -->
+  <variables>
+    <systemTrivia>Sega Master System is a third-generation home video game console developed by Sega.
+First released in the United States in September 1986 and discontinued in 1996.
+Its library has 314 games.
+It followed the SG-1000 and was succeeded by the Sega Genesis.
+Processors include the Zilog Z80.</systemTrivia>
+    <systemYears>1985-1996</systemYears>
+  </variables>
+</theme>

@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "Super Game Boy is an add-on for the Super NES video game console.\nMade by Nintendo.\nIts library has 524 games."
+    },
+    {
+      "key": "systemYears",
+      "value": "1994-1998"
+    }
+  ]
+}

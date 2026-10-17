@@ -1,0 +1,9 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "Xash3D FWGS is a GoldSrc compatible game engine.\nDeveloped by Alibek Omarov."
+    }
+  ]
+}

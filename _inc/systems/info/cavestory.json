@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "Cave Story is a 2004 video game.\nFirst released in December 2004.\nDeveloped by Daisuke Amaya.\nGenre: Metroidvania.\nGame modes: single-player."
+    },
+    {
+      "key": "systemYears",
+      "value": "2004"
+    }
+  ]
+}

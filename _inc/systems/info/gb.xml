@@ -1,0 +1,14 @@
+<theme>
+  <formatVersion>7</formatVersion>
+  <!-- Wikidata Q186437 (CC0) -->
+  <variables>
+    <systemTrivia>Game Boy is a 1989 portable video game console.
+First released in Japan in April 1989 and discontinued in 2003.
+Made by Nintendo.
+It launched at $89.95 in the US.
+About 118.7 million units were sold.
+It followed the Game &amp; Watch series and was succeeded by the Game Boy Pocket.
+Processors include the Sharp SM83.</systemTrivia>
+    <systemYears>1989-2003</systemYears>
+  </variables>
+</theme>

@@ -1,0 +1,11 @@
+<theme>
+  <formatVersion>7</formatVersion>
+  <!-- Wikidata Q203310 (CC0) -->
+  <variables>
+    <systemTrivia>DOOM 3 is a 2004 first-person shooter video game.
+First released in August 2004.
+Developed by id Software.
+Game modes: multiplayer, single-player, co-op mode.</systemTrivia>
+    <systemYears>2004</systemYears>
+  </variables>
+</theme>

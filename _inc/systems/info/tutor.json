@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "Tomy Tutor is a home computer.\nFirst released in 1982 and discontinued in 1985.\nMade by Panasonic Holdings Corporation."
+    },
+    {
+      "key": "systemYears",
+      "value": "1983-1985"
+    }
+  ]
+}

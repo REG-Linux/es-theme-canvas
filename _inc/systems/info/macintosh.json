@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "Macintosh 128K is the first Macintosh computer by Apple.\nFirst released in January 1984 and discontinued in 1985.\nIt followed the Apple Lisa and was succeeded by the Macintosh 512K.\nProcessors include the Motorola 68000."
+    },
+    {
+      "key": "systemYears",
+      "value": "1984-1985"
+    }
+  ]
+}

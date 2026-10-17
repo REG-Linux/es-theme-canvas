@@ -1,0 +1,11 @@
+<theme>
+  <formatVersion>7</formatVersion>
+  <!-- Wikidata Q627302 (CC0) -->
+  <variables>
+    <systemTrivia>Atari ST is a series of personal computer models.
+Made by Atari Corporation.
+It followed the Atari 8-bit family.
+Processors include the Motorola 68000 and the Motorola 68020.</systemTrivia>
+    <systemYears>1985-1993</systemYears>
+  </variables>
+</theme>

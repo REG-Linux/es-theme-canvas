@@ -1,0 +1,10 @@
+<theme>
+  <formatVersion>7</formatVersion>
+  <!-- Wikidata Q253044 (CC0) -->
+  <variables>
+    <systemTrivia>64DD is a Nintendo 64 add-on.
+First released in Japan in December 1999 and discontinued in 2001.
+About 15,000 units were sold.</systemTrivia>
+    <systemYears>1999-2001</systemYears>
+  </variables>
+</theme>

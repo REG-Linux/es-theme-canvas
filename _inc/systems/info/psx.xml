@@ -1,0 +1,13 @@
+<theme>
+  <formatVersion>7</formatVersion>
+  <!-- Wikidata Q10677 (CC0) -->
+  <variables>
+    <systemTrivia>PlayStation is a 1994 5th generation video game console by Sony Interactive Entertainment.
+First released in December 1994 and discontinued in 2006.
+It launched at $299 in the US.
+About 102.4 million units were sold.
+It followed the Super NES CD-ROM and was succeeded by the PlayStation 2.
+Processors include the R3000.</systemTrivia>
+    <systemYears>1994-2006</systemYears>
+  </variables>
+</theme>

@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "Neo Geo CD is a home video game console.\nFirst released in Japan in September 1994 and discontinued in 1997.\nMade by SNK.\nIt followed the Neo Geo."
+    },
+    {
+      "key": "systemYears",
+      "value": "1994-1997"
+    }
+  ]
+}

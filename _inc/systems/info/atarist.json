@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "Atari ST is a series of personal computer models.\nMade by Atari Corporation.\nIt followed the Atari 8-bit family.\nProcessors include the Motorola 68000 and the Motorola 68020."
+    },
+    {
+      "key": "systemYears",
+      "value": "1985-1993"
+    }
+  ]
+}

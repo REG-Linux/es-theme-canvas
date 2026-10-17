@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "Interton Video Computer 4000 is a home video game console released by Interton in 1978.\nFirst released in 1978 and discontinued in 1983.\nProcessors include the Signetics 2650."
+    },
+    {
+      "key": "systemYears",
+      "value": "1978-1983"
+    }
+  ]
+}

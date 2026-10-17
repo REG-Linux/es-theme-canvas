@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "Amstrad CPC is a series of home computers produced by Amstrad.\nFirst released in 1984 and discontinued in 1990.\nProcessors include the Zilog Z80."
+    },
+    {
+      "key": "systemYears",
+      "value": "1984-1990"
+    }
+  ]
+}

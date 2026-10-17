@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "Fairchild Channel F is a second-generation home video game console; first console that uses programmable cartridges.\nFirst released in North America in November 1976 and discontinued in 1983.\nMade by Fairchild Camera and Instrument Co.\nAbout 350,000 units were sold.\nIt was succeeded by the Fairchild Channel F System II.\nProcessors include the Fairchild F8."
+    },
+    {
+      "key": "systemYears",
+      "value": "1976-1983"
+    }
+  ]
+}

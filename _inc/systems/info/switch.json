@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "Nintendo Switch is a hybrid video game console.\nFirst released worldwide in March 2017 and discontinued in 2027.\nMade by Nintendo.\nIt launched at $299.99 in the US.\nAbout 156.6 million units were sold.\nIt followed the Wii U and was succeeded by the Nintendo Switch 2.\nProcessors include the NVIDIA Tegra X1."
+    },
+    {
+      "key": "systemYears",
+      "value": "2017-"
+    }
+  ]
+}

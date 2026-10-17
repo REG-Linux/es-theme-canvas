@@ -1,0 +1,11 @@
+<theme>
+  <formatVersion>7</formatVersion>
+  <!-- Wikidata Q737103 (CC0) -->
+  <variables>
+    <systemTrivia>Quake II is a 1997 first-person shooter video game by id Software.
+First released in December 1997.
+Developed by id Software.
+Game modes: multiplayer, single-player, co-op mode.</systemTrivia>
+    <systemYears>1997</systemYears>
+  </variables>
+</theme>

@@ -1,0 +1,13 @@
+<theme>
+  <formatVersion>7</formatVersion>
+  <!-- Wikidata Q10683 (CC0) -->
+  <variables>
+    <systemTrivia>PlayStation 3 is a video game console developed Sony Interactive Entertainment.
+First released in November 2006 and discontinued in 2017.
+It launched at $499 in the US.
+About 87 million units were sold.
+It followed the PlayStation 2 and was succeeded by the PlayStation 4.
+Processors include the Cell.</systemTrivia>
+    <systemYears>2006-2017</systemYears>
+  </variables>
+</theme>

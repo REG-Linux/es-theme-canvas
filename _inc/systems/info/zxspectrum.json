@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "ZX Spectrum is a series of personal home computers.\nFirst released in April 1982 and discontinued in 1992.\nMade by Sinclair Research.\nAbout 5.5 million units were sold.\nIt followed the Sinclair ZX81 and was succeeded by the Sinclair QL.\nProcessors include the Zilog Z80 and the Zilog Z80A."
+    },
+    {
+      "key": "systemYears",
+      "value": "1982-1992"
+    }
+  ]
+}

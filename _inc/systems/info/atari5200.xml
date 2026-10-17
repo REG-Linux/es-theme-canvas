@@ -1,0 +1,13 @@
+<theme>
+  <formatVersion>7</formatVersion>
+  <!-- Wikidata Q743222 (CC0) -->
+  <variables>
+    <systemTrivia>Atari 5200 is a home video game console.
+First released in November 1982 and discontinued in 1984.
+Made by Atari.
+About 1 million units were sold.
+It followed the Atari 2600 and was succeeded by the Atari 7800.
+Processors include the MOS Technology 6502.</systemTrivia>
+    <systemYears>1982-1984</systemYears>
+  </variables>
+</theme>

@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "NEC PC-9800 series is a series of PCs by NEC, sold primarily in Japan.\nFirst released in 1982 and discontinued in 2003.\nIt followed the NEC PC-8800 series.\nProcessors include the Intel 8086."
+    },
+    {
+      "key": "systemYears",
+      "value": "1982-2003"
+    }
+  ]
+}

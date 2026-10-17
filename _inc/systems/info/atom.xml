@@ -1,0 +1,12 @@
+<theme>
+  <formatVersion>7</formatVersion>
+  <!-- Wikidata Q2043357 (CC0) -->
+  <variables>
+    <systemTrivia>Acorn Atom is an early 1980s home computer.
+First released in 1980 and discontinued in 1983.
+Made by Acorn Computers.
+It followed the Acorn Eurocard systems and was succeeded by the BBC Micro.
+Processors include the MOS Technology 6502.</systemTrivia>
+    <systemYears>1979-1983</systemYears>
+  </variables>
+</theme>

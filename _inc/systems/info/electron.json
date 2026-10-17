@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "Acorn Electron is a home computer.\nFirst released in August 1983.\nMade by Acorn Computers.\nProcessors include the MOS Technology 6502."
+    },
+    {
+      "key": "systemYears",
+      "value": "1983-?"
+    }
+  ]
+}

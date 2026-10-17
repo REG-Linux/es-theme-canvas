@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "Coleco Adam is a home computer by Coleco, released in 1983.\nFirst released in 1983 and discontinued in 1985.\nIt followed the ColecoVision.\nProcessors include the Zilog Z80."
+    },
+    {
+      "key": "systemYears",
+      "value": "1983-1985"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "Ion Fury is a 2019 first-person shooter video game.\nFirst released in August 2019.\nGame modes: single-player."
+    },
+    {
+      "key": "systemYears",
+      "value": "2019"
+    }
+  ]
+}

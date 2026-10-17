@@ -1,0 +1,14 @@
+<theme>
+  <formatVersion>7</formatVersion>
+  <!-- Wikidata Q753657 (CC0) -->
+  <variables>
+    <systemTrivia>Atari Lynx is a handheld game console developed by Atari Corporation and Epyx.
+First released in the United States in September 1989 and discontinued in 1996.
+It launched at $179.99 in the US.
+About 5 million units were sold.
+Its library has 71 games.
+It followed the Atari XEGS and was succeeded by the Atari Lynx II.
+Processors include the WDC 65C02.</systemTrivia>
+    <systemYears>1989-1996</systemYears>
+  </variables>
+</theme>

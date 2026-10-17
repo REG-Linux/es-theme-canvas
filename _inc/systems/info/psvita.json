@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "PlayStation Vita is a portable game console developed by Sony Computer Entertainment.\nFirst released in Japan in December 2011 and discontinued in 2019.\nAbout 15 million units were sold.\nIt followed the PlayStation Portable.\nProcessors include the ARM Cortex-A9."
+    },
+    {
+      "key": "systemYears",
+      "value": "2012-2019"
+    }
+  ]
+}

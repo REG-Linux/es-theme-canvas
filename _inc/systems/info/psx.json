@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "PlayStation is a 1994 5th generation video game console by Sony Interactive Entertainment.\nFirst released in December 1994 and discontinued in 2006.\nIt launched at $299 in the US.\nAbout 102.4 million units were sold.\nIt followed the Super NES CD-ROM and was succeeded by the PlayStation 2.\nProcessors include the R3000."
+    },
+    {
+      "key": "systemYears",
+      "value": "1994-2006"
+    }
+  ]
+}

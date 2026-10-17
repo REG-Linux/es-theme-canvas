@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "Descent is a 1995 first-person shooter game.\nFirst released in March 1995.\nDeveloped by Parallax Software.\nGame modes: multiplayer, single-player, co-op mode."
+    },
+    {
+      "key": "systemYears",
+      "value": "1998"
+    }
+  ]
+}

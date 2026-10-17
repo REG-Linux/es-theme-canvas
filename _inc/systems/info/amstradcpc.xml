@@ -1,0 +1,10 @@
+<theme>
+  <formatVersion>7</formatVersion>
+  <!-- Wikidata Q478829 (CC0) -->
+  <variables>
+    <systemTrivia>Amstrad CPC is a series of home computers produced by Amstrad.
+First released in 1984 and discontinued in 1990.
+Processors include the Zilog Z80.</systemTrivia>
+    <systemYears>1984-1990</systemYears>
+  </variables>
+</theme>

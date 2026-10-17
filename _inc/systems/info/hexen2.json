@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "Hexen II is a 1997 video game.\nFirst released in August 1997.\nDeveloped by Raven Software.\nGenre: first-person shooter.\nGame modes: multiplayer, single-player, co-op mode."
+    },
+    {
+      "key": "systemYears",
+      "value": "1997"
+    }
+  ]
+}

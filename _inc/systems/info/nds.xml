@@ -1,0 +1,11 @@
+<theme>
+  <formatVersion>7</formatVersion>
+  <!-- Wikidata Q170323 (CC0) -->
+  <variables>
+    <systemTrivia>Nintendo DS is a Nintendo handheld game console.
+First released in North America in November 2004 and discontinued in 2007.
+About 154 million units were sold.
+It followed the Game Boy Advance and was succeeded by the Nintendo 3DS.</systemTrivia>
+    <systemYears>2004-2007</systemYears>
+  </variables>
+</theme>

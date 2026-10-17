@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "Sharp X1 is a series of home computers.\nMade by Sharp Corporation.\nIt launched at ¥155.\nIt followed the Sharp MZ and was succeeded by the Sharp X68000.\nProcessors include the Zilog Z80."
+    },
+    {
+      "key": "systemYears",
+      "value": "1982-1987"
+    }
+  ]
+}

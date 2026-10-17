@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "Super Mario Bros. X is a 2009 video game.\nFirst released in July 2009.\nDeveloped by Andrew Spinks.\nGenre: platformer."
+    },
+    {
+      "key": "systemYears",
+      "value": "2020"
+    }
+  ]
+}

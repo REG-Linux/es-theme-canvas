@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "GZDoom is a Doom source port.\nFirst released in August 2005."
+    },
+    {
+      "key": "systemYears",
+      "value": "2005"
+    }
+  ]
+}

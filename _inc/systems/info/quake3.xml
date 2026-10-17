@@ -1,0 +1,12 @@
+<theme>
+  <formatVersion>7</formatVersion>
+  <!-- Wikidata Q726545 (CC0) -->
+  <variables>
+    <systemTrivia>Quake III Arena is a 1999 video game.
+First released in December 1999.
+Developed by id Software.
+Genre: first-person shooter.
+Game modes: multiplayer, single-player.</systemTrivia>
+    <systemYears>1999</systemYears>
+  </variables>
+</theme>

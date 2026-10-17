@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "PV-1000 is a home video game console manufactured by Casio.\nFirst released in Japan in October 1983 and discontinued in 1984.\nIt launched at ¥14,800.\nIt was succeeded by the Casio Loopy.\nProcessors include the NEC µPD780C."
+    },
+    {
+      "key": "systemYears",
+      "value": "1983-1984"
+    }
+  ]
+}

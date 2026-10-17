@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "EasyRPG is an open source game engine."
+    },
+    {
+      "key": "systemYears",
+      "value": "2000"
+    }
+  ]
+}

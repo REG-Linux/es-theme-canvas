@@ -1,0 +1,11 @@
+<theme>
+  <formatVersion>7</formatVersion>
+  <!-- Wikidata Q1188778 (CC0) -->
+  <variables>
+    <systemTrivia>SAM Coupé is a home computer.
+First released in 1989 and discontinued in 1992.
+Made by Miles Gordon Technology.
+Processors include the Zilog Z80.</systemTrivia>
+    <systemYears>1989-1992</systemYears>
+  </variables>
+</theme>

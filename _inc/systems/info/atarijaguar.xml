@@ -1,0 +1,12 @@
+<theme>
+  <formatVersion>7</formatVersion>
+  <!-- Wikidata Q650601 (CC0) -->
+  <variables>
+    <systemTrivia>Atari Jaguar is a Fifth-generation home video game console by Atari.
+First released in November 1993 and discontinued in 1996.
+About 100,000 units were sold.
+It followed the Atari Lynx and was succeeded by the Atari Jaguar CD.
+Processors include the Motorola 68000 and the Motorola 68000 family.</systemTrivia>
+    <systemYears>1993-1996</systemYears>
+  </variables>
+</theme>

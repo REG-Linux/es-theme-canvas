@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "APF Imagination Machine is a video game console and home computer.\nFirst released in November 1979.\nMade by APF Electronics, Inc.\nIt launched at $700 in the US.\nIt followed the APF-M1000.\nProcessors include the Motorola 6800."
+    },
+    {
+      "key": "systemYears",
+      "value": "1978-?"
+    }
+  ]
+}

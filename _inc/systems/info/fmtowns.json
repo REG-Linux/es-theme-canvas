@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "FM Towns is a Japanese personal computer.\nFirst released in February 1989 and discontinued in 1997.\nMade by Fujitsu.\nAbout 500,000 units were sold."
+    },
+    {
+      "key": "systemYears",
+      "value": "1987-1997"
+    }
+  ]
+}

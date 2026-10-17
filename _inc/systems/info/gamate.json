@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "Gamate is a handheld video game console.\nFirst released in 1990 and discontinued in 1994.\nMade by Bit Corporation."
+    },
+    {
+      "key": "systemYears",
+      "value": "1990-1994"
+    }
+  ]
+}

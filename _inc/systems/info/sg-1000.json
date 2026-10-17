@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "SG-1000 is a home video game console developed by Sega.\nFirst released in Japan in July 1983 and discontinued in 1985.\nAbout 162,000 units were sold.\nIts library has 75 games.\nIt was succeeded by the Sega Master System.\nProcessors include the NEC µPD780C."
+    },
+    {
+      "key": "systemYears",
+      "value": "1983-1985"
+    }
+  ]
+}

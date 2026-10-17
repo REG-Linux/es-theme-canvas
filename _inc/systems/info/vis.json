@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "Tandy Video Information System is a multimedia device.\nFirst released in June 1992.\nMade by RadioShack.\nAbout 11,000 units were sold.\nIt followed the TV Scoreboard."
+    },
+    {
+      "key": "systemYears",
+      "value": "1992-?"
+    }
+  ]
+}

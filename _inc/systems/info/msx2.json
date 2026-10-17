@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "MSX 2 is the second version of the MSX home computer standard.\nIt followed the MSX 1 and was succeeded by the MSX 2+."
+    },
+    {
+      "key": "systemYears",
+      "value": "1985-1993"
+    }
+  ]
+}

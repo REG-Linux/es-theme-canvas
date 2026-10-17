@@ -1,0 +1,12 @@
+<theme>
+  <formatVersion>7</formatVersion>
+  <!-- Wikidata Q135321 (CC0) -->
+  <variables>
+    <systemTrivia>Famicom Disk System is an add-on for the Family Computer home video game console.
+First released in February 1986 and discontinued in 2007.
+Made by Nintendo.
+About 4.4 million units were sold.
+Its library has 194 games.</systemTrivia>
+    <systemYears>1986-2007</systemYears>
+  </variables>
+</theme>

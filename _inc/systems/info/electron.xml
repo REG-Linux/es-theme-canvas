@@ -1,0 +1,11 @@
+<theme>
+  <formatVersion>7</formatVersion>
+  <!-- Wikidata Q342163 (CC0) -->
+  <variables>
+    <systemTrivia>Acorn Electron is a home computer.
+First released in August 1983.
+Made by Acorn Computers.
+Processors include the MOS Technology 6502.</systemTrivia>
+    <systemYears>1983-?</systemYears>
+  </variables>
+</theme>

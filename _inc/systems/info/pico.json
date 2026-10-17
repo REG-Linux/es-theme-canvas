@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "Sega Pico is a video game console.\nFirst released in November 1994 and discontinued in 2005.\nMade by Sega.\nAbout 3.8 million units were sold.\nIt was succeeded by the Advanced Pico Beena.\nProcessors include the Motorola 68000 and the Zilog Z80."
+    },
+    {
+      "key": "systemYears",
+      "value": "1993-2005"
+    }
+  ]
+}

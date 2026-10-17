@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "Jazz Jackrabbit is a 1994 video game.\nFirst released in July 1994.\nDeveloped by Epic Games.\nGenre: side-scrolling video game.\nGame modes: single-player."
+    },
+    {
+      "key": "systemYears",
+      "value": "1994"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "Entex Adventure Vision is a tabletop game console.\nFirst released in November 1982 and discontinued in 1983.\nMade by Entex Industries.\nIt launched at $70 in the US.\nAbout 50,757 units were sold.\nIt followed the Entex Select-A-Game.\nProcessors include the Intel 8048."
+    },
+    {
+      "key": "systemYears",
+      "value": "1982-1983"
+    }
+  ]
+}

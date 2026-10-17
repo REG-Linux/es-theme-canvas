@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "Nintendo DS is a Nintendo handheld game console.\nFirst released in North America in November 2004 and discontinued in 2007.\nAbout 154 million units were sold.\nIt followed the Game Boy Advance and was succeeded by the Nintendo 3DS."
+    },
+    {
+      "key": "systemYears",
+      "value": "2004-2007"
+    }
+  ]
+}

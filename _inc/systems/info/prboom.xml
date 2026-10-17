@@ -1,0 +1,10 @@
+<theme>
+  <formatVersion>7</formatVersion>
+  <!-- Wikidata Q189784 (CC0) -->
+  <variables>
+    <systemTrivia>Doom is a 1993 first-person shooter video game developed by id Software.
+First released in North America in December 1993.
+Game modes: multiplayer, single-player, co-op mode.</systemTrivia>
+    <systemYears>1993</systemYears>
+  </variables>
+</theme>

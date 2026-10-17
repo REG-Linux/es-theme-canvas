@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "Apple II is the first computer model in the Apple II series.\nFirst released in June 1977 and discontinued in 1979.\nMade by Apple Inc.\nIt followed the Apple I and was succeeded by the Apple II Plus.\nProcessors include the MOS Technology 6502."
+    },
+    {
+      "key": "systemYears",
+      "value": "1977-1979"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "Jazz Jackrabbit 2 is a 1998 video game.\nFirst released in 1998.\nDeveloped by Orange Games.\nGenre: side-scrolling video game.\nGame modes: multiplayer, single-player, co-op mode."
+    },
+    {
+      "key": "systemYears",
+      "value": "1998"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+<theme>
+  <formatVersion>7</formatVersion>
+  <!-- Wikidata Q99775 (CC0) -->
+  <variables>
+    <systemTrivia>Commodore 64 is an 8-bit home computer introduced in 1982.
+Made by Commodore International.
+About 17 million units were sold.
+It followed the Commodore VIC-20 and was succeeded by the Commodore 128.
+Processors include the MOS Technology 6510.</systemTrivia>
+    <systemYears>1982-1994</systemYears>
+  </variables>
+</theme>

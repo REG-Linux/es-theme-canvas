@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "Sega CD/Mega CD is an add-on for the Sega Genesis/Mega Drive video game console.\nFirst released in Japan in December 1991 and discontinued in 1996.\nAbout 6 million units were sold.\nIts library has 207 games.\nIt followed the Sega Genesis and was succeeded by the Sega Saturn.\nProcessors include the Motorola 68000."
+    },
+    {
+      "key": "systemYears",
+      "value": "1991-1996"
+    }
+  ]
+}

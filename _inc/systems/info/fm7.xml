@@ -1,0 +1,11 @@
+<theme>
+  <formatVersion>7</formatVersion>
+  <!-- Wikidata Q2379925 (CC0) -->
+  <variables>
+    <systemTrivia>FM-7 is a 1982 Fujitsu home computer.
+First released in 1982 and discontinued in 1984.
+It followed the FM-8 and was succeeded by the FM Towns.
+Processors include the Motorola 6809.</systemTrivia>
+    <systemYears>1982-1984</systemYears>
+  </variables>
+</theme>

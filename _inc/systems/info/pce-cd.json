@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "TurboGrafx-CD is an add-on for the PC Engine video game console.\nIt was succeeded by the Super CD-ROM2."
+    },
+    {
+      "key": "systemYears",
+      "value": "1988-1994"
+    }
+  ]
+}

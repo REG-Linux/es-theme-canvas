@@ -1,0 +1,12 @@
+<theme>
+  <formatVersion>7</formatVersion>
+  <!-- Wikidata Q7907638 (CC0) -->
+  <variables>
+    <systemTrivia>VTech Socrates is an educational home video game console.
+First released in 1988 and discontinued in 1996.
+Made by VTech.
+It followed the VTech CreatiVision and was succeeded by the V.Smile.
+Processors include the Zilog Z80.</systemTrivia>
+    <systemYears>1988-1996</systemYears>
+  </variables>
+</theme>

@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "The Ur-Quan Masters is a 2002 game modification of Star Control II.\nFirst released in 2002.\nGenre: shoot 'em up.\nGame modes: single-player, multiplayer."
+    },
+    {
+      "key": "systemYears",
+      "value": "1992"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "CDTV is a video game console and multimedia device.\nFirst released in March 1991 and discontinued in 1993.\nMade by Commodore International.\nIt launched at $999 in the US.\nAbout 29,000 units were sold.\nIt followed the Amiga 500 and was succeeded by the Amiga CD32.\nProcessors include the Motorola 68000."
+    },
+    {
+      "key": "systemYears",
+      "value": "1991-1993"
+    }
+  ]
+}

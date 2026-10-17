@@ -1,0 +1,11 @@
+<theme>
+  <formatVersion>7</formatVersion>
+  <!-- Wikidata Q2703883 (CC0) -->
+  <variables>
+    <systemTrivia>Neo Geo CD is a home video game console.
+First released in Japan in September 1994 and discontinued in 1997.
+Made by SNK.
+It followed the Neo Geo.</systemTrivia>
+    <systemYears>1994-1997</systemYears>
+  </variables>
+</theme>

@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "Super Cassette Vision is a third-generation home video game console released by Epoch Co. in 1984.\nFirst released in July 1984 and discontinued in 1987.\nIt launched at ¥14,800.\nAbout 300,000 units were sold.\nIt followed the Cassette Vision."
+    },
+    {
+      "key": "systemYears",
+      "value": "1984-1987"
+    }
+  ]
+}

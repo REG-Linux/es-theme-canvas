@@ -1,0 +1,15 @@
+<theme>
+  <formatVersion>7</formatVersion>
+  <!-- Wikidata Q172742 (CC0) -->
+  <variables>
+    <systemTrivia>Nintendo Entertainment System is the third generation home video game console.
+First released in Japan in July 1983 and discontinued in 2003.
+Made by Nintendo.
+It launched at $199.99 in the US.
+About 61.9 million units were sold.
+Its library has 1,370 games.
+It followed the Color TV-Game and was succeeded by the Super Nintendo Entertainment System.
+Processors include the Ricoh 2A03.</systemTrivia>
+    <systemYears>1983-2003</systemYears>
+  </variables>
+</theme>

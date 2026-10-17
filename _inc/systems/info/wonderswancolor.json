@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "WonderSwan Color is a handheld game console.\nFirst released in Japan in December 2000 and discontinued in 2003.\nMade by Bandai.\nIts library has 91 games.\nIt followed the WonderSwan and was succeeded by the SwanCrystal.\nProcessors include the NEC V20."
+    },
+    {
+      "key": "systemYears",
+      "value": "2000-2003"
+    }
+  ]
+}

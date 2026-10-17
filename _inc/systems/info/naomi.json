@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "Sega NAOMI is an Arcade system board created by Sega.\nProcessors include the SuperH."
+    },
+    {
+      "key": "systemYears",
+      "value": "1998-?"
+    }
+  ]
+}

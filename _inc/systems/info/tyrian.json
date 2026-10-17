@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "Tyrian is a 1995 video game.\nFirst released in 1995.\nDeveloped by Eclipse Software.\nGenre: shoot 'em up.\nGame modes: single-player, co-op mode."
+    },
+    {
+      "key": "systemYears",
+      "value": "1995"
+    }
+  ]
+}

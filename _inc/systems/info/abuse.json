@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "Abuse is a 1996 run and gun video game.\nFirst released in February 1996.\nDeveloped by Crack dot Com.\nGenre: shoot 'em up.\nGame modes: multiplayer, single-player."
+    },
+    {
+      "key": "systemYears",
+      "value": "1996"
+    }
+  ]
+}

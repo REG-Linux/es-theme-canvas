@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "Atomiswave is an arcade system board developed by Sammy."
+    },
+    {
+      "key": "systemYears",
+      "value": "2003-2017"
+    }
+  ]
+}

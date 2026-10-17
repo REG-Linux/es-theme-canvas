@@ -1,0 +1,12 @@
+<theme>
+  <formatVersion>7</formatVersion>
+  <!-- Wikidata Q748317 (CC0) -->
+  <variables>
+    <systemTrivia>Return to Castle Wolfenstein is a 2001 video game.
+First released in November 2001.
+Developed by Gray Matter Interactive.
+Genre: first-person shooter.
+Game modes: multiplayer, single-player, co-op mode.</systemTrivia>
+    <systemYears>2001</systemYears>
+  </variables>
+</theme>

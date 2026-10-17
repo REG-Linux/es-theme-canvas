@@ -1,0 +1,10 @@
+<theme>
+  <formatVersion>7</formatVersion>
+  <!-- Wikidata Q47604 (CC0) -->
+  <variables>
+    <systemTrivia>MS-DOS is a Microsoft operating system.
+First released in August 1981.
+It followed the 86-DOS and was succeeded by the Microsoft Windows.</systemTrivia>
+    <systemYears>1981-?</systemYears>
+  </variables>
+</theme>

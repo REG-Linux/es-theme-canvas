@@ -1,0 +1,11 @@
+<theme>
+  <formatVersion>7</formatVersion>
+  <!-- Wikidata Q454390 (CC0) -->
+  <variables>
+    <systemTrivia>Texas Instruments TI-99/4A is a home computer by Texas Instruments.
+Its library has 330 games.
+It followed the Texas Instruments TI-99/4.
+Processors include the Texas Instruments TMS9900.</systemTrivia>
+    <systemYears>1981-1984</systemYears>
+  </variables>
+</theme>

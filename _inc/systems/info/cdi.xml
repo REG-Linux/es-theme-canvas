@@ -1,0 +1,12 @@
+<theme>
+  <formatVersion>7</formatVersion>
+  <!-- Wikidata Q1023103 (CC0) -->
+  <variables>
+    <systemTrivia>Philips CD-i is a home multimedia and video game console.
+First released in December 1991 and discontinued in 1999.
+Made by Koninklijke Philips NV.
+It followed the Philips Videopac+ G7400.
+Processors include the Motorola 68000.</systemTrivia>
+    <systemYears>1990-1999</systemYears>
+  </variables>
+</theme>

@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "MSX 2+ is the third version of the MSX computer standard.\nIt followed the MSX 2 and was succeeded by the MSX TurboR."
+    },
+    {
+      "key": "systemYears",
+      "value": "1988-?"
+    }
+  ]
+}

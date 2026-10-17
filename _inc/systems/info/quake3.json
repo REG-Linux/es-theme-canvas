@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "Quake III Arena is a 1999 video game.\nFirst released in December 1999.\nDeveloped by id Software.\nGenre: first-person shooter.\nGame modes: multiplayer, single-player."
+    },
+    {
+      "key": "systemYears",
+      "value": "1999"
+    }
+  ]
+}

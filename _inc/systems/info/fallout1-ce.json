@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "Fallout is a 1997 role-playing video game.\nFirst released in October 1997.\nDeveloped by Black Isle Studios.\nGame modes: single-player."
+    },
+    {
+      "key": "systemYears",
+      "value": "1997"
+    }
+  ]
+}

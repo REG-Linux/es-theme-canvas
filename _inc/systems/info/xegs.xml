@@ -1,0 +1,12 @@
+<theme>
+  <formatVersion>7</formatVersion>
+  <!-- Wikidata Q1840662 (CC0) -->
+  <variables>
+    <systemTrivia>Atari XEGS is a video game console.
+First released in 1987 and discontinued in 1992.
+Made by Atari Corporation.
+It followed the Atari 7800 and was succeeded by the Atari Lynx.
+Processors include the MOS Technology 6502.</systemTrivia>
+    <systemYears>1987-1992</systemYears>
+  </variables>
+</theme>

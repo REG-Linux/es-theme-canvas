@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "WonderSwan is a handheld video game console developed by Bandai.\nFirst released in Japan in March 1999 and discontinued in 2003.\nAbout 3.5 million units were sold.\nIts library has 109 games.\nIt followed the Design Master Senshi Mangajukuu and was succeeded by the WonderSwan Color.\nProcessors include the NEC V30 MZ."
+    },
+    {
+      "key": "systemYears",
+      "value": "1999-2003"
+    }
+  ]
+}

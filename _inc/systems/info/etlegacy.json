@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "Wolfenstein: Enemy Territory is a 2003 video game.\nFirst released in May 2003.\nDeveloped by Splash Damage.\nGenre: first-person shooter.\nGame modes: multiplayer."
+    },
+    {
+      "key": "systemYears",
+      "value": "2010"
+    }
+  ]
+}

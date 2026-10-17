@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "Theme Hospital is a 1997 video game.\nFirst released in March 1997.\nDeveloped by Bullfrog Productions.\nGenre: business simulation game.\nGame modes: multiplayer, single-player."
+    },
+    {
+      "key": "systemYears",
+      "value": "1997"
+    }
+  ]
+}

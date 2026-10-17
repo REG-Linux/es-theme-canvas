@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "Camputers Lynx is a 1980s 8-bit British home computer.\nFirst released in March 1983 and discontinued in 1984.\nProcessors include the Zilog Z80."
+    },
+    {
+      "key": "systemYears",
+      "value": "1983-1984"
+    }
+  ]
+}
