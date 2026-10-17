@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "SV-328 is an 8-bit home computer introduced by Spectravideo in 1983.\nIt followed the SV-318 and was succeeded by the SVI-728.\nProcessors include the Zilog Z80A."
+    },
+    {
+      "key": "systemYears",
+      "value": "1983-?"
+    }
+  ]
+}

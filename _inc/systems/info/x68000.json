@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "Sharp X68000 is a Japanese home computer created by Sharp Corporation.\nFirst released in 1987 and discontinued in 2000.\nIt followed the Sharp X1.\nProcessors include the Motorola 68000."
+    },
+    {
+      "key": "systemYears",
+      "value": "1987-2000"
+    }
+  ]
+}

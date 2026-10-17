@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "Nintendo GameCube is a sixth-generation home video game console by Nintendo.\nFirst released in Japan in September 2001 and discontinued in 2007.\nAbout 21.7 million units were sold.\nIts library has 651 games.\nIt followed the Nintendo 64 and was succeeded by the Wii.\nProcessors include the Gekko."
+    },
+    {
+      "key": "systemYears",
+      "value": "2001-2007"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "Dreamcast is a sixth-generation home video game console developed by Sega.\nFirst released in November 1998 and discontinued in 2002.\nIt launched at $199 in the US.\nAbout 9.1 million units were sold.\nIt followed the Sega Saturn.\nProcessors include the SuperH."
+    },
+    {
+      "key": "systemYears",
+      "value": "1998-2002"
+    }
+  ]
+}

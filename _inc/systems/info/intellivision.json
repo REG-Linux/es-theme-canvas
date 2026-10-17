@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "Intellivision is a home video game console.\nFirst released in Fresno in 1979 and discontinued in 1990.\nMade by INTV.\nIt launched at $299 in the US.\nAbout 3 million units were sold.\nIts library has 132 games.\nIt was succeeded by the HyperScan.\nProcessors include the General Instrument CP1600."
+    },
+    {
+      "key": "systemYears",
+      "value": "1979-1990"
+    }
+  ]
+}

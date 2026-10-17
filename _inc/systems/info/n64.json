@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "Nintendo 64 is a fifth-generation home video game console by Nintendo.\nFirst released in June 1996 and discontinued in 2007.\nAbout 32.9 million units were sold.\nIts library has 388 games.\nIt followed the Super Nintendo Entertainment System and was succeeded by the Nintendo GameCube.\nProcessors include the NEC VR4300."
+    },
+    {
+      "key": "systemYears",
+      "value": "1996-2007"
+    }
+  ]
+}

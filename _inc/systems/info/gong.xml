@@ -1,0 +1,11 @@
+<theme>
+  <formatVersion>7</formatVersion>
+  <!-- Wikidata Q216293 (CC0) -->
+  <variables>
+    <systemTrivia>Pong is a 1972 video game.
+First released in November 1972.
+It was succeeded by the Atari 2600.
+Processors include the electronic component.</systemTrivia>
+    <systemYears>1972-?</systemYears>
+  </variables>
+</theme>

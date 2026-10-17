@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "ScummVM is a set of game engine recreations.\nFirst released in October 2001."
+    },
+    {
+      "key": "systemYears",
+      "value": "1987-"
+    }
+  ]
+}

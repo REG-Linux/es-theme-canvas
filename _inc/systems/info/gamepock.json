@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "Epoch Game Pocket Computer is a handheld game console by Epoch Co..\nFirst released in 1984.\nIt launched at ¥12,000."
+    },
+    {
+      "key": "systemYears",
+      "value": "1984-?"
+    }
+  ]
+}

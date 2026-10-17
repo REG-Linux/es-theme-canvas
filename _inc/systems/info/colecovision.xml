@@ -1,0 +1,13 @@
+<theme>
+  <formatVersion>7</formatVersion>
+  <!-- Wikidata Q1046862 (CC0) -->
+  <variables>
+    <systemTrivia>ColecoVision is a 1982 second generation home video-game console.
+First released in North America in August 1982 and discontinued in 1985.
+Made by Coleco.
+About 2 million units were sold.
+It followed the Coleco Telstar series and was succeeded by the Coleco Adam.
+Processors include the Zilog Z80.</systemTrivia>
+    <systemYears>1982-1985</systemYears>
+  </variables>
+</theme>

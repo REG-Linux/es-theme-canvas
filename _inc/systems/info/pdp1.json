@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "PDP-1 is a minicomputer.\nMade by Digital Equipment Corporation."
+    },
+    {
+      "key": "systemYears",
+      "value": "1961-1969"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "MS-DOS is a Microsoft operating system.\nFirst released in August 1981.\nIt followed the 86-DOS and was succeeded by the Microsoft Windows."
+    },
+    {
+      "key": "systemYears",
+      "value": "1981-?"
+    }
+  ]
+}

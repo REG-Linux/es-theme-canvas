@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "Made by Sega."
+    },
+    {
+      "key": "systemYears",
+      "value": "2000-?"
+    }
+  ]
+}

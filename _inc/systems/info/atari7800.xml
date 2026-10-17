@@ -1,0 +1,12 @@
+<theme>
+  <formatVersion>7</formatVersion>
+  <!-- Wikidata Q753600 (CC0) -->
+  <variables>
+    <systemTrivia>Atari 7800 is a home video game console.
+First released in May 1986 and discontinued in 1992.
+Made by Atari.
+It followed the Atari 5200 and was succeeded by the Atari XEGS.
+Processors include the Atari SALLY.</systemTrivia>
+    <systemYears>1986-1992</systemYears>
+  </variables>
+</theme>

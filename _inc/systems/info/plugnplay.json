@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "Handheld TV game is a type of video game console."
+    },
+    {
+      "key": "systemYears",
+      "value": "2002-?"
+    }
+  ]
+}

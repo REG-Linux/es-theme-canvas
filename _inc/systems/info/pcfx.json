@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "PC-FX is a home video game console released by NEC in 1994.\nFirst released in Japan in December 1994 and discontinued in 1998.\nIt launched at $499 in the US.\nAbout 400,000 units were sold.\nIt followed the PC Engine SuperGrafx.\nProcessors include the NEC V810."
+    },
+    {
+      "key": "systemYears",
+      "value": "1994-1998"
+    }
+  ]
+}

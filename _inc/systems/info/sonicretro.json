@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "Retro Engine is a game engine developed by Christian Whitehead."
+    },
+    {
+      "key": "systemYears",
+      "value": "2021"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "Triforce is an arcade system board.\nMade by Namco.\nProcessors include the Gekko."
+    },
+    {
+      "key": "systemYears",
+      "value": "2003-?"
+    }
+  ]
+}

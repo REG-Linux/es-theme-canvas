@@ -1,0 +1,11 @@
+<theme>
+  <formatVersion>7</formatVersion>
+  <!-- Wikidata Q749976 (CC0) -->
+  <variables>
+    <systemTrivia>BBC Micro is a series of microcomputers by Acorn.
+First released in December 1981 and discontinued in 1994.
+It followed the Acorn Atom and was succeeded by the BBC Master.
+Processors include the MOS Technology 6502.</systemTrivia>
+    <systemYears>1981-1994</systemYears>
+  </variables>
+</theme>

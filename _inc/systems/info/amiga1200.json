@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "Amiga 1200 is a home computer.\nFirst released in October 1992 and discontinued in 1996.\nMade by Commodore International.\nIt followed the Amiga 600.\nProcessors include the Motorola 68EC020."
+    },
+    {
+      "key": "systemYears",
+      "value": "1992-1996"
+    }
+  ]
+}

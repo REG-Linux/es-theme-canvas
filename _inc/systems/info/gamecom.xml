@@ -1,0 +1,13 @@
+<theme>
+  <formatVersion>7</formatVersion>
+  <!-- Wikidata Q2498396 (CC0) -->
+  <variables>
+    <systemTrivia>Game.com is a handheld video game console.
+First released in the United States in September 1997 and discontinued in 2000.
+Made by Tiger Electronics.
+It launched at $69.95 in the US.
+About 300,000 units were sold.
+It followed the R-Zone.</systemTrivia>
+    <systemYears>1997-2000</systemYears>
+  </variables>
+</theme>

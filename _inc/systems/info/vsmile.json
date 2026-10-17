@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "V.Smile is an educational home video game console released by VTech in 2004.\nFirst released in August 2004 and discontinued in 2010.\nIt followed the VTech Socrates and was succeeded by the V.Flash."
+    },
+    {
+      "key": "systemYears",
+      "value": "2005-2010"
+    }
+  ]
+}

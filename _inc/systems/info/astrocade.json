@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "Bally Astrocade is a second-generation home video game console.\nFirst released in April 1978 and discontinued in 1983.\nMade by Bally Manufacturing.\nIt launched at $299 in the US.\nProcessors include the Zilog Z80."
+    },
+    {
+      "key": "systemYears",
+      "value": "1978-1983"
+    }
+  ]
+}

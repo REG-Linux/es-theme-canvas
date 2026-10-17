@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "Java Platform, Micro Edition is a computing platform."
+    },
+    {
+      "key": "systemYears",
+      "value": "2001-?"
+    }
+  ]
+}

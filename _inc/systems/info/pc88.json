@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "NEC PC-8800 series is a series of computers sold in Japan by NEC.\nProcessors include the NEC µPD780C."
+    },
+    {
+      "key": "systemYears",
+      "value": "1981-?"
+    }
+  ]
+}

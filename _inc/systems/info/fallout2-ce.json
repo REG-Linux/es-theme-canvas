@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "Fallout 2 is a 1998 video game.\nFirst released in September 1998.\nDeveloped by Black Isle Studios.\nGenre: role-playing video game.\nGame modes: single-player."
+    },
+    {
+      "key": "systemYears",
+      "value": "1998"
+    }
+  ]
+}

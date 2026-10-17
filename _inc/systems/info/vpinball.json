@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "Visual Pinball is a freeware and source available video game engine."
+    },
+    {
+      "key": "systemYears",
+      "value": "2000-?"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "PlayStation Portable is a handheld game console by Sony.\nFirst released in Japan in December 2004 and discontinued in 2014.\nIt launched at $249.99 in the US.\nAbout 82 million units were sold.\nIt followed the PocketStation and was succeeded by the PlayStation Vita.\nProcessors include the R4000."
+    },
+    {
+      "key": "systemYears",
+      "value": "2004-2014"
+    }
+  ]
+}

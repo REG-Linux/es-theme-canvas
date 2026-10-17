@@ -1,0 +1,14 @@
+<theme>
+  <formatVersion>7</formatVersion>
+  <!-- Wikidata Q229429 (CC0) -->
+  <variables>
+    <systemTrivia>3DO is a home video game console.
+First released in North America in October 1993 and discontinued in 1996.
+Made by Sanyo.
+It launched at $699.99 in the US.
+About 2 million units were sold.
+It was succeeded by the Panasonic M2.
+Processors include the 3DO CPU.</systemTrivia>
+    <systemYears>1993-1996</systemYears>
+  </variables>
+</theme>

@@ -1,0 +1,11 @@
+<theme>
+  <formatVersion>7</formatVersion>
+  <!-- Wikidata Q728061 (CC0) -->
+  <variables>
+    <systemTrivia>Duke Nukem 3D is a 1996 first-person shooter video game.
+First released in January 1996.
+Developed by 3D Realms.
+Game modes: multiplayer, single-player, co-op mode.</systemTrivia>
+    <systemYears>1996</systemYears>
+  </variables>
+</theme>

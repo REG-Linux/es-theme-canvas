@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "PC Engine SuperGrafx is a fourth-generation home video game console.\nFirst released in Japan in 1989.\nMade by NEC.\nAbout 30,000 units were sold.\nIt followed the TurboGrafx-16 and was succeeded by the PC-FX.\nProcessors include the Hudson Soft HuC6280."
+    },
+    {
+      "key": "systemYears",
+      "value": "1989-?"
+    }
+  ]
+}

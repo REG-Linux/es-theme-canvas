@@ -1,0 +1,11 @@
+<theme>
+  <formatVersion>7</formatVersion>
+  <!-- Wikidata Q939881 (CC0) -->
+  <variables>
+    <systemTrivia>Neo Geo Pocket is a handheld game console.
+First released in October 1998 and discontinued in 1999.
+Made by SNK.
+It was succeeded by the Neo Geo Pocket Color.</systemTrivia>
+    <systemYears>1998-1999</systemYears>
+  </variables>
+</theme>

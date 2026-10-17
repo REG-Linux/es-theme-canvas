@@ -1,0 +1,12 @@
+<theme>
+  <formatVersion>7</formatVersion>
+  <!-- Wikidata Q1115919 (CC0) -->
+  <variables>
+    <systemTrivia>Commodore 128 is a home computer.
+First released in January 1985 and discontinued in 1989.
+Made by Commodore International.
+It followed the Commodore 64.
+Processors include the MOS Technology 8502 and the Zilog Z80.</systemTrivia>
+    <systemYears>1985-1989</systemYears>
+  </variables>
+</theme>

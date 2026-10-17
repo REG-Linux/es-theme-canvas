@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "ZQuest Classic is a video game engine."
+    },
+    {
+      "key": "systemYears",
+      "value": "1999-?"
+    }
+  ]
+}

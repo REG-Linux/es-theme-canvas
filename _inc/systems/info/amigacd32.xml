@@ -1,0 +1,12 @@
+<theme>
+  <formatVersion>7</formatVersion>
+  <!-- Wikidata Q695161 (CC0) -->
+  <variables>
+    <systemTrivia>Amiga CD32 is a home video game console developed by Commodore.
+First released in September 1993 and discontinued in 1994.
+About 100,000 units were sold.
+It followed the CDTV.
+Processors include the Motorola 68020.</systemTrivia>
+    <systemYears>1994</systemYears>
+  </variables>
+</theme>

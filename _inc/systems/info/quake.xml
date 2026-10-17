@@ -1,0 +1,11 @@
+<theme>
+  <formatVersion>7</formatVersion>
+  <!-- Wikidata Q217423 (CC0) -->
+  <variables>
+    <systemTrivia>Quake is a 1996 first-person shooter video game.
+First released in North America in June 1996.
+Developed by id Software.
+Game modes: multiplayer, single-player, co-op mode.</systemTrivia>
+    <systemYears>1996</systemYears>
+  </variables>
+</theme>

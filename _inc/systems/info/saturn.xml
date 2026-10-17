@@ -1,0 +1,14 @@
+<theme>
+  <formatVersion>7</formatVersion>
+  <!-- Wikidata Q200912 (CC0) -->
+  <variables>
+    <systemTrivia>Sega Saturn is a home video game console.
+First released in Japan in November 1994 and discontinued in 2000.
+Made by Sega.
+About 9.5 million units were sold.
+Its library has 1,028 games.
+It followed the Sega Genesis and was succeeded by the Dreamcast.
+Processors include the SH-2.</systemTrivia>
+    <systemYears>1994-2000</systemYears>
+  </variables>
+</theme>

@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "C-Dogs is an arcade shoot-em-up computer game.\nFirst released in 1997.\nGenre: run and gun.\nGame modes: multiplayer, single-player."
+    },
+    {
+      "key": "systemYears",
+      "value": "1997"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "Sega Model 3 is an arcade system board."
+    },
+    {
+      "key": "systemYears",
+      "value": "1996-?"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "Solarus is a game engine."
+    },
+    {
+      "key": "systemYears",
+      "value": "2011"
+    }
+  ]
+}

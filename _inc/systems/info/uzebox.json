@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "Uzebox is an open source home video game console.\nFirst released in 2008."
+    },
+    {
+      "key": "systemYears",
+      "value": "2008-?"
+    }
+  ]
+}

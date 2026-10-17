@@ -1,0 +1,9 @@
+<theme>
+  <formatVersion>7</formatVersion>
+  <!-- Wikidata Q145568 (CC0) -->
+  <variables>
+    <systemTrivia>ScummVM is a set of game engine recreations.
+First released in October 2001.</systemTrivia>
+    <systemYears>1987-</systemYears>
+  </variables>
+</theme>

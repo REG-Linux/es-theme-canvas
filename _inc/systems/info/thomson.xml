@@ -1,0 +1,11 @@
+<theme>
+  <formatVersion>7</formatVersion>
+  <!-- Wikidata Q2396081 (CC0) -->
+  <variables>
+    <systemTrivia>Thomson MO5 is a home computer model.
+Made by Vantiva.
+It was succeeded by the Thomson MO6.
+Processors include the Motorola 6809.</systemTrivia>
+    <systemYears>1984-1986</systemYears>
+  </variables>
+</theme>

@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "Commander X16 is an 8-bit computer made of off-the-shelf parts by David Murray in 2021."
+    },
+    {
+      "key": "systemYears",
+      "value": "2019-"
+    }
+  ]
+}

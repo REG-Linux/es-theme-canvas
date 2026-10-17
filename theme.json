@@ -1101,6 +1101,14 @@
       "filters": {
         "ifSubset": "aspect-ratio:1-1|1-1-auto"
       }
+    },
+    {
+      "type": "include",
+      "path": "${themePath}/_inc/dual-screen/secondary.json"
+    },
+    {
+      "type": "include",
+      "path": "${themePath}/_inc/dual-screen/gamelist.json"
     }
   ]
 }

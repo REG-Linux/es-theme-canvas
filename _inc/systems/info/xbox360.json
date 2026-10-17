@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "Xbox 360 is Microsoft's seventh-generation and second home video game console.\nFirst released in November 2005 and discontinued in 2016.\nMade by Wistron.\nAbout 85.5 million units were sold.\nIts library has 2,155 games.\nIt followed the Xbox and was succeeded by the Xbox One.\nProcessors include the Microsoft XCPU."
+    },
+    {
+      "key": "systemYears",
+      "value": "2005-2016"
+    }
+  ]
+}

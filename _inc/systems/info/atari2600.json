@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "Atari 2600 is a home video game console by Atari.\nFirst released in the United States in September 1977 and discontinued in 1992.\nAbout 30 million units were sold.\nIt followed the Atari Home Pong series and was succeeded by the Atari 5200.\nProcessors include the MOS 6507."
+    },
+    {
+      "key": "systemYears",
+      "value": "1977-1992"
+    }
+  ]
+}

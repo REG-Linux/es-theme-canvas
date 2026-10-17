@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "Pokémon Mini is a handheld game console.\nFirst released in North America in November 2001 and discontinued in 2002.\nMade by Nintendo.\nIt launched at $39.95 in the US."
+    },
+    {
+      "key": "systemYears",
+      "value": "2001-2002"
+    }
+  ]
+}

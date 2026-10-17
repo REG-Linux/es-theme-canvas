@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "Neo Geo is a cartridge-based arcade system board and home video game console developed by SNK.\nFirst released in April 1990 and discontinued in 2004.\nIt was succeeded by the Neo Geo CD.\nProcessors include the Motorola 68000."
+    },
+    {
+      "key": "systemYears",
+      "value": "1990-2004"
+    }
+  ]
+}

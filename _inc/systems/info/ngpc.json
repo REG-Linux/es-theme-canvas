@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "Neo Geo Pocket Color is a handheld console.\nFirst released in Japan in March 1999 and discontinued in 2001.\nMade by SNK.\nIt launched at $69.95 in the US.\nIt followed the Neo Geo Pocket and was succeeded by the Neo-Geo X."
+    },
+    {
+      "key": "systemYears",
+      "value": "1999-2001"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "Adobe Flash Player is a deprecated browser extension software for viewing multimedia, Rich Internet Applications, and streaming video and audio.\nFirst released in 1999 and discontinued in 2020.\nDeveloped by Adobe."
+    },
+    {
+      "key": "systemYears",
+      "value": "1996"
+    }
+  ]
+}

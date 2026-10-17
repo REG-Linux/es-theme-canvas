@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "Satellaview is an add-on for the video game console Super Famicom.\nFirst released in April 1995 and discontinued in 2000.\nMade by Nintendo.\nAbout 2.5 million units were sold."
+    },
+    {
+      "key": "systemYears",
+      "value": "1995-2000"
+    }
+  ]
+}

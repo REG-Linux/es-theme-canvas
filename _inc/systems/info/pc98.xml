@@ -1,0 +1,11 @@
+<theme>
+  <formatVersion>7</formatVersion>
+  <!-- Wikidata Q183505 (CC0) -->
+  <variables>
+    <systemTrivia>NEC PC-9800 series is a series of PCs by NEC, sold primarily in Japan.
+First released in 1982 and discontinued in 2003.
+It followed the NEC PC-8800 series.
+Processors include the Intel 8086.</systemTrivia>
+    <systemYears>1982-2003</systemYears>
+  </variables>
+</theme>

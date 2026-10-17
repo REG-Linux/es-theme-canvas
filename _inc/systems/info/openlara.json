@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "Tomb Raider is a 1996 action-adventure video game developed by Core Design.\nFirst released in October 1996.\nGenre: action-adventure game.\nGame modes: single-player."
+    },
+    {
+      "key": "systemYears",
+      "value": "1996"
+    }
+  ]
+}

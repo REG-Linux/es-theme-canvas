@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "Game Boy Advance is a handheld game console by Nintendo.\nFirst released in Japan in March 2001 and discontinued in 2010.\nAbout 81.5 million units were sold.\nIt followed the Game Boy Color and was succeeded by the Nintendo DS.\nProcessors include the ARM7TDMI."
+    },
+    {
+      "key": "systemYears",
+      "value": "2001-2010"
+    }
+  ]
+}

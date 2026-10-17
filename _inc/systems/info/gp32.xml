@@ -1,0 +1,14 @@
+<theme>
+  <formatVersion>7</formatVersion>
+  <!-- Wikidata Q426119 (CC0) -->
+  <variables>
+    <systemTrivia>GP32 is a handheld game console line.
+First released in November 2001 and discontinued in 2005.
+Made by Game Park.
+It launched at €199.
+About 30,000 units were sold.
+It was succeeded by the GP2X.
+Processors include the Samsung S3C2400X01.</systemTrivia>
+    <systemYears>2001-2005</systemYears>
+  </variables>
+</theme>

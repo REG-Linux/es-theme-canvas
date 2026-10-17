@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "Apple IIGS is an Apple II series 16-bit computer.\nMade by Apple Inc.\nIt followed the Apple IIc and was succeeded by the Apple III.\nProcessors include the WDC W65C816."
+    },
+    {
+      "key": "systemYears",
+      "value": "1986-1992"
+    }
+  ]
+}

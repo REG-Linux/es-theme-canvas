@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "Super A'Can is a home video game console.\nFirst released in Taiwan in October 1995 and discontinued in 1996.\nMade by Funtech Entertainment Corporation.\nProcessors include the Motorola 68000."
+    },
+    {
+      "key": "systemYears",
+      "value": "1995-1996"
+    }
+  ]
+}

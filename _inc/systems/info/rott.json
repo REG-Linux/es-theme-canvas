@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "Rise of the Triad is a 1994 video game.\nFirst released in December 1994.\nDeveloped by Apogee Software.\nGenre: first-person shooter.\nGame modes: multiplayer, single-player."
+    },
+    {
+      "key": "systemYears",
+      "value": "1994"
+    }
+  ]
+}

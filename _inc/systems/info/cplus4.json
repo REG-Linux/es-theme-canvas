@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "Commodore Plus/4 is a home computer.\nFirst released in 1984 and discontinued in 1985.\nMade by Commodore International.\nProcessors include the MOS Technology 7501."
+    },
+    {
+      "key": "systemYears",
+      "value": "1984-1985"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "Namco System 246 is an arcade system board developed by Namco.\nFirst released in 2000."
+    },
+    {
+      "key": "systemYears",
+      "value": "2000-?"
+    }
+  ]
+}

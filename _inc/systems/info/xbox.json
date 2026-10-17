@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "Xbox is a video game console by Microsoft.\nFirst released in North America in November 2001 and discontinued in 2006.\nAbout 24 million units were sold.\nIt was succeeded by the Xbox 360.\nProcessors include the X-CPU."
+    },
+    {
+      "key": "systemYears",
+      "value": "2003-2006"
+    }
+  ]
+}

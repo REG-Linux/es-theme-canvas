@@ -1,0 +1,14 @@
+<theme>
+  <formatVersion>7</formatVersion>
+  <!-- Wikidata Q336434 (CC0) -->
+  <variables>
+    <systemTrivia>N-Gage is a mobile phone and handheld game system.
+First released in October 2003 and discontinued in 2005.
+Made by Nokia.
+It launched at $299 in the US.
+About 3 million units were sold.
+It was succeeded by the N-Gage QD.
+Processors include the ARM9.</systemTrivia>
+    <systemYears>2003-2005</systemYears>
+  </variables>
+</theme>

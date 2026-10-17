@@ -1,0 +1,12 @@
+<theme>
+  <formatVersion>7</formatVersion>
+  <!-- Wikidata Q2502670 (CC0) -->
+  <variables>
+    <systemTrivia>VTech CreatiVision is a home video game console.
+First released in 1982 and discontinued in 1986.
+Made by VTech.
+It was succeeded by the VTech Socrates.
+Processors include the MOS Technology 6502.</systemTrivia>
+    <systemYears>1982-1986</systemYears>
+  </variables>
+</theme>

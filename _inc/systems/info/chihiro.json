@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "Chihiro is an arcade system board."
+    },
+    {
+      "key": "systemYears",
+      "value": "2002-?"
+    }
+  ]
+}

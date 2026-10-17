@@ -1,0 +1,11 @@
+<theme>
+  <formatVersion>7</formatVersion>
+  <!-- Wikidata Q203992 (CC0) -->
+  <variables>
+    <systemTrivia>Game Boy Color is a handheld Nintendo video game console introduced in 1998.
+First released in October 1998 and discontinued in 2003.
+It followed the Game Boy and was succeeded by the Game Boy Advance.
+Processors include the Sharp SM83.</systemTrivia>
+    <systemYears>1998-2003</systemYears>
+  </variables>
+</theme>

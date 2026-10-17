@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "Prince of Persia is a 1989 video game.\nFirst released in October 1989.\nDeveloped by Broderbund.\nGenre: action-adventure game.\nGame modes: single-player."
+    },
+    {
+      "key": "systemYears",
+      "value": "1989"
+    }
+  ]
+}

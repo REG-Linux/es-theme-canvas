@@ -1,0 +1,14 @@
+<theme>
+  <formatVersion>7</formatVersion>
+  <!-- Wikidata Q10676 (CC0) -->
+  <variables>
+    <systemTrivia>Sega Genesis is a fourth-generation home video game console developed by Sega.
+First released in Japan in October 1988 and discontinued in 1999.
+It launched at $189 in the US.
+About 39.8 million units were sold.
+Its library has 879 games.
+It followed the Sega Master System and was succeeded by the Sega 32X.
+Processors include the Motorola 68000 and the Zilog Z80.</systemTrivia>
+    <systemYears>1988-1999</systemYears>
+  </variables>
+</theme>

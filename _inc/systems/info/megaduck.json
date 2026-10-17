@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "Mega Duck is a handheld game console.\nFirst released in 1993.\nMade by Welback Holdings.\nIt launched at $72 in the US.\nProcessors include the Zilog Z80."
+    },
+    {
+      "key": "systemYears",
+      "value": "1993-?"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "Atari 800 is a home computer model.\nFirst released in 1979 and discontinued in 1992.\nProcessors include the MOS Technology 6502."
+    },
+    {
+      "key": "systemYears",
+      "value": "1979-1992"
+    }
+  ]
+}

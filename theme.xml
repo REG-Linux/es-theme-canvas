@@ -340,4 +340,8 @@ License: Creative Commons CC-BY-NC-SA
    <include ifSubset="aspect-ratio:4-3|4-3-auto">${themePath}/_inc/game-view/aspect-ratio-4-3.xml</include>
    <include ifSubset="aspect-ratio:3-2|3-2-auto">${themePath}/_inc/game-view/aspect-ratio-3-2.xml</include>
    <include ifSubset="aspect-ratio:1-1|1-1-auto">${themePath}/_inc/game-view/aspect-ratio-1-1.xml</include>
+
+  <!-- Dual-screen devices: the second screen, and gamelists without the media it shows -->
+  <include>${themePath}/_inc/dual-screen/secondary.xml</include>
+  <include>${themePath}/_inc/dual-screen/gamelist.xml</include>
 </theme>

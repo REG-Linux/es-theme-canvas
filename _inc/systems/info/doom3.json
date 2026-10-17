@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "DOOM 3 is a 2004 first-person shooter video game.\nFirst released in August 2004.\nDeveloped by id Software.\nGame modes: multiplayer, single-player, co-op mode."
+    },
+    {
+      "key": "systemYears",
+      "value": "2004"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+<theme>
+  <formatVersion>7</formatVersion>
+  <!-- Wikidata Q918232 (CC0) -->
+  <variables>
+    <systemTrivia>Commodore VIC-20 is a home computer.
+First released in 1981 and discontinued in 1985.
+Made by Commodore International.
+It followed the Commodore PET and was succeeded by the Commodore 64.
+Processors include the MOS Technology 6502.</systemTrivia>
+    <systemYears>1980-1985</systemYears>
+  </variables>
+</theme>

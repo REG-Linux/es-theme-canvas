@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "Dragon's Lair is a 1983 interactive film video game developed by Advanced Microcomputer Systems.\nFirst released in June 1983."
+    },
+    {
+      "key": "systemYears",
+      "value": "1983-?"
+    }
+  ]
+}

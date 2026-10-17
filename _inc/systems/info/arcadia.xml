@@ -1,0 +1,11 @@
+<theme>
+  <formatVersion>7</formatVersion>
+  <!-- Wikidata Q1196518 (CC0) -->
+  <variables>
+    <systemTrivia>Arcadia 2001 is a second-generation home video game console.
+First released in North America in May 1982 and discontinued in 1984.
+Its library has 35 games.
+Processors include the Signetics 2650.</systemTrivia>
+    <systemYears>1982-1984</systemYears>
+  </variables>
+</theme>

@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "Wolfenstein 3D is a 1992 first-person shooter video game.\nFirst released in May 1992.\nDeveloped by id Software.\nGame modes: single-player."
+    },
+    {
+      "key": "systemYears",
+      "value": "2013"
+    }
+  ]
+}

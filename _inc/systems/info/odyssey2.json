@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "Magnavox Odyssey 2 is a home video game console developed by Philips.\nFirst released in Quartier de l'Europe in December 1978 and discontinued in 1984.\nIt launched at $179 in the US.\nAbout 2 million units were sold.\nIts library has 80 games.\nIt followed the Odyssey and was succeeded by the Odyssey 100.\nProcessors include the Intel MCS-48."
+    },
+    {
+      "key": "systemYears",
+      "value": "1978-1984"
+    }
+  ]
+}

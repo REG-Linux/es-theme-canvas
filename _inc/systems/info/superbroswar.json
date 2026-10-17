@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "Super Mario War is a 2006 video game.\nFirst released in December 2006.\nDeveloped by Florian Hufsky.\nGenre: action-adventure game.\nGame modes: multiplayer, single-player."
+    },
+    {
+      "key": "systemYears",
+      "value": "2006"
+    }
+  ]
+}

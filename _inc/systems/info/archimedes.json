@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "Acorn Archimedes is a general purpose home computer.\nFirst released in June 1987."
+    },
+    {
+      "key": "systemYears",
+      "value": "1987-?"
+    }
+  ]
+}

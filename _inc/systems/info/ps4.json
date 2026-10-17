@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "PlayStation 4 is Sony's fourth home video game console, part of the eighth generation of consoles.\nFirst released in November 2013 and discontinued in 2024.\nMade by Sony Interactive Entertainment.\nIt launched at $399.99 in the US.\nAbout 117.2 million units were sold.\nIt followed the PlayStation 3 and was succeeded by the PlayStation 5.\nProcessors include the PlayStation 4 APU."
+    },
+    {
+      "key": "systemYears",
+      "value": "2013-2024"
+    }
+  ]
+}

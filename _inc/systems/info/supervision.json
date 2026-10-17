@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "Watara Supervision is a handheld game console.\nFirst released in 1992 and discontinued in 1996.\nMade by Watara.\nIt launched at $49.95 in the US.\nProcessors include the WDC 65C02."
+    },
+    {
+      "key": "systemYears",
+      "value": "1992-1996"
+    }
+  ]
+}

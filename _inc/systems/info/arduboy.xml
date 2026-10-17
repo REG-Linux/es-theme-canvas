@@ -1,0 +1,11 @@
+<theme>
+  <formatVersion>7</formatVersion>
+  <!-- Wikidata Q25389541 (CC0) -->
+  <variables>
+    <systemTrivia>Arduboy is a handheld video game console.
+First released in August 2016.
+Made by Seeed Studio.
+Processors include the ATmega 32U4.</systemTrivia>
+    <systemYears>2015-</systemYears>
+  </variables>
+</theme>

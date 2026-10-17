@@ -1,0 +1,12 @@
+<theme>
+  <formatVersion>7</formatVersion>
+  <!-- Wikidata Q946661 (CC0) -->
+  <variables>
+    <systemTrivia>Commodore PET is a home computer.
+First released in October 1977 and discontinued in 1982.
+Made by Commodore International.
+It followed the KIM-1 and was succeeded by the Commodore VIC-20.
+Processors include the MOS Technology 6502.</systemTrivia>
+    <systemYears>1977-1982</systemYears>
+  </variables>
+</theme>

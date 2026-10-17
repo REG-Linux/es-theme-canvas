@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "Flashback is a 1992 video game.\nFirst released in 1992.\nDeveloped by Delphine Software International.\nGenre: cinematic platformer.\nGame modes: single-player."
+    },
+    {
+      "key": "systemYears",
+      "value": "1992"
+    }
+  ]
+}

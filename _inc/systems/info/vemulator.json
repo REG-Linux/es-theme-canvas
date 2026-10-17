@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "VMU is a memory card for the Dreamcast.\nFirst released in Japan in November 1998 and discontinued in 2001.\nMade by Sega."
+    },
+    {
+      "key": "systemYears",
+      "value": "1998-2001"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+<theme>
+  <formatVersion>7</formatVersion>
+  <!-- Wikidata Q1282269 (CC0) -->
+  <variables>
+    <systemTrivia>Apple IIGS is an Apple II series 16-bit computer.
+Made by Apple Inc.
+It followed the Apple IIc and was succeeded by the Apple III.
+Processors include the WDC W65C816.</systemTrivia>
+    <systemYears>1986-1992</systemYears>
+  </variables>
+</theme>

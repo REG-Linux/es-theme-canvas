@@ -1,0 +1,335 @@
+<theme>
+  <formatVersion>7</formatVersion>
+  <!--
+  Dual-screen devices (RG DS): the second screen.
+    secondarysystem   - the system selected in the system view
+    secondarygamelist - the game selected in a gamelist
+    playing           - the UI's screen while a game runs (a still frame)
+  Laid out for 640x480.
+  -->
+
+  <!-- Per-system device art and trivia: systems/info/<system>.xml, else default.xml -->
+  <variables>
+    <systemTrivia></systemTrivia>
+    <systemDevice></systemDevice>
+    <!-- launch-discontinued years from the per-system file, else the launch year -->
+    <systemYears>{system:releaseYear}</systemYears>
+    <!-- the panels are the bottom screen's icon backdrop (colour and opacity), the
+         text the colour the scheme draws on it -->
+    <secTextColor>${systemInfoColor}</secTextColor>
+    <secPanelColor>${BackdropColor}</secPanelColor>
+    <!-- a rectangle has no opacity: panels append their alpha to the colour -->
+  </variables>
+  <include>${themePath}/_inc/systems/info/$system.xml</include>
+
+  <view name="secondarysystem, secondarygamelist, playing">
+    <image name="sec-background" extra="true">
+      <path>${backgroundArtPath}.webp</path>
+      <origin>0.5 0.5</origin>
+      <pos>0.5 0.5</pos>
+      <minSize>1 1</minSize>
+      <zIndex>${zBackgroundArt}</zIndex>
+    </image>
+  </view>
+
+  <!-- System: device, logo, facts, trivia -->
+  <view name="secondarysystem">
+    <image name="sec-device" extra="true">
+      <path
+      >firstfile("${systemDevice}", "${themePath}/_inc/systems/devices/" + {system:theme} + ".webp", "${themePath}/_inc/systems/carousel-icons-art/" + {system:theme} + ".webp", "${themePath}/_inc/systems/carousel-icons-art/_default.webp")</path>
+      <origin>0.5 0.5</origin>
+      <pos>0.5 0.56</pos>
+      <maxSize>0.752 0.672</maxSize>
+      <linearSmooth>true</linearSmooth>
+      <zIndex>${zUI}</zIndex>
+    </image>
+
+    <image name="sec-logo" extra="true">
+      <path>${themePath}/_inc/systems/logos/{system:theme}.svg</path>
+      <origin>0.5 0</origin>
+      <pos>0.5 0.02</pos>
+      <maxSize>0.75 0.105</maxSize>
+      <color>${secTextColor}</color>
+      <linearSmooth>true</linearSmooth>
+      <zIndex>${zIcons}</zIndex>
+    </image>
+
+    <text name="sec-fullname" extra="true">
+      <text>{system:fullName}</text>
+      <visible>!exists("${themePath}/_inc/systems/logos/" + {system:theme} + ".svg")</visible>
+      <origin>0.5 0</origin>
+      <pos>0.5 0.02</pos>
+      <size>0.9 0.11</size>
+      <alignment>center</alignment>
+      <forceUppercase>true</forceUppercase>
+      <fontPath>${fontBold}</fontPath>
+      <fontSize>0.075</fontSize>
+      <color>${secTextColor}</color>
+      <zIndex>${zText}</zIndex>
+    </text>
+
+    <rectangle name="sec-panel" extra="true">
+      <pos>0.03 0.5</pos>
+      <size>0.94 0.48</size>
+      <color>${secPanelColor}4D</color>
+      <roundCorners>12</roundCorners>
+      <zIndex>${zMetadata}</zIndex>
+    </rectangle>
+
+    <!-- the system is the logo above: the header is its years and its kind;
+         collections and groups (FAVORITES, PORTS) have no years -->
+    <text name="sec-year" extra="true">
+      <text>${systemYears}</text>
+      <visible>{system:collection} + {system:isGroup} == 0</visible>
+      <pos>0.05 0.515</pos>
+      <size>0.5 0.05</size>
+      <alignment>left</alignment>
+      <fontPath>${fontBold}</fontPath>
+      <fontSize>0.04</fontSize>
+      <color>${secTextColor}</color>
+      <zIndex>${zText}</zIndex>
+    </text>
+
+    <text name="sec-hardware" extra="true">
+      <text>{system:hardwareType}</text>
+      <pos>0.55 0.515</pos>
+      <size>0.4 0.05</size>
+      <alignment>right</alignment>
+      <forceUppercase>true</forceUppercase>
+      <fontPath>${fontBold}</fontPath>
+      <fontSize>0.04</fontSize>
+      <color>${secTextColor}</color>
+      <opacity>0.85</opacity>
+      <zIndex>${zText}</zIndex>
+    </text>
+
+    <text name="sec-trivia" extra="true">
+      <text>${systemTrivia}</text>
+      <pos>0.05 0.575</pos>
+      <size>0.9 0.34</size>
+      <alignment>left</alignment>
+      <verticalAlignment>top</verticalAlignment>
+      <multiLine>true</multiLine>
+      <autoScroll>vertical</autoScroll>
+      <autoScrollSpeed>50</autoScrollSpeed>
+      <autoScrollDelay>5000</autoScrollDelay>
+      <fontPath>${fontRegular}</fontPath>
+      <fontSize>0.032</fontSize>
+      <lineSpacing>1.2</lineSpacing>
+      <color>${secTextColor}</color>
+      <zIndex>${zText}</zIndex>
+    </text>
+
+    <text name="sec-games" extra="true">
+      <text>YOUR GAMES: {system:total}</text>
+      <pos>0.05 0.925</pos>
+      <size>0.9 0.04</size>
+      <alignment>right</alignment>
+      <fontPath>${fontRegular}</fontPath>
+      <fontSize>0.03</fontSize>
+      <color>${secTextColor}</color>
+      <opacity>0.75</opacity>
+      <zIndex>${zText}</zIndex>
+    </text>
+  </view>
+
+  <!-- Game: video over its screenshot, then the metadata -->
+  <view name="secondarygamelist">
+    <image name="sec-shot" extra="true">
+      <path>firstfile({game:image}, {game:thumbnail})</path>
+      <origin>0.5 0.5</origin>
+      <pos>0.5 0.31</pos>
+      <maxSize>0.92 0.58</maxSize>
+      <roundCorners>0.01</roundCorners>
+      <linearSmooth>true</linearSmooth>
+      <zIndex>${zUI}</zIndex>
+    </image>
+
+    <video name="sec-video" extra="true">
+      <path>{game:video}</path>
+      <origin>0.5 0.5</origin>
+      <pos>0.5 0.31</pos>
+      <maxSize>0.92 0.58</maxSize>
+      <delay>1.0</delay>
+      <roundCorners>0.01</roundCorners>
+      <zIndex>${zVideo}</zIndex>
+    </video>
+
+    <rectangle name="sec-game-panel" extra="true">
+      <pos>0.02 0.615</pos>
+      <size>0.96 0.37</size>
+      <color>${secPanelColor}4D</color>
+      <roundCorners>12</roundCorners>
+      <zIndex>${zMetadata}</zIndex>
+    </rectangle>
+
+    <text name="sec-name" extra="true">
+      <text>{game:name}</text>
+      <pos>0.04 0.63</pos>
+      <size>0.92 0.06</size>
+      <alignment>left</alignment>
+      <autoScroll>horizontal</autoScroll>
+      <autoScrollSpeed>50</autoScrollSpeed>
+      <autoScrollDelay>3000</autoScrollDelay>
+      <fontPath>${fontBold}</fontPath>
+      <fontSize>0.045</fontSize>
+      <color>${secTextColor}</color>
+      <zIndex>${zText}</zIndex>
+    </text>
+
+    <text name="sec-facts" extra="true">
+      <text>{game:releaseYear}</text>
+      <pos>0.04 0.69</pos>
+      <size>0.12 0.04</size>
+      <alignment>left</alignment>
+      <fontPath>${fontRegular}</fontPath>
+      <fontSize>0.032</fontSize>
+      <color>${secTextColor}</color>
+      <zIndex>${zText}</zIndex>
+    </text>
+
+    <text name="sec-developer" extra="true">
+      <text>{game:developer}</text>
+      <pos>0.16 0.69</pos>
+      <size>0.36 0.04</size>
+      <alignment>left</alignment>
+      <fontPath>${fontRegular}</fontPath>
+      <fontSize>0.032</fontSize>
+      <color>${secTextColor}</color>
+      <zIndex>${zText}</zIndex>
+    </text>
+
+    <text name="sec-genre" extra="true">
+      <text>{game:genre}</text>
+      <pos>0.52 0.69</pos>
+      <size>0.26 0.04</size>
+      <alignment>left</alignment>
+      <fontPath>${fontRegular}</fontPath>
+      <fontSize>0.032</fontSize>
+      <color>${secTextColor}</color>
+      <zIndex>${zText}</zIndex>
+    </text>
+
+    <text name="sec-players" extra="true">
+      <text>{game:players}</text>
+      <pos>0.78 0.69</pos>
+      <size>0.18 0.04</size>
+      <alignment>right</alignment>
+      <fontPath>${fontRegular}</fontPath>
+      <fontSize>0.032</fontSize>
+      <color>${secTextColor}</color>
+      <zIndex>${zText}</zIndex>
+    </text>
+
+    <rating name="sec-rating" extra="true">
+      <value>{game:rating}</value>
+      <pos>0.04 0.74</pos>
+      <size>0 0.03</size>
+      <filledPath>${themePath}/_inc/images/icons/icon-star-filled.svg</filledPath>
+      <unfilledPath>${themePath}/_inc/images/icons/icon-star-unfilled.svg</unfilledPath>
+      <color>${secTextColor}</color>
+      <zIndex>${zMetadata}</zIndex>
+    </rating>
+
+    <text name="sec-description" extra="true">
+      <text>{game:desc}</text>
+      <pos>0.04 0.79</pos>
+      <size>0.92 0.19</size>
+      <alignment>left</alignment>
+      <verticalAlignment>top</verticalAlignment>
+      <multiLine>true</multiLine>
+      <autoScroll>vertical</autoScroll>
+      <autoScrollSpeed>50</autoScrollSpeed>
+      <autoScrollDelay>5000</autoScrollDelay>
+      <fontPath>${fontRegular}</fontPath>
+      <fontSize>0.03</fontSize>
+      <lineSpacing>1.2</lineSpacing>
+      <color>${secTextColor}</color>
+      <zIndex>${zText}</zIndex>
+    </text>
+  </view>
+
+  <!-- Playing: what is running and how to drive it -->
+  <view name="playing">
+    <image name="play-logo" extra="true">
+      <path>${themePath}/_inc/systems/logos/{system:theme}.svg</path>
+      <origin>0.5 0</origin>
+      <pos>0.5 0.04</pos>
+      <maxSize>0.4 0.07</maxSize>
+      <color>${secTextColor}</color>
+      <linearSmooth>true</linearSmooth>
+      <zIndex>${zIcons}</zIndex>
+    </image>
+
+    <image name="play-art" extra="true">
+      <path>firstfile({game:marquee}, {game:image}, {game:thumbnail})</path>
+      <origin>0.5 0.5</origin>
+      <pos>0.5 0.3</pos>
+      <maxSize>0.8 0.3</maxSize>
+      <linearSmooth>true</linearSmooth>
+      <zIndex>${zUI}</zIndex>
+    </image>
+
+    <rectangle name="play-panel" extra="true">
+      <pos>0.04 0.465</pos>
+      <size>0.92 0.51</size>
+      <color>${secPanelColor}99</color>
+      <roundCorners>12</roundCorners>
+      <zIndex>${zMetadata}</zIndex>
+    </rectangle>
+
+    <text name="play-name" extra="true">
+      <text>{game:name}</text>
+      <pos>0.05 0.48</pos>
+      <size>0.9 0.06</size>
+      <alignment>center</alignment>
+      <fontPath>${fontBold}</fontPath>
+      <fontSize>0.045</fontSize>
+      <color>${secTextColor}</color>
+      <zIndex>${zText}</zIndex>
+    </text>
+
+    <text name="play-controls" extra="true">
+      <text>{game:controls}</text>
+      <visible>{game:controls} != ""</visible>
+      <pos>0.1 0.57</pos>
+      <size>0.8 0.3</size>
+      <alignment>left</alignment>
+      <verticalAlignment>top</verticalAlignment>
+      <multiLine>true</multiLine>
+      <fontPath>${fontRegular}</fontPath>
+      <fontSize>0.032</fontSize>
+      <lineSpacing>1.2</lineSpacing>
+      <color>${secTextColor}</color>
+      <zIndex>${zText}</zIndex>
+    </text>
+
+    <text name="play-description" extra="true">
+      <text>{game:desc}</text>
+      <visible>{game:controls} == ""</visible>
+      <pos>0.06 0.57</pos>
+      <size>0.88 0.3</size>
+      <alignment>left</alignment>
+      <verticalAlignment>top</verticalAlignment>
+      <multiLine>true</multiLine>
+      <fontPath>${fontRegular}</fontPath>
+      <fontSize>0.03</fontSize>
+      <lineSpacing>1.2</lineSpacing>
+      <color>${secTextColor}</color>
+      <opacity>${mediumOpacity}</opacity>
+      <zIndex>${zText}</zIndex>
+    </text>
+
+    <text name="play-hint" extra="true">
+      <text>HOTKEY + START: EXIT GAME</text>
+      <pos>0.05 0.92</pos>
+      <size>0.9 0.04</size>
+      <alignment>center</alignment>
+      <fontPath>${fontRegular}</fontPath>
+      <fontSize>0.03</fontSize>
+      <color>${secTextColor}</color>
+      <opacity>${lowOpacity}</opacity>
+      <zIndex>${zText}</zIndex>
+    </text>
+  </view>
+</theme>

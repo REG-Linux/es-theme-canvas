@@ -1,0 +1,13 @@
+<theme>
+  <formatVersion>7</formatVersion>
+  <!-- Wikidata Q183259 (CC0) -->
+  <variables>
+    <systemTrivia>Super Nintendo Entertainment System is a fourth-generation home video game console by Nintendo.
+First released in Japan in November 1990 and discontinued in 2003.
+It launched at $199 in the US.
+About 49.1 million units were sold.
+It followed the Nintendo Entertainment System and was succeeded by the Nintendo 64.
+Processors include the Ricoh 5A22.</systemTrivia>
+    <systemYears>1990-2003</systemYears>
+  </variables>
+</theme>

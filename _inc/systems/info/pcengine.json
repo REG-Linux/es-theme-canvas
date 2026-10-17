@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "TurboGrafx-16 is a fourth-generation home video game console.\nFirst released in Japan in October 1987 and discontinued in 1994.\nMade by NEC.\nAbout 10 million units were sold.\nIt was succeeded by the PC Engine SuperGrafx.\nProcessors include the Hudson Soft HuC6280."
+    },
+    {
+      "key": "systemYears",
+      "value": "1987-1994"
+    }
+  ]
+}

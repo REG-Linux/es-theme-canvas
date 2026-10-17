@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "Sonic 3 & Knuckles is a 1994 video game.\nFirst released in 1994.\nDeveloped by Sonic Team.\nGenre: platformer.\nGame modes: single-player, multiplayer."
+    },
+    {
+      "key": "systemYears",
+      "value": "2019"
+    }
+  ]
+}

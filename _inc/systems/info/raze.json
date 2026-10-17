@@ -1,0 +1,9 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "Build is a game engine developed by Ken Silverman."
+    }
+  ]
+}

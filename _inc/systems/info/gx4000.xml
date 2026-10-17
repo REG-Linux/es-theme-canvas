@@ -1,0 +1,11 @@
+<theme>
+  <formatVersion>7</formatVersion>
+  <!-- Wikidata Q981935 (CC0) -->
+  <variables>
+    <systemTrivia>Amstrad GX4000 is a home video game console.
+First released in September 1990 and discontinued in 1991.
+Made by Amstrad.
+Processors include the Zilog Z80.</systemTrivia>
+    <systemYears>1991</systemYears>
+  </variables>
+</theme>

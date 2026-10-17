@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "Othello Multivision is a licensed clone of the SG-1000 home video game console.\nFirst released in Japan in 1983.\nMade by Tsukada Original.\nIt launched at ¥19,800."
+    },
+    {
+      "key": "systemYears",
+      "value": "1983-?"
+    }
+  ]
+}

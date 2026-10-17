@@ -1,0 +1,11 @@
+<theme>
+  <formatVersion>7</formatVersion>
+  <!-- Wikidata Q18940 (CC0) -->
+  <variables>
+    <systemTrivia>Wolfenstein 3D is a 1992 first-person shooter video game.
+First released in May 1992.
+Developed by id Software.
+Game modes: single-player.</systemTrivia>
+    <systemYears>2013</systemYears>
+  </variables>
+</theme>

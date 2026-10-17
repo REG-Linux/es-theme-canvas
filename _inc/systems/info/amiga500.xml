@@ -1,0 +1,11 @@
+<theme>
+  <formatVersion>7</formatVersion>
+  <!-- Wikidata Q384656 (CC0) -->
+  <variables>
+    <systemTrivia>Amiga 500 is a personal computer by Commodore.
+First released in 1987 and discontinued in 1992.
+It followed the Amiga 1000 and was succeeded by the Amiga 500 Plus.
+Processors include the Motorola 68000.</systemTrivia>
+    <systemYears>1987-1992</systemYears>
+  </variables>
+</theme>

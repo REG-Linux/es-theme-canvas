@@ -1,0 +1,10 @@
+<theme>
+  <formatVersion>7</formatVersion>
+  <!-- Wikidata Q526646 (CC0) -->
+  <variables>
+    <systemTrivia>SV-328 is an 8-bit home computer introduced by Spectravideo in 1983.
+It followed the SV-318 and was succeeded by the SVI-728.
+Processors include the Zilog Z80A.</systemTrivia>
+    <systemYears>1983-?</systemYears>
+  </variables>
+</theme>

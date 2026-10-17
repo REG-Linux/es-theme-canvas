@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "Out Run is a 1986 video game.\nFirst released in September 1986.\nDeveloped by Sega AM2.\nGenre: racing video game.\nGame modes: single-player."
+    },
+    {
+      "key": "systemYears",
+      "value": "1986"
+    }
+  ]
+}

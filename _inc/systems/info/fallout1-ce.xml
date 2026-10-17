@@ -1,0 +1,11 @@
+<theme>
+  <formatVersion>7</formatVersion>
+  <!-- Wikidata Q60102 (CC0) -->
+  <variables>
+    <systemTrivia>Fallout is a 1997 role-playing video game.
+First released in October 1997.
+Developed by Black Isle Studios.
+Game modes: single-player.</systemTrivia>
+    <systemYears>1997</systemYears>
+  </variables>
+</theme>

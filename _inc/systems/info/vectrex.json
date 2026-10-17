@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "Vectrex is a home video game console.\nFirst released in North America in November 1982 and discontinued in 1984.\nMade by Milton Bradley Company.\nIts library has 28 games.\nProcessors include the Motorola 6809."
+    },
+    {
+      "key": "systemYears",
+      "value": "1982-1984"
+    }
+  ]
+}

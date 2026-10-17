@@ -1,0 +1,11 @@
+<theme>
+  <formatVersion>7</formatVersion>
+  <!-- Wikidata Q215034 (CC0) -->
+  <variables>
+    <systemTrivia>Game &amp; Watch series is a handheld electronic game series developed and published by Nintendo between 1980 and 1991.
+First released in April 1980 and discontinued in 1991.
+About 43.4 million units were sold.
+It was succeeded by the Game Boy.</systemTrivia>
+    <systemYears>1980-1991</systemYears>
+  </variables>
+</theme>

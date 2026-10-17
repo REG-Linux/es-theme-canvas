@@ -1,0 +1,13 @@
+{
+  "formatVersion": 7,
+  "variables": [
+    {
+      "key": "systemTrivia",
+      "value": "The Force Engine is a Jedi Engine reimplementation."
+    },
+    {
+      "key": "systemYears",
+      "value": "1995"
+    }
+  ]
+}
