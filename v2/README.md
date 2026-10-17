@@ -9,6 +9,7 @@ directory. Format: REG-Station docs/arch/THEME-V2-FORMAT.md.
 | `theme.json` | the options, and the files below (merged in order) |
 | `vars.json` | variables: `"$name"` where a value goes, `"$(name)"` inside a string; an object with `by` picks its value by an option (or the screen) |
 | `components.json` | shared nodes: `{"use": name}` places one; the node's own keys go over it (style key by key, `null` unsets) |
+| `facts.json` | what the frontend reads of the theme beyond drawing it (sounds, view list, menu styles, options): `key: value`, percent-encoded, and the vars only they use; not in the include list (no view reads them) |
 | `views/<view>.json` | one view each |
 
 ## Shared nodes (components.json)
