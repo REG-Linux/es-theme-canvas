@@ -100,7 +100,10 @@
         {"use": "logoText"},
         {"use": "help"},
         {"use": "game-metadata-background-shadow-extended"},
-        {"use": "game-metadata-background-image-extended"}
+        {"use": "game-metadata-background-image-extended"},
+        {"use": "md_marquee"},
+        {"use": "md_image"},
+        {"use": "md_thumbnail"}
       ]
     }
   }

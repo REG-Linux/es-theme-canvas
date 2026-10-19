@@ -20,7 +20,7 @@
             "height": "$system.gamesicon.style.width",
             "translate": ["-50%", "-50%"],
             "zIndex": 4.0,
-            "color": "$systemInfoColor"
+            "color": "$secTextColor"
           },
           "visible": "{settings.DrawClock && clock.time != \"\" && screen.statusBar}"
         },
@@ -56,7 +56,7 @@
                   "id": "icon",
                   "src": "$(themeDir)/../_inc/images/network/network-icon-off.svg",
                   "fit": "contain",
-                  "tint": "$systemInfoColor",
+                  "tint": "$secTextColor",
                   "style": {"maxWidth": "5vw", "maxHeight": "5vh", "height": "5vh"}
                 }
               ]
@@ -79,7 +79,7 @@
                   "id": "icon",
                   "src": "$(themeDir)/../_inc/images/network/network-icon-on.svg",
                   "fit": "contain",
-                  "tint": "$systemInfoColor",
+                  "tint": "$secTextColor",
                   "style": {"maxWidth": "5vw", "maxHeight": "5vh", "height": "5vh"}
                 }
               ]
@@ -102,7 +102,7 @@
                   "id": "icon",
                   "src": "{battery.charging ? \"$(themeDir)/../_inc/images/battery/battery-icon-charging.svg\" : battery.level > 75 ? \"$(themeDir)/../_inc/images/battery/battery-icon-100.svg\" : battery.level > 50 ? \"$(themeDir)/../_inc/images/battery/battery-icon-75.svg\" : battery.level > 25 ? \"$(themeDir)/../_inc/images/battery/battery-icon-50.svg\" : battery.level > 5 ? \"$(themeDir)/../_inc/images/battery/battery-icon-25.svg\" : \"$(themeDir)/../_inc/images/battery/battery-icon-0.svg\"}",
                   "fit": "contain",
-                  "tint": "$systemInfoColor",
+                  "tint": "$secTextColor",
                   "style": {"maxWidth": "5vw", "maxHeight": "5vh", "height": "5vh"}
                 }
               ]
@@ -125,7 +125,7 @@
                   "font": ":/ubuntu_condensed.ttf",
                   "fontSize": "3.5vh",
                   "lineHeight": 1.0,
-                  "style": {"color": "$systemInfoColor"}
+                  "style": {"color": "$secTextColor"}
                 }
               ]
             }

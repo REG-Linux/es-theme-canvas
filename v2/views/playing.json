@@ -1,0 +1,139 @@
+{
+  "views": {
+    "playing": {
+      "id": "playing",
+      "children": [
+        {"use": "sec-background"},
+        {
+          "type": "image",
+          "id": "play-logo",
+          "fit": "contain",
+          "position": ["50%", "0%"],
+          "src": "../_inc/systems/logos/{system.theme}.svg",
+          "style": {
+            "position": "absolute",
+            "left": "50%",
+            "top": "4%",
+            "maxWidth": "40%",
+            "maxHeight": "7%",
+            "translate": ["-50%", "-0%"],
+            "zIndex": 5.0
+          },
+          "tint": "$secTextColor"
+        },
+        {
+          "type": "image",
+          "id": "play-art",
+          "fit": "contain",
+          "position": ["50%", "50%"],
+          "src": "{firstFile(game.marquee, game.image, game.thumbnail)}",
+          "style": {
+            "position": "absolute",
+            "left": "50%",
+            "top": "30%",
+            "maxWidth": "80%",
+            "maxHeight": "30%",
+            "translate": ["-50%", "-50%"],
+            "zIndex": 2.0
+          }
+        },
+        {
+          "type": "box",
+          "id": "play-panel",
+          "style": {
+            "position": "absolute",
+            "left": "4%",
+            "top": "46.5%",
+            "width": "92%",
+            "height": "51%",
+            "zIndex": 3.0,
+            "background": "$playing.play-panel.style.background",
+            "borderRadius": 12.0
+          }
+        },
+        {
+          "type": "text",
+          "id": "play-name",
+          "text": "{textDefault(game.name)}",
+          "font": "../_inc/fonts/Inter-Bold.otf",
+          "fontSize": "4.5vmin",
+          "align": "center",
+          "valign": "center",
+          "lineHeight": 1.5,
+          "style": {
+            "position": "absolute",
+            "left": "5%",
+            "top": "48%",
+            "width": "90%",
+            "height": "6%",
+            "zIndex": 4.0,
+            "color": "$secTextColor"
+          }
+        },
+        {
+          "type": "text",
+          "id": "play-controls",
+          "visible": "{game.controls != \"\"}",
+          "text": "{textDefault(game.controls)}",
+          "font": "../_inc/fonts/Inter-Regular.otf",
+          "fontSize": "3.2vmin",
+          "align": "left",
+          "valign": "top",
+          "lineHeight": 1.2,
+          "wrap": true,
+          "style": {
+            "position": "absolute",
+            "left": "10%",
+            "top": "57%",
+            "width": "80%",
+            "height": "30%",
+            "zIndex": 4.0,
+            "color": "$secTextColor"
+          }
+        },
+        {
+          "type": "text",
+          "id": "play-description",
+          "visible": "{game.controls == \"\"}",
+          "text": "{textDefault(game.desc)}",
+          "font": "../_inc/fonts/Inter-Regular.otf",
+          "fontSize": "3vmin",
+          "align": "left",
+          "valign": "top",
+          "lineHeight": 1.2,
+          "wrap": true,
+          "style": {
+            "position": "absolute",
+            "left": "6%",
+            "top": "57%",
+            "width": "88%",
+            "height": "30%",
+            "opacity": 0.8,
+            "zIndex": 4.0,
+            "color": "$secTextColor"
+          }
+        },
+        {
+          "type": "text",
+          "id": "play-hint",
+          "text": "HOTKEY + START: EXIT GAME",
+          "font": "../_inc/fonts/Inter-Regular.otf",
+          "fontSize": "3vmin",
+          "align": "center",
+          "valign": "center",
+          "lineHeight": 1.5,
+          "style": {
+            "position": "absolute",
+            "left": "5%",
+            "top": "92%",
+            "width": "90%",
+            "height": "4%",
+            "opacity": 0.6,
+            "zIndex": 4.0,
+            "color": "$secTextColor"
+          }
+        }
+      ]
+    }
+  }
+}

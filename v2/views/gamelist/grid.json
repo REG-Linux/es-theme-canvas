@@ -185,7 +185,7 @@
             "left": "0%",
             "top": "0%",
             "width": "{0.24 * screen.w - textWidth(\":/ubuntu_condensed.ttf\", floor(0.035 * min(screen.w, screen.h)), 0, tr(\"Players\") + \": \")}",
-            "height": "{fontHeight(\":/ubuntu_condensed.ttf\", floor(0.035 * min(screen.w, screen.h)), 0) * 1.5}"
+            "height": "{$(m~6) * 1.5}"
           }
         },
         {
@@ -205,7 +205,7 @@
             "left": "0%",
             "top": "0%",
             "width": "{0.24 * screen.w - textWidth(\":/ubuntu_condensed.ttf\", floor(0.035 * min(screen.w, screen.h)), 0, tr(\"Developer\") + \": \")}",
-            "height": "{fontHeight(\":/ubuntu_condensed.ttf\", floor(0.035 * min(screen.w, screen.h)), 0) * 1.5}"
+            "height": "{$(m~6) * 1.5}"
           }
         },
         {
@@ -216,7 +216,7 @@
             "left": "0%",
             "top": "0%",
             "width": "{0.24 * screen.w - textWidth(\":/ubuntu_condensed.ttf\", floor(0.035 * min(screen.w, screen.h)), 0, tr(\"Publisher\") + \": \")}",
-            "height": "{fontHeight(\":/ubuntu_condensed.ttf\", floor(0.035 * min(screen.w, screen.h)), 0) * 1.5}"
+            "height": "{$(m~6) * 1.5}"
           }
         },
         {
@@ -247,27 +247,9 @@
           "lineHeight": 1.2,
           "style": {"width": null, "height": null, "left": "0%", "top": "0%"}
         },
-        {
-          "type": "image",
-          "id": "md_marquee",
-          "visible": false,
-          "src": "{firstFile(game.marquee, game.wheel)}",
-          "style": {"position": "absolute", "left": "0%", "top": "0%", "zIndex": 30.0}
-        },
-        {
-          "type": "image",
-          "id": "md_image",
-          "visible": false,
-          "src": "{firstFile(game.image)}",
-          "style": {"position": "absolute", "left": "0%", "top": "0%", "zIndex": 30.0}
-        },
-        {
-          "type": "image",
-          "id": "md_thumbnail",
-          "visible": false,
-          "src": "{firstFile(game.thumbnail)}",
-          "style": {"position": "absolute", "left": "0%", "top": "0%", "zIndex": 30.0}
-        },
+        {"use": "md_marquee", "if": null},
+        {"use": "md_image", "if": null},
+        {"use": "md_thumbnail", "if": null},
         {
           "use": "logo",
           "style": {

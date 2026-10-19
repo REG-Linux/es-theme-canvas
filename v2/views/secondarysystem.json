@@ -1,0 +1,160 @@
+{
+  "views": {
+    "secondarysystem": {
+      "id": "secondarysystem",
+      "children": [
+        {"use": "sec-background"},
+        {
+          "type": "image",
+          "id": "sec-device",
+          "fit": "contain",
+          "position": ["50%", "50%"],
+          "src": "{firstFile(\"\", \"$(themeDir)/../_inc/systems/devices/\" + system.theme + \".webp\", \"$(themeDir)/../_inc/systems/carousel-icons-art/\" + system.theme + \".webp\", \"$(themeDir)/../_inc/systems/carousel-icons-art/_default.webp\")}",
+          "style": {
+            "position": "absolute",
+            "left": "50%",
+            "top": "56%",
+            "maxWidth": "75.2%",
+            "maxHeight": "67.2%",
+            "translate": ["-50%", "-50%"],
+            "zIndex": 2.0
+          }
+        },
+        {
+          "type": "image",
+          "id": "sec-logo",
+          "fit": "contain",
+          "position": ["50%", "0%"],
+          "src": "../_inc/systems/logos/{system.theme}.svg",
+          "style": {
+            "position": "absolute",
+            "left": "50%",
+            "top": "2%",
+            "maxWidth": "75%",
+            "maxHeight": "10.5%",
+            "translate": ["-50%", "-0%"],
+            "zIndex": 5.0
+          },
+          "tint": "$secTextColor"
+        },
+        {
+          "type": "text",
+          "id": "sec-fullname",
+          "visible": "{!exists(\"$(themeDir)/../_inc/systems/logos/\" + system.theme + \".svg\")}",
+          "text": "{textDefault(system.fullName)}",
+          "font": "../_inc/fonts/Inter-Bold.otf",
+          "fontSize": "7.5vmin",
+          "align": "center",
+          "valign": "center",
+          "transform": "uppercase",
+          "lineHeight": 1.5,
+          "style": {
+            "position": "absolute",
+            "left": "50%",
+            "top": "2%",
+            "width": "90%",
+            "height": "11%",
+            "translate": ["-50%", "-0%"],
+            "zIndex": 4.0,
+            "color": "$secTextColor"
+          }
+        },
+        {
+          "type": "box",
+          "id": "sec-panel",
+          "style": {
+            "position": "absolute",
+            "left": "3%",
+            "top": "50%",
+            "width": "94%",
+            "height": "48%",
+            "zIndex": 3.0,
+            "background": "$color-scheme/background.1",
+            "borderRadius": 12.0
+          }
+        },
+        {
+          "type": "box",
+          "id": "sec-year-systems",
+          "style": {
+            "position": "absolute",
+            "left": 0,
+            "top": 0,
+            "width": "100%",
+            "height": "100%",
+            "zIndex": 4.0
+          },
+          "children": [
+            {"use": "sec-year"},
+            {
+              "use": "sec-year",
+              "text": "{system.releaseYear}",
+              "visible": "{((system.collection + system.isGroup == 0)) && field(\"system.prop:secondarysystem/sec-year/variant\", 0) == 1}"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "sec-hardware",
+          "text": "{textDefault(system.hardwareType)}",
+          "font": "../_inc/fonts/Inter-Bold.otf",
+          "fontSize": "4vmin",
+          "align": "right",
+          "valign": "center",
+          "transform": "uppercase",
+          "lineHeight": 1.5,
+          "style": {
+            "position": "absolute",
+            "left": "55%",
+            "top": "51.5%",
+            "width": "40%",
+            "height": "5%",
+            "opacity": 0.85,
+            "zIndex": 4.0,
+            "color": "$secTextColor"
+          }
+        },
+        {
+          "type": "text",
+          "id": "sec-trivia",
+          "style": {
+            "position": "absolute",
+            "left": "5%",
+            "top": "57.5%",
+            "width": "90%",
+            "height": "34%",
+            "zIndex": 4.0,
+            "color": "$secTextColor"
+          },
+          "font": "../_inc/fonts/Inter-Regular.otf",
+          "fontSize": "3.2vmin",
+          "align": "left",
+          "valign": "top",
+          "lineHeight": 1.2,
+          "wrap": true,
+          "text": "{field(\"system.prop:secondarysystem/sec-trivia/text\", \"Acorn Atom is an early 1980s home computer.\nFirst released in 1980 and discontinued in 1983.\nMade by Acorn Computers.\nIt followed the Acorn Eurocard systems and was succeeded by the BBC Micro.\nProcessors include the MOS Technology 6502.\")}"
+        },
+        {
+          "type": "text",
+          "id": "sec-games",
+          "text": "YOUR GAMES: {textDefault(system.total)}",
+          "font": "../_inc/fonts/Inter-Regular.otf",
+          "fontSize": "3vmin",
+          "align": "right",
+          "valign": "center",
+          "lineHeight": 1.5,
+          "style": {
+            "position": "absolute",
+            "left": "5%",
+            "top": "92.5%",
+            "width": "90%",
+            "height": "4%",
+            "opacity": 0.75,
+            "zIndex": 4.0,
+            "color": "$secTextColor"
+          }
+        }
+      ]
+    }
+  }
+}

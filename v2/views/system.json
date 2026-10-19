@@ -49,7 +49,8 @@
             "zIndex": 5.0
           },
           "replayShown": true,
-          "tint": "$systemInfoColor"
+          "tint": "$secTextColor",
+          "visible": "$system.gamesicon.visible"
         },
         {
           "type": "text",
@@ -67,9 +68,10 @@
             "height": "$system.gamesicon.style.width",
             "opacity": 0.0,
             "zIndex": 4.0,
-            "color": "$systemInfoColor"
+            "color": "$secTextColor"
           },
-          "replayShown": true
+          "replayShown": true,
+          "visible": "$system.gamesicon.visible"
         },
         {"use": "background-art", "replayShown": true},
         {"use": "help"},

@@ -41,6 +41,7 @@ directory. Format: REG-Station docs/arch/THEME-V2-FORMAT.md.
 | `title` | dialog, menu |
 | `md_rating-unfilled` | def md_rating |
 | `md_rating-value` | def md_rating |
+| `sec-year` | secondarysystem |
 | `background-art` | gamelist/basic, gamelist/detailed, gamelist/gamecarousel, gamelist/grid, system |
 | `dim` | dialog, menu |
 | `game-list-background` | gamelist/basic, gamelist/detailed |
@@ -56,13 +57,17 @@ directory. Format: REG-Station docs/arch/THEME-V2-FORMAT.md.
 | `md_developer` | gamelist/detailed, gamelist/gamecarousel, gamelist/grid |
 | `md_gametime_custom` | gamelist/detailed, gamelist/gamecarousel, gamelist/grid |
 | `md_genre` | gamelist/detailed, gamelist/gamecarousel, gamelist/grid |
+| `md_image` | gamelist/detailed, gamelist/gamecarousel, gamelist/grid |
 | `md_lastplayed` | gamelist/detailed, gamelist/gamecarousel, gamelist/grid |
+| `md_marquee` | gamelist/detailed, gamelist/gamecarousel, gamelist/grid |
 | `md_name` | gamelist/detailed, gamelist/gamecarousel, gamelist/grid |
 | `md_playcount` | gamelist/detailed, gamelist/gamecarousel, gamelist/grid |
 | `md_players` | gamelist/detailed, gamelist/gamecarousel, gamelist/grid |
 | `md_publisher` | gamelist/detailed, gamelist/gamecarousel, gamelist/grid |
 | `md_rating` | gamelist/detailed, gamelist/gamecarousel, gamelist/grid |
 | `md_releasedate` | gamelist/detailed, gamelist/gamecarousel, gamelist/grid |
+| `md_thumbnail` | gamelist/detailed, gamelist/gamecarousel, gamelist/grid |
 | `md_video` | gamelist/detailed, gamelist/gamecarousel, gamelist/grid |
 | `playtime-logo` | gamelist/detailed, gamelist/gamecarousel, gamelist/grid |
+| `sec-background` | playing, secondarygamelist, secondarysystem |
 
