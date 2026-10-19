@@ -26,7 +26,17 @@
         {"use": "logoText"},
         {"use": "help"},
         {"use": "game-metadata-background-shadow-extended"},
-        {"use": "game-metadata-background-image-extended"}
+        {"use": "game-metadata-background-image-extended"},
+        {
+          "type": "image",
+          "id": "console-icon",
+          "visible": false,
+          "style": {"position": "absolute", "left": "0%", "top": "0%"},
+          "if": {"env.dualScreen": ["1"]}
+        },
+        {"use": "md_marquee"},
+        {"use": "md_image"},
+        {"use": "md_thumbnail"}
       ]
     }
   }
