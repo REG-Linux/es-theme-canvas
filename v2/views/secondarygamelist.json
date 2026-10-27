@@ -5,11 +5,11 @@
       "children": [
         {"use": "sec-background"},
         {
-          "type": "image",
-          "id": "sec-shot",
+          "type": "video",
+          "id": "sec-video",
           "fit": "contain",
           "position": ["50%", "50%"],
-          "src": "{firstFile(game.image, game.thumbnail)}",
+          "src": "{game.video}",
           "style": {
             "position": "absolute",
             "left": "50%",
@@ -17,19 +17,11 @@
             "maxWidth": "92%",
             "maxHeight": "58%",
             "translate": ["-50%", "-50%"],
-            "zIndex": 2.0
-          }
-        },
-        {
-          "type": "box",
-          "id": "sec-video",
-          "style": {
-            "position": "absolute",
-            "left": "50%",
-            "top": "31%",
-            "translate": ["-50%", "-50%"],
             "zIndex": 7.0
-          }
+          },
+          "delay": 1000.0,
+          "poster": "{firstFile(game.image, game.thumbnail)}",
+          "showPoster": 3
         },
         {
           "type": "box",
@@ -48,6 +40,7 @@
         {
           "type": "text",
           "id": "sec-name",
+          "scroll": "horizontal",
           "text": "{textDefault(game.name)}",
           "font": "../_inc/fonts/Inter-Bold.otf",
           "fontSize": "4.5vmin",
@@ -154,6 +147,9 @@
         {
           "type": "text",
           "id": "sec-description",
+          "scroll": "vertical",
+          "scrollSpeed": 20.0,
+          "scrollDelay": 5000.0,
           "text": "{textDefault(game.desc)}",
           "font": "../_inc/fonts/Inter-Regular.otf",
           "fontSize": "3vmin",

@@ -117,6 +117,9 @@
         {
           "type": "text",
           "id": "sec-trivia",
+          "scroll": "vertical",
+          "scrollSpeed": 20.0,
+          "scrollDelay": 5000.0,
           "style": {
             "position": "absolute",
             "left": "5%",

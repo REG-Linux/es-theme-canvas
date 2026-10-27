@@ -411,41 +411,6 @@
       "name": "secondarygamelist",
       "elements": [
         {
-          "type": "image",
-          "name": "sec-shot",
-          "extra": true,
-          "props": [
-            {
-              "name": "path",
-              "value": "firstfile({game:image}, {game:thumbnail})"
-            },
-            {
-              "name": "origin",
-              "value": "0.5 0.5"
-            },
-            {
-              "name": "pos",
-              "value": "0.5 0.31"
-            },
-            {
-              "name": "maxSize",
-              "value": "0.92 0.58"
-            },
-            {
-              "name": "roundCorners",
-              "value": "0.01"
-            },
-            {
-              "name": "linearSmooth",
-              "value": "true"
-            },
-            {
-              "name": "zIndex",
-              "value": "${zUI}"
-            }
-          ]
-        },
-        {
           "type": "video",
           "name": "sec-video",
           "extra": true,
@@ -469,6 +434,14 @@
             {
               "name": "delay",
               "value": "1.0"
+            },
+            {
+              "name": "showSnapshotNoVideo",
+              "value": "true"
+            },
+            {
+              "name": "showSnapshotDelay",
+              "value": "true"
             },
             {
               "name": "roundCorners",
