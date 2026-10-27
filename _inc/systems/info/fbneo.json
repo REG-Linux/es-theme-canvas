@@ -3,7 +3,7 @@
   "variables": [
     {
       "key": "systemTrivia",
-      "value": "FB Alpha is a Multiple Arcade Emulator most popular for emulating Neo-Geo, Capcom, Konami, and Cave games."
+      "value": "FinalBurn Neo is a multiple arcade emulator most popular for emulating Neo-Geo, Capcom, Konami, and Cave games. It took over from FB Alpha in 2019, carrying on the FinalBurn line started in 2000."
     },
     {
       "key": "systemYears",
