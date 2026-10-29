@@ -758,6 +758,16 @@
       "neon": "$shared~4",
       "pastel": "$shared~4"
     },
+    "dialog.panelBox.keys.template.keyLabel.style.color": {
+      "by": "color-scheme",
+      "default": "{item.active ? \"#ffffffff\" : \"#513811ff\"}",
+      "beige": "{item.active ? \"#ffffffff\" : \"#494846ff\"}",
+      "dark": "{item.active ? \"#ffffffff\" : \"#ddddddff\"}",
+      "light": "{item.active ? \"#ffffffff\" : \"#333333ff\"}",
+      "neon": "{item.active ? \"#fff732ff\" : \"#eeeeeeff\"}",
+      "pastel": "{item.active ? \"#ffffffff\" : \"#555555ff\"}",
+      "purple": "{item.active ? \"#ffffffff\" : \"#2a2929ff\"}"
+    },
     "dialog.panelBox.keys.template.style.background": {
       "by": "color-scheme",
       "default": "{item.active ? \"#513811ff\" : \"00000000\"}",

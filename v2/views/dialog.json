@@ -302,7 +302,7 @@
                     "align": "center",
                     "valign": "center",
                     "lineHeight": 1.3,
-                    "style": {"color": "$menuTextColor", "width": "100%", "height": "100%"},
+                    "style": {"color": "$dialog.panelBox.keys.template.keyLabel.style.color", "width": "100%", "height": "100%"},
                     "valign": "center",
                     "states": {"selected": {"style": {"color": "$gamelistSelectedColor"}}}
                   }
