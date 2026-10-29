@@ -20,12 +20,12 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           fetch-depth: 0
 
       - name: Detect changes
-        uses: dorny/paths-filter@v3
+        uses: dorny/paths-filter@v4
         id: changes
         with:
           filters: |
@@ -35,7 +35,7 @@ jobs:
               - '**/*.json'
 
       - name: Cache dependencies
-        uses: actions/cache@v4
+        uses: actions/cache@v6
         with:
           path: |
             ~/.cache/pip
@@ -45,7 +45,7 @@ jobs:
             ${{ runner.os }}-deps-
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v7
         with:
           python-version: ${{ env.PYTHON_VERSION }}
 
@@ -309,7 +309,7 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Security scan for suspicious content
         run: |
@@ -359,7 +359,7 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Check required files
         run: |
@@ -447,12 +447,12 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           fetch-depth: 0
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v7
         with:
           python-version: ${{ env.PYTHON_VERSION }}
 
@@ -523,7 +523,7 @@ jobs:
           EOF
 
       - name: Upload build artifacts
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: optimized-theme
           path: build/optimized/
@@ -536,7 +536,7 @@ jobs:
 
     steps:
       - name: Download optimized theme
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           name: optimized-theme
           path: theme-build/
@@ -560,7 +560,7 @@ jobs:
           ls -la *.tar.gz *.sha256
 
       - name: Upload package artifacts
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: release-packages
           path: |
@@ -577,13 +577,13 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           fetch-depth: 0
 
       - name: Download packages
         id: download
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           name: release-packages
           path: packages/
@@ -626,7 +626,7 @@ jobs:
 
       - name: Create GitHub Release
         if: steps.check-packages.outputs.packages_exist == 'true'
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@v3
         with:
           files: packages/*
           body_path: release-notes.md
@@ -654,7 +654,7 @@ jobs:
 
     steps:
       - name: Clean up artifacts
-        uses: geekyeggo/delete-artifact@v5
+        uses: geekyeggo/delete-artifact@v6
         with:
           name: |
             optimized-theme
