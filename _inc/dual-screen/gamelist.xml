@@ -45,7 +45,10 @@
 
   <view name="basic, detailed" ifDualScreen="true">
     <image name="logo">
-      <visible>false</visible>
+      <origin>0.5 0.5</origin>
+      <pos>0.5 0.50648148147</pos>
+      <maxSize>0.6 0.4</maxSize>
+      <zIndex>3</zIndex>
     </image>
 
     <image name="console-icon" extra="true">

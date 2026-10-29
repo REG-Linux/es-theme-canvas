@@ -7,7 +7,14 @@
         {"use": "background-art"},
         {"use": "game-list-background-shadow"},
         {"use": "game-list-background"},
-        {"use": "logo", "style": {"top": "50%", "maxWidth": "35%", "maxHeight": "35%"}},
+        {
+          "use": "logo",
+          "style": {
+            "top": "$gamelist/basic.logo.style.top@env.dualScreen",
+            "maxWidth": "$gamelist/basic.logo.style.maxWidth@env.dualScreen",
+            "maxHeight": "$gamelist/basic.logo.style.maxHeight@env.dualScreen"
+          }
+        },
         {"use": "logoText"},
         {"use": "help"},
         {

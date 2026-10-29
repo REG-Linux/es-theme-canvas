@@ -360,13 +360,13 @@
       "src": "../_inc/systems/logos/{system.theme}.svg",
       "style": {
         "position": "absolute",
-        "left": "25.5%",
-        "top": "88%",
-        "maxWidth": "25%",
-        "maxHeight": "8%",
+        "left": "$logo.style.left@env.dualScreen",
+        "top": "$logo.style.top@env.dualScreen",
+        "maxWidth": "$logo.style.maxWidth@env.dualScreen",
+        "maxHeight": "$logo.style.maxHeight@env.dualScreen",
         "translate": ["-50%", "-50%"],
         "opacity": 0.8,
-        "zIndex": 2.0
+        "zIndex": "$logo.style.zIndex@env.dualScreen"
       },
       "visible": "{gamelist.popup == \"\"}",
       "tint": "$secTextColor"

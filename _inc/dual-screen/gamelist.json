@@ -114,8 +114,20 @@
           "name": "logo",
           "props": [
             {
-              "name": "visible",
-              "value": "false"
+              "name": "origin",
+              "value": "0.5 0.5"
+            },
+            {
+              "name": "pos",
+              "value": "0.5 0.50648148147"
+            },
+            {
+              "name": "maxSize",
+              "value": "0.6 0.4"
+            },
+            {
+              "name": "zIndex",
+              "value": "3"
             }
           ]
         },
