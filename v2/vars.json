@@ -27,7 +27,7 @@
       "3-2": {"columns": 3.0, "rows": 2.0},
       "1-1": {"columns": 3.0, "rows": 3.0}
     },
-    "screen.controllerActivity.style.left": {"by": "aspect-ratio", "default": "72%", "4-3": "69%"},
+    "screen.controllerActivity.style.height": {"by": "env.screen", "default": "56%", "0|1||": "52%", "1|1||": "52%"},
     "aspect-ratio/left.1": {
       "by": "aspect-ratio",
       "default": "57.5%",

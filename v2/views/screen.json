@@ -28,9 +28,8 @@
           "id": "batteryIndicator",
           "style": {
             "position": "absolute",
-            "left": "93%",
+            "right": "2%",
             "top": "1%",
-            "width": "5%",
             "height": "5%",
             "flexDirection": "row",
             "alignItems": "center",
@@ -38,6 +37,64 @@
             "zIndex": 5.0
           },
           "children": [
+            {
+              "type": "repeat",
+              "id": "controllerActivity",
+              "source": "controllers",
+              "visible": "{screen.controllers}",
+              "style": {
+                "height": "$screen.controllerActivity.style.height",
+                "flexShrink": 0,
+                "flexDirection": "row",
+                "alignItems": "center",
+                "margin": [0, "0.5vw", 0, 0]
+              },
+              "template": {
+                "id": "controller",
+                "style": {
+                  "height": "100%",
+                  "flexDirection": "row",
+                  "alignItems": "center",
+                  "flexShrink": 0
+                },
+                "children": [
+                  {
+                    "id": "slot",
+                    "style": {
+                      "height": "100%",
+                      "aspectRatio": 1,
+                      "flexDirection": "row",
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "margin": [0, "0.5vw", 0, 0]
+                    },
+                    "children": [
+                      {
+                        "type": "image",
+                        "id": "icon",
+                        "src": "{item.kind == \"wheel\" ? \"$(themeDir)/../_inc/images/icons/wheel.svg\" : item.kind == \"gun\" ? \"$(themeDir)/../_inc/images/icons/gun.svg\" : \"$(themeDir)/../_inc/images/icons/gamepad.svg\"}",
+                        "fit": "contain",
+                        "tint": "$color-scheme/tint.1",
+                        "style": {"height": "100%"}
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "id": "battery",
+                    "text": "{item.battery}% ",
+                    "font": ":/ubuntu_condensed.ttf",
+                    "fontSize": "$screen.controllerActivity.template.battery.fontSize",
+                    "lineHeight": 1.0,
+                    "style": {
+                      "color": "$color-scheme/tint.1",
+                      "display": "{settings.ShowControllerBattery && item.battery >= 0 ? \"flex\" : \"none\"}",
+                      "margin": [0, "0.5vw", 0, 0]
+                    }
+                  }
+                ]
+              }
+            },
             {
               "id": "planemode",
               "style": {
@@ -64,7 +121,7 @@
             {
               "id": "network",
               "style": {
-                "display": "{(settings.ShowNetworkIndicator && network.connected && !network.planemode) && screen.statusBar ? \"flex\" : \"none\"}",
+                "display": "{(settings.ShowNetworkIndicator && network.connected && !network.planemode && (network.wifi || !network.wired)) && screen.statusBar ? \"flex\" : \"none\"}",
                 "aspectRatio": 1,
                 "height": "100%",
                 "flexShrink": 0,
@@ -78,6 +135,29 @@
                   "type": "image",
                   "id": "icon",
                   "src": "$(themeDir)/../_inc/images/network/network-icon-on.svg",
+                  "fit": "contain",
+                  "tint": "$secTextColor",
+                  "style": {"maxWidth": "5vw", "maxHeight": "5vh", "height": "5vh"}
+                }
+              ]
+            },
+            {
+              "id": "networkWired",
+              "style": {
+                "display": "{(settings.ShowNetworkIndicator && network.wired && !network.planemode) && screen.statusBar ? \"flex\" : \"none\"}",
+                "aspectRatio": 1,
+                "height": "100%",
+                "flexShrink": 0,
+                "flexDirection": "row",
+                "justifyContent": "center",
+                "alignItems": "center",
+                "margin": [0, "0.5vh", 0, 0]
+              },
+              "children": [
+                {
+                  "type": "image",
+                  "id": "icon",
+                  "src": "$(themeDir)/../_inc/images/network/network-icon-wired.svg",
                   "fit": "contain",
                   "tint": "$secTextColor",
                   "style": {"maxWidth": "5vw", "maxHeight": "5vh", "height": "5vh"}
@@ -130,68 +210,6 @@
               ]
             }
           ]
-        },
-        {
-          "type": "repeat",
-          "id": "controllerActivity",
-          "source": "controllers",
-          "visible": "{screen.controllers}",
-          "style": {
-            "position": "absolute",
-            "width": "15%",
-            "height": "$system.gamesicon.style.width",
-            "left": "$screen.controllerActivity.style.left",
-            "top": "2%",
-            "flexDirection": "row",
-            "alignItems": "center",
-            "justifyContent": "flex-end",
-            "zIndex": 5.0
-          },
-          "template": {
-            "id": "controller",
-            "style": {
-              "height": "100%",
-              "flexDirection": "row",
-              "alignItems": "center",
-              "flexShrink": 0
-            },
-            "children": [
-              {
-                "id": "slot",
-                "style": {
-                  "height": "100%",
-                  "aspectRatio": 1,
-                  "flexDirection": "row",
-                  "justifyContent": "center",
-                  "alignItems": "center",
-                  "margin": [0, "0.5vw", 0, 0]
-                },
-                "children": [
-                  {
-                    "type": "image",
-                    "id": "icon",
-                    "src": "{item.kind == \"wheel\" ? \"$(themeDir)/../_inc/images/icons/wheel.svg\" : item.kind == \"gun\" ? \"$(themeDir)/../_inc/images/icons/gun.svg\" : \"$(themeDir)/../_inc/images/icons/gamepad.svg\"}",
-                    "fit": "contain",
-                    "tint": "$color-scheme/tint.1",
-                    "style": {"height": "100%"}
-                  }
-                ]
-              },
-              {
-                "type": "text",
-                "id": "battery",
-                "text": "{item.battery}% ",
-                "font": ":/ubuntu_condensed.ttf",
-                "fontSize": "$screen.controllerActivity.template.battery.fontSize",
-                "lineHeight": 1.0,
-                "style": {
-                  "color": "$color-scheme/tint.1",
-                  "display": "{settings.ShowControllerBattery && item.battery >= 0 ? \"flex\" : \"none\"}",
-                  "margin": [0, "0.5vw", 0, 0]
-                }
-              }
-            ]
-          }
         },
         {
           "type": "repeat",
@@ -254,7 +272,7 @@
             "tint": "$menuBackgroundColor",
             "style": {
               "width": "{(2 * 0.006 * screen.w + 0.08 * screen.h)}",
-              "height": "{(2.5 * (2 * 0.006 * screen.w + 0.08 * screen.h))}",
+              "height": "{(2.5 * (2 * 0.006 * screen.w + 0.08 * screen.h) + 0.05 * screen.h + 0.006 * screen.w)}",
               "padding": "0.6vw",
               "flexDirection": "column",
               "alignItems": "stretch",
@@ -262,6 +280,14 @@
               "scale": "{item.opacity}"
             },
             "children": [
+              {
+                "type": "image",
+                "id": "levelIcon",
+                "src": "{item.kind == \"brightness\" ? \":/level_brightness.svg\" : item.value == 0 ? \":/level_volume_mute.svg\" : \":/level_volume.svg\"}",
+                "fit": "contain",
+                "tint": "$menuTextColor",
+                "style": {"height": "{0.05 * screen.h}", "margin": ["0.6vw", 0, 0, 0]}
+              },
               {
                 "id": "levelTrack",
                 "style": {
