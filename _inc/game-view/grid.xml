@@ -6,7 +6,7 @@
 
   <!-- Subset: Auto Grid Options -->
   <subset name="autogridsize" displayName="Automatic Grid Size" appliesTo="grid">
-    <include name="automatic" displayName="Automatic" />
+    <include name="automatic" displayName="Auto" />
     <include name="large" displayName="2 Rows" />
     <include name="medium" displayName="3 Rows" />
     <include name="small" displayName="4 Rows" />

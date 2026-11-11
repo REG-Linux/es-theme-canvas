@@ -14,7 +14,7 @@
         {
           "type": "include",
           "name": "automatic",
-          "displayName": "Automatic"
+          "displayName": "Auto"
         },
         {
           "type": "include",

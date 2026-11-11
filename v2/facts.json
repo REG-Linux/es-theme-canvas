@@ -290,7 +290,7 @@
     "subset|transition-style|fade|at": "",
     "subset|transition-style|slide|dn": "Slide",
     "subset|transition-style|slide|at": "",
-    "subset|autogridsize|automatic|dn": "Automatic",
+    "subset|autogridsize|automatic|dn": "Auto",
     "subset|autogridsize|automatic|at": "grid",
     "subsetTitle|autogridsize": "Automatic Grid Size",
     "subset|autogridsize|large|dn": "2 Rows",
@@ -613,19 +613,19 @@
     "facts.subset|aspect-ratio|1-1-auto|dn": {
       "by": "env.screen",
       "default": "",
-      "0|0|1/1|": "Automatic",
-      "1|0|1/1|": "Automatic"
+      "0|0|1/1|": "Auto",
+      "1|0|1/1|": "Auto"
     },
     "facts.subset|aspect-ratio|16-10-auto|dn": {
       "by": "env.screen",
       "default": "",
-      "0|0|16/10|": "Automatic",
-      "1|0|16/10|": "Automatic"
+      "0|0|16/10|": "Auto",
+      "1|0|16/10|": "Auto"
     },
     "facts.subset|aspect-ratio|16-9-auto|at": {"by": "env.screen", "default": ""},
     "facts.subset|aspect-ratio|16-9-auto|dn": {
       "by": "env.screen",
-      "default": "Automatic",
+      "default": "Auto",
       "0|0||": "",
       "0|0|1/1|": "",
       "0|0|16/10|": "",
@@ -642,14 +642,14 @@
     "facts.subset|aspect-ratio|3-2-auto|dn": {
       "by": "env.screen",
       "default": "",
-      "0|0|3/2|": "Automatic",
-      "1|0|3/2|": "Automatic"
+      "0|0|3/2|": "Auto",
+      "1|0|3/2|": "Auto"
     },
     "facts.subset|aspect-ratio|4-3-auto|dn": {
       "by": "env.screen",
       "default": "",
-      "0|0|4/3|": "Automatic",
-      "1|0|4/3|": "Automatic"
+      "0|0|4/3|": "Auto",
+      "1|0|4/3|": "Auto"
     },
     "facts.subset|sysgridsize|3x1|dn": {"by": "system-view", "default": "3×1", "carousel": ""},
     "facts.subset|sysgridsize|3x2|dn": {"by": "system-view", "default": "3×2", "carousel": ""},
@@ -662,7 +662,7 @@
     "facts.subset|sysgridsize|5x4|dn": {"by": "system-view", "default": "5×4", "carousel": ""},
     "facts.subset|sysgridsize|automatic|dn": {
       "by": "system-view",
-      "default": "Automatic",
+      "default": "Auto",
       "carousel": ""
     },
     "font-size/el|basic|gamelist|p|lines.1": {

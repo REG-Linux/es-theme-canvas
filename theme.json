@@ -22,7 +22,7 @@
         {
           "type": "include",
           "name": "1-1-auto",
-          "displayName": "Automatic",
+          "displayName": "Auto",
           "filters": {
             "if": "{screen.ratio} == '1/1'"
           }
@@ -30,7 +30,7 @@
         {
           "type": "include",
           "name": "16-9-auto",
-          "displayName": "Automatic",
+          "displayName": "Auto",
           "filters": {
             "if": "{screen.ratio} == '16/9'"
           }
@@ -38,7 +38,7 @@
         {
           "type": "include",
           "name": "16-10-auto",
-          "displayName": "Automatic",
+          "displayName": "Auto",
           "filters": {
             "if": "{screen.ratio} == '16/10'"
           }
@@ -46,7 +46,7 @@
         {
           "type": "include",
           "name": "4-3-auto",
-          "displayName": "Automatic",
+          "displayName": "Auto",
           "filters": {
             "if": "{screen.ratio} == '4/3'"
           }
@@ -54,7 +54,7 @@
         {
           "type": "include",
           "name": "3-2-auto",
-          "displayName": "Automatic",
+          "displayName": "Auto",
           "filters": {
             "if": "{screen.ratio} == '3/2'"
           }
@@ -114,7 +114,7 @@
         {
           "type": "include",
           "name": "automatic",
-          "displayName": "Automatic"
+          "displayName": "Auto"
         },
         {
           "type": "include",

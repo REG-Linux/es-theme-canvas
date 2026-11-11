@@ -15,11 +15,11 @@ License: Creative Commons CC-BY-NC-SA
 
   <!-- Aspect Ratios -->
   <subset name="aspect-ratio" displayName="Aspect Ratio">
-    <include if="{screen.ratio} == '1/1'" name="1-1-auto" displayName="Automatic" />
-    <include if="{screen.ratio} == '16/9'" name="16-9-auto" displayName="Automatic" />
-    <include if="{screen.ratio} == '16/10'" name="16-10-auto" displayName="Automatic" />
-    <include if="{screen.ratio} == '4/3'" name="4-3-auto" displayName="Automatic" />
-    <include if="{screen.ratio} == '3/2'" name="3-2-auto" displayName="Automatic" />
+    <include if="{screen.ratio} == '1/1'" name="1-1-auto" displayName="Auto" />
+    <include if="{screen.ratio} == '16/9'" name="16-9-auto" displayName="Auto" />
+    <include if="{screen.ratio} == '16/10'" name="16-10-auto" displayName="Auto" />
+    <include if="{screen.ratio} == '4/3'" name="4-3-auto" displayName="Auto" />
+    <include if="{screen.ratio} == '3/2'" name="3-2-auto" displayName="Auto" />
     <include name="16-9" displayName="16:9" />
     <include name="16-10" displayName="16:10" />
     <include name="4-3" displayName="4:3" />
@@ -35,7 +35,7 @@ License: Creative Commons CC-BY-NC-SA
 
   <!-- Subset: System Grid Sizes -->
   <subset name="sysgridsize" ifSubset="system-view:grid" displayName="System Grid Size">
-    <include name="automatic" displayName="Automatic" />
+    <include name="automatic" displayName="Auto" />
     <include name="3x1" displayName="3×1" />
     <include name="3x2" displayName="3×2" />
     <include name="3x3" displayName="3×3" />
