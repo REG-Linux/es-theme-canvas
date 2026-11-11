@@ -3,6 +3,7 @@
     "description": {
       "type": "text",
       "id": "description",
+      "scroll": "horizontal",
       "text": "{item.description}",
       "font": "$(themeDir)/../_inc/fonts/Inter-Regular.otf",
       "fontMenu": true,

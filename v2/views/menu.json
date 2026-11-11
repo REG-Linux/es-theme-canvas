@@ -499,7 +499,8 @@
                         "style": {
                           "height": "{(item.wrap && !item.valueFills) ? \"auto\" : \"100%\"}",
                           "flexGrow": "{item.valueFills ? 0 : 1}",
-                          "flexShrink": 0,
+                          "flexShrink": 1,
+                          "minWidth": 0,
                           "flexDirection": "column",
                           "display": "{!(item.kind == \"group\") && !(item.description == \"\") && ((item.kind == \"option\" || item.kind == \"multiselect\") || item.kind == \"text\") ? \"flex\" : \"none\"}"
                         },
