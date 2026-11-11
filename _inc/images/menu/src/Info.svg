@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- REG-Linux original artwork for es-theme-canvas: info icon, drawn from scratch (no third-party icon set). -->
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+  <path fill="#ffffff" fill-rule="evenodd" d="
+    M25 4 A21 21 0 1 1 24.99 4 Z
+    M25 10.6 A3.4 3.4 0 1 0 25.01 10.6 Z
+    M22 19.5 H28 V36.5 H31 V40 H19 V36.5 H22 V23 H19.5 V19.5 Z"/>
+</svg>

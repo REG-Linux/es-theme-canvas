@@ -228,6 +228,22 @@
             {
               "name": "iconFastShutdown",
               "value": "${themePath}/_inc/images/menu/Fastshutdown.png"
+            },
+            {
+              "name": "iconInfo",
+              "value": "${themePath}/_inc/images/menu/Info.png"
+            },
+            {
+              "name": "iconManual",
+              "value": "${themePath}/_inc/images/menu/Manual.png"
+            },
+            {
+              "name": "iconNetplay",
+              "value": "${themePath}/_inc/images/menu/Netplay.png"
+            },
+            {
+              "name": "iconPlanemode",
+              "value": "${themePath}/_inc/images/menu/Planemode.png"
             }
           ]
         }

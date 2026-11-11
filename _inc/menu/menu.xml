@@ -71,6 +71,10 @@
       <iconRestart>${themePath}/_inc/images/menu/Restart.png</iconRestart>
       <iconShutdown>${themePath}/_inc/images/menu/Shutdown.png</iconShutdown>
       <iconFastShutdown>${themePath}/_inc/images/menu/Fastshutdown.png</iconFastShutdown>
+      <iconInfo>${themePath}/_inc/images/menu/Info.png</iconInfo>
+      <iconManual>${themePath}/_inc/images/menu/Manual.png</iconManual>
+      <iconNetplay>${themePath}/_inc/images/menu/Netplay.png</iconNetplay>
+      <iconPlanemode>${themePath}/_inc/images/menu/Planemode.png</iconPlanemode>
     </menuIcons>
   </view>
 </theme>

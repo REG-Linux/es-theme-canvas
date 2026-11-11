@@ -519,3 +519,14 @@ public domain.
 | `xegs.webp` | Atari XE Game System | Bilby | [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) | [Atari XEGS.jpg](https://commons.wikimedia.org/wiki/File:Atari_XEGS.jpg) |
 | `zx81.webp` | ZX81 | Evan-Amos | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) | [Sinclair-ZX81.png](https://commons.wikimedia.org/wiki/File:Sinclair-ZX81.png) |
 | `zxspectrum.webp` | ZX Spectrum | Bill Bertram | [CC BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5) | [ZXSpectrum48k.jpg](https://commons.wikimedia.org/wiki/File:ZXSpectrum48k.jpg) |
+
+## Menu icons: REG-Linux originals
+
+`_inc/images/menu/Netplay.png` and `_inc/images/menu/Info.png` were drawn from scratch for
+REG-Linux, from plain geometric shapes, without tracing or adapting any icon set (Font
+Awesome, Material, etc.). Their sources are `_inc/images/menu/src/*.svg`; rasterize at 50x50
+(`magick -background none -density 800 X.svg -resize 50x50 PNG32:X.png`). They are
+contributed under this repository's licence and can be relicensed freely by REG-Linux.
+
+The older menu icons in `_inc/images/menu/` (added in commit c94599a) have no recorded
+source or licence.
