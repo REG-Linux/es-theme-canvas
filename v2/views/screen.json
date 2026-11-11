@@ -380,19 +380,20 @@
             "borderImageSlice": 20.0,
             "tint": "$menuBackgroundColor",
             "style": {
-              "width": "36vw",
-              "padding": "1vw",
+              "minWidth": "44vw",
+              "maxWidth": "90vw",
+              "padding": ["2vh", "2vw", "2vh", "2vw"],
               "flexDirection": "column",
               "opacity": "{item.opacity}"
             },
             "children": [
-              {"use": "taskTitle", "align": "center"},
-              {"use": "taskText", "align": "center"},
-              {"use": "taskAction", "align": "center"},
+              {"use": "taskTitle", "align": "center", "font": "$(themeDir)/../_inc/fonts/Inter-Bold.otf", "fontSize": "4.2vmin"},
+              {"use": "taskText", "align": "center", "font": "$(themeDir)/../_inc/fonts/Inter-Bold.otf", "fontSize": "4.2vmin"},
+              {"use": "taskAction", "align": "center", "font": "$(themeDir)/../_inc/fonts/Inter-Bold.otf", "fontSize": "4.2vmin"},
               {
                 "id": "taskProgress",
                 "style": {
-                  "width": "{item.progress * 0.34 * screen.w}",
+                  "width": "{item.progress * 0.40 * screen.w}",
                   "height": "0.5vh",
                   "margin": ["0.5vh", 0, 0, 0],
                   "background": "$gamelistSelectorColor",
