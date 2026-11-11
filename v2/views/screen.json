@@ -234,15 +234,14 @@
             "style": {
               "padding": ["1vh", "1.5vw", "1vh", "1.5vw"],
               "maxWidth": "90vw",
-              "opacity": "{item.opacity}",
-              "scale": "{item.scale}"
+              "opacity": "{item.opacity}"
             },
             "children": [
               {
                 "type": "text",
                 "id": "notificationText",
                 "text": "{item.text}",
-                "font": "$(themeDir)/../_inc/fonts/Inter-Regular.otf",
+                "font": "$(themeDir)/../_inc/fonts/Inter-Bold.otf",
                 "fontMenu": true,
                 "fontSize": "3.5vmin",
                 "align": "center",
