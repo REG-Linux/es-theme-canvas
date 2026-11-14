@@ -720,9 +720,22 @@
       "cursor": {"scroll": "center"},
       "template": {
         "id": "row",
-        "style": {"width": "100%", "height": "$font-size/height.2"},
+        "style": {"width": "100%", "height": "$font-size/height.2", "flexDirection": "row", "alignItems": "center"},
         "children": [
           {"use": "selector"},
+          {
+            "type": "image",
+            "id": "flagBefore",
+            "src": "{item.regionFlag}",
+            "fit": "contain",
+            "style": {
+              "aspectRatio": 1.3333,
+              "height": "60%",
+              "flexShrink": 0,
+              "margin": [0, 0, 0, "0.8333vw"],
+              "display": "{system.showFlags == 1 && item.regionFlag != \"\" ? \"flex\" : \"none\"}"
+            }
+          },
           {
             "type": "text",
             "id": "label",
@@ -735,9 +748,25 @@
             "style": {
               "height": "100%",
               "color": "$gamelistPrimaryColor",
-              "margin": [0, "0.8333vw", 0, "0.8333vw"]
+              "margin": [0, "0.8333vw", 0, "0.8333vw"],
+              "flexGrow": 1,
+              "flexShrink": 1,
+              "flexBasis": 0
             },
             "states": {"selected": {"style": {"color": "$gamelistSelectedColor"}}}
+          },
+          {
+            "type": "image",
+            "id": "flagAfter",
+            "src": "{item.regionFlag}",
+            "fit": "contain",
+            "style": {
+              "aspectRatio": 1.3333,
+              "height": "60%",
+              "flexShrink": 0,
+              "margin": [0, "0.8333vw", 0, 0],
+              "display": "{system.showFlags == 2 && item.regionFlag != \"\" ? \"flex\" : \"none\"}"
+            }
           }
         ]
       },

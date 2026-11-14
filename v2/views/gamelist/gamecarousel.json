@@ -65,6 +65,44 @@
                       "color": "#000000ff"
                     },
                     "visible": "{firstFile(item.marquee) == \"\"}"
+                  },
+                  {
+                    "id": "badges",
+                    "visible": "{item.badges != \"\" || (system.showFlags != 0 && item.regionFlag != \"\")}",
+                    "style": {
+                      "position": "absolute",
+                      "flexDirection": "row",
+                      "alignItems": "center",
+                      "right": "4%",
+                      "top": "4%",
+                      "zIndex": 2,
+                      "background": "#000000b3",
+                      "borderRadius": "0.6vmin",
+                      "padding": ["0.3vmin", "0.6vmin", "0.3vmin", "0.6vmin"]
+                    },
+                    "children": [
+                      {
+                        "type": "image",
+                        "id": "flag",
+                        "src": "{item.regionFlag}",
+                        "fit": "contain",
+                        "style": {
+                          "width": "{max(12, 0.04 * min(screen.w, screen.h)) * 4 / 3}",
+                          "height": "{max(12, 0.04 * min(screen.w, screen.h))}",
+                          "flexShrink": 0,
+                          "margin": [0, "0.4vmin", 0, 0],
+                          "display": "{system.showFlags != 0 && item.regionFlag != \"\" ? \"flex\" : \"none\"}"
+                        }
+                      },
+                      {
+                        "type": "text",
+                        "id": "icons",
+                        "text": "{item.badges}",
+                        "font": ":/fontawesome-webfont.ttf",
+                        "fontSize": "{max(12, 0.04 * min(screen.w, screen.h))}",
+                        "style": {"color": "#ffffffff"}
+                      }
+                    ]
                   }
                 ]
               }
