@@ -655,8 +655,9 @@
                         "children": [
                           {
                             "id": "line",
-                            "font": ":/ubuntu_condensed.ttf",
-                            "fontSize": "1.83333vmin",
+                            "font": "$(themeDir)/../_inc/fonts/Inter-Bold.otf",
+                            "fontMenu": true,
+                            "fontSize": "2.5vmin",
                             "style": {
                               "position": "absolute",
                               "left": "{0.35 * round($(m~1))}",
@@ -674,8 +675,9 @@
                             "id": "knob",
                             "src": ":/slider_knob.svg",
                             "tint": "$menuTextColor",
-                            "font": ":/ubuntu_condensed.ttf",
-                            "fontSize": "1.83333vmin",
+                            "font": "$(themeDir)/../_inc/fonts/Inter-Bold.otf",
+                            "fontMenu": true,
+                            "fontSize": "2.5vmin",
                             "style": {
                               "position": "absolute",
                               "left": "{item.fraction * ((0.15 * screen.w) - 0.7 * round($(m~1)) - (textWidth(item.valueMax) + 4)) - 0.35 * round($(m~1))}",
@@ -689,8 +691,9 @@
                             "type": "text",
                             "id": "sliderValue",
                             "text": "{item.value}",
-                            "font": ":/ubuntu_condensed.ttf",
-                            "fontSize": "1.83333vmin",
+                            "font": "$(themeDir)/../_inc/fonts/Inter-Bold.otf",
+                            "fontMenu": true,
+                            "fontSize": "2.5vmin",
                             "valign": "center",
                             "lineHeight": 1.5,
                             "style": {
